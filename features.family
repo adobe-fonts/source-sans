@@ -5,10 +5,10 @@
 @SUPERIOR_LETTERS_SMALL = [a.sups b.sups c.sups d.sups e.sups f.sups g.sups h.sups i.sups j.sups k.sups l.sups m.sups n.sups o.sups p.sups q.sups r.sups s.sups t.sups u.sups v.sups w.sups x.sups y.sups z.sups egrave.sups eacute.sups schwa.sups];
 
 @MARKS_CMB = [gravecmb acutecmb circumflexcmb tildecmb macroncmb brevecmb dotaccentcmb dieresiscmb hookabovecmb ringcmb hungarumlautcmb caroncmb dblgravecmb cedillacmb ogonekcmb
-dieresismacron dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexgrave circumflexhook circumflextilde breveacute brevegrave brevehook brevetilde];
+dieresismacron dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexgrave circumflexhook circumflextilde breveacute brevegrave brevehook brevetilde circumflexbreve];
 
 @MARKS_CMB_CASE = [gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap hookabovecmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap dblgravecmb.cap cedillacmb.cap ogonekcmb.cap
-dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumflexacute.cap circumflexgrave.cap circumflexhook.cap circumflextilde.cap breveacute.cap brevegrave.cap brevehook.cap brevetilde.cap];
+dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumflexacute.cap circumflexgrave.cap circumflexhook.cap circumflextilde.cap breveacute.cap brevegrave.cap brevehook.cap brevetilde.cap circumflexbreve.cap];
 
 @FIGURES_LINING_TABULAR = [zero one two three four five six seven eight nine];
 @FIGURES_LINING_PROPORTIONAL = [zero.pnum one.pnum two.pnum three.pnum four.pnum five.pnum six.pnum seven.pnum eight.pnum nine.pnum];
@@ -28,8 +28,8 @@ dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumf
 @SS01_L_LC_DEFAULT = [l lacute lcaron ldot lslash lcommaaccent ldotbelow ldotbelowmacron llinebelow l.sups];
 @SS01_L_LC_ALTERNATE = [l.alt lacute.alt lcaron.alt ldot.alt lslash.alt lcommaaccent.alt ldotbelow.alt ldotbelowmacron.alt llinebelow.alt l.supa];
 
-@SS02_A_LC_DEFAULT = [a agrave aacute acircumflex atilde adieresis amacron abreve aring acaron adotbelow ahook acircumflexacute acircumflexgrave acircumflexhook acircumflextilde acircumflexdotbelow abreveacute abrevegrave abrevehook abrevetilde abrevedotbelow aogonek a.sups];
-@SS02_A_LC_ALTERNATE = [a.alt agrave.alt aacute.alt acircumflex.alt atilde.alt adieresis.alt amacron.alt abreve.alt aring.alt acaron.alt adotbelow.alt ahook.alt acircumflexacute.alt acircumflexgrave.alt acircumflexhook.alt acircumflextilde.alt acircumflexdotbelow.alt abreveacute.alt abrevegrave.alt abrevehook.alt abrevetilde.alt abrevedotbelow.alt aogonek.alt a.supa];
+@SS02_A_LC_DEFAULT = [a agrave aacute acircumflex atilde adieresis amacron abreve aring acaron adotbelow ahook acircumflexacute acircumflexgrave acircumflexhook acircumflextilde acircumflexdotbelow abreveacute abrevegrave abrevehook abrevetilde abrevedotbelow aogonek a.sups ordfeminine];
+@SS02_A_LC_ALTERNATE = [a.alt agrave.alt aacute.alt acircumflex.alt atilde.alt adieresis.alt amacron.alt abreve.alt aring.alt acaron.alt adotbelow.alt ahook.alt acircumflexacute.alt acircumflexgrave.alt acircumflexhook.alt acircumflextilde.alt acircumflexdotbelow.alt abreveacute.alt abrevegrave.alt abrevehook.alt abrevetilde.alt abrevedotbelow.alt aogonek.alt a.supa ordfeminine.alt];
 
 @SS03_G_LC_DEFAULT = [g gcircumflex gbreve gdotaccent gcommaaccent gcaron gmacron gtilde g.sups];
 @SS03_G_LC_ALTERNATE = [g.alt gcircumflex.alt gbreve.alt gdotaccent.alt gcommaaccent.alt gcaron.alt gmacron.alt gtilde.alt g.supa];
@@ -63,7 +63,25 @@ feature aalt { # Access All Alternates
 
 
 #--------------------------------------
+lookup DECOMPOSITION {
+		sub Ecircumflex by E circumflexcmb;
+		sub ecircumflex by e circumflexcmb;
+		sub Ocircumflex by O circumflexcmb;
+		sub ocircumflex by o circumflexcmb;
+} DECOMPOSITION;
+
 feature ccmp { # Glyph Composition / Decomposition
+
+	lookup GLYPH_DECOMPOSITION_CONTEXTUAL_2 {
+		#decomposes ecircumflex and ocircumflex forms when followed by comining breve: Jarai language support
+		sub [Ecircumflex ecircumflex Ocircumflex ocircumflex]' lookup DECOMPOSITION brevecmb;
+	} GLYPH_DECOMPOSITION_CONTEXTUAL_2;
+
+	lookup GLYPH_COMPOSITION_CONTEXTUAL {
+		#substitutes dotless form of iogonek when followed by combining acute: Navajo language support
+		sub i' ogonekcmb' acutecmb by iogonek.d;
+		sub iogonek' acutecmb by iogonek.d;
+	} GLYPH_COMPOSITION_CONTEXTUAL;
 
 	lookup MARKS_COMPOSITION {
 		sub dieresiscmb macroncmb by dieresismacron;
@@ -78,12 +96,8 @@ feature ccmp { # Glyph Composition / Decomposition
 		sub brevecmb gravecmb by brevegrave;
 		sub brevecmb hookabovecmb by brevehook;
 		sub brevecmb tildecmb by brevetilde;
+		sub circumflexcmb brevecmb by circumflexbreve;
 	} MARKS_COMPOSITION;
-
-	lookup IOGONEK_ACUTE_SMALL { #substitutes dotless form of iogonek when followed by combining acute
-		sub i' ogonekcmb' acutecmb by iogonek.d;
-		sub iogonek' acutecmb by iogonek.d;
-	} IOGONEK_ACUTE_SMALL;
 
 	lookup GLYPH_COMPOSITION_NONCONTEXTUAL {
 		sub d caroncmb by dcaron;
