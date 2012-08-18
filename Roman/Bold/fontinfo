@@ -1,7 +1,7 @@
 IsItalicStyle	false
 IsBoldStyle	true
-PreferOS/2TypoMetrics	false
-IsOS/2WidthWeigthSlopeOnly true
+PreferOS/2TypoMetrics	false		# Must be 'false' for vertical layout cross-platform consistency
+IsOS/2WidthWeigthSlopeOnly	false	# Must be 'false' for OS/2 table version 3
 IsOS/2OBLIQUE false
 UseOldNameID4 false
 LicenseCode	ADOBE
@@ -58,7 +58,7 @@ end FDDict TEXT_FIGURES
 
 begin GlyphSet UPPERCASE
 	#Latin
-		^[A-Z][A-Z]?(breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook)?(below|dotaccent)?$
+		^[A-Z][A-Z]?(breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke)?(above|below|dotaccent)?$
 		^(Germandbls|Schwa)$
 	#Punctuation
 		^(exclam|question)$
@@ -71,7 +71,7 @@ end GlyphSet UPPERCASE
 
 begin GlyphSet LOWERCASE
 	#Latin
-		^(dotless|germandbl|schw)?[a-z](breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|tail|ng|script|greenlandic|apostrophe)?(below|dotaccent)?(\.)?(alt|d)?$
+		^(dotless|germandbl|schw)?[a-z](breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|tail|ng|script|greenlandic|apostrophe)?(above|below|dotaccent)?(\.)?(alt|d)?$
 		^[afo][eil]$
 		^(f)_(f|t)$
 	#Punctuation
