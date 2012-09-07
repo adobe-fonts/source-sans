@@ -1,4 +1,4 @@
-# Created: Fri Aug 10 11:42:27 2012
+# Created: Sun Sep  9 21:41:06 2012
 # PS Name: SourceSansPro-Light
 # MM Inst: SourceSansProMM.vfb_100
 
@@ -19,7 +19,7 @@ lookup MARK_BASE_above {
 	@bGC_iogonek.d_above = [iogonek.d dotlessi dotlessj];
 	@bGC_n_above = [n p];
 	@bGC_o_above = [o oslash ohorn oogonek];
-	@bGC_u_above = [u uhorn];
+	@bGC_u_above = [u uogonek];
 	pos base @bGC_B_above <anchor 275 681> mark @MC_above;
 	pos base @bGC_E_above <anchor 279 681> mark @MC_above;
 	pos base @bGC_I.alt_above <anchor 156 681> mark @MC_above;
@@ -34,7 +34,7 @@ lookup MARK_BASE_above {
 	pos base @bGC_iogonek.d_above <anchor 115 502> mark @MC_above;
 	pos base @bGC_n_above <anchor 282 502> mark @MC_above;
 	pos base @bGC_o_above <anchor 267 502> mark @MC_above;
-	pos base @bGC_u_above <anchor 273 502> mark @MC_above;
+	pos base @bGC_u_above <anchor 265 502> mark @MC_above;
 	pos base A <anchor 259 681> mark @MC_above;
 	pos base AE <anchor 576 694> mark @MC_above;
 	pos base Aogonek <anchor 260 681> mark @MC_above;
@@ -79,7 +79,7 @@ lookup MARK_BASE_above {
 	pos base s <anchor 210 502> mark @MC_above;
 	pos base schwa <anchor 235 502> mark @MC_above;
 	pos base t <anchor 129 633> mark @MC_above;
-	pos base uogonek <anchor 274 502> mark @MC_above;
+	pos base uhorn <anchor 264 502> mark @MC_above;
 	pos base v <anchor 218 502> mark @MC_above;
 	pos base w <anchor 342 502> mark @MC_above;
 	pos base x <anchor 203 502> mark @MC_above;
@@ -100,7 +100,6 @@ lookup MARK_BASE_base {
 
 lookup MARK_BASE_below {
 	@bGC_A_below = [A T];
-	@bGC_B_below = [B u uhorn];
 	@bGC_C_below = [C G];
 	@bGC_D_below = [D E R];
 	@bGC_K_below = [K Ohorn];
@@ -108,10 +107,10 @@ lookup MARK_BASE_below {
 	@bGC_Z_below = [Z b thorn];
 	@bGC_ascript_below = [ascript a.alt];
 	@bGC_c_below = [c o ohorn];
+	@bGC_h_below = [h uhorn];
 	@bGC_i_below = [i l r dotlessi];
 	@bGC_s_below = [s v z];
 	pos base @bGC_A_below <anchor 259 -22> mark @MC_below;
-	pos base @bGC_B_below <anchor 291 -22> mark @MC_below;
 	pos base @bGC_C_below <anchor 336 -22> mark @MC_below;
 	pos base @bGC_D_below <anchor 296 -22> mark @MC_below;
 	pos base @bGC_K_below <anchor 321 -22> mark @MC_below;
@@ -119,8 +118,10 @@ lookup MARK_BASE_below {
 	pos base @bGC_Z_below <anchor 278 -22> mark @MC_below;
 	pos base @bGC_ascript_below <anchor 272 -22> mark @MC_below;
 	pos base @bGC_c_below <anchor 267 -22> mark @MC_below;
+	pos base @bGC_h_below <anchor 282 -22> mark @MC_below;
 	pos base @bGC_i_below <anchor 113 -22> mark @MC_below;
 	pos base @bGC_s_below <anchor 218 -22> mark @MC_below;
+	pos base B <anchor 291 -22> mark @MC_below;
 	pos base F <anchor 118 -22> mark @MC_below;
 	pos base H <anchor 315 -22> mark @MC_below;
 	pos base I <anchor 117 -22> mark @MC_below;
@@ -145,7 +146,6 @@ lookup MARK_BASE_below {
 	pos base g <anchor 250 -230> mark @MC_below;
 	pos base g.alt <anchor 436 -218> mark @MC_below;
 	pos base gscript <anchor 265 -225> mark @MC_below;
-	pos base h <anchor 282 -22> mark @MC_below;
 	pos base j <anchor 48 -229> mark @MC_below;
 	pos base k <anchor 257 -22> mark @MC_below;
 	pos base l.alt <anchor 115 -22> mark @MC_below;
@@ -155,6 +155,7 @@ lookup MARK_BASE_below {
 	pos base q <anchor 423 -218> mark @MC_below;
 	pos base schwa <anchor 233 -22> mark @MC_below;
 	pos base t <anchor 199 -22> mark @MC_below;
+	pos base u <anchor 283 -22> mark @MC_below;
 	pos base w <anchor 342 -22> mark @MC_below;
 	pos base x <anchor 203 -22> mark @MC_below;
 	pos base y <anchor 184 -242> mark @MC_below;
@@ -165,7 +166,7 @@ lookup MARK_BASE_horn {
 	pos base O <anchor 456 649> mark @MC_horn;
 	pos base U <anchor 511 669> mark @MC_horn;
 	pos base o <anchor 360 480> mark @MC_horn;
-	pos base u <anchor 409 490> mark @MC_horn;
+	pos base u <anchor 400 490> mark @MC_horn;
 } MARK_BASE_horn;
 
 
@@ -183,7 +184,7 @@ lookup MARK_BASE_ogonek {
 	pos base e <anchor 384 0> mark @MC_ogonek;
 	pos base o <anchor 314 0> mark @MC_ogonek;
 	pos base schwa <anchor 233 0> mark @MC_ogonek;
-	pos base u <anchor 421 0> mark @MC_ogonek;
+	pos base u <anchor 412 0> mark @MC_ogonek;
 } MARK_BASE_ogonek;
 
 

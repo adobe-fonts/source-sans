@@ -1,4 +1,4 @@
-# Created: Fri Aug 10 11:42:27 2012
+# Created: Sun Sep  9 21:41:06 2012
 # PS Name: SourceSansPro-Regular
 # MM Inst: SourceSansProMM.vfb_368
 
@@ -18,8 +18,7 @@ lookup MARK_BASE_above {
 	@bGC_h_above = [h l.alt];
 	@bGC_iogonek.d_above = [iogonek.d dotlessi];
 	@bGC_n_above = [n p];
-	@bGC_o_above = [o oslash ohorn oogonek];
-	@bGC_u_above = [u uhorn];
+	@bGC_o_above = [o oslash ohorn oogonek uhorn];
 	pos base @bGC_B_above <anchor 284 678> mark @MC_above;
 	pos base @bGC_E_above <anchor 282 678> mark @MC_above;
 	pos base @bGC_I.alt_above <anchor 171 678> mark @MC_above;
@@ -34,7 +33,6 @@ lookup MARK_BASE_above {
 	pos base @bGC_iogonek.d_above <anchor 124 508> mark @MC_above;
 	pos base @bGC_n_above <anchor 291 508> mark @MC_above;
 	pos base @bGC_o_above <anchor 271 508> mark @MC_above;
-	pos base @bGC_u_above <anchor 277 508> mark @MC_above;
 	pos base A <anchor 268 678> mark @MC_above;
 	pos base AE <anchor 561 694> mark @MC_above;
 	pos base Aogonek <anchor 269 678> mark @MC_above;
@@ -81,7 +79,8 @@ lookup MARK_BASE_above {
 	pos base s <anchor 219 508> mark @MC_above;
 	pos base schwa <anchor 242 508> mark @MC_above;
 	pos base t <anchor 143 643> mark @MC_above;
-	pos base uogonek <anchor 274 502> mark @MC_above;
+	pos base u <anchor 272 508> mark @MC_above;
+	pos base uogonek <anchor 269 502> mark @MC_above;
 	pos base v <anchor 235 508> mark @MC_above;
 	pos base w <anchor 360 508> mark @MC_above;
 	pos base x <anchor 223 508> mark @MC_above;
@@ -102,7 +101,6 @@ lookup MARK_BASE_base {
 
 lookup MARK_BASE_below {
 	@bGC_A_below = [A acircumflexacute.alt];
-	@bGC_E_below = [E u uhorn];
 	@bGC_K_below = [K N];
 	@bGC_S_below = [S k o ohorn];
 	@bGC_U_below = [U Uhorn];
@@ -111,7 +109,6 @@ lookup MARK_BASE_below {
 	@bGC_i_below = [i r dotlessi l.alt];
 	@bGC_s_below = [s x];
 	pos base @bGC_A_below <anchor 268 -22> mark @MC_below;
-	pos base @bGC_E_below <anchor 295 -22> mark @MC_below;
 	pos base @bGC_K_below <anchor 325 -22> mark @MC_below;
 	pos base @bGC_S_below <anchor 271 -22> mark @MC_below;
 	pos base @bGC_U_below <anchor 320 -22> mark @MC_below;
@@ -122,6 +119,7 @@ lookup MARK_BASE_below {
 	pos base B <anchor 300 -22> mark @MC_below;
 	pos base C <anchor 341 -22> mark @MC_below;
 	pos base D <anchor 302 -22> mark @MC_below;
+	pos base E <anchor 295 -22> mark @MC_below;
 	pos base F <anchor 133 -22> mark @MC_below;
 	pos base G <anchor 345 -22> mark @MC_below;
 	pos base H <anchor 322 -22> mark @MC_below;
@@ -158,6 +156,8 @@ lookup MARK_BASE_below {
 	pos base q <anchor 426 -218> mark @MC_below;
 	pos base schwa <anchor 240 -22> mark @MC_below;
 	pos base t <anchor 212 -22> mark @MC_below;
+	pos base u <anchor 290 -22> mark @MC_below;
+	pos base uhorn <anchor 289 -22> mark @MC_below;
 	pos base v <anchor 235 -22> mark @MC_below;
 	pos base w <anchor 360 -22> mark @MC_below;
 	pos base y <anchor 200 -242> mark @MC_below;
@@ -169,7 +169,7 @@ lookup MARK_BASE_horn {
 	pos base O <anchor 466 646> mark @MC_horn;
 	pos base U <anchor 523 666> mark @MC_horn;
 	pos base o <anchor 364 486> mark @MC_horn;
-	pos base u <anchor 416 496> mark @MC_horn;
+	pos base u <anchor 411 496> mark @MC_horn;
 } MARK_BASE_horn;
 
 
@@ -187,7 +187,7 @@ lookup MARK_BASE_ogonek {
 	pos base a.alt <anchor 393 0> mark @MC_ogonek;
 	pos base e <anchor 389 0> mark @MC_ogonek;
 	pos base schwa <anchor 240 0> mark @MC_ogonek;
-	pos base u <anchor 433 0> mark @MC_ogonek;
+	pos base u <anchor 428 0> mark @MC_ogonek;
 } MARK_BASE_ogonek;
 
 
