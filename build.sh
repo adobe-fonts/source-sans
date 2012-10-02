@@ -2,7 +2,7 @@
 
 family=SourceSansPro
 romanWeights=('Black' 'Bold' 'ExtraLight' 'Light' 'Regular' 'Semibold')
-italicWeights=('BlackIt', 'BoldIt', 'ExtraLightIt', 'LightIt', 'It', 'SemiboldIt')
+italicWeights=('BlackIt' 'BoldIt' 'ExtraLightIt' 'LightIt' 'It' 'SemiboldIt')
 
 # clean existing build artifacts
 rm -rf target/
