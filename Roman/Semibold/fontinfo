@@ -2,8 +2,8 @@ IsItalicStyle	false
 IsBoldStyle	false
 PreferOS/2TypoMetrics	false		# Must be 'false' for vertical layout cross-platform consistency
 IsOS/2WidthWeigthSlopeOnly	false	# Must be 'false' for OS/2 table version 3
-IsOS/2OBLIQUE false
-UseOldNameID4 false
+IsOS/2OBLIQUE	false
+UseOldNameID4	false
 LicenseCode	ADOBE
 
 #------------------------------------------------------
@@ -34,6 +34,17 @@ begin FDDict UPPERCASE
 end FDDict UPPERCASE
 
 
+begin FDDict SMALLCAPS
+	BaselineYCoord 0
+	BaselineOvershoot -12
+	CapHeight 523
+	CapOvershoot 12
+	DominantV [116]
+	DominantH [94]
+	FlexOK false
+end FDDict SMALLCAPS
+
+
 begin FDDict FIGURES
 	BaselineYCoord 0
 	BaselineOvershoot -12
@@ -58,7 +69,7 @@ end FDDict TEXT_FIGURES
 
 begin GlyphSet UPPERCASE
 	#Latin
-		^[A-Z][A-Z]?(breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke)?(above|below|dotaccent)?$
+		^[A-Z][A-Z]?(macron|breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke)?(above|below|dotaccent)?$
 		^(Germandbls|Schwa)$
 	#Punctuation
 		^(exclam|question)$
@@ -71,13 +82,18 @@ end GlyphSet UPPERCASE
 
 begin GlyphSet LOWERCASE
 	#Latin
-		^(dotless|germandbl|schw)?[a-z](breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|tail|ng|script|greenlandic|apostrophe)?(above|below|dotaccent)?(\.)?(alt|d)?$
+		^(dotless|germandbl|schw)?[a-z](macron|breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|tail|ng|script|greenlandic|apostrophe)?(above|below|dotaccent)?(\.)?(alt|d|trk)?$
 		^[afo][eil]$
 		^(f)_(f|t)$
 	#Punctuation
 		^(exclam|question)down$
 		^(dagger|daggerdbl)$
 end GlyphSet LOWERCASE
+
+
+begin GlyphSet SMALLCAPS
+		^.+\.sc$
+end GlyphSet SMALLCAPS
 
 
 begin GlyphSet FIGURES
