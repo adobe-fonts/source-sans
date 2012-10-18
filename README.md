@@ -7,7 +7,8 @@ source project provides all of the source files that were used to build this Ope
 by using the AFDKO makeotf tool.
 
 ###Notes
-We recently changed the name of the repo from Source-Sans-Pro to source-sans-pro. If you have already cloned the repo, you will need to run this command
+We recently changed the name of the repo from Source-Sans-Pro to source-sans-pro. 
+If you have already cloned the repo, you will need to run this command:
 
 `git remote set-url origin https://github.com/adobe/source-sans-pro.git`
 
