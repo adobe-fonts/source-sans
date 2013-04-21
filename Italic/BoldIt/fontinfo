@@ -34,6 +34,17 @@ begin FDDict UPPERCASE
 end FDDict UPPERCASE
 
 
+begin FDDict SMALLCAPS
+	BaselineYCoord 0
+	BaselineOvershoot -12
+	CapHeight 528
+	CapOvershoot 12
+	DominantV [146]
+	DominantH [115]
+	FlexOK false
+end FDDict SMALLCAPS
+
+
 begin FDDict FIGURES
 	BaselineYCoord 0
 	BaselineOvershoot -12
@@ -78,6 +89,11 @@ begin GlyphSet LOWERCASE
 		^(exclam|question)down$
 		^(dagger|daggerdbl)$
 end GlyphSet LOWERCASE
+
+
+begin GlyphSet SMALLCAPS
+		^.+\.sc$
+end GlyphSet SMALLCAPS
 
 
 begin GlyphSet FIGURES
