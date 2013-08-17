@@ -51,6 +51,3 @@ $ ./build.sh
 
 Send suggestions for changes to the Source Sans OpenType font project maintainer,
 phunt@adobe.com, for consideration.
-
-
-
