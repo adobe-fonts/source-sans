@@ -30,9 +30,9 @@
 
 @LETTERS_SMALLCAP_GREEK_BASIC = [Alpha.sc Beta.sc Gamma.sc Delta.sc Epsilon.sc Zeta.sc Eta.sc Theta.sc Iota.sc Kappa.sc Lambda.sc Mu.sc Nu.sc Xi.sc Omicron.sc Pi.sc Rho.sc Sigma.sc Tau.sc Upsilon.sc Phi.sc Chi.sc Psi.sc Omega.sc];
 @LETTERS_SMALLCAP_GREEK_NO_TONOS = [Alpha.sc Epsilon.sc Eta.sc Iota.sc Omicron.sc Upsilon.sc Omega.sc];
-@LETTERS_SMALLCAP_GREEK_TONOS = [Alphatonos.sc Epsilontonos.sc Etatonos.sc Iotatonos.sc Omicrontonos.sc Upsilontonos.sc Omegatonos.sc];
+#@LETTERS_SMALLCAP_GREEK_TONOS = [Alphatonos.sc Epsilontonos.sc Etatonos.sc Iotatonos.sc Omicrontonos.sc Upsilontonos.sc Omegatonos.sc];
 @LETTERS_SMALLCAP_GREEK_DIERESIS = [Iotadieresis.sc Upsilondieresis.sc];
-@LETTERS_SMALLCAP_GREEK_ALL = [@LETTERS_SMALLCAP_GREEK_BASIC @LETTERS_SMALLCAP_GREEK_TONOS @LETTERS_SMALLCAP_GREEK_DIERESIS];
+@LETTERS_SMALLCAP_GREEK_ALL = [@LETTERS_SMALLCAP_GREEK_BASIC @LETTERS_SMALLCAP_GREEK_DIERESIS]; #@LETTERS_SMALLCAP_GREEK_TONOS 
 
 @LETTERS_MAJUSCULE_CYRILLIC_BASIC = [Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup];
 @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [Ishort Iegrave Io Dje Gje Yi Kje Igravecyr Ushort];
@@ -540,7 +540,7 @@ feature ss20 { # Stylistic Set 20 (Accented Greek Small Capitals)
 		name 1 0 0 "Accented Greek Small Capitals"; # Mac English
 	};
 
-	sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_TONOS;
+#	sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_TONOS;
 
 	lookup GREEK_SMALLCAPS_MONO {
 		sub @LETTERS_MINISCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
