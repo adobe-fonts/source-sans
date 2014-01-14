@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>com.typemytype.robofont.foreground.layerStrokeColor</key>
+	<array>
+		<real>0.5</real>
+		<real>0.0</real>
+		<real>0.5</real>
+		<real>0.7</real>
+	</array>
 	<key>com.typemytype.robofont.layerOrder</key>
 	<array>
 	</array>
@@ -13,6 +20,8 @@
 			<key>ascending</key>
 			<array>
 				<string>.notdef</string>
+				<string>NULL</string>
+				<string>CR</string>
 				<string>space</string>
 				<string>A</string>
 				<string>B</string>
@@ -527,6 +536,8 @@
 				<string>clickalveolar</string>
 				<string>clickbilabial</string>
 				<string>f_f</string>
+				<string>f_f_i</string>
+				<string>f_f_l</string>
 				<string>f_t</string>
 				<string>f_f_t</string>
 				<string>I.alt</string>
@@ -1111,6 +1122,16 @@
 				<string>seven.onum</string>
 				<string>eight.onum</string>
 				<string>nine.onum</string>
+				<string>zero.cap</string>
+				<string>one.cap</string>
+				<string>two.cap</string>
+				<string>three.cap</string>
+				<string>four.cap</string>
+				<string>five.cap</string>
+				<string>six.cap</string>
+				<string>seven.cap</string>
+				<string>eight.cap</string>
+				<string>nine.cap</string>
 				<string>period</string>
 				<string>comma</string>
 				<string>colon</string>
@@ -1510,7 +1531,7 @@
 				<string>Odieresiscyr.sc</string>
 				<string>Obarcyr.sc</string>
 				<string>Umacroncyr.sc</string>
-				<string>Ugravedblcyr.sc</string>
+				<string>Uacutedblcyr.sc</string>
 				<string>ampersand.sc</string>
 				<string>zero.sc</string>
 				<string>one.sc</string>
@@ -1666,6 +1687,7 @@
 				<string>dollar</string>
 				<string>sterling</string>
 				<string>yen</string>
+				<string>yuan</string>
 				<string>Euro</string>
 				<string>cent</string>
 				<string>florin</string>
@@ -1699,6 +1721,7 @@
 				<string>fourfifths</string>
 				<string>onesixth</string>
 				<string>fivesixths</string>
+				<string>oneseventh</string>
 				<string>oneeighth</string>
 				<string>threeeighths</string>
 				<string>fiveeighths</string>
@@ -1722,7 +1745,6 @@
 				<string>asciitilde</string>
 				<string>approxequal</string>
 				<string>logicalnot</string>
-				<string>pi</string>
 				<string>infinity</string>
 				<string>mu.math</string>
 				<string>partialdiff</string>
@@ -1794,7 +1816,6 @@
 				<string>tildecmb.cap</string>
 				<string>macroncmb</string>
 				<string>macroncmb.cap</string>
-				<string>overlinecmb</string>
 				<string>overlinecmb</string>
 				<string>overlinecmb.cap</string>
 				<string>brevecmb</string>
@@ -1898,29 +1919,9 @@
 				<string>figurespace</string>
 				<string>space.frac</string>
 				<string>nbspace.frac</string>
+				<string>ZWNBS</string>
 				<string>fi</string>
 				<string>fl</string>
-				<string>ZWNBS</string>
-				<string>zhe.b</string>
-				<string>Zhedescender.b</string>
-				<string>Zhe.a</string>
-				<string>Zhebreve.b</string>
-				<string>kabashkir.b</string>
-				<string>yi.a</string>
-				<string>Yi.a</string>
-				<string>Kabashkir.b</string>
-				<string>zhe.a</string>
-				<string>Zhe.b</string>
-				<string>zhedescender.b</string>
-				<string>Kje.b</string>
-				<string>zhebreve.b</string>
-				<string>ka.b</string>
-				<string>ka.a</string>
-				<string>kje.b</string>
-				<string>kadescender.b</string>
-				<string>Kadescender.b</string>
-				<string>Ka.b</string>
-				<string>Ka.a</string>
 			</array>
 			<key>type</key>
 			<string>glyphList</string>
@@ -5323,6 +5324,8 @@
 		<string>clickalveolar</string>
 		<string>clickbilabial</string>
 		<string>f_f</string>
+		<string>f_f_i</string>
+		<string>f_f_l</string>
 		<string>f_t</string>
 		<string>f_f_t</string>
 		<string>I.alt</string>
@@ -5907,6 +5910,16 @@
 		<string>seven.onum</string>
 		<string>eight.onum</string>
 		<string>nine.onum</string>
+		<string>zero.cap</string>
+		<string>one.cap</string>
+		<string>two.cap</string>
+		<string>three.cap</string>
+		<string>four.cap</string>
+		<string>five.cap</string>
+		<string>six.cap</string>
+		<string>seven.cap</string>
+		<string>eight.cap</string>
+		<string>nine.cap</string>
 		<string>period</string>
 		<string>comma</string>
 		<string>colon</string>
@@ -6306,7 +6319,7 @@
 		<string>Odieresiscyr.sc</string>
 		<string>Obarcyr.sc</string>
 		<string>Umacroncyr.sc</string>
-		<string>Ugravedblcyr.sc</string>
+		<string>Uacutedblcyr.sc</string>
 		<string>ampersand.sc</string>
 		<string>zero.sc</string>
 		<string>one.sc</string>
@@ -6462,6 +6475,7 @@
 		<string>dollar</string>
 		<string>sterling</string>
 		<string>yen</string>
+		<string>yuan</string>
 		<string>Euro</string>
 		<string>cent</string>
 		<string>florin</string>
@@ -6495,6 +6509,7 @@
 		<string>fourfifths</string>
 		<string>onesixth</string>
 		<string>fivesixths</string>
+		<string>oneseventh</string>
 		<string>oneeighth</string>
 		<string>threeeighths</string>
 		<string>fiveeighths</string>
@@ -6518,7 +6533,6 @@
 		<string>asciitilde</string>
 		<string>approxequal</string>
 		<string>logicalnot</string>
-		<string>pi</string>
 		<string>infinity</string>
 		<string>mu.math</string>
 		<string>partialdiff</string>
@@ -6590,7 +6604,6 @@
 		<string>tildecmb.cap</string>
 		<string>macroncmb</string>
 		<string>macroncmb.cap</string>
-		<string>overlinecmb</string>
 		<string>overlinecmb</string>
 		<string>overlinecmb.cap</string>
 		<string>brevecmb</string>
@@ -6694,9 +6707,9 @@
 		<string>figurespace</string>
 		<string>space.frac</string>
 		<string>nbspace.frac</string>
+		<string>ZWNBS</string>
 		<string>fi</string>
 		<string>fl</string>
-		<string>ZWNBS</string>
 		<string>zhe.b</string>
 		<string>Zhedescender.b</string>
 		<string>Zhe.a</string>
