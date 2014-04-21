@@ -66,8 +66,8 @@ dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumf
 @FIGURES_INFERIOR = [zero.subs one.subs two.subs three.subs four.subs five.subs six.subs seven.subs eight.subs nine.subs];
 @FIGURES_SMALLCAP = [zero.sc one.sc two.sc three.sc four.sc five.sc six.sc seven.sc eight.sc nine.sc];
 
-@PUNCTUATION_FOR_SMALLCAPS = [ampersand exclam question exclamdown questiondown parenleft parenright bracketleft bracketright braceleft braceright hyphen endash emdash];
-@PUNCTUATION_SMALLCAPS = [ampersand.sc exclam.sc question.sc exclamdown.sc questiondown parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc hyphen.sc endash.sc emdash.sc];
+@PUNCTUATION_FOR_SMALLCAPS = [ampersand exclam question exclamdown questiondown parenleft parenright bracketleft bracketright braceleft braceright hyphen endash emdash quoteleft quoteright quotedblleft quotedblright quotesingle quotedbl];
+@PUNCTUATION_SMALLCAPS = [ampersand.sc exclam.sc question.sc exclamdown.sc questiondown parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc hyphen.sc endash.sc emdash.sc quoteleft.sc quoteright.sc quotedblleft.sc quotedblright.sc quotesingle.sc quotedbl.sc];
 
 @PUNCTUATION_FOR_SMALL_FIGURE_STYLES = [parenleft parenright period comma];
 @PUNCTUATION_NUMERATOR = [parenleft.numr parenright.numr period.numr comma.numr];
@@ -525,8 +525,10 @@ feature ccmp { # Glyph Composition / Decomposition
 	lookup YI_UKRAINIAN { # substitutes alternate yi in context
 		sub yi' yi by yi.a;
 		sub Yi' Yi by Yi.a;
+		sub Yi.sc' Yi.sc by Yi.sca;
 		sub [iukran yi.a] yi' by yi.a;
 		sub Yi.a Yi' by Yi.a;
+		sub Yi.sca Yi.sc' by Yi.sca;
 	} YI_UKRAINIAN;
 
 } ccmp;
