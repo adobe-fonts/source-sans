@@ -536,14 +536,14 @@ feature ccmp { # Glyph Composition / Decomposition
 
 #--------------------------------------
 #OK
-feature ss20 { # Stylistic Set 20 (Accented Greek Small Capitals)
-	featureNames {
-		name "Accented Greek Small Capitals"; # Windows English
-		name 1 0 0 "Accented Greek Small Capitals"; # Mac English
-	};
-
-#	sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_TONOS;
-
+#feature ss20 { # Stylistic Set 20 (Accented Greek Small Capitals)
+#	featureNames {
+#		name "Accented Greek Small Capitals"; # Windows English
+#		name 1 0 0 "Accented Greek Small Capitals"; # Mac English
+#	};
+#
+##	sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_TONOS;
+#
 	lookup GREEK_SMALLCAPS_MONO {
 		sub @LETTERS_MINISCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
 		sub @LETTERS_MINISCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
@@ -567,8 +567,8 @@ feature ss20 { # Stylistic Set 20 (Accented Greek Small Capitals)
 	sub [iotadieresisgrave iotadieresisacute iotadieresistilde] by Iotadieresis.sc;
 	sub [upsilondieresisgrave upsilondieresisacute upsilondieresistilde] by Upsilondieresis.sc;
 	} GREEK_SMALLCAPS_POLY;
-
-} ss20;
+#
+#} ss20;
 
 
 #--------------------------------------
@@ -839,27 +839,27 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 
 
 #--------------------------------------
-feature ss06 { # First alternate Zhe/Ka
+#feature ss06 { # First alternate Zhe/Ka
 #	featureNames {
 #		name "Alternate g"; # Windows English
 #		name 1 0 0 "Alternate g"; # Mac English
 #	};
 	
-		sub [Zhe Ka zhe ka] by [Zhe.a Ka.a zhe.a ka.a];
+#		sub [Zhe Ka zhe ka] by [Zhe.a Ka.a zhe.a ka.a];
 
-} ss06;
+#} ss06;
 
 
 #--------------------------------------
-feature ss07 { # Second alternate Zhe/Ka
+#feature ss07 { # Second alternate Zhe/Ka
 #	featureNames {
 #		name "Alternate g"; # Windows English
 #		name 1 0 0 "Alternate g"; # Mac English
 #	};
 	
-		sub [Zhe Ka zhe ka] by [Zhe.b Ka.b zhe.b ka.b];
+#		sub [Zhe Ka zhe ka] by [Zhe.b Ka.b zhe.b ka.b];
 
-} ss07;
+#} ss07;
 
 
 #--------------------------------------
@@ -869,6 +869,11 @@ feature salt { # Stylistic Alternates
 	lookup I_ALTS;
 	lookup L_ALTS;
 	lookup ENG_SAMI;
+	lookup BETA_ALT;
+	lookup THETA_ALT;
+	lookup PHI_ALT;
+	lookup IOTA_ALTS_1;
+	lookup IOTA_ALTS_2;
 	sub [zero.0 zero.0p] by [zero.0s zero.0ps];
 } salt;
 
