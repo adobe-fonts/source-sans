@@ -175,14 +175,17 @@ lookup DECOMPOSITION {
 		sub ocircumflex by o circumflexcmb;
 		sub Omacron by O macroncmb;
 		sub omacron by o macroncmb;
+		sub Yi by Iukran dieresiscmb;
+		sub yi by iukran dieresiscmb;
 } DECOMPOSITION;
 
 feature ccmp { # Glyph Composition / Decomposition
 
 	lookup GLYPH_DECOMPOSITION_CONTEXTUAL_2 {
 		#decomposes accented forms when followed by comining accent
-		sub [Ecircumflex ecircumflex Ocircumflex ocircumflex]' lookup DECOMPOSITION brevecmb; #Jarai language
-		sub [Emacron emacron Omacron omacron]' lookup DECOMPOSITION acutecmb; #Greek transliteration
+		sub [Ecircumflex ecircumflex Ocircumflex ocircumflex]' lookup DECOMPOSITION brevecmb; # Jarai language
+		sub [Emacron emacron Omacron omacron]' lookup DECOMPOSITION acutecmb; # Greek transliteration
+		sub [Yi yi]' lookup DECOMPOSITION acutecmb; # Cyrillic stressed notation
 	} GLYPH_DECOMPOSITION_CONTEXTUAL_2;
 
 	lookup GLYPH_COMPOSITION_CONTEXTUAL {
