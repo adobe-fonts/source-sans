@@ -34,16 +34,16 @@
 @LETTERS_SMALLCAP_GREEK_DIERESIS = [Iotadieresis.sc Upsilondieresis.sc];
 @LETTERS_SMALLCAP_GREEK_ALL = [@LETTERS_SMALLCAP_GREEK_BASIC @LETTERS_SMALLCAP_GREEK_DIERESIS]; #@LETTERS_SMALLCAP_GREEK_TONOS 
 
-@LETTERS_MAJUSCULE_CYRILLIC_BASIC = [Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup];
-@LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [Ishort Iegrave Io Dje Gje Yi Kje Igravecyr Ushort];
+@LETTERS_MAJUSCULE_CYRILLIC_BASIC = [Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup Ghestroke Zhedescender Zedescender Kadescender Kabashkir Endescender Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Aie Schwacyr Obarcyr];
+@LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [Ishort Iegrave Io Dje Gje Yi Kje Igravecyr Ushort Zhebreve Abrevecyr Iebreve Imacroncyr Odieresiscyr Umacroncyr Uacutedblcyr];
 @LETTERS_MAJUSCULE_CYRILLIC_ALL = [@LETTERS_MAJUSCULE_CYRILLIC_BASIC @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED];
 
-@LETTERS_MINISCULE_CYRILLIC_BASIC = [acyr be ve ghe de ie zhe ze icyr ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ieukran dze iukran je lje nje tshe dzhe yat fita izhitsa gheup];
-@LETTERS_MINISCULE_CYRILLIC_ACCENTED = [ishort iegrave io dje gje yi kje igravecyr ushort];
+@LETTERS_MINISCULE_CYRILLIC_BASIC = [acyr be ve ghe de ie zhe ze icyr ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ieukran dze iukran je lje nje tshe dzhe yat fita izhitsa gheup ghestroke zhedescender zedescender kadescender kabashkir endescender esdescender ustraight ustraightstroke hadescender chedescender shha palochka aie schwacyr obarcyr];
+@LETTERS_MINISCULE_CYRILLIC_ACCENTED = [ishort iegrave io dje gje yi kje igravecyr ushort zhebreve abrevecyr iebreve imacroncyr odieresiscyr umacroncyr uacutedblcyr];
 @LETTERS_MINISCULE_CYRILLIC_ALL = [@LETTERS_MINISCULE_CYRILLIC_BASIC @LETTERS_MINISCULE_CYRILLIC_ACCENTED];
 
-@LETTERS_SMALLCAP_CYRILLIC_BASIC = [Acyr.sc Be.sc Ve.sc Ghe.sc De.sc Ie.sc Zhe.sc Ze.sc Icyr.sc Ka.sc El.sc Em.sc En.sc Ocyr.sc Pe.sc Er.sc Es.sc Te.sc Ucyr.sc Ef.sc Ha.sc Tse.sc Che.sc Sha.sc Shcha.sc Hard.sc Yeru.sc Soft.sc Ecyr.sc Yu.sc Ya.sc Ieukran.sc Dze.sc Iukran.sc Je.sc Lje.sc Nje.sc Tshe.sc Dzhe.sc Yat.sc Fita.sc Izhitsa.sc Gheup.sc];
-@LETTERS_SMALLCAP_CYRILLIC_ACCENTED = [Ishort.sc Iegrave.sc Io.sc Dje.sc Gje.sc Yi.sc Kje.sc Igravecyr.sc Ushort.sc];
+@LETTERS_SMALLCAP_CYRILLIC_BASIC = [Acyr.sc Be.sc Ve.sc Ghe.sc De.sc Ie.sc Zhe.sc Ze.sc Icyr.sc Ka.sc El.sc Em.sc En.sc Ocyr.sc Pe.sc Er.sc Es.sc Te.sc Ucyr.sc Ef.sc Ha.sc Tse.sc Che.sc Sha.sc Shcha.sc Hard.sc Yeru.sc Soft.sc Ecyr.sc Yu.sc Ya.sc Ieukran.sc Dze.sc Iukran.sc Je.sc Lje.sc Nje.sc Tshe.sc Dzhe.sc Yat.sc Fita.sc Izhitsa.sc Gheup.sc Ghestroke.sc Zhedescender.sc Zedescender.sc Kadescender.sc Kabashkir.sc Endescender.sc Esdescender.sc Ustraight.sc Ustraightstroke.sc Hadescender.sc Chedescender.sc Shha.sc Palochka.sc Aie.sc Schwacyr.sc Obarcyr.sc];
+@LETTERS_SMALLCAP_CYRILLIC_ACCENTED = [Ishort.sc Iegrave.sc Io.sc Dje.sc Gje.sc Yi.sc Kje.sc Igravecyr.sc Ushort.sc Zhebreve.sc Abrevecyr.sc Iebreve.sc Imacroncyr.sc Odieresiscyr.sc Umacroncyr.sc Uacutedblcyr.sc];
 @LETTERS_SMALLCAP_CYRILLIC_ALL = [@LETTERS_SMALLCAP_CYRILLIC_BASIC @LETTERS_SMALLCAP_CYRILLIC_ACCENTED];
 
 @LETTERS_MAJUSCULE_ALL = [@LETTERS_MAJUSCULE_LATIN_ALL @LETTERS_MAJUSCULE_GREEK_ALL @LETTERS_MAJUSCULE_CYRILLIC_ALL];
@@ -175,8 +175,8 @@ lookup DECOMPOSITION {
 		sub ocircumflex by o circumflexcmb;
 		sub Omacron by O macroncmb;
 		sub omacron by o macroncmb;
-		sub Yi by Iukran dieresiscmb;
-		sub yi by iukran dieresiscmb;
+		sub Yi by I dieresiscmb;
+		sub yi by dotlessi dieresiscmb;
 } DECOMPOSITION;
 
 feature ccmp { # Glyph Composition / Decomposition
@@ -625,6 +625,7 @@ feature smcp { #LC-->SC
 #	sub [alphalenis alphaasper alphagrave alphaacute alphalenisgrave alphaaspergrave alphalenisacute alphaasperacute alphalenistilde alphaaspertilde alphabreve alphamacron alphatilde] by Alpha.sc;
 
 	sub @LETTERS_MINISCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
+	sub be.srb by Be.sc;
 
 	lookup NUMERALS_SMALLCAP;
 	

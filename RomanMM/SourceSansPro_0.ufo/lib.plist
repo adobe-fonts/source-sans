@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>com.typemytype.robofont.compileSettings.autohint</key>
+	<true/>
+	<key>com.typemytype.robofont.compileSettings.checkOutlines</key>
+	<true/>
+	<key>com.typemytype.robofont.compileSettings.decompose</key>
+	<true/>
+	<key>com.typemytype.robofont.compileSettings.generateFormat</key>
+	<integer>0</integer>
+	<key>com.typemytype.robofont.compileSettings.releaseMode</key>
+	<false/>
 	<key>com.typemytype.robofont.foreground.layerStrokeColor</key>
 	<array>
 		<real>0.5</real>
@@ -9,6 +19,8 @@
 		<real>0.5</real>
 		<real>0.7</real>
 	</array>
+	<key>com.typemytype.robofont.italicSlantOffset</key>
+	<integer>0</integer>
 	<key>com.typemytype.robofont.layerOrder</key>
 	<array>
 		<string>mask</string>
@@ -22,6 +34,8 @@
 	</array>
 	<key>com.typemytype.robofont.segmentType</key>
 	<string>curve</string>
+	<key>com.typemytype.robofont.shouldAddPointsInSplineConversion</key>
+	<true/>
 	<key>com.typemytype.robofont.sort</key>
 	<array>
 		<dict>
@@ -1193,12 +1207,14 @@
 				<string>sfthyphen</string>
 				<string>endash</string>
 				<string>emdash</string>
+				<string>twoemdash</string>
+				<string>threeemdash</string>
 				<string>figuredash</string>
 				<string>horizontalbar</string>
 				<string>periodcentered</string>
 				<string>bullet</string>
 				<string>underscore</string>
-				<string>overscore</string>
+				<string>overline</string>
 				<string>undertie</string>
 				<string>parenleft</string>
 				<string>parenright</string>
@@ -1584,6 +1600,12 @@
 				<string>exclamdown.sc</string>
 				<string>question.sc</string>
 				<string>questiondown.sc</string>
+				<string>quotesingle.sc</string>
+				<string>quotedbl.sc</string>
+				<string>quoteleft.sc</string>
+				<string>quoteright.sc</string>
+				<string>quotedblleft.sc</string>
+				<string>quotedblright.sc</string>
 				<string>hyphen.sc</string>
 				<string>endash.sc</string>
 				<string>emdash.sc</string>
@@ -1957,17 +1979,10 @@
 				<string>figurespace</string>
 				<string>space.frac</string>
 				<string>nbspace.frac</string>
+				<string>NNBS</string>
 				<string>ZWNBS</string>
 				<string>fi</string>
 				<string>fl</string>
-				<string>threeemdash</string>
-				<string>twoemdash</string>
-				<string>quoteright.sc</string>
-				<string>quotedblright.sc</string>
-				<string>quotedblleft.sc</string>
-				<string>quoteleft.sc</string>
-				<string>quotedbl.sc</string>
-				<string>quotesingle.sc</string>
 			</array>
 			<key>type</key>
 			<string>glyphList</string>
@@ -6007,12 +6022,14 @@
 		<string>sfthyphen</string>
 		<string>endash</string>
 		<string>emdash</string>
+		<string>twoemdash</string>
+		<string>threeemdash</string>
 		<string>figuredash</string>
 		<string>horizontalbar</string>
 		<string>periodcentered</string>
 		<string>bullet</string>
 		<string>underscore</string>
-		<string>overscore</string>
+		<string>overline</string>
 		<string>undertie</string>
 		<string>parenleft</string>
 		<string>parenright</string>
@@ -6398,6 +6415,12 @@
 		<string>exclamdown.sc</string>
 		<string>question.sc</string>
 		<string>questiondown.sc</string>
+		<string>quotesingle.sc</string>
+		<string>quotedbl.sc</string>
+		<string>quoteleft.sc</string>
+		<string>quoteright.sc</string>
+		<string>quotedblleft.sc</string>
+		<string>quotedblright.sc</string>
 		<string>hyphen.sc</string>
 		<string>endash.sc</string>
 		<string>emdash.sc</string>
@@ -6771,17 +6794,10 @@
 		<string>figurespace</string>
 		<string>space.frac</string>
 		<string>nbspace.frac</string>
+		<string>NNBS</string>
 		<string>ZWNBS</string>
 		<string>fi</string>
 		<string>fl</string>
-		<string>threeemdash</string>
-		<string>twoemdash</string>
-		<string>quoteright.sc</string>
-		<string>quotedblright.sc</string>
-		<string>quotedblleft.sc</string>
-		<string>quoteleft.sc</string>
-		<string>quotedbl.sc</string>
-		<string>quotesingle.sc</string>
 	</array>
 </dict>
 </plist>
