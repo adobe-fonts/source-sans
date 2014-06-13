@@ -3,20 +3,20 @@ table head {
    FontRevision 1.050;
 } head;
 
-include (../features.family)
+include (../family.fea)
 
-include (features.markclasses);
+include (mark.feaclasses);
 
 feature mark {
-	include (features.mark)
+	include (mark.fea)
 } mark;
 
 feature mkmk {
-	include (features.mkmk);
+	include (mkmk.fea);
 } mkmk;
 
 feature kern {
-	include (features.kern)
+	include (kern.fea)
 } kern;
 
 table OS/2 {
