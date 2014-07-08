@@ -1,0 +1,212 @@
+# Created: Sun Jun 15 22:27:03 2014
+# PS Name: SourceSansPro-LightIt
+# MM Inst: 100 : SourceSansPro-Italic_0.ufo / SourceSansPro-Italic_1.ufo
+# exported from Defcon
+
+@mGC_aboveLC_105_504 = [gravecmb acutecmb circumflexcmb tildecmb macroncmb brevecmb dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb dblgravecmb commaturnedabovecmb commaabovecmb dieresismacron dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexgrave circumflexhoi circumflextilde breveacute brevegrave brevehoi brevetilde];
+@mGC_aboveUC_136_682 = [gravecmb.cap acutecmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap dblgravecmb.cap dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumflexacute.cap circumflexgrave.cap circumflexhoi.cap circumflextilde.cap breveacute.cap brevegrave.cap brevehoi.cap brevetilde.cap];
+@mGC_baseLC_0_0 = [cedillacmb cedillacmb.cap];
+@mGC_belowLC_n6_n30 = [dotbelowcmb dieresisbelowcmb commabelowcmb brevebelowcmb macronbelowcmb];
+
+markClass @mGC_aboveLC_105_504 <anchor 105 504> @MC_aboveLC;
+markClass @mGC_aboveUC_136_682 <anchor 136 682> @MC_aboveUC;
+markClass @mGC_baseLC_0_0 <anchor 0 0> @MC_baseLC;
+markClass @mGC_belowLC_n6_n30 <anchor -6 -30> @MC_belowLC;
+markClass circumflexbreve <anchor 67 504> @MC_aboveLC;
+markClass circumflexbreve.cap <anchor 69 682> @MC_aboveUC;
+markClass circumflexcmb.cap <anchor 136 683> @MC_aboveUC;
+markClass commabelowcmb.alt <anchor 100 504> @MC_aboveLC;
+markClass horncmb <anchor 95 480> @MC_hornLC;
+markClass ogonekcmb <anchor 0 0> @MC_ogonekLC;
+markClass ogonekcmb.cap <anchor 0 0> @MC_ogonekUC;
+
+lookup MARK_BASE_aboveLC {
+	@bGC_a.alt_aboveLC = [a.alt aogonek.alt];
+	@bGC_b_aboveLC = [b h thorn];
+	@bGC_e_aboveLC = [e eogonek];
+	@bGC_g_aboveLC = [g aogonek];
+	@bGC_i_aboveLC = [i j];
+	@bGC_iogonek.d_aboveLC = [iogonek.d dotlessi];
+	@bGC_l_aboveLC = [l l.alt];
+	@bGC_o_aboveLC = [o oslash oogonek];
+	@bGC_u_aboveLC = [u uogonek uhorn];
+	pos base @bGC_a.alt_aboveLC <anchor 294 504> mark @MC_aboveLC;
+	pos base @bGC_b_aboveLC <anchor 211 730> mark @MC_aboveLC;
+	pos base @bGC_e_aboveLC <anchor 297 504> mark @MC_aboveLC;
+	pos base @bGC_g_aboveLC <anchor 313 504> mark @MC_aboveLC;
+	pos base @bGC_i_aboveLC <anchor 202 683> mark @MC_aboveLC;
+	pos base @bGC_iogonek.d_aboveLC <anchor 169 504> mark @MC_aboveLC;
+	pos base @bGC_l_aboveLC <anchor 209 730> mark @MC_aboveLC;
+	pos base @bGC_o_aboveLC <anchor 320 504> mark @MC_aboveLC;
+	pos base @bGC_u_aboveLC <anchor 310 504> mark @MC_aboveLC;
+	pos base a <anchor 316 504> mark @MC_aboveLC;
+	pos base c <anchor 304 504> mark @MC_aboveLC;
+	pos base d <anchor 481 730> mark @MC_aboveLC;
+	pos base dotlessj <anchor 164 504> mark @MC_aboveLC;
+	pos base f <anchor 310 740> mark @MC_aboveLC;
+	pos base g.alt <anchor 278 504> mark @MC_aboveLC;
+	pos base k <anchor 213 730> mark @MC_aboveLC;
+	pos base m <anchor 464 504> mark @MC_aboveLC;
+	pos base n <anchor 325 504> mark @MC_aboveLC;
+	pos base oe <anchor 458 502> mark @MC_aboveLC;
+	pos base ohorn <anchor 318 504> mark @MC_aboveLC;
+	pos base p <anchor 334 504> mark @MC_aboveLC;
+	pos base q <anchor 321 504> mark @MC_aboveLC;
+	pos base r <anchor 241 504> mark @MC_aboveLC;
+	pos base s <anchor 252 504> mark @MC_aboveLC;
+	pos base t <anchor 200 637> mark @MC_aboveLC;
+	pos base v <anchor 272 504> mark @MC_aboveLC;
+	pos base w <anchor 397 504> mark @MC_aboveLC;
+	pos base x <anchor 259 506> mark @MC_aboveLC;
+	pos base y <anchor 254 504> mark @MC_aboveLC;
+	pos base z <anchor 265 504> mark @MC_aboveLC;
+} MARK_BASE_aboveLC;
+
+
+lookup MARK_BASE_aboveUC {
+	@bGC_A_aboveUC = [A Aogonek];
+	@bGC_C_aboveUC = [C G];
+	@bGC_E_aboveUC = [E Eogonek];
+	@bGC_I.alt_aboveUC = [I.alt Iogonek.alt];
+	@bGC_I_aboveUC = [I Iogonek];
+	@bGC_O_aboveUC = [O Q Oslash Oogonek];
+	@bGC_U_aboveUC = [U Uogonek];
+	pos base @bGC_A_aboveUC <anchor 348 682> mark @MC_aboveUC;
+	pos base @bGC_C_aboveUC <anchor 410 682> mark @MC_aboveUC;
+	pos base @bGC_E_aboveUC <anchor 364 682> mark @MC_aboveUC;
+	pos base @bGC_I.alt_aboveUC <anchor 244 682> mark @MC_aboveUC;
+	pos base @bGC_I_aboveUC <anchor 207 682> mark @MC_aboveUC;
+	pos base @bGC_O_aboveUC <anchor 409 682> mark @MC_aboveUC;
+	pos base @bGC_U_aboveUC <anchor 397 682> mark @MC_aboveUC;
+	pos base AE <anchor 540 694> mark @MC_aboveUC;
+	pos base B <anchor 329 682> mark @MC_aboveUC;
+	pos base D <anchor 374 682> mark @MC_aboveUC;
+	pos base F <anchor 367 682> mark @MC_aboveUC;
+	pos base H <anchor 391 682> mark @MC_aboveUC;
+	pos base J <anchor 424 682> mark @MC_aboveUC;
+	pos base K <anchor 390 682> mark @MC_aboveUC;
+	pos base L <anchor 208 682> mark @MC_aboveUC;
+	pos base M <anchor 423 682> mark @MC_aboveUC;
+	pos base N <anchor 401 682> mark @MC_aboveUC;
+	pos base OE <anchor 580 682> mark @MC_aboveUC;
+	pos base Ohorn <anchor 407 682> mark @MC_aboveUC;
+	pos base P <anchor 376 682> mark @MC_aboveUC;
+	pos base R <anchor 368 682> mark @MC_aboveUC;
+	pos base S <anchor 354 683> mark @MC_aboveUC;
+	pos base Schwa <anchor 449 682> mark @MC_aboveUC;
+	pos base T <anchor 341 682> mark @MC_aboveUC;
+	pos base Uhorn <anchor 399 682> mark @MC_aboveUC;
+	pos base V <anchor 332 682> mark @MC_aboveUC;
+	pos base W <anchor 464 682> mark @MC_aboveUC;
+	pos base X <anchor 328 682> mark @MC_aboveUC;
+	pos base Y <anchor 309 682> mark @MC_aboveUC;
+	pos base Z <anchor 355 682> mark @MC_aboveUC;
+} MARK_BASE_aboveUC;
+
+
+lookup MARK_BASE_baseLC {
+	pos base C <anchor 276 0> mark @MC_baseLC;
+	pos base S <anchor 222 0> mark @MC_baseLC;
+	pos base T <anchor 210 0> mark @MC_baseLC;
+	pos base c <anchor 197 0> mark @MC_baseLC;
+	pos base s <anchor 166 0> mark @MC_baseLC;
+	pos base t <anchor 161 0> mark @MC_baseLC;
+} MARK_BASE_baseLC;
+
+
+lookup MARK_BASE_belowLC {
+	@bGC_L_belowLC = [L n];
+	@bGC_O_belowLC = [O Ohorn];
+	@bGC_b_belowLC = [b thorn];
+	@bGC_i_belowLC = [i r];
+	@bGC_l_belowLC = [l l.alt];
+	@bGC_o_belowLC = [o ohorn];
+	@bGC_u_belowLC = [u uhorn];
+	pos base @bGC_L_belowLC <anchor 220 -22> mark @MC_belowLC;
+	pos base @bGC_O_belowLC <anchor 273 -22> mark @MC_belowLC;
+	pos base @bGC_b_belowLC <anchor 228 -22> mark @MC_belowLC;
+	pos base @bGC_i_belowLC <anchor 67 -22> mark @MC_belowLC;
+	pos base @bGC_l_belowLC <anchor 63 -22> mark @MC_belowLC;
+	pos base @bGC_o_belowLC <anchor 189 -22> mark @MC_belowLC;
+	pos base @bGC_u_belowLC <anchor 241 -23> mark @MC_belowLC;
+	pos base A <anchor 215 -22> mark @MC_belowLC;
+	pos base B <anchor 243 -22> mark @MC_belowLC;
+	pos base C <anchor 270 -22> mark @MC_belowLC;
+	pos base D <anchor 247 -22> mark @MC_belowLC;
+	pos base E <anchor 236 -22> mark @MC_belowLC;
+	pos base F <anchor 70 -22> mark @MC_belowLC;
+	pos base G <anchor 290 -22> mark @MC_belowLC;
+	pos base H <anchor 268 -22> mark @MC_belowLC;
+	pos base I <anchor 67 -29> mark @MC_belowLC;
+	pos base I.alt <anchor 105 -29> mark @MC_belowLC;
+	pos base J <anchor 130 -30> mark @MC_belowLC;
+	pos base K <anchor 266 -22> mark @MC_belowLC;
+	pos base M <anchor 303 -30> mark @MC_belowLC;
+	pos base N <anchor 265 -30> mark @MC_belowLC;
+	pos base P <anchor 67 -30> mark @MC_belowLC;
+	pos base R <anchor 249 -30> mark @MC_belowLC;
+	pos base S <anchor 216 -30> mark @MC_belowLC;
+	pos base Schwa <anchor 288 -22> mark @MC_belowLC;
+	pos base T <anchor 204 -22> mark @MC_belowLC;
+	pos base U <anchor 252 -22> mark @MC_belowLC;
+	pos base Uhorn <anchor 258 -22> mark @MC_belowLC;
+	pos base V <anchor 192 -30> mark @MC_belowLC;
+	pos base W <anchor 317 -30> mark @MC_belowLC;
+	pos base X <anchor 259 -30> mark @MC_belowLC;
+	pos base Y <anchor 174 -30> mark @MC_belowLC;
+	pos base Z <anchor 209 -30> mark @MC_belowLC;
+	pos base a <anchor 227 -22> mark @MC_belowLC;
+	pos base a.alt <anchor 197 -22> mark @MC_belowLC;
+	pos base c <anchor 217 -22> mark @MC_belowLC;
+	pos base d <anchor 224 -22> mark @MC_belowLC;
+	pos base dotlessi <anchor 69 -22> mark @MC_belowLC;
+	pos base e <anchor 213 -22> mark @MC_belowLC;
+	pos base f <anchor 75 -22> mark @MC_belowLC;
+	pos base g <anchor 161 -251> mark @MC_belowLC;
+	pos base g.alt <anchor 158 -230> mark @MC_belowLC;
+	pos base h <anchor 222 -22> mark @MC_belowLC;
+	pos base j <anchor -40 -231> mark @MC_belowLC;
+	pos base k <anchor 212 -22> mark @MC_belowLC;
+	pos base m <anchor 355 -22> mark @MC_belowLC;
+	pos base p <anchor 22 -218> mark @MC_belowLC;
+	pos base q <anchor 333 -218> mark @MC_belowLC;
+	pos base s <anchor 168 -22> mark @MC_belowLC;
+	pos base t <anchor 152 -22> mark @MC_belowLC;
+	pos base v <anchor 172 -22> mark @MC_belowLC;
+	pos base w <anchor 306 -22> mark @MC_belowLC;
+	pos base x <anchor 159 -22> mark @MC_belowLC;
+	pos base y <anchor 93 -242> mark @MC_belowLC;
+	pos base z <anchor 167 -22> mark @MC_belowLC;
+} MARK_BASE_belowLC;
+
+
+lookup MARK_BASE_hornLC {
+	pos base O <anchor 502 649> mark @MC_hornLC;
+	pos base U <anchor 575 669> mark @MC_hornLC;
+	pos base o <anchor 393 480> mark @MC_hornLC;
+	pos base u <anchor 443 490> mark @MC_hornLC;
+} MARK_BASE_hornLC;
+
+
+lookup MARK_BASE_ogonekLC {
+	pos base a <anchor 336 0> mark @MC_ogonekLC;
+	pos base a.alt <anchor 302 0> mark @MC_ogonekLC;
+	pos base dotlessi <anchor 60 0> mark @MC_ogonekLC;
+	pos base e <anchor 283 0> mark @MC_ogonekLC;
+	pos base i <anchor 48 0> mark @MC_ogonekLC;
+	pos base o <anchor 214 0> mark @MC_ogonekLC;
+	pos base u <anchor 327 0> mark @MC_ogonekLC;
+} MARK_BASE_ogonekLC;
+
+
+lookup MARK_BASE_ogonekUC {
+	pos base A <anchor 410 0> mark @MC_ogonekUC;
+	pos base E <anchor 332 0> mark @MC_ogonekUC;
+	pos base I <anchor 59 0> mark @MC_ogonekUC;
+	pos base I.alt <anchor 98 0> mark @MC_ogonekUC;
+	pos base O <anchor 279 0> mark @MC_ogonekUC;
+	pos base U <anchor 264 0> mark @MC_ogonekUC;
+} MARK_BASE_ogonekUC;
+
+
+

@@ -5,10 +5,10 @@ in user interface (UI) environments. In addition to a functional OpenType font, 
 source project provides all of the source files that were used to build this OpenType font
 by using the AFDKO makeotf tool.
 
-## Download font binaries (OTF and TTF files)
+## Download font binaries (OTF, TTF, WOFF and EOT files)
 
-The font binaries are not part of the repository. They can be
-[downloaded from SourceForge here](https://sourceforge.net/projects/sourcesans.adobe/files/).
+The font binaries are available in the [release branch](../../tree/release).
+They can also be downloaded from [SourceForge](https://sourceforge.net/projects/sourcesans.adobe/files/).
 
 ## Installation instructions
 
@@ -49,8 +49,8 @@ $ ./build.sh
 
 ## Getting Involved
 
-Send suggestions for changes to the Source Sans OpenType font project maintainer,
-phunt@adobe.com, for consideration.
+Send suggestions for changes to the Source Sans OpenType font project maintainer, [Paul D. Hunt](mailto:opensourcefonts@adobe.com?subject=[GitHub] Source Sans Pro), for consideration.
 
+## Further information
 
-
+For information about the design and background of Source Sans, please refer to the [official font readme file](http://htmlpreview.github.io/?https://github.com/adobe/source-sans-pro/blob/master/SourceSansProReadMe.html).
