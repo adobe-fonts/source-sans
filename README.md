@@ -53,4 +53,4 @@ Send suggestions for changes to the Source Sans OpenType font project maintainer
 
 ## Further information
 
-For information about the design and background of Source Sans, please refer to the [official font readme file](http://htmlpreview.github.io/?https://github.com/adobe-fonts/source-sans-pro/blob/master/SourceSansProReadMe.html).
+For information about the design and background of Source Sans, please refer to the [official font readme file](https://rawgit.com/adobe-fonts/source-sans-pro/master/SourceSansProReadMe.html).
