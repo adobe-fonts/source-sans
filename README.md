@@ -5,7 +5,7 @@ in user interface (UI) environments. In addition to a functional OpenType font, 
 source project provides all of the source files that were used to build this OpenType font
 by using the AFDKO makeotf tool.
 
-## Download the fonts (OTF, TTF, WOFF, EOT)
+## Download the fonts (OTF, TTF, WOFF, WOFF2, EOT)
 
 * [Latest release](../../releases/latest)
 * [All releases](../../releases)
