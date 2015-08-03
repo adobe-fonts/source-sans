@@ -5,7 +5,7 @@ in user interface (UI) environments. In addition to a functional OpenType font, 
 source project provides all of the source files that were used to build this OpenType font
 by using the AFDKO makeotf tool.
 
-## Installation instructions
+## Font installation instructions
 
 * [Mac OS X](http://support.apple.com/kb/HT2509)
 * [Windows](http://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
@@ -17,4 +17,4 @@ Send suggestions for changes to the Source Sans OpenType font project maintainer
 
 ## Further information
 
-For information about the design and background of Source Sans, please refer to the [official font readme file](http://htmlpreview.github.io/?https://github.com/adobe-fonts/source-sans-pro/blob/master/SourceSansProReadMe.html).
+For information about the design and background of Source Sans, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-sans-pro-readme.html).
