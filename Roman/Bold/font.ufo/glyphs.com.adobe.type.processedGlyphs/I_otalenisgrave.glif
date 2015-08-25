@@ -3,7 +3,13 @@
   <advance width="627" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="245" y="440" />
+      <point name="hintSet0000" type="line" x="403" y="0" />
+      <point type="line" x="550" y="0" />
+      <point name="hintSet0002" type="line" x="550" y="652" />
+      <point type="line" x="403" y="652" />
+    </contour>
+    <contour>
+      <point type="line" x="245" y="440" />
       <point type="line" x="338" y="457" />
       <point type="line" x="310" y="670" />
       <point type="line" x="185" y="652" />
@@ -13,10 +19,10 @@
       <point x="94" y="448" />
       <point x="156" y="485" />
       <point type="curve" x="156" y="556" />
-      <point x="156" y="620" />
+      <point name="hintSet0010" x="156" y="620" />
       <point x="109" y="660" />
       <point type="curve" x="8" y="664" />
-      <point name="hintSet0007" type="line" x="-9" y="590" />
+      <point name="hintSet0011" type="line" x="-9" y="590" />
       <point x="40" y="585" />
       <point x="59" y="565" />
       <point type="curve" x="59" y="541" />
@@ -24,33 +30,39 @@
       <point x="43" y="505" />
       <point type="curve" x="25" y="495" />
     </contour>
-    <contour>
-      <point type="line" x="403" y="0" />
-      <point type="line" x="550" y="0" />
-      <point name="hintSet0012" type="line" x="550" y="652" />
-      <point type="line" x="403" y="652" />
-    </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.3</real>
+        <integer>1</integer>
+        <real>0.5470588235</real>
+        <integer>1</integer>
+      </array>
       <key>com.adobe.type.autohint</key>
       <data>
-        <hintSetList id="859319014f7faffb49fe7612a7c8f2365cdbce65f7050090657b73bd411583486bb757e6521a7943cbd667a6afaaf97c498c6fed073d708bfc39772ff73eb087">
+        <hintSetList id="26ea31d8ce8c95029747721fcbc450b367579d5198c14cad13b5ef3e98ebe0b531f02d49faa3eb9c027b1273e2e97dd1c910f037c2a58557828a51688dfce3d7">
           <hintset pointTag="hintSet0000">
+            <hstem pos="21" width="-21" />
+            <hstem pos="664" width="-20" />
+            <vstem pos="403" width="147" />
+          </hintset>
+          <hintset pointTag="hintSet0002">
+            <hstem pos="21" width="-21" />
+            <hstem pos="652" width="-20" />
+            <vstem pos="59" width="97" />
+            <vstem pos="403" width="147" />
+          </hintset>
+          <hintset pointTag="hintSet0010">
             <hstem pos="21" width="-21" />
             <hstem pos="664" width="-20" />
             <vstem pos="59" width="97" />
             <vstem pos="403" width="147" />
           </hintset>
-          <hintset pointTag="hintSet0007">
+          <hintset pointTag="hintSet0011">
             <hstem pos="21" width="-21" />
             <hstem pos="590" width="74" />
-            <vstem pos="59" width="97" />
-            <vstem pos="403" width="147" />
-          </hintset>
-          <hintset pointTag="hintSet0012">
-            <hstem pos="21" width="-21" />
-            <hstem pos="652" width="-20" />
             <vstem pos="59" width="97" />
             <vstem pos="403" width="147" />
           </hintset>
