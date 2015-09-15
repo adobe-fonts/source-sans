@@ -3,7 +3,21 @@
   <advance width="510" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="curve" x="185" y="728" />
+      <point name="hintSet0000" type="line" x="100" y="0" />
+      <point type="line" x="464" y="0" />
+      <point type="line" x="464" y="28" />
+      <point type="line" x="132" y="28" />
+      <point type="line" x="132" y="338" />
+      <point type="line" x="402" y="338" />
+      <point type="line" x="402" y="366" />
+      <point type="line" x="132" y="366" />
+      <point type="line" x="132" y="632" />
+      <point type="line" x="454" y="632" />
+      <point type="line" x="454" y="660" />
+      <point type="line" x="100" y="660" />
+    </contour>
+    <contour>
+      <point name="hintSet0012" type="curve" x="185" y="728" />
       <point x="203" y="728" />
       <point x="217" y="740" />
       <point type="curve" x="217" y="760" />
@@ -30,39 +44,32 @@
       <point x="345" y="740" />
       <point x="359" y="728" />
     </contour>
-    <contour>
-      <point name="hintSet0010" type="line" x="100" y="0" />
-      <point type="line" x="464" y="0" />
-      <point type="line" x="464" y="28" />
-      <point type="line" x="132" y="28" />
-      <point type="line" x="132" y="338" />
-      <point type="line" x="402" y="338" />
-      <point type="line" x="402" y="366" />
-      <point type="line" x="132" y="366" />
-      <point type="line" x="132" y="632" />
-      <point type="line" x="454" y="632" />
-      <point type="line" x="454" y="660" />
-      <point type="line" x="100" y="660" />
-    </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.typemytype.robofont.mark</key>
+      <array>
+        <real>0.3</real>
+        <integer>1</integer>
+        <real>0.5470588235</real>
+        <integer>1</integer>
+      </array>
       <key>com.adobe.type.autohint</key>
       <data>
-        <hintSetList id="e4613239744bdf5f9a34d0a60807f0bdd65622b9ba4ed56362c07fea8eaf2638d2dd3dfb51edf09527c21d979bac0c41fd406abbb70af56a7d0047d933df69db">
+        <hintSetList id="bf065fc069cdf9fa8b69b864d5ce9e5fc3b25fa1fa3d07e28e436660a450dd74da8bd09d8888799787fc961c1fcf9d624e73bff09139705e060067b8252f10be">
           <hintset pointTag="hintSet0000">
+            <hstem pos="0" width="28" />
+            <hstem pos="338" width="28" />
+            <hstem pos="632" width="28" />
+            <vstem pos="100" width="32" />
+          </hintset>
+          <hintset pointTag="hintSet0012">
             <hstem pos="0" width="28" />
             <hstem pos="338" width="28" />
             <hstem pos="632" width="160" />
             <vstem pos="100" width="32" />
             <vstem pos="153" width="64" />
             <vstem pos="345" width="64" />
-          </hintset>
-          <hintset pointTag="hintSet0010">
-            <hstem pos="0" width="28" />
-            <hstem pos="338" width="28" />
-            <hstem pos="632" width="28" />
-            <vstem pos="100" width="32" />
           </hintset>
         </hintSetList>
       </data>
