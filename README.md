@@ -13,7 +13,7 @@ by using the AFDKO makeotf tool.
 ## Font installation instructions
 
 * [Mac OS X](http://support.apple.com/kb/HT2509)
-* [Windows](http://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
+* [Windows](https://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx)
 * [Linux/Unix-based systems](https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116)
 
 ## Building the fonts from source
@@ -40,11 +40,17 @@ $ makeotf -r
 
 ### Building all fonts
 
-For convenience, a shell script named `build.sh` is provided in the root directory.
+For convenience, a shell script named **build** is provided in the root directory.
 It builds all OTFs and TTFs, and can be executed by typing:
 
 ```sh
 $ ./build.sh
+```
+
+or this on Windows:
+
+```sh
+> build.cmd
 ```
 
 ## Getting Involved
