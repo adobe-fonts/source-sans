@@ -1,4 +1,5 @@
 # Makefile for Source Sans Pro font project directory
+# See README for an overview of make commands
 
 family=SourceSansPro
 romanWeights=Black Bold ExtraLight Light Regular Semibold

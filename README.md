@@ -57,6 +57,51 @@ or this on Windows:
 > build.cmd
 ```
 
+### Building with `make`
+
+If you want to build directly from masters instead of the instances stored in
+the repository, or to avoid building all files repetitively, run:
+
+```sh
+$ make
+```
+
+and it will get everything up to date. To generate only the font.ufo instances
+from the masters, run:
+
+```sh
+$ make instances
+```
+
+_Note: because font.ufo instances are stored in the repository, you may have to
+delete them first from your working tree before building from masters; see
+below._
+
+To clean up `makeotf`'s defaults and other log files, run:
+
+```sh
+$ make clean
+```
+
+or to remove all build artefacts, including target font binaries:
+
+```sh
+$ make cleanall
+```
+
+Because font.ufo instances are committed into the repository, they are not
+removed on `make clean`. If that is necessary, run:
+
+```sh
+$ make cleaninstances
+```
+
+Note also that font.ttf instances stored in the repository are not generated
+entirely automatically. These TrueType versions of the instances are produced in
+a process that depends on manual workflow [described in detail by Frank
+Grießhammer][1]. Because of that, `make` will build the target TTFs only if it
+finds those files already in place.
+
 ## Getting Involved
 
 Send suggestions for changes to the Source Sans OpenType font project maintainer, [Paul D. Hunt](mailto:opensourcefonts@adobe.com?subject=[GitHub] Source Sans Pro), for consideration.
@@ -64,3 +109,6 @@ Send suggestions for changes to the Source Sans OpenType font project maintainer
 ## Further information
 
 For information about the design and background of Source Sans, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-sans-pro-readme.html).
+
+[1]: <https://github.com/adobe-type-tools/fontlab-scripts/tree/master/TrueType>
+
