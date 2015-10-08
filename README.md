@@ -99,8 +99,9 @@ $ make cleaninstances
 Note also that font.ttf instances stored in the repository are not generated
 entirely automatically. These TrueType versions of the instances are produced in
 a process that depends on manual workflow [described in detail by Frank
-Grießhammer][1]. Because of that, `make` will build the target TTFs only if it
-finds those files already in place.
+Grießhammer](https://github.com/adobe-type-tools/fontlab-scripts/tree/master/TrueType).
+Because of that, `make` will build the target TTFs only if it finds those files already
+in place.
 
 ## Getting Involved
 
@@ -109,6 +110,4 @@ Send suggestions for changes to the Source Sans OpenType font project maintainer
 ## Further information
 
 For information about the design and background of Source Sans, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-sans-pro-readme.html).
-
-[1]: <https://github.com/adobe-type-tools/fontlab-scripts/tree/master/TrueType>
 
