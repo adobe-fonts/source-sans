@@ -111,5 +111,5 @@ Send suggestions for changes to the Source Sans OpenType font project maintainer
 
 ## Further information
 
-For information about the design and background of Source Sans, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/source-sans-pro-readme.html).
+For information about the design and background of Source Sans, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/Source-Sans-Pro-Readme-file.html).
 
