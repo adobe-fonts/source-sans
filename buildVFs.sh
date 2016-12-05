@@ -1,0 +1,2 @@
+buildMasterOTFs RomanMasters/SourceSansPro.designspace
+buildCFF2VF RomanMasters/SourceSansPro.designspace  SourceSansPro-Variable.otf
