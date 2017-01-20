@@ -32,7 +32,7 @@
 @LETTERS_SMALLCAP_GREEK_NO_TONOS = [Alpha.sc Epsilon.sc Eta.sc Iota.sc Omicron.sc Upsilon.sc Omega.sc];
 #@LETTERS_SMALLCAP_GREEK_TONOS = [Alphatonos.sc Epsilontonos.sc Etatonos.sc Iotatonos.sc Omicrontonos.sc Upsilontonos.sc Omegatonos.sc];
 @LETTERS_SMALLCAP_GREEK_DIERESIS = [Iotadieresis.sc Upsilondieresis.sc];
-@LETTERS_SMALLCAP_GREEK_ALL = [@LETTERS_SMALLCAP_GREEK_BASIC @LETTERS_SMALLCAP_GREEK_DIERESIS]; #@LETTERS_SMALLCAP_GREEK_TONOS 
+@LETTERS_SMALLCAP_GREEK_ALL = [@LETTERS_SMALLCAP_GREEK_BASIC @LETTERS_SMALLCAP_GREEK_DIERESIS]; #@LETTERS_SMALLCAP_GREEK_TONOS
 
 @LETTERS_MAJUSCULE_CYRILLIC_BASIC = [Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup Ghestroke Zhedescender Zedescender Kadescender Kabashkir Endescender Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Aie Schwacyr Obarcyr];
 @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [Ishort Iegrave Io Dje Gje Yi Kje Igravecyr Ushort Zhebreve Abrevecyr Iebreve Imacroncyr Odieresiscyr Umacroncyr Uacutedblcyr];
@@ -142,7 +142,7 @@ feature locl { # Localized Forms
 
 		language CRT exclude_dflt;
 			lookup I_TURKISH;
-			
+
 		language NSM exclude_dflt;
 			lookup ENG_SAMI { # preferred Eng shape for Sami languages
 				sub Eng by Eng.alt;
@@ -150,13 +150,13 @@ feature locl { # Localized Forms
 
 		language SKS exclude_dflt;
 			lookup ENG_SAMI;
-			
+
 	script grek;
 		sub [acutecmb gravecmb commaturnedabovecmb commaabovecmb] by [tonoscmb variacmb aspercmb leniscmb]; # combining marks
 
 	script cyrl;
 		sub [brevecmb brevecmb.cap] by [brevecmb.cyr brevecmb.cyrcap]; # combining marks
-		
+
 		language SRB include_dflt;
 			lookup BE_LC_SRB {
 				sub be by be.srb;
@@ -582,10 +582,10 @@ feature c2sc { #UC-->SC
 	sub @LETTERS_MAJUSCULE_LATIN_ACCENTED by @LETTERS_SMALLCAP_LATIN_ACCENTED;
 	sub @LETTERS_MAJUSCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
 	sub [Idotaccent Germandbls] by [Idotaccent.sc Germandbls.sc];
-	
+
 	sub @LETTERS_MAJUSCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
 	sub @LETTERS_MAJUSCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
-	
+
 	sub [Alphatonos Alphalenis Alphaasper Alphagrave Alphaacute Alphalenisgrave Alphaaspergrave Alphalenisacute Alphaasperacute Alphalenistilde Alphaaspertilde Alphabreve Alphamacron] by Alpha.sc;
 	sub [Epsilontonos Epsilonlenis Epsilonasper Epsilongrave Epsilonacute Epsilonlenisgrave Epsilonaspergrave Epsilonlenisacute Epsilonasperacute] by Epsilon.sc;
 	sub [Etatonos Etalenis Etaasper Etagrave Etaacute Etalenisgrave Etaaspergrave Etalenisacute Etaasperacute Etalenistilde Etaaspertilde] by Eta.sc;
@@ -597,7 +597,7 @@ feature c2sc { #UC-->SC
 	sub [Alphaiotasub Alphaiotasublenis Alphaiotasubasper Alphaiotasublenisgrave Alphaiotasubaspergrave Alphaiotasublenisacute Alphaiotasubasperacute Alphaiotasublenistilde Alphaiotasubaspertilde] by  Alphaiotasub.sc;
 	sub [Etaiotasub Etaiotasublenis Etaiotasubasper Etaiotasublenisgrave Etaiotasubaspergrave Etaiotasublenisacute Etaiotasubasperacute Etaiotasublenistilde Etaiotasubaspertilde] by  Etaiotasub.sc;
 	sub [Omegaiotasub Omegaiotasublenis Omegaiotasubasper Omegaiotasublenisgrave Omegaiotasubaspergrave Omegaiotasublenisacute Omegaiotasubasperacute Omegaiotasublenistilde Omegaiotasubaspertilde] by  Omegaiotasub.sc;
-	
+
 	sub @LETTERS_MAJUSCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
 
 	lookup NUMERALS_SMALLCAP {
@@ -628,7 +628,7 @@ feature smcp { #LC-->SC
 	sub be.srb by Be.sc;
 
 	lookup NUMERALS_SMALLCAP;
-	
+
 } smcp;
 
 
@@ -675,11 +675,11 @@ feature ordn {
 #--------------------------------------
 feature sups { # Superscript
 	lookup SUPERIOR_LETTERS_MINISCULE;
-	
+
 	lookup SUPERIOR_LETTERS_MAJUSCULE {
 		sub @LETTERS_MAJUSCULE_LATIN_BASIC by @LETTERS_MAJUSCULE_LATIN_SUPERIOR;
 	} SUPERIOR_LETTERS_MAJUSCULE;
-	
+
 	lookup SUPERIOR_NUMERALS_SORTS {
 		sub @FIGURES_LINING_TABULAR by @FIGURES_SUPERIOR;
 		sub @PUNCTUATION_FOR_SMALL_FIGURE_STYLES by @PUNCTUATION_SUPERIOR;
@@ -727,10 +727,10 @@ feature ss05 { # Stylistic Set 5 (Slashed zero)
 		name "Slashed zero"; # Windows English
 		name 1 0 0 "Slashed zero"; # Mac English
 	};
-	
+
 	sub zero by zero.0s;
 	sub zero.pnum by zero.0ps;
-	
+
 } ss05;
 
 
@@ -758,7 +758,7 @@ feature ss01 { # Stylistic Set 1 (alternate l)
 		name "Straight l"; # Windows English
 		name 1 0 0 "Straight l"; # Mac English
 	};
-	
+
 	lookup L_ALTS {
 		sub @SS01_L_LC_DEFAULT by @SS01_L_LC_ALTERNATE;
 	} L_ALTS;
@@ -780,7 +780,7 @@ feature ss02 { # Stylistic Set 2 (alternate a)
 		name "Alternate a"; # Windows English
 		name 1 0 0 "Alternate a"; # Mac English
 	};
-	
+
 	lookup A_ALTS {
 		sub @SS02_A_LC_DEFAULT by @SS02_A_LC_ALTERNATE;
 	} A_ALTS;
@@ -797,7 +797,7 @@ feature ss03 { # Stylistic Set 3 (alternate g)
 		name "Alternate g"; # Windows English
 		name 1 0 0 "Alternate g"; # Mac English
 	};
-	
+
 	lookup G_ALTS {
 		sub @SS03_G_LC_DEFAULT by @SS03_G_LC_ALTERNATE;
 	} G_ALTS;
@@ -814,7 +814,7 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 		name "Serifed I"; # Windows English
 		name 1 0 0 "Serifed I"; # Mac English
 	};
-	
+
 	lookup I_ALTS {
 		sub @SS04_I_UC_DEFAULT by @SS04_I_UC_ALTERNATE;
 	} I_ALTS;
@@ -824,7 +824,7 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 		sub Iotabreve by Ibreve.alt;
 		sub Iotamacron by Imacron.alt;
 	} IOTA_ALTS_1;
-	
+
 	lookup IOTA_ALTS_2 {
 		sub Iotatonos by tonos.cap I.alt;
 		sub Iotalenis by lenis.cap I.alt;
@@ -838,7 +838,7 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 		sub Iotalenistilde by lenistilde.cap I.alt;
 		sub Iotaaspertilde by aspertilde.cap I.alt;
 	} IOTA_ALTS_2;
-	
+
 } ss04;
 
 
@@ -848,7 +848,7 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 #		name "Alternate g"; # Windows English
 #		name 1 0 0 "Alternate g"; # Mac English
 #	};
-	
+
 #		sub [Zhe Ka zhe ka] by [Zhe.a Ka.a zhe.a ka.a];
 
 #} ss06;
@@ -860,7 +860,7 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 #		name "Alternate g"; # Windows English
 #		name 1 0 0 "Alternate g"; # Mac English
 #	};
-	
+
 #		sub [Zhe Ka zhe ka] by [Zhe.b Ka.b zhe.b ka.b];
 
 #} ss07;
@@ -889,9 +889,4 @@ feature liga { # Standard Ligatures
 	sub f t by f_t;
 } liga;
 
-
-#-------------------------------------------
-feature size {
-	parameters 10.0 0; # design size, subfamily
-} size;
 
