@@ -1,0 +1,25 @@
+include (../../../familyTables.fea);
+
+table OS/2 {
+	include (../../../Roman/Black/os2.fea);
+	include (../../../familyOS2.fea);
+} OS/2;
+
+include (../../../Roman/familyGSUB.fea);
+
+# GPOS -----------------------------------
+include (../../../Roman/Black/markclasses.fea);
+
+feature mark {
+	include (../../../Roman/Black/mark.fea);
+} mark;
+
+
+feature mkmk {
+	include (../../../Roman/Black/mkmk.fea);
+} mkmk;
+
+
+feature kern {
+	include (../../../Roman/Black/kern.fea);
+} kern;
