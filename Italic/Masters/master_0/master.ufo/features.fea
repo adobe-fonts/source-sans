@@ -5,6 +5,11 @@ table OS/2 {
 	include (../../../../familyOS2.fea);
 } OS/2;
 
+table name {
+	include (../../nameIDs.fea);
+	include (../../../../familynameIDs.fea);
+} name;
+
 include (../../../Instances/familyGSUB.fea);
 
 # GPOS -----------------------------------
