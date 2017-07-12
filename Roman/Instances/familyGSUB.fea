@@ -542,7 +542,6 @@ feature ccmp { # Glyph Composition / Decomposition
 #feature ss20 { # Stylistic Set 20 (Accented Greek Small Capitals)
 #	featureNames {
 #		name "Accented Greek Small Capitals"; # Windows English
-#		name 1 0 0 "Accented Greek Small Capitals"; # Mac English
 #	};
 #
 ##	sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_TONOS;
@@ -725,7 +724,6 @@ feature onum { # Oldstyle (Text) Figures
 feature ss05 { # Stylistic Set 5 (Slashed zero)
 	featureNames {
 		name "Slashed zero"; # Windows English
-		name 1 0 0 "Slashed zero"; # Mac English
 	};
 
 	sub zero by zero.0s;
@@ -756,7 +754,6 @@ feature case { # Case-Sensitive Forms
 feature ss01 { # Stylistic Set 1 (alternate l)
 	featureNames {
 		name "Straight l"; # Windows English
-		name 1 0 0 "Straight l"; # Mac English
 	};
 
 	lookup L_ALTS {
@@ -778,7 +775,6 @@ feature ss01 { # Stylistic Set 1 (alternate l)
 feature ss02 { # Stylistic Set 2 (alternate a)
 	featureNames {
 		name "Alternate a"; # Windows English
-		name 1 0 0 "Alternate a"; # Mac English
 	};
 
 	lookup A_ALTS {
@@ -795,7 +791,6 @@ feature ss02 { # Stylistic Set 2 (alternate a)
 feature ss03 { # Stylistic Set 3 (alternate g)
 	featureNames {
 		name "Alternate g"; # Windows English
-		name 1 0 0 "Alternate g"; # Mac English
 	};
 
 	lookup G_ALTS {
@@ -812,7 +807,6 @@ feature ss03 { # Stylistic Set 3 (alternate g)
 feature ss04 { # Stylistic Set 4 (alternate I)
 	featureNames {
 		name "Serifed I"; # Windows English
-		name 1 0 0 "Serifed I"; # Mac English
 	};
 
 	lookup I_ALTS {
@@ -846,7 +840,6 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 #feature ss06 { # First alternate Zhe/Ka
 #	featureNames {
 #		name "Alternate g"; # Windows English
-#		name 1 0 0 "Alternate g"; # Mac English
 #	};
 
 #		sub [Zhe Ka zhe ka] by [Zhe.a Ka.a zhe.a ka.a];
@@ -858,7 +851,6 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 #feature ss07 { # Second alternate Zhe/Ka
 #	featureNames {
 #		name "Alternate g"; # Windows English
-#		name 1 0 0 "Alternate g"; # Mac English
 #	};
 
 #		sub [Zhe Ka zhe ka] by [Zhe.b Ka.b zhe.b ka.b];
