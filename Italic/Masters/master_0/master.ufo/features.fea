@@ -1,17 +1,10 @@
-include (../../../../familyTables.fea);
+include (../../../../featuresVar.fea);
 
 table OS/2 {
 	include (../../../Instances/ExtraLightIt/os2.fea);
 	include (../../../../familyOS2.fea);
 } OS/2;
 
-table name {
-	include (../../nameIDs.fea);
-	include (../../../../familynameIDs.fea);
-	include (../../../../familynameIDsVar.fea);
-} name;
-
-include (../../../Instances/familyGSUB.fea);
 
 # GPOS -----------------------------------
 include (../../../Instances/ExtraLightIt/markclasses.fea);
