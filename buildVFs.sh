@@ -24,11 +24,11 @@ sfntedit -a CFF2=$itm/.tb_cff2 $itm/$it_name.otf
 fontmake -m $rom/$ro_name.designspace -o variable --production-names
 fontmake -m $itm/$it_name.designspace -o variable --production-names
 
-# use DSIG, name, OS/2, hhea, and STAT tables from OTFs
-sfntedit -x DSIG=$rom/.tb_DSIG,name=$rom/.tb_name,OS/2=$rom/.tb_os2,hhea=$rom/.tb_hhea,STAT=$rom/.tb_STAT $rom/$ro_name.otf
-sfntedit -a DSIG=$rom/.tb_DSIG,name=$rom/.tb_name,OS/2=$rom/.tb_os2,hhea=$rom/.tb_hhea,STAT=$rom/.tb_STAT $rom/$ro_name.ttf
-sfntedit -x DSIG=$itm/.tb_DSIG,name=$itm/.tb_name,OS/2=$itm/.tb_os2,hhea=$itm/.tb_hhea,STAT=$itm/.tb_STAT $itm/$it_name.otf
-sfntedit -a DSIG=$itm/.tb_DSIG,name=$itm/.tb_name,OS/2=$itm/.tb_os2,hhea=$itm/.tb_hhea,STAT=$itm/.tb_STAT $itm/$it_name.ttf
+# use DSIG, name, OS/2, hhea, post, and STAT tables from OTFs
+sfntedit -x DSIG=$rom/.tb_DSIG,name=$rom/.tb_name,OS/2=$rom/.tb_os2,hhea=$rom/.tb_hhea,post=$rom/.tb_post,STAT=$rom/.tb_STAT $rom/$ro_name.otf
+sfntedit -a DSIG=$rom/.tb_DSIG,name=$rom/.tb_name,OS/2=$rom/.tb_os2,hhea=$rom/.tb_hhea,post=$rom/.tb_post,STAT=$rom/.tb_STAT $rom/$ro_name.ttf
+sfntedit -x DSIG=$itm/.tb_DSIG,name=$itm/.tb_name,OS/2=$itm/.tb_os2,hhea=$itm/.tb_hhea,post=$itm/.tb_post,STAT=$itm/.tb_STAT $itm/$it_name.otf
+sfntedit -a DSIG=$itm/.tb_DSIG,name=$itm/.tb_name,OS/2=$itm/.tb_os2,hhea=$itm/.tb_hhea,post=$itm/.tb_post,STAT=$itm/.tb_STAT $itm/$it_name.ttf
 
 # use cmap, GDEF, GPOS, and GSUB tables from TTFs
 sfntedit -x cmap=$rom/.tb_cmap,GDEF=$rom/.tb_GDEF,GPOS=$rom/.tb_GPOS,GSUB=$rom/.tb_GSUB $rom/$ro_name.ttf
