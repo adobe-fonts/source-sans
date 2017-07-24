@@ -37,5 +37,5 @@ sfntedit -x cmap=$itm/.tb_cmap,GDEF=$itm/.tb_GDEF,GPOS=$itm/.tb_GPOS,GSUB=$itm/.
 sfntedit -a cmap=$itm/.tb_cmap,GDEF=$itm/.tb_GDEF,GPOS=$itm/.tb_GPOS,GSUB=$itm/.tb_GSUB $itm/$it_name.otf
 
 # delete build artifacts
-rm */Masters/master_*/master.*tf
 rm */Masters/.tb_*
+rm */Masters/master_*/*.*tf
