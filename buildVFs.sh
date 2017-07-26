@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/usr/bin/env sh
 
 rom=Roman/Masters
 itm=Italic/Masters

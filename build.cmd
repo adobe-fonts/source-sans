@@ -10,7 +10,6 @@ for /f %%a in ('where makeotf') do set MAKEOTF_PATH=%%a
 if "%MAKEOTF_PATH%" == "" goto error_makeotf_not_found
 
 call :GetDirectoryName PYTHON_PATH "%MAKEOTF_PATH%"
-set PYTHON_PATH=%PYTHON_PATH%Python\AFDKOPython\python.exe
 
 set TARGET_PATH=%~dp0\target\
 set TARGET_OTF_PATH=%TARGET_PATH%OTF\
@@ -44,7 +43,7 @@ goto :eof
 :: %2 - Weight
 :build_font
 call makeotf -f "%~dp0\%1\Instances\%2\font.ufo" -r -o "%TARGET_OTF_PATH%\%FAMILY%-%2.otf"
-call makeotf -f "%~dp0\%1\Instances\%2\font.ttf" -r -o "%TARGET_TTF_PATH%\%FAMILY%-%2.ttf"
+call makeotf -f "%~dp0\%1\Instances\%2\font.ttf" -r -o "%TARGET_TTF_PATH%\%FAMILY%-%2.ttf" -ff "%~dp0\%1\Instances\%2\font.ufo\features.fea"
 goto :eof
 
 :error_makeotf_not_found
