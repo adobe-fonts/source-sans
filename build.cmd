@@ -10,7 +10,6 @@ for /f %%a in ('where makeotf') do set MAKEOTF_PATH=%%a
 if "%MAKEOTF_PATH%" == "" goto error_makeotf_not_found
 
 call :GetDirectoryName PYTHON_PATH "%MAKEOTF_PATH%"
-set PYTHON_PATH=%PYTHON_PATH%Python\AFDKOPython\python.exe
 
 set TARGET_PATH=%~dp0\target\
 set TARGET_OTF_PATH=%TARGET_PATH%OTF\
@@ -43,12 +42,8 @@ goto :eof
 :: %1 - Roman/Italic
 :: %2 - Weight
 :build_font
-call makeotf -f "%~dp0\%1\%2\font.ufo" -r -o "%TARGET_OTF_PATH%\%FAMILY%-%2.otf"
-call makeotf -f "%~dp0\%1\%2\font.ttf" -r -o "%TARGET_TTF_PATH%\%FAMILY%-%2.ttf"
-:: remove default options file from the source tree after building
-del "%~dp0\%1\%2\current.fpr"
-:: "%PYTHON_PATH%" "%~dp0\addSVGtable.py" "%TARGET_OTF_PATH%\%FAMILY%-%2.otf" "%~dp0\svg"
-:: "%PYTHON_PATH%" "%~dp0\addSVGtable.py" "%TARGET_TTF_PATH%\%FAMILY%-%2.ttf" "%~dp0\svg"
+call makeotf -f "%~dp0\%1\Instances\%2\font.ufo" -r -o "%TARGET_OTF_PATH%\%FAMILY%-%2.otf"
+call makeotf -f "%~dp0\%1\Instances\%2\font.ttf" -r -o "%TARGET_TTF_PATH%\%FAMILY%-%2.ttf" -ff "%~dp0\%1\Instances\%2\font.ufo\features.fea"
 goto :eof
 
 :error_makeotf_not_found
