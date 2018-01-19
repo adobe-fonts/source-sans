@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Abrevegrave">
+<glyph format="1" name="Abrevegrave">
   <advance width="488" />
+  <unicode hex="1EB0" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="210" y="391" />
@@ -26,7 +27,7 @@
     </contour>
     <contour>
       <point type="curve" x="334" y="710" />
-      <point x="425" y="710" />
+      <point x="424" y="710" />
       <point x="477" y="775" />
       <point type="curve" x="494" y="834" />
       <point type="line" x="463" y="839" />
@@ -49,18 +50,26 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="966319fb59e35b3e2352d62dcac7e24075e77abeb48d8789ea1f78be09d6838a0b3b6d24d00496c6ca0374592968648f4fe810a9b9feca7e960ae3fc7ce6db03">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="229" width="35" />
-            <hstem pos="616" width="43" />
-            <hstem pos="710" width="32" />
-            <vstem pos="222" width="32" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>1d339632c93bcb57e083cb41edc1e52fac29799f24b398fd76c038fd86ac34105f9cf2d6879af4a1982fc7d09eada83bbcd9dadd6f646f3440bbae1e7fff0285</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 229 35</string>
+              <string>hstem 616 43</string>
+              <string>hstem 710 32</string>
+              <string>vstem 222 32</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

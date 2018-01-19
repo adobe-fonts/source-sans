@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Uhorntilde">
+<glyph format="1" name="Uhorntilde">
   <advance width="608" />
+  <unicode hex="1EEE" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="90" y="269" />
@@ -48,7 +49,7 @@
       <point type="curve" x="569" y="829" />
       <point type="line" x="539" y="832" />
       <point x="523" y="784" />
-      <point x="500" y="754" />
+      <point x="499" y="754" />
       <point type="curve" x="470" y="754" />
       <point x="418" y="754" />
       <point x="405" y="834" />
@@ -66,19 +67,27 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="f3f2ade35b57f38aa6d40c4090a0c9fa3a1a9f8b46517d8c00a072419291b49988ca171bf18a34a98ff07cc7a200d2832ce3a1350700d8f528a6b16a6f1b5182">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="37" />
-            <hstem pos="659" width="-20" />
-            <hstem pos="718" width="36" />
-            <hstem pos="799" width="35" />
-            <vstem pos="81" width="43" />
-            <vstem pos="674" width="41" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>220a8ae082c8e119dc6a4ba20360e14581d6a6b3c20cd1bd412e894bdcc35c2ca0233fac6664561d24c565e0824b455da7b92328afa968c9a1c34187f159adca</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 37</string>
+              <string>hstem 659 -20</string>
+              <string>hstem 718 36</string>
+              <string>hstem 799 35</string>
+              <string>vstem 81 43</string>
+              <string>vstem 674 41</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

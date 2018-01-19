@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Gcaron">
+	<unicode hex="01E6" />
   <advance width="575" />
   <outline>
     <contour>
@@ -29,7 +30,7 @@
       <point x="477" y="671" />
       <point type="curve" x="402" y="671" />
       <point x="182" y="671" />
-      <point x="58" y="447" />
+      <point x="58" y="446" />
       <point type="curve" x="58" y="248" />
       <point x="58" y="95" />
       <point x="135" y="-12" />
@@ -47,25 +48,26 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.30000000000000004</real>
-        <real>0.6294117647058824</real>
-        <integer>1</integer>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="83717ffa2755104309172b3f8fb9c30e10d241f7f914725dcad3739947e96b8ae6a27dfcb3417efcf32f994d617407419b93249e219e60116af1a9ecab23e883">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="37" />
-            <hstem pos="286" width="36" />
-            <hstem pos="634" width="37" />
-            <hstem pos="709" width="33" />
-            <vstem pos="58" width="43" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>d4baaddc9b607a15e5a0f694cb36aa896fa1be678f30ab4859c6c34c5e22d78640658e2bd10801ddf78713e9176cf13d60268c1da3e8b7351c122e4968dc32e7</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 37</string>
+              <string>hstem 286 36</string>
+              <string>hstem 634 37</string>
+              <string>hstem 709 33</string>
+              <string>vstem 58 43</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>
