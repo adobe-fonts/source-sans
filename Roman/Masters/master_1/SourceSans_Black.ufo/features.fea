@@ -1,24 +1,616 @@
-include (../../../../featuresVar.fea);
-
-table OS/2 {
-	include (../../../Instances/Black/os2.fea);
-	include (../../../../familyOS2.fea);
-} OS/2;
+languagesystem DFLT dflt;
 
 
-# GPOS -----------------------------------
-include (../../../Instances/Black/markclasses.fea);
-
-feature mark {
-	include (../../../Instances/Black/mark.fea);
-} mark;
+# GPOS 
 
 
-feature mkmk {
-	include (../../../Instances/Black/mkmk.fea);
-} mkmk;
-
+lookup kernHorizontalKerninglookup0 {
+  lookupflag 0;
+    pos \Euro \eight.onum 10;
+    pos \Euro \five.pnum 30;
+    pos \Euro \four.onum 20;
+    pos \Euro \four.pnum -20;
+    pos \Euro \nine.onum -10;
+    pos \Euro \one.onum -10;
+    pos \Euro \one.pnum 20;
+    pos \Euro \six.onum -10;
+    pos \Euro \six.pnum -10;
+    pos \Euro \three.pnum 30;
+    pos \Euro \two.onum 20;
+    pos \Euro \two.pnum 30;
+    pos \Euro \zero.onum -10;
+    pos \Hadescender.sc \quoteleft.sc -30;
+    pos \Lsmall \hyphen.sc -20;
+    pos \Q.sc \comma 20;
+    pos \Rsmall \hyphen.sc -20;
+    pos \Tbar.sc \hyphen.sc -40;
+    pos \Ustraight.sc \Ustraight.sc -10;
+    pos \Ysmall \hyphen.sc -40;
+    pos \aturned \asterisk -40;
+    pos \ccurl \periodcentered -20;
+    pos \ccurl \registered 0;
+    pos \dollar \five.onum -40;
+    pos \dollar \five.pnum -20;
+    pos \dollar \nine.onum -30;
+    pos \dollar \nine.pnum -40;
+    pos \dollar \one.onum -30;
+    pos \dollar \one.pnum -40;
+    pos \dollar \seven.onum -100;
+    pos \dollar \seven.pnum -30;
+    pos \dollar \three.onum -40;
+    pos \dollar \three.pnum -20;
+    pos \dollar \two.onum -30;
+    pos \dollar \two.pnum -10;
+    pos \eight.onum \five.onum -10;
+    pos \eight.onum \nine.onum -20;
+    pos \eight.onum \one.onum -30;
+    pos \eight.onum \seven.onum -30;
+    pos \eight.onum \three.onum -10;
+    pos \eight.onum \two.onum -10;
+    pos \eight.pnum \cent -20;
+    pos \eight.pnum \nine.pnum -30;
+    pos \eight.pnum \one.pnum -30;
+    pos \eight.pnum \seven.pnum -30;
+    pos \eight.pnum \three.pnum -10;
+    pos \eight.sc \nine.sc -10;
+    pos \eight.sc \one.sc -20;
+    pos \eight.sc \seven.sc -10;
+    pos \eight.sc \three.sc -10;
+    pos \eight.sc \two.sc -10;
+    pos \ereversed \asterisk -20;
+    pos \ereversed \backslash -40;
+    pos \ereversed \periodcentered -10;
+    pos \ereversed \registered -20;
+    pos \ereversed \trademark -30;
+    pos \five.onum \cent -30;
+    pos \five.onum \five.onum -20;
+    pos \five.onum \nine.onum -20;
+    pos \five.onum \one.onum -30;
+    pos \five.onum \seven.onum -40;
+    pos \five.onum \three.onum -20;
+    pos \five.onum \two.onum -10;
+    pos \five.onum \zero.onum -10;
+    pos \five.pnum \cent -20;
+    pos \five.pnum \five.pnum -10;
+    pos \five.pnum \nine.pnum -20;
+    pos \five.pnum \one.pnum -40;
+    pos \five.pnum \seven.pnum -30;
+    pos \five.pnum \three.pnum -20;
+    pos \five.pnum \two.pnum -10;
+    pos \five.sc \five.sc -10;
+    pos \five.sc \one.sc -10;
+    pos \five.sc \seven.sc -10;
+    pos \five.sc \six.sc -10;
+    pos \five.sc \two.sc -10;
+    pos \four.onum \cent -10;
+    pos \four.onum \five.onum -10;
+    pos \four.onum \nine.onum -10;
+    pos \four.onum \one.onum -30;
+    pos \four.onum \seven.onum -30;
+    pos \four.onum \three.onum -10;
+    pos \four.onum \two.onum -10;
+    pos \four.pnum \five.pnum -10;
+    pos \four.pnum \nine.pnum -20;
+    pos \four.pnum \one.pnum -20;
+    pos \four.pnum \seven.pnum -20;
+    pos \four.pnum \three.pnum -10;
+    pos \four.pnum \two.pnum -10;
+    pos \four.sc \one.sc -10;
+    pos \gammalatin \asterisk 0;
+    pos \gammalatin \registered 20;
+    pos \gammalatin \slash -20;
+    pos \gammalatin \trademark 0;
+    pos \hturned \asterisk -10;
+    pos \hyphen.sc \seven.sc -30;
+    pos \hyphen.sc \two.sc -20;
+    pos \nine.onum \five.onum -10;
+    pos \nine.onum \one.onum -20;
+    pos \nine.onum \seven.onum -30;
+    pos \nine.onum \three.onum -10;
+    pos \nine.onum \two.onum -10;
+    pos \nine.pnum \one.pnum -20;
+    pos \nine.pnum \seven.pnum -30;
+    pos \nine.pnum \three.pnum -20;
+    pos \nine.pnum \two.pnum -10;
+    pos \nine.sc \nine.sc -10;
+    pos \nine.sc \one.sc -20;
+    pos \nine.sc \seven.sc -20;
+    pos \nine.sc \six.sc -10;
+    pos \nine.sc \three.sc -10;
+    pos \nine.sc \two.sc -10;
+    pos \one.onum \one.onum -20;
+    pos \one.onum \seven.onum -20;
+    pos \one.onum \three.onum -10;
+    pos \one.pnum \one.pnum -20;
+    pos \one.sc \four.sc -10;
+    pos \one.sc \nine.sc -20;
+    pos \one.sc \one.sc -20;
+    pos \one.sc \seven.sc -10;
+    pos \one.sc \six.sc -20;
+    pos \one.sc \three.sc -10;
+    pos \one.sc \two.sc -10;
+    pos \rtail \backslash 0;
+    pos \rtail \periodcentered -10;
+    pos \rtail \registered 20;
+    pos \rtail \slash -20;
+    pos \rturned \backslash 0;
+    pos \rturned \periodcentered -10;
+    pos \rturned \registered 20;
+    pos \rturned \slash -20;
+    pos \seven.onum \cent -40;
+    pos \seven.onum \eight.onum -40;
+    pos \seven.onum \five.onum -30;
+    pos \seven.onum \four.onum -100;
+    pos \seven.onum \nine.onum -10;
+    pos \seven.onum \one.onum -20;
+    pos \seven.onum \seven.onum -20;
+    pos \seven.onum \six.onum -10;
+    pos \seven.onum \three.onum -30;
+    pos \seven.onum \two.onum -30;
+    pos \seven.onum \zero.onum -30;
+    pos \seven.pnum \cent -60;
+    pos \seven.pnum \eight.pnum -30;
+    pos \seven.pnum \five.pnum -20;
+    pos \seven.pnum \four.pnum -100;
+    pos \seven.pnum \nine.pnum -20;
+    pos \seven.pnum \one.pnum -10;
+    pos \seven.pnum \seven.pnum -10;
+    pos \seven.pnum \six.pnum -30;
+    pos \seven.pnum \three.pnum -20;
+    pos \seven.pnum \two.pnum -20;
+    pos \seven.pnum \zero.pnum -30;
+    pos \seven.sc \eight.sc -10;
+    pos \seven.sc \five.sc -20;
+    pos \seven.sc \four.sc -40;
+    pos \seven.sc \hyphen.sc -30;
+    pos \seven.sc \nine.sc -10;
+    pos \seven.sc \one.sc -10;
+    pos \seven.sc \six.sc -10;
+    pos \seven.sc \three.sc -20;
+    pos \seven.sc \two.sc -20;
+    pos \seven.sc \zero.sc -20;
+    pos \six.onum \five.onum -20;
+    pos \six.onum \nine.onum -10;
+    pos \six.onum \one.onum -30;
+    pos \six.onum \seven.onum -40;
+    pos \six.onum \three.onum -20;
+    pos \six.onum \two.onum -10;
+    pos \six.pnum \cent -20;
+    pos \six.pnum \five.pnum -10;
+    pos \six.pnum \nine.pnum -30;
+    pos \six.pnum \one.pnum -30;
+    pos \six.pnum \seven.pnum -40;
+    pos \six.pnum \three.pnum -20;
+    pos \six.pnum \two.pnum -20;
+    pos \six.sc \nine.sc -10;
+    pos \six.sc \one.sc -20;
+    pos \six.sc \seven.sc -20;
+    pos \six.sc \six.sc -4;
+    pos \slash \ibreve 40;
+    pos \slash \icaron 40;
+    pos \slash \icircumflex 40;
+    pos \slash \idieresis 40;
+    pos \slash \igrave 40;
+    pos \slash \imacron 40;
+    pos \slash \itilde 40;
+    pos \slash \jcircumflex 40;
+    pos \sterling \eight.onum -10;
+    pos \sterling \eight.pnum -10;
+    pos \sterling \five.pnum 10;
+    pos \sterling \four.pnum -20;
+    pos \sterling \nine.onum -10;
+    pos \sterling \nine.pnum -10;
+    pos \sterling \one.onum -30;
+    pos \sterling \one.pnum -10;
+    pos \sterling \seven.onum -20;
+    pos \sterling \seven.pnum -20;
+    pos \sterling \six.onum -10;
+    pos \sterling \six.pnum -10;
+    pos \sterling \three.pnum 10;
+    pos \sterling \two.pnum 10;
+    pos \sterling \zero.onum -10;
+    pos \sterling \zero.pnum -10;
+    pos \three.onum \cent -20;
+    pos \three.onum \five.onum -20;
+    pos \three.onum \nine.onum -20;
+    pos \three.onum \one.onum -30;
+    pos \three.onum \seven.onum -40;
+    pos \three.onum \three.onum -20;
+    pos \three.onum \two.onum -10;
+    pos \three.pnum \cent -20;
+    pos \three.pnum \five.pnum -10;
+    pos \three.pnum \nine.pnum -10;
+    pos \three.pnum \one.pnum -10;
+    pos \three.pnum \seven.pnum -20;
+    pos \three.pnum \three.pnum -20;
+    pos \three.pnum \two.pnum -10;
+    pos \three.sc \one.sc -10;
+    pos \three.sc \seven.sc -10;
+    pos \three.sc \six.sc -10;
+    pos \three.sc \three.sc -20;
+    pos \two.onum \cent -40;
+    pos \two.onum \five.onum -10;
+    pos \two.onum \four.onum -10;
+    pos \two.onum \nine.onum -10;
+    pos \two.onum \one.onum -30;
+    pos \two.onum \seven.onum -100;
+    pos \two.onum \three.onum -10;
+    pos \two.onum \two.onum -10;
+    pos \two.onum \zero.onum -10;
+    pos \two.pnum \cent -40;
+    pos \two.pnum \five.pnum -10;
+    pos \two.pnum \four.pnum -40;
+    pos \two.pnum \nine.pnum -20;
+    pos \two.pnum \one.pnum -20;
+    pos \two.pnum \seven.pnum -40;
+    pos \two.pnum \six.pnum -10;
+    pos \two.pnum \three.pnum -10;
+    pos \two.pnum \two.pnum -10;
+    pos \two.pnum \zero.pnum -10;
+    pos \two.sc \eight.sc -10;
+    pos \two.sc \five.sc -10;
+    pos \two.sc \four.sc -10;
+    pos \two.sc \one.sc -20;
+    pos \two.sc \seven.sc -10;
+    pos \two.sc \six.sc -20;
+    pos \two.sc \three.sc -10;
+    pos \ustraight \ghestroke -30;
+    pos \ustraight \schwacyr -10;
+    pos \ustraightstroke \ghestroke -30;
+    pos \ustraightstroke \schwacyr -10;
+    pos \vturned \asterisk -80;
+    pos \vturned \registered 20;
+    pos \vturned \slash -20;
+    pos \vturned \trademark -80;
+    pos \wturned \asterisk -60;
+    pos \wturned \registered -60;
+    pos \wturned \trademark -60;
+    pos \yen \five.onum -10;
+    pos \yen \nine.pnum -10;
+    pos \yen \seven.onum -10;
+    pos \yen \three.onum -10;
+    pos \yen \three.pnum -10;
+    pos \yen \two.onum -10;
+    pos \yen \two.pnum -10;
+    pos \yi.a \yi.a 20;
+    pos \yturned \registered 20;
+    pos \zero.onum \five.onum -10;
+    pos \zero.onum \seven.onum -40;
+    pos \zero.onum \three.onum -20;
+    pos \zero.onum \two.onum -10;
+    pos \zero.pnum \one.pnum -10;
+    pos \zero.pnum \seven.pnum -30;
+    pos \zero.pnum \three.pnum -30;
+    pos \zero.pnum \two.pnum -20;
+    pos \zero.sc \seven.sc -10;
+    pos \zretroflex \p 20;
+} kernHorizontalKerninglookup0;
 
 feature kern {
-	include (../../../Instances/Black/kern.fea);
+
+ script DFLT;
+     language dflt ;
+      lookup kernHorizontalKerninglookup0;
 } kern;
+
+@GDEF_Simple = [\A \A.sc \A.sups \AE \AE.sc \AEacute \AEacute.sc \AEmacron 
+	\AEmacron.sc \Aacute \Aacute.sc \Abreve \Abreve.sc \Abreveacute 
+	\Abreveacute.sc \Abrevecyr \Abrevecyr.sc \Abrevedotbelow \Abrevedotbelow.sc 
+	\Abrevegrave \Abrevegrave.sc \Abrevehoi \Abrevehoi.sc \Abrevetilde 
+	\Abrevetilde.sc \Acaron \Acaron.sc \Acircumflex \Acircumflex.sc 
+	\Acircumflexacute \Acircumflexacute.sc \Acircumflexdotbelow 
+	\Acircumflexdotbelow.sc \Acircumflexgrave \Acircumflexgrave.sc 
+	\Acircumflexhoi \Acircumflexhoi.sc \Acircumflextilde \Acircumflextilde.sc 
+	\Acyr \Acyr.sc \Adieresis \Adieresis.sc \Adotbelow \Adotbelow.sc \Agrave 
+	\Agrave.sc \Ahoi \Ahoi.sc \Aie \Aie.sc \Alpha \Alpha.sc \Alphaacute \Alphaasper 
+	\Alphaasperacute \Alphaaspergrave \Alphaaspertilde \Alphabreve \Alphagrave 
+	\Alphaiotasub \Alphaiotasub.sc \Alphaiotasubasper \Alphaiotasubasperacute 
+	\Alphaiotasubaspergrave \Alphaiotasubaspertilde \Alphaiotasublenis 
+	\Alphaiotasublenisacute \Alphaiotasublenisgrave \Alphaiotasublenistilde 
+	\Alphalenis \Alphalenisacute \Alphalenisgrave \Alphalenistilde \Alphamacron 
+	\Alphatonos \Amacron \Amacron.sc \Aogonek \Aogonek.sc \Aring \Aring.sc \Atilde 
+	\Atilde.sc \B \B.sc \B.sups \Be \Be.sc \Beta \Beta.sc \Blinebelow \Blinebelow.sc 
+	\Bsmall \Bstroke \Bstroke.sc \C \C.sc \C.sups \Cacute \Cacute.sc \Ccaron 
+	\Ccaron.sc \Ccedilla \Ccedilla.sc \Ccircumflex \Ccircumflex.sc \Cdotaccent 
+	\Cdotaccent.sc \Che \Che.sc \Chedescender \Chedescender.sc \Chi \Chi.sc \D \D.sc 
+	\D.sups \Dcaron \Dcaron.sc \Dcroat \Dcroat.sc \Ddotbelow \Ddotbelow.sc \De 
+	\De.sc \Delta \Delta.math \Delta.sc \Dje \Dje.sc \Dlinebelow \Dlinebelow.sc \Dze 
+	\Dze.sc \Dzhe \Dzhe.sc \E \E.sc \E.sups \Eacute \Eacute.sc \Ebreve \Ebreve.sc 
+	\Ecaron \Ecaron.sc \Ecircumflex \Ecircumflex.sc \Ecircumflexacute 
+	\Ecircumflexacute.sc \Ecircumflexdotbelow \Ecircumflexdotbelow.sc 
+	\Ecircumflexgrave \Ecircumflexgrave.sc \Ecircumflexhoi \Ecircumflexhoi.sc 
+	\Ecircumflextilde \Ecircumflextilde.sc \Ecyr \Ecyr.sc \Edieresis 
+	\Edieresis.sc \Edotaccent \Edotaccent.sc \Edotbelow \Edotbelow.sc \Ef \Ef.sc 
+	\Egrave \Egrave.sc \Ehoi \Ehoi.sc \El \El.sc \Em \Em.sc \Emacron \Emacron.sc 
+	\Emacronacute \Emacronacute.sc \En \En.sc \Endescender \Endescender.sc \Eng 
+	\Eng.alt \Eng.sc \Eng.sca \Eogonek \Eogonek.sc \Epsilon \Epsilon.sc 
+	\Epsilonacute \Epsilonasper \Epsilonasperacute \Epsilonaspergrave 
+	\Epsilongrave \Epsilonlenis \Epsilonlenisacute \Epsilonlenisgrave 
+	\Epsilontonos \Er \Er.sc \Es \Es.sc \Esdescender \Esdescender.sc \Eta \Eta.sc 
+	\Etaacute \Etaasper \Etaasperacute \Etaaspergrave \Etaaspertilde \Etagrave 
+	\Etaiotasub \Etaiotasub.sc \Etaiotasubasper \Etaiotasubasperacute 
+	\Etaiotasubaspergrave \Etaiotasubaspertilde \Etaiotasublenis 
+	\Etaiotasublenisacute \Etaiotasublenisgrave \Etaiotasublenistilde \Etalenis 
+	\Etalenisacute \Etalenisgrave \Etalenistilde \Etatonos \Eth \Eth.sc \Etilde 
+	\Etilde.sc \Euro \F \F.sc \F.sups \Fita \Fita.sc \G \G.sc \G.sups \Gacute 
+	\Gacute.sc \Gamma \Gamma.sc \Gbreve \Gbreve.sc \Gcaron \Gcaron.sc \Gcircumflex 
+	\Gcircumflex.sc \Gcommaaccent \Gcommaaccent.sc \Gdotaccent \Gdotaccent.sc 
+	\Germandbls \Germandbls.sc \Ghe \Ghe.sc \Ghestroke \Ghestroke.sc \Gheup 
+	\Gheup.sc \Ghook \Ghook.sc \Gje \Gje.sc \Gmacron \Gmacron.sc \Gsmall \Gtilde 
+	\Gtilde.sc \H \H.sc \H.sups \Ha \Ha.sc \Hadescender \Hadescender.sc \Hard 
+	\Hard.sc \Hbar \Hbar.sc \Hbrevebelow \Hbrevebelow.sc \Hcircumflex 
+	\Hcircumflex.sc \Hdotbelow \Hdotbelow.sc \Hsmall \I \I.alt \I.sc \I.sups \IJ 
+	\IJ.sc \Iacute \Iacute.alt \Iacute.sc \Ibreve \Ibreve.alt \Ibreve.sc \Icaron 
+	\Icaron.alt \Icaron.sc \Icircumflex \Icircumflex.alt \Icircumflex.sc \Icyr 
+	\Icyr.sc \Idieresis \Idieresis.alt \Idieresis.sc \Idotaccent \Idotaccent.alt 
+	\Idotaccent.sc \Idotbelow \Idotbelow.alt \Idotbelow.sc \Ie \Ie.sc \Iebreve 
+	\Iebreve.sc \Iegrave \Iegrave.sc \Ieukran \Ieukran.sc \Igrave \Igrave.alt 
+	\Igrave.sc \Igravecyr \Igravecyr.sc \Ihoi \Ihoi.alt \Ihoi.sc \Imacron 
+	\Imacron.alt \Imacron.sc \Imacroncyr \Imacroncyr.sc \Io \Io.sc \Iogonek 
+	\Iogonek.alt \Iogonek.sc \Iota \Iota.sc \Iotaacute \Iotaasper \Iotaasperacute 
+	\Iotaaspergrave \Iotaaspertilde \Iotabreve \Iotadieresis \Iotadieresis.sc 
+	\Iotagrave \Iotalenis \Iotalenisacute \Iotalenisgrave \Iotalenistilde 
+	\Iotamacron \Iotatonos \Ishort \Ishort.sc \Ismall \Itilde \Itilde.alt 
+	\Itilde.sc \Iukran \Iukran.sc \Izhitsa \Izhitsa.sc \J \J.sc \J.sups \Jcircumflex 
+	\Jcircumflex.sc \Je \Je.sc \K \K.sc \K.sups \Ka \Ka.a \Ka.b \Ka.sc \Kabashkir 
+	\Kabashkir.a \Kabashkir.b \Kabashkir.sc \Kadescender \Kadescender.a 
+	\Kadescender.b \Kadescender.sc \Kappa \Kappa.sc \Kcommaaccent 
+	\Kcommaaccent.sc \Kdotbelow \Kdotbelow.sc \Kje \Kje.a \Kje.b \Kje.sc 
+	\Klinebelow \Klinebelow.sc \L \L.sc \L.sups \Lacute \Lacute.sc \Lambda 
+	\Lambda.sc \Lcaron \Lcaron.sc \Lcommaaccent \Lcommaaccent.sc \Ldot \Ldot.sc 
+	\Ldotbelow \Ldotbelow.sc \Ldotbelowmacron \Ldotbelowmacron.sc \Lje \Lje.sc 
+	\Llinebelow \Llinebelow.sc \Lslash \Lslash.sc \Lsmall \M \M.sc \M.sups \Macute 
+	\Macute.sc \Mdotaccent \Mdotaccent.sc \Mdotbelow \Mdotbelow.sc \Mu \Mu.sc \N 
+	\N.sc \N.sups \NNBS \Nacute \Nacute.sc \Ncaron \Ncaron.sc \Ncommaaccent 
+	\Ncommaaccent.sc \Ndotaccent \Ndotaccent.sc \Ndotbelow \Ndotbelow.sc \Ngrave 
+	\Ngrave.sc \Nje \Nje.sc \Nlinebelow \Nlinebelow.sc \Nsmall \Ntilde \Ntilde.sc 
+	\Nu \Nu.sc \O \O.sc \O.sups \OE \OE.sc \OEsmall \Oacute \Oacute.sc \Obarcyr 
+	\Obarcyr.sc \Obreve \Obreve.sc \Ocaron \Ocaron.sc \Ocircumflex \Ocircumflex.sc 
+	\Ocircumflexacute \Ocircumflexacute.sc \Ocircumflexdotbelow 
+	\Ocircumflexdotbelow.sc \Ocircumflexgrave \Ocircumflexgrave.sc 
+	\Ocircumflexhoi \Ocircumflexhoi.sc \Ocircumflextilde \Ocircumflextilde.sc 
+	\Ocyr \Ocyr.sc \Odieresis \Odieresis.sc \Odieresiscyr \Odieresiscyr.sc 
+	\Odotbelow \Odotbelow.sc \Ograve \Ograve.sc \Ohoi \Ohoi.sc \Ohorn \Ohorn.sc 
+	\Ohornacute \Ohornacute.sc \Ohorndotbelow \Ohorndotbelow.sc \Ohorngrave 
+	\Ohorngrave.sc \Ohornhoi \Ohornhoi.sc \Ohorntilde \Ohorntilde.sc 
+	\Ohungarumlaut \Ohungarumlaut.sc \Omacron \Omacron.sc \Omacronacute 
+	\Omacronacute.sc \Omega \Omega.math \Omega.sc \Omegaacute \Omegaasper 
+	\Omegaasperacute \Omegaaspergrave \Omegaaspertilde \Omegagrave \Omegaiotasub 
+	\Omegaiotasub.sc \Omegaiotasubasper \Omegaiotasubasperacute 
+	\Omegaiotasubaspergrave \Omegaiotasubaspertilde \Omegaiotasublenis 
+	\Omegaiotasublenisacute \Omegaiotasublenisgrave \Omegaiotasublenistilde 
+	\Omegalenis \Omegalenisacute \Omegalenisgrave \Omegalenistilde \Omegatonos 
+	\Omicron \Omicron.sc \Omicronacute \Omicronasper \Omicronasperacute 
+	\Omicronaspergrave \Omicrongrave \Omicronlenis \Omicronlenisacute 
+	\Omicronlenisgrave \Omicrontonos \Oogonek \Oogonek.sc \Oslash \Oslash.sc 
+	\Otilde \Otilde.sc \P \P.sc \P.sups \Palochka \Palochka.sc \Pe \Pe.sc \Phi \Phi.sc 
+	\Pi \Pi.sc \Psi \Psi.sc \Q \Q.sc \Q.sups \R \R.sc \R.sups \Racute \Racute.sc \Rcaron 
+	\Rcaron.sc \Rcommaaccent \Rcommaaccent.sc \Rdotaccent \Rdotaccent.sc 
+	\Rdotbelow \Rdotbelow.sc \Rdotbelowmacron \Rdotbelowmacron.sc \Rho \Rho.sc 
+	\Rhoasper \Rlinebelow \Rlinebelow.sc \Rsmall \Rsmallinverted \S \S.sc \S.sups 
+	\Sacute \Sacute.sc \Scaron \Scaron.sc \Scedilla \Scedilla.sc \Schwa \Schwa.sc 
+	\Schwacyr \Schwacyr.sc \Scircumflex \Scircumflex.sc \Scommaaccent 
+	\Scommaaccent.sc \Sdotaccent \Sdotaccent.sc \Sdotbelow \Sdotbelow.sc \Sha 
+	\Sha.sc \Shcha \Shcha.sc \Shha \Shha.sc \Sigma \Sigma.sc \Soft \Soft.sc \T \T.sc 
+	\T.sups \Tau \Tau.sc \Tbar \Tbar.sc \Tcaron \Tcaron.sc \Tcedilla \Tcedilla.sc 
+	\Tcommaaccent \Tcommaaccent.sc \Tdotbelow \Tdotbelow.sc \Te \Te.sc \Theta 
+	\Theta.sc \Thorn \Thorn.sc \Tlinebelow \Tlinebelow.sc \Tse \Tse.sc \Tshe 
+	\Tshe.sc \U \U.sc \U.sups \Uacute \Uacute.sc \Uacutedblcyr \Uacutedblcyr.sc 
+	\Ubreve \Ubreve.sc \Ucaron \Ucaron.sc \Ucircumflex \Ucircumflex.sc \Ucyr 
+	\Ucyr.sc \Udieresis \Udieresis.sc \Udieresisacute \Udieresisacute.sc 
+	\Udieresiscaron \Udieresiscaron.sc \Udieresisgrave \Udieresisgrave.sc 
+	\Udieresismacron \Udieresismacron.sc \Udotbelow \Udotbelow.sc \Ugrave 
+	\Ugrave.sc \Uhoi \Uhoi.sc \Uhorn \Uhorn.sc \Uhornacute \Uhornacute.sc 
+	\Uhorndotbelow \Uhorndotbelow.sc \Uhorngrave \Uhorngrave.sc \Uhornhoi 
+	\Uhornhoi.sc \Uhorntilde \Uhorntilde.sc \Uhungarumlaut \Uhungarumlaut.sc 
+	\Umacron \Umacron.sc \Umacroncyr \Umacroncyr.sc \Uogonek \Uogonek.sc \Upsilon 
+	\Upsilon.sc \Upsilonacute \Upsilonasper \Upsilonasperacute 
+	\Upsilonaspergrave \Upsilonaspertilde \Upsilonbreve \Upsilondieresis 
+	\Upsilondieresis.sc \Upsilongrave \Upsilonmacron \Upsilontonos \Uring 
+	\Uring.sc \Ushort \Ushort.sc \Ustraight \Ustraight.sc \Ustraightstroke 
+	\Ustraightstroke.sc \Utilde \Utilde.sc \V \V.sc \V.sups \Ve \Ve.sc \W \W.sc 
+	\W.sups \Wacute \Wacute.sc \Wcircumflex \Wcircumflex.sc \Wdieresis 
+	\Wdieresis.sc \Wgrave \Wgrave.sc \X \X.sc \X.sups \Xi \Xi.sc \Y \Y.sc \Y.sups \Ya 
+	\Ya.sc \Yacute \Yacute.sc \Yat \Yat.sc \Ycircumflex \Ycircumflex.sc \Ydieresis 
+	\Ydieresis.sc \Ydotaccent \Ydotaccent.sc \Ydotbelow \Ydotbelow.sc \Yeru 
+	\Yeru.sc \Ygrave \Ygrave.sc \Yhoi \Yhoi.sc \Yi \Yi.a \Yi.sc \Yi.sca \Ysmall 
+	\Ytilde \Ytilde.sc \Yu \Yu.sc \Z \Z.sc \Z.sups \ZWNBS \Zacute \Zacute.sc \Zcaron 
+	\Zcaron.sc \Zdotaccent \Zdotaccent.sc \Zdotbelow \Zdotbelow.sc \Ze \Ze.sc 
+	\Zedescender \Zedescender.sc \Zeta \Zeta.sc \Zhe \Zhe.a \Zhe.b \Zhe.sc \Zhebreve 
+	\Zhebreve.a \Zhebreve.b \Zhebreve.sc \Zhedescender \Zhedescender.a 
+	\Zhedescender.b \Zhedescender.sc \Zlinebelow \Zlinebelow.sc \a \a.alt \a.supa 
+	\a.sups \aacute \aacute.alt \abreve \abreve.alt \abreveacute \abreveacute.alt 
+	\abrevecyr \abrevedotbelow \abrevedotbelow.alt \abrevegrave \abrevegrave.alt 
+	\abrevehoi \abrevehoi.alt \abrevetilde \abrevetilde.alt \acaron \acaron.alt 
+	\acircumflex \acircumflex.alt \acircumflexacute \acircumflexacute.alt 
+	\acircumflexdotbelow \acircumflexdotbelow.alt \acircumflexgrave 
+	\acircumflexgrave.alt \acircumflexhoi \acircumflexhoi.alt \acircumflextilde 
+	\acircumflextilde.alt \acutemod \acyr \adieresis \adieresis.alt \adotbelow 
+	\adotbelow.alt \ae \aeacute \aemacron \agrave \agrave.alt \ahoi \ahoi.alt \aie 
+	\alpha \alphaacute \alphaasper \alphaasperacute \alphaaspergrave 
+	\alphaaspertilde \alphabreve \alphagrave \alphaiotasub \alphaiotasubacute 
+	\alphaiotasubasper \alphaiotasubasperacute \alphaiotasubaspergrave 
+	\alphaiotasubaspertilde \alphaiotasubgrave \alphaiotasublenis 
+	\alphaiotasublenisacute \alphaiotasublenisgrave \alphaiotasublenistilde 
+	\alphaiotasubtilde \alphalatin \alphalatinturned \alphalenis 
+	\alphalenisacute \alphalenisgrave \alphalenistilde \alphamacron \alphatilde 
+	\alphatonos \amacron \amacron.alt \ampersand \ampersand.sc \anoteleia 
+	\anoteleia.cap \aogonek \aogonek.alt \apostrophemod \approxequal \aring 
+	\aring.alt \arrowdown \arrowleft \arrowright \arrowup \asciicircum \asciitilde 
+	\asper.cap \asperacute.cap \aspergrave.cap \aspertilde.cap \asterisk \at 
+	\at.case \atilde \atilde.alt \aturned \b \b.sups \backslash \bar \bardbl \be 
+	\be.srb \beta \beta.alt \bhook \blinebelow \braceleft \braceleft.sc \braceright 
+	\braceright.sc \bracketleft \bracketleft.sc \bracketleftwhite \bracketright 
+	\bracketright.sc \bracketrightwhite \brackhalfbotleft \brackhalfbotright 
+	\brackhalftopleft \brackhalftopright \breveinverteddoublecmb \brokenbar 
+	\bstroke \bullet \bulletoperator \c \c.sups \cacute \caron.alt \ccaron \ccedilla 
+	\ccircumflex \ccurl \cdotaccent \cedi \ceilingleft \ceilingright \cent \che 
+	\check \checkbox \checkedbox \chedescender \chi \circledotted \clickalveolar 
+	\clickbilabial \colon \colon.sups \colonmonetary \colontriangularhalfmod 
+	\colontriangularmod \comma \comma.dnom \comma.numr \comma.subs \comma.sups 
+	\commaturnedmod \commercemark \copyright \currency \d \d.sups \dagger 
+	\daggerdbl \dblprime \dcaron \dcroat \ddotbelow \de \degree \delta \deposeemark 
+	\dhook \diamondblack \digamma \divide \divisionslash \dje \dlinebelow \dollar 
+	\dong \dotlessi \dotlessj \dotlessjstroke \dotlessjstrokehook \dtail \dze \dzhe 
+	\e \e.sups \eacute \eacute.sups \ebreve \ecaron \ecircumflex \ecircumflexacute 
+	\ecircumflexdotbelow \ecircumflexgrave \ecircumflexhoi \ecircumflextilde 
+	\ecyr \edieresis \edotaccent \edotbelow \ef \egrave \egrave.sups \ehoi \eight 
+	\eight.cap \eight.dnom \eight.numr \eight.onum \eight.pnum \eight.sc 
+	\eight.subs \eight.sups \eight.tnum \eighthnote \el \ellipsis \em \emacron 
+	\emacronacute \emdash \emdash.sc \emdash.sups \en \endash \endash.sc 
+	\endash.sups \endescender \eng \eogonek \eopen \eopenreversed 
+	\eopenreversedclosed \epsilon \epsilonacute \epsilonasper \epsilonasperacute 
+	\epsilonaspergrave \epsilongrave \epsilonlenis \epsilonlenisacute 
+	\epsilonlenisgrave \epsilontonos \equal \er \ereversed \es \esdescender \esh 
+	\estimated \eta \etaacute \etaasper \etaasperacute \etaaspergrave 
+	\etaaspertilde \etagrave \etaiotasub \etaiotasubacute \etaiotasubasper 
+	\etaiotasubasperacute \etaiotasubaspergrave \etaiotasubaspertilde 
+	\etaiotasubgrave \etaiotasublenis \etaiotasublenisacute 
+	\etaiotasublenisgrave \etaiotasublenistilde \etaiotasubtilde \etalenis 
+	\etalenisacute \etalenisgrave \etalenistilde \etatilde \etatonos \eth \etilde 
+	\exclam \exclam.sc \exclamdbl \exclamdown \exclamdown.sc \exclamquestion \ezh 
+	\f \f.sups \f_f \f_f_i \f_f_l \f_f_t \f_t \fi \figuredash \figurespace \fisheye 
+	\fita \five \five.cap \five.dnom \five.numr \five.onum \five.pnum \five.sc 
+	\five.subs \five.sups \five.tnum \fiveeighths \fivesixths \fl \fl.alt 
+	\floorleft \floorright \florin \four \four.cap \four.dnom \four.numr \four.onum 
+	\four.pnum \four.sc \four.subs \four.sups \four.tnum \fourfifths \fraction \g 
+	\g.alt \g.supa \g.sups \gacute \gacute.alt \gamma \gammalatin \gammalatinsupmod 
+	\gbreve \gbreve.alt \gcaron \gcaron.alt \gcircumflex \gcircumflex.alt 
+	\gcommaaccent \gcommaaccent.alt \gdotaccent \gdotaccent.alt \germandbls 
+	\germandbls.sc \ghe \ghestroke \gheup \ghook \gje \glottalstop 
+	\glottalstopreversed \glottalstopreversedmod \glottalstopstroke 
+	\glottalstopstrokereversed \gmacron \gmacron.alt \gravemod \greater 
+	\greaterequal \gscript \gtilde \gtilde.alt \guarani \guillemotleft 
+	\guillemotright \guilsinglleft \guilsinglright \h \h.sups \ha \hadescender 
+	\hard \hbar \hbrevebelow \hcircumflex \hdotbelow \henghook \hhook \hlinebelow 
+	\hookrhoticmod \horizontalbar \hryvnia \hturned \hyphen \hyphen.sc 
+	\hyphen.sups \i \i.sups \i.trk \iacute \ibreve \icaron \icircumflex \icyr 
+	\idieresis \idotbelow \ie \iebreve \iegrave \ieukran \igrave \igravecyr \ihoi \ij 
+	\imacron \imacroncyr \infinity \integral \interrobang \io \iogonek \iogonek.d 
+	\iota \iotaacute \iotaadscript \iotaasper \iotaasperacute \iotaaspergrave 
+	\iotaaspertilde \iotabreve \iotadieresis \iotadieresisacute 
+	\iotadieresisgrave \iotadieresistilde \iotadieresistonos \iotagrave 
+	\iotalenis \iotalenisacute \iotalenisgrave \iotalenistilde \iotamacron 
+	\iotatilde \iotatonos \ishort \istroke \itilde \iukran \izhitsa \j \j.sups 
+	\jcircumflex \jcrossedtail \je \k \k.sups \ka \ka.a \ka.b \kabashkir \kabashkir.a 
+	\kabashkir.b \kadescender \kadescender.a \kadescender.b \kai \kappa 
+	\kcommaaccent \kdotbelow \kgreenlandic \kje \kje.a \kje.b \klinebelow \koppa \l 
+	\l.alt \l.supa \l.sups \lacute \lacute.alt \lambda \lbelt \lcaron \lcaron.alt 
+	\lcommaaccent \lcommaaccent.alt \ldot \ldot.alt \ldotbelow \ldotbelow.alt 
+	\ldotbelowmacron \ldotbelowmacron.alt \lenis.cap \lenisacute.cap 
+	\lenisgrave.cap \lenistilde.cap \less \lessequal \lezh \lira \liraturkish 
+	\litre \lje \llinebelow \llinebelow.alt \logicalnot \lownumeralsign \lozenge 
+	\lretroflex \lslash \lslash.alt \m \m.sups \macronmod \macute \mdotaccent 
+	\mdotbelow \mhook \minus \mlonglegturned \mturned \mu \mu.math \multiply \n 
+	\n.sups \nacute \naira \napostrophe \nbspace \nbspace.frac \ncaron 
+	\ncommaaccent \ndotaccent \ndotbelow \ngrave \nhookleft \nine \nine.cap 
+	\nine.dnom \nine.numr \nine.onum \nine.pnum \nine.sc \nine.subs \nine.sups 
+	\nine.tnum \nje \nlinebelow \notequal \nretroflex \ntilde \nu \numbersign 
+	\numeralsign \numero \o \o.sups \oacute \obar \obarcyr \obreve \ocaron 
+	\ocircumflex \ocircumflexacute \ocircumflexdotbelow \ocircumflexgrave 
+	\ocircumflexhoi \ocircumflextilde \ocyr \odieresis \odieresiscyr \odotbelow 
+	\oe \ograve \ohoi \ohorn \ohornacute \ohorndotbelow \ohorngrave \ohornhoi 
+	\ohorntilde \ohungarumlaut \omacron \omacronacute \omega \omegaacute 
+	\omegaasper \omegaasperacute \omegaaspergrave \omegaaspertilde \omegagrave 
+	\omegaiotasub \omegaiotasubacute \omegaiotasubasper \omegaiotasubasperacute 
+	\omegaiotasubaspergrave \omegaiotasubaspertilde \omegaiotasubgrave 
+	\omegaiotasublenis \omegaiotasublenisacute \omegaiotasublenisgrave 
+	\omegaiotasublenistilde \omegaiotasubtilde \omegalenis \omegalenisacute 
+	\omegalenisgrave \omegalenistilde \omegatilde \omegatonos \omicron 
+	\omicronacute \omicronasper \omicronasperacute \omicronaspergrave 
+	\omicrongrave \omicronlenis \omicronlenisacute \omicronlenisgrave 
+	\omicrontonos \one \one.cap \one.dnom \one.numr \one.onum \one.pnum \one.sc 
+	\one.subs \one.sups \one.tnum \oneeighth \onefifth \onehalf \oneninth 
+	\onequarter \oneseventh \onesixth \onetenth \onethird \oogonek \oopen 
+	\ordfeminine \ordfeminine.alt \ordmasculine \oslash \otilde \overline 
+	\oxia.cap \p \p.sups \palochka \paragraph \parenleft \parenleft.dnom 
+	\parenleft.numr \parenleft.sc \parenleft.subs \parenleft.sups \parenright 
+	\parenright.dnom \parenright.numr \parenright.sc \parenright.subs 
+	\parenright.sups \partialdiff \pe \percent \period \period.dnom \period.numr 
+	\period.subs \period.sups \periodcentered \perthousand \peseta \peso \phi 
+	\phi.alt \philatin \pi \plus \plusminus \prime \primemod \primereversed \product 
+	\psi \q \q.sups \question \question.sc \questiondbl \questiondown 
+	\questiondown.sc \questionexclam \questiongreek \quotedbl \quotedbl.sc 
+	\quotedblbase \quotedblleft \quotedblleft.sc \quotedblright 
+	\quotedblright.sc \quoteleft \quoteleft.sc \quoteright \quoteright.sc 
+	\quotesinglbase \quotesingle \quotesingle.sc \r \r.sups \racute \radical 
+	\ramshorn \rcaron \rcommaaccent \rdotaccent \rdotbelow \rdotbelowmacron 
+	\registered \rfishhook \rho \rhoasper \rholenis \rhookturned \ringhalfleftmod 
+	\ringhalfrightmod \rlinebelow \rlonglegturned \rtail \rturned \ruble 
+	\rupeeindian \s \s.sups \sacute \sampi \scaron \scedilla \schwa \schwa.sups 
+	\schwacyr \schwahookrhotic \scircumflex \scommaaccent \sdotaccent \sdotbelow 
+	\section \semicolon \servicemark \seven \seven.cap \seven.dnom \seven.numr 
+	\seven.onum \seven.pnum \seven.sc \seven.subs \seven.sups \seven.tnum 
+	\seveneighths \sfthyphen \sha \shcha \shha \shook \sigma \sigma.end \six \six.cap 
+	\six.dnom \six.numr \six.onum \six.pnum \six.sc \six.subs \six.sups \six.tnum 
+	\slash \slash.frac \soft \soundcopyright \space \space.frac \squareblack 
+	\squareshadow \sterling \stigma \summation \t \t.sups \tau \tbar \tcaron 
+	\tcedilla \tcommaaccent \tdieresis \tdotbelow \te \tenge \theta \theta.alt 
+	\thorn \three \three.cap \three.dnom \three.numr \three.onum \three.pnum 
+	\three.sc \three.subs \three.sups \three.tnum \threeeighths \threeemdash 
+	\threefifths \threequarters \tlinebelow \tonos.cap \trademark \tretroflex 
+	\triangleblackdown \triangleblackleft \triangleblackright \triangleblackup 
+	\trianglewhitedown \trianglewhiteleft \trianglewhiteright \trianglewhiteup 
+	\tse \tshe \tugrik \two \two.cap \two.dnom \two.numr \two.onum \two.pnum \two.sc 
+	\two.subs \two.sups \two.tnum \twoemdash \twofifths \twothirds \u \u.sups 
+	\uacute \uacutedblcyr \ubar \ubreve \ucaron \ucircumflex \ucyr \udieresis 
+	\udieresisacute \udieresiscaron \udieresisgrave \udieresismacron \udotbelow 
+	\ugrave \uhoi \uhorn \uhornacute \uhorndotbelow \uhorngrave \uhornhoi 
+	\uhorntilde \uhungarumlaut \umacron \umacroncyr \underscore \undertie \uogonek 
+	\upsilon \upsilonacute \upsilonasper \upsilonasperacute \upsilonaspergrave 
+	\upsilonaspertilde \upsilonbreve \upsilondieresis \upsilondieresisacute 
+	\upsilondieresisgrave \upsilondieresistilde \upsilondieresistonos 
+	\upsilongrave \upsilonlatin \upsilonlenis \upsilonlenisacute 
+	\upsilonlenisgrave \upsilonlenistilde \upsilonmacron \upsilontilde 
+	\upsilontonos \uring \ushort \ustraight \ustraightstroke \utilde \v \v.sups 
+	\varia.cap \ve \verticallinelowmod \verticallinemod \vhook \vturned \w \w.sups 
+	\wacute \wcircumflex \wdieresis \wgrave \won \wturned \x \x.sups \xi \y \y.sups \ya 
+	\yacute \yat \ycircumflex \ydieresis \ydotaccent \ydotbelow \yen \yeru \ygrave 
+	\yhoi \yi \yi.a \ytilde \yturned \yu \yuan \z \z.sups \zacute \zcaron \zcurl 
+	\zdotaccent \zdotbelow \ze \zedescender \zero \zero.0 \zero.0p \zero.0ps 
+	\zero.0s \zero.cap \zero.dnom \zero.numr \zero.onum \zero.pnum \zero.sc 
+	\zero.subs \zero.sups \zero.tnum \zerothirds \zeta \zhe \zhe.a \zhe.b \zhebreve 
+	\zhebreve.a \zhebreve.b \zhedescender \zhedescender.a \zhedescender.b 
+	\zlinebelow \zretroflex \uni0414.loclBGR \uni0416.loclBGR \uni041A.loclBGR 
+	\uni041B.loclBGR \uni0424.loclBGR \uni0432.loclBGR \uni0433.loclBGR 
+	\uni0434.loclBGR \uni0436.loclBGR \uni0437.loclBGR \uni0438.loclBGR 
+	\uni0439.loclBGR \uni043A.loclBGR \uni043B.loclBGR \uni043F.loclBGR 
+	\uni0442.loclBGR \uni0444.loclBGR \uni0446.loclBGR \uni0448.loclBGR 
+	\uni0449.loclBGR \uni044A.loclBGR \uni044B.loclBGR \uni044C.loclBGR 
+	\uni044E.loclBGR \uni045D.loclBGR ];
+@GDEF_Mark = [\acute \acutecmb \acutecmb.cap \asper \asperacute \asperacutecmb 
+	\aspercmb \aspergrave \aspergravecmb \aspertilde \aspertildecmb \breve 
+	\breveacute \breveacute.cap \brevebelowcmb \brevecmb \brevecmb.cap 
+	\brevecmb.cyr \brevecmb.cyrcap \brevegrave \brevegrave.cap \brevehoi 
+	\brevehoi.cap \breveinvertedbelowcmb \breveinvertedcmb 
+	\breveinvertedcmb.cap \brevetilde \brevetilde.cap \bridgebelowcmb 
+	\bridgeinvertedbelowcmb \caron \caronbelowcmb \caroncmb \caroncmb.cap 
+	\cedilla \cedillacmb \cedillacmb.cap \circumflex \circumflexacute 
+	\circumflexacute.cap \circumflexbreve \circumflexbreve.cap \circumflexcmb 
+	\circumflexcmb.cap \circumflexgrave \circumflexgrave.cap \circumflexhoi 
+	\circumflexhoi.cap \circumflextilde \circumflextilde.cap \commaabovecmb 
+	\commabelowcmb \commabelowcmb.alt \commaturnedabovecmb \dblgravecmb 
+	\dblgravecmb.cap \dialytikaacute \dialytikagrave \dialytikagravecmb 
+	\dialytikatilde \dieresis \dieresisacute \dieresisacute.cap 
+	\dieresisbelowcmb \dieresiscaron \dieresiscaron.cap \dieresiscmb 
+	\dieresiscmb.cap \dieresisgrave \dieresisgrave.cap \dieresismacron 
+	\dieresismacron.cap \dieresistilde \dieresistonos \dieresistonoscmb 
+	\dotaccent \dotaccentcmb \dotaccentcmb.cap \dotbelowcmb \downtackbelowcmb 
+	\grave \gravecmb \gravecmb.cap \hoicmb \hoicmb.cap \horncmb \hungarumlaut 
+	\hungarumlautcmb \hungarumlautcmb.cap \iotasubscript \iotasubscriptcmb 
+	\leftangleabovecmb \lefttackbelowcmb \lenis \lenisacute \lenisacutecmb 
+	\leniscmb \lenisgrave \lenisgravecmb \lenistilde \lenistildecmb \macron 
+	\macronacute \macronacute.cap \macronbelowcmb \macroncmb \macroncmb.cap 
+	\minusbelowcmb \ogonek \ogonekcmb \ogonekcmb.cap \overlinecmb 
+	\overlinecmb.cap \oxia \perispomeni \perispomenicmb \perispomenicmb.cap 
+	\plusbelowcmb \psili \righttackbelowcmb \ring \ringbelowcmb \ringcmb 
+	\ringcmb.cap \ringhalfleftbelowcmb \ringhalfrightbelowcmb \seagullbelowcmb 
+	\squarebelowcmb \tilde \tildebelowcmb \tildecmb \tildecmb.cap 
+	\tildeoverlaycmb \tonos \tonoscmb \uptackbelowcmb \varia \variacmb 
+	\verticallinebelowcmb \xabovecmb ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
+
+} GDEF;
+
