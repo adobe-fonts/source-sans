@@ -13,11 +13,11 @@
       <point x="34" y="-123" />
       <point x="13" y="-112" />
       <point type="curve" x="13" y="-85" />
-      <point x="13" y="-55" />
+      <point name="hintSet0005" x="13" y="-55" />
       <point x="30" y="-27" />
       <point type="curve" x="67" y="2" />
       <point type="line" x="-16" y="2" />
-      <point x="-42" y="-16" />
+      <point name="hintSet0007" x="-42" y="-16" />
       <point x="-86" y="-60" />
       <point type="curve" x="-86" y="-119" />
       <point x="-86" y="-179" />
@@ -26,15 +26,41 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="927e6a2a87d9cbad1a2dff3b38a47520d5b3af66d979427f3bcadad9057c38cce1e293e5431edcc74e1f91d5edb629e81acc7162a02469607fd991b838bbd0df">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-210" width="87" />
-            <vstem pos="-86" width="99" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>927e6a2a87d9cbad1a2dff3b38a47520d5b3af66d979427f3bcadad9057c38cce1e293e5431edcc74e1f91d5edb629e81acc7162a02469607fd991b838bbd0df</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -210 87</string>
+              <string>vstem -86 99</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -210 212</string>
+              <string>vstem -86 99</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0007</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -210 87</string>
+              <string>vstem -86 99</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

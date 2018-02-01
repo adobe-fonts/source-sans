@@ -203,21 +203,34 @@
         <real>0.4</real>
         <real>1.0</real>
       </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w1000l-150-244-16-24066-208c80-13686-9464-72c14-60l544l-444l-112-96-52-104-40-118c-42-136-48-164-74-174c-150-178">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-244" width="66" />
-            <hstem pos="-60" width="64" />
-            <vstem pos="-150" width="231" />
-          </hintset>
-          <hintset pointTag="hintSet0001">
-            <hstem pos="-244" width="66" />
-            <hstem pos="-60" width="64" />
-            <vstem pos="-42" width="122" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w1000l-150-244-16-24066-208c80-13686-9464-72c14-60l544l-444l-112-96-52-104-40-118c-42-136-48-164-74-174c-150-178</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -244 66</string>
+              <string>hstem -60 64</string>
+              <string>vstem -150 231</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -244 66</string>
+              <string>hstem -60 64</string>
+              <string>vstem -42 122</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

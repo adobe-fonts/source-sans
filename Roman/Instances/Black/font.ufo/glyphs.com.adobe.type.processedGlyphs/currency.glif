@@ -5,7 +5,7 @@
     <contour>
       <point name="hintSet0000" type="line" x="102" y="76" />
       <point type="line" x="173" y="147" />
-      <point name="flexCurve0002" x="204" y="134" />
+      <point x="204" y="134" />
       <point x="237" y="128" />
       <point type="curve" x="270" y="128" />
       <point x="302" y="128" />
@@ -23,7 +23,7 @@
       <point type="line" x="523" y="497" />
       <point type="line" x="438" y="582" />
       <point type="line" x="368" y="512" />
-      <point name="flexCurve0012" x="337" y="525" />
+      <point x="337" y="525" />
       <point x="303" y="532" />
       <point type="curve" x="270" y="532" />
       <point x="237" y="532" />
@@ -57,21 +57,25 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="62573510360ca88f0a89749e28fe35cea62f9d278faf038aa301abb948883a2ffa925a21a7c2ee9b112728a3dd21827691a4e3d0135d7e7934128f3f1bc16e5b">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="147" width="99" />
-            <hstem pos="414" width="98" />
-            <vstem pos="44" width="152" />
-            <vstem pos="344" width="152" />
-          </hintset>
-          <flexList>
-            <flex pointTag="flexCurve0002" />
-            <flex pointTag="flexCurve0012" />
-          </flexList>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>62573510360ca88f0a89749e28fe35cea62f9d278faf038aa301abb948883a2ffa925a21a7c2ee9b112728a3dd21827691a4e3d0135d7e7934128f3f1bc16e5b</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 128 118</string>
+              <string>hstem 414 118</string>
+              <string>vstem 44 152</string>
+              <string>vstem 344 152</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

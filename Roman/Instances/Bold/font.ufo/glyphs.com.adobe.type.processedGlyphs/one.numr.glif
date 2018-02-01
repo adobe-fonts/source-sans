@@ -7,10 +7,10 @@
       <point type="line" x="274" y="262" />
       <point type="line" x="274" y="652" />
       <point type="line" x="188" y="652" />
-      <point x="155" y="629" />
+      <point name="hintSet0004" x="155" y="629" />
       <point x="130" y="617" />
       <point type="curve" x="76" y="609" />
-      <point type="line" x="76" y="543" />
+      <point name="hintSet0005" type="line" x="76" y="543" />
       <point type="line" x="165" y="543" />
     </contour>
   </outline>
@@ -23,15 +23,41 @@
         <real>0.5470588235</real>
         <integer>1</integer>
       </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w376l165262l274262l274652l188652155629130617c76609l76543l165543">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="543" width="109" />
-            <vstem pos="165" width="109" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w376l165262l274262l274652l188652155629130617c76609l76543l165543</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 543 109</string>
+              <string>vstem 165 109</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0004</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 543 66</string>
+              <string>vstem 165 109</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 543 109</string>
+              <string>vstem 165 109</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

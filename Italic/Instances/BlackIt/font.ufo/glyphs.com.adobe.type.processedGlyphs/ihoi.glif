@@ -13,10 +13,10 @@
       <point x="235" y="570" />
       <point x="312" y="602" />
       <point type="curve" x="326" y="674" />
-      <point name="hintSet0006" x="340" y="748" />
+      <point x="340" y="748" />
       <point x="305" y="802" />
       <point type="curve" x="159" y="806" />
-      <point type="line" x="129" y="702" />
+      <point name="hintSet0007" type="line" x="129" y="702" />
       <point x="186" y="698" />
       <point x="204" y="684" />
       <point type="curve" x="199" y="662" />
@@ -34,19 +34,36 @@
         <integer>1</integer>
         <integer>1</integer>
       </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w276l80l1680l268500l108500l153566235570312602c326674340748305802c159806l129702186698204684c199662195642176635c154632">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="806" />
-            <vstem pos="153.5" width="175.5" />
-          </hintset>
-          <hintset pointTag="hintSet0006">
-            <hstem pos="702" width="104" />
-            <vstem pos="153.5" width="175.5" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w276l80l1680l268500l108500l153566235570312602c326674340748305802c159806l129702186698204684c199662195642176635c154632</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 500 -20</string>
+              <string>hstem 702 104</string>
+              <string>vstem 153.5 175.5</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0007</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 500 -20</string>
+              <string>hstem 702 104</string>
+              <string>vstem 199 130</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

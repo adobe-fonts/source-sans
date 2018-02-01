@@ -341,20 +341,33 @@
         <real>0.4</real>
         <real>1.0</real>
       </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="d683f9bc22d7bf8cd69ffd7c22b28fd7022d4da1e6e3dfc7d4a162b4b4a628c2471ba49c81b309a4fe090bec0d98addbd170e4f8394581f3e329bcfe4e30f0f0">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="566" width="130" />
-            <vstem pos="-48" width="346" />
-          </hintset>
-          <hintset pointTag="hintSet0004">
-            <hstem pos="566" width="130" />
-            <vstem pos="-48" width="130" />
-            <vstem pos="170" width="128" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>d683f9bc22d7bf8cd69ffd7c22b28fd7022d4da1e6e3dfc7d4a162b4b4a628c2471ba49c81b309a4fe090bec0d98addbd170e4f8394581f3e329bcfe4e30f0f0</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 566 130</string>
+              <string>vstem -48 346</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0004</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 566 130</string>
+              <string>vstem -48 130</string>
+              <string>vstem 170 128</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

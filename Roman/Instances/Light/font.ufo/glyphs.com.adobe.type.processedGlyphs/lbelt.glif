@@ -1,13 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="lbelt">
+<glyph format="1" name="lbelt">
   <advance width="258" />
+  <unicode hex="026C" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="curve" x="112" y="334" />
-      <point type="line" x="123" y="334" />
-      <point type="line" x="123" y="64" />
-      <point x="123" y="12" />
-      <point x="143" y="-12" />
+      <point name="hintSet0000" type="line" x="104" y="367" />
+      <point x="56" y="367" />
+      <point x="35" y="387" />
+      <point type="curve" x="35" y="410" />
+      <point x="35" y="430" />
+      <point x="45" y="447" />
+      <point type="curve" x="72" y="447" />
+      <point x="111" y="447" />
+      <point x="123" y="411" />
+      <point type="curve" x="123" y="376" />
+      <point type="line" x="123" y="367" />
+    </contour>
+    <contour>
       <point type="curve" x="182" y="-12" />
       <point x="196" y="-12" />
       <point x="205" y="-10" />
@@ -26,7 +35,7 @@
       <point type="line" x="167" y="719" />
       <point type="line" x="123" y="719" />
       <point type="line" x="123" y="455" />
-      <point x="111" y="470" />
+      <point name="hintSet0017" x="111" y="470" />
       <point x="93" y="480" />
       <point type="curve" x="67" y="480" />
       <point x="25" y="480" />
@@ -34,35 +43,58 @@
       <point type="curve" x="-3" y="412" />
       <point x="-3" y="367" />
       <point x="34" y="334" />
-    </contour>
-    <contour>
-      <point type="line" x="105" y="367" />
-      <point x="56" y="367" />
-      <point x="35" y="387" />
-      <point type="curve" x="35" y="410" />
-      <point x="35" y="430" />
-      <point x="45" y="447" />
-      <point type="curve" x="72" y="447" />
-      <point x="111" y="447" />
-      <point x="123" y="411" />
-      <point type="curve" x="123" y="376" />
-      <point type="line" x="123" y="367" />
+      <point type="curve" x="112" y="334" />
+      <point type="line" x="123" y="334" />
+      <point name="hintSet0021" type="line" x="123" y="64" />
+      <point x="123" y="12" />
+      <point x="143" y="-12" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="5c71b08682e6c3a535f26ff7ffed173c0e7478fe7c285b01d4c38096e58a66c7da0e26c0a5c1ce5cd191a0d7bdc6579117c5e2d08f244009040b848afd4c17a2">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="39" />
-            <hstem pos="334" width="33" />
-            <hstem pos="447" width="33" />
-            <vstem pos="-3" width="38" />
-            <vstem pos="123" width="44" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>0a672d042ce809703db297914ae095b78f0af9d8dee5c63f3017ccb4b6cfed662f67a93c500aa34025a22e023c0d29041de107ef1cec507577192faf4961f303</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 39</string>
+              <string>hstem 334 33</string>
+              <string>hstem 447 33</string>
+              <string>vstem -3 38</string>
+              <string>vstem 123 44</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0017</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 39</string>
+              <string>hstem 334 33</string>
+              <string>hstem 447 33</string>
+              <string>vstem -3 170</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0021</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 39</string>
+              <string>hstem 334 33</string>
+              <string>hstem 447 33</string>
+              <string>vstem -3 38</string>
+              <string>vstem 123 44</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

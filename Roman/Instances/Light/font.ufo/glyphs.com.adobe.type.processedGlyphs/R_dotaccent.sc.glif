@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Rdotaccent.sc">
+<glyph format="1" name="Rdotaccent.sc">
   <advance width="500" />
   <outline>
     <contour>
@@ -20,9 +20,9 @@
     </contour>
     <contour>
       <point type="line" x="143" y="264" />
-      <point type="line" x="143" y="475" />
-      <point type="line" x="249" y="475" />
-      <point x="346" y="475" />
+      <point type="line" x="143" y="474" />
+      <point type="line" x="249" y="474" />
+      <point x="346" y="474" />
       <point x="399" y="447" />
       <point type="curve" x="399" y="372" />
       <point x="399" y="300" />
@@ -46,20 +46,28 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="05d19652f776952c259b5ef0a280aefeb66ebf8c7a523a77f6e1d566b51cb3725699444e6126241bde36d76aff52a6cf13cdbc8eab6698f3d6d54340083a2128">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="228" width="36" />
-            <hstem pos="475" width="37" />
-            <hstem pos="602" width="80" />
-            <vstem pos="97" width="46" />
-            <vstem pos="232" width="80" />
-            <vstem pos="399" width="45" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>ddd9f7a67b4b9a98b55a2ce28f3fada9312834a58ccb1f60388f2da0beedb858ab810b379486322a2793dd9c093497106e3100a5a9e4d0504efd8aa07aefb000</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 228 36</string>
+              <string>hstem 474 38</string>
+              <string>hstem 602 80</string>
+              <string>vstem 97 46</string>
+              <string>vstem 232 80</string>
+              <string>vstem 399 45</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

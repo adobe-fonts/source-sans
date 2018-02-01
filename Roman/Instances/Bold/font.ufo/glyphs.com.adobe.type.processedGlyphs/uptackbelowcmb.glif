@@ -5,24 +5,50 @@
       <point name="hintSet0000" type="line" x="107" y="-229" />
       <point type="line" x="107" y="-158" />
       <point type="line" x="39" y="-158" />
-      <point type="line" x="39" y="-54" />
+      <point name="hintSet0003" type="line" x="39" y="-54" />
       <point type="line" x="-39" y="-54" />
-      <point type="line" x="-39" y="-158" />
+      <point name="hintSet0005" type="line" x="-39" y="-158" />
       <point type="line" x="-107" y="-158" />
       <point type="line" x="-107" y="-229" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w1000l107-229l107-158l39-158l39-54l-39-54l-39-158l-107-158l-107-229">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-229" width="71" />
-            <vstem pos="-39" width="78" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w1000l107-229l107-158l39-158l39-54l-39-54l-39-158l-107-158l-107-229</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -229 71</string>
+              <string>vstem -39 78</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0003</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -229 175</string>
+              <string>vstem -39 78</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -229 71</string>
+              <string>vstem -39 78</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

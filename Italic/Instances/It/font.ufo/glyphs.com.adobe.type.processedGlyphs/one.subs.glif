@@ -7,10 +7,10 @@
       <point type="line" x="146" y="-170" />
       <point type="line" x="223" y="220" />
       <point type="line" x="176" y="220" />
-      <point x="144" y="199" />
+      <point name="hintSet0004" x="144" y="199" />
       <point x="118" y="189" />
       <point type="curve" x="66" y="181" />
-      <point type="line" x="58" y="142" />
+      <point name="hintSet0005" type="line" x="58" y="142" />
       <point type="line" x="148" y="142" />
     </contour>
   </outline>
@@ -23,15 +23,41 @@
         <integer>1</integer>
         <integer>1</integer>
       </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w356l86-170l146-170l223220l176220144199118189c66181l58142l148142">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="142" width="78" />
-            <vstem pos="58" width="165" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w356l86-170l146-170l223220l176220144199118189c66181l58142l148142</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 142 78</string>
+              <string>vstem 58 165</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0004</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 142 39</string>
+              <string>vstem 58 165</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 142 78</string>
+              <string>vstem 58 165</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

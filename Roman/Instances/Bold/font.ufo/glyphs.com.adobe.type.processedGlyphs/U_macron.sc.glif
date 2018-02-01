@@ -23,7 +23,7 @@
       <point x="155" y="-12" />
     </contour>
     <contour>
-      <point type="line" x="152" y="611" />
+      <point name="hintSet0011" type="line" x="152" y="611" />
       <point type="line" x="454" y="611" />
       <point type="line" x="454" y="705" />
       <point type="line" x="152" y="705" />
@@ -38,18 +38,38 @@
         <real>0.5470588235</real>
         <integer>1</integer>
       </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="d3c631e6b81e6357784c16345ec5089b05a65355ceba610ead582fad0bf528e66f2fc25f93b2a52f02102f307dc32e2ad9b4eefba59c0a1b8f8b4f3094a5ddaa">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="121" />
-            <hstem pos="528" width="-20" />
-            <hstem pos="611" width="94" />
-            <vstem pos="73" width="146" />
-            <vstem pos="393" width="141" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>d3c631e6b81e6357784c16345ec5089b05a65355ceba610ead582fad0bf528e66f2fc25f93b2a52f02102f307dc32e2ad9b4eefba59c0a1b8f8b4f3094a5ddaa</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 121</string>
+              <string>hstem 528 -20</string>
+              <string>hstem 611 94</string>
+              <string>vstem 73 146</string>
+              <string>vstem 393 141</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0011</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 121</string>
+              <string>hstem 528 -20</string>
+              <string>hstem 611 94</string>
+              <string>vstem 152 67</string>
+              <string>vstem 393 61</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

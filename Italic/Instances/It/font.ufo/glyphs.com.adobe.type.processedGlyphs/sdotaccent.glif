@@ -66,24 +66,37 @@
         <integer>1</integer>
         <integer>1</integer>
       </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="6271c663605a9d9d8afa9829710bd98de21df40094bbbca90700f4932e01fd641e0099c23a7a703bb9dfd2ad2e19740f4bd460d409ba331f53f0e48c604716e5">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="59" />
-            <hstem pos="438" width="60" />
-            <vstem pos="72" width="73" />
-            <vstem pos="272" width="73" />
-          </hintset>
-          <hintset pointTag="hintSet0015">
-            <hstem pos="-12" width="59" />
-            <hstem pos="438" width="60" />
-            <hstem pos="587" width="103" />
-            <vstem pos="72" width="73" />
-            <vstem pos="225" width="107" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>6271c663605a9d9d8afa9829710bd98de21df40094bbbca90700f4932e01fd641e0099c23a7a703bb9dfd2ad2e19740f4bd460d409ba331f53f0e48c604716e5</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 59</string>
+              <string>hstem 438 60</string>
+              <string>vstem 72 73</string>
+              <string>vstem 272 73</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0015</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 59</string>
+              <string>hstem 438 60</string>
+              <string>hstem 587 103</string>
+              <string>vstem 72 73</string>
+              <string>vstem 225 107</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

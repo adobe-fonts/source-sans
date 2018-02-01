@@ -28,7 +28,7 @@
       <point x="157" y="-12" />
     </contour>
     <contour>
-      <point type="curve" x="322" y="27" />
+      <point name="hintSet0010" type="curve" x="322" y="27" />
       <point x="198" y="27" />
       <point x="113" y="133" />
       <point type="curve" x="109" y="299" />
@@ -39,18 +39,38 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="97153b314d865986b0ce2a6fdca2c1d48b33d7208671a78ee5f5c5f9dd2d97312fbbfb5d464cda0e5d1e5e95a2f94a0ad9279c2d777ffdc0a1eda1eaeb4ced81">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="39" />
-            <hstem pos="299" width="38" />
-            <hstem pos="632" width="39" />
-            <vstem pos="62" width="47" />
-            <vstem pos="547" width="46" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>97153b314d865986b0ce2a6fdca2c1d48b33d7208671a78ee5f5c5f9dd2d97312fbbfb5d464cda0e5d1e5e95a2f94a0ad9279c2d777ffdc0a1eda1eaeb4ced81</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 39</string>
+              <string>hstem 299 38</string>
+              <string>hstem 632 39</string>
+              <string>vstem 62 47</string>
+              <string>vstem 547 46</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0010</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 39</string>
+              <string>hstem 299 38</string>
+              <string>hstem 632 39</string>
+              <string>vstem 62 47</string>
+              <string>vstem 546 47</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

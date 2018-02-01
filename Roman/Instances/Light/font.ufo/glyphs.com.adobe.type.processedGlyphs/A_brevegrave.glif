@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Abrevegrave">
+<glyph format="1" name="Abrevegrave">
   <advance width="526" />
+  <unicode hex="1EB0" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="188" y="388" />
@@ -25,15 +26,9 @@
       <point type="line" x="240" y="659" />
     </contour>
     <contour>
-      <point type="line" x="291" y="820" />
-      <point type="line" x="197" y="925" />
-      <point type="line" x="166" y="900" />
-      <point type="line" x="268" y="802" />
-    </contour>
-    <contour>
       <point type="curve" x="263" y="710" />
-      <point x="352" y="710" />
-      <point x="392" y="775" />
+      <point x="351" y="710" />
+      <point x="391" y="775" />
       <point type="curve" x="399" y="834" />
       <point type="line" x="367" y="839" />
       <point x="360" y="788" />
@@ -43,25 +38,39 @@
       <point x="166" y="788" />
       <point type="curve" x="159" y="839" />
       <point type="line" x="127" y="834" />
-      <point x="134" y="775" />
-      <point x="174" y="710" />
+      <point x="135" y="775" />
+      <point x="175" y="710" />
+    </contour>
+    <contour>
+      <point type="line" x="291" y="820" />
+      <point type="line" x="197" y="925" />
+      <point type="line" x="166" y="900" />
+      <point type="line" x="268" y="802" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="c19ea5637c1381c58fd0061197bab5c050b8a97a2193a9af95adcdbe7ef6fa1e398c928a75f8b9344b7b8b66827551fcbf2610e9995a0202d9569c752f89252a">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="226" width="39" />
-            <hstem pos="616" width="43" />
-            <hstem pos="710" width="32" />
-            <vstem pos="127" width="32" />
-            <vstem pos="367" width="32" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>27566dca71380781b2764a7c2181841db469f755959dccea0efd6e724099871e94696d4a344e47a392e6a51476a3ea0fb96d9f791fe9382cfa929e008091415b</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 226 39</string>
+              <string>hstem 616 43</string>
+              <string>hstem 710 32</string>
+              <string>vstem 127 32</string>
+              <string>vstem 367 32</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

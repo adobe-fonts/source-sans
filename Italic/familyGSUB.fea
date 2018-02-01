@@ -178,8 +178,11 @@ feature ccmp { # Glyph Composition / Decomposition
 #--------------------------------------
 feature case { # Case-Sensitive Forms
 	sub @MARKS_CMB by @MARKS_CMB_CASE;
-	sub @FIGURES_LINING_TABULAR by @FIGURES_CAP;
 	sub at by at.case;
+#	sub anoteleia by anoteleia.cap;
+	lookup FIGURES_CASE {
+		sub @FIGURES_LINING_TABULAR by @FIGURES_CAP;
+	} FIGURES_CASE;
 } case;
 
 
@@ -370,6 +373,17 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 		sub @SS04_I_UC_DEFAULT by @SS04_I_UC_ALTERNATE;
 	} I_ALTS;
 } ss04;
+
+
+#--------------------------------------
+feature ss19 { # Titling Figures
+featureNames {
+	name "Titling figures"; # Windows English
+};
+
+	lookup FIGURES_CASE;
+
+} ss19;
 
 
 #--------------------------------------

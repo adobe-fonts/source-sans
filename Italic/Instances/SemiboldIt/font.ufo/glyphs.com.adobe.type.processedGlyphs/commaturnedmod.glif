@@ -4,7 +4,7 @@
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="167" y="394" />
-      <point x="209" y="394" />
+      <point name="hintSet0001" x="209" y="394" />
       <point x="236" y="426" />
       <point type="curve" x="236" y="463" />
       <point x="236" y="498" />
@@ -13,7 +13,7 @@
       <point x="173" y="517" />
       <point x="172" y="517" />
       <point type="curve" x="170" y="517" />
-      <point x="170" y="551" />
+      <point name="hintSet0004" x="170" y="551" />
       <point x="207" y="606" />
       <point type="curve" x="275" y="635" />
       <point type="line" x="256" y="684" />
@@ -26,15 +26,41 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w267c167394209394236426c236463236498210517c175517173517172517c170517170551207606c275635l256684172654103582c103476103424129394">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="394" width="123" />
-            <vstem pos="103" width="67" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w267c167394209394236426c236463236498210517c175517173517172517c170517170551207606c275635l256684172654103582c103476103424129394</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 394 123</string>
+              <string>vstem 103 67</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 394 123</string>
+              <string>vstem 103 133</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0004</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 394 123</string>
+              <string>vstem 103 67</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

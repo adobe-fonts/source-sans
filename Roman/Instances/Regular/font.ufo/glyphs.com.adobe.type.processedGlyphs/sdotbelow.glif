@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="sdotbelow">
+	<unicode hex="1E63" />
   <advance width="419" />
   <outline>
     <contour>
@@ -43,42 +44,55 @@
       <point x="140" y="-12" />
     </contour>
     <contour>
-      <point type="curve" x="223" y="-206" />
-      <point x="254" y="-206" />
-      <point x="277" y="-184" />
-      <point type="curve" x="277" y="-152" />
-      <point x="277" y="-121" />
-      <point x="254" y="-98" />
+      <point name="hintSet0015" type="curve" x="223" y="-206" />
+      <point x="255" y="-206" />
+      <point x="278" y="-185" />
+      <point type="curve" x="278" y="-152" />
+      <point x="278" y="-120" />
+      <point x="255" y="-98" />
       <point type="curve" x="223" y="-98" />
-      <point x="192" y="-98" />
-      <point x="169" y="-121" />
-      <point type="curve" x="169" y="-152" />
-      <point x="169" y="-184" />
-      <point x="192" y="-206" />
+      <point x="191" y="-98" />
+      <point x="168" y="-120" />
+      <point type="curve" x="168" y="-152" />
+      <point x="168" y="-185" />
+      <point x="191" y="-206" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="5ce6385eb519cd9e5c15b9c76e54c2d0195bafc85b25ad6fa77a6e534db7f5617e5970031b8756786d2ce0329ebdaec28b494376bbb87f262af3da9cf0c2b6e8">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-206" width="108" />
-            <hstem pos="-12" width="64" />
-            <hstem pos="434" width="64" />
-            <vstem pos="52" width="79" />
-            <vstem pos="169" width="108" />
-            <vstem pos="308" width="79" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>415dda07b5e4052fd375b4967a5761bab65a433177975d0953a57334e0268f90e4c16a7965463fa4a6d36a4425632c1a784630ecf4843321932e47506fef330c</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -206 108</string>
+              <string>hstem -12 64</string>
+              <string>hstem 434 64</string>
+              <string>vstem 52 79</string>
+              <string>vstem 308 79</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0015</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -206 108</string>
+              <string>hstem -12 64</string>
+              <string>hstem 434 64</string>
+              <string>vstem 52 79</string>
+              <string>vstem 168 110</string>
+              <string>vstem 308 79</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

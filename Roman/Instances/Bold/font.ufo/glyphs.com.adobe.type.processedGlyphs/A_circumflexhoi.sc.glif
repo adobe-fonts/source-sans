@@ -35,7 +35,7 @@
       <point type="line" x="95" y="614" />
     </contour>
     <contour>
-      <point type="line" x="385" y="640" />
+      <point name="hintSet0022" type="line" x="385" y="640" />
       <point x="450" y="645" />
       <point x="501" y="668" />
       <point type="curve" x="501" y="727" />
@@ -53,19 +53,39 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="08de270b1cf6871fb31008a27e09fb9db537c0331a97eeae83da56b5443fb1651242d642b7e23e028ac0f594b72af344b22debafaeab0df26630790fd13cce30">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="108" width="106" />
-            <hstem pos="421" width="107" />
-            <hstem pos="647" width="67" />
-            <hstem pos="747" width="60" />
-            <vstem pos="406" width="95" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>08de270b1cf6871fb31008a27e09fb9db537c0331a97eeae83da56b5443fb1651242d642b7e23e028ac0f594b72af344b22debafaeab0df26630790fd13cce30</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 108 106</string>
+              <string>hstem 421 107</string>
+              <string>hstem 647 67</string>
+              <string>vstem 406 95</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0022</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 108 106</string>
+              <string>hstem 421 107</string>
+              <string>hstem 640 74</string>
+              <string>hstem 747 60</string>
+              <string>vstem 406 95</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

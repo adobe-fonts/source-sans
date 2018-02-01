@@ -22,7 +22,7 @@
       <point x="176" y="0" />
     </contour>
     <contour>
-      <point type="line" x="333" y="133" />
+      <point name="hintSet0014" type="line" x="333" y="133" />
       <point x="265" y="133" />
       <point x="220" y="161" />
       <point type="curve" x="220" y="263" />
@@ -35,18 +35,38 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="dbf0b61a79449dc9d88bb46801b600b267c36a5e2b208d96a59e8dcb73a11497290df28ede7b4c3d070369602cdbde6c4abfb923cb50a1e65824ea53b1d029a9">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="132" />
-            <hstem pos="206" width="124" />
-            <hstem pos="400" width="132" />
-            <vstem pos="44" width="176" />
-            <vstem pos="346" width="172" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>dbf0b61a79449dc9d88bb46801b600b267c36a5e2b208d96a59e8dcb73a11497290df28ede7b4c3d070369602cdbde6c4abfb923cb50a1e65824ea53b1d029a9</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 132</string>
+              <string>hstem 206 124</string>
+              <string>hstem 400 132</string>
+              <string>vstem 44 176</string>
+              <string>vstem 346 172</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0014</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 133</string>
+              <string>hstem 206 124</string>
+              <string>hstem 399 133</string>
+              <string>vstem 44 176</string>
+              <string>vstem 346 172</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>
