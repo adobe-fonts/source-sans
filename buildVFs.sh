@@ -7,10 +7,10 @@ ro_name=SourceSansVariable-Roman
 it_name=SourceSansVariable-Italic
 
 # build variable OTFs
-buildMasterOTFs $rom/$ro_name.designspace
-buildCFF2VF -p $rom/$ro_name.designspace
-buildMasterOTFs $itm/$it_name.designspace
-buildCFF2VF -p $itm/$it_name.designspace
+buildmasterotfs $rom/$ro_name.designspace
+buildcff2vf -p $rom/$ro_name.designspace
+buildmasterotfs $itm/$it_name.designspace
+buildcff2vf -p $itm/$it_name.designspace
 
 # extract and subroutinize the CFF2 table
 echo 'Subroutinizing' $rom/$ro_name.otf
