@@ -132,52 +132,6 @@ feature aalt { # Access All Alternates
 
 
 #--------------------------------------
-#OK
-feature locl { # Localized Forms
-
-	script latn;
-		language ATH exclude_dflt;
-			lookup OGONEKS_ATH {
-				sub [Aogonek Eogonek aogonek eogonek uogonek] by [Aogonek.d Eogonek.d aogonek.d eogonek.d uogonek.d];
-			} OGONEKS_ATH;
-
-		language NAV exclude_dflt;
-			lookup OGONEKS_ATH;
-
-		language TRK exclude_dflt;
-			lookup I_TURKISH {
-				sub i by i.trk;
-			} I_TURKISH;
-
-		language AZE exclude_dflt;
-			lookup I_TURKISH;
-
-		language CRT exclude_dflt;
-			lookup I_TURKISH;
-
-		language NSM exclude_dflt;
-			lookup ENG_SAMI { # preferred Eng shape for Sami languages
-				sub Eng by Eng.a;
-			} ENG_SAMI;
-
-		language SKS exclude_dflt;
-			lookup ENG_SAMI;
-
-	script grek;
-		sub [acutecmb gravecmb commaturnedabovecmb commaabovecmb] by [tonoscmb variacmb aspercmb leniscmb]; # combining marks
-
-	script cyrl;
-		sub [brevecmb brevecmb.cap] by [brevecmb.cyr brevecmb.cyrcap]; # combining marks
-
-		language SRB include_dflt;
-			lookup BE_LC_SRB {
-				sub be by be.srb;
-			} BE_LC_SRB;
-
-} locl;
-
-
-#--------------------------------------
 lookup DECOMPOSITION {
 		sub Ecircumflex by E circumflexcmb;
 		sub ecircumflex by e circumflexcmb;
@@ -549,6 +503,52 @@ feature ccmp { # Glyph Composition / Decomposition
 	} YI_UKRAINIAN;
 
 } ccmp;
+
+
+#--------------------------------------
+#OK
+feature locl { # Localized Forms
+
+	script latn;
+		language ATH exclude_dflt;
+			lookup OGONEKS_ATH {
+				sub [Aogonek Eogonek aogonek eogonek uogonek] by [Aogonek.d Eogonek.d aogonek.d eogonek.d uogonek.d];
+			} OGONEKS_ATH;
+
+		language NAV exclude_dflt;
+			lookup OGONEKS_ATH;
+
+		language TRK exclude_dflt;
+			lookup I_TURKISH {
+				sub i by i.trk;
+			} I_TURKISH;
+
+		language AZE exclude_dflt;
+			lookup I_TURKISH;
+
+		language CRT exclude_dflt;
+			lookup I_TURKISH;
+
+		language NSM exclude_dflt;
+			lookup ENG_SAMI { # preferred Eng shape for Sami languages
+				sub Eng by Eng.a;
+			} ENG_SAMI;
+
+		language SKS exclude_dflt;
+			lookup ENG_SAMI;
+
+	script grek;
+		sub [acutecmb gravecmb commaturnedabovecmb commaabovecmb] by [tonoscmb variacmb aspercmb leniscmb]; # combining marks
+
+	script cyrl;
+		sub [brevecmb brevecmb.cap] by [brevecmb.cyr brevecmb.cyrcap]; # combining marks
+
+		language SRB include_dflt;
+			lookup BE_LC_SRB {
+				sub be by be.srb;
+			} BE_LC_SRB;
+
+} locl;
 
 
 #--------------------------------------

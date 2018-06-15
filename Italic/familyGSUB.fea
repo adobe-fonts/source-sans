@@ -89,52 +89,6 @@ feature aalt { # Access All Alternates
 
 
 #--------------------------------------
-#OK
-feature locl { # Localized Forms
-
-	script latn;
-		language ATH exclude_dflt;
-			lookup OGONEKS_ATH {
-				sub [Aogonek Eogonek aogonek eogonek uogonek] by [Aogonek.d Eogonek.d aogonek.d eogonek.d uogonek.d];
-			} OGONEKS_ATH;
-
-		language NAV exclude_dflt;
-			lookup OGONEKS_ATH;
-
-#		language TRK exclude_dflt;
-#			lookup I_TURKISH {
-#				sub i by i.trk;
-#			} I_TURKISH;
-#
-#		language AZE exclude_dflt;
-#			lookup I_TURKISH;
-#
-#		language CRT exclude_dflt;
-#			lookup I_TURKISH;
-
-		language NSM exclude_dflt;
-			lookup ENG_SAMI { # preferred Eng shape for Sami languages
-				sub Eng by Eng.a;
-			} ENG_SAMI;
-
-		language SKS exclude_dflt;
-			lookup ENG_SAMI;
-
-#	script grek;
-#		sub [acutecmb gravecmb commaturnedabovecmb commaabovecmb] by [tonoscmb variacmb aspercmb leniscmb]; # combining marks
-#
-#	script cyrl;
-#		sub [brevecmb brevecmb.cap] by [brevecmb.cyr brevecmb.cyrcap]; # combining marks
-#
-#		language SRB include_dflt;
-#			lookup BE_LC_SRB {
-#				sub be by be.srb;
-#			} BE_LC_SRB;
-
-} locl;
-
-
-#--------------------------------------
 lookup DECOMPOSITION {
 		sub Ecircumflex by E circumflexcmb;
 		sub ecircumflex by e circumflexcmb;
@@ -216,44 +170,49 @@ feature ccmp { # Glyph Composition / Decomposition
 
 
 #--------------------------------------
-feature case { # Case-Sensitive Forms
-	sub @MARKS_CMB by @MARKS_CMB_CASE;
-	sub at by at.case;
-#	sub anoteleia by anoteleia.cap;
-	lookup FIGURES_CASE {
-		sub @FIGURES_LINING_TABULAR by @FIGURES_CAP;
-	} FIGURES_CASE;
-} case;
-
-
-#--------------------------------------
 #OK
-#feature c2sc { #UC-->SC
-#
-#	sub @LETTERS_MAJUSCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
-#	sub @LETTERS_MAJUSCULE_LATIN_ACCENTED by @LETTERS_SMALLCAP_LATIN_ACCENTED;
-#	sub @LETTERS_MAJUSCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-#	sub [Idotaccent Germandbls] by [Idotaccent.sc Germandbls.sc];
-#
-#	lookup SORTS_SMALLCAP {
-#		sub @FIGURES_LINING_TABULAR by @FIGURES_SMALLCAP;
-#		sub [ampersand hyphen endash emdash] by [ampersand.sc hyphen.sc endash.sc emdash.sc];
-#	} SORTS_SMALLCAP;
-#
-#} c2sc;
+feature locl { # Localized Forms
 
+	script latn;
+		language ATH exclude_dflt;
+			lookup OGONEKS_ATH {
+				sub [Aogonek Eogonek aogonek eogonek uogonek] by [Aogonek.d Eogonek.d aogonek.d eogonek.d uogonek.d];
+			} OGONEKS_ATH;
 
-#--------------------------------------
-#OK
-#feature smcp { #LC-->SC
+		language NAV exclude_dflt;
+			lookup OGONEKS_ATH;
+
+#		language TRK exclude_dflt;
+#			lookup I_TURKISH {
+#				sub i by i.trk;
+#			} I_TURKISH;
 #
-#	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
-#	sub @LETTERS_MINISCULE_LATIN_ACCENTED by @LETTERS_SMALLCAP_LATIN_ACCENTED;
-#	sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-#	sub [i.trk germandbls iogonek.d] by [Idotaccent.sc Germandbls.sc Iogonek.sc];
-#	lookup SORTS_SMALLCAP;
+#		language AZE exclude_dflt;
+#			lookup I_TURKISH;
 #
-#} smcp;
+#		language CRT exclude_dflt;
+#			lookup I_TURKISH;
+
+		language NSM exclude_dflt;
+			lookup ENG_SAMI { # preferred Eng shape for Sami languages
+				sub Eng by Eng.a;
+			} ENG_SAMI;
+
+		language SKS exclude_dflt;
+			lookup ENG_SAMI;
+
+#	script grek;
+#		sub [acutecmb gravecmb commaturnedabovecmb commaabovecmb] by [tonoscmb variacmb aspercmb leniscmb]; # combining marks
+#
+#	script cyrl;
+#		sub [brevecmb brevecmb.cap] by [brevecmb.cyr brevecmb.cyrcap]; # combining marks
+#
+#		language SRB include_dflt;
+#			lookup BE_LC_SRB {
+#				sub be by be.srb;
+#			} BE_LC_SRB;
+
+} locl;
 
 
 #--------------------------------------
@@ -348,7 +307,62 @@ feature onum { # Oldstyle (Text) Figures
 
 
 #--------------------------------------
-feature ss05 { # Stylistic Set 4 (alternate I)
+feature case { # Case-Sensitive Forms
+	sub @MARKS_CMB by @MARKS_CMB_CASE;
+	sub at by at.case;
+#	sub anoteleia by anoteleia.cap;
+	lookup FIGURES_CASE {
+		sub @FIGURES_LINING_TABULAR by @FIGURES_CAP;
+	} FIGURES_CASE;
+} case;
+
+
+#--------------------------------------
+#OK
+feature ss18 { # Stylistic Set 18 (Preferred Athabaskan ogoneks)
+
+featureNames {
+	name "Preferred Athabaskan ogoneks"; # Windows English
+};
+
+
+	lookup OGONEKS_ATH;
+
+} ss18;
+
+
+#--------------------------------------
+#OK
+#feature c2sc { #UC-->SC
+#
+#	sub @LETTERS_MAJUSCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
+#	sub @LETTERS_MAJUSCULE_LATIN_ACCENTED by @LETTERS_SMALLCAP_LATIN_ACCENTED;
+#	sub @LETTERS_MAJUSCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
+#	sub [Idotaccent Germandbls] by [Idotaccent.sc Germandbls.sc];
+#
+#	lookup SORTS_SMALLCAP {
+#		sub @FIGURES_LINING_TABULAR by @FIGURES_SMALLCAP;
+#		sub [ampersand hyphen endash emdash] by [ampersand.sc hyphen.sc endash.sc emdash.sc];
+#	} SORTS_SMALLCAP;
+#
+#} c2sc;
+
+
+#--------------------------------------
+#OK
+#feature smcp { #LC-->SC
+#
+#	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
+#	sub @LETTERS_MINISCULE_LATIN_ACCENTED by @LETTERS_SMALLCAP_LATIN_ACCENTED;
+#	sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
+#	sub [i.trk germandbls iogonek.d] by [Idotaccent.sc Germandbls.sc Iogonek.sc];
+#	lookup SORTS_SMALLCAP;
+#
+#} smcp;
+
+
+#--------------------------------------
+feature ss05 { # Stylistic Set 5 (Slashed zero)
 	featureNames {
 		name "Slashed zero"; # Windows English
 	};
