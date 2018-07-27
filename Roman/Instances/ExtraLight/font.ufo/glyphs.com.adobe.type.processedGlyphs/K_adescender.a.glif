@@ -1,11 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Kadescender.a">
+<glyph format="1" name="Kadescender.a">
   <advance width="588" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="520" y="-192" />
+      <point name="hintSet0000" type="line" x="100" y="0" />
+      <point type="line" x="132" y="0" />
+      <point type="line" x="132" y="338" />
+      <point type="line" x="277" y="338" />
+      <point type="line" x="278" y="339" />
+      <point type="line" x="406" y="114" />
+      <point name="hintSet0006" x="458" y="17" />
+      <point x="482" y="-7" />
+      <point type="curve" x="520" y="-11" />
+      <point type="line" x="520" y="-192" />
       <point type="line" x="546" y="-192" />
-      <point type="line" x="551" y="-9" />
+      <point name="hintSet0009" type="line" x="551" y="-9" />
       <point x="553" y="-9" />
       <point x="555" y="-8" />
       <point type="curve" x="556" y="-8" />
@@ -34,15 +43,6 @@
       <point type="line" x="132" y="366" />
       <point type="line" x="132" y="660" />
       <point type="line" x="100" y="660" />
-      <point type="line" x="100" y="0" />
-      <point type="line" x="132" y="0" />
-      <point type="line" x="132" y="338" />
-      <point type="line" x="277" y="338" />
-      <point type="line" x="278" y="339" />
-      <point type="line" x="406" y="114" />
-      <point name="hintSet0025" x="458" y="17" />
-      <point x="482" y="-7" />
-      <point type="curve" x="520" y="-11" />
     </contour>
   </outline>
   <lib>
@@ -50,7 +50,7 @@
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>d8e792861c4bac81858b07b749d9e6ff789984001c9fed86acc741444b582868c82c86f4500eb99e546369ebf7b24347422e7801192ec269078fcf30b5a246ca</string>
+        <string>c36e6b9f539556b094c0a65ba39228c6e34495ae3ea4b3c64b06f2148c80c478ff1fe6b49a6519b703134bfd51cda50926b69f9b2a3d0d769b2f4b7af4741451</string>
         <key>hintSetList</key>
         <array>
           <dict>
@@ -67,10 +67,22 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0025</string>
+            <string>hintSet0006</string>
             <key>stems</key>
             <array>
               <string>hstem -11 39</string>
+              <string>hstem 338 28</string>
+              <string>hstem 638 34</string>
+              <string>vstem 100 32</string>
+              <string>vstem 520 28.5</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0009</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -9 37</string>
               <string>hstem 338 28</string>
               <string>hstem 638 34</string>
               <string>vstem 100 32</string>

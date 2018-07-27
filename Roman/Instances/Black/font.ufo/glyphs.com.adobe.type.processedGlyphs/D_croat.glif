@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Dcroat">
+<glyph format="1" name="Dcroat">
   <advance width="668" />
+  <unicode hex="0110" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="24" y="294" />
-      <point type="line" x="98" y="294" />
-      <point type="line" x="98" y="0" />
+      <point name="hintSet0000" type="line" x="98" y="0" />
       <point type="line" x="300" y="0" />
       <point x="488" y="0" />
       <point x="624" y="98" />
@@ -14,8 +13,10 @@
       <point x="488" y="650" />
       <point type="curve" x="290" y="650" />
       <point type="line" x="98" y="650" />
-      <point type="line" x="98" y="374" />
+      <point name="hintSet0005" type="line" x="98" y="374" />
       <point type="line" x="24" y="368" />
+      <point type="line" x="24" y="294" />
+      <point type="line" x="98" y="294" />
     </contour>
     <contour>
       <point type="line" x="270" y="138" />
@@ -38,12 +39,24 @@
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>b55f83aad530e959ceaf8c81070a068aef81d5e1ed693f86082237e24f363495de13a272049cee209f635681ca995b09eccfc0ef91bc255b486151a1a08483ca</string>
+        <string>36a0d6fbbd9971d1b3fe22a8a78b905ce3fde4e3f1cafad270f7475c177b28b11856b7e1abd812661d9575188d6b998577e81ed727bc2fd7f1e010d80f4c3b79</string>
         <key>hintSetList</key>
         <array>
           <dict>
             <key>pointTag</key>
             <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 138</string>
+              <string>hstem 294 80</string>
+              <string>hstem 512 138</string>
+              <string>vstem 98 172</string>
+              <string>vstem 448 176</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
             <key>stems</key>
             <array>
               <string>hstem 0 138</string>

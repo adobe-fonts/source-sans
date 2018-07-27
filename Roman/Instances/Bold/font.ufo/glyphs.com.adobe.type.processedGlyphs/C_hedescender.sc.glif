@@ -1,13 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Chedescender.sc">
+<glyph format="1" name="Chedescender.sc">
   <advance width="591" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="438" y="-172" />
+      <point name="hintSet0000" type="line" x="352" y="0" />
+      <point name="hintSet0001" type="line" x="438" y="0" />
+      <point type="line" x="438" y="-172" />
       <point type="line" x="564" y="-172" />
       <point type="line" x="578" y="22" />
       <point type="line" x="578" y="122" />
-      <point name="hintSet0004" type="line" x="499" y="122" />
+      <point name="hintSet0006" type="line" x="499" y="122" />
       <point type="line" x="499" y="528" />
       <point type="line" x="352" y="528" />
       <point type="line" x="352" y="316" />
@@ -26,8 +28,6 @@
       <point x="308" y="197" />
       <point x="329" y="200" />
       <point type="curve" x="352" y="204" />
-      <point type="line" x="352" y="0" />
-      <point name="hintSet0016" type="line" x="438" y="0" />
     </contour>
   </outline>
   <lib>
@@ -35,7 +35,7 @@
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>155dc6e2f9d06afab2ef507500e83d6854d7f0b21c6b5f1b80a9e7e46ddc297fed6c79c203407aa567e8613c678fced7e7f28743f441141afcec8b0ea9271acd</string>
+        <string>79c0b8efc629dc55f86e6bb17dd3b401d7c8bade9654c7441582b665cca9355b9cbb7cdf5d9d37195d8ef5480dc105e34169831cd2edf20124d213d2cd880d84</string>
         <key>hintSetList</key>
         <array>
           <dict>
@@ -47,12 +47,24 @@
               <string>hstem 197 114</string>
               <string>hstem 528 -20</string>
               <string>vstem 60 145</string>
+              <string>vstem 352 147</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 122</string>
+              <string>hstem 197 114</string>
+              <string>hstem 528 -20</string>
+              <string>vstem 60 145</string>
               <string>vstem 438 140</string>
             </array>
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0004</string>
+            <string>hintSet0006</string>
             <key>stems</key>
             <array>
               <string>hstem 0 122</string>
@@ -60,18 +72,6 @@
               <string>hstem 528 -20</string>
               <string>vstem 60 145</string>
               <string>vstem 352 147</string>
-            </array>
-          </dict>
-          <dict>
-            <key>pointTag</key>
-            <string>hintSet0016</string>
-            <key>stems</key>
-            <array>
-              <string>hstem 0 122</string>
-              <string>hstem 197 114</string>
-              <string>hstem 528 -20</string>
-              <string>vstem 60 145</string>
-              <string>vstem 438 140</string>
             </array>
           </dict>
         </array>

@@ -1,11 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Zhedescender.a">
+<glyph format="1" name="Zhedescender.a">
   <advance width="852" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="746" y="-192" />
+      <point name="hintSet0000" type="curve" x="36" y="-12" />
+      <point x="90" y="-12" />
+      <point x="123" y="7" />
+      <point type="curve" x="174" y="107" />
+      <point type="line" x="265" y="311" />
+      <point type="line" x="367" y="311" />
+      <point type="line" x="367" y="0" />
+      <point type="line" x="445" y="0" />
+      <point type="line" x="445" y="311" />
+      <point type="line" x="547" y="311" />
+      <point type="line" x="639" y="107" />
+      <point x="669" y="48" />
+      <point x="693" y="18" />
+      <point type="curve" x="718" y="2" />
+      <point type="line" x="718" y="0" />
+      <point type="line" x="722" y="0" />
+      <point x="730" y="-4" />
+      <point x="738" y="-7" />
+      <point type="curve" x="746" y="-9" />
+      <point type="line" x="746" y="-192" />
       <point type="line" x="816" y="-192" />
-      <point type="line" x="826" y="16" />
+      <point name="hintSet0015" type="line" x="826" y="16" />
       <point type="line" x="826" y="71" />
       <point type="line" x="804" y="71" />
       <point type="line" x="804" y="72" />
@@ -51,7 +70,7 @@
       <point type="curve" x="137" y="505" />
       <point type="line" x="200" y="345" />
       <point type="line" x="113" y="151" />
-      <point name="hintSet0030" x="77" y="80" />
+      <point name="hintSet0043" x="77" y="80" />
       <point x="61" y="68" />
       <point type="curve" x="32" y="68" />
       <point x="26" y="68" />
@@ -60,25 +79,6 @@
       <point type="line" x="-6" y="-6" />
       <point x="4" y="-10" />
       <point x="18" y="-12" />
-      <point type="curve" x="36" y="-12" />
-      <point x="90" y="-12" />
-      <point x="123" y="7" />
-      <point type="curve" x="174" y="107" />
-      <point type="line" x="265" y="311" />
-      <point type="line" x="367" y="311" />
-      <point type="line" x="367" y="0" />
-      <point type="line" x="445" y="0" />
-      <point type="line" x="445" y="311" />
-      <point type="line" x="547" y="311" />
-      <point type="line" x="639" y="107" />
-      <point x="669" y="48" />
-      <point x="693" y="18" />
-      <point type="curve" x="718" y="2" />
-      <point type="line" x="718" y="0" />
-      <point type="line" x="722" y="0" />
-      <point x="730" y="-4" />
-      <point x="738" y="-7" />
-      <point type="curve" x="746" y="-9" />
     </contour>
   </outline>
   <lib>
@@ -86,12 +86,23 @@
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>7e30257809548bdafd4c3f3e102da797c7b71998be2f4f0b29d9d9135f60f839a92cf3a9ff4e5f9d675a053ba7f3b2820765c358e8df93802fd5b664fc19a293</string>
+        <string>06f435d17916b2ff19f4c13d1a959205c8d1b456de6559a9c8aa4335671fb8dbb94f37aa8d09a43daa32c76add4d2cc4e249e1e70129809cb95c4cabba73a122</string>
         <key>hintSetList</key>
         <array>
           <dict>
             <key>pointTag</key>
             <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 80</string>
+              <string>hstem 311 68</string>
+              <string>vstem 367 78</string>
+              <string>vstem 746 80</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0015</string>
             <key>stems</key>
             <array>
               <string>hstem 0 71</string>
@@ -103,12 +114,11 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0030</string>
+            <string>hintSet0043</string>
             <key>stems</key>
             <array>
               <string>hstem -12 80</string>
               <string>hstem 311 68</string>
-              <string>hstem 588 80</string>
               <string>vstem 367 78</string>
               <string>vstem 746 80</string>
             </array>

@@ -1,21 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Tse">
+<glyph format="1" name="Tse">
+	<unicode hex="0426" />
   <advance width="626" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="97" y="0" />
-      <point name="hintSet0001" type="line" x="547" y="0" />
-      <point type="line" x="547" y="-188" />
+      <point name="hintSet0000" type="line" x="547" y="-188" />
       <point type="line" x="586" y="-188" />
       <point type="line" x="593" y="14" />
       <point type="line" x="593" y="40" />
-      <point name="hintSet0006" type="line" x="523" y="40" />
+      <point name="hintSet0004" type="line" x="523" y="40" />
       <point type="line" x="523" y="659" />
       <point type="line" x="477" y="659" />
       <point type="line" x="477" y="40" />
       <point type="line" x="143" y="40" />
       <point type="line" x="143" y="659" />
       <point type="line" x="97" y="659" />
+      <point type="line" x="97" y="0" />
+      <point name="hintSet0012" type="line" x="547" y="0" />
     </contour>
   </outline>
   <lib>
@@ -23,7 +24,7 @@
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>w626l970l5470l547-188l586-188l59314l59340l52340l523659l477659l47740l14340l143659l97659</string>
+        <string>w626l547-188l586-188l59314l59340l52340l523659l477659l47740l14340l143659l97659l970l5470</string>
         <key>hintSetList</key>
         <array>
           <dict>
@@ -35,11 +36,23 @@
               <string>hstem 659 -20</string>
               <string>vstem 97 46</string>
               <string>vstem 477 46</string>
+              <string>vstem 547 46</string>
             </array>
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0001</string>
+            <string>hintSet0004</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 40</string>
+              <string>hstem 659 -20</string>
+              <string>vstem 97 46</string>
+              <string>vstem 477 46</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0012</string>
             <key>stems</key>
             <array>
               <string>hstem 0 40</string>
@@ -47,17 +60,6 @@
               <string>vstem 97 46</string>
               <string>vstem 477 46</string>
               <string>vstem 547 46</string>
-            </array>
-          </dict>
-          <dict>
-            <key>pointTag</key>
-            <string>hintSet0006</string>
-            <key>stems</key>
-            <array>
-              <string>hstem 0 40</string>
-              <string>hstem 659 -20</string>
-              <string>vstem 97 46</string>
-              <string>vstem 477 46</string>
             </array>
           </dict>
         </array>
