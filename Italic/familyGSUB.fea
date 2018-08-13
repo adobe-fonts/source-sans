@@ -110,10 +110,10 @@ feature ccmp { # Glyph Composition / Decomposition
 
 	lookup GLYPH_COMPOSITION_CONTEXTUAL {
 		#substitutes dotless form of iogonek when followed by combining acute: Navajo language support
-		sub i' ogonekcmb' acutecmb by iogonek.d;
-		sub iogonek' @MARKS_CMB by iogonek.d;
-		sub istroke' @MARKS_CMB by istroke.d;
-		sub jcrossedtail' @MARKS_CMB by jcrossedtail.d;
+		sub i' ogonekcmb' acutecmb by iogonek.x;
+		sub iogonek' @MARKS_CMB by iogonek.x;
+		sub istroke' @MARKS_CMB by istroke.x;
+		sub jcrossedtail' @MARKS_CMB by jcrossedtail.x;
 	} GLYPH_COMPOSITION_CONTEXTUAL;
 
 	lookup MARKS_COMPOSITION {
@@ -355,7 +355,7 @@ featureNames {
 #	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
 #	sub @LETTERS_MINISCULE_LATIN_ACCENTED by @LETTERS_SMALLCAP_LATIN_ACCENTED;
 #	sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-#	sub [i.trk germandbls iogonek.d] by [Idotaccent.sc Germandbls.sc Iogonek.sc];
+#	sub [i.trk germandbls iogonek.x] by [Idotaccent.sc Germandbls.sc Iogonek.sc];
 #	lookup SORTS_SMALLCAP;
 #
 #} smcp;

@@ -1,9 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="dcaron">
+	<unicode hex="010F" />
   <advance width="526" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="432" y="415" />
+      <point name="hintSet0000" type="curve" x="184" y="-12" />
+      <point x="250" y="-12" />
+      <point x="312" y="25" />
+      <point type="curve" x="361" y="76" />
+      <point type="line" x="365" y="76" />
+      <point name="hintSet0003" type="line" x="354" y="0" />
+      <point type="line" x="389" y="0" />
+      <point type="line" x="534" y="719" />
+      <point type="line" x="493" y="719" />
+      <point type="line" x="451" y="510" />
+      <point type="line" x="432" y="415" />
       <point type="line" x="428" y="415" />
       <point x="403" y="461" />
       <point x="361" y="492" />
@@ -11,21 +22,11 @@
       <point x="172" y="492" />
       <point x="44" y="346" />
       <point type="curve" x="44" y="161" />
-      <point x="44" y="49" />
+      <point name="hintSet0012" x="44" y="49" />
       <point x="100" y="-12" />
-      <point type="curve" x="184" y="-12" />
-      <point x="250" y="-12" />
-      <point x="312" y="25" />
-      <point type="curve" x="361" y="76" />
-      <point type="line" x="365" y="76" />
-      <point name="hintSet0007" type="line" x="354" y="0" />
-      <point type="line" x="389" y="0" />
-      <point type="line" x="534" y="719" />
-      <point type="line" x="493" y="719" />
-      <point type="line" x="451" y="510" />
     </contour>
     <contour>
-      <point name="hintSet0012" type="curve" x="193" y="24" />
+      <point type="curve" x="193" y="24" />
       <point x="127" y="24" />
       <point x="86" y="72" />
       <point type="curve" x="86" y="169" />
@@ -40,7 +41,7 @@
       <point x="255" y="24" />
     </contour>
     <contour>
-      <point type="line" x="553" y="548" />
+      <point name="hintSet0019" type="line" x="553" y="548" />
       <point type="line" x="579" y="548" />
       <point type="line" x="619" y="704" />
       <point type="line" x="628" y="754" />
@@ -49,17 +50,10 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.30000000000000004</real>
-        <real>0.6294117647058824</real>
-        <integer>1</integer>
-        <integer>1</integer>
-      </array>
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>0f3a66c4de9d87873b052abdc04267256c525a93f530e47d06a94e16ca352432b6c737d63ab5c2453ec75bb5a1d6fb959dd8b10da2fbd2e677fb03f2e5599b71</string>
+        <string>36c802b3c478fa12486e13252e356c7a44a78cb6de4915d0773c2207103199a83ec9027d1bb2cacb7a0fbcf3916eccb2a41668353016a3ddfe4925fe998c5a1c</string>
         <key>hintSetList</key>
         <array>
           <dict>
@@ -75,7 +69,7 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0007</string>
+            <string>hintSet0003</string>
             <key>stems</key>
             <array>
               <string>hstem 21 -21</string>
@@ -87,6 +81,17 @@
           <dict>
             <key>pointTag</key>
             <string>hintSet0012</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 36</string>
+              <string>hstem 456 36</string>
+              <string>hstem 719 -20</string>
+              <string>vstem 44 42</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0019</string>
             <key>stems</key>
             <array>
               <string>hstem -12 36</string>

@@ -1,12 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="ugrave">
+	<unicode hex="00F9" />
   <advance width="514" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="468" y="478" />
+      <point name="hintSet0000" type="curve" x="184" y="-12" />
+      <point x="242" y="-12" />
+      <point x="296" y="28" />
+      <point type="curve" x="356" y="80" />
+      <point type="line" x="360" y="80" />
+      <point name="hintSet0003" type="line" x="348" y="0" />
+      <point type="line" x="372" y="0" />
+      <point type="line" x="468" y="478" />
       <point type="line" x="440" y="478" />
       <point type="line" x="368" y="120" />
-      <point x="292" y="46" />
+      <point name="hintSet0008" x="292" y="46" />
       <point x="232" y="14" />
       <point type="curve" x="188" y="14" />
       <point x="124" y="14" />
@@ -23,13 +31,6 @@
       <point type="curve" x="70" y="104" />
       <point x="70" y="36" />
       <point x="102" y="-12" />
-      <point type="curve" x="184" y="-12" />
-      <point x="242" y="-12" />
-      <point x="296" y="28" />
-      <point type="curve" x="356" y="80" />
-      <point type="line" x="360" y="80" />
-      <point name="hintSet0013" type="line" x="348" y="0" />
-      <point type="line" x="372" y="0" />
     </contour>
     <contour>
       <point type="line" x="354" y="570" />
@@ -40,17 +41,10 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.30000000000000004</real>
-        <real>0.6294117647058824</real>
-        <integer>1</integer>
-        <integer>1</integer>
-      </array>
       <key>com.adobe.type.autohint.v2</key>
       <dict>
         <key>id</key>
-        <string>f78f8c3c52e98156df8d75338f637eb2e1faeba1d797ebb43ca21e3a097cc37cb7125b41461bfebcbeab1c6634e1457e0bae26e73c0a22daa809e3d126484ab7</string>
+        <string>7b1d840cd8d277d86d179f4d47f255900b4fb803b03be01a1a54eb12020f5ac78889eee58a373f6c0f0063dd0a324ae20c696033cb952afcb41f3c52aaf4db7c</string>
         <key>hintSetList</key>
         <array>
           <dict>
@@ -66,10 +60,21 @@
           </dict>
           <dict>
             <key>pointTag</key>
-            <string>hintSet0013</string>
+            <string>hintSet0003</string>
             <key>stems</key>
             <array>
               <string>hstem 21 -21</string>
+              <string>hstem 478 -20</string>
+              <string>hstem 730 -20</string>
+              <string>vstem 70 28</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0008</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 26</string>
               <string>hstem 478 -20</string>
               <string>hstem 730 -20</string>
               <string>vstem 70 28</string>
