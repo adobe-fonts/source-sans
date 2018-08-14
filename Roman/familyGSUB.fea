@@ -52,10 +52,10 @@
 @LETTERS_SMALLCAP_ALL = [@LETTERS_SMALLCAP_LATIN_ALL @LETTERS_SMALLCAP_GREEK_ALL @LETTERS_SMALLCAP_CYRILLIC_ALL];
 
 @MARKS_CMB = [gravecmb acutecmb circumflexcmb tildecmb macroncmb brevecmb dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb dblgravecmb cedillacmb ogonekcmb
-dieresismacron dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexgrave circumflexhoi circumflextilde breveacute brevegrave brevehoi brevetilde circumflexbreve];
+dieresismacron dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexgrave circumflexhoi circumflextilde breveacute brevegrave brevehoi brevetilde circumflexbreve overlinecmb brevecmb.cyr breveinvertedcmb perispomenicmb];
 
 @MARKS_CMB_CASE = [gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap dblgravecmb.cap cedillacmb.cap ogonekcmb.cap
-dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumflexacute.cap circumflexgrave.cap circumflexhoi.cap circumflextilde.cap breveacute.cap brevegrave.cap brevehoi.cap brevetilde.cap circumflexbreve.cap];
+dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumflexacute.cap circumflexgrave.cap circumflexhoi.cap circumflextilde.cap breveacute.cap brevegrave.cap brevehoi.cap brevetilde.cap circumflexbreve.cap overlinecmb.cap brevecmb.cyrcap breveinvertedcmb.cap perispomenicmb.cap];
 
 @FIGURES_LINING_TABULAR = [zero one two three four five six seven eight nine];
 @FIGURES_LINING_PROPORTIONAL = [zero.pnum one.pnum two.pnum three.pnum four.pnum five.pnum six.pnum seven.pnum eight.pnum nine.pnum];
@@ -69,7 +69,7 @@ dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumf
 @FIGURES_SMALLCAP = [zero.sc one.sc two.sc three.sc four.sc five.sc six.sc seven.sc eight.sc nine.sc];
 
 @PUNCTUATION_FOR_SMALLCAPS = [ampersand exclam question exclamdown questiondown parenleft parenright bracketleft bracketright braceleft braceright hyphen endash emdash quoteleft quoteright quotedblleft quotedblright quotesingle quotedbl];
-@PUNCTUATION_SMALLCAPS = [ampersand.sc exclam.sc question.sc exclamdown.sc questiondown parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc hyphen.sc endash.sc emdash.sc quoteleft.sc quoteright.sc quotedblleft.sc quotedblright.sc quotesingle.sc quotedbl.sc];
+@PUNCTUATION_SMALLCAPS = [ampersand.sc exclam.sc question.sc exclamdown.sc questiondown.sc parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc hyphen.sc endash.sc emdash.sc quoteleft.sc quoteright.sc quotedblleft.sc quotedblright.sc quotesingle.sc quotedbl.sc];
 
 @PUNCTUATION_FOR_SMALL_FIGURE_STYLES = [parenleft parenright period comma];
 @PUNCTUATION_NUMERATOR = [parenleft.numr parenright.numr period.numr comma.numr];
@@ -80,8 +80,8 @@ dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumf
 @SS01_L_LC_DEFAULT = [l lacute lcaron ldot lslash lcommaaccent ldotbelow ldotbelowmacron llinebelow fl l.sups];
 @SS01_L_LC_ALTERNATE = [l.a lacute.a lcaron.a ldot.a lslash.a lcommaaccent.a ldotbelow.a ldotbelowmacron.a llinebelow.a fl.a l.supa];
 
-@SS02_A_LC_DEFAULT = [a agrave aacute acircumflex atilde adieresis amacron abreve aring acaron adotbelow ahoi acircumflexacute acircumflexgrave acircumflexhoi acircumflextilde acircumflexdotbelow abreveacute abrevegrave abrevehoi abrevetilde abrevedotbelow aogonek aogonek.d a.sups ordfeminine];
-@SS02_A_LC_ALTERNATE = [a.a agrave.a aacute.a acircumflex.a atilde.a adieresis.a amacron.a abreve.a aring.a acaron.a adotbelow.a ahoi.a acircumflexacute.a acircumflexgrave.a acircumflexhoi.a acircumflextilde.a acircumflexdotbelow.a abreveacute.a abrevegrave.a abrevehoi.a abrevetilde.a abrevedotbelow.a aogonek.a aogonek.b a.supa ordfeminine.a];
+@SS02_A_LC_DEFAULT = [a agrave aacute acircumflex atilde adieresis amacron abreve aring acaron adotbelow ahoi acircumflexacute acircumflexgrave acircumflexhoi acircumflextilde acircumflexdotbelow abreveacute abrevegrave abrevehoi abrevetilde abrevedotbelow aogonek aogonek.d aogonekacute a.sups ordfeminine];
+@SS02_A_LC_ALTERNATE = [a.a agrave.a aacute.a acircumflex.a atilde.a adieresis.a amacron.a abreve.a aring.a acaron.a adotbelow.a ahoi.a acircumflexacute.a acircumflexgrave.a acircumflexhoi.a acircumflextilde.a acircumflexdotbelow.a abreveacute.a abrevegrave.a abrevehoi.a abrevetilde.a abrevedotbelow.a aogonek.a aogonek.b aogonekacute.a a.supa ordfeminine.a];
 
 @SS03_G_LC_DEFAULT = [g gacute gcircumflex gbreve gdotaccent gcommaaccent gcaron gmacron gtilde g.sups];
 @SS03_G_LC_ALTERNATE = [g.a gacute.a gcircumflex.a gbreve.a gdotaccent.a gcommaaccent.a gcaron.a gmacron.a gtilde.a g.supa];
@@ -775,7 +775,7 @@ feature smcp { #LC-->SC
 	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
 	sub @LETTERS_MINISCULE_LATIN_ACCENTED by @LETTERS_SMALLCAP_LATIN_ACCENTED;
 	sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-	sub [i.trk germandbls iogonek.x uogonek.d] by [Idotaccent.sc germandbls.sc Iogonek.sc Uogonek.sc];
+	sub [i.trk germandbls iogonek.x uogonek.d Eng.a] by [Idotaccent.sc germandbls.sc Iogonek.sc Uogonek.sc Eng.sa];
 
 	lookup GREEK_SMALLCAPS_MONO;
 	lookup GREEK_SMALLCAPS_POLY;
@@ -919,6 +919,7 @@ feature salt { # Stylistic Alternates
 	lookup IOTA_ALTS_1;
 	lookup IOTA_ALTS_2;
 	lookup FIGURES_CASE;
+	sub yen by yen.CN;
 } salt;
 
 
