@@ -1,4 +1,4 @@
-# Created: Mon Aug 13 16:53:55 2018
+# Created: Tue Aug 14 16:26:13 2018
 # PS Name: SourceSansPro-ExtraLightIt
 # MM Inst: None
 # exported from Defcon
@@ -30,7 +30,7 @@ lookup MARK_BASE_above {
 	@bGC_lbelt_above = [lbelt l.a];
 	@bGC_m_above = [m oe mhook];
 	@bGC_mturned_above = [mturned mlonglegturned];
-	@bGC_n_above = [n o eng alphalatinturned schwahookrhotic eopenreversedclosed Gsmall nhookleft nretroflex obar];
+	@bGC_n_above = [n o eng schwahookrhotic eopenreversedclosed Gsmall nhookleft nretroflex obar];
 	@bGC_oopen_above = [oopen Ysmall];
 	@bGC_p_above = [p ramshorn];
 	@bGC_q_above = [q oslash ohorn oogonek];
@@ -86,6 +86,7 @@ lookup MARK_BASE_above {
 	pos base Y <anchor 290 682> mark @MC_above;
 	pos base ae <anchor 440 522> mark @MC_above;
 	pos base alphalatin <anchor 312 502> mark @MC_above;
+	pos base alphalatinturned <anchor 324 502> mark @MC_above;
 	pos base circledotted <anchor 350 502> mark @MC_above;
 	pos base clickbilabial <anchor 330 730> mark @MC_above;
 	pos base d <anchor 490 730> mark @MC_above;
@@ -98,7 +99,6 @@ lookup MARK_BASE_above {
 	pos base jcrossedtail.x <anchor 210 502> mark @MC_above;
 	pos base lezh <anchor 230 730> mark @MC_above;
 	pos base omegalatinclosed <anchor 380 502> mark @MC_above;
-	pos base overlinecmb <anchor 120 622> mark @MC_above;
 	pos base philatin <anchor 410 730> mark @MC_above;
 	pos base r <anchor 236 502> mark @MC_above;
 	pos base tretroflex <anchor 194 634> mark @MC_above;
@@ -109,6 +109,11 @@ lookup MARK_BASE_above {
 	pos base y <anchor 248 502> mark @MC_above;
 	pos base yturned <anchor 390 730> mark @MC_above;
 } MARK_BASE_above;
+
+
+lookup MARK_BASE_aboveright {
+	pos base circledotted <anchor 350 502> mark @MC_aboveright;
+} MARK_BASE_aboveright;
 
 
 lookup MARK_BASE_base {
@@ -131,7 +136,7 @@ lookup MARK_BASE_below {
 	@bGC_B_below = [B R circledotted];
 	@bGC_C_below = [C H K N O];
 	@bGC_D_below = [D U b Uhorn Eng schwahookrhotic];
-	@bGC_E_below = [E L Z h n u uhorn aturned alphalatinturned ccurl Bsmall eopenreversedclosed Gsmall hhook Nsmall ubar];
+	@bGC_E_below = [E L Z h n u uhorn aturned ccurl Bsmall eopenreversedclosed Gsmall hhook Nsmall ubar];
 	@bGC_G_below = [G Ghook Ohorn Schwa];
 	@bGC_Ismall_below = [Ismall I.a];
 	@bGC_J_below = [J oopen glottalstopstroke];
@@ -184,6 +189,7 @@ lookup MARK_BASE_below {
 	pos base a.a <anchor 194 -22> mark @MC_below;
 	pos base ae <anchor 340 -22> mark @MC_below;
 	pos base alphalatin <anchor 222 -22> mark @MC_below;
+	pos base alphalatinturned <anchor 224 -22> mark @MC_below;
 	pos base clickretroflex <anchor 40 -22> mark @MC_below;
 	pos base g.a <anchor 158 -230> mark @MC_below;
 	pos base gammalatin <anchor 100 -222> mark @MC_below;
@@ -215,6 +221,11 @@ lookup MARK_BASE_below {
 	pos base zcurl <anchor 140 -62> mark @MC_below;
 	pos base zretroflex <anchor 140 -122> mark @MC_below;
 } MARK_BASE_below;
+
+
+lookup MARK_BASE_center {
+	pos base circledotted <anchor 300 240> mark @MC_center;
+} MARK_BASE_center;
 
 
 lookup MARK_BASE_horn {

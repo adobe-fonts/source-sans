@@ -1,4 +1,4 @@
-# Created: Mon Aug 13 16:53:57 2018
+# Created: Tue Aug 14 16:26:15 2018
 # PS Name: SourceSansPro-BlackIt
 # MM Inst: None
 # exported from Defcon
@@ -104,13 +104,17 @@ lookup MARK_BASE_above {
 	pos base lslash <anchor 260 730> mark @MC_above;
 	pos base oe <anchor 440 502> mark @MC_above;
 	pos base omegalatinclosed <anchor 390 522> mark @MC_above;
-	pos base overlinecmb <anchor 140 702> mark @MC_above;
 	pos base philatin <anchor 450 720> mark @MC_above;
 	pos base rhookturned <anchor 310 520> mark @MC_above;
 	pos base rlonglegturned <anchor 360 730> mark @MC_above;
 	pos base ubar <anchor 350 522> mark @MC_above;
 	pos base yturned <anchor 410 720> mark @MC_above;
 } MARK_BASE_above;
+
+
+lookup MARK_BASE_aboveright {
+	pos base circledotted <anchor 520 522> mark @MC_aboveright;
+} MARK_BASE_aboveright;
 
 
 lookup MARK_BASE_base {
@@ -224,6 +228,11 @@ lookup MARK_BASE_below {
 	pos base zcurl <anchor 200 -62> mark @MC_below;
 	pos base zretroflex <anchor 160 -158> mark @MC_below;
 } MARK_BASE_below;
+
+
+lookup MARK_BASE_center {
+	pos base circledotted <anchor 290 250> mark @MC_center;
+} MARK_BASE_center;
 
 
 lookup MARK_BASE_horn {

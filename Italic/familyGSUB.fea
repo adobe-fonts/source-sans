@@ -116,7 +116,7 @@ feature ccmp { # Glyph Composition / Decomposition
 
 	lookup MARKS_COMPOSITION {
 		sub dieresiscmb acutecmb by dieresisacute;
-		sub dieresiscmb tonoscmb by dieresistonoscmb;
+		sub dieresiscmb tonoscmb by dialytikatonoscmb;
 		sub dieresiscmb gravecmb by dieresisgrave;
 		sub dieresiscmb variacmb by dialytikagravecmb;
 		sub dieresiscmb [tildecmb perispomenicmb] by dieresistilde;
@@ -297,9 +297,9 @@ feature sups { # Superscript
 		sub [plus minus equal] by [plus.sups minus.sups equal.sups];
 	} SUPERIOR_NUMERALS_SORTS;
 
-#	lookup SUPERIOR_SORTS {
-#		sub [colon hyphen endash emdash] by [colon.sups hyphen.sups endash.sups emdash.sups];
-#	} SUPERIOR_SORTS;
+	lookup SUPERIOR_SORTS {
+		sub [colon hyphen endash emdash] by [colon.sups hyphen.sups endash.sups emdash.sups];
+	} SUPERIOR_SORTS;
 
 } sups;
 
