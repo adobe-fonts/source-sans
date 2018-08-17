@@ -12,8 +12,6 @@
 		<key>com.typemytype.robofont.layerOrder</key>
 		<array>
 		</array>
-		<key>com.typemytype.robofont.segmentType</key>
-		<string>curve</string>
 		<key>com.typemytype.robofont.sort</key>
 		<array>
 			<dict>
@@ -146,6 +144,7 @@
 					<string>Hcircumflex</string>
 					<string>Hdotbelow</string>
 					<string>Hbrevebelow</string>
+					<string>Hlinebelow</string>
 					<string>Hbar</string>
 					<string>Igrave</string>
 					<string>Iacute</string>
@@ -492,8 +491,9 @@
 					<string>aturned</string>
 					<string>alphalatinturned</string>
 					<string>bhook</string>
-					<string>oopen</string>
+					<string>betalatin</string>
 					<string>ccurl</string>
+					<string>chilatin</string>
 					<string>dtail</string>
 					<string>dhook</string>
 					<string>ereversed</string>
@@ -509,7 +509,6 @@
 					<string>gscript</string>
 					<string>Gsmall</string>
 					<string>gammalatin</string>
-					<string>ramshorn</string>
 					<string>hturned</string>
 					<string>hhook</string>
 					<string>henghook</string>
@@ -528,6 +527,8 @@
 					<string>nhookleft</string>
 					<string>nretroflex</string>
 					<string>Nsmall</string>
+					<string>oopen</string>
+					<string>ramshorn</string>
 					<string>obar</string>
 					<string>OEsmall</string>
 					<string>omegalatinclosed</string>
@@ -553,6 +554,7 @@
 					<string>zretroflex</string>
 					<string>zcurl</string>
 					<string>ezh</string>
+					<string>ain</string>
 					<string>glottalstop</string>
 					<string>glottalstopreversed</string>
 					<string>glottalstopstroke</string>
@@ -1343,6 +1345,7 @@
 					<string>Hcircumflex.sc</string>
 					<string>Hdotbelow.sc</string>
 					<string>Hbrevebelow.sc</string>
+					<string>Hlinebelow.sc</string>
 					<string>Hbar.sc</string>
 					<string>Igrave.sc</string>
 					<string>Iacute.sc</string>
@@ -1919,7 +1922,6 @@
 					<string>dieresisbelowcmb</string>
 					<string>ringbelowcmb</string>
 					<string>commabelowcmb</string>
-					<string>commabelowcmb.a</string>
 					<string>cedillacmb</string>
 					<string>cedillacmb.cap</string>
 					<string>ogonekcmb</string>
@@ -1971,8 +1973,6 @@
 					<string>brevetilde.cap</string>
 					<string>circumflexbreve</string>
 					<string>circumflexbreve.cap</string>
-					<string>macronacute</string>
-					<string>macronacute.cap</string>
 					<string>asperacutecmb</string>
 					<string>aspergravecmb</string>
 					<string>aspertildecmb</string>
@@ -2016,6 +2016,7 @@
 					<string>circumflexcaron.cap</string>
 					<string>circumflexmacron</string>
 					<string>circumflexmacron.cap</string>
+					<string>commabelowcmb.a</string>
 					<string>copyleft</string>
 					<string>ka.a</string>
 					<string>ka.b</string>
@@ -2025,6 +2026,8 @@
 					<string>kadescender.b</string>
 					<string>kje.a</string>
 					<string>kje.b</string>
+					<string>macronacute</string>
+					<string>macronacute.cap</string>
 					<string>undertie.copy_1</string>
 					<string>uni004Duni0300</string>
 					<string>uni004Duni0304</string>
@@ -2174,6 +2177,7 @@
 			<string>Hcircumflex</string>
 			<string>Hdotbelow</string>
 			<string>Hbrevebelow</string>
+			<string>Hlinebelow</string>
 			<string>Hbar</string>
 			<string>Igrave</string>
 			<string>Iacute</string>
@@ -2520,8 +2524,9 @@
 			<string>aturned</string>
 			<string>alphalatinturned</string>
 			<string>bhook</string>
-			<string>oopen</string>
+			<string>betalatin</string>
 			<string>ccurl</string>
+			<string>chilatin</string>
 			<string>dtail</string>
 			<string>dhook</string>
 			<string>ereversed</string>
@@ -2537,7 +2542,6 @@
 			<string>gscript</string>
 			<string>Gsmall</string>
 			<string>gammalatin</string>
-			<string>ramshorn</string>
 			<string>hturned</string>
 			<string>hhook</string>
 			<string>henghook</string>
@@ -2556,6 +2560,8 @@
 			<string>nhookleft</string>
 			<string>nretroflex</string>
 			<string>Nsmall</string>
+			<string>oopen</string>
+			<string>ramshorn</string>
 			<string>obar</string>
 			<string>OEsmall</string>
 			<string>omegalatinclosed</string>
@@ -2581,6 +2587,7 @@
 			<string>zretroflex</string>
 			<string>zcurl</string>
 			<string>ezh</string>
+			<string>ain</string>
 			<string>glottalstop</string>
 			<string>glottalstopreversed</string>
 			<string>glottalstopstroke</string>
@@ -3371,6 +3378,7 @@
 			<string>Hcircumflex.sc</string>
 			<string>Hdotbelow.sc</string>
 			<string>Hbrevebelow.sc</string>
+			<string>Hlinebelow.sc</string>
 			<string>Hbar.sc</string>
 			<string>Igrave.sc</string>
 			<string>Iacute.sc</string>
@@ -3947,7 +3955,6 @@
 			<string>dieresisbelowcmb</string>
 			<string>ringbelowcmb</string>
 			<string>commabelowcmb</string>
-			<string>commabelowcmb.a</string>
 			<string>cedillacmb</string>
 			<string>cedillacmb.cap</string>
 			<string>ogonekcmb</string>
@@ -3999,8 +4006,6 @@
 			<string>brevetilde.cap</string>
 			<string>circumflexbreve</string>
 			<string>circumflexbreve.cap</string>
-			<string>macronacute</string>
-			<string>macronacute.cap</string>
 			<string>asperacutecmb</string>
 			<string>aspergravecmb</string>
 			<string>aspertildecmb</string>
@@ -4044,6 +4049,7 @@
 			<string>circumflexcaron.cap</string>
 			<string>circumflexmacron</string>
 			<string>circumflexmacron.cap</string>
+			<string>commabelowcmb.a</string>
 			<string>copyleft</string>
 			<string>ka.a</string>
 			<string>ka.b</string>
@@ -4053,6 +4059,8 @@
 			<string>kadescender.b</string>
 			<string>kje.a</string>
 			<string>kje.b</string>
+			<string>macronacute</string>
+			<string>macronacute.cap</string>
 			<string>undertie.copy_1</string>
 			<string>uni004Duni0300</string>
 			<string>uni004Duni0304</string>
