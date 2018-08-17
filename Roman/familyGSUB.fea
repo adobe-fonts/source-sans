@@ -16,6 +16,7 @@
 @LETTERS_MINISCULE_LATIN_ADDL = [aogonek aogonek.d ae bstroke dcroat eogonek eogonek.d ghook hbar iogonek lslash ldot oslash ohorn oogonek oe tbar uhorn uogonek eth thorn schwa eng ij];
 @LETTERS_MINISCULE_LATIN_SUPERIOR = [a.sups b.sups c.sups d.sups e.sups f.sups g.sups h.sups i.sups j.sups k.sups l.sups m.sups n.sups o.sups p.sups q.sups r.sups s.sups t.sups u.sups v.sups w.sups x.sups y.sups z.sups];
 @LETTERS_MINISCULE_LATIN_ASCENDERS = [b d f h k l];
+@LETTERS_MINISCULE_LATIN_ASCENDERS_ALL = [b d f h k l];
 
 @LETTERS_SMALLCAP_LATIN_BASIC = [A.sc B.sc C.sc D.sc E.sc F.sc G.sc H.sc I.sc J.sc K.sc L.sc M.sc N.sc O.sc P.sc Q.sc R.sc S.sc T.sc U.sc V.sc W.sc X.sc Y.sc Z.sc];
 @LETTERS_SMALLCAP_LATIN_ACCENTED_ABOVE = [ Aacute.sc Abreve.sc Abreveacute.sc Abrevegrave.sc Abrevehoi.sc Abrevetilde.sc Acaron.sc Acircumflex.sc Acircumflexacute.sc Acircumflexgrave.sc Acircumflexhoi.sc Acircumflextilde.sc Adieresis.sc Agrave.sc Ahoi.sc Amacron.sc Aogonekacute.sc Aring.sc Atilde.sc AEacute.sc AEmacron.sc Bdotaccent.sc Cacute.sc Ccaron.sc Ccircumflex.sc Cdotaccent.sc Dcaron.sc Ddotaccent.sc Eacute.sc Ebreve.sc Ecaron.sc Ecircumflex.sc Ecircumflexacute.sc Ecircumflexgrave.sc Ecircumflexhoi.sc Ecircumflextilde.sc Edieresis.sc Edotaccent.sc Egrave.sc Ehoi.sc Emacron.sc Emacronacute.sc Eogonekacute.sc Etilde.sc Fdotaccent.sc Gacute.sc Gbreve.sc Gcaron.sc Gcircumflex.sc Gdotaccent.sc Gmacron.sc Gtilde.sc Hcircumflex.sc Iacute.sc Ibreve.sc Icaron.sc Icircumflex.sc Idieresis.sc Igrave.sc Ihoi.sc Imacron.sc Iogonekacute.sc Itilde.sc Jcircumflex.sc Lacute.sc Lcaron.sc Macute.sc Mdotaccent.sc Nacute.sc Ncaron.sc Ndotaccent.sc Ngrave.sc Ntilde.sc Oacute.sc Obreve.sc Ocaron.sc Ocircumflex.sc Ocircumflexacute.sc Ocircumflexgrave.sc Ocircumflexhoi.sc Ocircumflextilde.sc Odieresis.sc Ograve.sc Ohoi.sc Ohornacute.sc Ohorngrave.sc Ohornhoi.sc Ohorntilde.sc Ohungarumlaut.sc Omacron.sc Omacronacute.sc Oogonekacute.sc Otilde.sc Pdotaccent.sc Racute.sc Rcaron.sc Rdotaccent.sc Sacute.sc Scaron.sc Scircumflex.sc Sdotaccent.sc Tcaron.sc Tdotaccent.sc Uacute.sc Ubreve.sc Ucaron.sc Ucircumflex.sc Udieresis.sc Udieresisacute.sc Udieresiscaron.sc Udieresisgrave.sc Udieresismacron.sc Ugrave.sc Uhoi.sc Uhornacute.sc Uhorngrave.sc Uhornhoi.sc Uhorntilde.sc Uhungarumlaut.sc Umacron.sc Uogonekacute.sc Uring.sc Utilde.sc Wacute.sc Wcircumflex.sc Wdieresis.sc Wgrave.sc Yacute.sc Ycircumflex.sc Ydieresis.sc Ydotaccent.sc Ygrave.sc Yhoi.sc Ytilde.sc Zacute.sc Zcaron.sc Zdotaccent.sc ];
@@ -340,12 +341,12 @@ feature ccmp { # Glyph Composition / Decomposition
 
 	lookup GLYPH_DECOMPOSITION_CONTEXTUAL { #decomposes accented forms followed by combining accent
 #		lookupflag MarkAttachmentType @MARKS_CMB_BELOW;
-		sub [obreve eacute]' lookup DECOMPOSITION dieresisbelowcmb; # general TESTING!!!
-#		sub @LETTERS_MINISCULE_LATIN_ACCENTED_ABOVE' lookup DECOMPOSITION @MARKS_CMB_ALL; # general TESTING!!!
-#		sub @LETTERS_MINISCULE_LATIN_ACCENTED_BELOW' lookup DECOMPOSITION @MARKS_CMB_ALL; # general TESTING!!!
-#		sub [Ecircumflex Ocircumflex]' lookup DECOMPOSITION brevecmb; # Jarai language
-#		sub [Emacron Omacron]' lookup DECOMPOSITION acutecmb; # Greek transliteration
-#		sub [Yi yi]' lookup DECOMPOSITION acutecmb; # Cyrillic stressed notation
+#		sub [obreve eacute]' lookup DECOMPOSITION dieresisbelowcmb; # general TESTING!!!
+		sub @LETTERS_MINISCULE_LATIN_ACCENTED_ABOVE' lookup DECOMPOSITION @MARKS_CMB_ALL; # general TESTING!!!
+		sub @LETTERS_MINISCULE_LATIN_ACCENTED_BELOW' lookup DECOMPOSITION @MARKS_CMB_ALL; # general TESTING!!!
+		sub [Ecircumflex Ocircumflex]' lookup DECOMPOSITION brevecmb; # Jarai language
+		sub [Emacron Omacron]' lookup DECOMPOSITION acutecmb; # Greek transliteration
+		sub [Yi yi]' lookup DECOMPOSITION acutecmb; # Cyrillic stressed notation
 	} GLYPH_DECOMPOSITION_CONTEXTUAL;
 
 	lookup GLYPH_COMPOSITION_CONTEXTUAL {
@@ -427,6 +428,7 @@ feature ccmp { # Glyph Composition / Decomposition
 		sub U ogonekcmb by Uogonek;
 		sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
 		sub g.a cedillacmb by gcommaaccent.a;
+		sub schwa hookrhoticmod by schwahookrhotic;
 	} GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL;
 
 	lookup GLYPH_COMPOSITION_GREEK_POLYTONIC { #to add: Greek localized combining marks
@@ -722,6 +724,8 @@ feature ccmp { # Glyph Composition / Decomposition
 	lookup MAJUCSULE_ACCENTS_CMB_CONTEXT { # substitutes combining marks for miniscules with forms for majuscules
 		sub [@LETTERS_MAJUSCULE_ALL @LETTERS_SMALLCAP_ALL @LETTERS_MINISCULE_LATIN_ASCENDERS] @MARKS_CMB_LC' by @MARKS_CMB_CASE;
 		sub @MARKS_CMB_CASE @MARKS_CMB_LC' by @MARKS_CMB_CASE;
+		sub [@LETTERS_MINISCULE_LATIN_ASCENDERS t esh] breveinverteddoublecmb' by breveinverteddoublecmb.a;
+		sub breveinverteddoublecmb' [@LETTERS_MINISCULE_LATIN_ASCENDERS t esh] by breveinverteddoublecmb.a;
 	} MAJUCSULE_ACCENTS_CMB_CONTEXT;
 
 } ccmp;
