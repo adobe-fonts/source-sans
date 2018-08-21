@@ -741,11 +741,6 @@ feature locl { # Localized Forms
 			sub chi by chilatin;
 #			sub theta by theta.alt1; #from Myriad features
 		} GREEK_TO_IPA;
-#		lookup A_IPA { # ITALIC ONLY substitutes single-storey a with double-storey variants
-#			   sub a by a.alt;
-#			   sub ae by ae.alt;
-#			   sub asupmod by asupmod.alt;
-#		} A_IPA;
 
 		language ATH include_dflt;
 			lookup OGONEKS_ATH {
@@ -774,20 +769,14 @@ feature locl { # Localized Forms
 		language SKS include_dflt;
 			lookup ENG_SAMI;
 
-#        language IPPH exclude_dflt;
-#            lookup GREEK_TO_IPA { # substitutes Greek characters by Latin characters
-#                sub beta by betalatin;
-#                sub chi by chilatin;
-#                sub theta by theta.alt1; #from Myriad features
-#            } GREEK_TO_IPA;
+       language IPPH include_dflt;
 #			lookup A_IPA { # ITALIC ONLY substitutes single-storey a with double-storey variants
 #                sub a by a.alt;
 #                sub ae by ae.alt;
 #                sub asupmod by asupmod.alt;
 #			} A_IPA;
 #
-#       language APPH exclude_dflt;
-#            lookup GREEK_TO_IPA;
+      language APPH include_dflt;
 #			lookup A_IPA;
 
 	script grek;

@@ -1,26 +1,30 @@
 
 @LETTERS_MAJUSCULE_LATIN_BASIC = [A B C D E F G H I J K L M N O P Q R S T U V W X Y Z];
-@LETTERS_MAJUSCULE_LATIN_ACCENTED = [AEacute AEmacron Aacute Abreve Abreveacute Abrevedotbelow Abrevegrave Abrevehoi Abrevetilde Acaron Acircumflex Acircumflexacute Acircumflexdotbelow Acircumflexgrave Acircumflexhoi Acircumflextilde Adieresis Adotbelow Agrave Ahoi Amacron Aogonek Aogonek.d Aogonekacute Aring Atilde Blinebelow Cacute Ccaron Ccedilla Ccircumflex Cdotaccent Dcaron Ddotbelow Dlinebelow Eacute Ebreve Ecaron Ecircumflex Ecircumflexacute Ecircumflexdotbelow Ecircumflexgrave Ecircumflexhoi Ecircumflextilde Edieresis Edotaccent Edotbelow Egrave Ehoi Emacron Emacronacute Eogonek Eogonek.d Eogonekacute Etilde Gacute Gbreve Gcaron Gcircumflex Gcommaaccent Gdotaccent Gmacron Gtilde Hbar Hbrevebelow Hcircumflex Hdotbelow Iacute Ibreve Icaron Icircumflex Idieresis Idotbelow Igrave Ihoi Imacron Iogonek Iogonekacute Itilde Jcircumflex Kcommaaccent Kdotbelow Klinebelow Lacute Lcaron Lcommaaccent Ldot Ldotbelow Ldotbelowmacron Llinebelow Macute Mdotaccent Mdotbelow Nacute Ncaron Ncommaaccent Ndotaccent Ndotbelow Ngrave Nlinebelow Ntilde Oacute Obreve Ocaron Ocircumflex Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhoi Ocircumflextilde Odieresis Odotbelow Ograve Ohoi Ohorn Ohornacute Ohorndotbelow Ohorngrave Ohornhoi Ohorntilde Ohungarumlaut Omacron Omacronacute Oogonek Oogonekacute Otilde Racute Rcaron Rcommaaccent Rdotaccent Rdotbelow Rdotbelowmacron Rlinebelow Sacute Scaron Scedilla Scircumflex Scommaaccent Sdotaccent Sdotbelow Tcaron Tcedilla Tcommaaccent Tdotbelow Tlinebelow Uacute Ubreve Ucaron Ucircumflex Udieresis Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Udotbelow Ugrave Uhoi Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhoi Uhorntilde Uhungarumlaut Umacron Uogonek Uogonekacute Uring Utilde Wacute Wcircumflex Wdieresis Wgrave Yacute Ycircumflex Ydieresis Ydotaccent Ydotbelow Ygrave Yhoi Ytilde Zacute Zcaron Zdotaccent Zdotbelow Zlinebelow Bdotaccent Ddotaccent Fdotaccent Pdotaccent Tdotaccent];
-@LETTERS_MAJUSCULE_LATIN_ADDL = [AE Bstroke Dcroat Ghook Lslash Oslash OE Tbar Eth Thorn Schwa Eng IJ];
-@LETTERS_MAJUSCULE_LATIN_ALL = [@LETTERS_MAJUSCULE_LATIN_BASIC @LETTERS_MAJUSCULE_LATIN_ACCENTED @LETTERS_MAJUSCULE_LATIN_ADDL Idotaccent];
+@LETTERS_MAJUSCULE_LATIN_ACCENTED_ABOVE = [ Aacute Abreve Abreveacute Abrevegrave Abrevehoi Abrevetilde Acaron Acircumflex Acircumflexacute Acircumflexgrave Acircumflexhoi Acircumflextilde Adieresis Agrave Ahoi Amacron Aogonekacute Aring Atilde AEacute AEmacron Bdotaccent Cacute Ccaron Ccircumflex Cdotaccent Dcaron Ddotaccent Eacute Ebreve Ecaron Ecircumflex Ecircumflexacute Ecircumflexgrave Ecircumflexhoi Ecircumflextilde Edieresis Edotaccent Egrave Ehoi Emacron Emacronacute Eogonekacute Etilde Fdotaccent Gacute Gbreve Gcaron Gcircumflex Gdotaccent Gmacron Gtilde Hcircumflex Iacute Ibreve Icaron Icircumflex Idieresis Igrave Ihoi Imacron Iogonekacute Itilde Jcircumflex Lacute Lcaron Macute Mdotaccent Nacute Ncaron Ndotaccent Ngrave Ntilde Oacute Obreve Ocaron Ocircumflex Ocircumflexacute Ocircumflexgrave Ocircumflexhoi Ocircumflextilde Odieresis Ograve Ohoi Ohornacute Ohorngrave Ohornhoi Ohorntilde Ohungarumlaut Omacron Omacronacute Oogonekacute Otilde Pdotaccent Racute Rcaron Rdotaccent Sacute Scaron Scircumflex Sdotaccent Tcaron Tdotaccent Uacute Ubreve Ucaron Ucircumflex Udieresis Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Ugrave Uhoi Uhornacute Uhorngrave Uhornhoi Uhorntilde Uhungarumlaut Umacron Uogonekacute Uring Utilde Wacute Wcircumflex Wdieresis Wgrave Yacute Ycircumflex Ydieresis Ydotaccent Ygrave Yhoi Ytilde Zacute Zcaron Zdotaccent ];
+@LETTERS_MAJUSCULE_LATIN_ACCENTED_BELOW = [ Adotbelow Blinebelow Ccedilla Ddotbelow Dlinebelow Edotbelow Gcommaaccent Hbrevebelow Hdotbelow Hlinebelow Idotbelow Kcommaaccent Kdotbelow Klinebelow Lcommaaccent Ldotbelow Llinebelow Mdotbelow Ncommaaccent Ndotbelow Nlinebelow Odotbelow Ohorndotbelow Rcommaaccent Rdotbelow Rlinebelow Scedilla Scommaaccent Sdotbelow Tcedilla Tcommaaccent Tdotbelow Tlinebelow Udotbelow Uhorndotbelow Ydotbelow Zdotbelow Zlinebelow ];
+@LETTERS_MAJUSCULE_LATIN_ACCENTED_BOTH = [ Abrevedotbelow Acircumflexdotbelow Ecircumflexdotbelow Ldotbelowmacron Ocircumflexdotbelow Rdotbelowmacron ];
+@LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL = [ @LETTERS_MAJUSCULE_LATIN_ACCENTED_ABOVE @LETTERS_MAJUSCULE_LATIN_ACCENTED_BELOW @LETTERS_MAJUSCULE_LATIN_ACCENTED_BOTH ];
+@LETTERS_MAJUSCULE_LATIN_ADDL = [Aogonek Aogonek.d AE Bstroke Dcroat Eogonek Eogonek.d Ghook Hbar Iogonek Lslash Ldot Oslash Ohorn Oogonek OE Tbar Uhorn Uogonek Eth Thorn Schwa Eng IJ];
+@LETTERS_MAJUSCULE_LATIN_ALL = [@LETTERS_MAJUSCULE_LATIN_BASIC @LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL @LETTERS_MAJUSCULE_LATIN_ADDL Idotaccent];
 #@LETTERS_MAJUSCULE_LATIN_SUPERIOR = [A.sups B.sups C.sups D.sups E.sups F.sups G.sups H.sups I.sups J.sups K.sups L.sups M.sups N.sups O.sups P.sups Q.sups R.sups S.sups T.sups U.sups V.sups W.sups X.sups Y.sups Z.sups];
 
 @LETTERS_MINISCULE_LATIN_BASIC = [a b c d e f g h i j k l m n o p q r s t u v w x y z];
-@LETTERS_MINISCULE_LATIN_ACCENTED = [aeacute aemacron aacute abreve abreveacute abrevedotbelow abrevegrave abrevehoi abrevetilde acaron acircumflex acircumflexacute acircumflexdotbelow acircumflexgrave acircumflexhoi acircumflextilde adieresis adotbelow agrave ahoi amacron aogonek aogonek.d aogonekacute aring atilde blinebelow cacute ccaron ccedilla ccircumflex cdotaccent dcaron ddotbelow dlinebelow eacute ebreve ecaron ecircumflex ecircumflexacute ecircumflexdotbelow ecircumflexgrave ecircumflexhoi ecircumflextilde edieresis edotaccent edotbelow egrave ehoi emacron emacronacute eogonek eogonek.d eogonekacute etilde gacute gbreve gcaron gcircumflex gcommaaccent gdotaccent gmacron gtilde hbar hbrevebelow hcircumflex hdotbelow iacute ibreve icaron icircumflex idieresis idotbelow igrave ihoi imacron iogonek iogonekacute itilde jcircumflex kcommaaccent kdotbelow klinebelow lacute lcaron lcommaaccent ldot ldotbelow ldotbelowmacron llinebelow macute mdotaccent mdotbelow nacute ncaron ncommaaccent ndotaccent ndotbelow ngrave nlinebelow ntilde oacute obreve ocaron ocircumflex ocircumflexacute ocircumflexdotbelow ocircumflexgrave ocircumflexhoi ocircumflextilde odieresis odotbelow ograve ohoi ohorn ohornacute ohorndotbelow ohorngrave ohornhoi ohorntilde ohungarumlaut omacron omacronacute oogonek oogonekacute otilde racute rcaron rcommaaccent rdotaccent rdotbelow rdotbelowmacron rlinebelow sacute scaron scedilla scircumflex scommaaccent sdotaccent sdotbelow tcaron tcedilla tcommaaccent tdotbelow tlinebelow uacute ubreve ucaron ucircumflex udieresis udieresisacute udieresiscaron udieresisgrave udieresismacron udotbelow ugrave uhoi uhorn uhornacute uhorndotbelow uhorngrave uhornhoi uhorntilde uhungarumlaut umacron uogonek uogonekacute uring utilde wacute wcircumflex wdieresis wgrave yacute ycircumflex ydieresis ydotaccent ydotbelow ygrave yhoi ytilde zacute zcaron zdotaccent zdotbelow zlinebelow bdotaccent ddotaccent fdotaccent pdotaccent tdotaccent];
-@LETTERS_MINISCULE_LATIN_ADDL = [ae bstroke dcroat ghook lslash oslash oe tbar eth thorn schwa eng ij];
+@LETTERS_MINISCULE_LATIN_ACCENTED_ABOVE = [ aacute abreve abreveacute abrevegrave abrevehoi abrevetilde acaron acircumflex acircumflexacute acircumflexgrave acircumflexhoi acircumflextilde adieresis agrave ahoi amacron aogonekacute aring atilde aeacute aemacron bdotaccent cacute ccaron ccircumflex cdotaccent dcaron ddotaccent eacute ebreve ecaron ecircumflex ecircumflexacute ecircumflexgrave ecircumflexhoi ecircumflextilde edieresis edotaccent egrave ehoi emacron emacronacute eogonekacute etilde fdotaccent gacute gbreve gcaron gcircumflex gdotaccent gmacron gtilde hcircumflex iacute ibreve icaron icircumflex idieresis igrave ihoi imacron iogonekacute itilde jcircumflex lacute lcaron macute mdotaccent nacute ncaron ndotaccent ngrave ntilde oacute obreve ocaron ocircumflex ocircumflexacute ocircumflexgrave ocircumflexhoi ocircumflextilde odieresis ograve ohoi ohornacute ohorngrave ohornhoi ohorntilde ohungarumlaut omacron omacronacute oogonekacute otilde pdotaccent racute rcaron rdotaccent sacute scaron scircumflex sdotaccent tcaron tdotaccent uacute ubreve ucaron ucircumflex udieresis udieresisacute udieresiscaron udieresisgrave udieresismacron ugrave uhoi uhornacute uhorngrave uhornhoi uhorntilde uhungarumlaut umacron uogonekacute uring utilde wacute wcircumflex wdieresis wgrave yacute ycircumflex ydieresis ydotaccent ygrave yhoi ytilde zacute zcaron zdotaccent ];
+@LETTERS_MINISCULE_LATIN_ACCENTED_BELOW = [ adotbelow blinebelow ccedilla ddotbelow dlinebelow edotbelow gcommaaccent hbrevebelow hdotbelow hlinebelow idotbelow kcommaaccent kdotbelow klinebelow lcommaaccent ldotbelow llinebelow mdotbelow ncommaaccent ndotbelow nlinebelow odotbelow ohorndotbelow rcommaaccent rdotbelow rlinebelow scedilla scommaaccent sdotbelow tcedilla tcommaaccent tdotbelow tlinebelow udotbelow uhorndotbelow ydotbelow zdotbelow zlinebelow ];
+@LETTERS_MINISCULE_LATIN_ACCENTED_BOTH = [ abrevedotbelow acircumflexdotbelow ecircumflexdotbelow ldotbelowmacron ocircumflexdotbelow rdotbelowmacron ];
+@LETTERS_MINISCULE_LATIN_ACCENTED_ALL = [ @LETTERS_MINISCULE_LATIN_ACCENTED_ABOVE @LETTERS_MINISCULE_LATIN_ACCENTED_BELOW @LETTERS_MINISCULE_LATIN_ACCENTED_BOTH ];
+@LETTERS_MINISCULE_LATIN_ADDL = [aogonek aogonek.d ae bstroke dcroat eogonek eogonek.d ghook hbar iogonek lslash ldot oslash ohorn oogonek oe tbar uhorn uogonek eth thorn schwa eng ij];
 @LETTERS_MINISCULE_LATIN_SUPERIOR = [a.sups b.sups c.sups d.sups e.sups f.sups g.sups h.sups i.sups j.sups k.sups l.sups m.sups n.sups o.sups p.sups q.sups r.sups s.sups t.sups u.sups v.sups w.sups x.sups y.sups z.sups];
 @LETTERS_MINISCULE_LATIN_ASCENDERS = [b d f h k l];
+@LETTERS_MINISCULE_LATIN_ASCENDERS_ALL = [b d f h k l];
 
 #@LETTERS_SMALLCAP_LATIN_BASIC = [A.sc B.sc C.sc D.sc E.sc F.sc G.sc H.sc I.sc J.sc K.sc L.sc M.sc N.sc O.sc P.sc Q.sc R.sc S.sc T.sc U.sc V.sc W.sc X.sc Y.sc Z.sc];
 #@LETTERS_SMALLCAP_LATIN_ACCENTED = [Agrave.sc Aacute.sc Acircumflex.sc Atilde.sc Adieresis.sc Amacron.sc Abreve.sc Aring.sc Acaron.sc Adotbelow.sc Ahoi.sc Acircumflexacute.sc Acircumflexgrave.sc Acircumflexhoi.sc Acircumflextilde.sc Acircumflexdotbelow.sc Abreveacute.sc Abrevegrave.sc Abrevehoi.sc Abrevetilde.sc Abrevedotbelow.sc Aogonek.sc AE.sc Bstroke.sc Blinebelow.sc Ccedilla.sc Cacute.sc Ccircumflex.sc Ccaron.sc Cdotaccent.sc Dcaron.sc Ddotbelow.sc Dlinebelow.sc Dcroat.sc Egrave.sc Eacute.sc Ecircumflex.sc Ecaron.sc Edieresis.sc Emacron.sc Ebreve.sc Edotaccent.sc Edotbelow.sc Ehoi.sc Etilde.sc Ecircumflexacute.sc Ecircumflexgrave.sc Ecircumflexhoi.sc Ecircumflextilde.sc Ecircumflexdotbelow.sc Eogonek.sc Emacronacute.sc Gcircumflex.sc Gbreve.sc Gdotaccent.sc Gcommaaccent.sc Gcaron.sc Gmacron.sc Gtilde.sc Hcircumflex.sc Hdotbelow.sc Hbrevebelow.sc Hbar.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Icaron.sc Ihoi.sc Idotbelow.sc Iogonek.sc Ibreve.sc Jcircumflex.sc Kcommaaccent.sc Klinebelow.sc Lacute.sc Lcaron.sc Lcommaaccent.sc Ldot.sc Ldotbelow.sc Ldotbelowmacron.sc Llinebelow.sc Lslash.sc Mdotbelow.sc Nacute.sc Ncaron.sc Ntilde.sc Ncommaaccent.sc Ndotaccent.sc Ndotbelow.sc Nlinebelow.sc Ograve.sc Oacute.sc Ocircumflex.sc Otilde.sc Odieresis.sc Omacron.sc Ohungarumlaut.sc Ocaron.sc Odotbelow.sc Ohoi.sc Ocircumflexacute.sc Ocircumflexgrave.sc Ocircumflexhoi.sc Ocircumflextilde.sc Ocircumflexdotbelow.sc Oslash.sc OE.sc Ohorn.sc Ohornacute.sc Ohorngrave.sc Ohornhoi.sc Ohorntilde.sc Ohorndotbelow.sc Oogonek.sc Obreve.sc Omacronacute.sc Racute.sc Rcaron.sc Rcommaaccent.sc Rdotbelow.sc Rdotbelowmacron.sc Rlinebelow.sc Sacute.sc Scircumflex.sc Scaron.sc Scedilla.sc Scommaaccent.sc Sdotaccent.sc Sdotbelow.sc Tcaron.sc Tcedilla.sc Tcommaaccent.sc Tdotbelow.sc Tlinebelow.sc Ugrave.sc Uacute.sc Ucircumflex.sc Utilde.sc Udieresis.sc Umacron.sc Ubreve.sc Uring.sc Uhungarumlaut.sc Ucaron.sc Udieresismacron.sc Udieresisacute.sc Udieresiscaron.sc Udieresisgrave.sc Udotbelow.sc Uhoi.sc Uogonek.sc Uhorn.sc Uhornacute.sc Uhorngrave.sc Uhornhoi.sc Uhorntilde.sc Uhorndotbelow.sc Wgrave.sc Wacute.sc Wcircumflex.sc Wdieresis.sc Ygrave.sc Yacute.sc Ycircumflex.sc Ydieresis.sc Ydotaccent.sc Ydotbelow.sc Yhoi.sc Ytilde.sc Zacute.sc Zcaron.sc Zdotaccent.sc Zdotbelow.sc];
 #@LETTERS_SMALLCAP_LATIN_ADDL = [Eth.sc Thorn.sc Schwa.sc];
 #@LETTERS_SMALLCAP_LATIN_ALL = [@LETTERS_SMALLCAP_LATIN_BASIC @LETTERS_SMALLCAP_LATIN_ACCENTED @LETTERS_SMALLCAP_LATIN_ADDL Idotaccent.sc Germandbls.sc];
 
-@MARKS_CMB = [gravecmb acutecmb circumflexcmb tildecmb macroncmb brevecmb dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb dblgravecmb cedillacmb ogonekcmb
-dieresismacron dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexgrave circumflexhoi circumflextilde breveacute brevegrave brevehoi brevetilde circumflexbreve overlinecmb brevecmb.cyr breveinvertedcmb perispomenicmb];
-
-@MARKS_CMB_CASE = [gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap brevecmb.cap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap dblgravecmb.cap cedillacmb.cap ogonekcmb.cap
-dieresismacron.cap dieresisacute.cap dieresiscaron.cap dieresisgrave.cap circumflexacute.cap circumflexgrave.cap circumflexhoi.cap circumflextilde.cap breveacute.cap brevegrave.cap brevehoi.cap brevetilde.cap circumflexbreve.cap overlinecmb.cap brevecmb.cyrcap breveinvertedcmb.cap perispomenicmb.cap];
+@MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyrcap dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb ];
+@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap ];
 
 @FIGURES_LINING_TABULAR = [zero one two three four five six seven eight nine];
 @FIGURES_LINING_PROPORTIONAL = [zero.pnum one.pnum two.pnum three.pnum four.pnum five.pnum six.pnum seven.pnum eight.pnum nine.pnum];
@@ -110,8 +114,8 @@ feature ccmp { # Glyph Composition / Decomposition
 
 	lookup GLYPH_COMPOSITION_CONTEXTUAL {
 		#substitutes dotless forms when followed by combining diacritics
-		sub i' ogonekcmb' @MARKS_CMB by iogonek.x;
-		sub [iogonek istroke jcrossedtail]' @MARKS_CMB by [iogonek.x istroke.x jcrossedtail.x];
+		sub i' ogonekcmb' @MARKS_CMB_ABOVE by iogonek.x;
+		sub [i iogonek istroke jcrossedtail]' @MARKS_CMB_ABOVE by [dotlessi iogonek.x istroke.x jcrossedtail.x];
 	} GLYPH_COMPOSITION_CONTEXTUAL;
 
 	lookup MARKS_COMPOSITION {
@@ -187,6 +191,7 @@ feature ccmp { # Glyph Composition / Decomposition
 		sub U ogonekcmb by Uogonek;
 		sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
 		sub g.a cedillacmb by gcommaaccent.a;
+		sub schwa hookrhoticmod by schwahookrhotic;
 	} GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL;
 
 	lookup MAJUCSULE_ACCENTS_CMB_CONTEXT { # substitutes combining marks for miniscules with forms for majuscules
@@ -202,6 +207,12 @@ feature ccmp { # Glyph Composition / Decomposition
 feature locl { # Localized Forms
 
 	script latn;
+#		lookup GREEK_TO_IPA { # substitutes Greek characters by Latin characters
+#			sub beta by betalatin;
+#			sub chi by chilatin;
+##			sub theta by theta.alt1; #from Myriad features
+#		} GREEK_TO_IPA;
+
 		language ATH exclude_dflt;
 			lookup OGONEKS_ATH {
 				sub [Aogonek Eogonek aogonek eogonek uogonek] by [Aogonek.d Eogonek.d aogonek.d eogonek.d uogonek.d];
@@ -228,6 +239,16 @@ feature locl { # Localized Forms
 
 		language SKS exclude_dflt;
 			lookup ENG_SAMI;
+
+		language IPPH exclude_dflt;
+			lookup A_IPA { # ITALIC ONLY substitutes single-storey a with double-storey variants
+				   sub a by a.alt;
+				   sub ae by ae.alt;
+				   sub asupmod by asupmod.alt;
+		} A_IPA;
+
+		language APPH exclude_dflt;
+			lookup A_IPA;
 
 #	script grek;
 #		sub [acutecmb gravecmb commaturnedabovecmb commaabovecmb] by [tonoscmb variacmb aspercmb leniscmb]; # combining marks
@@ -336,7 +357,7 @@ feature onum { # Oldstyle (Text) Figures
 
 #--------------------------------------
 feature case { # Case-Sensitive Forms
-	sub @MARKS_CMB by @MARKS_CMB_CASE;
+	sub @MARKS_CMB_LC by @MARKS_CMB_CASE;
 	sub at by at.case;
 #	sub anoteleia by anoteleia.cap;
 	lookup FIGURES_CASE {
@@ -481,7 +502,7 @@ feature salt { # Stylistic Alternates
 # 	lookup IOTA_ALTS_1;
 # 	lookup IOTA_ALTS_2;
 	lookup FIGURES_CASE;
-	sub yen by yen.CN;
+	sub yen by yuan;
 } salt;
 
 
