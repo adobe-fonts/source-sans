@@ -23,6 +23,14 @@
 #@LETTERS_SMALLCAP_LATIN_ADDL = [Eth.sc Thorn.sc Schwa.sc];
 #@LETTERS_SMALLCAP_LATIN_ALL = [@LETTERS_SMALLCAP_LATIN_BASIC @LETTERS_SMALLCAP_LATIN_ACCENTED @LETTERS_SMALLCAP_LATIN_ADDL Idotaccent.sc Germandbls.sc];
 
+@LETTERS_MAJUSCULE_ALL = [@LETTERS_MAJUSCULE_LATIN_ALL ]; # @LETTERS_MAJUSCULE_GREEK_ALL @LETTERS_MAJUSCULE_CYRILLIC_ALL];
+
+#@LETTERS_SMALLCAP_ALL = [@LETTERS_SMALLCAP_LATIN_ALL @LETTERS_SMALLCAP_GREEK_ALL @LETTERS_SMALLCAP_CYRILLIC_ALL];
+
+@MARKS_CMB_ABOVE = [ gravecmb variacmb acutecmb tonoscmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb dblgravecmb breveinvertedcmb commaturnedabovecmb aspercmb commaabovecmb leniscmb leftangleabovecmb horncmb cedillacmb ogonekcmb tildeoverlaycmb xabovecmb perispomenicmb koroniscmb dialytikatonoscmb ];
+@MARKS_CMB_BELOW = [ lefttackbelowcmb righttackbelowcmb ringhalfleftbelowcmb uptackbelowcmb downtackbelowcmb plusbelowcmb minusbelowcmb dotbelowcmb dieresisbelowcmb ringbelowcmb commabelowcmb verticallinebelowcmb bridgebelowcmb caronbelowcmb brevebelowcmb breveinvertedbelowcmb tildebelowcmb macronbelowcmb ringhalfrightbelowcmb bridgeinvertedbelowcmb squarebelowcmb seagullbelowcmb iotasubscriptcmb ];
+@MARKS_CMB_ALL = [ @MARKS_CMB_ABOVE @MARKS_CMB_BELOW ];
+
 @MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyrcap dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb ];
 @MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap ];
 
@@ -36,6 +44,9 @@
 @FIGURES_INFERIOR = [zero.subs one.subs two.subs three.subs four.subs five.subs six.subs seven.subs eight.subs nine.subs];
 @FIGURES_CAP =  [zero.cap one.cap two.cap three.cap four.cap five.cap six.cap seven.cap eight.cap nine.cap];
 #@FIGURES_SMALLCAP = [zero.sc one.sc two.sc three.sc four.sc five.sc six.sc seven.sc eight.sc nine.sc];
+
+#@PUNCTUATION_FOR_SMALLCAPS = [ampersand exclam question exclamdown questiondown parenleft parenright bracketleft bracketright braceleft braceright hyphen endash emdash quoteleft quoteright quotedblleft quotedblright quotesingle quotedbl];
+#@PUNCTUATION_SMALLCAPS = [ampersand.sc exclam.sc question.sc exclamdown.sc questiondown.sc parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc hyphen.sc endash.sc emdash.sc quoteleft.sc quoteright.sc quotedblleft.sc quotedblright.sc quotesingle.sc quotedbl.sc];
 
 @PUNCTUATION_FOR_SMALL_FIGURE_STYLES = [parenleft parenright period comma];
 @PUNCTUATION_NUMERATOR = [parenleft.numr parenright.numr period.numr comma.numr];
@@ -195,8 +206,10 @@ feature ccmp { # Glyph Composition / Decomposition
 	} GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL;
 
 	lookup MAJUCSULE_ACCENTS_CMB_CONTEXT { # substitutes combining marks for miniscules with forms for majuscules
-		sub [@LETTERS_MAJUSCULE_LATIN_ALL @LETTERS_MINISCULE_LATIN_ASCENDERS] @MARKS_CMB' by @MARKS_CMB_CASE;
-		sub @MARKS_CMB_CASE @MARKS_CMB' by @MARKS_CMB_CASE;
+		sub [@LETTERS_MAJUSCULE_ALL @LETTERS_MINISCULE_LATIN_ASCENDERS] @MARKS_CMB_LC' by @MARKS_CMB_CASE;
+		sub @MARKS_CMB_CASE @MARKS_CMB_LC' by @MARKS_CMB_CASE;
+		sub [@LETTERS_MINISCULE_LATIN_ASCENDERS t esh] breveinverteddoublecmb' by breveinverteddoublecmb.a;
+		sub breveinverteddoublecmb' [@LETTERS_MINISCULE_LATIN_ASCENDERS t esh] by breveinverteddoublecmb.a;
 	} MAJUCSULE_ACCENTS_CMB_CONTEXT;
 
 } ccmp;
@@ -242,9 +255,9 @@ feature locl { # Localized Forms
 
 		language IPPH exclude_dflt;
 			lookup A_IPA { # ITALIC ONLY substitutes single-storey a with double-storey variants
-				   sub a by a.alt;
-				   sub ae by ae.alt;
-				   sub asupmod by asupmod.alt;
+				   sub a by a.a;
+#				   sub ae by ae.a;
+				   sub a.sups by a.supa;
 		} A_IPA;
 
 		language APPH exclude_dflt;
