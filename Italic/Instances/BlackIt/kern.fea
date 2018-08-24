@@ -1,4 +1,4 @@
-# Created: Tue Aug 21 14:22:11 2018
+# Created: Fri Aug 24 12:59:30 2018
 # PS Name: SourceSansPro-BlackIt
 # MinKern: +/- 3 inclusive
 # exported from Defcon
@@ -34,14 +34,16 @@
 @MMK_L_LAT_Q_LC_LEFT = [hturned mlonglegturned q];
 @MMK_L_LAT_R_LC_LEFT = [r racute rcaron rcommaaccent rdotaccent rdotbelow rdotbelowmacron rfishhook rlinebelow rtail];
 @MMK_L_LAT_R_UC_LEFT = [R Racute Rcaron Rcommaaccent Rdotaccent Rdotbelow Rdotbelowmacron Rlinebelow];
+@MMK_L_LAT_SUPS_N_LC_LEFT = [a.sups h.sups m.sups n.sups];
 @MMK_L_LAT_S_LC_LEFT = [s sacute scaron scedilla scircumflex scommaaccent sdotaccent sdotbelow shook];
 @MMK_L_LAT_S_UC_LEFT = [S Sacute Scaron Scedilla Scircumflex Scommaaccent Sdotaccent Sdotbelow];
 @MMK_L_LAT_THORN_UC_LEFT = [Thorn];
 @MMK_L_LAT_T_LC_LEFT = [f_f_t f_t t tbar tcaron tcedilla tcommaaccent tdieresis tdotaccent tdotbelow tlinebelow];
-@MMK_L_LAT_T_UC_LEFT = [T Tbar Tcaron Tcedilla Tcommaaccent Tdotaccent Tdotbelow Tlinebelow];
+@MMK_L_LAT_T_UC_LEFT = [T Tbar Tcaron Tcedilla Tcommaaccent Tdotaccent Tdotbelow Tlinebelow Tdieresis];
 @MMK_L_LAT_UHORN_LC_LEFT = [uhorn uhornacute uhorndotbelow uhorngrave uhornhoi uhorntilde];
 @MMK_L_LAT_UHORN_UC_LEFT = [Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhoi Uhorntilde];
 @MMK_L_LAT_U_UC_LEFT = [U Uacute Ubreve Ucaron Ucircumflex Udieresis Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Udotbelow Ugrave Uhoi Uhungarumlaut Umacron Uogonek Uogonekacute Uring Utilde];
+@MMK_L_LAT_VTURNED_LC_LEFT = [vturned wturned yturned];
 @MMK_L_LAT_V_LC_LEFT = [Ysmall gammalatin v];
 @MMK_L_LAT_V_UC_LEFT = [V];
 @MMK_L_LAT_W_LC_LEFT = [w wacute wcircumflex wdieresis wgrave];
@@ -75,12 +77,14 @@
 @MMK_R_LAT_N_LC_RIGHT = [Bsmall Hsmall Lsmall Nsmall Rsmall dotlessi eng iogonek.x kgreenlandic m macute mdotaccent mdotbelow mhook n nacute ncaron ncommaaccent ndotaccent ndotbelow ngrave nlinebelow nretroflex ntilde p pdotaccent r racute rcaron rcommaaccent rdotaccent rdotbelow rdotbelowmacron rlinebelow rtail];
 @MMK_R_LAT_O_UC_RIGHT = [C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent G Gacute Gbreve Gcaron Gcircumflex Gcommaaccent Gdotaccent Ghook Gmacron Gtilde O OE Oacute Obreve Ocaron Ocircumflex Ocircumflexacute Ocircumflexdotbelow Ocircumflexgrave Ocircumflexhoi Ocircumflextilde Odieresis Odotbelow Ograve Ohoi Ohorn Ohornacute Ohorndotbelow Ohorngrave Ohornhoi Ohorntilde Ohungarumlaut Omacron Omacronacute Oogonek Oogonekacute Oslash Otilde Q];
 @MMK_R_LAT_SCHWA_UC_RIGHT = [Schwa];
+@MMK_R_LAT_SUPS_N_LC_RIGHT = [b.sups h.sups i.sups k.sups l.supa l.sups m.sups n.sups r.sups u.sups];
 @MMK_R_LAT_S_LC_RIGHT = [s sacute scaron scedilla scircumflex scommaaccent sdotaccent sdotbelow shook];
 @MMK_R_LAT_S_UC_RIGHT = [S Sacute Scaron Scedilla Scircumflex Scommaaccent Sdotaccent Sdotbelow];
 @MMK_R_LAT_T_LC_RIGHT = [t tbar tcaron tcedilla tcommaaccent tdieresis tdotaccent tdotbelow tlinebelow tretroflex tesh];
-@MMK_R_LAT_T_UC_RIGHT = [T Tbar Tcaron Tcedilla Tcommaaccent Tdotaccent Tdotbelow Tlinebelow];
+@MMK_R_LAT_T_UC_RIGHT = [T Tbar Tcaron Tcedilla Tcommaaccent Tdotaccent Tdotbelow Tlinebelow Tdieresis];
 @MMK_R_LAT_U_LC_RIGHT = [aturned hturned mlonglegturned mturned u uacute ubreve ucaron ucircumflex udieresis udieresisacute udieresiscaron udieresisgrave udieresismacron udotbelow ugrave uhoi uhorn uhornacute uhorndotbelow uhorngrave uhornhoi uhorntilde uhungarumlaut umacron uogonek uogonek.d uogonekacute uring utilde vhook];
 @MMK_R_LAT_U_UC_RIGHT = [U Uacute Ubreve Ucaron Ucircumflex Udieresis Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Udotbelow Ugrave Uhoi Uhorn Uhornacute Uhorndotbelow Uhorngrave Uhornhoi Uhorntilde Uhungarumlaut Umacron Uogonek Uogonekacute Uring Utilde];
+@MMK_R_LAT_VTURNED_LC_RIGHT = [vturned wturned yturned];
 @MMK_R_LAT_V_LC_RIGHT = [Ysmall gammalatin v];
 @MMK_R_LAT_V_UC_RIGHT = [V];
 @MMK_R_LAT_W_LC_RIGHT = [w wacute wcircumflex wdieresis wgrave];
@@ -600,6 +604,7 @@ pos @MMK_L_LAT_R_LC_LEFT @MMK_R_LAT_A_ALT_LC_RIGHT -20;
 pos @MMK_L_LAT_R_LC_LEFT @MMK_R_LAT_A_LC_RIGHT -10;
 pos @MMK_L_LAT_R_LC_LEFT @MMK_R_LAT_G_LC_RIGHT -10;
 pos @MMK_L_LAT_R_LC_LEFT @MMK_R_LAT_J_UC_RIGHT -60;
+pos @MMK_L_LAT_R_LC_LEFT @MMK_R_LAT_VTURNED_LC_RIGHT -40;
 pos @MMK_L_LAT_R_LC_LEFT @MMK_R_LAT_Z_LC_RIGHT -10;
 pos @MMK_L_LAT_R_LC_LEFT @MMK_R_LAT_Z_UC_RIGHT -20;
 pos @MMK_L_LAT_R_LC_LEFT @MMK_R_PCT_COMMA_RIGHT -70;
@@ -625,6 +630,7 @@ pos @MMK_L_LAT_R_UC_LEFT @MMK_R_LAT_Z_UC_RIGHT -10;
 pos @MMK_L_LAT_R_UC_LEFT @MMK_R_PCT_EMDASH_RIGHT -40;
 pos @MMK_L_LAT_R_UC_LEFT @MMK_R_PCT_GUILLEFT_RIGHT -30;
 pos @MMK_L_LAT_R_UC_LEFT asterisk -20;
+pos @MMK_L_LAT_SUPS_N_LC_LEFT @MMK_R_LAT_VTURNED_LC_RIGHT -40;
 pos @MMK_L_LAT_S_LC_LEFT @MMK_R_LAT_T_UC_RIGHT -40;
 pos @MMK_L_LAT_S_LC_LEFT @MMK_R_LAT_V_LC_RIGHT -10;
 pos @MMK_L_LAT_S_LC_LEFT @MMK_R_LAT_V_UC_RIGHT -20;
@@ -708,6 +714,9 @@ pos @MMK_L_LAT_U_UC_LEFT @MMK_R_LAT_X_UC_RIGHT -10;
 pos @MMK_L_LAT_U_UC_LEFT @MMK_R_LAT_Y_UC_RIGHT -20;
 pos @MMK_L_LAT_U_UC_LEFT @MMK_R_PCT_COMMA_RIGHT -10;
 pos @MMK_L_LAT_U_UC_LEFT slash -40;
+pos @MMK_L_LAT_VTURNED_LC_LEFT @MMK_R_LAT_F_LC_RIGHT -20;
+pos @MMK_L_LAT_VTURNED_LC_LEFT @MMK_R_LAT_SUPS_N_LC_RIGHT -40;
+pos @MMK_L_LAT_VTURNED_LC_LEFT @MMK_R_LAT_T_LC_RIGHT -10;
 pos @MMK_L_LAT_V_LC_LEFT @MMK_R_LAT_A_ALT_LC_RIGHT -20;
 pos @MMK_L_LAT_V_LC_LEFT @MMK_R_LAT_A_LC_RIGHT -10;
 pos @MMK_L_LAT_V_LC_LEFT @MMK_R_LAT_A_UC_RIGHT -20;
