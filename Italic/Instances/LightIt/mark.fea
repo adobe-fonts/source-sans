@@ -1,4 +1,4 @@
-# Created: Tue Aug 21 14:22:06 2018
+# Created: Wed Sep 26 16:57:03 2018
 # PS Name: SourceSansPro-LightIt
 # MM Inst: None
 # exported from Defcon
@@ -24,7 +24,7 @@ lookup MARK_BASE_above {
 	@bGC_bhook_above = [bhook henghook glottalstopstrokereversed];
 	@bGC_c_above = [c Bsmall ghook];
 	@bGC_dotlessi_above = [dotlessi Lsmall];
-	@bGC_dotlessj_above = [dotlessj iogonek.x];
+	@bGC_dotlessj_above = [dotlessj iotalatin iogonek.x];
 	@bGC_dotlessjstrokehook_above = [dotlessjstrokehook glottalstop];
 	@bGC_dtail_above = [dtail dhook];
 	@bGC_e_above = [e eogonek eogonek.d Nsmall];
@@ -128,6 +128,7 @@ lookup MARK_BASE_above {
 	pos base hhook <anchor 307 730> mark @MC_above;
 	pos base i <anchor 203 682> mark @MC_above;
 	pos base istroke.x <anchor 170 504> mark @MC_above;
+	pos base j <anchor 201 682> mark @MC_above;
 	pos base jcrossedtail.x <anchor 218 504> mark @MC_above;
 	pos base l <anchor 211 729> mark @MC_above;
 	pos base l.a <anchor 207 730> mark @MC_above;
@@ -166,12 +167,14 @@ lookup MARK_BASE_base {
 	pos base @bGC_S_base <anchor 213 0> mark @MC_base;
 	pos base C <anchor 262 0> mark @MC_base;
 	pos base T <anchor 194 0> mark @MC_base;
+	pos base Tbar <anchor 193 0> mark @MC_base;
 	pos base c <anchor 201 0> mark @MC_base;
 	pos base circledotted <anchor 249 0> mark @MC_base;
 	pos base eopen <anchor 173 0> mark @MC_base;
 	pos base oopen <anchor 134 0> mark @MC_base;
 	pos base s <anchor 161 0> mark @MC_base;
 	pos base t <anchor 163 0> mark @MC_base;
+	pos base tbar <anchor 154 0> mark @MC_base;
 	pos base u <anchor 192 0> mark @MC_base;
 	pos base ubar <anchor 195 0> mark @MC_base;
 } MARK_BASE_base;
