@@ -1,25 +1,51 @@
 #!/usr/bin/env sh
 
 family=SourceSansPro
-romanWeights='Black Bold ExtraLight Light Regular Semibold'
-italicWeights='BlackIt BoldIt ExtraLightIt LightIt It SemiboldIt'
+roman_weights=(Black Bold ExtraLight Light Regular Semibold)
+italic_weights=(BlackIt BoldIt ExtraLightIt LightIt It SemiboldIt)
+
+# get absolute path to bash script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 # clean existing build artifacts
-rm -rf target/
-otfDir="target/OTF"
-ttfDir="target/TTF"
-mkdir -p $otfDir $ttfDir
+rm -rf $DIR/target/
+otf_dir="$DIR/target/OTF"
+ttf_dir="$DIR/target/TTF"
+mkdir -p $otf_dir $ttf_dir
 
-for w in $romanWeights
+
+function build_font {
+	# $1 is Roman or Italic
+	# $2 is weight name
+    font_dir=$DIR/$1/Instances/$2
+    font_ufo=$font_dir/font.ufo
+    ps_name=$family-$2
+    echo $ps_name
+    echo "Building OTF ..."
+    # -r is for "release mode" (subroutinization + applied glyph order)
+    # -gs is for filtering the output font to contain only glyphs in the GOADB
+    makeotf -f $font_ufo -r -gs -omitMacNames
+    echo "Building TTF ..."
+    otf2ttf $font_dir/$ps_name.otf
+    echo "Componentizing TTF ..."
+    ttfcomponentizer $font_dir/$ps_name.ttf
+
+    # move font files to target directory
+    mv $font_dir/$ps_name.otf $otf_dir
+    mv $font_dir/$ps_name.ttf $ttf_dir
+    echo "Done with $ps_name"
+    echo ""
+    echo ""
+}
+
+
+for w in ${roman_weights[@]}
 do
-  font_path=Roman/Instances/$w/font
-  makeotf -f $font_path.ufo -r -o $otfDir/$family-$w.otf
-  makeotf -f $font_path.ttf -r -o $ttfDir/$family-$w.ttf -ff $font_path.ufo/features.fea
+	build_font Roman $w
 done
 
-for w in $italicWeights
+
+for w in ${italic_weights[@]}
 do
-  font_path=Italic/Instances/$w/font
-  makeotf -f $font_path.ufo -r -o $otfDir/$family-$w.otf
-  makeotf -f $font_path.ttf -r -o $ttfDir/$family-$w.ttf -ff $font_path.ufo/features.fea
+	build_font Italic $w
 done
