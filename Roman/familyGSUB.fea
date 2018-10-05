@@ -100,7 +100,6 @@
 @SS04_I_UC_DEFAULT = [I Igrave Iacute Icircumflex Itilde Idieresis Imacron Ibreve Idotaccent Icaron Ihoi Idotbelow Iogonek Iogonekacute];
 @SS04_I_UC_ALTERNATE = [I.a Igrave.a Iacute.a Icircumflex.a Itilde.a Idieresis.a Imacron.a Ibreve.a Idotaccent.a Icaron.a Ihoi.a Idotbelow.a Iogonek.a Iogonekacute.a];
 
-
 #--------------------------------------
 languagesystem DFLT dflt; # Default
 
@@ -140,7 +139,6 @@ feature aalt { # Access All Alternates
 	feature ss04;
 	feature salt;
 } aalt;
-
 
 #--------------------------------------
 lookup DECOMPOSITION {
@@ -528,8 +526,7 @@ feature ccmp { # Glyph Composition / Decomposition
 		sub [Yi yi]' lookup DECOMPOSITION acutecmb; # Cyrillic stressed notation
 	} GLYPH_DECOMPOSITION_CONTEXTUAL;
 
-	lookup GLYPH_COMPOSITION_CONTEXTUAL {
-		#substitutes dotless forms when followed by combining diacritics
+	lookup GLYPH_COMPOSITION_CONTEXTUAL { #substitutes dotless forms when followed by combining diacritics
 		sub i' ogonekcmb' @MARKS_CMB_ABOVE by iogonek.x;
 		sub [i j iogonek istroke jcrossedtail]' @MARKS_CMB_BELOW @MARKS_CMB_ABOVE by [dotlessi dotlessj iogonek.x istroke.x jcrossedtail.x];
 		sub [i j iogonek istroke jcrossedtail]' @MARKS_CMB_ABOVE by [dotlessi dotlessj iogonek.x istroke.x jcrossedtail.x];
@@ -561,7 +558,7 @@ feature ccmp { # Glyph Composition / Decomposition
 	} MARKS_COMPOSITION;
 
 	lookup GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL {
-		sub A ogonekcmb acutecmb by Aogonekacute; # !! look at all this, in combination with above
+		sub A ogonekcmb acutecmb by Aogonekacute;
 		sub E ogonekcmb acutecmb by Eogonekacute;
 		sub I ogonekcmb acutecmb by Iogonekacute;
 		sub O ogonekcmb acutecmb by Oogonekacute;
@@ -910,22 +907,17 @@ feature ccmp { # Glyph Composition / Decomposition
 
 } ccmp;
 
-
 #--------------------------------------
-#OK
+@IPA_GRK_LC = [ alpha beta gamma iota upsilon phi chi ]; # Minion 3 includes theta
+@IPA_LAT_LC = [ alphalatin betalatin gammalatin iotalatin upsilonlatin philatin chilatin ];
+
 feature locl { # Localized Forms
 
 	script latn;
-		lookup GREEK_TO_IPA { # substitutes Greek characters by Latin characters
-			sub alpha by alphalatin;
-			sub beta by betalatin;
-			sub gamma by gammalatin;
-#			sub theta by theta.alt1; #from Myriad features
-			sub iota by iotalatin;
-			sub upsilon by upsilonlatin;
-			sub phi by philatin;
-			sub chi by chilatin;
-		} GREEK_TO_IPA;
+		language dflt;
+			lookup GREEK_TO_IPA { # substitutes Greek characters by Latin characters
+				sub @IPA_GRK_LC by @IPA_LAT_LC;
+			} GREEK_TO_IPA;
 
 		language ATH include_dflt;
 			lookup OGONEKS_ATH {
@@ -954,14 +946,12 @@ feature locl { # Localized Forms
 		language SKS include_dflt;
 			lookup ENG_SAMI;
 
-       language IPPH include_dflt;
+#		language IPPH include_dflt;
 #			lookup A_IPA { # ITALIC ONLY substitutes single-storey a with double-storey variants
-#                sub a by a.alt;
-#                sub ae by ae.alt;
-#                sub asupmod by asupmod.alt;
-#			} A_IPA;
+#				   sub [ a a.sups ] by [ a.a a.supa ]; # Minion 3 includes ae
+#		} A_IPA;
 #
-      language APPH include_dflt;
+#		language APPH include_dflt;
 #			lookup A_IPA;
 
 	script grek;
@@ -977,7 +967,6 @@ feature locl { # Localized Forms
 
 } locl;
 
-
 #--------------------------------------
 feature numr { # Numerators
 	lookup NUMR {
@@ -986,13 +975,11 @@ feature numr { # Numerators
 	} NUMR;
 } numr;
 
-
 #--------------------------------------
 feature dnom { # Denominators
 	sub @FIGURES_LINING_TABULAR by @FIGURES_DENOMINATOR;
 	sub @PUNCTUATION_FOR_SMALL_FIGURE_STYLES by @PUNCTUATION_DENOMINATOR;
 } dnom;
-
 
 #--------------------------------------
 feature frac { # Fractions
@@ -1008,7 +995,6 @@ feature frac { # Fractions
 	sub @FIGURES_DENOMINATOR @SPACE_FRAC [@FIGURES_NUMERATOR @PUNCTUATION_NUMERATOR]' by [@FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR];
 } frac;
 
-
 #--------------------------------------
 feature ordn {
 	lookup SUPERIOR_LETTERS_MINISCULE {
@@ -1016,7 +1002,6 @@ feature ordn {
 		sub [egrave eacute schwa] by [egrave.sups eacute.sups schwa.sups];
 	} SUPERIOR_LETTERS_MINISCULE;
 } ordn;
-
 
 #--------------------------------------
 feature sups { # Superscript
@@ -1038,7 +1023,6 @@ feature sups { # Superscript
 
 } sups;
 
-
 #--------------------------------------
 feature subs { # Subscript
 	lookup INFERIOR {
@@ -1048,12 +1032,10 @@ feature subs { # Subscript
 	} INFERIOR;
 } subs;
 
-
 #--------------------------------------
 feature sinf { # Scientific Inferiors
 	lookup INFERIOR;
 } sinf;
-
 
 #--------------------------------------
 feature pnum { # Proportional Figures
@@ -1061,34 +1043,40 @@ feature pnum { # Proportional Figures
 	sub @FIGURES_OLDSTYLE_TABULAR by @FIGURES_OLDSTYLE_PROPORTIONAL;
 } pnum;
 
-
 #--------------------------------------
 feature onum { # Oldstyle (Text) Figures
 	sub @FIGURES_LINING_TABULAR by @FIGURES_OLDSTYLE_TABULAR;
 	sub @FIGURES_LINING_PROPORTIONAL by @FIGURES_OLDSTYLE_PROPORTIONAL;
 } onum;
 
-
 #--------------------------------------
 feature case { # Case-Sensitive Forms
-	sub @MARKS_CMB_LC by @MARKS_CMB_CASE;
-	sub at by at.case;
-	sub anoteleia by anoteleia.cap;
+
+	lookup LETTERS_CASE {
+		sub [hlinebelow tdieresis] by [Hlinebelow Tdieresis];
+	} LETTERS_CASE;
+
+	lookup MARKS_CASE {
+		sub @MARKS_CMB_LC by @MARKS_CMB_CASE;
+		sub anoteleia by anoteleia.cap;
+	} MARKS_CASE;
+
 	lookup FIGURES_CASE {
 		sub @FIGURES_LINING_TABULAR by @FIGURES_CAP;
 	} FIGURES_CASE;
+
+	sub at by at.case;
+
 } case;
 
-
 #--------------------------------------
-#OK
 #feature ss20 { # Stylistic Set 20 (Accented Greek Small Capitals)
 #	featureNames {
 #		name "Accented Greek Small Capitals"; # Windows English
 #	};
 #
 ##	sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_TONOS;
-#
+
 	lookup GREEK_SMALLCAPS_MONO {
 		sub @LETTERS_MINISCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
 		sub @LETTERS_MINISCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
@@ -1112,32 +1100,27 @@ feature case { # Case-Sensitive Forms
 	sub [iotadieresisgrave iotadieresisacute iotadieresistilde] by Iotadieresis.sc;
 	sub [upsilondieresisgrave upsilondieresisacute upsilondieresistilde] by Upsilondieresis.sc;
 	} GREEK_SMALLCAPS_POLY;
-#
+
 #} ss20;
 
-
 #--------------------------------------
-#OK
 feature ss18 { # Stylistic Set 18 (Preferred Athabaskan ogoneks)
 
 featureNames {
 	name "Preferred Athabaskan ogoneks"; # Windows English
 };
 
-
 	lookup OGONEKS_ATH;
 
 } ss18;
 
-
 #--------------------------------------
-#OK
-feature c2sc { #UC-->SC
+feature c2sc { # UC-->SC
 
 	sub @LETTERS_MAJUSCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
 	sub @LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL by @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL;
 	sub @LETTERS_MAJUSCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-	sub [Idotaccent Germandbls] by [Idotaccent.sc Germandbls.sc];
+	sub [ Idotaccent Eng.a Germandbls ] by [ Idotaccent.sc Eng.sa Germandbls.sc ];
 
 	sub @LETTERS_MAJUSCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
 	sub @LETTERS_MAJUSCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
@@ -1166,19 +1149,16 @@ feature c2sc { #UC-->SC
 
 } c2sc;
 
-
 #--------------------------------------
-#OK
-feature smcp { #LC-->SC
+feature smcp { # LC-->SC
 
 	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
 	sub @LETTERS_MINISCULE_LATIN_ACCENTED_ALL by @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL;
 	sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-	sub [i.trk germandbls iogonek.x uogonek.d Eng.a] by [Idotaccent.sc germandbls.sc Iogonek.sc Uogonek.sc Eng.sa];
+	sub [ i.trk germandbls iogonek.x uogonek.d ] by [ Idotaccent.sc germandbls.sc Iogonek.sc Uogonek.sc ];
 
 	lookup GREEK_SMALLCAPS_MONO;
 	lookup GREEK_SMALLCAPS_POLY;
-#	sub [alphalenis alphaasper alphagrave alphaacute alphalenisgrave alphaaspergrave alphalenisacute alphaasperacute alphalenistilde alphaaspertilde alphabreve alphamacron alphatilde] by Alpha.sc;
 
 	sub @LETTERS_MINISCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
 	sub be.srb by Be.sc;
@@ -1186,7 +1166,6 @@ feature smcp { #LC-->SC
 	lookup NUMERALS_SMALLCAP;
 
 } smcp;
-
 
 #--------------------------------------
 feature ss05 { # Stylistic Set 5 (Slashed zero)
@@ -1199,14 +1178,11 @@ feature ss05 { # Stylistic Set 5 (Slashed zero)
 
 } ss05;
 
-
 #--------------------------------------
-#OK
 feature zero {
 	sub zero by zero.0;
 	sub zero.pnum by zero.0p;
 } zero;
-
 
 #--------------------------------------
 feature ss01 { # Stylistic Set 1 (alternate l)
@@ -1228,7 +1204,6 @@ feature ss01 { # Stylistic Set 1 (alternate l)
 
 } ss01;
 
-
 #--------------------------------------
 feature ss02 { # Stylistic Set 2 (alternate a)
 	featureNames {
@@ -1242,8 +1217,8 @@ feature ss02 { # Stylistic Set 2 (alternate a)
 	lookup BETA_ALT {
 		sub beta by beta.a;
 	} BETA_ALT;
-} ss02;
 
+} ss02;
 
 #--------------------------------------
 feature ss03 { # Stylistic Set 3 (alternate g)
@@ -1258,8 +1233,8 @@ feature ss03 { # Stylistic Set 3 (alternate g)
 	lookup THETA_ALT {
 		sub theta by theta.a;
 	} THETA_ALT;
-} ss03;
 
+} ss03;
 
 #--------------------------------------
 feature ss04 { # Stylistic Set 4 (alternate I)
@@ -1293,7 +1268,6 @@ feature ss04 { # Stylistic Set 4 (alternate I)
 
 } ss04;
 
-
 #--------------------------------------
 feature ss19 { # Titling Figures
 featureNames {
@@ -1303,7 +1277,6 @@ featureNames {
 	lookup FIGURES_CASE;
 
 } ss19;
-
 
 #--------------------------------------
 feature salt { # Stylistic Alternates
@@ -1321,14 +1294,12 @@ feature salt { # Stylistic Alternates
 	sub yen by yuan;
 } salt;
 
-
 #--------------------------------------
 feature liga { # Standard Ligatures
 	sub f f t by f_f_t;
 	sub f f by f_f;
 	sub f t by f_t;
 } liga;
-
 
 #--------------------------------------
 feature size {
