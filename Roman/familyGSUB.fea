@@ -983,16 +983,14 @@ feature dnom { # Denominators
 
 #--------------------------------------
 feature frac { # Fractions
-	@SPACE_DEFAULT = [space nbspace];
-	@SPACE_FRAC = [space.frac nbspace.frac];
 	@SLASH = [slash.frac fraction divisionslash];
 
 	lookup NUMR;
 	sub slash by slash.frac;
-	sub @FIGURES_NUMERATOR @SPACE_DEFAULT' by @SPACE_FRAC;
+	sub @FIGURES_NUMERATOR space' by space.frac;
 
-	sub [fraction divisionslash slash.frac @FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR] [@FIGURES_NUMERATOR @PUNCTUATION_NUMERATOR]' by [@FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR];
-	sub @FIGURES_DENOMINATOR @SPACE_FRAC [@FIGURES_NUMERATOR @PUNCTUATION_NUMERATOR]' by [@FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR];
+	sub [@SLASH @FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR] [@FIGURES_NUMERATOR @PUNCTUATION_NUMERATOR]' by [@FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR];
+	sub @FIGURES_DENOMINATOR space.frac [@FIGURES_NUMERATOR @PUNCTUATION_NUMERATOR]' by [@FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR];
 } frac;
 
 #--------------------------------------
