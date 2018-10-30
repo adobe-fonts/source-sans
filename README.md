@@ -1,11 +1,9 @@
 # Source Sans Pro
 
 Source Sans Pro is a set of OpenType fonts that have been designed to work well
-in user interface (UI) environments. In addition to a functional OpenType font, this open
-source project provides all of the source files that were used to build this OpenType font
-by using the AFDKO makeotf tool.
+in user interface (UI) environments.
 
-## Download the fonts (OTF, TTF, WOFF, WOFF2, EOT)
+## Download the fonts (OTF, TTF, WOFF, WOFF2)
 
 * [Latest release](../../releases/latest)
 * [All releases](../../releases)
@@ -27,26 +25,31 @@ by using the AFDKO makeotf tool.
 ### Requirements
 
 To build the binary font files from source, you need to have installed the
-[Adobe Font Development Kit for OpenType](http://www.adobe.com/devnet/opentype/afdko.html) (AFDKO). The AFDKO
-tools are widely used for font development today, and are part of most font
-editor applications.
+[Adobe Font Development Kit for OpenType](https://github.com/adobe-type-tools/afdko/) (AFDKO).
 
 ### Building one font
 
-The key to building OTF or TTF fonts is `makeotf`, which is part of the AFDKO toolset.
-Information and usage instructions can be found by executing `makeotf -h`.
+The key to building the OTF fonts is `makeotf`, which is part of the AFDKO toolset.
+Information and usage instructions can be found by executing `makeotf -h`. The TTFs
+are generated with the `otf2ttf` and `ttfcomponentizer` tools.
 
-In this repository, all necessary files are in place for building the OTF and TTF fonts.
-For example, build a binary OTF font for the Regular style like this:
+Commands to build the Regular style OTF font:
 
 ```sh
-$ cd Roman/Regular/
-$ makeotf -r
+$ cd Roman/Instances/Regular/
+$ makeotf -r -gs -omitMacNames
 ```
 
-### Building all fonts
+Commands to generate the Regular style TTF font:
 
-For convenience, a shell script named **build** is provided in the root directory.
+```sh
+$ otf2ttf SourceSansPro-Regular.otf
+$ ttfcomponentizer SourceSansPro-Regular.ttf
+```
+
+### Building all non-variable fonts
+
+For convenience, a shell script named **build.sh** is provided in the root directory.
 It builds all OTFs and TTFs, and can be executed by typing:
 
 ```sh
@@ -57,6 +60,21 @@ or this on Windows:
 
 ```sh
 > build.cmd
+```
+
+### Building the variable fonts
+
+To build the variable TTFs you must install Adobe's **fontmake** fork using this command:
+
+```sh
+$ pip install git+https://github.com/adobe-type-tools/fontmake
+```
+
+A shell script named **buildVFs.sh** is provided in the root directory.
+It generates four variable fonts (two CFF2-OTFs and two TTFs), and can be executed by typing:
+
+```sh
+$ ./buildVFs.sh
 ```
 
 ### Building with `make`
@@ -98,18 +116,6 @@ removed on `make clean`. If that is necessary, run:
 $ make cleaninstances
 ```
 
-Note also that font.ttf instances stored in the repository are not generated
-entirely automatically. These TrueType versions of the instances are produced in
-a process that depends on manual workflow [described in detail by Frank
-Grießhammer](https://github.com/adobe-type-tools/fontlab-scripts/tree/master/TrueType).
-Because of that, `make` will build the target TTFs only if it finds those files already
-in place.
-
 ## Getting Involved
 
 Send suggestions for changes to the Source Sans OpenType font project maintainer, [Paul D. Hunt](mailto:opensourcefonts@adobe.com?subject=[GitHub]%20Source%20Sans%20Pro), for consideration.
-
-## Further information
-
-For information about the design and background of Source Sans, please refer to the [official font readme file](http://www.adobe.com/products/type/font-information/Source-Sans-Pro-Readme-file.html).
-
