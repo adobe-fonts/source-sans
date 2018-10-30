@@ -3,7 +3,11 @@
 Source Sans Pro is a set of OpenType fonts that have been designed to work well
 in user interface (UI) environments.
 
-## Download the fonts (OTF, TTF, WOFF, WOFF2)
+## Getting involved
+
+[Open an issue](https://github.com/adobe-fonts/source-sans-pro/issues) or send a suggestion to Source Sans' designer [Paul D. Hunt](mailto:opensourcefonts@adobe.com?subject=[GitHub]%20Source%20Sans%20Pro), for consideration.
+
+## Releases
 
 * [Latest release](../../releases/latest)
 * [All releases](../../releases)
@@ -115,7 +119,3 @@ removed on `make clean`. If that is necessary, run:
 ```sh
 $ make cleaninstances
 ```
-
-## Getting Involved
-
-Send suggestions for changes to the Source Sans OpenType font project maintainer, [Paul D. Hunt](mailto:opensourcefonts@adobe.com?subject=[GitHub]%20Source%20Sans%20Pro), for consideration.
