@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Ishort.sc">
-  <advance width="573" />
+	<advance width="573" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="475" y="0" />
-      <point type="line" x="433" y="0" />
-      <point type="line" x="433" y="303" />
-      <point x="433" y="353" />
-      <point x="436" y="403" />
-      <point type="curve" x="438" y="454" />
-      <point type="line" x="434" y="454" />
-      <point type="line" x="373" y="350" />
+      <point name="hintSet0000" type="line" x="97" y="0" />
       <point type="line" x="145" y="0" />
-      <point type="line" x="97" y="0" />
-      <point type="line" x="97" y="512" />
-      <point type="line" x="140" y="512" />
-      <point type="line" x="140" y="213" />
-      <point x="140" y="162" />
-      <point x="137" y="109" />
-      <point type="curve" x="134" y="59" />
-      <point type="line" x="138" y="59" />
-      <point type="line" x="200" y="161" />
-      <point type="line" x="428" y="512" />
+      <point type="line" x="373" y="350" />
+      <point type="line" x="434" y="454" />
+      <point type="line" x="438" y="454" />
+      <point x="436" y="403" />
+      <point x="433" y="353" />
+      <point type="curve" x="433" y="303" />
+      <point type="line" x="433" y="0" />
+      <point type="line" x="475" y="0" />
       <point type="line" x="475" y="512" />
+      <point type="line" x="428" y="512" />
+      <point type="line" x="200" y="161" />
+      <point type="line" x="138" y="59" />
+      <point type="line" x="134" y="59" />
+      <point x="137" y="109" />
+      <point x="140" y="162" />
+      <point type="curve" x="140" y="212" />
+      <point type="line" x="140" y="512" />
+      <point type="line" x="97" y="512" />
     </contour>
     <contour>
       <point name="hintSet0016" type="curve" x="291" y="563" />
@@ -43,27 +43,39 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="7c148bed59995efe2662f9f63100f38697353c60608ef4678315eded6ddf8138ecc47a6a02f2ad36f822d49aa499328ab72e99b7fb377c46f07032c1d724bef5">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="563" width="30" />
-            <vstem pos="140" width="293" />
-          </hintset>
-          <hintset pointTag="hintSet0016">
-            <hstem pos="563" width="30" />
-            <vstem pos="155" width="42" />
-            <vstem pos="385" width="42" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>c4c484dc6be54c167648663782ee5c6ecaf7049a003de29f7da3536143ec06650b70fe2a02350a422ade65b8d241f7aea7701a7bb7859ec4e79dfa855c734adc</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 59</string>
+              <string>hstem 454 58</string>
+              <string>hstem 563 30</string>
+              <string>vstem 97 43</string>
+              <string>vstem 433 42</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0016</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 59</string>
+              <string>hstem 454 58</string>
+              <string>hstem 563 30</string>
+              <string>vstem 97 43</string>
+              <string>vstem 155 42</string>
+              <string>vstem 385 42</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

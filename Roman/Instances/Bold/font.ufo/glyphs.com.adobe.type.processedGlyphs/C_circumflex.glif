@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Ccircumflex">
+	<unicode hex="0108" />
   <advance width="582" />
   <outline>
     <contour>
@@ -31,7 +32,6 @@
       <point x="184" y="-12" />
     </contour>
     <contour>
-      <point type="line" x="173" y="724" />
       <point type="line" x="237" y="685" />
       <point type="line" x="341" y="769" />
       <point type="line" x="345" y="769" />
@@ -39,28 +39,30 @@
       <point type="line" x="513" y="724" />
       <point type="line" x="423" y="835" />
       <point type="line" x="263" y="835" />
+      <point type="line" x="173" y="724" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="ed7131688e768db8203cda139ac6b45450f52a7bd41fd1298f53788df901127f4a6452cf8112c904b8e0eef36700cc06d1b62447d37209b9ac735762a18f8012">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="127" />
-            <hstem pos="537" width="127" />
-            <hstem pos="769" width="66" />
-            <vstem pos="46" width="151" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>0f3f7fb5184df2fa00addc5a4579e9175d0566b3a1e723e4965fe97b743e29e5fafa69de8a49ef92bee41b463cc8b8309a727de11737661128600cfa4c2f896f</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 127</string>
+              <string>hstem 537 127</string>
+              <string>hstem 769 66</string>
+              <string>vstem 46 151</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

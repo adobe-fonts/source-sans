@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Gcaron.sc">
-  <advance width="586" />
+	<advance width="586" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="333" y="-12" />
@@ -47,26 +47,27 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="d6e40f21eab4caf28d6fc16f73c73564047543e60659a8c68aa1dfca9c87093a2152fcab7acafc0103508c5eeed68eb6a81aa333ffa8bafbdbc9f906b54c7ec2">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="136" />
-            <hstem pos="198" width="118" />
-            <hstem pos="405" width="139" />
-            <hstem pos="592" width="74" />
-            <vstem pos="44" width="174" />
-            <vstem pos="382" width="150" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>d6e40f21eab4caf28d6fc16f73c73564047543e60659a8c68aa1dfca9c87093a2152fcab7acafc0103508c5eeed68eb6a81aa333ffa8bafbdbc9f906b54c7ec2</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 136</string>
+              <string>hstem 198 118</string>
+              <string>hstem 405 139</string>
+              <string>hstem 592 74</string>
+              <string>vstem 44 174</string>
+              <string>vstem 382 150</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -2,7 +2,7 @@ include (../../../../featuresVar.fea);
 
 table OS/2 {
 	include (../../../Instances/ExtraLight/os2.fea);
-	include (../../../../familyOS2.fea);
+	include (../../../familyOS2.fea);
 } OS/2;
 
 
@@ -20,5 +20,7 @@ feature mkmk {
 
 
 feature kern {
-	include (../../../Instances/ExtraLight/kern.fea);
+    lookup KERN useExtension {
+		include (../../../Instances/ExtraLight/kern.fea);
+    } KERN;
 } kern;

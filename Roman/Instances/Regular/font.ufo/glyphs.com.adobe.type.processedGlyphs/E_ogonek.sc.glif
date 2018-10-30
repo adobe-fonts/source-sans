@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Eogonek.sc">
-  <advance width="475" />
+	<advance width="475" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="362" y="-212" />
@@ -39,19 +39,27 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="48db800a0f36aa437d6c0e40fee49afe8443b1ec90269ecfa86c8b767d986fdf90bec687141e228572c59d822f6970dcbf104b418d99ca30ef036607e28a4a24">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-212" width="59" />
-            <hstem pos="0" width="66" />
-            <hstem pos="239" width="63" />
-            <hstem pos="452" width="66" />
-            <vstem pos="90" width="83" />
-            <vstem pos="267" width="64" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>48db800a0f36aa437d6c0e40fee49afe8443b1ec90269ecfa86c8b767d986fdf90bec687141e228572c59d822f6970dcbf104b418d99ca30ef036607e28a4a24</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -212 59</string>
+              <string>hstem 0 66</string>
+              <string>hstem 239 63</string>
+              <string>hstem 452 66</string>
+              <string>vstem 90 83</string>
+              <string>vstem 267 64</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

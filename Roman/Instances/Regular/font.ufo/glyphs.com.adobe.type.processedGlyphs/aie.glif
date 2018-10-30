@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="aie">
+	<unicode hex="04D5" />
   <advance width="785" />
   <outline>
     <contour>
@@ -50,7 +51,7 @@
       <point x="119" y="-12" />
     </contour>
     <contour>
-      <point type="curve" x="224" y="54" />
+      <point name="hintSet0018" type="curve" x="224" y="54" />
       <point x="176" y="54" />
       <point x="139" y="77" />
       <point type="curve" x="139" y="132" />
@@ -76,42 +77,66 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="044e10f0ddc8be0135ff2c81c1fa4a63676fb4b754c44ef83d66eb0b7717ce8b4d545d55ad3741abdc82b1ad6364bba990f569d10fa4ade05e394a99970f3b11">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="67" />
-            <hstem pos="223" width="55" />
-            <hstem pos="433" width="65" />
-            <vstem pos="58" width="81" />
-            <vstem pos="352" width="77" />
-            <vstem pos="675" width="72" />
-          </hintset>
-          <hintset pointTag="hintSet0013">
-            <hstem pos="-12" width="67" />
-            <hstem pos="223" width="55" />
-            <hstem pos="430" width="68" />
-            <vstem pos="58" width="81" />
-            <vstem pos="352" width="77" />
-            <vstem pos="675" width="72" />
-          </hintset>
-          <hintset pointTag="hintSet0017">
-            <hstem pos="-12" width="67" />
-            <hstem pos="223" width="55" />
-            <hstem pos="433" width="65" />
-            <vstem pos="58" width="81" />
-            <vstem pos="352" width="77" />
-            <vstem pos="675" width="72" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>044e10f0ddc8be0135ff2c81c1fa4a63676fb4b754c44ef83d66eb0b7717ce8b4d545d55ad3741abdc82b1ad6364bba990f569d10fa4ade05e394a99970f3b11</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 67</string>
+              <string>hstem 223 55</string>
+              <string>hstem 433 65</string>
+              <string>vstem 58 81</string>
+              <string>vstem 352 77</string>
+              <string>vstem 675 72</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0013</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 67</string>
+              <string>hstem 223 55</string>
+              <string>hstem 430 68</string>
+              <string>vstem 58 81</string>
+              <string>vstem 352 77</string>
+              <string>vstem 675 72</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0017</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 67</string>
+              <string>hstem 223 55</string>
+              <string>hstem 433 65</string>
+              <string>vstem 58 81</string>
+              <string>vstem 352 77</string>
+              <string>vstem 675 72</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0018</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 66</string>
+              <string>hstem 223 55</string>
+              <string>hstem 433 65</string>
+              <string>vstem 58 81</string>
+              <string>vstem 352 77</string>
+              <string>vstem 675 72</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

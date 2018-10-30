@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Wgrave.sc">
-  <advance width="717" />
+	<advance width="717" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="115" y="0" />
@@ -47,23 +47,24 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="50eae97945d7bc06854763e06ae2e35e1598a5264c6de36f54a4bfa8cb4571368daaa8669314117ea9267964fb9a4f76b715973c41d6796e9e5d31a00d16d0ba">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="132" />
-            <hstem pos="332" width="195" />
-            <vstem pos="14" width="689" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>50eae97945d7bc06854763e06ae2e35e1598a5264c6de36f54a4bfa8cb4571368daaa8669314117ea9267964fb9a4f76b715973c41d6796e9e5d31a00d16d0ba</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 132</string>
+              <string>hstem 332 195</string>
+              <string>vstem 14 689</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

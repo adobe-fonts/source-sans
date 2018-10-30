@@ -1,13 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="dzhe">
+<glyph format="1" name="dzhe">
+	<unicode hex="045F" />
   <advance width="568" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="73" y="0" />
-      <point type="line" x="228" y="0" />
-      <point type="line" x="232" y="-172" />
+      <point name="hintSet0000" type="line" x="232" y="-172" />
       <point type="line" x="331" y="-172" />
-      <point type="line" x="343" y="0" />
+      <point type="line" x="344" y="0" />
       <point type="line" x="495" y="0" />
       <point type="line" x="495" y="491" />
       <point type="line" x="380" y="491" />
@@ -15,22 +14,32 @@
       <point type="line" x="188" y="92" />
       <point type="line" x="188" y="491" />
       <point type="line" x="73" y="491" />
+      <point type="line" x="73" y="0" />
+      <point type="line" x="228" y="0" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w568l730l2280l232-172l331-172l3430l4950l495491l380491l38092l18892l188491l73491">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="92" />
-            <hstem pos="491" width="-20" />
-            <vstem pos="73" width="115" />
-            <vstem pos="230" width="107" />
-            <vstem pos="380" width="115" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w568l232-172l331-172l3440l4950l495491l380491l38092l18892l188491l73491l730l2280</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 92</string>
+              <string>hstem 491 -20</string>
+              <string>vstem 73 115</string>
+              <string>vstem 230 107.5</string>
+              <string>vstem 380 115</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

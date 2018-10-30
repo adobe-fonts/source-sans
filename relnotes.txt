@@ -1,10 +1,61 @@
+version 2.040(romans) & version 1.090 (italics) created 2018/10/30
 
-version 2.020(romans) & version 1.075 (italics)  created 2015/08/31
+	Fixes hinting affecting DOLLAR SIGN (U+0024). (GitHub issue #43)
+	Improves IPA support, matching italics to uprights, adds some characters. (GitHub issue #44)
+		LATIN SMALL LETTER L WITH MIDDLE TILDE (U+026B)
+		LATIN SMALL LETTER DEZH DIGRAPH (U+02A4)
+		LATIN SMALL LETTER TESH DIGRAPH (U+02A7)
+		LATIN LETTER AIN (U+1D25)
+	Adds characters SUPERSCRIPT PLUS SIGN (U+207A) and SUPERSCRIPT MINUS (U+207B). (GitHub issue #55)
+	Adds space characters. (GitHub issue #58)
+		THIN SPACE (U+2009)
+		HAIR SPACE (U+200A)
+		ZERO WIDTH SPACE (U+200B)
+	Fixes form of GREEK PHI SYMBOL (U+03D5) to feature stroked form. (GitHub issue #70)
+	Adds character NON-BREAKING HYPHEN (U+2011). (GitHub issue #72)
+	Improves support for Na-Dené languages. (GitHub issue #75)
+	Updates italics to include all Latin and punctuation characters in uprights. (GitHub issues #81 & #122)
+	Adds character COMBINING GRAPHEME JOINER' (U+034F). (GitHub issue #83)
+	Adds casing figures to <case> feature. (GitHub issues #89 & #123 & #126)
+	Sets width of NO-BREAK SPACE (U+00A0) equal to that of SPACE (U+0020). (GitHub issue #96)
+	Adds Mac OS specific characters. (GitHub issue #97)
+		UPWARDS WHITE ARROW (U+21E7)
+		UP ARROWHEAD (U+2303)
+		PLACE OF INTEREST SIGN (U+2318)
+		OPTION KEY (U+2325)
+		ERASE TO THE LEFT (U+232B)
+	Fixes small capital casing of LATIN SMALL LETTER SHARP S (U+00DF). (GitHub issue #102)
+	Improves anchor positioning. (issue #103)
+	Adds character LATIN LETTER RETROFLEX CLICK (U+01C3). (GitHub issue #105)
+	Adds characters for Adobe charset support. (GitHub issue #106)
+		HYPHEN (U+2010)
+		COMBINING GREEK KORONIS (U+343)
+		COMBINING GREEK DIALYTIKA TONOS (U+0344)
+	Adds dotted consonant characters for Irish support. (GitHub issue #117)
+		LATIN CAPITAL LETTER B WITH DOT ABOVE (U+1E02)
+		LATIN CAPITAL LETTER D WITH DOT ABOVE (U+1E0A)
+		LATIN CAPITAL LETTER F WITH DOT ABOVE (U+1E1E)
+		LATIN CAPITAL LETTER P WITH DOT ABOVE (U+1E56)
+		LATIN CAPITAL LETTER T WITH DOT ABOVE (U+1E6A)
+		LATIN SMALL LETTER B WITH DOT ABOVE (U+1E03)
+		LATIN SMALL LETTER D WITH DOT ABOVE (U+1E0B)
+		LATIN SMALL LETTER F WITH DOT ABOVE (U+1E1F)
+		LATIN SMALL LETTER P WITH DOT ABOVE (U+1E57)
+		LATIN SMALL LETTER T WITH DOT ABOVE (U+1E6B)
+	Updates copyright string to include current year. (GitHub issue #119)
+	Fixes design of UNDERTIE (U+203F) to function as spacing character. (GitHub issue #125)
+	Fixes combining mark placement for Cyrillic characters. (GitHub issue #127)
+	Fixes lookup order bug affecting proper formation of fractions. (GitHub issue #139)
+	Adds characters for TWO-EM DASH (U+2E3A) and THREE-EM DASH (U+2E3B). (GitHub issue #141)
+
+
+version 2.020(romans) & version 1.075 (italics) created 2015/08/31
 
 	Changes vendor ID  to 'ADBO'. (issue #52)
 	Update NAME table to remove full license text from binary font files.
 	Adds narrow no-break space to Italic fonts and moves fi/fl ligs to end of glyph order.
 	Removes NULL (u+0000) and CR (u+000D) glyphs from TrueType fonts.
+
 
 version 2.015 (romans) & version 1.070 (italics) created 2015/08/25
 
@@ -50,7 +101,7 @@ version 1.060 created 2014/06/17
 
 version 1.050 created 2013/04/16
 
-	[TrueType] Coordinated the vertical alignment of the tops of the letters across all 
+	[TrueType] Coordinated the vertical alignment of the tops of the letters across all
 	the styles at the various sizes. (GitHub issue #25)
 
 
@@ -66,7 +117,7 @@ version 1.039 created 2012/10/19
 
 version 1.038 created 2012/10/15
 
-	Updates TTF fonts with better hinting for asciitilde and approxequal, 
+	Updates TTF fonts with better hinting for asciitilde and approxequal,
 	which references this hinting.
 
 
@@ -76,8 +127,8 @@ version 1.037 created 2012/10/11
 	Updates fonts to add small capitals and superior capital letters to upright styles.
 	Adds the following characters for transliteration:  Blinebelow blinebelow
 	Klinebelow klinebelow  Emacronacute emacronacute Omacronacute omacronacute primemod
-	Adds the following punctuation characters: bardbl iterrobang ceilingleft ceilingright 
-	floorleft floorright bracketleftwhite bracketrightwhite brackhalftopleft 
+	Adds the following punctuation characters: bardbl iterrobang ceilingleft ceilingright
+	floorleft floorright bracketleftwhite bracketrightwhite brackhalftopleft
 	brackhalftopright brackhalfbotleft brackhalfbotright
 	Adds dotted zero and slashed zero.
 

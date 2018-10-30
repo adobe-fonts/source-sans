@@ -1,15 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="U">
+	<unicode hex="0055" />
   <advance width="600" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="90" y="269" />
-      <point x="84" y="237" />
-      <point x="81" y="211" />
-      <point type="curve" x="81" y="184" />
-      <point x="81" y="58" />
-      <point x="152" y="-12" />
-      <point type="curve" x="273" y="-12" />
+      <point name="hintSet0000" type="curve" x="273" y="-12" />
       <point x="378" y="-12" />
       <point x="472" y="53" />
       <point type="curve" x="509" y="236" />
@@ -27,20 +22,34 @@
       <point type="curve" x="134" y="273" />
       <point type="line" x="211" y="659" />
       <point type="line" x="168" y="659" />
+      <point type="line" x="90" y="269" />
+      <point x="84" y="237" />
+      <point x="81" y="211" />
+      <point type="curve" x="81" y="184" />
+      <point x="81" y="58" />
+      <point x="152" y="-12" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="0e7aecb941bd5ff4688401f038ad8e994c33cb62ee7db73dd04f2926811ade6e234795c9fa6df7bb4636934925447ee53c7a3c053ea8e3cd3736c52ad9c12599">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="37" />
-            <hstem pos="659" width="-20" />
-            <vstem pos="81" width="43" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>417cb2c46459785a9c25c364e3e577a590a9cf4f43ea5c32156bec0780408c1cdd08f659cbfe27810432f39074c797f7c70c755bc9c25cf778aa8c54d5bdf957</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 37</string>
+              <string>hstem 659 -20</string>
+              <string>vstem 81 43</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

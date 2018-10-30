@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="tugrik">
+<glyph format="1" name="tugrik">
   <advance width="513" />
+  <unicode hex="20AE" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="198" y="0" />
@@ -31,15 +32,24 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="a71d03d152b88f6a6034a8d20c39f433ea4021ba7a7c32c0934cce5d4f831056748dc3bcd605908de9b921714806fecd71027f08bb66263a73d32654e024a5f5">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="551" width="85" />
-            <vstem pos="198" width="116" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>a71d03d152b88f6a6034a8d20c39f433ea4021ba7a7c32c0934cce5d4f831056748dc3bcd605908de9b921714806fecd71027f08bb66263a73d32654e024a5f5</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 551 85</string>
+              <string>vstem 198 116</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

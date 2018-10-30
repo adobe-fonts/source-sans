@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="bhook">
+	<unicode hex="0253" />
   <advance width="564" />
   <outline>
     <contour>
@@ -10,7 +11,7 @@
       <point x="521" y="395" />
       <point x="450" y="491" />
       <point type="curve" x="327" y="491" />
-      <point x="277" y="491" />
+      <point name="hintSet0003" x="277" y="491" />
       <point x="226" y="466" />
       <point type="curve" x="185" y="430" />
       <point type="line" x="187" y="520" />
@@ -24,10 +25,10 @@
       <point x="329" y="710" />
       <point x="296" y="718" />
       <point type="curve" x="260" y="718" />
-      <point x="128" y="718" />
+      <point name="hintSet0009" x="128" y="718" />
       <point x="73" y="631" />
       <point type="curve" x="73" y="518" />
-      <point name="hintSet0010" type="line" x="73" y="0" />
+      <point type="line" x="73" y="0" />
       <point type="line" x="164" y="0" />
       <point name="hintSet0012" type="line" x="174" y="50" />
       <point type="line" x="177" y="50" />
@@ -52,32 +53,62 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="a24927d46d725626dc7c516c5c309981048ebf8b042a6172cae8626cb67708344c37a3b4a254b289171c0650d5c36f9a40a0bc812bf2d805e15b93a9b087b607">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="95" />
-            <hstem pos="396" width="95" />
-            <hstem pos="627" width="91" />
-            <vstem pos="73" width="115" />
-            <vstem pos="402" width="119" />
-          </hintset>
-          <hintset pointTag="hintSet0010">
-            <hstem pos="21" width="-21" />
-            <hstem pos="396" width="95" />
-            <hstem pos="627" width="91" />
-            <vstem pos="73" width="115" />
-            <vstem pos="402" width="119" />
-          </hintset>
-          <hintset pointTag="hintSet0012">
-            <hstem pos="-12" width="95" />
-            <hstem pos="396" width="95" />
-            <hstem pos="627" width="91" />
-            <vstem pos="73" width="115" />
-            <vstem pos="402" width="119" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>a24927d46d725626dc7c516c5c309981048ebf8b042a6172cae8626cb67708344c37a3b4a254b289171c0650d5c36f9a40a0bc812bf2d805e15b93a9b087b607</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 95</string>
+              <string>hstem 396 95</string>
+              <string>hstem 627 91</string>
+              <string>vstem 73 115</string>
+              <string>vstem 402 119</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0003</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 95</string>
+              <string>hstem 396 95</string>
+              <string>hstem 627 91</string>
+              <string>vstem 73 113</string>
+              <string>vstem 402 119</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0009</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 396 95</string>
+              <string>hstem 627 91</string>
+              <string>vstem 73 115</string>
+              <string>vstem 402 119</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0012</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 95</string>
+              <string>hstem 396 95</string>
+              <string>hstem 627 91</string>
+              <string>vstem 73 115</string>
+              <string>vstem 402 119</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="bar">
+	<unicode hex="007C" />
   <advance width="212" />
   <outline>
     <contour>
@@ -11,15 +12,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w212l100-250l126-250l126750l100750">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-250" width="1000" />
-            <vstem pos="100" width="26" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w212l100-250l126-250l126750l100750</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -250 1000</string>
+              <string>vstem 100 26</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

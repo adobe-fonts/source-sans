@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="emdash">
+	<unicode hex="2014" />
   <advance width="800" />
   <outline>
     <contour>
@@ -11,15 +12,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w800l42214l758214l758290l42290">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="214" width="76" />
-            <vstem pos="42" width="716" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w800l42214l758214l758290l42290</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 214 76</string>
+              <string>vstem 42 716</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

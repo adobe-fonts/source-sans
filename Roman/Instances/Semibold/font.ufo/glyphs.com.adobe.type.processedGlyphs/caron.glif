@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="caron">
+	<unicode hex="02C7" />
   <advance width="549" />
   <outline>
     <contour>
@@ -15,22 +16,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w549l216576l332576l443711l398753l276651l272651l150753l105711">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="576" width="75" />
-            <vstem pos="105" width="338" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w549l216576l332576l443711l398753l276651l272651l150753l105711</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 576 75</string>
+              <string>vstem 105 338</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

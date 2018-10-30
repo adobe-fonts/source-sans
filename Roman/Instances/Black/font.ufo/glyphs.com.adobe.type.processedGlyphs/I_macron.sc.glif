@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Imacron.sc">
-  <advance width="316" />
+	<advance width="316" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="72" y="0" />
@@ -17,24 +17,25 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w316l720l2440l244532l72532l0608l316608l316716l0716">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="532" width="-20" />
-            <hstem pos="608" width="108" />
-            <vstem pos="72" width="172" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w316l720l2440l244532l72532l0608l316608l316716l0716</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 532 -20</string>
+              <string>hstem 608 108</string>
+              <string>vstem 72 172</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

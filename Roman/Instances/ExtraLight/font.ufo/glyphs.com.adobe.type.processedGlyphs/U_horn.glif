@@ -1,13 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Uhorn">
+<glyph format="1" name="Uhorn">
   <advance width="640" />
+  <unicode hex="01AF" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="curve" x="314" y="-12" />
-      <point x="420" y="-12" />
-      <point x="532" y="42" />
-      <point type="curve" x="532" y="246" />
-      <point type="line" x="532" y="638" />
+      <point name="hintSet0000" type="line" x="532" y="638" />
       <point x="582" y="652" />
       <point x="634" y="680" />
       <point type="curve" x="634" y="752" />
@@ -34,22 +31,34 @@
       <point type="line" x="98" y="246" />
       <point x="98" y="42" />
       <point x="208" y="-12" />
+      <point type="curve" x="314" y="-12" />
+      <point x="420" y="-12" />
+      <point x="532" y="42" />
+      <point type="curve" x="532" y="246" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="9fd6ebb9075ba0faf87068d95423b961678ae71274c11fa52f7348c3c100902c607dba99a5c9289ae764f132a5afc95ef3437ee6ff84fde94e9ec62d13556a23">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="30" />
-            <hstem pos="660" width="-20" />
-            <vstem pos="98" width="32" />
-            <vstem pos="502" width="30" />
-            <vstem pos="600" width="34" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>e81124088f1678ad26182508de4abdc98c43f7cbeb99011d3301557ae069031c7b29863f636074dd754b786f481389e7bc8932667b49b7396706a872cf22a651</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 30</string>
+              <string>hstem 660 -20</string>
+              <string>vstem 98 32</string>
+              <string>vstem 502 30</string>
+              <string>vstem 600 34</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

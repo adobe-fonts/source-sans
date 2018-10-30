@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Ya.sc">
+<glyph format="1" name="Ya.sc">
   <advance width="499" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="401" y="512" />
+      <point name="hintSet0000" type="line" x="355" y="0" />
+      <point type="line" x="401" y="0" />
+      <point type="line" x="401" y="512" />
       <point type="line" x="239" y="512" />
       <point x="127" y="512" />
       <point x="55" y="476" />
@@ -15,8 +17,6 @@
       <point type="line" x="81" y="0" />
       <point type="line" x="234" y="229" />
       <point type="line" x="355" y="229" />
-      <point type="line" x="355" y="0" />
-      <point type="line" x="401" y="0" />
     </contour>
     <contour>
       <point type="line" x="249" y="264" />
@@ -24,26 +24,34 @@
       <point x="100" y="300" />
       <point type="curve" x="100" y="372" />
       <point x="100" y="449" />
-      <point x="152" y="475" />
-      <point type="curve" x="249" y="475" />
-      <point type="line" x="355" y="475" />
+      <point x="152" y="474" />
+      <point type="curve" x="249" y="474" />
+      <point type="line" x="355" y="474" />
       <point type="line" x="355" y="264" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="83b17f6a698d78aeef36fd6e99e5023877fd32c0827d75cf726e7b608f0a9538813cedc21fad2fcba648b9664b4b47fa7b4a8bf12362b5b2c3b03fdd5f608bf7">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="229" width="35" />
-            <hstem pos="475" width="37" />
-            <vstem pos="55" width="45" />
-            <vstem pos="355" width="46" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>c0a058df9ec3a38a462489eadfc4958c4686733c6bd9544088390fa7a6ec19e2b3e6ecce95c52ab43a0e017770088c990adda1b29ca05a4d7986de5dd9bf1edd</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 229 35</string>
+              <string>hstem 474 38</string>
+              <string>vstem 55 45</string>
+              <string>vstem 355 46</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

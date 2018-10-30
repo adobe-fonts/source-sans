@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="ogonek">
+	<unicode hex="02DB" />
   <advance width="508" />
   <outline>
     <contour>
@@ -27,22 +28,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.30000000000000004</real>
-        <real>0.6294117647058824</real>
-        <integer>1</integer>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="59f34a59f4bd516a67522933e8e6b5613ad2804ebe1e3ba1847ca31dd3a2baa63bf1ccc1ff1e390ffca19822dc5d6b9d9db0768add11b39e70936abc7e2ecec8">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-203" width="33" />
-            <vstem pos="116" width="39" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>59f34a59f4bd516a67522933e8e6b5613ad2804ebe1e3ba1847ca31dd3a2baa63bf1ccc1ff1e390ffca19822dc5d6b9d9db0768add11b39e70936abc7e2ecec8</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -203 33</string>
+              <string>vstem 116 39</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

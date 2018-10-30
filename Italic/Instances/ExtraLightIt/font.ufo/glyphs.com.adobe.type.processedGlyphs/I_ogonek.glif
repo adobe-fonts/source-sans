@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Iogonek">
+	<unicode hex="012E" />
   <advance width="218" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="22" y="-202" />
-      <point x="36" y="-202" />
-      <point x="62" y="-194" />
-      <point type="curve" x="78" y="-182" />
+      <point x="40" y="-202" />
+      <point x="60" y="-196" />
+      <point type="curve" x="78" y="-186" />
       <point type="line" x="68" y="-164" />
       <point x="54" y="-172" />
       <point x="42" y="-176" />
@@ -30,17 +31,25 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="2d7c75fe02ce09c261e934aaa7330673a2eb72bde8ebb4915443b32feb8d95f1ca608eb71985ea5b416779ab42a94bf359a36658ea262170aa3f829aa208d29a">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-202" width="26" />
-            <hstem pos="21" width="-21" />
-            <hstem pos="660" width="-20" />
-            <vstem pos="-42" width="30" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>cc6f8802adbb70caefe5a3eab2e47b44260d8920127ed5a9df6d256479ec02ea86d2541d6836a41d61736fc37766e5b52ff320c2d446e031cc9fa50f006b9bfc</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -202 26</string>
+              <string>hstem 21 -21</string>
+              <string>hstem 660 -20</string>
+              <string>vstem -42 30</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

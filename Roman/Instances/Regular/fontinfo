@@ -69,33 +69,42 @@ end FDDict TEXT_FIGURES
 
 begin GlyphSet UPPERCASE
 	#Latin
-		^[A-Z][A-Z]?(macron|breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke)?(above|below|dotaccent)?$
-		^(Germandbls|Schwa)$
+		^[A-Z][A-Z]?(macron|breve|circumflex|dieresis|hoi|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|hoi|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke)?(above|below|dotaccent)?$
+		^(Germandbls|Schwa|Eng)$
 	#Greek
 		^(Alpha|Beta|Gamma|Delta|Epsilon|Zeta|Eta|Theta|Iota|Kappa|Lambda|Mu|Nu|Xi|Omicron|Pi|Rho|Sigma|Tau|Upsilon|Phi|Chi|Psi|Omega)(iotasub)?(tonos|grave|acute|dieresis|lenis|asper|breve|macron|.greek)?(grave|acute|tilde)?(.alt)?$
 	#Cyrillic
-		^(A|E|I|O|U|Ie|Schwa)(grave|breve|dieresis|macron|gravedbl|straight|bar)?(cyr|short|ukran)(stroke)?$
-		^(Be|Ve|Ghe|De|Zhe|Ze|Ka|El|Em|En|Pe|Er|Es|Te|Ef|Ha|Tse|Che|Sha|Shcha|Hard|Yeru|Soft|Yu|Ya|Io|Dje|Gje|Dze|Yi|Je|Lje|Nje|Tshe|Kje|Dzhe|Yat|Fita|Izhitsa|Shha|Palochka|Aie)(grave|ukran|up|descender|stroke|bashkir)?$
+		^(A|E|I|O|U|Schwa)(e|ie|o)?(grave|breve|macron|dieresis|bar|acutedbl)?(cyr|short|ukran|straight)(stroke)?$
+		^(B|V|Gh|D|Zh|Z|P|T|Ts|Ch|Dj|Gj|Dz|J|Lj|Nj|Tsh|Kj|Dzh|Ai)(e)(breve|up|stroke|descender)?$
+		^(K|H|Sh)(ch|h)?(a)(descender|bashkir)?$
+		^(E)(l|m|n|r|s|f)(descender)?$
+		^(I|Y|Ai)(a|e|i|o|u|eru|at)(grave|breve)?(\.a)?$
+		^(Hard|Soft|Fita|Izhitsa|Palochka)$
 	#Punctuation
 		^(exclam|question)$
 		^(trademark|registered|servicemark)$
 		^(ampersand|section|paragraph)$
 	#Math
 		^(Delta|Omega).math$
+		^.+\.cap$
 end GlyphSet UPPERCASE
 
 
 begin GlyphSet LOWERCASE
 	#Latin
-		^(dotless|germandbl|schw)?[a-z](macron|breve|circumflex|dieresis|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|tail|ng|script|greenlandic|apostrophe)?(above|below|dotaccent)?(\.)?(alt|d|trk)?$
-		^[afo][eil]$
+		^(dotless|germandbl|schw|en)?[a-z](macron|breve|circumflex|dieresis|hoi|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|hoi|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|tail|ng|script|greenlandic|apostrophe)?(above|below|dotaccent)?(\.)?(alt|d|trk)?$
+		^[afo][eil](acute|macron)?$
 		^(f)_(f|t)$
 	#Greek
 		^(alpha|beta|gamma|delta|epsilon|zeta|eta|theta|iota|kappa|lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega)(iotasub)?(.alt|.end|.greek|tonos|dieresis|lenis|asper|acute|grave|breve|macron|tilde)?(tonos|acute|grave|tilde)?$
 		^(stigma|koppa|sampi|digamma)$
 	#Cyrillic
-		^(a|e|i|o|u|ie|schwa)(grave|breve|dieresis|macron|gravedbl|straight|bar)?(cyr|short|ukran)(stroke)?$
-		^(be|ve|ghe|de|zhe|ze|ka|el|em|en|pe|er|es|te|ef|ha|tse|che|sha|shcha|hard|yeru|soft|yu|ya|io|dje|gje|dze|yi|je|lje|nje|tshe|kje|dzhe|yat|fita|izhitsa|shha|palochka|aie)(grave|ukran|up|descender|stroke|bashkir|ital)?$
+		^(a|e|i|o|u|schwa)(e|ie|o)?(grave|breve|macron|dieresis|bar|acutedbl)?(cyr|short|ukran|straight)(stroke)?$
+		^(b|v|gh|d|zh|z|p|t|ts|ch|dj|gj|dz|j|lj|nj|tsh|kj|dzh|ai)(e)(breve|up|stroke|descender)?(\.srb)?$
+		^(k|h|sh)(ch|h)?(a)(descender|bashkir)?$
+		^(e)(l|m|n|r|s|f)(descender)?$
+		^(i|y|ai)(a|e|i|o|u|eru|at)(grave|breve)?(\.a)?$
+		^(hard|soft|fita|izhitsa|palochka)$
 	#Punctuation
 		^(exclam|question)down$
 		^(dagger|daggerdbl)$
@@ -108,10 +117,10 @@ end GlyphSet SMALLCAPS
 
 
 begin GlyphSet FIGURES
-		^(zero|one|two|three|four|five|six|seven|eight|nine)(\.)?(slash)?(pnum)?$
-		^(dollar|cent|sterling|yen|Euro|florin|colonmonetary|lira|naira|peseta|dong|peso|guarani|cedi|rupeeindian|numero|tugrik|tenge)(turkish)?$
+		^(zero|one|two|three|four|five|six|seven|eight|nine)(\.)?(slash|0)?(pnum|p|ps|s)?$
+		^(dollar|cent|sterling|yen|yuan|Euro|florin|colonmonetary|lira|naira|peseta|won|dong|peso|guarani|hryvnia|cedi|rupeeindian|numero|tugrik|tenge|ruble)(turkish)?$
 		^(percent|perthousand|numbersign)$
-		^(one|two|three|five|seven)(half|quarter|third|eighth)(s)?$
+		^(zero|one|two|three|four|five|seven)(half|third|quarter|fifth|sixth|seventh|eighth|ninth|tenth)(s)?$
 end GlyphSet FIGURES
 
 begin GlyphSet TEXT_FIGURES

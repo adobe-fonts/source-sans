@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="AEmacron.sc">
+<glyph format="1" name="AEmacron.sc">
   <advance width="694" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="243" y="298" />
-      <point x="277" y="357" />
-      <point x="313" y="419" />
+      <point name="hintSet0001" x="277" y="357" />
+      <point x="313" y="418" />
       <point type="curve" x="346" y="475" />
       <point type="line" x="349" y="475" />
       <point type="line" x="349" y="198" />
@@ -24,10 +24,10 @@
       <point type="line" x="597" y="253" />
       <point type="line" x="597" y="290" />
       <point type="line" x="395" y="290" />
-      <point type="line" x="395" y="474" />
+      <point name="hintSet0017" type="line" x="395" y="474" />
       <point type="line" x="638" y="474" />
       <point type="line" x="638" y="512" />
-      <point type="line" x="325" y="512" />
+      <point type="line" x="324" y="512" />
     </contour>
     <contour>
       <point name="hintSet0021" type="line" x="349" y="624" />
@@ -38,27 +38,66 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="f457e8c73b8846d6920cd417c29c7d9540b5bc88cf6c091f697d1a4606b6a2a5781d02295d961bacb5ed0fafcb0b2301cfcc19d3332ed72bd2a763d76ba025c9">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="38" />
-            <hstem pos="161" width="37" />
-            <hstem pos="253" width="37" />
-            <hstem pos="474" width="38" />
-            <hstem pos="624" width="36" />
-            <vstem pos="349" width="46" />
-          </hintset>
-          <hintset pointTag="hintSet0021">
-            <hstem pos="0" width="38" />
-            <hstem pos="161" width="37" />
-            <hstem pos="253" width="37" />
-            <hstem pos="474" width="38" />
-            <hstem pos="624" width="36" />
-            <vstem pos="349" width="248" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>c0cae2cd41fd40c5f80fa32b20b035dbea3edf9a5abaaed85a3f4e500d978cd10891e60f1309de5cd9260489856c369a5fa628c7ba1435c5e259aceb23e91048</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 38</string>
+              <string>hstem 161 37</string>
+              <string>hstem 253 37</string>
+              <string>hstem 474 38</string>
+              <string>hstem 624 36</string>
+              <string>vstem 349 46</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 38</string>
+              <string>hstem 161 37</string>
+              <string>hstem 253 37</string>
+              <string>hstem 475 37</string>
+              <string>hstem 624 36</string>
+              <string>vstem 349 46</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0017</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 38</string>
+              <string>hstem 161 37</string>
+              <string>hstem 253 37</string>
+              <string>hstem 474 38</string>
+              <string>hstem 624 36</string>
+              <string>vstem 349 46</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0021</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 38</string>
+              <string>hstem 161 37</string>
+              <string>hstem 253 37</string>
+              <string>hstem 474 38</string>
+              <string>hstem 624 36</string>
+              <string>vstem 349 248</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

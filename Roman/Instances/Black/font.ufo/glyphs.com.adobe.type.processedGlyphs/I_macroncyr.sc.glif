@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Imacroncyr.sc">
-  <advance width="614" />
+	<advance width="614" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="542" y="0" />
-      <point type="line" x="384" y="0" />
-      <point type="line" x="384" y="107" />
-      <point x="384" y="176" />
-      <point x="398" y="269" />
-      <point type="curve" x="406" y="332" />
-      <point type="line" x="402" y="332" />
-      <point type="line" x="345" y="202" />
+      <point name="hintSet0000" type="line" x="72" y="0" />
       <point type="line" x="240" y="0" />
-      <point type="line" x="72" y="0" />
-      <point type="line" x="72" y="532" />
-      <point type="line" x="230" y="532" />
-      <point type="line" x="230" y="424" />
-      <point x="230" y="355" />
-      <point x="216" y="258" />
-      <point type="curve" x="208" y="200" />
-      <point type="line" x="212" y="200" />
-      <point type="line" x="269" y="331" />
-      <point type="line" x="370" y="532" />
+      <point type="line" x="345" y="202" />
+      <point type="line" x="402" y="332" />
+      <point type="line" x="406" y="332" />
+      <point x="398" y="269" />
+      <point x="384" y="176" />
+      <point type="curve" x="384" y="107" />
+      <point type="line" x="384" y="0" />
+      <point type="line" x="542" y="0" />
       <point type="line" x="542" y="532" />
+      <point type="line" x="370" y="532" />
+      <point type="line" x="269" y="331" />
+      <point type="line" x="212" y="200" />
+      <point type="line" x="208" y="200" />
+      <point x="216" y="258" />
+      <point x="230" y="355" />
+      <point type="curve" x="230" y="424" />
+      <point type="line" x="230" y="532" />
+      <point type="line" x="72" y="532" />
     </contour>
     <contour>
-      <point type="line" x="158" y="598" />
+      <point name="hintSet0016" type="line" x="158" y="598" />
       <point type="line" x="474" y="598" />
       <point type="line" x="474" y="706" />
       <point type="line" x="158" y="706" />
@@ -33,22 +33,38 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="62a9b9664544bfa80de2500909f273b408589ca2da79375075c4e65c76d6295e5f7a4c6af02948ccded5e820e17e2628d64ad780e20c6f9f809de4461a0586eb">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="598" width="108" />
-            <vstem pos="230" width="244" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>b9c8398ae180e0b7fcd1acaa4effdf0c9101905f7d5f133d393241a5766344900f2e97ab4c1a7bae763fda8b8395db15a3c6e22fcd41ff2e85ee912224f071a3</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 532 -20</string>
+              <string>hstem 598 108</string>
+              <string>vstem 72 158</string>
+              <string>vstem 384 158</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0016</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 532 -20</string>
+              <string>hstem 598 108</string>
+              <string>vstem 158 72</string>
+              <string>vstem 384 158</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

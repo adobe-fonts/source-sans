@@ -1,13 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Chedescender">
+<glyph format="1" name="Chedescender">
   <advance width="584" />
+  <unicode hex="04B6" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="506" y="-188" />
+      <point name="hintSet0000" type="line" x="436" y="0" />
+      <point name="hintSet0001" type="line" x="506" y="0" />
+      <point type="line" x="506" y="-188" />
       <point type="line" x="544" y="-188" />
       <point type="line" x="551" y="14" />
       <point type="line" x="551" y="40" />
-      <point name="hintSet0004" type="line" x="482" y="40" />
+      <point name="hintSet0006" type="line" x="482" y="40" />
       <point type="line" x="482" y="659" />
       <point type="line" x="436" y="659" />
       <point type="line" x="436" y="352" />
@@ -26,37 +29,55 @@
       <point x="361" y="300" />
       <point x="402" y="306" />
       <point type="curve" x="436" y="311" />
-      <point type="line" x="436" y="0" />
-      <point name="hintSet0016" type="line" x="506" y="0" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="0bd5416152a894980abe466e665fba50070017a5ba25247f9a1cfa5a1630ea101910e97d3b8a710c906aebf426a38ac126d93f16e44d6ed43ca7e3b221d9c4d7">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="40" />
-            <hstem pos="300" width="41" />
-            <vstem pos="71" width="45" />
-            <vstem pos="436" width="46" />
-            <vstem pos="506" width="45" />
-          </hintset>
-          <hintset pointTag="hintSet0004">
-            <hstem pos="0" width="40" />
-            <hstem pos="300" width="41" />
-            <vstem pos="71" width="45" />
-            <vstem pos="436" width="46" />
-          </hintset>
-          <hintset pointTag="hintSet0016">
-            <hstem pos="0" width="40" />
-            <hstem pos="300" width="41" />
-            <vstem pos="71" width="45" />
-            <vstem pos="436" width="46" />
-            <vstem pos="506" width="45" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>0ff26a0a4f084348fc60f0c7413f8bf6415815c3ac3d265913edcc5827f7aeea3e4ca82be611a589a3a5d7d33e10888a8c4963f4cd3090e04cee6baba308bcbf</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 40</string>
+              <string>hstem 300 41</string>
+              <string>hstem 659 -20</string>
+              <string>vstem 71 45</string>
+              <string>vstem 436 46</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 40</string>
+              <string>hstem 300 41</string>
+              <string>hstem 659 -20</string>
+              <string>vstem 71 45</string>
+              <string>vstem 436 46</string>
+              <string>vstem 506 45</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0006</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 40</string>
+              <string>hstem 300 41</string>
+              <string>hstem 659 -20</string>
+              <string>vstem 71 45</string>
+              <string>vstem 436 46</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

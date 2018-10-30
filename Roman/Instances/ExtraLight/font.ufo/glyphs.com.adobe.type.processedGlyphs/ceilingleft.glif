@@ -1,27 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="ceilingleft">
+	<unicode hex="231C" />
   <advance width="270" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="100" y="0" />
       <point type="line" x="124" y="0" />
       <point type="line" x="124" y="666" />
-      <point type="line" x="252" y="666" />
+      <point name="hintSet0003" type="line" x="252" y="666" />
       <point type="line" x="252" y="688" />
-      <point type="line" x="100" y="688" />
+      <point name="hintSet0005" type="line" x="100" y="688" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w270l1000l1240l124666l252666l252688l100688">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="666" width="22" />
-            <vstem pos="100" width="24" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w270l1000l1240l124666l252666l252688l100688</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 666 22</string>
+              <string>vstem 100 24</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0003</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 666 22</string>
+              <string>vstem 100 152</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 666 22</string>
+              <string>vstem 100 24</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

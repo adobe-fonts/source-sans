@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="quoteleft">
+<glyph format="1" name="quoteleft">
   <advance width="242" />
+  <unicode hex="2018" />
+  <unicode hex="02BB" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="163" y="434" />
@@ -26,15 +28,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w242c163434195434217460c217491217519196535c168535166535165535c163535163572197623c258653l242691167659110594c110502110459132434">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="434" width="101" />
-            <vstem pos="110" width="53" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w242c163434195434217460c217491217519196535c168535166535165535c163535163572197623c258653l242691167659110594c110502110459132434</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 434 101</string>
+              <string>vstem 110 53</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Scircumflex">
+	<unicode hex="015C" />
   <advance width="556" />
   <outline>
     <contour>
@@ -45,7 +46,6 @@
       <point x="191" y="-12" />
     </contour>
     <contour>
-      <point type="line" x="121" y="724" />
       <point type="line" x="185" y="685" />
       <point type="line" x="289" y="769" />
       <point type="line" x="293" y="769" />
@@ -53,29 +53,31 @@
       <point type="line" x="461" y="724" />
       <point type="line" x="371" y="835" />
       <point type="line" x="211" y="835" />
+      <point type="line" x="121" y="724" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="535bdd07d891ef9a06bf240007a0aa802b9732735e3d9442d695af1d5e2f4246406b5ab9870ba93bf35055fbb0d03acae635ca93d975d92f328d0eec62f1464c">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="127" />
-            <hstem pos="537" width="127" />
-            <hstem pos="769" width="66" />
-            <vstem pos="61" width="149" />
-            <vstem pos="371" width="151" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>4d84dccea69936e9973a7746b96afd895de3c585842a85bbe71c3af5cbd6b3687c558d56ee66aab3ad25966cf70d3e6e3b9342f815107b4f3546f14817a0e615</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 127</string>
+              <string>hstem 537 127</string>
+              <string>hstem 769 66</string>
+              <string>vstem 61 149</string>
+              <string>vstem 371 151</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

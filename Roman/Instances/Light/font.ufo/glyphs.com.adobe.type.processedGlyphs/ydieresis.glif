@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="ydieresis">
+	<unicode hex="00FF" />
   <advance width="436" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="73" y="-219" />
       <point x="159" y="-219" />
-      <point x="207" y="-141" />
+      <point x="207" y="-140" />
       <point type="curve" x="234" y="-60" />
       <point type="line" x="424" y="480" />
       <point type="line" x="379" y="480" />
@@ -62,25 +63,26 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="3da6f55a908935e84d8008e15f44657d4461c6061dc627133d4a774f99d9f4bc41ad0fb04499a3724f5dc584b7af3c915f6969716b7df68b528bd360653ff4d5">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-219" width="41" />
-            <hstem pos="480" width="-20" />
-            <hstem pos="598" width="74" />
-            <vstem pos="103" width="74" />
-            <vstem pos="281" width="74" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>b456f1e61894f263ef84f5f13fabcfc6ce589a07a586f0e2bdaece0f3b15ad5ca8025527e54e0c2ee72f5162e7e2148f4e68166b91c488296cff24680c6fb2a4</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -219 41</string>
+              <string>hstem 480 -20</string>
+              <string>hstem 598 74</string>
+              <string>vstem 103 74</string>
+              <string>vstem 281 74</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

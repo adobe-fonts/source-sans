@@ -1,27 +1,54 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="brackhalftopleft">
+	<unicode hex="2E22" />
   <advance width="344" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="87" y="278" />
       <point type="line" x="197" y="278" />
       <point type="line" x="197" y="630" />
-      <point type="line" x="298" y="630" />
+      <point name="hintSet0003" type="line" x="298" y="630" />
       <point type="line" x="298" y="708" />
-      <point type="line" x="87" y="708" />
+      <point name="hintSet0005" type="line" x="87" y="708" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w344l87278l197278l197630l298630l298708l87708">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="630" width="78" />
-            <vstem pos="87" width="110" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w344l87278l197278l197630l298630l298708l87708</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 630 78</string>
+              <string>vstem 87 110</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0003</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 630 78</string>
+              <string>vstem 87 211</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 630 78</string>
+              <string>vstem 87 110</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

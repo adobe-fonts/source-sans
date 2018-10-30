@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="one.sups">
+	<unicode hex="00B9" />
   <advance width="384" />
   <outline>
     <contour>
@@ -7,69 +8,50 @@
       <point type="line" x="300" y="368" />
       <point type="line" x="376" y="758" />
       <point type="line" x="286" y="758" />
-      <point x="248" y="734" />
+      <point name="hintSet0004" x="248" y="734" />
       <point x="222" y="722" />
       <point type="curve" x="166" y="714" />
-      <point type="line" x="152" y="642" />
+      <point name="hintSet0005" type="line" x="152" y="642" />
       <point type="line" x="238" y="642" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.layerData</key>
+      <key>com.adobe.type.autohint.v2</key>
       <dict>
-        <key>mask</key>
-        <dict>
-          <key>anchors</key>
-          <array>
-          </array>
-          <key>components</key>
-          <array>
-            <dict>
-              <key>baseGlyph</key>
-              <string>one.dnom</string>
-              <key>transformation</key>
-              <array>
-                <integer>1</integer>
-                <integer>0</integer>
-                <integer>0</integer>
-                <integer>1</integer>
-                <integer>80</integer>
-                <integer>440</integer>
-              </array>
-            </dict>
-          </array>
-          <key>contours</key>
-          <array>
-          </array>
-          <key>lib</key>
+        <key>id</key>
+        <string>w384l182368l300368l376758l286758248734222722c166714l152642l238642</string>
+        <key>hintSetList</key>
+        <array>
           <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 642 116</string>
+              <string>vstem 152 224</string>
+            </array>
           </dict>
-          <key>name</key>
-          <string>one.sups</string>
-          <key>unicodes</key>
-          <array>
-          </array>
-          <key>width</key>
-          <integer>384</integer>
-        </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0004</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 642 72</string>
+              <string>vstem 152 224</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 642 116</string>
+              <string>vstem 152 224</string>
+            </array>
+          </dict>
+        </array>
       </dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.30000000000000004</real>
-        <real>0.6294117647058824</real>
-        <integer>1</integer>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w384l182368l300368l376758l286758248734222722c166714l152642l238642">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="642" width="116" />
-            <vstem pos="152" width="224" />
-          </hintset>
-        </hintSetList>
-      </data>
     </dict>
   </lib>
 </glyph>

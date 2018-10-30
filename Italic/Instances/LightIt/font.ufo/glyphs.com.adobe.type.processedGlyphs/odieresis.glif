@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="odieresis">
+	<unicode hex="00F6" />
   <advance width="504" />
   <outline>
     <contour>
@@ -39,10 +40,10 @@
       <point x="277" y="671" />
       <point type="curve" x="259" y="671" />
       <point x="240" y="671" />
-      <point x="222" y="653" />
+      <point x="222" y="652" />
       <point type="curve" x="222" y="628" />
       <point x="222" y="610" />
-      <point x="234" y="598" />
+      <point x="233" y="598" />
     </contour>
     <contour>
       <point name="hintSet0015" type="curve" x="423" y="598" />
@@ -53,7 +54,7 @@
       <point x="448" y="671" />
       <point type="curve" x="430" y="671" />
       <point x="411" y="671" />
-      <point x="393" y="653" />
+      <point x="393" y="652" />
       <point type="curve" x="393" y="628" />
       <point x="393" y="610" />
       <point x="405" y="598" />
@@ -61,32 +62,40 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.30000000000000004</real>
-        <real>0.6294117647058824</real>
-        <integer>1</integer>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="6463908ddc5292e5c547457f055b361824961dd1529534ac6faf8dd85f79592feca68666e5ed63ea563d883706f06339cbc25109aa7ee49c0c5ca3fc20b97134">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="36" />
-            <hstem pos="456" width="36" />
-            <vstem pos="44" width="41" />
-            <vstem pos="222" width="67" />
-            <vstem pos="418" width="42" />
-          </hintset>
-          <hintset pointTag="hintSet0015">
-            <hstem pos="-12" width="36" />
-            <hstem pos="456" width="36" />
-            <vstem pos="44" width="41" />
-            <vstem pos="222" width="67" />
-            <vstem pos="393" width="67" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>2e3f22ccf463ceefcde09a1b4d60817360e2133f2ff3c0dd816da4315ae4888b32f0c379a227aa1826a364f2782e85db1484af2b9d49aa8f4439ae7d5de322b4</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 36</string>
+              <string>hstem 456 36</string>
+              <string>hstem 598 73</string>
+              <string>vstem 44 41</string>
+              <string>vstem 222 67</string>
+              <string>vstem 418 42</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0015</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 36</string>
+              <string>hstem 456 36</string>
+              <string>hstem 598 73</string>
+              <string>vstem 44 41</string>
+              <string>vstem 222 67</string>
+              <string>vstem 393 67</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="hungarumlaut">
+	<unicode hex="02DD" />
   <advance width="555" />
   <outline>
     <contour>
@@ -17,22 +18,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w555l226565l335737l236781l149600l405565l514737l415781l328600">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="565" width="216" />
-            <vstem pos="149" width="365" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w555l226565l335737l236781l149600l405565l514737l415781l328600</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 565 216</string>
+              <string>vstem 149 365</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="overline">
+	<unicode hex="203E" />
   <advance width="500" />
   <outline>
     <contour>
@@ -11,15 +12,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w500l12565l488565l488648l12648">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="565" width="83" />
-            <vstem pos="12" width="476" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w500l12565l488565l488648l12648</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 565 83</string>
+              <string>vstem 12 476</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

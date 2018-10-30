@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="percent">
+	<unicode hex="0025" />
   <advance width="824" />
   <outline>
     <contour>
@@ -67,28 +68,29 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="70072f72e6eb352ed75e31d5522671354a414fedb7d05281a2d25e71c2cb37425e8f74eec3bb4f98454b24f1e69558b90306d813873bd7e138a4479dbb1bbf5d">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="51" />
-            <hstem pos="254" width="51" />
-            <hstem pos="351" width="51" />
-            <hstem pos="617" width="51" />
-            <vstem pos="35" width="62" />
-            <vstem pos="270" width="63" />
-            <vstem pos="492" width="62" />
-            <vstem pos="727" width="63" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>70072f72e6eb352ed75e31d5522671354a414fedb7d05281a2d25e71c2cb37425e8f74eec3bb4f98454b24f1e69558b90306d813873bd7e138a4479dbb1bbf5d</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 51</string>
+              <string>hstem 254 51</string>
+              <string>hstem 351 51</string>
+              <string>hstem 617 51</string>
+              <string>vstem 35 62</string>
+              <string>vstem 270 63</string>
+              <string>vstem 492 62</string>
+              <string>vstem 727 63</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

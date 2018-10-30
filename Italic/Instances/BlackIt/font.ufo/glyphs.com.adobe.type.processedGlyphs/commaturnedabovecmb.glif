@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="commaturnedabovecmb">
+<glyph format="1" name="commaturnedabovecmb">
+  <unicode hex="0312" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="110" y="544" />
@@ -23,15 +24,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w1000c110544144544174570c174610174638150658c126658l123658133683157696c194708l1827589273252674c526065256874544">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="544" width="114" />
-            <vstem pos="52" width="122" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w1000c110544144544174570c174610174638150658c126658l123658133683157696c194708l1827589273252674c526065256874544</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 544 114</string>
+              <string>vstem 52 122</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

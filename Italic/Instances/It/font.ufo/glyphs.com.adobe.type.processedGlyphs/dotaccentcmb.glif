@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="dotaccentcmb">
+	<unicode hex="0307" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="120" y="587" />
@@ -18,22 +19,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>1.0</real>
-        <real>0.4</real>
-        <real>0.4</real>
-        <real>1.0</real>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w1000c120587151587178611c178644178673155690c1296909869071665c716327160394587">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="587" width="103" />
-            <vstem pos="71" width="107" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w1000c120587151587178611c178644178673155690c1296909869071665c716327160394587</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 587 103</string>
+              <string>vstem 71 107</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

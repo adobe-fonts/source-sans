@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Amacron">
+<glyph format="1" name="Amacron">
   <advance width="480" />
+  <unicode hex="0100" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="204" y="396" />
@@ -25,26 +26,34 @@
       <point type="line" x="320" y="660" />
     </contour>
     <contour>
-      <point type="line" x="222" y="736" />
-      <point type="line" x="452" y="736" />
-      <point type="line" x="458" y="762" />
-      <point type="line" x="228" y="762" />
+      <point type="line" x="236" y="736" />
+      <point type="line" x="466" y="736" />
+      <point type="line" x="472" y="762" />
+      <point type="line" x="242" y="762" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="ec7c8bec02bc49107c45bd58e60ee22cd65039a39cbb044a68c0dbed45dab45aa2a24222b61b531e67d2d28ad245c030af13000251f2dd5fe4d7b715ab354f8e">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="238" width="26" />
-            <hstem pos="626" width="34" />
-            <hstem pos="736" width="26" />
-            <vstem pos="-46" width="504" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>ebc3344465b716c0f155eca54999344e92e47a1c9bac50c61b337c7f9a4f340755869c00c4d5fb0479997a40d1f1a41d2b4099efd03c129da2e6c2956581d65b</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 238 26</string>
+              <string>hstem 626 34</string>
+              <string>hstem 736 26</string>
+              <string>vstem -46 518</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

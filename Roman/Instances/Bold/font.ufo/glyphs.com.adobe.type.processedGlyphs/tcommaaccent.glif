@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="tcommaaccent">
+	<unicode hex="021B" />
   <advance width="383" />
   <outline>
     <contour>
@@ -29,49 +30,55 @@
       <point x="133" y="-12" />
     </contour>
     <contour>
-      <point type="line" x="133" y="-239" />
-      <point name="hintSet0018" x="258" y="-235" />
-      <point x="330" y="-204" />
-      <point type="curve" x="330" y="-136" />
-      <point x="330" y="-87" />
-      <point x="296" y="-61" />
-      <point type="curve" x="189" y="-52" />
-      <point type="line" x="161" y="-106" />
-      <point x="206" y="-110" />
-      <point x="225" y="-122" />
-      <point type="curve" x="225" y="-141" />
-      <point x="225" y="-164" />
-      <point x="200" y="-176" />
-      <point type="curve" x="122" y="-180" />
+      <point type="line" x="131" y="-239" />
+      <point name="hintSet0018" x="256" y="-235" />
+      <point x="328" y="-204" />
+      <point type="curve" x="328" y="-136" />
+      <point x="328" y="-87" />
+      <point x="294" y="-61" />
+      <point type="curve" x="187" y="-52" />
+      <point type="line" x="159" y="-106" />
+      <point x="204" y="-110" />
+      <point x="223" y="-122" />
+      <point type="curve" x="223" y="-141" />
+      <point x="223" y="-164" />
+      <point x="198" y="-176" />
+      <point type="curve" x="120" y="-180" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="575e002206cf91671caa5d803edd035fa2482d32581c174fadce6ccd96910aaa878e954c90b93454122ffd502e77b0e52ec526f94793afbf76064d78f387746d">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-239" width="59" />
-            <hstem pos="-12" width="115" />
-            <hstem pos="381" width="115" />
-            <vstem pos="85" width="147" />
-          </hintset>
-          <hintset pointTag="hintSet0018">
-            <hstem pos="-239" width="59" />
-            <hstem pos="-106" width="54" />
-            <hstem pos="-12" width="115" />
-            <hstem pos="381" width="115" />
-            <vstem pos="225" width="105" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>e905851e26d8f801697a69e2abfbed2e8f23e60020068326301ab3d739219c2493fcfef3529e72570d05dba98c5d671351b92fece8632deb08ed79cd11a067d7</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -239 59</string>
+              <string>hstem -12 115</string>
+              <string>hstem 381 115</string>
+              <string>vstem 85 147</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0018</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -239 59</string>
+              <string>hstem -106 54</string>
+              <string>hstem -12 115</string>
+              <string>hstem 381 115</string>
+              <string>vstem 223 105</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

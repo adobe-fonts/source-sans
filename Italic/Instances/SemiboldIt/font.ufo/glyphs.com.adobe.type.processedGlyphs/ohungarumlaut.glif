@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="ohungarumlaut">
+	<unicode hex="0151" />
   <advance width="524" />
   <outline>
     <contour>
@@ -45,24 +46,25 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.30000000000000004</real>
-        <real>0.6294117647058824</real>
-        <integer>1</integer>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="a32de85165760fb50ccdcb2751d79ce418a5673bca4ee62a40c8fd5c3ede4b180fb80fbd07bd86b67aa6e0c67ee22298ea01abf32ec96c20e537350b6a7fb15a">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="87" />
-            <hstem pos="416" width="87" />
-            <vstem pos="34" width="108" />
-            <vstem pos="379" width="109" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>a32de85165760fb50ccdcb2751d79ce418a5673bca4ee62a40c8fd5c3ede4b180fb80fbd07bd86b67aa6e0c67ee22298ea01abf32ec96c20e537350b6a7fb15a</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 87</string>
+              <string>hstem 416 87</string>
+              <string>vstem 34 108</string>
+              <string>vstem 379 109</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

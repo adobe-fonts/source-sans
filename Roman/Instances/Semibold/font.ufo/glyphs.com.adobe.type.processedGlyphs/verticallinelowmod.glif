@@ -1,32 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="verticallinelowmod">
+	<unicode hex="02CC" />
   <advance width="131" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="19" y="-268" />
-      <point type="line" x="113" y="-268" />
+      <point name="hintSet0000" type="line" x="19" y="-270" />
+      <point type="line" x="113" y="-270" />
       <point type="line" x="107" y="-68" />
       <point type="line" x="25" y="-68" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w131l19-268l113-268l107-68l25-68">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-268" width="200" />
-            <vstem pos="22" width="88" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w131l19-270l113-270l107-68l25-68</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -270 202</string>
+              <string>vstem 22 88</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Rcaron">
+<glyph format="1" name="Rcaron">
   <advance width="534" />
+  <unicode hex="0158" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="100" y="0" />
@@ -9,7 +10,7 @@
       <point type="line" x="280" y="312" />
       <point type="line" x="466" y="0" />
       <point type="line" x="504" y="0" />
-      <point type="line" x="316" y="314" />
+      <point name="hintSet0006" type="line" x="316" y="314" />
       <point x="426" y="324" />
       <point x="494" y="385" />
       <point type="curve" x="494" y="490" />
@@ -19,7 +20,7 @@
       <point type="line" x="100" y="660" />
     </contour>
     <contour>
-      <point type="line" x="132" y="340" />
+      <point name="hintSet0010" type="line" x="132" y="340" />
       <point type="line" x="132" y="632" />
       <point type="line" x="270" y="632" />
       <point x="392" y="632" />
@@ -30,31 +31,65 @@
       <point type="curve" x="270" y="340" />
     </contour>
     <contour>
-      <point type="line" x="258" y="710" />
-      <point type="line" x="286" y="710" />
-      <point type="line" x="402" y="824" />
-      <point type="line" x="388" y="840" />
-      <point type="line" x="274" y="740" />
-      <point type="line" x="270" y="740" />
-      <point type="line" x="156" y="840" />
-      <point type="line" x="142" y="824" />
+      <point type="line" x="268" y="710" />
+      <point type="line" x="296" y="710" />
+      <point type="line" x="412" y="824" />
+      <point type="line" x="398" y="840" />
+      <point type="line" x="284" y="740" />
+      <point type="line" x="280" y="740" />
+      <point type="line" x="166" y="840" />
+      <point type="line" x="152" y="824" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="96ebc3cc976580205442e4b8d450aab17c16632f6f15444bdd82a7351c2e3f7a8654442b25986a7ae8980ba1a2ce21b48b6afc0b87d4eeb941b070a10c33bad0">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="312" width="28" />
-            <hstem pos="632" width="28" />
-            <hstem pos="710" width="30" />
-            <vstem pos="100" width="32" />
-            <vstem pos="460" width="34" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>8e7fde7701041bbae01f2d4b341af6085ea9ab89b09a0cda65a2fb63ca18ff132e1577a8e54e26dfaafd752b50764f45fb9c73531b82eb4a0f1016279f0c402f</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 312 28</string>
+              <string>hstem 632 28</string>
+              <string>hstem 710 30</string>
+              <string>vstem 100 32</string>
+              <string>vstem 460 34</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0006</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 314 26</string>
+              <string>hstem 632 28</string>
+              <string>hstem 710 30</string>
+              <string>vstem 100 32</string>
+              <string>vstem 460 34</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0010</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 312 28</string>
+              <string>hstem 632 28</string>
+              <string>hstem 710 30</string>
+              <string>vstem 100 32</string>
+              <string>vstem 460 34</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

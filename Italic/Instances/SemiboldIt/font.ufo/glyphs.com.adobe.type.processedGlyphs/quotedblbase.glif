@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="quotedblbase">
+<glyph format="1" name="quotedblbase">
   <advance width="460" />
+  <unicode hex="201E" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="15" y="-153" />
@@ -10,7 +11,7 @@
       <point x="168" y="107" />
       <point x="143" y="137" />
       <point type="curve" x="105" y="137" />
-      <point x="63" y="137" />
+      <point name="hintSet0003" x="63" y="137" />
       <point x="35" y="105" />
       <point type="curve" x="35" y="68" />
       <point x="35" y="33" />
@@ -19,7 +20,7 @@
       <point x="98" y="14" />
       <point x="99" y="14" />
       <point type="curve" x="101" y="14" />
-      <point x="101" y="-20" />
+      <point name="hintSet0006" x="101" y="-20" />
       <point x="64" y="-75" />
       <point type="curve" x="-4" y="-104" />
     </contour>
@@ -31,7 +32,7 @@
       <point x="361" y="107" />
       <point x="336" y="137" />
       <point type="curve" x="298" y="137" />
-      <point x="256" y="137" />
+      <point name="hintSet0010" x="256" y="137" />
       <point x="228" y="105" />
       <point type="curve" x="228" y="68" />
       <point x="228" y="33" />
@@ -40,23 +41,71 @@
       <point x="291" y="14" />
       <point x="292" y="14" />
       <point type="curve" x="294" y="14" />
-      <point x="294" y="-20" />
+      <point name="hintSet0013" x="294" y="-20" />
       <point x="257" y="-75" />
       <point type="curve" x="189" y="-104" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="abf0e2ed0b6b3e529b0154757dc806553b0cbe4cd40ad32da0e41b0e8244b5fe5c815b5376e2ddf7b572faaacc4585c4d5eeb005f89fdf5c433edb4e183ed14e">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="14" width="123" />
-            <vstem pos="101" width="67" />
-            <vstem pos="294" width="67" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>abf0e2ed0b6b3e529b0154757dc806553b0cbe4cd40ad32da0e41b0e8244b5fe5c815b5376e2ddf7b572faaacc4585c4d5eeb005f89fdf5c433edb4e183ed14e</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 14 123</string>
+              <string>vstem 101 67</string>
+              <string>vstem 294 67</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0003</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 14 123</string>
+              <string>vstem 35 133</string>
+              <string>vstem 294 67</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0006</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 14 123</string>
+              <string>vstem 101 67</string>
+              <string>vstem 294 67</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0010</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 14 123</string>
+              <string>vstem 101 67</string>
+              <string>vstem 228 133</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0013</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 14 123</string>
+              <string>vstem 101 67</string>
+              <string>vstem 294 67</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

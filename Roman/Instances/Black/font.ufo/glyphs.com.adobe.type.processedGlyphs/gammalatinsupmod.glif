@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="gammalatinsupmod">
+<glyph format="1" name="gammalatinsupmod">
   <advance width="367" />
+  <unicode hex="02E0" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="187" y="233" />
@@ -47,16 +48,24 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="d383f1fb03708dad89f3df215234686b57aaa2d1d0900fb37cec9fbeced7627d56663561e8295d9d690bf386959eba54470c784e3b81072d1b5cc7651bdac202">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="233" width="72" />
-            <vstem pos="70" width="95" />
-            <vstem pos="208" width="95" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>d383f1fb03708dad89f3df215234686b57aaa2d1d0900fb37cec9fbeced7627d56663561e8295d9d690bf386959eba54470c784e3b81072d1b5cc7651bdac202</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 233 72</string>
+              <string>vstem 70 95</string>
+              <string>vstem 208 95</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

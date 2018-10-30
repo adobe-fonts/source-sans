@@ -3,13 +3,24 @@
 	<unicode hex="0268"/>
 	<advance width="230"/>
 	<outline>
+		<component base="istroke.x"/>
+		<component base="dotaccentcmb" xOffset="116"/>
 		<contour>
-			<point x="4" y="238" type="line"/>
-			<point x="222" y="238" type="line"/>
-			<point x="222" y="266" type="line"/>
-			<point x="100" y="266" type="line"/>
-			<point x="4" y="262" type="line"/>
+			<point name="belowLC" x="116" y="-22" type="move"/>
 		</contour>
-		<component base="i" xOffset="4"/>
+		<contour>
+			<point name="ogonekLC" x="116" y="0" type="move"/>
+		</contour>
 	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.mark</key>
+			<array>
+				<real>0.7941176471</real>
+				<real>0.3</real>
+				<integer>1</integer>
+				<integer>1</integer>
+			</array>
+		</dict>
+	</lib>
 </glyph>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="equal">
+	<unicode hex="003D" />
   <advance width="528" />
   <outline>
     <contour>
@@ -17,23 +18,24 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w528l34394l494394l494498l34498l34162l494162l494266l34266">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="162" width="104" />
-            <hstem pos="394" width="104" />
-            <vstem pos="34" width="460" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w528l34394l494394l494498l34498l34162l494162l494266l34266</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 162 104</string>
+              <string>hstem 394 104</string>
+              <string>vstem 34 460</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

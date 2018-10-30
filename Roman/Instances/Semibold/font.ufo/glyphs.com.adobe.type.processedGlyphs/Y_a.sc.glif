@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Ya.sc">
+<glyph format="1" name="Ya.sc">
   <advance width="542" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="458" y="523" />
+      <point name="hintSet0000" type="line" x="342" y="0" />
+      <point type="line" x="458" y="0" />
+      <point type="line" x="458" y="523" />
       <point type="line" x="263" y="523" />
       <point x="144" y="523" />
       <point x="52" y="485" />
@@ -15,8 +17,6 @@
       <point type="line" x="146" y="0" />
       <point type="line" x="270" y="192" />
       <point type="line" x="342" y="192" />
-      <point type="line" x="342" y="0" />
-      <point type="line" x="458" y="0" />
     </contour>
     <contour>
       <point type="line" x="272" y="272" />
@@ -32,18 +32,26 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="861742b1f6e51600f5f46511567a8c18c60c59d67ddbfba782b2357d4eb44080b3b246f36b7679a345b0d0b3377e2b72d91d38b74f07e36e46a56ac13d8eece2">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="21" width="-21" />
-            <hstem pos="192" width="80" />
-            <hstem pos="432" width="91" />
-            <vstem pos="52" width="110" />
-            <vstem pos="342" width="116" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>6a83d6cbb0c6073c019ce2b2f582a2e819d3d8fc8b063946f6677bccfc843636e8336a95da275da127c8447759f1b47eac3964457f3536bd1b51c84fd284a33b</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 192 80</string>
+              <string>hstem 432 91</string>
+              <string>vstem 52 110</string>
+              <string>vstem 342 116</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

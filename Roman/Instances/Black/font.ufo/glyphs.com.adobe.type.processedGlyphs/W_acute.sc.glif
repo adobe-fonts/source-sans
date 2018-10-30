@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Wacute.sc">
-  <advance width="730" />
+	<advance width="730" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="106" y="0" />
@@ -47,22 +47,23 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="5aa0a13171583336d0c4c5db725a33d6515b90b9aa46d594a821d55c43875124adbf1ea2ed0d14315ca4c548214d640f51fbf28c6e72d923ff0884a17634ea68">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="151" />
-            <vstem pos="10" width="710" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>5aa0a13171583336d0c4c5db725a33d6515b90b9aa46d594a821d55c43875124adbf1ea2ed0d14315ca4c548214d640f51fbf28c6e72d923ff0884a17634ea68</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 151</string>
+              <string>vstem 10 710</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Yhoi">
+	<unicode hex="1EF6" />
   <advance width="525" />
   <outline>
     <contour>
@@ -39,26 +40,36 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="a87f6b0662c78541d581ab9c114555f3636b016aeeb3c92c575f4eb68db761a88fad0b5cfcf42eca7a83ab81e5e34c209b17a7b0ade3ba7f777bea0ffb6d9b62">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="813" width="73" />
-            <vstem pos="189" width="147" />
-          </hintset>
-          <hintset pointTag="hintSet0013">
-            <hstem pos="813" width="73" />
-            <vstem pos="252" width="106" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>a87f6b0662c78541d581ab9c114555f3636b016aeeb3c92c575f4eb68db761a88fad0b5cfcf42eca7a83ab81e5e34c209b17a7b0ade3ba7f777bea0ffb6d9b62</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 652 -20</string>
+              <string>hstem 813 73</string>
+              <string>vstem 189 147</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0013</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 652 -20</string>
+              <string>hstem 813 73</string>
+              <string>vstem 252 106</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

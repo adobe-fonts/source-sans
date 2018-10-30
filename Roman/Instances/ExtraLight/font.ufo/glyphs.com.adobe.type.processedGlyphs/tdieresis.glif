@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="tdieresis">
+	<unicode hex="1E97" />
   <advance width="302" />
   <outline>
     <contour>
@@ -29,56 +30,67 @@
       <point x="130" y="-12" />
     </contour>
     <contour>
-      <point type="curve" x="39" y="734" />
-      <point x="57" y="734" />
-      <point x="71" y="748" />
-      <point type="curve" x="71" y="766" />
-      <point x="71" y="784" />
-      <point x="57" y="798" />
-      <point type="curve" x="39" y="798" />
-      <point x="21" y="798" />
-      <point x="7" y="784" />
-      <point type="curve" x="7" y="766" />
-      <point x="7" y="748" />
-      <point x="21" y="734" />
+      <point name="hintSet0017" type="curve" x="44" y="730" />
+      <point x="62" y="730" />
+      <point x="76" y="744" />
+      <point type="curve" x="76" y="762" />
+      <point x="76" y="780" />
+      <point x="62" y="794" />
+      <point type="curve" x="44" y="794" />
+      <point x="26" y="794" />
+      <point x="12" y="780" />
+      <point type="curve" x="12" y="762" />
+      <point x="12" y="744" />
+      <point x="26" y="730" />
     </contour>
     <contour>
-      <point type="curve" x="211" y="734" />
-      <point x="229" y="734" />
-      <point x="243" y="748" />
-      <point type="curve" x="243" y="766" />
-      <point x="243" y="784" />
-      <point x="229" y="798" />
-      <point type="curve" x="211" y="798" />
-      <point x="193" y="798" />
-      <point x="179" y="784" />
-      <point type="curve" x="179" y="766" />
-      <point x="179" y="748" />
-      <point x="193" y="734" />
+      <point type="curve" x="216" y="730" />
+      <point x="234" y="730" />
+      <point x="248" y="744" />
+      <point type="curve" x="248" y="762" />
+      <point x="248" y="780" />
+      <point x="234" y="794" />
+      <point type="curve" x="216" y="794" />
+      <point x="198" y="794" />
+      <point x="184" y="780" />
+      <point type="curve" x="184" y="762" />
+      <point x="184" y="744" />
+      <point x="198" y="730" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="70d63f87e1949516831d973421ccca5ac7ae0911bd6ea984b5584332b274f6aa48377662186b8dd592d0c69100184568a76ed4ee6852f8acd0af3f1e8f113b28">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="28" />
-            <hstem pos="450" width="28" />
-            <hstem pos="734" width="64" />
-            <vstem pos="7" width="64" />
-            <vstem pos="106" width="30" />
-            <vstem pos="179" width="64" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>ffe9167267c2962bfb7022aaf8923a7002c28d52abbfea17924fc69d63f1130de084ce0d71f5f018426216c0b92226b3543b674a54f794b2d82fdbdc6b5cf19e</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 28</string>
+              <string>hstem 450 28</string>
+              <string>vstem 106 30</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0017</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 28</string>
+              <string>hstem 450 28</string>
+              <string>hstem 730 64</string>
+              <string>vstem 12 64</string>
+              <string>vstem 106 30</string>
+              <string>vstem 184 64</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Igravecyr.sc">
-  <advance width="606" />
+	<advance width="606" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="529" y="0" />
-      <point name="hintSet0001" type="line" x="394" y="0" />
-      <point type="line" x="394" y="145" />
-      <point x="394" y="211" />
-      <point x="405" y="295" />
-      <point type="curve" x="412" y="356" />
-      <point type="line" x="408" y="356" />
-      <point type="line" x="350" y="231" />
+      <point name="hintSet0000" type="line" x="77" y="0" />
       <point type="line" x="221" y="0" />
-      <point type="line" x="77" y="0" />
-      <point type="line" x="77" y="528" />
-      <point type="line" x="212" y="528" />
-      <point type="line" x="212" y="383" />
-      <point x="212" y="317" />
-      <point x="201" y="229" />
-      <point type="curve" x="194" y="172" />
-      <point type="line" x="198" y="172" />
-      <point type="line" x="255" y="298" />
-      <point type="line" x="381" y="528" />
+      <point type="line" x="350" y="231" />
+      <point name="hintSet0003" type="line" x="408" y="356" />
+      <point type="line" x="412" y="356" />
+      <point x="405" y="295" />
+      <point x="394" y="211" />
+      <point type="curve" x="394" y="145" />
+      <point type="line" x="394" y="0" />
+      <point type="line" x="529" y="0" />
       <point type="line" x="529" y="528" />
+      <point type="line" x="381" y="528" />
+      <point type="line" x="255" y="298" />
+      <point name="hintSet0011" type="line" x="198" y="172" />
+      <point type="line" x="194" y="172" />
+      <point x="201" y="229" />
+      <point x="212" y="317" />
+      <point type="curve" x="212" y="383" />
+      <point type="line" x="212" y="528" />
+      <point type="line" x="77" y="528" />
     </contour>
     <contour>
       <point type="line" x="321" y="556" />
@@ -33,26 +33,47 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="c60a5c9df5e5065fa122dbd1bd4c5892cfc1b4d428dab163c20d185f8ed0a96e56b20fb672faf0e155491119522512e3b1385c90fe87b737a0b54625d0c18237">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="770" />
-            <vstem pos="77" width="452" />
-          </hintset>
-          <hintset pointTag="hintSet0001">
-            <hstem pos="0" width="770" />
-            <vstem pos="212" width="182" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>dcc76d3021671b6dcde5fe168d44531222af4b63f63aed215e73d2e4151c9e5292dd82ee940e65cef2ffac671c2cf0a7fde4a203c27ba75a9b8f91b8036b43eb</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 528 -20</string>
+              <string>vstem 77 135</string>
+              <string>vstem 394 135</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0003</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 356 172</string>
+              <string>vstem 77 135</string>
+              <string>vstem 394 135</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0011</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 172</string>
+              <string>hstem 528 -20</string>
+              <string>vstem 77 135</string>
+              <string>vstem 394 135</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

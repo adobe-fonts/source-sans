@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Lslash">
+<glyph format="1" name="Lslash">
   <advance width="481" />
+  <unicode hex="0141" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="13" y="190" />
-      <point type="line" x="76" y="221" />
-      <point type="line" x="32" y="0" />
+      <point name="hintSet0000" type="line" x="32" y="0" />
       <point type="line" x="401" y="0" />
       <point type="line" x="419" y="91" />
       <point type="line" x="158" y="91" />
@@ -17,20 +16,30 @@
       <point type="line" x="162" y="654" />
       <point type="line" x="94" y="312" />
       <point type="line" x="-13" y="260" />
+      <point type="line" x="13" y="190" />
+      <point type="line" x="76" y="221" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w481l13190l76221l320l4010l41991l15891l195276l407380l380451l213368l270654l162654l94312l-13260">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="91" />
-            <hstem pos="654" width="-20" />
-            <vstem pos="-13" width="432" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w481l320l4010l41991l15891l195276l407380l380451l213368l270654l162654l94312l-13260l13190l76221</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 91</string>
+              <string>hstem 654 -20</string>
+              <string>vstem -13 432</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

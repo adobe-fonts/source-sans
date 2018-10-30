@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="ohornhoi">
+<glyph format="1" name="ohornhoi">
   <advance width="505" />
+  <unicode hex="1EDF" />
   <outline>
     <contour>
       <point name="hintSet0000" type="curve" x="206" y="-12" />
@@ -33,7 +34,23 @@
       <point x="108" y="-12" />
     </contour>
     <contour>
-      <point type="curve" x="210" y="24" />
+      <point type="line" x="299" y="575" />
+      <point name="hintSet0012" x="368" y="592" />
+      <point x="407" y="625" />
+      <point type="curve" x="409" y="672" />
+      <point x="410" y="719" />
+      <point x="364" y="739" />
+      <point type="curve" x="302" y="741" />
+      <point type="line" x="293" y="709" />
+      <point x="342" y="707" />
+      <point x="371" y="694" />
+      <point type="curve" x="371" y="666" />
+      <point x="370" y="636" />
+      <point x="345" y="614" />
+      <point type="curve" x="296" y="601" />
+    </contour>
+    <contour>
+      <point name="hintSet0017" type="curve" x="210" y="24" />
       <point x="130" y="24" />
       <point x="85" y="80" />
       <point type="curve" x="85" y="184" />
@@ -46,38 +63,57 @@
       <point x="418" y="149" />
       <point x="313" y="24" />
     </contour>
-    <contour>
-      <point type="line" x="299" y="575" />
-      <point x="348" y="588" />
-      <point x="399" y="611" />
-      <point type="curve" x="409" y="663" />
-      <point x="418" y="716" />
-      <point x="368" y="739" />
-      <point type="curve" x="301" y="741" />
-      <point type="line" x="293" y="707" />
-      <point x="345" y="705" />
-      <point x="374" y="689" />
-      <point type="curve" x="368" y="658" />
-      <point x="364" y="629" />
-      <point x="333" y="614" />
-      <point type="curve" x="295" y="603" />
-    </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="4874d9262bb6b897fcdf222559bdf3b3346e93e0bd2ebb5dd55085b9283330237d4c679dd0e0ded959cf59a33d006dba9680fd53499b7b5ae3ccf1b4deb3321d">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="36" />
-            <hstem pos="456" width="36" />
-            <hstem pos="707" width="34" />
-            <vstem pos="44" width="41" />
-            <vstem pos="418" width="42" />
-            <vstem pos="494" width="39" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>0e0135836f1a64c20fd93a1979b84c26bbd429f4a491c8abcb92399552461129ef677ad3a31d0e15e8a25f764a58a1d1cc4a60fde1b403e778a0564f71903733</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 36</string>
+              <string>hstem 456 36</string>
+              <string>hstem 709 32</string>
+              <string>vstem 44 41</string>
+              <string>vstem 418 42</string>
+              <string>vstem 494 39</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0012</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 36</string>
+              <string>hstem 456 36</string>
+              <string>hstem 709 32</string>
+              <string>vstem 44 41</string>
+              <string>vstem 371 38</string>
+              <string>vstem 418 42</string>
+              <string>vstem 494 39</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0017</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 36</string>
+              <string>hstem 456 36</string>
+              <string>hstem 709 32</string>
+              <string>vstem 44 41</string>
+              <string>vstem 418 42</string>
+              <string>vstem 494 39</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

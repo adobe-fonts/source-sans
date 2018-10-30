@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Ghestroke">
+<glyph format="1" name="Ghestroke">
   <advance width="500" />
+  <unicode hex="0492" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="38" y="326" />
-      <point type="line" x="120" y="326" />
-      <point type="line" x="120" y="0" />
+      <point name="hintSet0000" type="line" x="120" y="0" />
       <point type="line" x="152" y="0" />
       <point type="line" x="152" y="326" />
       <point type="line" x="320" y="326" />
@@ -17,20 +16,31 @@
       <point type="line" x="120" y="660" />
       <point type="line" x="120" y="354" />
       <point type="line" x="38" y="352" />
+      <point type="line" x="38" y="326" />
+      <point type="line" x="120" y="326" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w500l38326l120326l1200l1520l152326l320326l320354l152354l152632l472632l472660l120660l120354l38352">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="326" width="28" />
-            <hstem pos="632" width="28" />
-            <vstem pos="120" width="32" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w500l1200l1520l152326l320326l320354l152354l152632l472632l472660l120660l120354l38352l38326l120326</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 326 28</string>
+              <string>hstem 632 28</string>
+              <string>vstem 120 32</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="dollar">
+<glyph format="1" name="dollar">
   <advance width="494" />
+  <unicode hex="0024" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="138" y="-110" />
@@ -45,23 +46,36 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="3a06c5d6b756b21ac43d196daa6623d4f908b3dfde9fadf2a20ce1b8fb083a57092248e7c9624653d4480501f147782d6d79e612afcfff99d85111b4058eee1b">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-110" width="185" />
-            <hstem pos="567" width="185" />
-            <vstem pos="108" width="106" />
-            <vstem pos="315" width="106" />
-          </hintset>
-          <hintset pointTag="hintSet0016">
-            <hstem pos="14" width="-21" />
-            <hstem pos="567" width="185" />
-            <vstem pos="108" width="106" />
-            <vstem pos="315" width="106" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>3a06c5d6b756b21ac43d196daa6623d4f908b3dfde9fadf2a20ce1b8fb083a57092248e7c9624653d4480501f147782d6d79e612afcfff99d85111b4058eee1b</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -110 185</string>
+              <string>hstem 567 185</string>
+              <string>vstem 108 106</string>
+              <string>vstem 315 106</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0016</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 14 -21</string>
+              <string>hstem 567 185</string>
+              <string>vstem 108 106</string>
+              <string>vstem 315 106</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

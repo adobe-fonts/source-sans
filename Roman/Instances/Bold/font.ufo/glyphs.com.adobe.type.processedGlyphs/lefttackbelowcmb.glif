@@ -1,28 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="lefttackbelowcmb">
+	<unicode hex="0318" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="99" y="-257" />
+      <point name="hintSet0000" type="line" x="21" y="-257" />
+      <point type="line" x="99" y="-257" />
       <point type="line" x="99" y="-54" />
       <point type="line" x="21" y="-54" />
       <point type="line" x="21" y="-120" />
-      <point type="line" x="-87" y="-120" />
+      <point name="hintSet0005" type="line" x="-87" y="-120" />
       <point type="line" x="-87" y="-191" />
-      <point type="line" x="21" y="-191" />
-      <point type="line" x="21" y="-257" />
+      <point name="hintSet0007" type="line" x="21" y="-191" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w1000l99-257l99-54l21-54l21-120l-87-120l-87-191l21-191l21-257">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-191" width="71" />
-            <vstem pos="21" width="78" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w1000l21-257l99-257l99-54l21-54l21-120l-87-120l-87-191l21-191</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -191 71</string>
+              <string>vstem 21 78</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -191 71</string>
+              <string>vstem -87 186</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0007</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -191 71</string>
+              <string>vstem 21 78</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

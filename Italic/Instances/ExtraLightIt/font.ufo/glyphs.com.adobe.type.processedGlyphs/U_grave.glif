@@ -1,15 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Ugrave">
+	<unicode hex="00D9" />
   <advance width="594" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="line" x="90" y="262" />
-      <point x="84" y="230" />
-      <point x="82" y="206" />
-      <point type="curve" x="82" y="180" />
-      <point x="82" y="58" />
-      <point x="152" y="-12" />
-      <point type="curve" x="268" y="-12" />
+      <point name="hintSet0000" type="curve" x="268" y="-12" />
       <point x="368" y="-12" />
       <point x="464" y="50" />
       <point type="curve" x="500" y="230" />
@@ -27,33 +22,40 @@
       <point type="curve" x="122" y="270" />
       <point type="line" x="200" y="660" />
       <point type="line" x="170" y="660" />
+      <point type="line" x="90" y="262" />
+      <point x="84" y="230" />
+      <point x="82" y="206" />
+      <point type="curve" x="82" y="180" />
+      <point x="82" y="58" />
+      <point x="152" y="-12" />
     </contour>
     <contour>
-      <point type="line" x="404" y="706" />
-      <point type="line" x="420" y="720" />
-      <point type="line" x="318" y="848" />
-      <point type="line" x="294" y="828" />
+      <point type="line" x="414" y="706" />
+      <point type="line" x="430" y="720" />
+      <point type="line" x="328" y="848" />
+      <point type="line" x="304" y="828" />
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.30000000000000004</real>
-        <real>0.6294117647058824</real>
-        <integer>1</integer>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="085faf8373f6a5b95ff34a7eb521f3b5197ae64edc3eba0e73993bb26a0b527860be2cacf4e6df6097e72d2d787fd6e0d9c2b06a1b11e48392ab03ac7e9c49a1">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="26" />
-            <hstem pos="660" width="-20" />
-            <vstem pos="82" width="30" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>cd6dd19b96d837f1f7a62ae97a1765961d8a8c1c2fd7e768b90d582da904fe55c3c289c3473d43381f8e0fa514ba1c6a0ab22e5fb833342fe9ee491678f6012d</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 26</string>
+              <string>hstem 660 -20</string>
+              <string>vstem 82 30</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

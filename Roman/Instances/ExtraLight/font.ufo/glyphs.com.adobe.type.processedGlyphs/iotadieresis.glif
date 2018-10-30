@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="iotadieresis">
+	<unicode hex="03CA" />
   <advance width="230" />
   <outline>
     <contour>
@@ -53,26 +54,27 @@
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.mark</key>
-      <array>
-        <real>0.3</real>
-        <integer>1</integer>
-        <real>0.5470588235</real>
-        <integer>1</integer>
-      </array>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="296333c9170c6bd26cb77ba20ac98a3e4967bff1aeef15777e7fb875c0301d68cda3ff4965af248b2d22db311b4afd9ccfeece9978b060dc045c2d87b0f2b214">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-12" width="28" />
-            <hstem pos="478" width="-20" />
-            <hstem pos="602" width="64" />
-            <vstem pos="-6" width="64" />
-            <vstem pos="96" width="28" />
-            <vstem pos="166" width="64" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>296333c9170c6bd26cb77ba20ac98a3e4967bff1aeef15777e7fb875c0301d68cda3ff4965af248b2d22db311b4afd9ccfeece9978b060dc045c2d87b0f2b214</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 28</string>
+              <string>hstem 478 -20</string>
+              <string>hstem 602 64</string>
+              <string>vstem -6 64</string>
+              <string>vstem 96 28</string>
+              <string>vstem 166 64</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

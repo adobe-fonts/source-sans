@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph format="1" name="Delta">
+	<unicode hex="0394" />
+  <unicode hex="2206" />
   <advance width="640" />
   <outline>
     <contour>
@@ -21,16 +23,24 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="w640l340l6060l60689l408652l232652l3489l192124l260344l315539l319539l375344l444124">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="0" width="124" />
-            <hstem pos="539" width="113" />
-            <vstem pos="34" width="572" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>w640l340l6060l60689l408652l232652l3489l192124l260344l315539l319539l375344l444124</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 0 124</string>
+              <string>hstem 539 113</string>
+              <string>vstem 34 572</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

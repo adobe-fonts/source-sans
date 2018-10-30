@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="Scedilla">
+<glyph format="1" name="Scedilla">
   <advance width="534" />
+  <unicode hex="015E" />
   <outline>
     <contour>
       <point name="hintSet0000" type="line" x="186" y="-226" />
@@ -62,19 +63,27 @@
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="7a06571a947e283dc4bc70a7c44ee9b89cf26b6b8eff9b962cdd8d80b8f275fd64ecdaea8132cf16d4ef2c9f26820cb54b44a3aca4a4f81e59408426520ff4a7">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-226" width="40" />
-            <hstem pos="-11" width="72" />
-            <hstem pos="595" width="73" />
-            <vstem pos="74" width="84" />
-            <vstem pos="287" width="64" />
-            <vstem pos="410" width="85" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>7a06571a947e283dc4bc70a7c44ee9b89cf26b6b8eff9b962cdd8d80b8f275fd64ecdaea8132cf16d4ef2c9f26820cb54b44a3aca4a4f81e59408426520ff4a7</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -226 40</string>
+              <string>hstem -11 72</string>
+              <string>hstem 595 73</string>
+              <string>vstem 74 84</string>
+              <string>vstem 287 64</string>
+              <string>vstem 410 85</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

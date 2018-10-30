@@ -1,27 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph format="2" name="phi">
+<glyph format="1" name="phi">
   <advance width="710" />
+  <unicode hex="03D5" />
+  <unicode hex="03C6" />
   <outline>
     <contour>
-      <point name="hintSet0000" type="curve" x="159" y="246" />
-      <point x="159" y="349" />
-      <point x="220" y="409" />
-      <point type="curve" x="302" y="413" />
-      <point type="line" x="302" y="78" />
-      <point x="220" y="83" />
-      <point x="159" y="143" />
-    </contour>
-    <contour>
-      <point type="curve" x="550" y="246" />
-      <point x="550" y="143" />
-      <point x="490" y="83" />
-      <point type="curve" x="408" y="78" />
-      <point type="line" x="408" y="413" />
-      <point x="493" y="409" />
-      <point x="550" y="350" />
-    </contour>
-    <contour>
-      <point type="line" x="302" y="-178" />
+      <point name="hintSet0000" type="line" x="302" y="-178" />
       <point type="line" x="408" y="-178" />
       <point type="line" x="408" y="-9" />
       <point x="543" y="-3" />
@@ -40,21 +24,47 @@
       <point x="166" y="-3" />
       <point type="curve" x="302" y="-9" />
     </contour>
+    <contour>
+      <point type="curve" x="159" y="246" />
+      <point x="159" y="349" />
+      <point x="220" y="409" />
+      <point type="curve" x="302" y="413" />
+      <point type="line" x="302" y="78" />
+      <point x="220" y="83" />
+      <point x="159" y="143" />
+    </contour>
+    <contour>
+      <point type="curve" x="550" y="246" />
+      <point x="550" y="143" />
+      <point x="490" y="83" />
+      <point type="curve" x="408" y="78" />
+      <point type="line" x="408" y="413" />
+      <point x="493" y="409" />
+      <point x="550" y="350" />
+    </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.adobe.type.autohint</key>
-      <data>
-        <hintSetList id="a07693c3f171a4999722865a692269c3f9a514be8f03edcdc011cac34e7614070fa28b1d3cb7c9c21828e5b9de5b22a444744292e210cf796f72f2bd3decd4ef">
-          <hintset pointTag="hintSet0000">
-            <hstem pos="-9" width="87" />
-            <hstem pos="413" width="87" />
-            <vstem pos="41" width="118" />
-            <vstem pos="302" width="106" />
-            <vstem pos="550" width="119" />
-          </hintset>
-        </hintSetList>
-      </data>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>id</key>
+        <string>e11b120b6aff7b6a019f2f6612bc534997068eff01577f49fb4f9f64470011abe5f871a8bc7cb567ba3695a15db5207510f2c2eaff3fd21c6f6f9cd8e61d7313</string>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -9 87</string>
+              <string>hstem 413 87</string>
+              <string>vstem 41 118</string>
+              <string>vstem 302 106</string>
+              <string>vstem 550 119</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>

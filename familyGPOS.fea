@@ -11,5 +11,7 @@ feature mkmk {
 
 
 feature kern {
-	include (../kern.fea);
+    lookup KERN useExtension {
+		include (../kern.fea);
+    } KERN;
 } kern;
