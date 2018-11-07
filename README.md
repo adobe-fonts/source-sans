@@ -15,13 +15,3 @@ The fonts' source files and build instructions are available in the [repository'
 
 * [Latest release](../../releases/latest)
 * [All releases](../../releases)
-
-## Font installation instructions
-
-* [macOS](https://support.apple.com/en-us/HT201749)
-* [Windows](https://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx)
-* [Linux/Unix-based systems](https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116)
-* npm v2.x<br/>
-	`npm install --fetch-only git://github.com/adobe-fonts/source-sans-pro.git#release`
-* npm v3.x<br/>
-	`npm install git://github.com/adobe-fonts/source-sans-pro.git#release`
