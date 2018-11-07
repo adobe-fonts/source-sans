@@ -21,8 +21,6 @@ The fonts' source files and build instructions are available in the [repository'
 * [macOS](https://support.apple.com/en-us/HT201749)
 * [Windows](https://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx)
 * [Linux/Unix-based systems](https://github.com/adobe-fonts/source-code-pro/issues/17#issuecomment-8967116)
-* Bower<br/>
-	`bower install git://github.com/adobe-fonts/source-sans-pro.git#release`
 * npm v2.x<br/>
 	`npm install --fetch-only git://github.com/adobe-fonts/source-sans-pro.git#release`
 * npm v3.x<br/>
