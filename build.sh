@@ -15,8 +15,8 @@ mkdir -p $otf_dir $ttf_dir
 
 
 function build_font {
-	# $1 is Roman or Italic
-	# $2 is weight name
+    # $1 is Roman or Italic
+    # $2 is weight name
     font_dir=$DIR/$1/Instances/$2
     font_ufo=$font_dir/font.ufo
     ps_name=$family-$2
