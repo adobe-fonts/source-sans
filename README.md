@@ -1,6 +1,7 @@
 # Source Sans Pro
 
-Source Sans Pro is a set of OpenType fonts that have been designed to work well
+[Source Sans Pro](http://adobe-fonts.github.io/source-sans-pro/)
+is a set of OpenType fonts that have been designed to work well
 in user interface (UI) environments.
 
 ## Open source files
