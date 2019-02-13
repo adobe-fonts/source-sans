@@ -1,0 +1,112 @@
+@LETTERS_SMALLCAP_LATIN_BASIC = [A.sc B.sc C.sc D.sc E.sc F.sc G.sc H.sc I.sc J.sc K.sc L.sc M.sc N.sc O.sc P.sc Q.sc R.sc S.sc T.sc U.sc V.sc W.sc X.sc Y.sc Z.sc];
+@LETTERS_SMALLCAP_LATIN_ACCENTED_ABOVE = [ Aacute.sc Abreve.sc Abreveacute.sc Abrevegrave.sc Abrevehoi.sc Abrevetilde.sc Acaron.sc Acircumflex.sc Acircumflexacute.sc Acircumflexgrave.sc Acircumflexhoi.sc Acircumflextilde.sc Adieresis.sc Agrave.sc Ahoi.sc Amacron.sc Aogonekacute.sc Aring.sc Atilde.sc AEacute.sc AEmacron.sc Bdotaccent.sc Cacute.sc Ccaron.sc Ccircumflex.sc Cdotaccent.sc Dcaron.sc Ddotaccent.sc Eacute.sc Ebreve.sc Ecaron.sc Ecircumflex.sc Ecircumflexacute.sc Ecircumflexgrave.sc Ecircumflexhoi.sc Ecircumflextilde.sc Edieresis.sc Edotaccent.sc Egrave.sc Ehoi.sc Emacron.sc Emacronacute.sc Eogonekacute.sc Etilde.sc Fdotaccent.sc Gacute.sc Gbreve.sc Gcaron.sc Gcircumflex.sc Gdotaccent.sc Gmacron.sc Gtilde.sc Hcircumflex.sc Iacute.sc Ibreve.sc Icaron.sc Icircumflex.sc Idieresis.sc Igrave.sc Ihoi.sc Imacron.sc Iogonekacute.sc Itilde.sc Jcircumflex.sc Lacute.sc Lcaron.sc Macute.sc Mdotaccent.sc Nacute.sc Ncaron.sc Ndotaccent.sc Ngrave.sc Ntilde.sc Oacute.sc Obreve.sc Ocaron.sc Ocircumflex.sc Ocircumflexacute.sc Ocircumflexgrave.sc Ocircumflexhoi.sc Ocircumflextilde.sc Odieresis.sc Ograve.sc Ohoi.sc Ohornacute.sc Ohorngrave.sc Ohornhoi.sc Ohorntilde.sc Ohungarumlaut.sc Omacron.sc Omacronacute.sc Oogonekacute.sc Otilde.sc Pdotaccent.sc Racute.sc Rcaron.sc Rdotaccent.sc Sacute.sc Scaron.sc Scircumflex.sc Sdotaccent.sc Tcaron.sc Tdotaccent.sc Uacute.sc Ubreve.sc Ucaron.sc Ucircumflex.sc Udieresis.sc Udieresisacute.sc Udieresiscaron.sc Udieresisgrave.sc Udieresismacron.sc Ugrave.sc Uhoi.sc Uhornacute.sc Uhorngrave.sc Uhornhoi.sc Uhorntilde.sc Uhungarumlaut.sc Umacron.sc Uogonekacute.sc Uring.sc Utilde.sc Wacute.sc Wcircumflex.sc Wdieresis.sc Wgrave.sc Yacute.sc Ycircumflex.sc Ydieresis.sc Ydotaccent.sc Ygrave.sc Yhoi.sc Ytilde.sc Zacute.sc Zcaron.sc Zdotaccent.sc ];
+@LETTERS_SMALLCAP_LATIN_ACCENTED_BELOW = [ Adotbelow.sc Blinebelow.sc Ccedilla.sc Ddotbelow.sc Dlinebelow.sc Edotbelow.sc Gcommaaccent.sc Hbrevebelow.sc Hdotbelow.sc Hlinebelow.sc Idotbelow.sc Kcommaaccent.sc Kdotbelow.sc Klinebelow.sc Lcommaaccent.sc Ldotbelow.sc Llinebelow.sc Mdotbelow.sc Ncommaaccent.sc Ndotbelow.sc Nlinebelow.sc Odotbelow.sc Ohorndotbelow.sc Rcommaaccent.sc Rdotbelow.sc Rlinebelow.sc Scedilla.sc Scommaaccent.sc Sdotbelow.sc Tcedilla.sc Tcommaaccent.sc Tdotbelow.sc Tlinebelow.sc Tdieresis.sc Udotbelow.sc Uhorndotbelow.sc Ydotbelow.sc Zdotbelow.sc Zlinebelow.sc ];
+@LETTERS_SMALLCAP_LATIN_ACCENTED_BOTH = [ Abrevedotbelow.sc Acircumflexdotbelow.sc Ecircumflexdotbelow.sc Ldotbelowmacron.sc Ocircumflexdotbelow.sc Rdotbelowmacron.sc ];
+@LETTERS_SMALLCAP_LATIN_ACCENTED_ALL = [ @LETTERS_SMALLCAP_LATIN_ACCENTED_ABOVE @LETTERS_SMALLCAP_LATIN_ACCENTED_BELOW @LETTERS_SMALLCAP_LATIN_ACCENTED_BOTH ];
+@LETTERS_SMALLCAP_LATIN_ADDL = [Aogonek.sc Aogonek.sa AE.sc Bstroke.sc Dcroat.sc Eogonek.sc Eogonek.sa Ghook.sc Hbar.sc Iogonek.sc Lslash.sc Ldot.sc Oslash.sc Ohorn.sc Oogonek.sc OE.sc Tbar.sc Uhorn.sc Uogonek.sc Eth.sc Thorn.sc Schwa.sc Eng.sc IJ.sc];
+@LETTERS_SMALLCAP_LATIN_ALL = [@LETTERS_SMALLCAP_LATIN_BASIC @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL @LETTERS_SMALLCAP_LATIN_ADDL Idotaccent.sc];
+
+@LETTERS_SMALLCAP_GREEK_BASIC = [Alpha.sc Beta.sc Gamma.sc Delta.sc Epsilon.sc Zeta.sc Eta.sc Theta.sc Iota.sc Kappa.sc Lambda.sc Mu.sc Nu.sc Xi.sc Omicron.sc Pi.sc Rho.sc Sigma.sc Tau.sc Upsilon.sc Phi.sc Chi.sc Psi.sc Omega.sc];
+@LETTERS_SMALLCAP_GREEK_NO_TONOS = [Alpha.sc Epsilon.sc Eta.sc Iota.sc Omicron.sc Upsilon.sc Omega.sc];
+#@LETTERS_SMALLCAP_GREEK_TONOS = [Alphatonos.sc Epsilontonos.sc Etatonos.sc Iotatonos.sc Omicrontonos.sc Upsilontonos.sc Omegatonos.sc];
+@LETTERS_SMALLCAP_GREEK_DIERESIS = [Iotadieresis.sc Upsilondieresis.sc];
+@LETTERS_SMALLCAP_GREEK_ALL = [@LETTERS_SMALLCAP_GREEK_BASIC @LETTERS_SMALLCAP_GREEK_DIERESIS]; #@LETTERS_SMALLCAP_GREEK_TONOS
+
+@LETTERS_SMALLCAP_CYRILLIC_BASIC = [Acyr.sc Be.sc Ve.sc Ghe.sc De.sc Ie.sc Zhe.sc Ze.sc Icyr.sc Ka.sc El.sc Em.sc En.sc Ocyr.sc Pe.sc Er.sc Es.sc Te.sc Ucyr.sc Ef.sc Ha.sc Tse.sc Che.sc Sha.sc Shcha.sc Hard.sc Yeru.sc Soft.sc Ecyr.sc Yu.sc Ya.sc Ieukran.sc Dze.sc Iukran.sc Je.sc Lje.sc Nje.sc Tshe.sc Dzhe.sc Yat.sc Fita.sc Izhitsa.sc Gheup.sc Ghestroke.sc Zhedescender.sc Zedescender.sc Kadescender.sc Kabashkir.sc Endescender.sc Esdescender.sc Ustraight.sc Ustraightstroke.sc Hadescender.sc Chedescender.sc Shha.sc Palochka.sc Aie.sc Schwacyr.sc Obarcyr.sc];
+@LETTERS_SMALLCAP_CYRILLIC_ACCENTED = [Ishort.sc Iegrave.sc Io.sc Dje.sc Gje.sc Yi.sc Kje.sc Igravecyr.sc Ushort.sc Zhebreve.sc Abrevecyr.sc Iebreve.sc Imacroncyr.sc Odieresiscyr.sc Umacroncyr.sc Uacutedblcyr.sc];
+@LETTERS_SMALLCAP_CYRILLIC_ALL = [@LETTERS_SMALLCAP_CYRILLIC_BASIC @LETTERS_SMALLCAP_CYRILLIC_ACCENTED];
+
+@LETTERS_SMALLCAP_ALL = [@LETTERS_SMALLCAP_LATIN_ALL @LETTERS_SMALLCAP_GREEK_ALL @LETTERS_SMALLCAP_CYRILLIC_ALL];
+
+@FIGURES_SMALLCAP = [zero.sc one.sc two.sc three.sc four.sc five.sc six.sc seven.sc eight.sc nine.sc];
+
+@PUNCTUATION_SMALLCAPS = [ampersand.sc exclam.sc question.sc exclamdown.sc questiondown.sc parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc hyphen.sc endash.sc emdash.sc quoteleft.sc quoteright.sc quotedblleft.sc quotedblright.sc quotesingle.sc quotedbl.sc];
+
+feature c2sc { # UC-->SC
+
+	sub @LETTERS_MAJUSCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
+	sub @LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL by @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL;
+	sub @LETTERS_MAJUSCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
+	sub [ Idotaccent Eng.a Germandbls ] by [ Idotaccent.sc Eng.sa Germandbls.sc ];
+
+	sub @LETTERS_MAJUSCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
+	sub @LETTERS_MAJUSCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
+
+	sub [Alphatonos Alphalenis Alphaasper Alphagrave Alphaacute Alphalenisgrave Alphaaspergrave Alphalenisacute Alphaasperacute Alphalenistilde Alphaaspertilde Alphabreve Alphamacron] by Alpha.sc;
+	sub [Epsilontonos Epsilonlenis Epsilonasper Epsilongrave Epsilonacute Epsilonlenisgrave Epsilonaspergrave Epsilonlenisacute Epsilonasperacute] by Epsilon.sc;
+	sub [Etatonos Etalenis Etaasper Etagrave Etaacute Etalenisgrave Etaaspergrave Etalenisacute Etaasperacute Etalenistilde Etaaspertilde] by Eta.sc;
+	sub [Iotatonos Iotalenis Iotaasper Iotagrave Iotaacute Iotalenisgrave Iotaaspergrave Iotalenisacute Iotaasperacute Iotalenistilde Iotaaspertilde Iotabreve Iotamacron] by Iota.sc;
+	sub [Omicrontonos Omicronlenis Omicronasper Omicrongrave Omicronacute Omicronlenisgrave Omicronaspergrave Omicronlenisacute Omicronasperacute] by Omicron.sc;
+	sub [Rhoasper] by Rho.sc;
+	sub [Upsilontonos Upsilonasper Upsilongrave Upsilonacute Upsilonaspergrave Upsilonasperacute Upsilonaspertilde Upsilonbreve Upsilonmacron] by Upsilon.sc;
+	sub [Omegatonos Omegalenis Omegaasper Omegagrave Omegaacute Omegalenisgrave Omegaaspergrave Omegalenisacute Omegaasperacute Omegalenistilde Omegaaspertilde] by Omega.sc;
+	sub [Alphaiotasub Alphaiotasublenis Alphaiotasubasper Alphaiotasublenisgrave Alphaiotasubaspergrave Alphaiotasublenisacute Alphaiotasubasperacute Alphaiotasublenistilde Alphaiotasubaspertilde] by  Alphaiotasub.sc;
+	sub [Etaiotasub Etaiotasublenis Etaiotasubasper Etaiotasublenisgrave Etaiotasubaspergrave Etaiotasublenisacute Etaiotasubasperacute Etaiotasublenistilde Etaiotasubaspertilde] by  Etaiotasub.sc;
+	sub [Omegaiotasub Omegaiotasublenis Omegaiotasubasper Omegaiotasublenisgrave Omegaiotasubaspergrave Omegaiotasublenisacute Omegaiotasubasperacute Omegaiotasublenistilde Omegaiotasubaspertilde] by  Omegaiotasub.sc;
+
+	sub @LETTERS_MAJUSCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
+
+	lookup NUMERALS_SMALLCAP {
+		sub @FIGURES_LINING_TABULAR by @FIGURES_SMALLCAP;
+	} NUMERALS_SMALLCAP;
+
+	lookup SORTS_SMALLCAP { # belongs only in <c2sc> feature, not to be replicated in <smcp>
+		sub @PUNCTUATION_FOR_SMALLCAPS by @PUNCTUATION_SMALLCAPS;
+	} SORTS_SMALLCAP;
+
+} c2sc;
+
+#--------------------------------------
+feature smcp { # LC-->SC
+
+	script latn;
+		language dflt;
+
+				sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
+				sub @LETTERS_MINISCULE_LATIN_ACCENTED_ALL by @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL;
+				sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
+				sub [ i.trk germandbls iogonek.x uogonek.d ] by [ Idotaccent.sc germandbls.sc Iogonek.sc Uogonek.sc ];
+
+		language TRK include_dflt;
+			lookup I_TURKISH {
+				sub I.sc by Idotaccent.sc;
+			} I_TURKISH;
+
+		language AZE include_dflt;
+			lookup I_TURKISH;
+
+		language CRT include_dflt;
+			lookup I_TURKISH;
+
+	script grek;
+		lookup GREEK_SMALLCAPS_MONO {
+			sub @LETTERS_MINISCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
+			sub @LETTERS_MINISCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
+			sub @LETTERS_MINISCULE_GREEK_DIERESISTONOS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
+			sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_NO_TONOS;
+			sub sigma.end by Sigma.sc;
+		} GREEK_SMALLCAPS_MONO;
+
+		lookup GREEK_SMALLCAPS_POLY {
+			sub [alphalenis alphaasper alphagrave alphaacute alphalenisgrave alphaaspergrave alphalenisacute alphaasperacute alphalenistilde alphaaspertilde alphabreve alphamacron alphatilde] by Alpha.sc;
+			sub [epsilonlenis epsilonasper epsilongrave epsilonacute epsilonlenisgrave epsilonaspergrave epsilonlenisacute epsilonasperacute] by Epsilon.sc;
+			sub [etalenis etaasper etagrave etaacute etalenisgrave etaaspergrave etalenisacute etaasperacute etalenistilde etaaspertilde etatilde] by Eta.sc;
+			sub [iotalenis iotaasper iotagrave iotaacute iotalenisgrave iotaaspergrave iotalenisacute iotaasperacute iotalenistilde iotaaspertilde iotabreve iotamacron iotatilde] by Iota.sc;
+			sub [omicronlenis omicronasper omicrongrave omicronacute omicronlenisgrave omicronaspergrave omicronlenisacute omicronasperacute] by Omicron.sc;
+			sub [rholenis rhoasper] by Rho.sc;
+			sub [upsilonlenis upsilonasper upsilongrave upsilonacute upsilonlenisgrave upsilonaspergrave upsilonlenisacute upsilonasperacute upsilonlenistilde upsilonaspertilde upsilontilde upsilonbreve upsilonmacron] by Upsilon.sc;
+			sub [omegalenis omegaasper omegagrave omegaacute omegalenisgrave omegaaspergrave omegalenisacute omegaasperacute omegalenistilde omegaaspertilde omegatilde] by Omega.sc;
+			sub [alphaiotasub alphaiotasublenis alphaiotasubasper alphaiotasubgrave alphaiotasubacute alphaiotasublenisgrave alphaiotasubaspergrave alphaiotasublenisacute alphaiotasubasperacute alphaiotasublenistilde alphaiotasubaspertilde alphaiotasubtilde] by  Alphaiotasub.sc;
+			sub [etaiotasub etaiotasublenis etaiotasubasper etaiotasubgrave etaiotasubacute etaiotasublenisgrave etaiotasubaspergrave etaiotasublenisacute etaiotasubasperacute etaiotasublenistilde etaiotasubaspertilde etaiotasubtilde] by  Etaiotasub.sc;
+			sub [omegaiotasub omegaiotasublenis omegaiotasubasper omegaiotasubgrave omegaiotasubacute omegaiotasublenisgrave omegaiotasubaspergrave omegaiotasublenisacute omegaiotasubasperacute omegaiotasublenistilde omegaiotasubaspertilde omegaiotasubtilde] by  Omegaiotasub.sc;
+			sub [iotadieresisgrave iotadieresisacute iotadieresistilde] by Iotadieresis.sc;
+			sub [upsilondieresisgrave upsilondieresisacute upsilondieresistilde] by Upsilondieresis.sc;
+		} GREEK_SMALLCAPS_POLY;
+
+	script cyrl;
+		sub @LETTERS_MINISCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
+		sub be.a by Be.sc;
+
+	lookup NUMERALS_SMALLCAP;
+
+} smcp;

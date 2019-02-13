@@ -1,0 +1,15 @@
+language BGR include_dflt; # Bulgarian
+	lookup BGR_ALTS {
+		sub [De El ve de zhe ze ka el yu] by [De.a El.a ve.a de.a zhe.a ze.a ka.a el.a yu.a];
+	} BGR_ALTS;
+
+language MKD include_dflt; # Macedonian
+	lookup  MKD_ALTS {
+		sub [be de pe te] by [be.a de.a pe.a te.a];
+	} MKD_ALTS;
+
+language SRB include_dflt; # Serbian
+	lookup  MKD_ALTS;
+	lookup SRB_ALTS {
+		sub ghe by ghe.a;
+	} SRB_ALTS;
