@@ -3,7 +3,7 @@
 @LETTERS_SMALLCAP_LATIN_ACCENTED_BELOW = [ Adotbelow.sc Blinebelow.sc Ccedilla.sc Ddotbelow.sc Dlinebelow.sc Edotbelow.sc Gcommaaccent.sc Hbrevebelow.sc Hdotbelow.sc Hlinebelow.sc Idotbelow.sc Kcommaaccent.sc Kdotbelow.sc Klinebelow.sc Lcommaaccent.sc Ldotbelow.sc Llinebelow.sc Mdotbelow.sc Ncommaaccent.sc Ndotbelow.sc Nlinebelow.sc Odotbelow.sc Ohorndotbelow.sc Rcommaaccent.sc Rdotbelow.sc Rlinebelow.sc Scedilla.sc Scommaaccent.sc Sdotbelow.sc Tcedilla.sc Tcommaaccent.sc Tdotbelow.sc Tlinebelow.sc Tdieresis.sc Udotbelow.sc Uhorndotbelow.sc Ydotbelow.sc Zdotbelow.sc Zlinebelow.sc ];
 @LETTERS_SMALLCAP_LATIN_ACCENTED_BOTH = [ Abrevedotbelow.sc Acircumflexdotbelow.sc Ecircumflexdotbelow.sc Ldotbelowmacron.sc Ocircumflexdotbelow.sc Rdotbelowmacron.sc ];
 @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL = [ @LETTERS_SMALLCAP_LATIN_ACCENTED_ABOVE @LETTERS_SMALLCAP_LATIN_ACCENTED_BELOW @LETTERS_SMALLCAP_LATIN_ACCENTED_BOTH ];
-@LETTERS_SMALLCAP_LATIN_ADDL = [Aogonek.sc Aogonek.sa AE.sc Bstroke.sc Dcroat.sc Eogonek.sc Eogonek.sa Ghook.sc Hbar.sc Iogonek.sc Lslash.sc Ldot.sc Oslash.sc Ohorn.sc Oogonek.sc OE.sc Tbar.sc Uhorn.sc Uogonek.sc Eth.sc Thorn.sc Schwa.sc Eng.sc IJ.sc];
+@LETTERS_SMALLCAP_LATIN_ADDL = [Aogonek.sc Aogonek.ds AE.sc Bstroke.sc Dcroat.sc Eogonek.sc Eogonek.ds Ghook.sc Hbar.sc Iogonek.sc Lslash.sc Ldot.sc Oslash.sc Ohorn.sc Oogonek.sc OE.sc Tbar.sc Uhorn.sc Uogonek.sc Eth.sc Thorn.sc Schwa.sc Eng.sc IJ.sc];
 @LETTERS_SMALLCAP_LATIN_ALL = [@LETTERS_SMALLCAP_LATIN_BASIC @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL @LETTERS_SMALLCAP_LATIN_ADDL Idotaccent.sc];
 
 @LETTERS_SMALLCAP_GREEK_BASIC = [Alpha.sc Beta.sc Gamma.sc Delta.sc Epsilon.sc Zeta.sc Eta.sc Theta.sc Iota.sc Kappa.sc Lambda.sc Mu.sc Nu.sc Xi.sc Omicron.sc Pi.sc Rho.sc Sigma.sc Tau.sc Upsilon.sc Phi.sc Chi.sc Psi.sc Omega.sc];
@@ -27,7 +27,7 @@ feature c2sc { # UC-->SC
 	sub @LETTERS_MAJUSCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
 	sub @LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL by @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL;
 	sub @LETTERS_MAJUSCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-	sub [ Idotaccent Eng.a Germandbls ] by [ Idotaccent.sc Eng.sa Germandbls.sc ];
+	sub [ Idotaccent Eng.a Germandbls ] by [ Idotaccent.sc Eng.as Germandbls.sc ];
 
 	sub @LETTERS_MAJUSCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
 	sub @LETTERS_MAJUSCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
@@ -65,7 +65,7 @@ feature smcp { # LC-->SC
 				sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
 				sub @LETTERS_MINISCULE_LATIN_ACCENTED_ALL by @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL;
 				sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-				sub [ i.trk germandbls iogonek.x uogonek.d ] by [ Idotaccent.sc germandbls.sc Iogonek.sc Uogonek.sc ];
+				sub [germandbls iogonek.x uogonek.d ] by [germandbls.sc Iogonek.sc Uogonek.sc ];
 
 		language TRK include_dflt;
 			lookup I_TURKISH {
