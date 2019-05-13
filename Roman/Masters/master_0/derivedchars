@@ -183,7 +183,7 @@ EndDerived
 
 /Aringacute DerivedName
 (A) Base
-(ringacute.cap) AddCentered
+(ringacutecmb.cap) AddCentered
 EndDerived
 
 /Acaron DerivedName
@@ -325,7 +325,7 @@ EndDerived
 
 /Dcedilla DerivedName
 (D) Base
-(cedillacmb.cap) 57 0 AddCentered
+(cedillacmb.cap) -20 0 AddCentered
 EndDerived
 
 /Dcroat DerivedName
@@ -475,7 +475,7 @@ EndDerived
 
 /Hdieresis DerivedName
 (H) Base
-(dieresiscmb.cap) -47 -1 AddCentered
+(dieresiscmb.cap) -1 0 AddCentered
 EndDerived
 
 /Hdotbelow DerivedName
@@ -485,7 +485,7 @@ EndDerived
 
 /Hcedilla DerivedName
 (H) Base
-(cedillacmb.cap) -1 0 AddCentered
+(cedillacmb.cap) -201 0 AddCentered
 EndDerived
 
 /Hbrevebelow DerivedName
@@ -752,7 +752,7 @@ EndDerived
 
 /Oslashacute DerivedName
 (Oslash) Base
-(acutecmb.cap) -38 0 AddCentered
+(acutecmb.cap) -2 0 AddCentered
 EndDerived
 
 /Ohornacute DerivedName
@@ -848,7 +848,7 @@ EndDerived
 
 /Scarondot DerivedName
 (S) Base
-(carondotaccent.cap) -39 8 AddCentered
+(carondotaccentcmb.cap) 10 0 AddCentered
 EndDerived
 
 /Scedilla DerivedName
@@ -1018,7 +1018,7 @@ EndDerived
 
 /Vdotbelow DerivedName
 (V) Base
-(dotbelowcmb) -6 0 AddCentered
+(dotbelowcmb) 3 0 AddCentered
 EndDerived
 
 /Wgrave DerivedName
@@ -1098,7 +1098,7 @@ EndDerived
 
 /Zcircumflex DerivedName
 (Z) Base
-(circumflexcmb.cap) -45 0 AddCentered
+(circumflexcmb.cap) 9 0 AddCentered
 EndDerived
 
 /Zdotbelow DerivedName
@@ -1109,6 +1109,17 @@ EndDerived
 /Zlinebelow DerivedName
 (Z) Base
 (macronbelowcmb) 13 0 AddCentered
+EndDerived
+
+/Lcat DerivedName
+(Ldot) Base
+(L) AddAdjacent
+EndDerived
+
+/IJacute DerivedName
+(IJ) Base
+(acutecmb.cap) -116 0 AddCentered
+(acutecmb.cap) 116 0 AddCentered
 EndDerived
 
 /agrave DerivedName
@@ -1153,7 +1164,7 @@ EndDerived
 
 /aringacute DerivedName
 (a) Base
-(ringacute) 17 0 AddCentered
+(ringacutecmb) 17 0 AddCentered
 EndDerived
 
 /acaron DerivedName
@@ -1230,12 +1241,12 @@ EndDerived
 
 /aeacute DerivedName
 (ae) Base
-(acutecmb) 22 0 AddCentered
+(acutecmb) 26 0 AddCentered
 EndDerived
 
 /aemacron DerivedName
 (ae) Base
-(macroncmb) 22 0 AddCentered
+(macroncmb) 26 0 AddCentered
 EndDerived
 
 /bdotaccent DerivedName
@@ -1296,7 +1307,7 @@ EndDerived
 
 /dcedilla DerivedName
 (d) Base
-(cedillacmb) -45 0 AddCentered
+(cedillacmb) -10 0 AddCentered
 EndDerived
 
 /egrave DerivedName
@@ -1458,6 +1469,11 @@ EndDerived
 /hlinebelow DerivedName
 (h) Base
 (macronbelowcmb) 19 0 AddCentered
+EndDerived
+
+/hcedilla DerivedName
+(h) Base
+(cedillacmb) -161 0 AddCentered
 EndDerived
 
 /igrave DerivedName
@@ -1630,7 +1646,7 @@ EndDerived
 
 /napostrophe DerivedName
 (quoteright) Base
-712 Width
+672 Width
 (n) -31 0 AddAdjacent
 EndDerived
 
@@ -1813,7 +1829,7 @@ EndDerived
 
 /scarondot DerivedName
 (s) Base
-(carondot) -46 0 AddCentered
+(carondotaccentcmb) AddCentered
 EndDerived
 
 /scedilla DerivedName
@@ -1983,7 +1999,7 @@ EndDerived
 
 /vdotbelow DerivedName
 (v) Base
-(dotbelowcmb) 8 0 AddCentered
+(dotbelowcmb) 1 0 AddCentered
 EndDerived
 
 /wgrave DerivedName
@@ -2063,7 +2079,7 @@ EndDerived
 
 /zcircumflex DerivedName
 (z) Base
-(circumflexcmb) -28 0 AddCentered
+(circumflexcmb) 22 0 AddCentered
 EndDerived
 
 /zdotbelow DerivedName
@@ -2081,7 +2097,18 @@ EndDerived
 (j) AddAdjacent
 EndDerived
 
-/Bsmall DerivedName
+/lcat DerivedName
+(ldot) Base
+(l) AddAdjacent
+EndDerived
+
+/ijacute DerivedName
+(iacute) Base
+(dotlessj) AddAdjacent
+(acutecmb) 223 0 AddCentered
+EndDerived
+
+/bsmall DerivedName
 (ve) Base
 EndDerived
 
@@ -2195,6 +2222,11 @@ EndDerived
 (ringcmb) AddCentered
 EndDerived
 
+/aringacute.a DerivedName
+(a.a) Base
+(ringacutecmb) AddCentered
+EndDerived
+
 /acaron.a DerivedName
 (a.a) Base
 (caroncmb) AddCentered
@@ -2263,8 +2295,127 @@ EndDerived
 EndDerived
 
 /aogonekacute.a DerivedName
-(aogonek.b) Base
+(aogonek.e) Base
 (acutecmb) AddCentered
+EndDerived
+
+/agrave.b DerivedName
+(a.b) Base
+(gravecmb) 11 0 AddCentered
+EndDerived
+
+/aacute.b DerivedName
+(a.b) Base
+(acutecmb) 11 0 AddCentered
+EndDerived
+
+/acircumflex.b DerivedName
+(a.b) Base
+(circumflexcmb) 11 0 AddCentered
+EndDerived
+
+/atilde.b DerivedName
+(a.b) Base
+(tildecmb) 11 0 AddCentered
+EndDerived
+
+/adieresis.b DerivedName
+(a.b) Base
+(dieresiscmb) 11 0 AddCentered
+EndDerived
+
+/amacron.b DerivedName
+(a.b) Base
+(macroncmb) 11 0 AddCentered
+EndDerived
+
+/abreve.b DerivedName
+(a.b) Base
+(brevecmb) 11 0 AddCentered
+EndDerived
+
+/aring.b DerivedName
+(a.b) Base
+(ringcmb) 11 0 AddCentered
+EndDerived
+
+/aringacute.b DerivedName
+(a.b) Base
+(ringacutecmb) 11 0 AddCentered
+EndDerived
+
+/acaron.b DerivedName
+(a.b) Base
+(caroncmb) 11 0 AddCentered
+EndDerived
+
+/adotbelow.b DerivedName
+(a.b) Base
+(dotbelowcmb) -7 0 AddCentered
+EndDerived
+
+/ahoi.b DerivedName
+(a.b) Base
+(hoicmb) 11 0 AddCentered
+EndDerived
+
+/acircumflexacute.b DerivedName
+(a.b) Base
+510 Width
+(circumflexacute) 11 0 AddCentered
+EndDerived
+
+/acircumflexgrave.b DerivedName
+(a.b) Base
+(circumflexgrave) 11 0 AddCentered
+EndDerived
+
+/acircumflexhoi.b DerivedName
+(a.b) Base
+(circumflexhoi) 11 0 AddCentered
+EndDerived
+
+/acircumflextilde.b DerivedName
+(a.b) Base
+(circumflextilde) 11 0 AddCentered
+EndDerived
+
+/acircumflexdotbelow.b DerivedName
+(a.b) Base
+(circumflexcmb) 11 0 AddCentered
+(dotbelowcmb) -7 0 AddCentered
+EndDerived
+
+/abreveacute.b DerivedName
+(a.b) Base
+(breveacute) 11 0 AddCentered
+EndDerived
+
+/abrevegrave.b DerivedName
+(a.b) Base
+(brevegrave) 11 0 AddCentered
+EndDerived
+
+/abrevehoi.b DerivedName
+(a.b) Base
+486 Width
+(brevehoi) 11 0 AddCentered
+EndDerived
+
+/abrevetilde.b DerivedName
+(a.b) Base
+(brevetilde) 11 0 AddCentered
+EndDerived
+
+/abrevedotbelow.b DerivedName
+(a.b) Base
+(brevecmb) 11 0 AddCentered
+(dotbelowcmb) -7 0 AddCentered
+EndDerived
+
+/aogonekacute.b DerivedName
+(aogonek.f) Base
+(acutecmb) 11 0 AddCentered
 EndDerived
 
 /g.a DerivedName
@@ -2272,42 +2423,42 @@ EndDerived
 EndDerived
 
 /gacute.a DerivedName
-(gscript) Base
+(g.a) Base
 (acutecmb) 6 0 AddCentered
 EndDerived
 
 /gcircumflex.a DerivedName
-(gscript) Base
+(g.a) Base
 (circumflexcmb) 7 0 AddCentered
 EndDerived
 
 /gbreve.a DerivedName
-(gscript) Base
+(g.a) Base
 (brevecmb) 7 0 AddCentered
 EndDerived
 
 /gdotaccent.a DerivedName
-(gscript) Base
+(g.a) Base
 (dotaccentcmb) 7 0 AddCentered
 EndDerived
 
 /gcommaaccent.a DerivedName
-(gscript) Base
+(g.a) Base
 (commabelowcmb.a) 7 0 AddCentered
 EndDerived
 
 /gcaron.a DerivedName
-(gscript) Base
+(g.a) Base
 (caroncmb) 7 0 AddCentered
 EndDerived
 
 /gmacron.a DerivedName
-(gscript) Base
+(g.a) Base
 (macroncmb) 7 0 AddCentered
 EndDerived
 
 /gtilde.a DerivedName
-(gscript) Base
+(g.a) Base
 (tildecmb) 7 0 AddCentered
 EndDerived
 
@@ -2326,6 +2477,11 @@ EndDerived
 (l.a) Base
 288 Width
 (period) 144 296 AddCentered
+EndDerived
+
+/lcat.a DerivedName
+(ldot.a) Base
+(l.a) AddAdjacent
 EndDerived
 
 /lcommaaccent.a DerivedName
@@ -2487,6 +2643,11 @@ EndDerived
 
 /periodcentered DerivedName
 (period) 0 296 Base
+EndDerived
+
+/underscoredbl DerivedName
+(underscore) Base
+(underscore) 0 -100 AddCentered
 EndDerived
 
 /bardbl DerivedName
@@ -2861,6 +3022,12 @@ EndDerived
 (minus) 0 -100 AddCentered
 EndDerived
 
+/equivalence DerivedName
+(minus) 0 200 Base
+(minus) AddCentered
+(minus) 0 -200 AddCentered
+EndDerived
+
 /approxequal DerivedName
 (asciitilde) 0 100 Base
 (asciitilde) 0 -100 AddCentered
@@ -2868,8 +3035,12 @@ EndDerived
 
 /dblprime DerivedName
 (prime) Base
-336 Width
-(prime) 128 0 AddCentered
+(prime) -80 0 AddAdjacent
+EndDerived
+
+/proportion DerivedName
+(colon) 0 90 Base
+(colon) 72 90 AddAdjacent
 EndDerived
 
 /ringhalfrightmod DerivedName
@@ -2885,10 +3056,6 @@ EndDerived
 /verticallinelowmod DerivedName
 (verticallinebelowcmb) 44 0 Base
 88 Width
-EndDerived
-
-/i.trk DerivedName
-(i) Base
 EndDerived
 
 /Agrave.sc DerivedName
@@ -2929,6 +3096,11 @@ EndDerived
 /Aring.sc DerivedName
 (A.sc) Base
 (ringcmb.cap) -2 -120 AddCentered
+EndDerived
+
+/Aringacute.sc DerivedName
+(A.sc) Base
+(ringacutecmb.cap) -2 -120 AddCentered
 EndDerived
 
 /Acaron.sc DerivedName
@@ -2999,7 +3171,7 @@ EndDerived
 EndDerived
 
 /Aogonekacute.sc DerivedName
-(Aogonek.sa) Base
+(Aogonek.ds) Base
 (acutecmb.cap) -2 -120 AddCentered
 EndDerived
 
@@ -3066,6 +3238,11 @@ EndDerived
 /Dlinebelow.sc DerivedName
 (D.sc) Base
 (macronbelowcmb) 1 0 AddCentered
+EndDerived
+
+/Dcedilla.sc DerivedName
+(D.sc) Base
+(cedillacmb.cap) -17 0 AddCentered
 EndDerived
 
 /Dcroat.sc DerivedName
@@ -3154,7 +3331,7 @@ EndDerived
 EndDerived
 
 /Eogonekacute.sc DerivedName
-(Eogonek.sa) Base
+(Eogonek.ds) Base
 (acutecmb.cap) 32 -120 AddCentered
 EndDerived
 
@@ -3213,9 +3390,19 @@ EndDerived
 (circumflexcmb.cap) 0 -120 AddCentered
 EndDerived
 
+/Hdieresis.sc DerivedName
+(H.sc) Base
+(dieresiscmb.cap) 0 -120 AddCentered
+EndDerived
+
 /Hdotbelow.sc DerivedName
 (H.sc) Base
 (dotbelowcmb) AddCentered
+EndDerived
+
+/Hcedilla.sc DerivedName
+(H.sc) Base
+(cedillacmb.cap) -170 0 AddCentered
 EndDerived
 
 /Hbrevebelow.sc DerivedName
@@ -3480,6 +3667,11 @@ EndDerived
 (dotbelowcmb) AddCentered
 EndDerived
 
+/Oslashacute.sc DerivedName
+(Oslash.sc) Base
+(acutecmb.cap) 0 -120 AddCentered
+EndDerived
+
 /Ohornacute.sc DerivedName
 (Ohorn.sc) Base
 (acutecmb.cap) 0 -120 AddCentered
@@ -3571,6 +3763,11 @@ EndDerived
 (caroncmb.cap) 15 -120 AddCentered
 EndDerived
 
+/Scarondot.sc DerivedName
+(S.sc) Base
+(carondotaccentcmb.cap) 15 -120 AddCentered
+EndDerived
+
 /Scedilla.sc DerivedName
 (S.sc) Base
 (cedillacmb.cap) 11 0 AddCentered
@@ -3624,6 +3821,11 @@ EndDerived
 /Tlinebelow.sc DerivedName
 (T.sc) Base
 (macronbelowcmb) AddCentered
+EndDerived
+
+/Tdieresis.sc DerivedName
+(T.sc) Base
+(dieresiscmb.cap) 0 -120 AddCentered
 EndDerived
 
 /Ugrave.sc DerivedName
@@ -3736,6 +3938,11 @@ EndDerived
 (acutecmb.cap) 0 -120 AddCentered
 EndDerived
 
+/Vdotbelow.sc DerivedName
+(V.sc) Base
+(dotbelowcmb) 3 0 AddCentered
+EndDerived
+
 /Wgrave.sc DerivedName
 (W.sc) Base
 (gravecmb.cap) 0 -120 AddCentered
@@ -3811,6 +4018,11 @@ EndDerived
 (dotaccentcmb.cap) 11 -120 AddCentered
 EndDerived
 
+/Zcircumflex.sc DerivedName
+(Z.sc) Base
+(circumflexcmb.cap) 11 -120 AddCentered
+EndDerived
+
 /Zdotbelow.sc DerivedName
 (Z.sc) Base
 (dotbelowcmb) 19 0 AddCentered
@@ -3819,6 +4031,18 @@ EndDerived
 /Zlinebelow.sc DerivedName
 (Z.sc) Base
 (macronbelowcmb) 19 0 AddCentered
+EndDerived
+
+/Lcat.sc DerivedName
+(Ldot.sc) Base
+816 Width
+(L.sc) -1 0 AddAdjacent
+EndDerived
+
+/IJacute.sc DerivedName
+(IJ.sc) Base
+(acutecmb.cap) -116 -120 AddCentered
+(acutecmb.cap) 116 -120 AddCentered
 EndDerived
 
 /primemod DerivedName
@@ -4186,6 +4410,18 @@ EndDerived
 (asperacute.cap) AddFlushLeft
 EndDerived
 
+/Iotalenistilde DerivedName
+(Iota) 160 0 Base
+392 Width
+(lenistilde.cap) AddFlushLeft
+EndDerived
+
+/Iotaaspertilde DerivedName
+(Iota) 160 0 Base
+392 Width
+(aspertilde.cap) AddFlushLeft
+EndDerived
+
 /Iotabreve DerivedName
 (Ibreve) Base
 EndDerived
@@ -4272,6 +4508,12 @@ EndDerived
 (Upsilon) 220 0 Base
 656 Width
 (asperacute.cap) AddFlushLeft
+EndDerived
+
+/Upsilonaspertilde DerivedName
+(Upsilon) 220 0 Base
+656 Width
+(aspertilde.cap) AddFlushLeft
 EndDerived
 
 /Upsilonbreve DerivedName
@@ -5394,7 +5636,7 @@ EndDerived
 
 /Zhebreve DerivedName
 (Zhe) Base
-(brevecmb.cyrcap) -1 0 AddCentered
+(brevecmb.cyrcap) AddCentered
 EndDerived
 
 /Palochka DerivedName
@@ -5621,24 +5863,6 @@ EndDerived
 (S.sc) Base
 EndDerived
 
-/Iotalenistilde DerivedName
-(Iota) 160 0 Base
-392 Width
-(lenistilde.cap) AddFlushLeft
-EndDerived
-
-/Iotaaspertilde DerivedName
-(Iota) 160 0 Base
-392 Width
-(aspertilde.cap) AddFlushLeft
-EndDerived
-
-/Upsilonaspertilde DerivedName
-(Upsilon) 220 0 Base
-656 Width
-(aspertilde.cap) AddFlushLeft
-EndDerived
-
 /fita DerivedName
 (obar) Base
 EndDerived
@@ -5649,7 +5873,7 @@ EndDerived
 
 /zhebreve DerivedName
 (zhe) Base
-(brevecmb.cyr) 1 0 AddCentered
+(brevecmb.cyr) AddCentered
 EndDerived
 
 /palochka DerivedName
@@ -5696,6 +5920,58 @@ EndDerived
 /uacutedblcyr DerivedName
 (ucyr) Base
 (hungarumlautcmb) 12 0 AddCentered
+EndDerived
+
+/El.a DerivedName
+(Lambda) Base
+EndDerived
+
+/acyr.a DerivedName
+(a.a) Base
+EndDerived
+
+/abrevecyr.a DerivedName
+(acyr.a) Base
+(brevecmb.cyr) AddCentered
+EndDerived
+
+/acyr.b DerivedName
+(a.b) Base
+EndDerived
+
+/abrevecyr.b DerivedName
+(acyr.b) Base
+(brevecmb.cyr) 3 0 AddCentered
+EndDerived
+
+/icyr.a DerivedName
+(u) Base
+EndDerived
+
+/ishort.a DerivedName
+(icyr.a) Base
+(brevecmb.cyr) -2 0 AddCentered
+EndDerived
+
+/el.a DerivedName
+(vturned) Base
+EndDerived
+
+/pe.a DerivedName
+(n) Base
+EndDerived
+
+/te.a DerivedName
+(m) Base
+EndDerived
+
+/sha.a DerivedName
+(mturned) Base
+EndDerived
+
+/igravecyr.a DerivedName
+(icyr.a) Base
+(gravecmb) -2 0 AddCentered
 EndDerived
 
 /Ustraight.sc DerivedName
