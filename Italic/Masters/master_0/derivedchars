@@ -500,62 +500,62 @@ EndDerived
 
 /Igrave DerivedName
 (I) Base
-(gravecmb.cap) -43 0 AddCentered
+(gravecmb.cap) -40 0 AddCentered
 EndDerived
 
 /Iacute DerivedName
 (I) Base
-(acutecmb.cap) -43 0 AddCentered
+(acutecmb.cap) -40 0 AddCentered
 EndDerived
 
 /Icircumflex DerivedName
 (I) Base
-(circumflexcmb.cap) -43 -1 AddCentered
+(circumflexcmb.cap) -40 0 AddCentered
 EndDerived
 
 /Itilde DerivedName
 (I) Base
-(tildecmb.cap) -43 0 AddCentered
+(tildecmb.cap) -40 0 AddCentered
 EndDerived
 
 /Idieresis DerivedName
 (I) Base
-(dieresiscmb.cap) -43 0 AddCentered
+(dieresiscmb.cap) -40 0 AddCentered
 EndDerived
 
 /Imacron DerivedName
 (I) Base
-(macroncmb.cap) -43 0 AddCentered
+(macroncmb.cap) -40 0 AddCentered
 EndDerived
 
 /Idotaccent DerivedName
 (I) Base
-(dotaccentcmb.cap) -43 0 AddCentered
+(dotaccentcmb.cap) -40 0 AddCentered
 EndDerived
 
 /Icaron DerivedName
 (I) Base
-(caroncmb.cap) -43 0 AddCentered
+(caroncmb.cap) -40 0 AddCentered
 EndDerived
 
 /Ihoi DerivedName
 (I) Base
-(hoicmb.cap) -43 0 AddCentered
+(hoicmb.cap) -40 0 AddCentered
 EndDerived
 
 /Idotbelow DerivedName
 (I) Base
-(dotbelowcmb) -41 0 AddCentered
+(dotbelowcmb) -38 0 AddCentered
 EndDerived
 
 /Ibreve DerivedName
 (I) Base
-(brevecmb.cap) -43 0 AddCentered
+(brevecmb.cap) -40 0 AddCentered
 EndDerived
 
 /Iogonekacute DerivedName
 (Iogonek) Base
-(acutecmb.cap) -45 0 AddCentered
+(acutecmb.cap) -42 0 AddCentered
 EndDerived
 
 /Jcircumflex DerivedName
@@ -1058,7 +1058,7 @@ EndDerived
 
 /Ydieresis DerivedName
 (Y) Base
-(dieresiscmb.cap) -47 0 AddCentered
+(dieresiscmb.cap) -51 0 AddCentered
 EndDerived
 
 /Ydotaccent DerivedName
@@ -2092,10 +2092,6 @@ EndDerived
 (macronbelowcmb) -22 8 AddCentered
 EndDerived
 
-/gscript DerivedName
-(g) Base
-EndDerived
-
 /ij DerivedName
 (i) Base
 (j) AddAdjacent
@@ -2108,9 +2104,19 @@ EndDerived
 
 /ijacute DerivedName
 (iacute) Base
-428 Width
-(dotlessj) 8 0 AddAdjacent
-(acutecmb) 177 0 AddCentered
+554 Width
+(dotlessj) AddAdjacent
+(acutecmb) 169 0 AddCentered
+EndDerived
+
+/gscript DerivedName
+(g) Base
+EndDerived
+
+/lmiddletilde DerivedName
+(l) 54 0 Base
+314 Width
+(tildeoverlaycmb) 23 140 AddCentered
 EndDerived
 
 /fi DerivedName
@@ -2302,7 +2308,6 @@ EndDerived
 
 /a.b DerivedName
 (alphalatin) Base
-(gravecmb) -52 0 AddCentered
 EndDerived
 
 /agrave.b DerivedName
@@ -3039,6 +3044,13 @@ EndDerived
 (colon) 78 90 AddAdjacent
 EndDerived
 
+/careof DerivedName
+(c.sups) -20 -62 Base
+740 Width
+(fraction) 222 0 AddCentered
+(o.sups) 346 -414 AddCentered
+EndDerived
+
 /ringhalfrightmod DerivedName
 (ringhalfrightbelowcmb) 160 790 Base
 150 Width
@@ -3133,7 +3145,6 @@ EndDerived
 
 /Iotatonos DerivedName
 (Iota) 20 0 Base
-252 Width
 (tonos.cap) AddFlushLeft
 EndDerived
 
@@ -3142,14 +3153,14 @@ EndDerived
 EndDerived
 
 /Omicrontonos DerivedName
-(Omicron) 10 0 Base
+(Omicron) 20 0 Base
 658 Width
 (tonos.cap) AddFlushLeft
 EndDerived
 
 /Upsilontonos DerivedName
 (Upsilon) 80 0 Base
-516 Width
+502 Width
 (tonos.cap) AddFlushLeft
 EndDerived
 
@@ -3159,63 +3170,63 @@ EndDerived
 
 /Omegatonos DerivedName
 (Omega) 10 0 Base
-658 Width
+634 Width
 (tonos.cap) AddFlushLeft
 EndDerived
 
 /alphatonos DerivedName
 (alpha) Base
-(tonoscmb) 10 0 AddCentered
+(tonoscmb) -36 0 AddCentered
 EndDerived
 
 /epsilontonos DerivedName
 (epsilon) Base
-(tonoscmb) 21 0 AddCentered
+(tonoscmb) -25 0 AddCentered
 EndDerived
 
 /etatonos DerivedName
 (eta) Base
-(tonoscmb) 16 0 AddCentered
+(tonoscmb) -42 0 AddCentered
 EndDerived
 
 /iotatonos DerivedName
 (iota) Base
-(tonoscmb) -3 0 AddCentered
+(tonoscmb) -53 0 AddCentered
 EndDerived
 
 /iotadieresis DerivedName
 (iota) Base
-(dieresiscmb) -3 0 AddCentered
+(dieresiscmb) -53 0 AddCentered
 EndDerived
 
 /omicrontonos DerivedName
 (omicron) Base
-(tonoscmb) AddCentered
+(tonoscmb) -26 0 AddCentered
 EndDerived
 
 /upsilontonos DerivedName
 (upsilon) Base
-(tonoscmb) -17 0 AddCentered
+(tonoscmb) -57 0 AddCentered
 EndDerived
 
 /upsilondieresis DerivedName
 (upsilon) Base
-(dieresiscmb) -17 0 AddCentered
+(dieresiscmb) -57 0 AddCentered
 EndDerived
 
 /omegatonos DerivedName
 (omega) Base
-(tonoscmb) AddCentered
+(tonoscmb) -36 0 AddCentered
 EndDerived
 
 /iotadieresistonos DerivedName
 (iota) Base
-(dialytikatonoscmb) -3 0 AddCentered
+(dialytikatonoscmb) -53 0 AddCentered
 EndDerived
 
 /upsilondieresistonos DerivedName
 (upsilon) Base
-(dialytikatonoscmb) -17 0 AddCentered
+(dialytikatonoscmb) -57 0 AddCentered
 EndDerived
 
 /Alphalenis DerivedName
@@ -3238,38 +3249,38 @@ EndDerived
 EndDerived
 
 /Alphalenisgrave DerivedName
-(Alpha) 106 0 Base
-626 Width
+(Alpha) 100 0 Base
+580 Width
 (lenisgrave.cap) AddFlushLeft
 EndDerived
 
 /Alphaaspergrave DerivedName
 (Alpha) 100 0 Base
-620 Width
+580 Width
 (aspergrave.cap) AddFlushLeft
 EndDerived
 
 /Alphalenisacute DerivedName
-(Alpha) 106 0 Base
-626 Width
+(Alpha) 100 0 Base
+580 Width
 (lenisacute.cap) AddFlushLeft
 EndDerived
 
 /Alphaasperacute DerivedName
 (Alpha) 100 0 Base
-620 Width
+580 Width
 (asperacute.cap) AddFlushLeft
 EndDerived
 
 /Alphalenistilde DerivedName
 (Alpha) 40 0 Base
-560 Width
+520 Width
 (lenistilde.cap) AddFlushLeft
 EndDerived
 
 /Alphaaspertilde DerivedName
 (Alpha) 40 0 Base
-560 Width
+520 Width
 (aspertilde.cap) AddFlushLeft
 EndDerived
 
@@ -3283,151 +3294,154 @@ EndDerived
 
 /Epsilonlenis DerivedName
 (Epsilon) 82 0 Base
-592 Width
+566 Width
 (lenis.cap) AddFlushLeft
 EndDerived
 
 /Epsilonasper DerivedName
 (Epsilon) 82 0 Base
-592 Width
+566 Width
 (asper.cap) AddFlushLeft
 EndDerived
 
 /Epsilongrave DerivedName
 (Epsilon) 20 0 Base
-530 Width
+504 Width
 (varia.cap) AddFlushLeft
 EndDerived
 
 /Epsilonacute DerivedName
 (Epsilontonos) Base
+504 Width
 EndDerived
 
 /Epsilonlenisgrave DerivedName
-(Epsilon) 166 0 Base
-676 Width
+(Epsilon) 160 0 Base
+644 Width
 (lenisgrave.cap) AddFlushLeft
 EndDerived
 
 /Epsilonaspergrave DerivedName
 (Epsilon) 160 0 Base
-670 Width
+644 Width
 (aspergrave.cap) AddFlushLeft
 EndDerived
 
 /Epsilonlenisacute DerivedName
-(Epsilon) 166 0 Base
-676 Width
+(Epsilon) 160 0 Base
+644 Width
 (lenisacute.cap) AddFlushLeft
 EndDerived
 
 /Epsilonasperacute DerivedName
 (Epsilon) 160 0 Base
-670 Width
+644 Width
 (asperacute.cap) AddFlushLeft
 EndDerived
 
 /Etalenis DerivedName
-(Eta) 82 0 Base
-716 Width
+(Eta) 80 0 Base
+678 Width
 (lenis.cap) AddFlushLeft
 EndDerived
 
 /Etaasper DerivedName
-(Eta) 82 0 Base
-716 Width
+(Eta) 80 0 Base
+678 Width
 (asper.cap) AddFlushLeft
 EndDerived
 
 /Etagrave DerivedName
 (Eta) 20 0 Base
-654 Width
+618 Width
 (varia.cap) AddFlushLeft
 EndDerived
 
 /Etaacute DerivedName
 (Etatonos) Base
+618 Width
 EndDerived
 
 /Etalenisgrave DerivedName
-(Eta) 166 0 Base
-800 Width
+(Eta) 160 0 Base
+758 Width
 (lenisgrave.cap) AddFlushLeft
 EndDerived
 
 /Etaaspergrave DerivedName
 (Eta) 160 0 Base
-794 Width
+758 Width
 (aspergrave.cap) AddFlushLeft
 EndDerived
 
 /Etalenisacute DerivedName
-(Eta) 166 0 Base
-800 Width
+(Eta) 160 0 Base
+758 Width
 (lenisacute.cap) AddFlushLeft
 EndDerived
 
 /Etaasperacute DerivedName
 (Eta) 160 0 Base
-794 Width
+758 Width
 (asperacute.cap) AddFlushLeft
 EndDerived
 
 /Iotalenis DerivedName
-(Iota) 82 0 Base
-314 Width
+(Iota) 80 0 Base
+292 Width
 (lenis.cap) AddFlushLeft
 EndDerived
 
 /Iotaasper DerivedName
-(Iota) 82 0 Base
-314 Width
+(Iota) 80 0 Base
+292 Width
 (asper.cap) AddFlushLeft
 EndDerived
 
 /Iotagrave DerivedName
 (Iota) 20 0 Base
-252 Width
+232 Width
 (varia.cap) AddFlushLeft
 EndDerived
 
 /Iotaacute DerivedName
 (Iotatonos) Base
+232 Width
 EndDerived
 
 /Iotalenisgrave DerivedName
-(Iota) 166 0 Base
-398 Width
+(Iota) 160 0 Base
+372 Width
 (lenisgrave.cap) AddFlushLeft
 EndDerived
 
 /Iotaaspergrave DerivedName
 (Iota) 160 0 Base
-392 Width
+372 Width
 (aspergrave.cap) AddFlushLeft
 EndDerived
 
 /Iotalenisacute DerivedName
-(Iota) 166 0 Base
-398 Width
+(Iota) 160 0 Base
+372 Width
 (lenisacute.cap) AddFlushLeft
 EndDerived
 
 /Iotaasperacute DerivedName
 (Iota) 160 0 Base
-392 Width
+372 Width
 (asperacute.cap) AddFlushLeft
 EndDerived
 
 /Iotalenistilde DerivedName
 (Iota) 160 0 Base
-392 Width
+372 Width
 (lenistilde.cap) AddFlushLeft
 EndDerived
 
 /Iotaaspertilde DerivedName
 (Iota) 160 0 Base
-392 Width
+372 Width
 (aspertilde.cap) AddFlushLeft
 EndDerived
 
@@ -3441,65 +3455,66 @@ EndDerived
 
 /Omicronlenis DerivedName
 (Omicron) 60 0 Base
-708 Width
+672 Width
 (lenis.cap) AddFlushLeft
 EndDerived
 
 /Omicronasper DerivedName
-(Omicron) 50 0 Base
-698 Width
+(Omicron) 60 0 Base
+672 Width
 (asper.cap) AddFlushLeft
 EndDerived
 
 /Omicrongrave DerivedName
-(Omicron) 10 0 Base
-658 Width
+(Omicron) 20 0 Base
+632 Width
 (varia.cap) AddFlushLeft
 EndDerived
 
 /Omicronacute DerivedName
 (Omicrontonos) Base
+632 Width
 EndDerived
 
 /Omicronlenisgrave DerivedName
-(Omicron) 156 0 Base
-804 Width
+(Omicron) 160 0 Base
+772 Width
 (lenisgrave.cap) AddFlushLeft
 EndDerived
 
 /Omicronaspergrave DerivedName
-(Omicron) 150 0 Base
-798 Width
+(Omicron) 160 0 Base
+772 Width
 (aspergrave.cap) AddFlushLeft
 EndDerived
 
 /Omicronlenisacute DerivedName
-(Omicron) 156 0 Base
-804 Width
+(Omicron) 160 0 Base
+772 Width
 (lenisacute.cap) AddFlushLeft
 EndDerived
 
 /Omicronasperacute DerivedName
-(Omicron) 150 0 Base
-798 Width
+(Omicron) 160 0 Base
+772 Width
 (asperacute.cap) AddFlushLeft
 EndDerived
 
 /Rhoasper DerivedName
-(Rho) 82 0 Base
-624 Width
+(Rho) 80 0 Base
+604 Width
 (asper.cap) AddFlushLeft
 EndDerived
 
 /Upsilonasper DerivedName
 (Upsilon) 140 0 Base
-576 Width
+562 Width
 (asper.cap) AddFlushLeft
 EndDerived
 
 /Upsilongrave DerivedName
 (Upsilon) 80 0 Base
-516 Width
+502 Width
 (varia.cap) AddFlushLeft
 EndDerived
 
@@ -3508,48 +3523,48 @@ EndDerived
 EndDerived
 
 /Upsilonaspergrave DerivedName
-(Upsilon) 220 0 Base
-656 Width
+(Upsilon) 200 0 Base
+622 Width
 (aspergrave.cap) AddFlushLeft
 EndDerived
 
 /Upsilonasperacute DerivedName
 (Upsilon) 220 0 Base
-656 Width
+642 Width
 (asperacute.cap) AddFlushLeft
 EndDerived
 
 /Upsilonaspertilde DerivedName
 (Upsilon) 220 0 Base
-656 Width
+642 Width
 (aspertilde.cap) AddFlushLeft
 EndDerived
 
 /Upsilonbreve DerivedName
 (Upsilon) Base
-(brevecmb.cap) AddCentered
+(brevecmb.cap) -51 0 AddCentered
 EndDerived
 
 /Upsilonmacron DerivedName
 (Upsilon) Base
-(macroncmb.cap) AddCentered
+(macroncmb.cap) -51 0 AddCentered
 EndDerived
 
 /Omegalenis DerivedName
 (Omega) 60 0 Base
-708 Width
+684 Width
 (lenis.cap) AddFlushLeft
 EndDerived
 
 /Omegaasper DerivedName
-(Omega) 50 0 Base
-698 Width
+(Omega) 60 0 Base
+684 Width
 (asper.cap) AddFlushLeft
 EndDerived
 
 /Omegagrave DerivedName
 (Omega) 10 0 Base
-658 Width
+634 Width
 (varia.cap) -314 0 AddCentered
 EndDerived
 
@@ -3558,882 +3573,818 @@ EndDerived
 EndDerived
 
 /Omegalenisgrave DerivedName
-(Omega) 156 0 Base
-804 Width
+(Omega) 160 0 Base
+784 Width
 (lenisgrave.cap) AddFlushLeft
 EndDerived
 
 /Omegaaspergrave DerivedName
-(Omega) 150 0 Base
-798 Width
+(Omega) 160 0 Base
+784 Width
 (aspergrave.cap) AddFlushLeft
 EndDerived
 
 /Omegalenisacute DerivedName
-(Omega) 156 0 Base
-804 Width
+(Omega) 160 0 Base
+784 Width
 (lenisacute.cap) AddFlushLeft
 EndDerived
 
 /Omegaasperacute DerivedName
-(Omega) 150 0 Base
-798 Width
+(Omega) 160 0 Base
+784 Width
 (asperacute.cap) AddFlushLeft
 EndDerived
 
 /Alphaiotasub DerivedName
 (Alpha) Base
-750 Width
-(iotaadscript) 375 0 AddCentered
+706 Width
+(iotaadscript) 353 0 AddCentered
 EndDerived
 
 /Alphaiotasublenis DerivedName
 (Alphalenis) Base
-750 Width
-(iotaadscript) 375 0 AddCentered
+706 Width
+(iotaadscript) 353 0 AddCentered
 EndDerived
 
 /Alphaiotasubasper DerivedName
 (Alphaasper) Base
-750 Width
-(iotaadscript) 375 0 AddCentered
+706 Width
+(iotaadscript) 353 0 AddCentered
 EndDerived
 
 /Alphaiotasublenisgrave DerivedName
 (Alphalenisgrave) Base
-856 Width
-(iotaadscript) 428 0 AddCentered
+806 Width
+(iotaadscript) 403 0 AddCentered
 EndDerived
 
 /Alphaiotasubaspergrave DerivedName
 (Alphaaspergrave) Base
-850 Width
-(iotaadscript) 425 0 AddCentered
+806 Width
+(iotaadscript) 403 0 AddCentered
 EndDerived
 
 /Alphaiotasublenisacute DerivedName
 (Alphalenisacute) Base
-856 Width
-(iotaadscript) 428 0 AddCentered
+806 Width
+(iotaadscript) 403 0 AddCentered
 EndDerived
 
 /Alphaiotasubasperacute DerivedName
 (Alphaasperacute) Base
-850 Width
-(iotaadscript) 425 0 AddCentered
+806 Width
+(iotaadscript) 403 0 AddCentered
 EndDerived
 
 /Alphaiotasublenistilde DerivedName
 (Alphalenistilde) Base
-790 Width
-(iotaadscript) 395 0 AddCentered
+746 Width
+(iotaadscript) 373 0 AddCentered
 EndDerived
 
 /Alphaiotasubaspertilde DerivedName
 (Alphaaspertilde) Base
-790 Width
-(iotaadscript) 395 0 AddCentered
+746 Width
+(iotaadscript) 373 0 AddCentered
 EndDerived
 
 /Etaiotasub DerivedName
 (Eta) Base
-864 Width
-(iotaadscript) 432 0 AddCentered
+824 Width
+(iotaadscript) 412 0 AddCentered
 EndDerived
 
 /Etaiotasublenis DerivedName
 (Etalenis) Base
-946 Width
-(iotaadscript) 473 0 AddCentered
+904 Width
+(iotaadscript) 452 0 AddCentered
 EndDerived
 
 /Etaiotasubasper DerivedName
 (Etaasper) Base
-946 Width
-(iotaadscript) 473 0 AddCentered
+924 Width
+(iotaadscript) 472 0 AddCentered
 EndDerived
 
 /Etalenistilde DerivedName
 (Eta) 160 0 Base
-794 Width
+758 Width
 (lenistilde.cap) AddFlushLeft
 EndDerived
 
 /Etaaspertilde DerivedName
 (Eta) 160 0 Base
-794 Width
+758 Width
 (aspertilde.cap) AddFlushLeft
 EndDerived
 
 /Etaiotasublenisgrave DerivedName
 (Etalenisgrave) Base
-1030 Width
-(iotaadscript) 515 0 AddCentered
+984 Width
+(iotaadscript) 492 0 AddCentered
 EndDerived
 
 /Etaiotasubaspergrave DerivedName
 (Etaaspergrave) Base
-1024 Width
-(iotaadscript) 512 0 AddCentered
+984 Width
+(iotaadscript) 492 0 AddCentered
 EndDerived
 
 /Etaiotasublenisacute DerivedName
 (Etalenisacute) Base
-1030 Width
-(iotaadscript) 515 0 AddCentered
+984 Width
+(iotaadscript) 492 0 AddCentered
 EndDerived
 
 /Etaiotasubasperacute DerivedName
 (Etaasperacute) Base
-1024 Width
-(iotaadscript) 512 0 AddCentered
+984 Width
+(iotaadscript) 492 0 AddCentered
 EndDerived
 
 /Etaiotasublenistilde DerivedName
 (Etalenistilde) Base
-1024 Width
-(iotaadscript) 512 0 AddCentered
+984 Width
+(iotaadscript) 492 0 AddCentered
 EndDerived
 
 /Etaiotasubaspertilde DerivedName
 (Etaaspertilde) Base
-1024 Width
-(iotaadscript) 512 0 AddCentered
+984 Width
+(iotaadscript) 492 0 AddCentered
 EndDerived
 
 /Omegaiotasub DerivedName
 (Omega) Base
-878 Width
-(iotaadscript) 439 0 AddCentered
+850 Width
+(iotaadscript) 425 0 AddCentered
 EndDerived
 
 /Omegaiotasublenis DerivedName
 (Omegalenis) Base
-938 Width
-(iotaadscript) 469 0 AddCentered
+910 Width
+(iotaadscript) 455 0 AddCentered
 EndDerived
 
 /Omegaiotasubasper DerivedName
 (Omegaasper) Base
-928 Width
-(iotaadscript) 464 0 AddCentered
+910 Width
+(iotaadscript) 455 0 AddCentered
 EndDerived
 
 /Omegalenistilde DerivedName
-(Omega) 120 0 Base
-768 Width
+(Omega) 140 0 Base
+764 Width
 (lenistilde.cap) AddFlushLeft
 EndDerived
 
 /Omegaaspertilde DerivedName
-(Omega) 120 0 Base
-768 Width
+(Omega) 140 0 Base
+764 Width
 (aspertilde.cap) AddFlushLeft
 EndDerived
 
 /Omegaiotasublenisgrave DerivedName
 (Omegalenisgrave) Base
-1034 Width
-(iotaadscript) 517 0 AddCentered
+1010 Width
+(iotaadscript) 505 0 AddCentered
 EndDerived
 
 /Omegaiotasubaspergrave DerivedName
 (Omegaaspergrave) Base
-1028 Width
-(iotaadscript) 514 0 AddCentered
+1010 Width
+(iotaadscript) 505 0 AddCentered
 EndDerived
 
 /Omegaiotasublenisacute DerivedName
 (Omegalenisacute) Base
-1034 Width
-(iotaadscript) 517 0 AddCentered
+1010 Width
+(iotaadscript) 505 0 AddCentered
 EndDerived
 
 /Omegaiotasubasperacute DerivedName
 (Omegaasperacute) Base
-1028 Width
-(iotaadscript) 514 0 AddCentered
+1010 Width
+(iotaadscript) 505 0 AddCentered
 EndDerived
 
 /Omegaiotasublenistilde DerivedName
 (Omegalenistilde) Base
-1002 Width
-(iotaadscript) 503 0 AddCentered
+990 Width
+(iotaadscript) 495 0 AddCentered
 EndDerived
 
 /Omegaiotasubaspertilde DerivedName
 (Omegaaspertilde) Base
-1002 Width
-(iotaadscript) 503 0 AddCentered
+990 Width
+(iotaadscript) 495 0 AddCentered
 EndDerived
 
 /alphalenis DerivedName
 (alpha) Base
-(leniscmb) 10 10 AddCentered
+(leniscmb) -36 10 AddCentered
 EndDerived
 
 /alphaasper DerivedName
 (alpha) Base
-(aspercmb) 10 0 AddCentered
+(aspercmb) -36 0 AddCentered
 EndDerived
 
 /alphagrave DerivedName
 (alpha) Base
-(gravecmb) 10 0 AddCentered
+(gravecmb) -36 0 AddCentered
 EndDerived
 
 /alphaacute DerivedName
 (alpha) Base
-(acutecmb) 10 0 AddCentered
+(acutecmb) -36 0 AddCentered
 EndDerived
 
 /alphalenisgrave DerivedName
 (alpha) Base
-(lenisgravecmb) 10 0 AddCentered
+(lenisgravecmb) -36 0 AddCentered
 EndDerived
 
 /alphaaspergrave DerivedName
 (alpha) Base
-(aspergravecmb) 10 0 AddCentered
+(aspergravecmb) -36 0 AddCentered
 EndDerived
 
 /alphalenisacute DerivedName
 (alpha) Base
-(lenisacutecmb) 10 0 AddCentered
+(lenisacutecmb) -36 0 AddCentered
 EndDerived
 
 /alphaasperacute DerivedName
 (alpha) Base
-(asperacutecmb) 10 0 AddCentered
+(asperacutecmb) -36 0 AddCentered
 EndDerived
 
 /alphalenistilde DerivedName
 (alpha) Base
-(lenistildecmb) 10 0 AddCentered
+(lenistildecmb) -36 0 AddCentered
 EndDerived
 
 /alphaaspertilde DerivedName
 (alpha) Base
-(aspertildecmb) 10 0 AddCentered
+(aspertildecmb) -36 0 AddCentered
 EndDerived
 
 /alphabreve DerivedName
 (alpha) Base
-(brevecmb) 10 0 AddCentered
+(brevecmb) -35 0 AddCentered
 EndDerived
 
 /alphamacron DerivedName
 (alpha) Base
-(macroncmb) 10 0 AddCentered
+(macroncmb) -36 0 AddCentered
 EndDerived
 
 /alphatilde DerivedName
 (alpha) Base
-(tildecmb) 10 0 AddCentered
+(tildecmb) -36 0 AddCentered
 EndDerived
 
 /epsilonlenis DerivedName
 (epsilon) Base
-(leniscmb) 21 0 AddCentered
+(leniscmb) -25 0 AddCentered
 EndDerived
 
 /epsilonasper DerivedName
 (epsilon) Base
-(aspercmb) 21 0 AddCentered
+(aspercmb) -25 0 AddCentered
 EndDerived
 
 /epsilongrave DerivedName
 (epsilon) Base
-(gravecmb) 21 0 AddCentered
+(gravecmb) -25 0 AddCentered
 EndDerived
 
 /epsilonacute DerivedName
 (epsilon) Base
-(acutecmb) 21 0 AddCentered
+(acutecmb) -25 0 AddCentered
 EndDerived
 
 /epsilonlenisgrave DerivedName
 (epsilon) Base
-(lenisgravecmb) 21 0 AddCentered
+(lenisgravecmb) -25 0 AddCentered
 EndDerived
 
 /epsilonaspergrave DerivedName
 (epsilon) Base
-(aspergravecmb) 21 0 AddCentered
+(aspergravecmb) -25 0 AddCentered
 EndDerived
 
 /epsilonlenisacute DerivedName
 (epsilon) Base
-(lenisacutecmb) 21 0 AddCentered
+(lenisacutecmb) -25 0 AddCentered
 EndDerived
 
 /epsilonasperacute DerivedName
 (epsilon) Base
-(asperacutecmb) 21 0 AddCentered
+(asperacutecmb) -25 0 AddCentered
 EndDerived
 
 /etalenis DerivedName
 (eta) Base
-(leniscmb) 16 0 AddCentered
+(leniscmb) -42 0 AddCentered
 EndDerived
 
 /etaasper DerivedName
 (eta) Base
-(aspercmb) 16 0 AddCentered
+(aspercmb) -42 0 AddCentered
 EndDerived
 
 /etagrave DerivedName
 (eta) Base
-(gravecmb) 16 0 AddCentered
+(gravecmb) -42 0 AddCentered
 EndDerived
 
 /etaacute DerivedName
 (eta) Base
-(acutecmb) 16 0 AddCentered
+(acutecmb) -42 0 AddCentered
 EndDerived
 
 /etalenisgrave DerivedName
 (eta) Base
-(lenisgravecmb) 16 0 AddCentered
+(lenisgravecmb) -42 0 AddCentered
 EndDerived
 
 /etaaspergrave DerivedName
 (eta) Base
-(aspergravecmb) 16 0 AddCentered
+(aspergravecmb) -42 0 AddCentered
 EndDerived
 
 /etalenisacute DerivedName
 (eta) Base
-(lenisacutecmb) 16 0 AddCentered
+(lenisacutecmb) -42 0 AddCentered
 EndDerived
 
 /etaasperacute DerivedName
 (eta) Base
-(asperacutecmb) 16 0 AddCentered
+(asperacutecmb) -42 0 AddCentered
 EndDerived
 
 /etalenistilde DerivedName
 (eta) Base
-(lenistildecmb) 16 0 AddCentered
+(lenistildecmb) -42 0 AddCentered
 EndDerived
 
 /etaaspertilde DerivedName
 (eta) Base
-(aspertildecmb) 16 0 AddCentered
+(aspertildecmb) -42 0 AddCentered
 EndDerived
 
 /etatilde DerivedName
 (eta) Base
-(tildecmb) 16 0 AddCentered
+(tildecmb) -42 0 AddCentered
 EndDerived
 
 /iotalenis DerivedName
 (iota) Base
-(leniscmb) -3 10 AddCentered
+(leniscmb) -53 10 AddCentered
 EndDerived
 
 /iotaasper DerivedName
 (iota) Base
-(aspercmb) -3 0 AddCentered
+(aspercmb) -53 0 AddCentered
 EndDerived
 
 /iotagrave DerivedName
 (iota) Base
-(gravecmb) -3 0 AddCentered
+(gravecmb) -53 0 AddCentered
 EndDerived
 
 /iotaacute DerivedName
 (iota) Base
-(acutecmb) -3 0 AddCentered
+(acutecmb) -53 0 AddCentered
 EndDerived
 
 /iotalenisgrave DerivedName
 (iota) Base
-(lenisgravecmb) -3 0 AddCentered
+(lenisgravecmb) -53 0 AddCentered
 EndDerived
 
 /iotaaspergrave DerivedName
 (iota) Base
-(aspergravecmb) -3 0 AddCentered
+(aspergravecmb) -53 0 AddCentered
 EndDerived
 
 /iotalenisacute DerivedName
 (iota) Base
-(lenisacutecmb) -3 0 AddCentered
+(lenisacutecmb) -53 0 AddCentered
 EndDerived
 
 /iotaasperacute DerivedName
 (iota) Base
-(asperacutecmb) -3 0 AddCentered
+(asperacutecmb) -53 0 AddCentered
 EndDerived
 
 /iotalenistilde DerivedName
 (iota) Base
-(lenistildecmb) -3 0 AddCentered
+(lenistildecmb) -53 0 AddCentered
 EndDerived
 
 /iotaaspertilde DerivedName
 (iota) Base
-(aspertildecmb) -3 0 AddCentered
+(aspertildecmb) -53 0 AddCentered
 EndDerived
 
 /iotabreve DerivedName
 (iota) Base
-(brevecmb) -3 0 AddCentered
+(brevecmb) -53 0 AddCentered
 EndDerived
 
 /iotamacron DerivedName
 (iota) Base
-(macroncmb) -3 0 AddCentered
+(macroncmb) -53 0 AddCentered
 EndDerived
 
 /iotatilde DerivedName
 (iota) Base
-(tildecmb) -3 0 AddCentered
+(tildecmb) -53 0 AddCentered
 EndDerived
 
 /iotadieresisgrave DerivedName
 (iota) Base
-(dialytikagravecmb) -3 0 AddCentered
+(dialytikagravecmb) -53 0 AddCentered
 EndDerived
 
 /iotadieresisacute DerivedName
 (iota) Base
-(dialytikatonoscmb) -3 0 AddCentered
+(dialytikatonoscmb) -53 0 AddCentered
 EndDerived
 
 /iotadieresistilde DerivedName
 (iota) Base
-(dieresistilde) -3 0 AddCentered
+(dieresistilde) -53 0 AddCentered
 EndDerived
 
 /omicronlenis DerivedName
 (omicron) Base
-(leniscmb) 0 10 AddCentered
+(leniscmb) -26 10 AddCentered
 EndDerived
 
 /omicronasper DerivedName
 (omicron) Base
-(aspercmb) AddCentered
+(aspercmb) -26 0 AddCentered
 EndDerived
 
 /omicrongrave DerivedName
 (omicron) Base
-(gravecmb) AddCentered
+(gravecmb) -26 0 AddCentered
 EndDerived
 
 /omicronacute DerivedName
 (omicron) Base
-(acutecmb) AddCentered
+(acutecmb) -26 0 AddCentered
 EndDerived
 
 /omicronlenisgrave DerivedName
 (omicron) Base
-(lenisgravecmb) AddCentered
+(lenisgravecmb) -26 0 AddCentered
 EndDerived
 
 /omicronaspergrave DerivedName
 (omicron) Base
-(aspergravecmb) AddCentered
+(aspergravecmb) -26 0 AddCentered
 EndDerived
 
 /omicronlenisacute DerivedName
 (omicron) Base
-(lenisacutecmb) AddCentered
+(lenisacutecmb) -26 0 AddCentered
 EndDerived
 
 /omicronasperacute DerivedName
 (omicron) Base
-(asperacutecmb) AddCentered
+(asperacutecmb) -26 0 AddCentered
 EndDerived
 
 /rholenis DerivedName
 (rho) Base
-(leniscmb) 20 10 AddCentered
+(leniscmb) -27 10 AddCentered
 EndDerived
 
 /rhoasper DerivedName
 (rho) Base
-(aspercmb) 20 0 AddCentered
+(aspercmb) -27 0 AddCentered
 EndDerived
 
 /upsilonlenis DerivedName
 (upsilon) Base
-(leniscmb) -17 10 AddCentered
+(leniscmb) -57 10 AddCentered
 EndDerived
 
 /upsilonasper DerivedName
 (upsilon) Base
-(aspercmb) -17 0 AddCentered
+(aspercmb) -57 0 AddCentered
 EndDerived
 
 /upsilongrave DerivedName
 (upsilon) Base
-(gravecmb) -17 0 AddCentered
+(gravecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonacute DerivedName
 (upsilon) Base
-(acutecmb) -17 0 AddCentered
+(acutecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonlenisgrave DerivedName
 (upsilon) Base
-(lenisgravecmb) -17 0 AddCentered
+(lenisgravecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonaspergrave DerivedName
 (upsilon) Base
-(aspergravecmb) -17 0 AddCentered
+(aspergravecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonlenisacute DerivedName
 (upsilon) Base
-(lenisacutecmb) -17 0 AddCentered
+(lenisacutecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonasperacute DerivedName
 (upsilon) Base
-(asperacutecmb) -17 0 AddCentered
+(asperacutecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonlenistilde DerivedName
 (upsilon) Base
-(lenistildecmb) -17 0 AddCentered
+(lenistildecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonaspertilde DerivedName
 (upsilon) Base
-(aspertildecmb) -17 0 AddCentered
+(aspertildecmb) -57 0 AddCentered
 EndDerived
 
 /upsilontilde DerivedName
 (upsilon) Base
-(tildecmb) -17 0 AddCentered
+(tildecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonbreve DerivedName
 (upsilon) Base
-(brevecmb) -17 0 AddCentered
+(brevecmb) -57 0 AddCentered
 EndDerived
 
 /upsilonmacron DerivedName
 (upsilon) Base
-(macroncmb) -17 0 AddCentered
+(macroncmb) -57 0 AddCentered
 EndDerived
 
 /upsilondieresisgrave DerivedName
 (upsilon) Base
-(dialytikagravecmb) -17 0 AddCentered
+(dialytikagravecmb) -57 0 AddCentered
 EndDerived
 
 /upsilondieresisacute DerivedName
 (upsilon) Base
-(dialytikatonoscmb) -17 0 AddCentered
+(dialytikatonoscmb) -57 0 AddCentered
 EndDerived
 
 /upsilondieresistilde DerivedName
 (upsilon) Base
-(dieresistilde) -17 0 AddCentered
+(dieresistilde) -57 0 AddCentered
 EndDerived
 
 /omegalenis DerivedName
 (omega) Base
-(leniscmb) 0 10 AddCentered
+(leniscmb) -36 10 AddCentered
 EndDerived
 
 /omegaasper DerivedName
 (omega) Base
-(aspercmb) AddCentered
+(aspercmb) -36 0 AddCentered
 EndDerived
 
 /omegagrave DerivedName
 (omega) Base
-(gravecmb) AddCentered
+(gravecmb) -36 0 AddCentered
 EndDerived
 
 /omegaacute DerivedName
 (omega) Base
-(acutecmb) AddCentered
+(acutecmb) -36 0 AddCentered
 EndDerived
 
 /omegalenisgrave DerivedName
 (omega) Base
-(lenisgravecmb) AddCentered
+(lenisgravecmb) -36 0 AddCentered
 EndDerived
 
 /omegaaspergrave DerivedName
 (omega) Base
-(aspergravecmb) AddCentered
+(aspergravecmb) -36 0 AddCentered
 EndDerived
 
 /omegalenisacute DerivedName
 (omega) Base
-(lenisacutecmb) AddCentered
+(lenisacutecmb) -36 0 AddCentered
 EndDerived
 
 /omegaasperacute DerivedName
 (omega) Base
-(asperacutecmb) AddCentered
+(asperacutecmb) -36 0 AddCentered
 EndDerived
 
 /omegalenistilde DerivedName
 (omega) Base
-(lenistildecmb) AddCentered
+(lenistildecmb) -36 0 AddCentered
 EndDerived
 
 /omegaaspertilde DerivedName
 (omega) Base
-(aspertildecmb) AddCentered
+(aspertildecmb) -36 0 AddCentered
 EndDerived
 
 /omegatilde DerivedName
 (omega) Base
-(tildecmb) AddCentered
+(tildecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasub DerivedName
 (alpha) Base
-(iotasubscriptcmb) 4 0 AddCentered
+(iotasubscriptcmb) -56 0 AddCentered
 EndDerived
 
 /alphaiotasublenis DerivedName
 (alphaiotasub) Base
-(leniscmb) 10 10 AddCentered
+(leniscmb) -36 10 AddCentered
 EndDerived
 
 /alphaiotasubasper DerivedName
 (alphaiotasub) Base
-(aspercmb) 10 0 AddCentered
+(aspercmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasubgrave DerivedName
 (alphaiotasub) Base
-(gravecmb) 10 0 AddCentered
+(gravecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasubacute DerivedName
 (alphaiotasub) Base
-(acutecmb) 10 0 AddCentered
+(acutecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasublenisgrave DerivedName
 (alphaiotasub) Base
-(lenisgravecmb) 10 0 AddCentered
+(lenisgravecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasubaspergrave DerivedName
 (alphaiotasub) Base
-(aspergravecmb) 10 0 AddCentered
+(aspergravecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasublenisacute DerivedName
 (alphaiotasub) Base
-(lenisacutecmb) 10 0 AddCentered
+(lenisacutecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasubasperacute DerivedName
 (alphaiotasub) Base
-(asperacutecmb) 10 0 AddCentered
+(asperacutecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasublenistilde DerivedName
 (alphaiotasub) Base
-(lenistildecmb) 10 0 AddCentered
+(lenistildecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasubaspertilde DerivedName
 (alphaiotasub) Base
-(aspertildecmb) 10 0 AddCentered
+(aspertildecmb) -36 0 AddCentered
 EndDerived
 
 /alphaiotasubtilde DerivedName
 (alphaiotasub) Base
-(tildecmb) 10 0 AddCentered
+(tildecmb) -36 0 AddCentered
 EndDerived
 
 /etaiotasub DerivedName
 (eta) Base
-(iotasubscriptcmb) -160 0 AddCentered
+(iotasubscriptcmb) -192 0 AddCentered
 EndDerived
 
 /etaiotasublenis DerivedName
 (etaiotasub) Base
-(leniscmb) 16 10 AddCentered
+(leniscmb) -42 10 AddCentered
 EndDerived
 
 /etaiotasubasper DerivedName
 (etaiotasub) Base
-(aspercmb) 16 0 AddCentered
+(aspercmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasubgrave DerivedName
 (etaiotasub) Base
-(gravecmb) 16 0 AddCentered
+(gravecmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasubacute DerivedName
 (etaiotasub) Base
-(acutecmb) 16 0 AddCentered
+(acutecmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasublenisgrave DerivedName
 (etaiotasub) Base
-(lenisgravecmb) 16 0 AddCentered
+(lenisgravecmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasubaspergrave DerivedName
 (etaiotasub) Base
-(aspergravecmb) 16 0 AddCentered
+(aspergravecmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasublenisacute DerivedName
 (etaiotasub) Base
-(lenisacutecmb) 16 0 AddCentered
+(lenisacutecmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasubasperacute DerivedName
 (etaiotasub) Base
-(asperacutecmb) 16 0 AddCentered
+(asperacutecmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasublenistilde DerivedName
 (etaiotasub) Base
-(lenistildecmb) 16 0 AddCentered
+(lenistildecmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasubaspertilde DerivedName
 (etaiotasub) Base
-(aspertildecmb) 16 0 AddCentered
+(aspertildecmb) -42 0 AddCentered
 EndDerived
 
 /etaiotasubtilde DerivedName
 (etaiotasub) Base
-(tildecmb) 16 0 AddCentered
+(tildecmb) -42 0 AddCentered
 EndDerived
 
 /omegaiotasub DerivedName
 (omega) Base
-(iotasubscriptcmb) -10 0 AddCentered
+(iotasubscriptcmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasublenis DerivedName
 (omegaiotasub) Base
-(leniscmb) 0 10 AddCentered
+(leniscmb) -36 10 AddCentered
 EndDerived
 
 /omegaiotasubasper DerivedName
 (omegaiotasub) Base
-(aspercmb) AddCentered
+(aspercmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasubgrave DerivedName
 (omegaiotasub) Base
-(gravecmb) AddCentered
+(gravecmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasubacute DerivedName
 (omegaiotasub) Base
-(acutecmb) AddCentered
+(acutecmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasublenisgrave DerivedName
 (omegaiotasub) Base
-(lenisgravecmb) AddCentered
+(lenisgravecmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasubaspergrave DerivedName
 (omegaiotasub) Base
-(aspergravecmb) AddCentered
+(aspergravecmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasublenisacute DerivedName
 (omegaiotasub) Base
-(lenisacutecmb) AddCentered
+(lenisacutecmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasubasperacute DerivedName
 (omegaiotasub) Base
-(asperacutecmb) AddCentered
+(asperacutecmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasublenistilde DerivedName
 (omegaiotasub) Base
-(lenistildecmb) AddCentered
+(lenistildecmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasubaspertilde DerivedName
 (omegaiotasub) Base
-(aspertildecmb) AddCentered
+(aspertildecmb) -36 0 AddCentered
 EndDerived
 
 /omegaiotasubtilde DerivedName
 (omegaiotasub) Base
-(tildecmb) AddCentered
-EndDerived
-
-/Alpha.sc DerivedName
-(A.sc) Base
-EndDerived
-
-/Beta.sc DerivedName
-(B.sc) Base
-EndDerived
-
-/Epsilon.sc DerivedName
-(E.sc) Base
-EndDerived
-
-/Zeta.sc DerivedName
-(Z.sc) Base
-EndDerived
-
-/Eta.sc DerivedName
-(H.sc) Base
-EndDerived
-
-/Iota.sc DerivedName
-(I.sc) Base
-EndDerived
-
-/Kappa.sc DerivedName
-(K.sc) Base
-EndDerived
-
-/Mu.sc DerivedName
-(M.sc) Base
-EndDerived
-
-/Nu.sc DerivedName
-(N.sc) Base
-EndDerived
-
-/Omicron.sc DerivedName
-(O.sc) Base
-EndDerived
-
-/Rho.sc DerivedName
-(P.sc) Base
-EndDerived
-
-/Tau.sc DerivedName
-(T.sc) Base
-EndDerived
-
-/Upsilon.sc DerivedName
-(Y.sc) Base
-EndDerived
-
-/Chi.sc DerivedName
-(X.sc) Base
-EndDerived
-
-/Iotadieresis.sc DerivedName
-(Idieresis.sc) Base
-EndDerived
-
-/Upsilondieresis.sc DerivedName
-(Ydieresis.sc) Base
+(tildecmb) -36 0 AddCentered
 EndDerived
 
 /questiongreek DerivedName
@@ -4560,7 +4511,7 @@ EndDerived
 
 /Ishort DerivedName
 (Icyr) Base
-(brevecmb.cyrcap) 4 0 AddCentered
+(brevecmb.cyrcap) -53 0 AddCentered
 EndDerived
 
 /Em DerivedName
@@ -4605,7 +4556,7 @@ EndDerived
 
 /Gje DerivedName
 (Ghe) Base
-(acutecmb.cap) 46 0 AddCentered
+(acutecmb.cap) -7 0 AddCentered
 EndDerived
 
 /Iukran DerivedName
@@ -4622,17 +4573,17 @@ EndDerived
 
 /Kje DerivedName
 (Ka) Base
-(acutecmb.cap) 35 0 AddCentered
+(acutecmb.cap) -41 0 AddCentered
 EndDerived
 
 /Igravecyr DerivedName
 (Icyr) Base
-(gravecmb.cap) 4 0 AddCentered
+(gravecmb.cap) -53 0 AddCentered
 EndDerived
 
 /Ushort DerivedName
 (Ucyr) Base
-(brevecmb.cyrcap) -8 0 AddCentered
+(brevecmb.cyrcap) -64 0 AddCentered
 EndDerived
 
 /Dze DerivedName
@@ -4645,7 +4596,7 @@ EndDerived
 
 /Zhebreve DerivedName
 (Zhe) Base
-(brevecmb.cyrcap) AddCentered
+(brevecmb.cyrcap) -45 0 AddCentered
 EndDerived
 
 /Palochka DerivedName
@@ -4654,7 +4605,7 @@ EndDerived
 
 /Abrevecyr DerivedName
 (Acyr) Base
-(brevecmb.cyrcap) AddCentered
+(brevecmb.cyrcap) -40 0 AddCentered
 EndDerived
 
 /Aie DerivedName
@@ -4663,7 +4614,7 @@ EndDerived
 
 /Iebreve DerivedName
 (Ie) Base
-(brevecmb.cyrcap) 26 0 AddCentered
+(brevecmb.cyrcap) -22 0 AddCentered
 EndDerived
 
 /Schwacyr DerivedName
@@ -4672,12 +4623,11 @@ EndDerived
 
 /Imacroncyr DerivedName
 (Icyr) Base
-(macroncmb.cap) 4 0 AddCentered
+(macroncmb.cap) -53 0 AddCentered
 EndDerived
 
 /Odieresiscyr DerivedName
-(Ocyr) Base
-(dieresiscmb.cap) AddCentered
+(Odieresis) Base
 EndDerived
 
 /Obarcyr DerivedName
@@ -4686,12 +4636,12 @@ EndDerived
 
 /Umacroncyr DerivedName
 (Ucyr) Base
-(macroncmb.cap) -15 0 AddCentered
+(macroncmb.cap) -64 0 AddCentered
 EndDerived
 
 /Uacutedblcyr DerivedName
 (Ucyr) Base
-(hungarumlautcmb.cap) -15 0 AddCentered
+(hungarumlautcmb.cap) -64 0 AddCentered
 EndDerived
 
 /acyr DerivedName
@@ -4704,12 +4654,11 @@ EndDerived
 
 /icyr DerivedName
 (u) Base
-(brevecmb.cyr) 1 2 AddCentered
 EndDerived
 
 /ishort DerivedName
 (icyr) Base
-(brevecmb.cyr) 1 2 AddCentered
+(brevecmb.cyr) -44 2 AddCentered
 EndDerived
 
 /ocyr DerivedName
@@ -4740,6 +4689,10 @@ EndDerived
 (x) Base
 EndDerived
 
+/sha DerivedName
+(mturned) Base
+EndDerived
+
 /iegrave DerivedName
 (egrave) Base
 EndDerived
@@ -4750,7 +4703,7 @@ EndDerived
 
 /gje DerivedName
 (ghe) Base
-(acutecmb) 53 2 AddCentered
+(acutecmb) -23 2 AddCentered
 EndDerived
 
 /dze DerivedName
@@ -4775,17 +4728,118 @@ EndDerived
 
 /kje DerivedName
 (ka) Base
-(acutecmb) 32 2 AddCentered
+(acutecmb) -28 2 AddCentered
 EndDerived
 
 /igravecyr DerivedName
-(icyr) Base
-(gravecmb) 1 2 AddCentered
+(ugrave) Base
 EndDerived
 
 /ushort DerivedName
 (ucyr) Base
-(brevecmb.cyr) 12 0 AddCentered
+(brevecmb.cyr) -54 0 AddCentered
+EndDerived
+
+/fita DerivedName
+(obar) Base
+EndDerived
+
+/shha DerivedName
+(h) Base
+498 Width
+EndDerived
+
+/zhebreve DerivedName
+(zhe) Base
+612 Width
+(brevecmb.cyr) -36 0 AddCentered
+EndDerived
+
+/palochka DerivedName
+(l) Base
+EndDerived
+
+/abrevecyr DerivedName
+(acyr) Base
+(brevecmb.cyr) -52 0 AddCentered
+EndDerived
+
+/aie DerivedName
+(ae) Base
+EndDerived
+
+/iebreve DerivedName
+(ie) Base
+(brevecmb.cyr) -34 0 AddCentered
+EndDerived
+
+/schwacyr DerivedName
+(schwa) Base
+466 Width
+EndDerived
+
+/imacroncyr DerivedName
+(umacron) Base
+EndDerived
+
+/odieresiscyr DerivedName
+(odieresis) Base
+EndDerived
+
+/obarcyr DerivedName
+(obar) Base
+EndDerived
+
+/umacroncyr DerivedName
+(ucyr) Base
+(macroncmb) -54 0 AddCentered
+EndDerived
+
+/uacutedblcyr DerivedName
+(ucyr) Base
+(hungarumlautcmb) -54 0 AddCentered
+EndDerived
+
+/El.a DerivedName
+(Lambda) Base
+EndDerived
+
+/acyr.a DerivedName
+(a.a) Base
+EndDerived
+
+/abrevecyr.a DerivedName
+(acyr.a) Base
+(brevecmb.cyr) -47 0 AddCentered
+EndDerived
+
+/acyr.b DerivedName
+(a.b) Base
+EndDerived
+
+/abrevecyr.b DerivedName
+(acyr.b) Base
+(brevecmb.cyr) -52 0 AddCentered
+EndDerived
+
+/ve.a DerivedName
+(beta.a) Base
+EndDerived
+
+/ghe.a DerivedName
+(imacron) Base
+EndDerived
+
+/de.a DerivedName
+(g) Base
+EndDerived
+
+/el.a DerivedName
+(vturned) Base
+EndDerived
+
+/pe.a DerivedName
+(umacron) Base
 EndDerived
 
 /f_f_i DerivedName
