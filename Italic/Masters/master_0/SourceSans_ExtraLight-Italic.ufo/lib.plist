@@ -2,8 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>com.typemytype.robofont.foreground.layerStrokeColor</key>
+		<array>
+			<real>0.5</real>
+			<integer>0</integer>
+			<real>0.5</real>
+			<real>0.7</real>
+		</array>
 		<key>com.typemytype.robofont.layerOrder</key>
 		<array>
+			<string>mask</string>
+		</array>
+		<key>com.typemytype.robofont.mask.layerStrokeColor</key>
+		<array>
+			<integer>1</integer>
+			<real>0.75</real>
+			<integer>0</integer>
+			<real>0.7</real>
 		</array>
 		<key>com.typemytype.robofont.segmentType</key>
 		<string>curve</string>
@@ -1051,7 +1066,6 @@
 					<string>Dze</string>
 					<string>Iukran</string>
 					<string>Yi</string>
-					<string>Yi.a</string>
 					<string>Je</string>
 					<string>Lje</string>
 					<string>Nje</string>
@@ -1127,7 +1141,6 @@
 					<string>dze</string>
 					<string>iukran</string>
 					<string>yi</string>
-					<string>yi.a</string>
 					<string>je</string>
 					<string>lje</string>
 					<string>nje</string>
@@ -1167,8 +1180,10 @@
 					<string>Zhe.a</string>
 					<string>Ka.a</string>
 					<string>El.a</string>
-					<string>Zhedescender.a</string>
+					<string>Yi.a</string>
+					<string>Lje.a</string>
 					<string>Kje.a</string>
+					<string>Zhedescender.a</string>
 					<string>Kadescender.a</string>
 					<string>Kabashkir.a</string>
 					<string>Zhebreve.a</string>
@@ -1176,32 +1191,35 @@
 					<string>abrevecyr.a</string>
 					<string>acyr.b</string>
 					<string>abrevecyr.b</string>
-					<string>be.a</string>
-					<string>ve.a</string>
-					<string>ghe.a</string>
 					<string>de.a</string>
 					<string>zhe.a</string>
-					<string>zhe.b</string>
-					<string>zhe.c</string>
-					<string>ze.a</string>
-					<string>icyr.a</string>
-					<string>ishort.a</string>
 					<string>ka.a</string>
-					<string>ka.b</string>
-					<string>ka.c</string>
 					<string>el.a</string>
-					<string>pe.a</string>
-					<string>te.a</string>
-					<string>tse.a</string>
-					<string>sha.a</string>
-					<string>shcha.a</string>
-					<string>yu.a</string>
-					<string>igravecyr.a</string>
+					<string>yi.a</string>
+					<string>lje.a</string>
 					<string>kje.a</string>
 					<string>zhedescender.a</string>
 					<string>kadescender.a</string>
 					<string>kabashkir.a</string>
 					<string>zhebreve.a</string>
+					<string>be.c</string>
+					<string>ve.c</string>
+					<string>ghe.c</string>
+					<string>de.c</string>
+					<string>ze.c</string>
+					<string>icyr.c</string>
+					<string>ishort.c</string>
+					<string>pe.c</string>
+					<string>te.c</string>
+					<string>tse.c</string>
+					<string>sha.c</string>
+					<string>shcha.c</string>
+					<string>igravecyr.c</string>
+					<string>zhe.b</string>
+					<string>ka.b</string>
+					<string>yu.b</string>
+					<string>zhe.d</string>
+					<string>ka.d</string>
 					<string>numero</string>
 					<string>ampersand</string>
 					<string>zero</string>
@@ -1348,7 +1366,7 @@
 					<string>deposeemark</string>
 					<string>marcaregistrada</string>
 					<string>at</string>
-					<string>at.case</string>
+					<string>at.cap</string>
 					<string>numbersign</string>
 					<string>zero.sups</string>
 					<string>one.sups</string>
@@ -1682,6 +1700,7 @@
 					<string>hungarumlautcmb.cap</string>
 					<string>caroncmb</string>
 					<string>caroncmb.cap</string>
+					<string>caroncmb.a</string>
 					<string>dblgravecmb</string>
 					<string>dblgravecmb.cap</string>
 					<string>breveinvertedcmb</string>
@@ -1703,6 +1722,7 @@
 					<string>dieresisbelowcmb</string>
 					<string>ringbelowcmb</string>
 					<string>commabelowcmb</string>
+					<string>commabelowcmb.a</string>
 					<string>cedillacmb</string>
 					<string>cedillacmb.cap</string>
 					<string>ogonekcmb</string>
@@ -1728,39 +1748,49 @@
 					<string>macrondoublebelowcmb</string>
 					<string>breveinverteddoublecmb</string>
 					<string>breveinverteddoublecmb.a</string>
-					<string>dieresisacute</string>
-					<string>dieresisacute.cap</string>
+					<string>circumflexgrave</string>
+					<string>circumflexgrave.cap</string>
+					<string>circumflexacute</string>
+					<string>circumflexacute.cap</string>
+					<string>circumflextilde</string>
+					<string>circumflextilde.cap</string>
+					<string>circumflexmacron</string>
+					<string>circumflexmacron.cap</string>
+					<string>circumflexbreve</string>
+					<string>circumflexbreve.cap</string>
+					<string>circumflexhoi</string>
+					<string>circumflexhoi.cap</string>
+					<string>circumflexcaron</string>
+					<string>circumflexcaron.cap</string>
+					<string>macronacute</string>
+					<string>macronacute.cap</string>
+					<string>brevegrave</string>
+					<string>brevegrave.cap</string>
+					<string>breveacute</string>
+					<string>breveacute.cap</string>
+					<string>brevetilde</string>
+					<string>brevetilde.cap</string>
+					<string>brevehoi</string>
+					<string>brevehoi.cap</string>
 					<string>dieresisgrave</string>
 					<string>dieresisgrave.cap</string>
 					<string>dialytikagravecmb</string>
+					<string>dieresisacute</string>
+					<string>dieresisacute.cap</string>
 					<string>dieresistilde</string>
 					<string>dieresismacron</string>
 					<string>dieresismacron.cap</string>
 					<string>dieresiscaron</string>
 					<string>dieresiscaron.cap</string>
-					<string>circumflexacute</string>
-					<string>circumflexacute.cap</string>
-					<string>circumflexgrave</string>
-					<string>circumflexgrave.cap</string>
-					<string>circumflexhoi</string>
-					<string>circumflexhoi.cap</string>
-					<string>circumflextilde</string>
-					<string>circumflextilde.cap</string>
-					<string>breveacute</string>
-					<string>breveacute.cap</string>
-					<string>brevegrave</string>
-					<string>brevegrave.cap</string>
-					<string>brevehoi</string>
-					<string>brevehoi.cap</string>
-					<string>brevetilde</string>
-					<string>brevetilde.cap</string>
-					<string>circumflexbreve</string>
-					<string>circumflexbreve.cap</string>
-					<string>asperacutecmb</string>
+					<string>ringacute</string>
+					<string>ringacute.cap</string>
+					<string>carondotaccent</string>
+					<string>carondotaccent.cap</string>
 					<string>aspergravecmb</string>
+					<string>asperacutecmb</string>
 					<string>aspertildecmb</string>
-					<string>lenisacutecmb</string>
 					<string>lenisgravecmb</string>
+					<string>lenisacutecmb</string>
 					<string>lenistildecmb</string>
 					<string>CGJ</string>
 					<string>command</string>
@@ -1779,20 +1809,23 @@
 					<string>fi</string>
 					<string>fl</string>
 					<string>apostrophemod</string>
-					<string>caron.a</string>
-					<string>carondotaccentcmb</string>
-					<string>carondotaccentcmb.cap</string>
-					<string>commabelowcmb.a</string>
 					<string>commaturnedmod</string>
-					<string>macronacute</string>
-					<string>macronacute.cap</string>
-					<string>ringacutecmb</string>
-					<string>ringacutecmb.cap</string>
+					<string>uni004Duni0300</string>
+					<string>uni004Duni0304</string>
+					<string>uni006Duni0300</string>
+					<string>uni006Duni0304</string>
+					<string>uni00CAuni0304</string>
+					<string>uni00CAuni030C</string>
+					<string>uni00EAuni0304</string>
+					<string>uni00EAuni030C</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
 			</dict>
 		</array>
+		<key>com.typesupply.MetricsMachine4.groupColors</key>
+		<dict>
+		</dict>
 		<key>public.glyphOrder</key>
 		<array>
 			<string>.notdef</string>
@@ -2834,7 +2867,6 @@
 			<string>Dze</string>
 			<string>Iukran</string>
 			<string>Yi</string>
-			<string>Yi.a</string>
 			<string>Je</string>
 			<string>Lje</string>
 			<string>Nje</string>
@@ -2910,7 +2942,6 @@
 			<string>dze</string>
 			<string>iukran</string>
 			<string>yi</string>
-			<string>yi.a</string>
 			<string>je</string>
 			<string>lje</string>
 			<string>nje</string>
@@ -2950,8 +2981,10 @@
 			<string>Zhe.a</string>
 			<string>Ka.a</string>
 			<string>El.a</string>
-			<string>Zhedescender.a</string>
+			<string>Yi.a</string>
+			<string>Lje.a</string>
 			<string>Kje.a</string>
+			<string>Zhedescender.a</string>
 			<string>Kadescender.a</string>
 			<string>Kabashkir.a</string>
 			<string>Zhebreve.a</string>
@@ -2959,26 +2992,35 @@
 			<string>abrevecyr.a</string>
 			<string>acyr.b</string>
 			<string>abrevecyr.b</string>
-			<string>be.a</string>
-			<string>ve.a</string>
-			<string>ghe.a</string>
 			<string>de.a</string>
 			<string>zhe.a</string>
-			<string>zhe.b</string>
-			<string>zhe.c</string>
-			<string>ze.a</string>
 			<string>ka.a</string>
-			<string>ka.b</string>
-			<string>ka.c</string>
 			<string>el.a</string>
-			<string>pe.a</string>
-			<string>te.a</string>
-			<string>yu.a</string>
+			<string>yi.a</string>
+			<string>lje.a</string>
 			<string>kje.a</string>
 			<string>zhedescender.a</string>
 			<string>kadescender.a</string>
 			<string>kabashkir.a</string>
 			<string>zhebreve.a</string>
+			<string>be.c</string>
+			<string>ve.c</string>
+			<string>ghe.c</string>
+			<string>de.c</string>
+			<string>ze.c</string>
+			<string>icyr.c</string>
+			<string>ishort.c</string>
+			<string>pe.c</string>
+			<string>te.c</string>
+			<string>tse.c</string>
+			<string>sha.c</string>
+			<string>shcha.c</string>
+			<string>igravecyr.c</string>
+			<string>zhe.b</string>
+			<string>ka.b</string>
+			<string>yu.b</string>
+			<string>zhe.d</string>
+			<string>ka.d</string>
 			<string>numero</string>
 			<string>ampersand</string>
 			<string>zero</string>
@@ -3125,7 +3167,7 @@
 			<string>deposeemark</string>
 			<string>marcaregistrada</string>
 			<string>at</string>
-			<string>at.case</string>
+			<string>at.cap</string>
 			<string>numbersign</string>
 			<string>zero.sups</string>
 			<string>one.sups</string>
@@ -3459,6 +3501,7 @@
 			<string>hungarumlautcmb.cap</string>
 			<string>caroncmb</string>
 			<string>caroncmb.cap</string>
+			<string>caroncmb.a</string>
 			<string>dblgravecmb</string>
 			<string>dblgravecmb.cap</string>
 			<string>breveinvertedcmb</string>
@@ -3480,6 +3523,7 @@
 			<string>dieresisbelowcmb</string>
 			<string>ringbelowcmb</string>
 			<string>commabelowcmb</string>
+			<string>commabelowcmb.a</string>
 			<string>cedillacmb</string>
 			<string>cedillacmb.cap</string>
 			<string>ogonekcmb</string>
@@ -3505,39 +3549,49 @@
 			<string>macrondoublebelowcmb</string>
 			<string>breveinverteddoublecmb</string>
 			<string>breveinverteddoublecmb.a</string>
-			<string>dieresisacute</string>
-			<string>dieresisacute.cap</string>
+			<string>circumflexgrave</string>
+			<string>circumflexgrave.cap</string>
+			<string>circumflexacute</string>
+			<string>circumflexacute.cap</string>
+			<string>circumflextilde</string>
+			<string>circumflextilde.cap</string>
+			<string>circumflexmacron</string>
+			<string>circumflexmacron.cap</string>
+			<string>circumflexbreve</string>
+			<string>circumflexbreve.cap</string>
+			<string>circumflexhoi</string>
+			<string>circumflexhoi.cap</string>
+			<string>circumflexcaron</string>
+			<string>circumflexcaron.cap</string>
+			<string>macronacute</string>
+			<string>macronacute.cap</string>
+			<string>brevegrave</string>
+			<string>brevegrave.cap</string>
+			<string>breveacute</string>
+			<string>breveacute.cap</string>
+			<string>brevetilde</string>
+			<string>brevetilde.cap</string>
+			<string>brevehoi</string>
+			<string>brevehoi.cap</string>
 			<string>dieresisgrave</string>
 			<string>dieresisgrave.cap</string>
 			<string>dialytikagravecmb</string>
+			<string>dieresisacute</string>
+			<string>dieresisacute.cap</string>
 			<string>dieresistilde</string>
 			<string>dieresismacron</string>
 			<string>dieresismacron.cap</string>
 			<string>dieresiscaron</string>
 			<string>dieresiscaron.cap</string>
-			<string>circumflexacute</string>
-			<string>circumflexacute.cap</string>
-			<string>circumflexgrave</string>
-			<string>circumflexgrave.cap</string>
-			<string>circumflexhoi</string>
-			<string>circumflexhoi.cap</string>
-			<string>circumflextilde</string>
-			<string>circumflextilde.cap</string>
-			<string>breveacute</string>
-			<string>breveacute.cap</string>
-			<string>brevegrave</string>
-			<string>brevegrave.cap</string>
-			<string>brevehoi</string>
-			<string>brevehoi.cap</string>
-			<string>brevetilde</string>
-			<string>brevetilde.cap</string>
-			<string>circumflexbreve</string>
-			<string>circumflexbreve.cap</string>
-			<string>asperacutecmb</string>
+			<string>ringacute</string>
+			<string>ringacute.cap</string>
+			<string>carondotaccent</string>
+			<string>carondotaccent.cap</string>
 			<string>aspergravecmb</string>
+			<string>asperacutecmb</string>
 			<string>aspertildecmb</string>
-			<string>lenisacutecmb</string>
 			<string>lenisgravecmb</string>
+			<string>lenisacutecmb</string>
 			<string>lenistildecmb</string>
 			<string>CGJ</string>
 			<string>command</string>
@@ -3556,15 +3610,15 @@
 			<string>fi</string>
 			<string>fl</string>
 			<string>apostrophemod</string>
-			<string>caron.a</string>
-			<string>carondotaccentcmb</string>
-			<string>carondotaccentcmb.cap</string>
-			<string>commabelowcmb.a</string>
 			<string>commaturnedmod</string>
-			<string>macronacute</string>
-			<string>macronacute.cap</string>
-			<string>ringacutecmb</string>
-			<string>ringacutecmb.cap</string>
+			<string>uni004Duni0300</string>
+			<string>uni004Duni0304</string>
+			<string>uni006Duni0300</string>
+			<string>uni006Duni0304</string>
+			<string>uni00CAuni0304</string>
+			<string>uni00CAuni030C</string>
+			<string>uni00EAuni0304</string>
+			<string>uni00EAuni030C</string>
 		</array>
 	</dict>
 </plist>
