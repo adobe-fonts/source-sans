@@ -1,43 +1,64 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph format="1" name="digamma">
-	<unicode hex="03DD" />
-  <advance width="413" />
-  <outline>
-    <contour>
-      <point name="hintSet0000" type="line" x="82" y="-179" />
-      <point type="line" x="165" y="-179" />
-      <point x="163" y="-62" />
-      <point x="161" y="35" />
-      <point type="curve" x="161" y="143" />
-      <point type="line" x="367" y="143" />
-      <point type="line" x="367" y="202" />
-      <point type="line" x="161" y="202" />
-      <point type="line" x="159" y="419" />
-      <point type="line" x="387" y="419" />
-      <point type="line" x="387" y="486" />
-      <point type="line" x="82" y="486" />
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>com.adobe.type.autohint.v2</key>
-      <dict>
-        <key>id</key>
-        <string>w413l82-179l165-179163-6216135c161143l367143l367202l161202l159419l387419l387486l82486</string>
-        <key>hintSetList</key>
-        <array>
-          <dict>
-            <key>pointTag</key>
-            <string>hintSet0000</string>
-            <key>stems</key>
-            <array>
-              <string>hstem 143 59</string>
-              <string>hstem 419 67</string>
-              <string>vstem 82 79</string>
-            </array>
-          </dict>
-        </array>
-      </dict>
-    </dict>
-  </lib>
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="digamma" format="2">
+	<unicode hex="03DD"/>
+	<advance width="414"/>
+	<outline>
+		<contour>
+			<point name="hintSet0000" x="82" y="-179" type="line"/>
+			<point x="166" y="-179" type="line"/>
+			<point x="163" y="-64"/>
+			<point x="162" y="32"/>
+			<point x="162" y="140" type="curve"/>
+			<point x="368" y="140" type="line"/>
+			<point x="368" y="205" type="line"/>
+			<point name="hintSet0005" x="161" y="205" type="line"/>
+			<point x="159" y="419" type="line"/>
+			<point x="388" y="419" type="line"/>
+			<point x="388" y="486" type="line"/>
+			<point name="hintSet0009" x="82" y="486" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="aboveLC" x="249" y="509"/>
+	<lib>
+		<dict>
+			<key>com.adobe.type.autohint.v2</key>
+			<dict>
+				<key>hintSetList</key>
+				<array>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0000</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 140 65</string>
+							<string>hstem 419 67</string>
+							<string>vstem 82 80</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0005</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 140 65</string>
+							<string>hstem 419 67</string>
+							<string>vstem 82 78</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0009</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 140 65</string>
+							<string>hstem 419 67</string>
+							<string>vstem 82 80</string>
+						</array>
+					</dict>
+				</array>
+				<key>id</key>
+				<string>w414l82-179l166-179163-6416232c162140l368140l368205l161205l159419l388419l388486l82486</string>
+			</dict>
+		</dict>
+	</lib>
 </glyph>
