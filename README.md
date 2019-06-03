@@ -57,10 +57,10 @@ or this on Windows:
 
 ### Building the variable fonts
 
-To build the variable TTFs you must install Adobe's **fontmake** fork using this command:
+To build the variable TTFs you must install **fontmake** using this command:
 
 ```sh
-$ pip install git+https://github.com/adobe-type-tools/fontmake
+$ pip install fontmake
 ```
 
 A shell script named **buildVFs.sh** is provided in the root directory.
