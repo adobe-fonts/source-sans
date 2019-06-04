@@ -46,12 +46,12 @@
 
 @LETTERS_MAJUSCULE_ALL = [ @LETTERS_MAJUSCULE_LATIN_ALL @LETTERS_MAJUSCULE_GREEK_ALL @LETTERS_MAJUSCULE_CYRILLIC_ALL ];
 
-@MARKS_CMB_ABOVE = [ gravecmb variacmb acutecmb tonoscmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb dblgravecmb breveinvertedcmb commaturnedabovecmb aspercmb commaabovecmb leniscmb leftangleabovecmb horncmb cedillacmb ogonekcmb tildeoverlaycmb xabovecmb perispomenicmb koroniscmb dialytikatonoscmb ];
+@MARKS_CMB_ABOVE = [ gravecmb variacmb acutecmb tonoscmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb commaturnedabovecmb aspercmb commaabovecmb leniscmb leftangleabovecmb horncmb cedillacmb ogonekcmb tildeoverlaycmb xabovecmb perispomenicmb koroniscmb dialytikatonoscmb dotaboverightcmb ];
 @MARKS_CMB_BELOW = [ lefttackbelowcmb righttackbelowcmb ringhalfleftbelowcmb uptackbelowcmb downtackbelowcmb plusbelowcmb minusbelowcmb dotbelowcmb dieresisbelowcmb ringbelowcmb commabelowcmb verticallinebelowcmb bridgebelowcmb caronbelowcmb brevebelowcmb breveinvertedbelowcmb tildebelowcmb macronbelowcmb ringhalfrightbelowcmb bridgeinvertedbelowcmb squarebelowcmb seagullbelowcmb iotasubscriptcmb ];
 @MARKS_CMB_ALL = [ @MARKS_CMB_ABOVE @MARKS_CMB_BELOW ];
 
-@MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb candrabinducmb ringcmb hungarumlautcmb caroncmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresismacron dieresiscaron ringacute carondotaccent ];
-@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap candrabinducmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap circumflexgrave.cap circumflexacute.cap circumflextilde.cap circumflexmacron.cap circumflexbreve.cap circumflexhoi.cap circumflexcaron.cap macronacute.cap brevegrave.cap breveacute.cap brevetilde.cap brevehoi.cap dieresisgrave.cap dieresisacute.cap dieresismacron.cap dieresiscaron.cap ringacute.cap carondotaccent.cap ];
+@MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb candrabinducmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb dotaboverightcmb circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresismacron dieresiscaron ringacute carondotaccent ];
+@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap candrabinducmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap verticallineabovecmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap dotaboverightcmb.cap circumflexgrave.cap circumflexacute.cap circumflextilde.cap circumflexmacron.cap circumflexbreve.cap circumflexhoi.cap circumflexcaron.cap macronacute.cap brevegrave.cap breveacute.cap brevetilde.cap brevehoi.cap dieresisgrave.cap dieresisacute.cap dieresismacron.cap dieresiscaron.cap ringacute.cap carondotaccent.cap ];
 
 @FIGURES_LINING_TABULAR = [ zero one two three four five six seven eight nine ];
 @FIGURES_LINING_PROPORTIONAL = [ zero.pnum one.pnum two.pnum three.pnum four.pnum five.pnum six.pnum seven.pnum eight.pnum nine.pnum ];
@@ -970,9 +970,9 @@ feature cv01 { # Character Variant 1 — serifed I forms
 
 	cvParameters {
 		FeatUILabelNameID {
-			name 3 1 0x0409 "Serifed I, Iota & Ukranian I [ \0399 \0406 \0407 ]"; # English US
-			name 3 1 0x0809 "Serifed I, Iota & Ukranian I [ \0399 \0406 \0407 ]"; # English GB
-			name 1 0 0 "Serifed I, Iota & Ukranian I"; # Mac English
+			name 3 1 0x0409 "Serifed I (uc i), Iota & Ukranian I [ \0399 \0406 \0407 ]"; # English US
+			name 3 1 0x0809 "Serifed I (uc i), Iota & Ukranian I [ \0399 \0406 \0407 ]"; # English GB
+			name 1 0 0 "Serifed I (uc i), Iota & Ukranian I"; # Mac English
 #			name 3 1 0x0408 "l \03BC\03B5 \03B1\03BA\03C1\03B5\03BC\03CC\03BD\03B5\03C2"; # Greek FIX THIS!
 #			name 3 1 0x0419 "\0456 \0438 \04CF \0441 \0437\0430\0441\0435\0447\043A\0430\043C\0438"; # Russian FIX THIS!
 		};
@@ -1063,9 +1063,9 @@ feature cv04 { # Character Variant 4 — straight l forms
 
 	cvParameters {
 		FeatUILabelNameID {
-			name 3 1 0x0409 "Simple l"; # English US
-			name 3 1 0x0809 "Simple l"; # English GB
-			name 1 0 0 "Simple l"; # Mac English
+			name 3 1 0x0409 "Simple l (lc L)"; # English US
+			name 3 1 0x0809 "Simple l (lc L)"; # English GB
+			name 1 0 0 "Simple l (lc L)"; # Mac English
 #			name 3 1 0x0408 "l \03BC\03B5 \03B1\03BA\03C1\03B5\03BC\03CC\03BD\03B5\03C2"; # Greek FIX THIS!
 #			name 3 1 0x0419 "\0456 \0438 \04CF \0441 \0437\0430\0441\0435\0447\043A\0430\043C\0438"; # Russian FIX THIS!
 		};
@@ -1566,9 +1566,9 @@ include (../../c2sc_smcp.fea); # imports c2sc & smcp features (which are blank f
 #--------------------------------------
 feature ss01 { # Stylistic Set 1 — Latin serifed I
 	featureNames {
-		name 3 1 0x0409 "Serifed I"; # English US
-		name 3 1 0x0809 "Serifed I"; # English GB
-		name 1 0 0 "Serifed I"; # Mac English
+		name 3 1 0x0409 "Serifed I (\21E7 i)"; # English US
+		name 3 1 0x0809 "Serifed I (\21E7 i)"; # English GB
+		name 1 0 0 "Serifed I (\21E7 i)"; # Mac English
 		# name 3 1 0x0408 "i & l \03BC\03B5 \03B1\03BA\03C1\03B5\03BC\03CC\03BD\03B5\03C2"; # Greek FIX THIS!
 		# name 3 1 0x0419 "\0456 \0438 \04CF \0441 \0437\0430\0441\0435\0447\043A\0430\043C\0438"; # Russian FIX THIS!
 	};
@@ -1632,9 +1632,9 @@ feature ss04 { # Stylistic Set 4 — Latin single storey g; Greek alternate thet
 #--------------------------------------
 feature ss05 { # Stylistic Set 5 — Latin straight l
 	featureNames {
-		name 3 1 0x0409 "Simple l"; # English US
-		name 3 1 0x0809 "Simple l"; # English GB
-		name 1 0 0 "Simple l"; # Mac English
+		name 3 1 0x0409 "Simple l (\21E9 L)"; # English US
+		name 3 1 0x0809 "Simple l (\21E9 L)"; # English GB
+		name 1 0 0 "Simple l (\21E9 L)"; # Mac English
 #			name 3 1 0x0408 "l \03BC\03B5 \03B1\03BA\03C1\03B5\03BC\03CC\03BD\03B5\03C2"; # Greek FIX THIS!
 #			name 3 1 0x0419 "\0456 \0438 \04CF \0441 \0437\0430\0441\0435\0447\043A\0430\043C\0438"; # Russian FIX THIS!
 		};

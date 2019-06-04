@@ -1,26 +1,26 @@
 include (../../../../featuresVar.fea);
 
 table OS/2 {
-	include (../../Instances/Black/os2.fea);
+	include (../../Instances/Semibold/os2.fea);
 	include (../../../../familyOS2.fea);
 } OS/2;
 
 
 # GPOS -----------------------------------
-include (../../Instances/Black/markclasses.fea);
+include (../../Instances/Semibold/markclasses.fea);
 
 feature mark {
-	include (../../Instances/Black/mark.fea);
+	include (../../Instances/Semibold/mark.fea);
 } mark;
 
 
 feature mkmk {
-	include (../../Instances/Black/mkmk.fea);
+	include (../../Instances/Semibold/mkmk.fea);
 } mkmk;
 
 
 feature kern {
     lookup KERN useExtension {
-		include (../../Instances/Black/kern.fea);
+		include (../../Instances/Semibold/kern.fea);
     } KERN;
 } kern;
