@@ -22,9 +22,8 @@ function build_var_font {
 	dsp_file="$1"/$2.designspace
 
 	# build variable OTF
-	# -p is for using 'post' table format 3
 	buildmasterotfs "$dsp_file"
-	buildcff2vf -p "$dsp_file"
+	buildcff2vf --omit-mac-names -d "$dsp_file"
 
 	# extract and subroutinize the CFF2 table
 	echo 'Subroutinizing' $2.otf
