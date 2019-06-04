@@ -36,12 +36,12 @@
 
 @LETTERS_MAJUSCULE_CYRILLIC_BASIC = [ Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup Ghestroke Zhedescender Zedescender Kadescender Kabashkir Endescender Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Aie Schwacyr Obarcyr ];
 @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [ Ishort Iegrave Io Dje Gje Yi Kje Igravecyr Ushort Zhebreve Abrevecyr Iebreve Imacroncyr Odieresiscyr Umacroncyr Uacutedblcyr ];
-@LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES = [ De.a Zhe.a Ka.a El.a Yi.a Lje.a Kje.a Zhedescender.a Kadescender.a Kabashkir.a Zhebreve.a ];
+@LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES = [ De.a Zhe.a Ka.a El.a Ef.a Yi.a Lje.a Kje.a Zhedescender.a Kadescender.a Kabashkir.a Zhebreve.a ];
 @LETTERS_MAJUSCULE_CYRILLIC_ALL = [ @LETTERS_MAJUSCULE_CYRILLIC_BASIC @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED @LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES ];
 
 @LETTERS_MINISCULE_CYRILLIC_BASIC = [ acyr be ve ghe de ie zhe ze icyr ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ieukran dze iukran je lje nje tshe dzhe yat fita izhitsa gheup ghestroke zhedescender zedescender kadescender kabashkir endescender esdescender ustraight ustraightstroke hadescender chedescender shha palochka aie schwacyr obarcyr ];
 @LETTERS_MINISCULE_CYRILLIC_ACCENTED = [ ishort iegrave io dje gje yi kje igravecyr ushort zhebreve abrevecyr iebreve imacroncyr odieresiscyr umacroncyr uacutedblcyr ];
-@LETTERS_MINISCULE_CYRILLIC_ALTERNATES = [ de.a zhe.a ka.a el.a yi.a lje.a kje.a zhedescender.a kadescender.a kabashkir.a zhebreve.a ];
+@LETTERS_MINISCULE_CYRILLIC_ALTERNATES = [ de.a zhe.a ka.a el.a ef.a yi.a lje.a kje.a zhedescender.a kadescender.a kabashkir.a zhebreve.a ];
 @LETTERS_MINISCULE_CYRILLIC_ALL = [ @LETTERS_MINISCULE_CYRILLIC_BASIC @LETTERS_MINISCULE_CYRILLIC_ACCENTED @LETTERS_MINISCULE_CYRILLIC_ALTERNATES ];
 
 @LETTERS_MAJUSCULE_ALL = [ @LETTERS_MAJUSCULE_LATIN_ALL @LETTERS_MAJUSCULE_GREEK_ALL @LETTERS_MAJUSCULE_CYRILLIC_ALL ];
@@ -1264,8 +1264,8 @@ feature cv13 { # Character Variant 13 — Cyrillic cursive be, Serbian prefernce
 #--------------------------------------
 feature cv14 { # Character Variant 14 — Cyrillic cursive forms
 
-@CYRILLIC_LC_PRINTED_FORMS = [ ve ghe de ze icyr ishort pe te tse sha shcha igravecyr ];
-@CYRILLIC_LC_CURSIVE_FORMS = [ ve.c ghe.c de.c ze.c icyr.c ishort.c pe.c te.c tse.c sha.c shcha.c igravecyr.c ];
+@CYRILLIC_LC_PRINTED_FORMS = [ ve ghe de ze icyr ishort pe te tse sha shcha gje igravecyr ];
+@CYRILLIC_LC_CURSIVE_FORMS = [ ve.c ghe.c de.c ze.c icyr.c ishort.c pe.c te.c tse.c sha.c shcha.c gje.c igravecyr.c ];
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1284,24 +1284,24 @@ feature cv14 { # Character Variant 14 — Cyrillic cursive forms
 } cv14;
 
 #--------------------------------------
-feature cv15 { # Character Variant 15 — Triangular De & El forms
+feature cv15 { # Character Variant 15 — Cyrillic geometric De, El, Ef forms
 
-@CYRILLIC_TRAPEZOID_FORMS = [ De El Lje de el lje ];
-@CYRILLIC_TRIANGULAR_FORMS = [ De.a El.a Lje.a de.a el.a lje.a ];
+@CYRILLIC_TRAPEZOID_FORMS = [ De El Ef Lje de el ef lje ];
+@CYRILLIC_GEOMETRIC_FORMS = [ De.a El.a Ef.a Lje.a de.a el.a ef.a lje.a ];
 
 	cvParameters {
 		FeatUILabelNameID {
-			name 3 1 0x0409 "Cyrillic triangular forms [ \0414 \041B \0409 \0434 \043B \0459 ]"; # EngElish US
-			name 3 1 0x0809 "Cyrillic triangular forms [ \0414 \041B \0409 \0434 \043B \0459 ]"; # English GB
-			name 1 0 0 "Cyrillic triangular forms"; # Mac English
+			name 3 1 0x0409 "Cyrillic geometric forms [ \0414 \041B \0409 \0434 \043B \0459 ]"; # EngElish US
+			name 3 1 0x0809 "Cyrillic geometric forms [ \0414 \041B \0409 \0434 \043B \0459 ]"; # English GB
+			name 1 0 0 "Cyrillic geometric forms"; # Mac English
 #			name 3 1 0x0408 "\03C4\03C5\03C0\03BF\03B3\03C1\03B1\03C6\03B9\03BA\03AE \03C0\03B1\03CD\03BB\03B1 [ - ]"; # Greek FIX THIS!
 #			name 3 1 0x0419 "\0442\0438\043F\043E\0433\0440\0430\0444\0441\043A\0438\0439 \0434\0435\0444\0438\0441 [ - ]"; # Russian FIX THIS!
 		};
 	};
  
-	lookup CYRILLIC_TRIANGULAR_ALTERNATES { # triangular aperture
-		sub @CYRILLIC_TRAPEZOID_FORMS by @CYRILLIC_TRIANGULAR_FORMS;
-	} CYRILLIC_TRIANGULAR_ALTERNATES;
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES { # geometric aperture
+		sub @CYRILLIC_TRAPEZOID_FORMS by @CYRILLIC_GEOMETRIC_FORMS;
+	} CYRILLIC_GEOMETRIC_ALTERNATES;
 
 } cv15;
 
@@ -1418,15 +1418,15 @@ feature locl { # Localized Forms
 			} CYRILLIC_BREVE;
 
 		language BGR include_dflt; # Bulgarian
-			lookup CYRILLIC_TRIANGULAR_ALTERNATES;
+			lookup CYRILLIC_GEOMETRIC_ALTERNATES;
 			lookup CYRILLIC_LC_ASCENDING_ALTERNATES;
 			include (../../locl_BGR.fea); # imports Bulgarian specific lookups (which differ between upright and italic)
 
-		language MKD include_dflt; # Macedonian
-			include (../../locl_MKD.fea); # imports Macedonian specific lookups (which differ between upright and italic)
-
 		language SRB include_dflt; # Serbian
 			include (../../locl_SRB.fea); # imports Serbians specific lookups (which differ between upright and italic)
+
+		language MKD include_dflt; # Macedonian
+			include (../../locl_MKD.fea); # imports Macedonian specific lookups (which differ between upright and italic)
 
 } locl;
 
@@ -1569,8 +1569,8 @@ feature ss01 { # Stylistic Set 1 — Latin serifed I
 		name 3 1 0x0409 "Serifed I (\21E7 i)"; # English US
 		name 3 1 0x0809 "Serifed I (\21E7 i)"; # English GB
 		name 1 0 0 "Serifed I (\21E7 i)"; # Mac English
-		# name 3 1 0x0408 "i & l \03BC\03B5 \03B1\03BA\03C1\03B5\03BC\03CC\03BD\03B5\03C2"; # Greek FIX THIS!
-		# name 3 1 0x0419 "\0456 \0438 \04CF \0441 \0437\0430\0441\0435\0447\043A\0430\043C\0438"; # Russian FIX THIS!
+#		name 3 1 0x0408 "i & l \03BC\03B5 \03B1\03BA\03C1\03B5\03BC\03CC\03BD\03B5\03C2"; # Greek FIX THIS!
+#		name 3 1 0x0419 "\0456 \0438 \04CF \0441 \0437\0430\0441\0435\0447\043A\0430\043C\0438"; # Russian FIX THIS!
 	};
 
 	lookup I_UC_ALTERNATES;
@@ -1580,13 +1580,13 @@ feature ss01 { # Stylistic Set 1 — Latin serifed I
 } ss01;
 
 #--------------------------------------
-feature ss02 { # Stylistic Set 2 — Latin simplified lowercase forms for a, g, l; Greek alternates for beta, theta, phi; Cyrillic triangular forms for De/de, El/el & straight forms  for zhe, ka, palochka
+feature ss02 { # Stylistic Set 2 — Latin simplified lowercase forms for a, g, l; Greek alternates for beta, theta, phi; Cyrillic geometric forms for De/de, El/el & straight forms  for zhe, ka, palochka
 	featureNames {
 		name 3 1 0x0409 "Simple a g l"; # English US
 		name 3 1 0x0809 "Simple a g l"; # English GB
 		name 1 0 0 "Simple a g l"; # Mac English
-		# name 3 1 0x0408 "\03C4\03C5\03C0\03BF\03B3\03C1\03B1\03C6\03B9\03BA\03AC \03B5\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03AC [-,*]"; # Greek FIX THIS!
-		# name 3 1 0x0419 "\0442\0438\043F\043E\0433\0440\0430\0444\0441\043A\0438\0435 \0437\0430\043C\0435\0441\0442\0438\0442\0435\043B\0438 [-,*]"; # Russian FIX THIS!
+#		name 3 1 0x0408 "\03C4\03C5\03C0\03BF\03B3\03C1\03B1\03C6\03B9\03BA\03AC \03B5\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03AC [-,*]"; # Greek FIX THIS!
+#		name 3 1 0x0419 "\0442\0438\043F\043E\0433\0440\0430\0444\0441\043A\0438\0435 \0437\0430\043C\0435\0441\0442\0438\0442\0435\043B\0438 [-,*]"; # Russian FIX THIS!
 	};
 
 	lookup A_LC_ALTERNATES;
@@ -1595,7 +1595,7 @@ feature ss02 { # Stylistic Set 2 — Latin simplified lowercase forms for a, g, 
 	lookup BETA_LC_ALTERNATE;
 	lookup THETA_LC_ALTERNATE;
 	lookup PHI_LC_ALTERNATE;
-	lookup CYRILLIC_TRIANGULAR_ALTERNATES;
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES;
 	lookup CYRILLIC_STRAIGHT_ALTERNATES;
 } ss02;
 
@@ -1605,8 +1605,8 @@ feature ss03 { # Stylistic Set 3 — Latin single storey a (first alternate); Gr
 		name 3 1 0x0409 "Simple a"; # English US
 		name 3 1 0x0809 "Simple a"; # English GB
 		name 1 0 0 "Simple a"; # Mac English
-		# name 3 1 0x0408 "\03B1\03C0\03BB\03CC a"; # Greek FIX THIS!
-		# name 3 1 0x0419 "\043F\0440\043E\0441\0442\043E\0439 \0430"; # Russian FIX THIS!
+#		name 3 1 0x0408 "\03B1\03C0\03BB\03CC a"; # Greek FIX THIS!
+#		name 3 1 0x0419 "\043F\0440\043E\0441\0442\043E\0439 \0430"; # Russian FIX THIS!
 		};
 
 	lookup A_LC_ALTERNATES; # includes Cyrillic characters
@@ -1614,18 +1614,18 @@ feature ss03 { # Stylistic Set 3 — Latin single storey a (first alternate); Gr
 } ss03;
 
 #--------------------------------------
-feature ss04 { # Stylistic Set 4 — Latin single storey g; Greek alternate theta; Cyrillic triangular forms for De/de, El/el
+feature ss04 { # Stylistic Set 4 — Latin single storey g; Greek alternate theta; Cyrillic geometric forms for De/de, El/el
 	featureNames {
 		name 3 1 0x0409 "Simple g"; # English US
 		name 3 1 0x0809 "Simple g"; # English GB
 		name 1 0 0 "Simple g"; # Mac English
-		# name 3 1 0x0408 "\03B1\03C0\03BB\03CC a"; # Greek FIX THIS!
-		# name 3 1 0x0419 "\043F\0440\043E\0441\0442\043E\0439 \0430"; # Russian FIX THIS!
+#		name 3 1 0x0408 "\03B1\03C0\03BB\03CC a"; # Greek FIX THIS!
+#		name 3 1 0x0419 "\043F\0440\043E\0441\0442\043E\0439 \0430"; # Russian FIX THIS!
 		};
 
 	lookup G_LC_ALTERNATES;
 	lookup THETA_LC_ALTERNATE;
-	lookup CYRILLIC_TRIANGULAR_ALTERNATES;
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES;
 
 } ss04;
 
@@ -1650,8 +1650,8 @@ feature ss06 { # Stylistic Set 6 — serifed a, second alternate
 		name 3 1 0x0409 "Serifed a"; # English US
 		name 3 1 0x0809 "Serifed a"; # English GB
 		name 1 0 0 "Serifed a"; # Mac English
-		# name 3 1 0x0408 "\03B1\03C0\03BB\03CC a"; # Greek FIX THIS!
-		# name 3 1 0x0419 "\043F\0440\043E\0441\0442\043E\0439 \0430"; # Russian FIX THIS!
+#		name 3 1 0x0408 "\03B1\03C0\03BB\03CC a"; # Greek FIX THIS!
+#		name 3 1 0x0419 "\043F\0440\043E\0441\0442\043E\0439 \0430"; # Russian FIX THIS!
 		};
 
 	lookup A_LC_ALTERNATES_2; # includes Cyrillic characters
@@ -1663,8 +1663,8 @@ feature ss07 { # Stylistic Set 7 — Latin centered ogoneks, Na-Dene preference;
 		name 3 1 0x0409 "Centered ogoneks [ \0104 \0118 \0105 \0119 \0173 ] (Na-Dene)"; # English US
 		name 3 1 0x0809 "Centered ogoneks [ \0104 \0118 \0105 \0119 \0173 ] (Na-Dene)"; # English GB
 		name 1 0 0 "Centered ogoneks (Na-Dene)"; # Mac English
-		# name 3 1 0x0408 "\03A3\03AC\03BC\03B7 \014A"; # Greek FIX THIS!
-		# name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian FIX THIS!
+#		name 3 1 0x0408 "\03A3\03AC\03BC\03B7 \014A"; # Greek FIX THIS!
+#		name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian FIX THIS!
 		};
 
 	lookup OGONEK_ALTERNATES;
@@ -1678,8 +1678,8 @@ feature ss08 { # Stylistic Set 8 — Latin N-shaped Eng, Sami preference
 		name 3 1 0x0409 "N-shaped Eng [ \014A ] (Sami)"; # English US
 		name 3 1 0x0809 "N-shaped Eng [ \014A ] (Sami)"; # English GB
 		name 1 0 0 "N-shaped Eng (Sami)"; # Mac English
-		name 3 1 0x0408 "\03A3\03AC\03BC\03B7 \014A"; # Greek
-		name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian
+#		name 3 1 0x0408 "\03A3\03AC\03BC\03B7 \014A"; # Greek
+#		name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian
 		};
 
 	lookup ENG_UC_ALTERNATE;
@@ -1688,9 +1688,14 @@ feature ss08 { # Stylistic Set 8 — Latin N-shaped Eng, Sami preference
 
 #--------------------------------------
 feature ss09 { # Stylistic Set 9 — Titling Figures
-featureNames {
-	name "Titling figures"; # Windows English
-};
+	featureNames {
+		name 3 1 0x0409 "Titling figures"; # English US
+		name 3 1 0x0809 "Titling figures"; # English GB
+		name 1 0 0 "Titling figures"; # Mac English
+#		name 3 1 0x0408 "\03A3\03AC\03BC\03B7 \014A"; # Greek
+#		name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian
+		};
+
 	lookup FIGURES_CASE;
 } ss09;
 
@@ -1700,8 +1705,8 @@ feature ss10 { # Stylistic Set 10 (Dotted zero)
 		name 3 1 0x0409 "Dotted zero [ 0 ]"; # English US
 		name 3 1 0x0809 "Dotted zero [ 0 ]"; # English GB
 		name 1 0 0 "Dotted zero [ 0 ]"; # Mac English
-		# name 3 1 0x0408 "\03A3\03AC\03BC\03B7 \014A"; # Greek FIX THIS!
-		# name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian FIX THIS!
+#		name 3 1 0x0408 "\03A3\03AC\03BC\03B7 \014A"; # Greek FIX THIS!
+#		name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian FIX THIS!
 		};
 
 	lookup ZERO;
@@ -1726,7 +1731,7 @@ feature salt { # Stylistic Alternates
 	lookup CYRILLIC_LC_ASCENDING_ALTERNATES;
 	lookup CYRILLIC_BE_LC_CURSIVE;
 	lookup CYRILLIC_LC_CURSIVE_ALTERNATES;
-	lookup CYRILLIC_TRIANGULAR_ALTERNATES;
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES;
 	lookup CYRILLIC_STRAIGHT_ALTERNATES;
 	lookup FIGURES_CASE;
 	lookup ZERO;

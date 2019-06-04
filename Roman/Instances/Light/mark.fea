@@ -1,4 +1,4 @@
-# Created: Mon Jun  3 18:47:40 2019
+# Created: Tue Jun  4 23:02:01 2019
 # PS Name: SourceSansPro-Light
 # MM Inst: None
 # exported from Defcon
@@ -50,8 +50,8 @@ lookup MARK_BASE_above {
 	@bGC_dotlessi_above = [dotlessi iogonek.x iota];
 	@bGC_dotlessjstroke_above = [dotlessjstroke lsmall istroke.x];
 	@bGC_e_above = [e eogonek eogonek.d ie];
-	@bGC_eopenreversed_above = [eopenreversed ezh];
-	@bGC_f_above = [f longs];
+	@bGC_eopenreversed_above = [eopenreversed ezh ghe.c];
+	@bGC_f_above = [f longs florin];
 	@bGC_ghook_above = [ghook digamma];
 	@bGC_glottalstopreversed_above = [glottalstopreversed glottalstopstrokereversed];
 	@bGC_i_above = [i j];
@@ -310,7 +310,6 @@ lookup MARK_BASE_below {
 	@bGC_aturned.b_below = [aturned.b alpha];
 	@bGC_clickbilabial_below = [clickbilabial S.sc];
 	@bGC_d_below = [d n dhook alphalatin eopenreversedclosed hsmall rsmall a.a];
-	@bGC_dezh_below = [dezh mhook];
 	@bGC_e_below = [e schwahookrhotic];
 	@bGC_eng_below = [eng dtail ghook gscript henghook nhookleft nretroflex g.a];
 	@bGC_ereversed_below = [ereversed w.sups];
@@ -320,6 +319,7 @@ lookup MARK_BASE_below {
 	@bGC_j_below = [j dotlessj esh];
 	@bGC_l.a_below = [l.a eta];
 	@bGC_l_below = [l iotalatin];
+	@bGC_mhook_below = [mhook dezh];
 	@bGC_o_below = [o oslash ohorn obar];
 	@bGC_r_below = [r rfishhook];
 	@bGC_ramshorn_below = [ramshorn rsmallinverted ain];
@@ -358,7 +358,6 @@ lookup MARK_BASE_below {
 	pos base @bGC_aturned.b_below <anchor 281 -22> mark @MC_below;
 	pos base @bGC_clickbilabial_below <anchor 252 -22> mark @MC_below;
 	pos base @bGC_d_below <anchor 272 -22> mark @MC_below;
-	pos base @bGC_dezh_below <anchor 412 -216> mark @MC_below;
 	pos base @bGC_e_below <anchor 261 -22> mark @MC_below;
 	pos base @bGC_eng_below <anchor 272 -216> mark @MC_below;
 	pos base @bGC_ereversed_below <anchor 233 -22> mark @MC_below;
@@ -368,6 +367,7 @@ lookup MARK_BASE_below {
 	pos base @bGC_j_below <anchor 53 -216> mark @MC_below;
 	pos base @bGC_l.a_below <anchor 114 -22> mark @MC_below;
 	pos base @bGC_l_below <anchor 133 -22> mark @MC_below;
+	pos base @bGC_mhook_below <anchor 412 -216> mark @MC_below;
 	pos base @bGC_o_below <anchor 267 -22> mark @MC_below;
 	pos base @bGC_r_below <anchor 112 -22> mark @MC_below;
 	pos base @bGC_ramshorn_below <anchor 235 -22> mark @MC_below;
@@ -416,6 +416,7 @@ lookup MARK_BASE_below {
 	pos base eopenreversed <anchor 216 -22> mark @MC_below;
 	pos base eth <anchor 270 -22> mark @MC_below;
 	pos base ezh <anchor 192 -216> mark @MC_below;
+	pos base florin <anchor 55 -216> mark @MC_below;
 	pos base g <anchor 250 -228> mark @MC_below;
 	pos base gammalatin <anchor 215 -228> mark @MC_below;
 	pos base glottalstop <anchor 172 -22> mark @MC_below;

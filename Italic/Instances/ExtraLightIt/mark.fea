@@ -1,4 +1,4 @@
-# Created: Mon Jun  3 18:46:51 2019
+# Created: Tue Jun  4 22:06:19 2019
 # PS Name: SourceSansPro-ExtraLightIt
 # MM Inst: None
 # exported from Defcon
@@ -29,7 +29,7 @@ lookup MARK_BASE_above {
 	@bGC_d_above = [d k dtail dhook];
 	@bGC_dotlessi_above = [dotlessi dotlessj dotlessjstroke iotalatin lsmall iota];
 	@bGC_ereversed_above = [ereversed schwa eopen upsilon ieukran];
-	@bGC_f_above = [f longs esh dotlessjstrokehook glottalstop];
+	@bGC_f_above = [f longs esh dotlessjstrokehook glottalstop florin];
 	@bGC_h_above = [h hhook henghook tesh];
 	@bGC_l_above = [l lslash lretroflex l.a];
 	@bGC_m_above = [m mhook];
@@ -115,6 +115,7 @@ lookup MARK_BASE_above {
 	pos base eth <anchor 340 730> mark @MC_above;
 	pos base fita <anchor 320 500> mark @MC_above;
 	pos base g.a <anchor 276 502> mark @MC_above;
+	pos base ghe.c <anchor 180 622> mark @MC_above;
 	pos base glottalstopstroke <anchor 290 730> mark @MC_above;
 	pos base glottalstopstrokereversed <anchor 310 730> mark @MC_above;
 	pos base i <anchor 200 678> mark @MC_above;
@@ -182,6 +183,7 @@ lookup MARK_BASE_below {
 	@bGC_g_below = [g ghook gscript];
 	@bGC_i_below = [i r istroke.x];
 	@bGC_ismall_below = [ismall I.a];
+	@bGC_jcrossedtail.x_below = [jcrossedtail.x florin];
 	@bGC_lmiddletilde_below = [lmiddletilde glottalstop];
 	@bGC_m_below = [m mturned mlonglegturned];
 	@bGC_ramshorn_below = [ramshorn a.a];
@@ -208,6 +210,7 @@ lookup MARK_BASE_below {
 	pos base @bGC_g_below <anchor 170 -222> mark @MC_below;
 	pos base @bGC_i_below <anchor 64 -22> mark @MC_below;
 	pos base @bGC_ismall_below <anchor 90 -22> mark @MC_below;
+	pos base @bGC_jcrossedtail.x_below <anchor -40 -230> mark @MC_below;
 	pos base @bGC_lmiddletilde_below <anchor 120 -22> mark @MC_below;
 	pos base @bGC_m_below <anchor 350 -22> mark @MC_below;
 	pos base @bGC_ramshorn_below <anchor 194 -22> mark @MC_below;
@@ -234,7 +237,6 @@ lookup MARK_BASE_below {
 	pos base hturned <anchor 170 -230> mark @MC_below;
 	pos base istroke <anchor 68 -22> mark @MC_below;
 	pos base j <anchor -44 -230> mark @MC_below;
-	pos base jcrossedtail.x <anchor -40 -230> mark @MC_below;
 	pos base k <anchor 208 -22> mark @MC_below;
 	pos base kturned <anchor 290 -218> mark @MC_below;
 	pos base l <anchor 70 -22> mark @MC_below;
