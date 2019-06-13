@@ -59,58 +59,96 @@ feature c2sc { # UC-->SC
 } c2sc;
 
 #--------------------------------------
+lookup I_TURKISH {
+	sub i by Idotaccent.sc;
+} I_TURKISH;
+
 feature smcp { # LC-->SC
+
+	script DFLT;
+		language dflt;
+
+			lookup LATIN_SMALLCAPS {
+					sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
+					sub @LETTERS_MINISCULE_LATIN_ACCENTED_ALL by @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL;
+					sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
+					sub @LETTERS_MINISCULE_LATIN_ALTERNATES by @LETTERS_SMALLCAP_LATIN_ALTERNATES;
+					sub [ dotlessi germandbls iogonek.x uogonek.d ] by [ I.sc germandbls.sc Iogonek.sc Uogonek.sc ];
+			} LATIN_SMALLCAPS;
+
+			lookup GREEK_SMALLCAPS_MONO {
+				sub @LETTERS_MINISCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
+				sub @LETTERS_MINISCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
+				sub @LETTERS_MINISCULE_GREEK_DIERESISTONOS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
+				sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_NO_TONOS;
+				sub sigma.end by Sigma.sc;
+			} GREEK_SMALLCAPS_MONO;
+
+			lookup GREEK_SMALLCAPS_POLY {
+				sub [ alphalenis alphaasper alphagrave alphaacute alphalenisgrave alphaaspergrave alphalenisacute alphaasperacute alphalenistilde alphaaspertilde alphabreve alphamacron alphatilde ] by Alpha.sc;
+				sub [ epsilonlenis epsilonasper epsilongrave epsilonacute epsilonlenisgrave epsilonaspergrave epsilonlenisacute epsilonasperacute ] by Epsilon.sc;
+				sub [ etalenis etaasper etagrave etaacute etalenisgrave etaaspergrave etalenisacute etaasperacute etalenistilde etaaspertilde etatilde ] by Eta.sc;
+				sub [ iotalenis iotaasper iotagrave iotaacute iotalenisgrave iotaaspergrave iotalenisacute iotaasperacute iotalenistilde iotaaspertilde iotabreve iotamacron iotatilde ] by Iota.sc;
+				sub [ omicronlenis omicronasper omicrongrave omicronacute omicronlenisgrave omicronaspergrave omicronlenisacute omicronasperacute ] by Omicron.sc;
+				sub [ rholenis rhoasper ] by Rho.sc;
+				sub [ upsilonlenis upsilonasper upsilongrave upsilonacute upsilonlenisgrave upsilonaspergrave upsilonlenisacute upsilonasperacute upsilonlenistilde upsilonaspertilde upsilontilde upsilonbreve upsilonmacron ] by Upsilon.sc;
+				sub [ omegalenis omegaasper omegagrave omegaacute omegalenisgrave omegaaspergrave omegalenisacute omegaasperacute omegalenistilde omegaaspertilde omegatilde ] by Omega.sc;
+				sub [ alphaiotasub alphaiotasublenis alphaiotasubasper alphaiotasubgrave alphaiotasubacute alphaiotasublenisgrave alphaiotasubaspergrave alphaiotasublenisacute alphaiotasubasperacute alphaiotasublenistilde alphaiotasubaspertilde alphaiotasubtilde ] by Alphaiotasub.sc;
+				sub [ etaiotasub etaiotasublenis etaiotasubasper etaiotasubgrave etaiotasubacute etaiotasublenisgrave etaiotasubaspergrave etaiotasublenisacute etaiotasubasperacute etaiotasublenistilde etaiotasubaspertilde etaiotasubtilde ] by Etaiotasub.sc;
+				sub [ omegaiotasub omegaiotasublenis omegaiotasubasper omegaiotasubgrave omegaiotasubacute omegaiotasublenisgrave omegaiotasubaspergrave omegaiotasublenisacute omegaiotasubasperacute omegaiotasublenistilde omegaiotasubaspertilde omegaiotasubtilde ] by Omegaiotasub.sc;
+				sub [ iotadieresisgrave iotadieresisacute iotadieresistilde ] by Iotadieresis.sc;
+				sub [ upsilondieresisgrave upsilondieresisacute upsilondieresistilde ] by Upsilondieresis.sc;
+			} GREEK_SMALLCAPS_POLY;
+
+			lookup CYRILLIC_SMALLCAPS {
+				sub @LETTERS_MINISCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
+				sub [ be.c ve.c ghe.c de.c ze.c icyr.c ishort.c pe.c te.c tse.c sha.c shcha.c igravecyr.c ] by [ Be.sc Ve.sc Ghe.sc De.sc Ze.sc Icyr.sc Ishort.sc Pe.sc Te.sc Tse.sc Sha.sc Shcha.sc Igravecyr.sc ];
+				sub [ zhe.b ka.b yu.b zhe.d ka.d  ] by [ Zhe.sc Ka.sc Yu.sc Zhe.as Ka.as ];
+			} CYRILLIC_SMALLCAPS;
+
+		lookup NUMERALS_SMALLCAP;
 
 	script latn;
 		language dflt;
+			lookup LATIN_SMALLCAPS;
+			lookup NUMERALS_SMALLCAP;
 
-				sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
-				sub @LETTERS_MINISCULE_LATIN_ACCENTED_ALL by @LETTERS_SMALLCAP_LATIN_ACCENTED_ALL;
-				sub @LETTERS_MINISCULE_LATIN_ADDL by @LETTERS_SMALLCAP_LATIN_ADDL;
-				sub @LETTERS_MINISCULE_LATIN_ALTERNATES by @LETTERS_SMALLCAP_LATIN_ALTERNATES;
-				sub [ germandbls iogonek.x uogonek.d ] by [ germandbls.sc Iogonek.sc Uogonek.sc ];
+		language ATH include_dflt; # AthapaskanAthabaskan
+		language NAV include_dflt; # NavajoDiné Bizaad
+		language NSM include_dflt; # Northern Sami
+		language SKS include_dflt; # Skolt Sami
+		language IPPH include_dflt; # Phonetic transcription, IPA conventions	
+		language APPH include_dflt; # Phonetic transcription, Americanist conventions
 
-		language TRK include_dflt;
-			lookup I_TURKISH {
-				sub I.sc by Idotaccent.sc;
-			} I_TURKISH;
-
-		language AZE include_dflt;
+		language TRK exclude_dflt;
 			lookup I_TURKISH;
+			lookup LATIN_SMALLCAPS;
+			lookup NUMERALS_SMALLCAP;
 
-		language CRT include_dflt;
+		language AZE exclude_dflt;
 			lookup I_TURKISH;
+			lookup LATIN_SMALLCAPS;
+			lookup NUMERALS_SMALLCAP;
+
+		language CRT exclude_dflt;
+			lookup I_TURKISH;
+			lookup LATIN_SMALLCAPS;
+			lookup NUMERALS_SMALLCAP;
 
 	script grek;
-		lookup GREEK_SMALLCAPS_MONO {
-			sub @LETTERS_MINISCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
-			sub @LETTERS_MINISCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
-			sub @LETTERS_MINISCULE_GREEK_DIERESISTONOS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
-			sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_NO_TONOS;
-			sub sigma.end by Sigma.sc;
-		} GREEK_SMALLCAPS_MONO;
-
-		lookup GREEK_SMALLCAPS_POLY {
-			sub [ alphalenis alphaasper alphagrave alphaacute alphalenisgrave alphaaspergrave alphalenisacute alphaasperacute alphalenistilde alphaaspertilde alphabreve alphamacron alphatilde ] by Alpha.sc;
-			sub [ epsilonlenis epsilonasper epsilongrave epsilonacute epsilonlenisgrave epsilonaspergrave epsilonlenisacute epsilonasperacute ] by Epsilon.sc;
-			sub [ etalenis etaasper etagrave etaacute etalenisgrave etaaspergrave etalenisacute etaasperacute etalenistilde etaaspertilde etatilde ] by Eta.sc;
-			sub [ iotalenis iotaasper iotagrave iotaacute iotalenisgrave iotaaspergrave iotalenisacute iotaasperacute iotalenistilde iotaaspertilde iotabreve iotamacron iotatilde ] by Iota.sc;
-			sub [ omicronlenis omicronasper omicrongrave omicronacute omicronlenisgrave omicronaspergrave omicronlenisacute omicronasperacute ] by Omicron.sc;
-			sub [ rholenis rhoasper ] by Rho.sc;
-			sub [ upsilonlenis upsilonasper upsilongrave upsilonacute upsilonlenisgrave upsilonaspergrave upsilonlenisacute upsilonasperacute upsilonlenistilde upsilonaspertilde upsilontilde upsilonbreve upsilonmacron ] by Upsilon.sc;
-			sub [ omegalenis omegaasper omegagrave omegaacute omegalenisgrave omegaaspergrave omegalenisacute omegaasperacute omegalenistilde omegaaspertilde omegatilde ] by Omega.sc;
-			sub [ alphaiotasub alphaiotasublenis alphaiotasubasper alphaiotasubgrave alphaiotasubacute alphaiotasublenisgrave alphaiotasubaspergrave alphaiotasublenisacute alphaiotasubasperacute alphaiotasublenistilde alphaiotasubaspertilde alphaiotasubtilde ] by Alphaiotasub.sc;
-			sub [ etaiotasub etaiotasublenis etaiotasubasper etaiotasubgrave etaiotasubacute etaiotasublenisgrave etaiotasubaspergrave etaiotasublenisacute etaiotasubasperacute etaiotasublenistilde etaiotasubaspertilde etaiotasubtilde ] by Etaiotasub.sc;
-			sub [ omegaiotasub omegaiotasublenis omegaiotasubasper omegaiotasubgrave omegaiotasubacute omegaiotasublenisgrave omegaiotasubaspergrave omegaiotasublenisacute omegaiotasubasperacute omegaiotasublenistilde omegaiotasubaspertilde omegaiotasubtilde ] by Omegaiotasub.sc;
-			sub [ iotadieresisgrave iotadieresisacute iotadieresistilde ] by Iotadieresis.sc;
-			sub [ upsilondieresisgrave upsilondieresisacute upsilondieresistilde ] by Upsilondieresis.sc;
-		} GREEK_SMALLCAPS_POLY;
+		language dflt;
+			lookup GREEK_SMALLCAPS_MONO;
+			lookup GREEK_SMALLCAPS_POLY;
+			lookup NUMERALS_SMALLCAP;
 
 	script cyrl;
-		sub @LETTERS_MINISCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
-		sub [ be.c ve.c ghe.c de.c ze.c icyr.c ishort.c pe.c te.c tse.c sha.c shcha.c igravecyr.c ] by [ Be.sc Ve.sc Ghe.sc De.sc Ze.sc Icyr.sc Ishort.sc Pe.sc Te.sc Tse.sc Sha.sc Shcha.sc Igravecyr.sc ];
-		sub [ zhe.b ka.b yu.b zhe.d ka.d  ] by [ Zhe.sc Ka.sc Yu.sc Zhe.as Ka.as ];
+		language dflt;
+			lookup CYRILLIC_SMALLCAPS;
+			lookup NUMERALS_SMALLCAP;
 
-	lookup NUMERALS_SMALLCAP;
+		language BGR include_dflt; # Bulgarian
+		language MKD include_dflt; # Macedonian
+		language SRB include_dflt; # Serbian
+
 
 } smcp;

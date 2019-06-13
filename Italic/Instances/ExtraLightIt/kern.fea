@@ -1,4 +1,4 @@
-# Created: Tue Jun  4 23:44:50 2019
+# Created: Wed Jun 12 11:42:35 2019
 # PS Name: SourceSansPro-ExtraLightIt
 # MinKern: +/- 3 inclusive
 # exported from Defcon
@@ -28,6 +28,7 @@
 @MMK_L_CYR_ROUND_UC_LEFT = [Ocyr Ecyr Yu Fita Schwacyr Odieresiscyr Obarcyr];
 @MMK_L_CYR_SOFT_LC_LEFT = [soft hard lje nje yat lje.a];
 @MMK_L_CYR_SOFT_UC_LEFT = [Soft Hard Lje Nje Shha Tshe Lje.a];
+@MMK_L_CYR_STRAIGHT_LC_LEFT = [en icyr ishort el em pe che sha yeru ya dzhe igravecyr imacroncyr te.c pe.c icyr.c igravecyr.c ishort.c sha.c];
 @MMK_L_CYR_TE_LC_LEFT = [te abrevecyr.a acyr.a shha tshe];
 @MMK_L_CYR_TE_UC_LEFT = [Te];
 @MMK_L_CYR_TSE_LC_LEFT = [tse shcha endescender chedescender shcha.c tse.c];
@@ -36,6 +37,7 @@
 @MMK_L_CYR_UCYR_UC_LEFT = [Ucyr Ushort Uacutedblcyr Umacroncyr];
 @MMK_L_CYR_USTRAIGHT_LC_LEFT = [ustraight ustraightstroke];
 @MMK_L_CYR_USTRAIGHT_UC_LEFT = [Ustraight Ustraightstroke];
+@MMK_L_CYR_VE_ALT_LC_LEFT = [ve.c];
 @MMK_L_CYR_VE_LC_LEFT = [ve ze zedescender];
 @MMK_L_CYR_VE_UC_LEFT = [Ve Be Ze Zedescender];
 @MMK_L_CYR_YAT_UC_LEFT = [Yat];
@@ -269,6 +271,7 @@ pos eight.pnum five.pnum 10;
 pos eight.pnum nine.pnum -10;
 pos eight.pnum seven.pnum -30;
 pos eight.pnum three.pnum 10;
+pos el.a ze.c -20;
 pos five.onum cent -20;
 pos five.onum five.onum -10;
 pos five.onum nine.onum -10;
@@ -401,6 +404,7 @@ pos backslash @MMK_R_LAT_W_LC_RIGHT -10;
 pos backslash @MMK_R_LAT_W_UC_RIGHT -40;
 pos backslash @MMK_R_LAT_Y_LC_RIGHT 20;
 pos backslash @MMK_R_LAT_Y_UC_RIGHT -80;
+pos el.a @MMK_R_LAT_A_LC_RIGHT -10;
 pos exclamdown @MMK_R_CYR_IZHITSA_UC_RIGHT -20;
 pos exclamdown @MMK_R_CYR_JE_LC_RIGHT 50;
 pos exclamdown @MMK_R_GRK_UPSILON_UC_RIGHT -30;
@@ -506,7 +510,7 @@ pos @MMK_L_CYR_ACYR_UC_LEFT @MMK_R_PCT_QUOTE_RIGHT -80;
 pos @MMK_L_CYR_ACYR_UC_LEFT asterisk -120;
 pos @MMK_L_CYR_ACYR_UC_LEFT backslash -40;
 pos @MMK_L_CYR_ACYR_UC_LEFT periodcentered -20;
-pos @MMK_L_CYR_BE_LC_LEFT @MMK_R_CYR_HARD_LC_RIGHT -30;
+pos @MMK_L_CYR_BE_LC_LEFT @MMK_R_CYR_HARD_LC_RIGHT -40;
 pos @MMK_L_CYR_BE_LC_LEFT @MMK_R_CYR_UCYR_LC_RIGHT -10;
 pos @MMK_L_CYR_BE_LC_LEFT @MMK_R_CYR_ZE_LC_RIGHT -10;
 pos @MMK_L_CYR_BE_LC_LEFT @MMK_R_PCT_PAREN_RIGHT 20;
@@ -668,6 +672,7 @@ pos @MMK_L_CYR_IE_LC_LEFT @MMK_R_PCT_QUOTERIGHT_RIGHT -10;
 pos @MMK_L_CYR_IE_LC_LEFT asterisk -70;
 pos @MMK_L_CYR_IE_LC_LEFT backslash -10;
 pos @MMK_L_CYR_IE_LC_LEFT periodcentered -20;
+pos @MMK_L_CYR_IE_LC_LEFT ze.c -20;
 pos @MMK_L_CYR_IE_UC_LEFT @MMK_R_CYR_CHE_UC_RIGHT -10;
 pos @MMK_L_CYR_IE_UC_LEFT @MMK_R_CYR_EF_UC_RIGHT -30;
 pos @MMK_L_CYR_IE_UC_LEFT @MMK_R_CYR_ROUND_UC_RIGHT -30;
@@ -727,6 +732,7 @@ pos @MMK_L_CYR_ROUND_LC_LEFT @MMK_R_PCT_QUOTELEFT_RIGHT -40;
 pos @MMK_L_CYR_ROUND_LC_LEFT @MMK_R_PCT_QUOTERIGHT_RIGHT -60;
 pos @MMK_L_CYR_ROUND_LC_LEFT @MMK_R_PCT_QUOTE_RIGHT -20;
 pos @MMK_L_CYR_ROUND_LC_LEFT backslash -40;
+pos @MMK_L_CYR_ROUND_LC_LEFT ze.c -20;
 pos @MMK_L_CYR_ROUND_UC_LEFT @MMK_R_CYR_CHE_UC_RIGHT -20;
 pos @MMK_L_CYR_ROUND_UC_LEFT @MMK_R_CYR_DE_UC_RIGHT -20;
 pos @MMK_L_CYR_ROUND_UC_LEFT @MMK_R_CYR_EF_UC_RIGHT 10;
@@ -763,6 +769,7 @@ pos @MMK_L_CYR_SOFT_UC_LEFT @MMK_R_CYR_YA_UC_RIGHT -20;
 pos @MMK_L_CYR_SOFT_UC_LEFT @MMK_R_CYR_ZE_UC_RIGHT -20;
 pos @MMK_L_CYR_SOFT_UC_LEFT @MMK_R_PCT_QUOTELEFT_RIGHT -80;
 pos @MMK_L_CYR_SOFT_UC_LEFT @MMK_R_PCT_QUOTERIGHT_RIGHT -80;
+pos @MMK_L_CYR_STRAIGHT_LC_LEFT @MMK_R_CYR_HARD_LC_RIGHT -20;
 pos @MMK_L_CYR_TE_LC_LEFT @MMK_R_CYR_HARD_LC_RIGHT -20;
 pos @MMK_L_CYR_TE_UC_LEFT @MMK_R_CYR_ACYR_UC_RIGHT -80;
 pos @MMK_L_CYR_TE_UC_LEFT @MMK_R_CYR_DE_UC_RIGHT -80;
@@ -847,9 +854,11 @@ pos @MMK_L_CYR_USTRAIGHT_UC_LEFT @MMK_R_CYR_TE_UC_RIGHT -20;
 pos @MMK_L_CYR_USTRAIGHT_UC_LEFT @MMK_R_CYR_YAT_UC_RIGHT -10;
 pos @MMK_L_CYR_USTRAIGHT_UC_LEFT @MMK_R_CYR_ZE_UC_RIGHT -10;
 pos @MMK_L_CYR_USTRAIGHT_UC_LEFT @MMK_R_CYR_ZHE_UC_RIGHT -20;
+pos @MMK_L_CYR_VE_ALT_LC_LEFT @MMK_R_CYR_HARD_LC_RIGHT -40;
 pos @MMK_L_CYR_VE_LC_LEFT @MMK_R_CYR_HARD_LC_RIGHT -20;
 pos @MMK_L_CYR_VE_UC_LEFT @MMK_R_CYR_CHE_UC_RIGHT -30;
 pos @MMK_L_CYR_VE_UC_LEFT @MMK_R_CYR_DZE_UC_RIGHT -10;
+pos @MMK_L_CYR_VE_UC_LEFT @MMK_R_CYR_HARD_LC_RIGHT -60;
 pos @MMK_L_CYR_VE_UC_LEFT @MMK_R_CYR_HA_LC_RIGHT -10;
 pos @MMK_L_CYR_VE_UC_LEFT @MMK_R_CYR_IZHITSA_LC_RIGHT -10;
 pos @MMK_L_CYR_VE_UC_LEFT @MMK_R_CYR_JE_UC_RIGHT -10;
@@ -1293,12 +1302,12 @@ pos @MMK_L_LAT_A_ALT_LC_LEFT @MMK_R_LAT_V_UC_RIGHT -10;
 pos @MMK_L_LAT_A_ALT_LC_LEFT @MMK_R_LAT_Y_UC_RIGHT -20;
 pos @MMK_L_LAT_A_ALT_LC_LEFT @MMK_R_PCT_QUOTERIGHT_RIGHT -10;
 pos @MMK_L_LAT_A_ALT_LC_LEFT asterisk -80;
+
+subtable;
 pos @MMK_L_LAT_A_LC_LEFT @MMK_R_LAT_T_UC_RIGHT -30;
 pos @MMK_L_LAT_A_LC_LEFT @MMK_R_LAT_V_UC_RIGHT -10;
 pos @MMK_L_LAT_A_LC_LEFT @MMK_R_LAT_Y_UC_RIGHT -30;
 pos @MMK_L_LAT_A_LC_LEFT asterisk -100;
-
-subtable;
 pos @MMK_L_LAT_A_UC_LEFT @MMK_R_LAT_A_UC_RIGHT -10;
 pos @MMK_L_LAT_A_UC_LEFT @MMK_R_LAT_F_LC_RIGHT -10;
 pos @MMK_L_LAT_A_UC_LEFT @MMK_R_LAT_J_LC_RIGHT -10;
