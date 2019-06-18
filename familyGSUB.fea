@@ -35,8 +35,8 @@
 @IOTA_MODIFIERS_GREEK = [ iotasubscriptcmb iotaadscript ];
 
 @LETTERS_MAJUSCULE_CYRILLIC_BASIC = [ Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup Ghestroke Zhedescender Zedescender Kadescender Kabashkir Endescender Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Aie Schwacyr Obarcyr ];
-@LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [ Ishort Iegrave Io Dje Gje Yi Kje Igravecyr Ushort Zhebreve Abrevecyr Iebreve Imacroncyr Odieresiscyr Umacroncyr Uacutedblcyr ];
-@LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES = [ De.a Zhe.a Ka.a El.a Ef.a Yi.a Lje.a Kje.a Zhedescender.a Kadescender.a Kabashkir.a Zhebreve.a ];
+@LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [ Ishort Iegrave Io Dje Gje Yi Yi.a Kje Igravecyr Ushort Zhebreve Abrevecyr Iebreve Imacroncyr Odieresiscyr Umacroncyr Uacutedblcyr ];
+@LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES = [ De.a Zhe.a Ka.a El.a Ef.a Lje.a Kje.a Zhedescender.a Kadescender.a Kabashkir.a Zhebreve.a ];
 @LETTERS_MAJUSCULE_CYRILLIC_ALL = [ @LETTERS_MAJUSCULE_CYRILLIC_BASIC @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED @LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES ];
 
 @LETTERS_MINISCULE_CYRILLIC_BASIC = [ acyr be ve ghe de ie zhe ze icyr ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ieukran dze iukran je lje nje tshe dzhe yat fita izhitsa gheup ghestroke zhedescender zedescender kadescender kabashkir endescender esdescender ustraight ustraightstroke hadescender chedescender shha palochka aie schwacyr obarcyr ];
@@ -118,6 +118,17 @@ lookup INFERIOR {
 	sub @PUNCTUATION_FOR_SMALL_FIGURE_STYLES by @PUNCTUATION_INFERIOR;
 	sub [ plus minus equal ] by [ plus.subs minus.subs equal.subs ];
 } INFERIOR;
+
+lookup OLDSTYLE {
+	sub @FIGURES_LINING_TABULAR by @FIGURES_OLDSTYLE_TABULAR;
+	sub @FIGURES_LINING_PROPORTIONAL by @FIGURES_OLDSTYLE_PROPORTIONAL;
+} OLDSTYLE;
+
+lookup PROPORTIONAL {
+	sub @FIGURES_LINING_TABULAR by @FIGURES_LINING_PROPORTIONAL;
+	sub @FIGURES_OLDSTYLE_TABULAR by @FIGURES_OLDSTYLE_PROPORTIONAL;
+} PROPORTIONAL;
+
 
 #--------------------------------------
 # feature aalt (this comment indicates feature order)
@@ -557,12 +568,13 @@ feature ccmp { # Glyph Composition  Decomposition
 		sub dieresiscmb variacmb by dialytikagravecmb;
 		sub ringcmb acutecmb by ringacute;
 		sub caroncmb dotaccentcmb by carondotaccent;
-		sub aspercmb gravecmb by aspergravecmb;
-		sub aspercmb [ acutecmb variacmb ] by asperacutecmb;
-		sub aspercmb [ tildecmb perispomenicmb ] by aspertildecmb;
-		sub leniscmb gravecmb by lenisgravecmb;
-		sub leniscmb [ acutecmb variacmb ] by lenisacutecmb;
-		sub leniscmb [ tildecmb perispomenicmb ] by lenistildecmb;
+		sub [ aspercmb commaturnedabovecmb ] [ gravecmb variacmb ] by aspergravecmb;
+		sub [ aspercmb commaturnedabovecmb ] [ acutecmb tonoscmb ] by asperacutecmb;
+		sub [ aspercmb commaturnedabovecmb ] [ tildecmb perispomenicmb ] by aspertildecmb;
+		sub [ leniscmb commaabovecmb ] [ gravecmb variacmb ] by lenisgravecmb;
+		sub [ leniscmb commaabovecmb ] [ acutecmb tonoscmb ] by lenisacutecmb;
+		sub [ leniscmb commaabovecmb ] [ tildecmb perispomenicmb ] by lenistildecmb;
+		
 	} MARKS_COMPOSITION;
 
 	lookup GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL {
@@ -1426,25 +1438,23 @@ feature sups { # Superscript
 
 #--------------------------------------
 feature subs { # Subscript
-	lookup INFERIOR;
+	lookup INFERIOR ;
 } subs;
 
 #--------------------------------------
 feature sinf { # Scientific Inferiors
-	lookup INFERIOR;
+	lookup INFERIOR ;
 } sinf;
 
 #--------------------------------------
-feature pnum { # Proportional Figures
-	sub @FIGURES_LINING_TABULAR by @FIGURES_LINING_PROPORTIONAL;
-	sub @FIGURES_OLDSTYLE_TABULAR by @FIGURES_OLDSTYLE_PROPORTIONAL;
-} pnum;
+feature onum { # Oldstyle (Text) Figures
+	lookup OLDSTYLE ;
+} onum;
 
 #--------------------------------------
-feature onum { # Oldstyle (Text) Figures
-	sub @FIGURES_LINING_TABULAR by @FIGURES_OLDSTYLE_TABULAR;
-	sub @FIGURES_LINING_PROPORTIONAL by @FIGURES_OLDSTYLE_PROPORTIONAL;
-} onum;
+feature pnum { # Proportional Figures
+	lookup PROPORTIONAL ;
+} pnum;
 
 #--------------------------------------
 feature case { # Case-Sensitive Forms
