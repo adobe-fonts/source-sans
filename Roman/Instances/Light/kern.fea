@@ -1,4 +1,4 @@
-# Created: Wed Jun 12 11:42:17 2019
+# Created: Mon Jul 15 15:20:21 2019
 # PS Name: SourceSansPro-Light
 # MinKern: +/- 3 inclusive
 # exported from Defcon
@@ -958,6 +958,13 @@ enum pos @MMK_L_PCT_GUILLEFT_LEFT Upsilonacute 20;
 enum pos @MMK_L_PCT_GUILLEFT_LEFT Upsilontonos 20;
 
 # glyph, group:
+pos Glottalstop @MMK_R_LAT_A_LC_RIGHT -18;
+pos Glottalstop @MMK_R_LAT_A_UC_RIGHT -9;
+pos Glottalstop @MMK_R_LAT_G_LC_RIGHT -18;
+pos Glottalstop @MMK_R_LAT_J_UC_RIGHT -74;
+pos Glottalstop.sc @MMK_R_LAT_A_SC_RIGHT -9;
+pos Glottalstop.sc @MMK_R_LAT_J_SC_RIGHT -65;
+pos Glottalstop.sc @MMK_R_LAT_Z_SC_RIGHT -28;
 pos Ustraight @MMK_R_CYR_BE_LC_RIGHT -11;
 pos Ustraight @MMK_R_CYR_CHE_LC_RIGHT -21;
 pos Ustraight @MMK_R_CYR_CHE_SC_RIGHT -31;
@@ -1043,6 +1050,9 @@ pos glottalstop @MMK_R_LAT_U_LC_RIGHT -28;
 pos glottalstop @MMK_R_LAT_Z_LC_RIGHT -19;
 pos glottalstop @MMK_R_PCT_COMMA_RIGHT -80;
 pos glottalstop @MMK_R_PCT_EMDASH_RIGHT -3;
+pos glottalstop.a @MMK_R_LAT_A_LC_RIGHT -28;
+pos glottalstop.a @MMK_R_LAT_G_LC_RIGHT -9;
+pos glottalstop.a @MMK_R_LAT_Z_LC_RIGHT -18;
 pos glottalstopreversed @MMK_R_LAT_A_LC_RIGHT -49;
 pos glottalstopreversed @MMK_R_LAT_F_LC_RIGHT -30;
 pos glottalstopreversed @MMK_R_LAT_G_LC_RIGHT -40;
@@ -1702,6 +1712,7 @@ pos @MMK_L_CYR_GHE_UC_LEFT @MMK_R_PCT_COMMA_RIGHT -106;
 pos @MMK_L_CYR_GHE_UC_LEFT @MMK_R_PCT_EMDASH_RIGHT -83;
 pos @MMK_L_CYR_GHE_UC_LEFT @MMK_R_PCT_GUILLEFT_RIGHT -78;
 pos @MMK_L_CYR_GHE_UC_LEFT @MMK_R_PCT_GUILRIGHT_RIGHT -77;
+pos @MMK_L_CYR_GHE_UC_LEFT De.a -120;
 pos @MMK_L_CYR_GHE_UC_LEFT periodcentered -40;
 pos @MMK_L_CYR_GHE_UC_LEFT registered 20;
 pos @MMK_L_CYR_HA_LC_LEFT @MMK_R_CYR_ACYR_LC_RIGHT -10;
@@ -2189,6 +2200,7 @@ pos @MMK_L_CYR_TE_UC_LEFT @MMK_R_PCT_EMDASH_RIGHT -78;
 pos @MMK_L_CYR_TE_UC_LEFT @MMK_R_PCT_GUILLEFT_RIGHT -42;
 pos @MMK_L_CYR_TE_UC_LEFT @MMK_R_PCT_GUILRIGHT_RIGHT -40;
 pos @MMK_L_CYR_TE_UC_LEFT Aie -97;
+pos @MMK_L_CYR_TE_UC_LEFT De.a -60;
 pos @MMK_L_CYR_TE_UC_LEFT periodcentered -61;
 pos @MMK_L_CYR_TE_UC_LEFT slash -102;
 pos @MMK_L_CYR_TSE_LC_LEFT @MMK_R_CYR_DE_LC_RIGHT 40;
@@ -3157,6 +3169,7 @@ pos @MMK_L_LAT_A_SC_LEFT @MMK_R_LAT_Z_SC_RIGHT -8;
 pos @MMK_L_LAT_A_SC_LEFT @MMK_R_PCT_COLON_RIGHT 20;
 pos @MMK_L_LAT_A_SC_LEFT @MMK_R_PCT_COMMA_RIGHT 20;
 pos @MMK_L_LAT_A_SC_LEFT @MMK_R_PCT_QUOTERIGHT_RIGHT -42;
+pos @MMK_L_LAT_A_SC_LEFT Glottalstop.sc -9;
 pos @MMK_L_LAT_A_SC_LEFT periodcentered -19;
 pos @MMK_L_LAT_A_SC_LEFT question.sc -22;
 pos @MMK_L_LAT_A_SC_LEFT quoteleft.sc -38;
@@ -3187,6 +3200,7 @@ pos @MMK_L_LAT_A_UC_LEFT @MMK_R_PCT_QUESTION_RIGHT -20;
 pos @MMK_L_LAT_A_UC_LEFT @MMK_R_PCT_QUOTELEFT_RIGHT -57;
 pos @MMK_L_LAT_A_UC_LEFT @MMK_R_PCT_QUOTERIGHT_RIGHT -54;
 pos @MMK_L_LAT_A_UC_LEFT @MMK_R_PCT_QUOTE_RIGHT -43;
+pos @MMK_L_LAT_A_UC_LEFT Glottalstop -9;
 pos @MMK_L_LAT_A_UC_LEFT asterisk -100;
 pos @MMK_L_LAT_A_UC_LEFT backslash -40;
 pos @MMK_L_LAT_A_UC_LEFT periodcentered -21;
@@ -3427,11 +3441,11 @@ pos @MMK_L_LAT_G_UC_LEFT @MMK_R_LAT_Y_SC_RIGHT 18;
 pos @MMK_L_LAT_G_UC_LEFT asterisk -31;
 pos @MMK_L_LAT_G_UC_LEFT registered 21;
 pos @MMK_L_LAT_G_UC_LEFT trademark 26;
+
+subtable;
 pos @MMK_L_LAT_HBAR_UC_LEFT registered 28;
 pos @MMK_L_LAT_HBAR_UC_LEFT slash -18;
 pos @MMK_L_LAT_HBAR_UC_LEFT trademark 9;
-
-subtable;
 pos @MMK_L_LAT_H_SC_LEFT @MMK_R_LAT_Y_UC_RIGHT -11;
 pos @MMK_L_LAT_H_UC_LEFT @MMK_R_LAT_O_SC_RIGHT 22;
 pos @MMK_L_LAT_H_UC_LEFT @MMK_R_LAT_S_SC_RIGHT 9;
@@ -3551,6 +3565,7 @@ pos @MMK_L_LAT_L_SC_LEFT @MMK_R_LAT_W_SC_RIGHT -36;
 pos @MMK_L_LAT_L_SC_LEFT @MMK_R_LAT_Y_SC_RIGHT -60;
 pos @MMK_L_LAT_L_SC_LEFT @MMK_R_PCT_COMMA_RIGHT 28;
 pos @MMK_L_LAT_L_SC_LEFT @MMK_R_PCT_QUOTERIGHT_RIGHT -83;
+pos @MMK_L_LAT_L_SC_LEFT Glottalstop.sc -46;
 pos @MMK_L_LAT_L_SC_LEFT emdash.sc -39;
 pos @MMK_L_LAT_L_SC_LEFT hyphen.sc -22;
 pos @MMK_L_LAT_L_SC_LEFT question.sc -23;
@@ -3718,6 +3733,7 @@ pos @MMK_L_LAT_R_LC_LEFT @MMK_R_PCT_GUILLEFT_RIGHT -20;
 pos @MMK_L_LAT_R_LC_LEFT @MMK_R_PCT_QUOTELEFT_RIGHT 38;
 pos @MMK_L_LAT_R_LC_LEFT @MMK_R_PCT_QUOTERIGHT_RIGHT 35;
 pos @MMK_L_LAT_R_LC_LEFT backslash 18;
+pos @MMK_L_LAT_R_LC_LEFT glottalstop.a 28;
 pos @MMK_L_LAT_R_LC_LEFT periodcentered -19;
 pos @MMK_L_LAT_R_LC_LEFT registered 81;
 pos @MMK_L_LAT_R_LC_LEFT slash -40;
@@ -3776,6 +3792,7 @@ pos @MMK_L_LAT_S_SC_LEFT @MMK_R_LAT_S_SC_RIGHT -10;
 pos @MMK_L_LAT_S_SC_LEFT @MMK_R_LAT_T_SC_RIGHT -20;
 pos @MMK_L_LAT_S_SC_LEFT @MMK_R_LAT_Z_SC_RIGHT -9;
 pos @MMK_L_LAT_S_SC_LEFT @MMK_R_PCT_GUILLEFT_RIGHT 18;
+pos @MMK_L_LAT_S_SC_LEFT Glottalstop.sc -9;
 pos @MMK_L_LAT_S_SC_LEFT hyphen.sc 8;
 pos @MMK_L_LAT_S_SC_LEFT quoteright.sc 18;
 pos @MMK_L_LAT_S_UC_LEFT @MMK_R_LAT_A_SC_RIGHT 28;
@@ -4195,6 +4212,8 @@ pos @MMK_L_LAT_Y_UC_LEFT periodcentered -40;
 pos @MMK_L_LAT_Y_UC_LEFT registered 38;
 pos @MMK_L_LAT_Y_UC_LEFT slash -79;
 pos @MMK_L_LAT_Y_UC_LEFT trademark 49;
+
+subtable;
 pos @MMK_L_LAT_Z_LC_LEFT @MMK_R_LAT_A_LC_RIGHT -28;
 pos @MMK_L_LAT_Z_LC_LEFT @MMK_R_LAT_G_LC_RIGHT -9;
 pos @MMK_L_LAT_Z_LC_LEFT @MMK_R_LAT_O_LC_RIGHT -10;
@@ -4218,8 +4237,6 @@ pos @MMK_L_LAT_Z_SC_LEFT @MMK_R_PCT_GUILLEFT_RIGHT -38;
 pos @MMK_L_LAT_Z_SC_LEFT @MMK_R_PCT_GUILRIGHT_RIGHT -10;
 pos @MMK_L_LAT_Z_SC_LEFT hyphen.sc -30;
 pos @MMK_L_LAT_Z_SC_LEFT periodcentered -38;
-
-subtable;
 pos @MMK_L_LAT_Z_UC_LEFT @MMK_R_LAT_A_LC_RIGHT -19;
 pos @MMK_L_LAT_Z_UC_LEFT @MMK_R_LAT_A_UC_RIGHT -9;
 pos @MMK_L_LAT_Z_UC_LEFT @MMK_R_LAT_F_LC_RIGHT -20;
