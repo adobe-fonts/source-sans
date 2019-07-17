@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 ro_name=SourceSansVariable-Roman
 it_name=SourceSansVariable-Italic
 
