@@ -22,7 +22,7 @@ function build_var_font {
 	dsp_file="$1"/$2.designspace
 
 	# build variable OTF
-	buildmasterotfs "$dsp_file"
+	buildmasterotfs -d "$dsp_file"
 	buildcff2vf --omit-mac-names -d "$dsp_file"
 
 	# extract and subroutinize the CFF2 table
