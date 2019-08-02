@@ -3,7 +3,7 @@
 @LETTERS_MAJUSCULE_LATIN_ACCENTED_BELOW = [ Adotbelow Blinebelow Ccedilla Ddotbelow Dlinebelow Dcedilla Edotbelow Gcommaaccent Hbrevebelow Hdotbelow Hcedilla Hlinebelow Idotbelow Kcommaaccent Kdotbelow Klinebelow Lcommaaccent Ldotbelow Llinebelow Mdotbelow Ncommaaccent Ndotbelow Nlinebelow Odotbelow Ohorndotbelow Rcommaaccent Rdotbelow Rlinebelow Scedilla Scommaaccent Sdotbelow Tcedilla Tcommaaccent Tdotbelow Tlinebelow Tdieresis Udotbelow Uhorndotbelow Vdotbelow Ydotbelow Zdotbelow Zlinebelow ];
 @LETTERS_MAJUSCULE_LATIN_ACCENTED_BOTH = [ Abrevedotbelow Acircumflexdotbelow Ecircumflexdotbelow Ldotbelowmacron Ocircumflexdotbelow Rdotbelowmacron ];
 @LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL = [ @LETTERS_MAJUSCULE_LATIN_ACCENTED_ABOVE @LETTERS_MAJUSCULE_LATIN_ACCENTED_BELOW @LETTERS_MAJUSCULE_LATIN_ACCENTED_BOTH ];
-@LETTERS_MAJUSCULE_LATIN_ADDL = [ Aogonek AE Bstroke Dcroat Dhook Eogonek Ghook Hbar Istroke Iogonek Lslash Lbelt Ldot Lcat Oslash Oslashacute Ohorn Oogonek OE Tbar Uhorn Uogonek Eth Thorn Schwa Eng Glottalstop IJ IJacute ];
+@LETTERS_MAJUSCULE_LATIN_ADDL = [ Aogonek AE Bstroke Dcroat Dhook Eogonek Eturned Ghook Hbar Istroke Iogonek Lslash Lbelt Ldot Lcat Oslash Oslashacute Ohorn Oogonek OE Tbar Uhorn Uogonek Eth Thorn Schwa Eng Glottalstop IJ IJacute ];
 @LETTERS_MAJUSCULE_LATIN_ALTERNATES = [ Aogonek.d Eogonek.d ];
 @LETTERS_MAJUSCULE_LATIN_ALL = [ @LETTERS_MAJUSCULE_LATIN_BASIC @LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL @LETTERS_MAJUSCULE_LATIN_ADDL @LETTERS_MAJUSCULE_LATIN_ALTERNATES Idotaccent ];
 @LETTERS_MAJUSCULE_LATIN_SUPERIOR = [ A.sups B.sups C.sups D.sups E.sups F.sups G.sups H.sups I.sups J.sups K.sups L.sups M.sups N.sups O.sups P.sups Q.sups R.sups S.sups T.sups U.sups V.sups W.sups X.sups Y.sups Z.sups ];
@@ -13,7 +13,7 @@
 @LETTERS_MINISCULE_LATIN_ACCENTED_BELOW = [ adotbelow blinebelow ccedilla ddotbelow dlinebelow dcedilla edotbelow gcommaaccent hbrevebelow hdotbelow hcedilla hlinebelow idotbelow kcommaaccent kdotbelow klinebelow lcommaaccent ldotbelow llinebelow mdotbelow ncommaaccent ndotbelow nlinebelow odotbelow ohorndotbelow rcommaaccent rdotbelow rlinebelow scedilla scommaaccent sdotbelow tcedilla tcommaaccent tdotbelow tlinebelow tdieresis udotbelow uhorndotbelow vdotbelow ydotbelow zdotbelow zlinebelow ];
 @LETTERS_MINISCULE_LATIN_ACCENTED_BOTH = [ abrevedotbelow acircumflexdotbelow ecircumflexdotbelow ldotbelowmacron ocircumflexdotbelow rdotbelowmacron ];
 @LETTERS_MINISCULE_LATIN_ACCENTED_ALL = [ @LETTERS_MINISCULE_LATIN_ACCENTED_ABOVE @LETTERS_MINISCULE_LATIN_ACCENTED_BELOW @LETTERS_MINISCULE_LATIN_ACCENTED_BOTH ];
-@LETTERS_MINISCULE_LATIN_ADDL = [ aogonek ae bstroke dcroat dhook eogonek ghook hbar istroke iogonek lslash lbelt ldot lcat oslash oslashacute ohorn oogonek oe tbar uhorn uogonek eth thorn schwa eng glottalstop ij ijacute ];
+@LETTERS_MINISCULE_LATIN_ADDL = [ aogonek ae bstroke dcroat dhook eogonek eturned ghook hbar istroke iogonek lslash lbelt ldot lcat oslash oslashacute ohorn oogonek oe tbar uhorn uogonek eth thorn schwa eng glottalstop ij ijacute ];
 @LETTERS_MINISCULE_LATIN_ALTERNATES = [ aogonek.d eogonek.d ];
 @LETTERS_MINISCULE_LATIN_SUPERIOR = [ a.sups b.sups c.sups d.sups e.sups f.sups g.sups h.sups i.sups j.sups k.sups l.sups m.sups n.sups o.sups p.sups q.sups r.sups s.sups t.sups u.sups v.sups w.sups x.sups y.sups z.sups ];
 @LETTERS_MINISCULE_LATIN_ASCENDERS = [ b d f h k l ];
@@ -1103,26 +1103,7 @@ feature cv06 { # Character Variant 6 — Latin Centered ogoneks, Na-Dene prefere
 } cv06;
 
 #--------------------------------------
-feature cv07 { # Character Variant 7 — Latin x-height glottal stop, Na-Dené preference
-
-	cvParameters {
-		FeatUILabelNameID {
-			name 3 1 0x0409 "Short glottal stop [ \0294 ] (Na-Den\00E9)"; # English US: "x-height glottal stop [ ʔ ] (Na-Dené)"
-			name 3 1 0x0809 "Short glottal stop [ \0294 ] (Na-Den\00E9)"; # English GB
-			name 1 0 0 "Short glottal stop (Na-Dene)"; # Mac English
-			name 3 1 0x0408 "\039C\03B9\03BA\03C1\03AE \03B3\03BB\03C9\03C4\03C4\03B9\03B4\03B9\03BA\03AE \03C3\03C4\03AC\03C3\03B7 [ \0294 ] (\039D\03B1-\039D\03C4\03B5\03BD\03AD)"; # Greek: "Μικρή γλωττιδική στάση [ ʔ ] (Να-Ντενέ)"
-#			name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian: "FIX THIS! [ ʔ ] (Na-Dené)"
-		};
-	};
-	
-	lookup GLOTTALSTOP_LC_ALTERNATE { # x-height glottal stop
-		sub glottalstop by glottalstop.a;
-	} GLOTTALSTOP_LC_ALTERNATE;
-
-} cv07;
-
-#--------------------------------------
-feature cv08 { # Character Variant 8 — Latin N-shaped Eng, Sami preference
+feature cv07 { # Character Variant 7 — Latin N-shaped Eng, Sami preference
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1138,10 +1119,10 @@ feature cv08 { # Character Variant 8 — Latin N-shaped Eng, Sami preference
 		sub Eng by Eng.a;
 	} ENG_UC_ALTERNATE;
 
-} cv08;
+} cv07;
 
 #--------------------------------------
-feature cv09 { # Character Variant 9 — Greek alternates for phonetics
+feature cv08 { # Character Variant 8 — Greek alternates for phonetics
 
 @IPA_LC_GREEK = [ alpha beta gamma iota upsilon phi chi ]; # Minion 3 includes theta
 @IPA_LC_LATIN = [ alphalatin betalatin gammalatin iotalatin upsilonlatin philatin chilatin ];
@@ -1160,10 +1141,10 @@ feature cv09 { # Character Variant 9 — Greek alternates for phonetics
 		sub @IPA_LC_GREEK by @IPA_LC_LATIN;
 	} GREEK_TO_IPA;
 
-} cv09;
+} cv08;
 
 #--------------------------------------
-feature cv10 { # Character Variant 10 — Greek alternate beta
+feature cv09 { # Character Variant 09 — Greek alternate beta
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1179,10 +1160,10 @@ feature cv10 { # Character Variant 10 — Greek alternate beta
 		sub beta by beta.a;
 	} BETA_LC_ALTERNATE;
 
-} cv10;
+} cv09;
 
 #--------------------------------------
-feature cv11 { # Character Variant 11 — Greek alternate theta
+feature cv10 { # Character Variant 10 — Greek alternate theta
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1198,10 +1179,10 @@ feature cv11 { # Character Variant 11 — Greek alternate theta
 		sub theta by theta.a;
 	} THETA_LC_ALTERNATE;
 
-} cv11;
+} cv10;
 
 #--------------------------------------
-feature cv12 { # Character Variant 12 — Greek alternate phi
+feature cv11 { # Character Variant 11 — Greek alternate phi
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1217,10 +1198,10 @@ feature cv12 { # Character Variant 12 — Greek alternate phi
 		sub phi by phi.a;
 	} PHI_LC_ALTERNATE;
 
-} cv12;
+} cv11;
 
 #--------------------------------------
-feature cv13 { # Character Variant 13 — Cyrillic ascending zhe, ka, yu, Bulgarian prefernce
+feature cv12 { # Character Variant 12 — Cyrillic ascending zhe, ka, yu, Bulgarian prefernce
 
 @CYRILLIC_LC_STANDARD_FORMS = [ zhe ka yu ];
 @CYRILLIC_LC_ASCENDING_FORMS = [ zhe.b ka.b yu.b ];
@@ -1239,10 +1220,10 @@ feature cv13 { # Character Variant 13 — Cyrillic ascending zhe, ka, yu, Bulgar
 		sub @CYRILLIC_LC_STANDARD_FORMS by @CYRILLIC_LC_ASCENDING_FORMS;
 	} CYRILLIC_LC_ASCENDING_ALTERNATES;
 
-} cv13;
+} cv12;
 
 #--------------------------------------
-feature cv14 { # Character Variant 14 — Cyrillic cursive be, Serbian prefernce
+feature cv13 { # Character Variant 13 — Cyrillic cursive be, Serbian prefernce
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1258,10 +1239,10 @@ feature cv14 { # Character Variant 14 — Cyrillic cursive be, Serbian prefernce
 		sub be by be.c;
 	} CYRILLIC_BE_LC_CURSIVE;
 
-} cv14;
+} cv13;
 
 #--------------------------------------
-feature cv15 { # Character Variant 15 — Cyrillic cursive forms
+feature cv14 { # Character Variant 14 — Cyrillic cursive forms
 
 @CYRILLIC_LC_PRINTED_FORMS = [ ve ghe de ze icyr ishort pe te tse sha shcha gje igravecyr ];
 @CYRILLIC_LC_CURSIVE_FORMS = [ ve.c ghe.c de.c ze.c icyr.c ishort.c pe.c te.c tse.c sha.c shcha.c gje.c igravecyr.c ];
@@ -1280,10 +1261,10 @@ feature cv15 { # Character Variant 15 — Cyrillic cursive forms
 		sub @CYRILLIC_LC_PRINTED_FORMS by @CYRILLIC_LC_CURSIVE_FORMS;
 	} CYRILLIC_LC_CURSIVE_ALTERNATES;
 
-} cv15;
+} cv14;
 
 #--------------------------------------
-feature cv16 { # Character Variant 16 — Cyrillic geometric De, El, Ef forms
+feature cv15 { # Character Variant 15 — Cyrillic geometric De, El, Ef forms
 
 @CYRILLIC_TRAPEZOID_FORMS = [ De El Ef Lje de el ef lje ];
 @CYRILLIC_GEOMETRIC_FORMS = [ De.a El.a Ef.a Lje.a de.a el.a ef.a lje.a ];
@@ -1302,10 +1283,10 @@ feature cv16 { # Character Variant 16 — Cyrillic geometric De, El, Ef forms
 		sub @CYRILLIC_TRAPEZOID_FORMS by @CYRILLIC_GEOMETRIC_FORMS;
 	} CYRILLIC_GEOMETRIC_ALTERNATES;
 
-} cv16;
+} cv15;
 
 #--------------------------------------
-feature cv17 { # Character Variant 17 — simple Zhe, Ka & palochka forms
+feature cv16 { # Character Variant 16 — simple Zhe, Ka & palochka forms
 
 @CYRILLIC_CURLED_FORMS = [ Zhe Ka Zhedescender Kje Kadescender Kabashkir Zhebreve zhe zhe.b ka ka.b kje zhedescender kadescender kabashkir zhebreve palochka ];
 @CYRILLIC_STRAIGHT_FORMS = [ Zhe.a Ka.a Zhedescender.a Kje.a Kadescender.a Kabashkir.a Zhebreve.a zhe.a zhe.d ka.a ka.d kje.a zhedescender.a kadescender.a kabashkir.a zhebreve.a l.a ];
@@ -1324,10 +1305,10 @@ feature cv17 { # Character Variant 17 — simple Zhe, Ka & palochka forms
 		sub @CYRILLIC_CURLED_FORMS by @CYRILLIC_STRAIGHT_FORMS;
 	} CYRILLIC_STRAIGHT_ALTERNATES;
 
-} cv17;
+} cv16;
 
 #--------------------------------------
-feature cv18 { # Character Variant 18 — Capital figures
+feature cv17 { # Character Variant 17 — Capital figures
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1343,10 +1324,10 @@ feature cv18 { # Character Variant 18 — Capital figures
 		sub @FIGURES_LINING_TABULAR by @FIGURES_CAP;
 	} FIGURES_CASE;
 
-} cv18;
+} cv17;
 
 #--------------------------------------
-feature cv19 { # Character Variant 19 — dotted zero
+feature cv18 { # Character Variant 18 — dotted zero
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1363,10 +1344,10 @@ feature cv19 { # Character Variant 19 — dotted zero
 		sub zero.pnum by zero.0p;
 	} ZERO;
 
-} cv19;
+} cv18;
 
 #--------------------------------------
-feature cv20 { # Character Variant 20 — slashed zero
+feature cv19 { # Character Variant 19 — slashed zero
 	cvParameters {
 		FeatUILabelNameID {
 			name 3 1 0x0409 "Slashed zero [ 0 ]"; # English US
@@ -1383,7 +1364,7 @@ feature cv20 { # Character Variant 20 — slashed zero
 	} ZERO_SLASH;
 
 
-} cv20;
+} cv19;
 
 #--------------------------------------
 feature locl { # Localized Forms
@@ -1393,11 +1374,9 @@ feature locl { # Localized Forms
 			lookup GREEK_TO_IPA;
 
 		language ATH include_dflt;
-			lookup GLOTTALSTOP_LC_ALTERNATE;
 			lookup OGONEK_ALTERNATES;
 
 		language CHP include_dflt;
-			lookup GLOTTALSTOP_LC_ALTERNATE;
 			lookup OGONEK_ALTERNATES;
 
 		language NAV include_dflt;
@@ -1407,7 +1386,6 @@ feature locl { # Localized Forms
 			lookup ENG_UC_ALTERNATE;
 
 		language SLA include_dflt;
-			lookup GLOTTALSTOP_LC_ALTERNATE;
 			lookup OGONEK_ALTERNATES;
 
 		language SKS include_dflt;
@@ -1679,21 +1657,7 @@ feature ss07 { # Stylistic Set 7 — Latin centered ogoneks, Na-Dene preference;
 } ss07;
 
 #--------------------------------------
-feature ss08 { # Stylistic Set 8 — Latin x-height glottal stop, Na-Dené preference
-	featureNames {
-		name 3 1 0x0409 "Short glottal stop [ \0294 ] (Na-Den\00E9)"; # English US: "x-height glottal stop [ ʔ ] (Na-Dené)"
-		name 3 1 0x0809 "Short glottal stop [ \0294 ] (Na-Den\00E9)"; # English GB
-		name 1 0 0 "Short glottal stop (Na-Dene)"; # Mac English
-		name 3 1 0x0408 "\039C\03B9\03BA\03C1\03AE \03B3\03BB\03C9\03C4\03C4\03B9\03B4\03B9\03BA\03AE \03C3\03C4\03AC\03C3\03B7 [ \0294 ] (\039D\03B1-\039D\03C4\03B5\03BD\03AD)"; # Greek: "Μικρή γλωττιδική στάση [ ʔ ] (Να-Ντενέ)"
-#		name 3 1 0x0419 "\0441\0430\0430\043C\0441\043A\0438\0439 \014A"; # Russian: "FIX THIS! [ ʔ ] (Na-Dené)"
-		};
-
-	lookup GLOTTALSTOP_LC_ALTERNATE;
-
-} ss08;
-
-#--------------------------------------
-feature ss09 { # Stylistic Set 9 — Latin N-shaped Eng, Sami preference
+feature ss08 { # Stylistic Set 8 — Latin N-shaped Eng, Sami preference
 	featureNames {
 		name 3 1 0x0409 "N-shaped Eng [ \014A ] (Sami)"; # English US: N-shaped Eng [ Ŋ ] (Sami)
 		name 3 1 0x0809 "N-shaped Eng [ \014A ] (Sami)"; # English GB
@@ -1704,10 +1668,10 @@ feature ss09 { # Stylistic Set 9 — Latin N-shaped Eng, Sami preference
 
 	lookup ENG_UC_ALTERNATE;
 
-} ss09;
+} ss08;
 
 #--------------------------------------
-feature ss10 { # Stylistic Set 10 — Titling Figures
+feature ss09 { # Stylistic Set 9 — Titling Figures
 	featureNames {
 		name 3 1 0x0409 "Capital figures"; # English US
 		name 3 1 0x0809 "Capital figures"; # English GB
@@ -1717,10 +1681,10 @@ feature ss10 { # Stylistic Set 10 — Titling Figures
 		};
 
 	lookup FIGURES_CASE;
-} ss10;
+} ss09;
 
 #--------------------------------------
-feature ss11 { # Stylistic Set 11 (Dotted zero)
+feature ss10 { # Stylistic Set 10 (Dotted zero)
 	featureNames {
 		name 3 1 0x0409 "Dotted zero [ 0 ]"; # English US
 		name 3 1 0x0809 "Dotted zero [ 0 ]"; # English GB
@@ -1730,7 +1694,7 @@ feature ss11 { # Stylistic Set 11 (Dotted zero)
 		};
 
 	lookup ZERO;
-} ss11;
+} ss10;
 
 #--------------------------------------
 feature salt { # Stylistic Alternates
