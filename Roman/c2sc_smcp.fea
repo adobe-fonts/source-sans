@@ -55,6 +55,8 @@ feature c2sc { # UC-->SC
 	lookup SORTS_SMALLCAP { # belongs only in <c2sc> feature, not to be replicated in <smcp>
 		sub @PUNCTUATION_FOR_SMALLCAPS by @PUNCTUATION_SMALLCAPS;
 	} SORTS_SMALLCAP;
+	
+	lookup MARKS_CMB_CASE;
 
 } c2sc;
 
@@ -112,6 +114,7 @@ feature smcp { # LC-->SC
 		language dflt;
 			lookup LATIN_SMALLCAPS;
 			lookup NUMERALS_SMALLCAP;
+			lookup MARKS_CMB_CASE;
 
 		language ATH include_dflt; # AthapaskanAthabaskan
 		language NAV include_dflt; # NavajoDiné Bizaad
@@ -124,31 +127,35 @@ feature smcp { # LC-->SC
 			lookup I_TURKISH;
 			lookup LATIN_SMALLCAPS;
 			lookup NUMERALS_SMALLCAP;
+			lookup MARKS_CMB_CASE;
 
 		language AZE exclude_dflt;
 			lookup I_TURKISH;
 			lookup LATIN_SMALLCAPS;
 			lookup NUMERALS_SMALLCAP;
+			lookup MARKS_CMB_CASE;
 
 		language CRT exclude_dflt;
 			lookup I_TURKISH;
 			lookup LATIN_SMALLCAPS;
 			lookup NUMERALS_SMALLCAP;
+			lookup MARKS_CMB_CASE;
 
 	script grek;
 		language dflt;
 			lookup GREEK_SMALLCAPS_MONO;
 			lookup GREEK_SMALLCAPS_POLY;
 			lookup NUMERALS_SMALLCAP;
+			lookup MARKS_CMB_CASE;
 
 	script cyrl;
 		language dflt;
 			lookup CYRILLIC_SMALLCAPS;
 			lookup NUMERALS_SMALLCAP;
+			lookup MARKS_CMB_CASE;
 
 		language BGR include_dflt; # Bulgarian
 		language MKD include_dflt; # Macedonian
 		language SRB include_dflt; # Serbian
-
 
 } smcp;
