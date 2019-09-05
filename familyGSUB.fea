@@ -1,0 +1,1761 @@
+@LETTERS_MAJUSCULE_LATIN_BASIC = [ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z ];
+@LETTERS_MAJUSCULE_LATIN_ACCENTED_ABOVE = [ Aacute Abreve Abreveacute Abrevegrave Abrevehoi Abrevetilde Acaron Acircumflex Acircumflexacute Acircumflexgrave Acircumflexhoi Acircumflextilde Adieresis Agrave Ahoi Amacron Aogonekacute Aring Aringacute Atilde AEacute AEmacron Bdotaccent Cacute Ccaron Ccircumflex Cdotaccent Dcaron Ddotaccent Eacute Ebreve Ecaron Ecircumflex Ecircumflexacute Ecircumflexgrave Ecircumflexhoi Ecircumflextilde Edieresis Edotaccent Egrave Ehoi Emacron Emacronacute Eogonekacute Etilde Fdotaccent Gacute Gbreve Gcaron Gcircumflex Gdotaccent Gmacron Gtilde Hcircumflex Hdieresis Iacute Ibreve Icaron Icircumflex Idieresis Igrave Ihoi Imacron Iogonekacute Itilde Jcircumflex Lacute Lcaron Macute Mdotaccent Nacute Ncaron Ndotaccent Ngrave Ntilde Oacute Obreve Ocaron Ocircumflex Ocircumflexacute Ocircumflexgrave Ocircumflexhoi Ocircumflextilde Odieresis Ograve Ohoi Ohornacute Ohorngrave Ohornhoi Ohorntilde Ohungarumlaut Omacron Omacronacute Oogonekacute Otilde Pdotaccent Racute Rcaron Rdotaccent Sacute Scaron Scarondot Scircumflex Sdotaccent Tcaron Tdotaccent Uacute Ubreve Ucaron Ucircumflex Udieresis Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Ugrave Uhoi Uhornacute Uhorngrave Uhornhoi Uhorntilde Uhungarumlaut Umacron Uogonekacute Uring Utilde Wacute Wcircumflex Wdieresis Wgrave Yacute Ycircumflex Ydieresis Ydotaccent Ygrave Yhoi Ytilde Zacute Zcaron Zdotaccent Zcircumflex ];
+@LETTERS_MAJUSCULE_LATIN_ACCENTED_BELOW = [ Adotbelow Blinebelow Ccedilla Ddotbelow Dlinebelow Dcedilla Edotbelow Gcommaaccent Hbrevebelow Hdotbelow Hcedilla Hlinebelow Idotbelow Kcommaaccent Kdotbelow Klinebelow Lcommaaccent Ldotbelow Llinebelow Mdotbelow Ncommaaccent Ndotbelow Nlinebelow Odotbelow Ohorndotbelow Rcommaaccent Rdotbelow Rlinebelow Scedilla Scommaaccent Sdotbelow Tcedilla Tcommaaccent Tdotbelow Tlinebelow Tdieresis Udotbelow Uhorndotbelow Vdotbelow Ydotbelow Zdotbelow Zlinebelow ];
+@LETTERS_MAJUSCULE_LATIN_ACCENTED_BOTH = [ Abrevedotbelow Acircumflexdotbelow Ecircumflexdotbelow Ldotbelowmacron Ocircumflexdotbelow Rdotbelowmacron ];
+@LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL = [ @LETTERS_MAJUSCULE_LATIN_ACCENTED_ABOVE @LETTERS_MAJUSCULE_LATIN_ACCENTED_BELOW @LETTERS_MAJUSCULE_LATIN_ACCENTED_BOTH ];
+@LETTERS_MAJUSCULE_LATIN_ADDL = [ Aogonek AE Bstroke Dcroat Dhook Eogonek Eturned Ghook Hbar Istroke Iogonek Lslash Lbelt Ldot Lcat Oslash Oslashacute Ohorn Oogonek OE Tbar Uhorn Uogonek Eth Thorn Schwa Eng Glottalstop IJ IJacute ];
+@LETTERS_MAJUSCULE_LATIN_ALTERNATES = [ Aogonek.d Eogonek.d ];
+@LETTERS_MAJUSCULE_LATIN_ALL = [ @LETTERS_MAJUSCULE_LATIN_BASIC @LETTERS_MAJUSCULE_LATIN_ACCENTED_ALL @LETTERS_MAJUSCULE_LATIN_ADDL @LETTERS_MAJUSCULE_LATIN_ALTERNATES Idotaccent ];
+@LETTERS_MAJUSCULE_LATIN_SUPERIOR = [ A.sups B.sups C.sups D.sups E.sups F.sups G.sups H.sups I.sups J.sups K.sups L.sups M.sups N.sups O.sups P.sups Q.sups R.sups S.sups T.sups U.sups V.sups W.sups X.sups Y.sups Z.sups ];
+
+@LETTERS_MINISCULE_LATIN_BASIC = [ a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+@LETTERS_MINISCULE_LATIN_ACCENTED_ABOVE = [ aacute abreve abreveacute abrevegrave abrevehoi abrevetilde acaron acircumflex acircumflexacute acircumflexgrave acircumflexhoi acircumflextilde adieresis agrave ahoi amacron aogonekacute aring aringacute atilde aeacute aemacron bdotaccent cacute ccaron ccircumflex cdotaccent dcaron ddotaccent eacute ebreve ecaron ecircumflex ecircumflexacute ecircumflexgrave ecircumflexhoi ecircumflextilde edieresis edotaccent egrave ehoi emacron emacronacute eogonekacute etilde fdotaccent gacute gbreve gcaron gcircumflex gdotaccent gmacron gtilde hcircumflex hdieresis iacute ibreve icaron icircumflex idieresis igrave ihoi imacron iogonekacute itilde jcircumflex lacute lcaron macute mdotaccent nacute ncaron ndotaccent ngrave ntilde oacute obreve ocaron ocircumflex ocircumflexacute ocircumflexgrave ocircumflexhoi ocircumflextilde odieresis ograve ohoi ohornacute ohorngrave ohornhoi ohorntilde ohungarumlaut omacron omacronacute oogonekacute otilde pdotaccent racute rcaron rdotaccent sacute scaron scarondot scircumflex sdotaccent tcaron tdotaccent uacute ubreve ucaron ucircumflex udieresis udieresisacute udieresiscaron udieresisgrave udieresismacron ugrave uhoi uhornacute uhorngrave uhornhoi uhorntilde uhungarumlaut umacron uogonekacute uring utilde wacute wcircumflex wdieresis wgrave yacute ycircumflex ydieresis ydotaccent ygrave yhoi ytilde zacute zcaron zdotaccent zcircumflex ];
+@LETTERS_MINISCULE_LATIN_ACCENTED_BELOW = [ adotbelow blinebelow ccedilla ddotbelow dlinebelow dcedilla edotbelow gcommaaccent hbrevebelow hdotbelow hcedilla hlinebelow idotbelow kcommaaccent kdotbelow klinebelow lcommaaccent ldotbelow llinebelow mdotbelow ncommaaccent ndotbelow nlinebelow odotbelow ohorndotbelow rcommaaccent rdotbelow rlinebelow scedilla scommaaccent sdotbelow tcedilla tcommaaccent tdotbelow tlinebelow tdieresis udotbelow uhorndotbelow vdotbelow ydotbelow zdotbelow zlinebelow ];
+@LETTERS_MINISCULE_LATIN_ACCENTED_BOTH = [ abrevedotbelow acircumflexdotbelow ecircumflexdotbelow ldotbelowmacron ocircumflexdotbelow rdotbelowmacron ];
+@LETTERS_MINISCULE_LATIN_ACCENTED_ALL = [ @LETTERS_MINISCULE_LATIN_ACCENTED_ABOVE @LETTERS_MINISCULE_LATIN_ACCENTED_BELOW @LETTERS_MINISCULE_LATIN_ACCENTED_BOTH ];
+@LETTERS_MINISCULE_LATIN_ADDL = [ aogonek ae bstroke dcroat dhook eogonek eturned ghook hbar istroke iogonek lslash lbelt ldot lcat oslash oslashacute ohorn oogonek oe tbar uhorn uogonek eth thorn schwa eng glottalstoplatin ij ijacute ];
+@LETTERS_MINISCULE_LATIN_ALTERNATES = [ aogonek.d eogonek.d ];
+@LETTERS_MINISCULE_LATIN_SUPERIOR = [ a.sups b.sups c.sups d.sups e.sups f.sups g.sups h.sups i.sups j.sups k.sups l.sups m.sups n.sups o.sups p.sups q.sups r.sups s.sups t.sups u.sups v.sups w.sups x.sups y.sups z.sups ];
+@LETTERS_MINISCULE_LATIN_ASCENDERS = [ b d f h k l ];
+@LETTERS_MINISCULE_LATIN_ASCENDERS_ALL = [ b d f h k l ];
+
+@LETTERS_MAJUSCULE_GREEK_BASIC = [ Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega ];
+@LETTERS_MAJUSCULE_GREEK_TONOS = [ Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos ];
+@LETTERS_MAJUSCULE_GREEK_DIERESIS = [ Iotadieresis Upsilondieresis ];
+@LETTERS_MAJUSCULE_GREEK_POLY = [ Alphalenis Alphaasper Alphagrave Alphaacute Alphalenisgrave Alphaaspergrave Alphalenisacute Alphaasperacute Alphalenistilde Alphaaspertilde Alphabreve Alphamacron Epsilonlenis Epsilonasper Epsilongrave Epsilonacute Epsilonlenisgrave Epsilonaspergrave Epsilonlenisacute Epsilonasperacute Etalenis Etaasper Etagrave Etaacute Etalenisgrave Etaaspergrave Etalenisacute Etaasperacute Etalenistilde Etaaspertilde Iotalenis Iotaasper Iotagrave Iotaacute Iotalenisgrave Iotaaspergrave Iotalenisacute Iotaasperacute Iotalenistilde Iotaaspertilde Iotabreve Iotamacron Omicronlenis Omicronasper Omicrongrave Omicronacute Omicronlenisgrave Omicronaspergrave Omicronlenisacute Omicronasperacute Rhoasper Upsilonasper Upsilongrave Upsilonacute Upsilonaspergrave Upsilonasperacute Upsilonaspertilde Upsilonbreve Upsilonmacron Omegalenis Omegaasper Omegagrave Omegaacute Omegalenisgrave Omegaaspergrave Omegalenisacute Omegaasperacute Omegalenistilde Omegaaspertilde Alphaiotasub Alphaiotasublenis Alphaiotasubasper Alphaiotasublenisgrave Alphaiotasubaspergrave Alphaiotasublenisacute Alphaiotasubasperacute Alphaiotasublenistilde Alphaiotasubaspertilde Etaiotasub Etaiotasublenis Etaiotasubasper Etaiotasublenisgrave Etaiotasubaspergrave Etaiotasublenisacute Etaiotasubasperacute Etaiotasublenistilde Etaiotasubaspertilde Omegaiotasub Omegaiotasublenis Omegaiotasubasper Omegaiotasublenisgrave Omegaiotasubaspergrave Omegaiotasublenisacute Omegaiotasubasperacute Omegaiotasublenistilde Omegaiotasubaspertilde ];
+@LETTERS_MAJUSCULE_GREEK_ALL = [ @LETTERS_MAJUSCULE_GREEK_BASIC @LETTERS_MAJUSCULE_GREEK_TONOS @LETTERS_MAJUSCULE_GREEK_DIERESIS @LETTERS_MAJUSCULE_GREEK_POLY ];
+
+@LETTERS_MINISCULE_GREEK_BASIC = [ alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigma tau upsilon phi chi psi omega ];
+@LETTERS_MINISCULE_GREEK_TONOS = [ alphatonos epsilontonos etatonos iotatonos omicrontonos upsilontonos omegatonos ];
+@LETTERS_MINISCULE_GREEK_DIERESIS = [ iotadieresis upsilondieresis ];
+@LETTERS_MINISCULE_GREEK_DIERESISTONOS = [ iotadieresistonos upsilondieresistonos ];
+@LETTERS_MINISCULE_GREEK_POLY = [ alphalenis alphaasper alphagrave alphaacute alphalenisgrave alphaaspergrave alphalenisacute alphaasperacute alphalenistilde alphaaspertilde alphabreve alphamacron alphatilde epsilonlenis epsilonasper epsilongrave epsilonacute epsilonlenisgrave epsilonaspergrave epsilonlenisacute epsilonasperacute etalenis etaasper etagrave etaacute etalenisgrave etaaspergrave etalenisacute etaasperacute etalenistilde etaaspertilde etatilde iotalenis iotaasper iotagrave iotaacute iotalenisgrave iotaaspergrave iotalenisacute iotaasperacute iotalenistilde iotaaspertilde iotabreve iotamacron iotatilde iotadieresisgrave iotadieresisacute iotadieresistilde omicronlenis omicronasper omicrongrave omicronacute omicronlenisgrave omicronaspergrave omicronlenisacute omicronasperacute rholenis rhoasper upsilonlenis upsilonasper upsilongrave upsilonacute upsilonlenisgrave upsilonaspergrave upsilonlenisacute upsilonasperacute upsilonlenistilde upsilonaspertilde upsilontilde upsilonbreve upsilonmacron upsilondieresisgrave upsilondieresisacute upsilondieresistilde omegalenis omegaasper omegagrave omegaacute omegalenisgrave omegaaspergrave omegalenisacute omegaasperacute omegalenistilde omegaaspertilde omegatilde alphaiotasub alphaiotasublenis alphaiotasubasper alphaiotasubgrave alphaiotasubacute alphaiotasublenisgrave alphaiotasubaspergrave alphaiotasublenisacute alphaiotasubasperacute alphaiotasublenistilde alphaiotasubaspertilde alphaiotasubtilde etaiotasub etaiotasublenis etaiotasubasper etaiotasubgrave etaiotasubacute etaiotasublenisgrave etaiotasubaspergrave etaiotasublenisacute etaiotasubasperacute etaiotasublenistilde etaiotasubaspertilde etaiotasubtilde omegaiotasub omegaiotasublenis omegaiotasubasper omegaiotasubgrave omegaiotasubacute omegaiotasublenisgrave omegaiotasubaspergrave omegaiotasublenisacute omegaiotasubasperacute omegaiotasublenistilde omegaiotasubaspertilde omegaiotasubtilde ];
+@LETTERS_MINISCULE_GREEK_ALL = [ @LETTERS_MINISCULE_GREEK_BASIC @LETTERS_MINISCULE_GREEK_TONOS @LETTERS_MINISCULE_GREEK_DIERESIS @LETTERS_MINISCULE_GREEK_DIERESISTONOS @LETTERS_MINISCULE_GREEK_POLY ];
+
+@IOTA_MODIFIERS_GREEK = [ iotasubscriptcmb iotaadscript ];
+
+@LETTERS_MAJUSCULE_CYRILLIC_BASIC = [ Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup Ghestroke Zhedescender Zedescender Kadescender Kabashkir Endescender Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Aie Schwacyr Obarcyr ];
+@LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [ Ishort Iegrave Io Dje Gje Yi Yi.a Kje Igravecyr Ushort Zhebreve Abrevecyr Iebreve Imacroncyr Odieresiscyr Umacroncyr Uacutedblcyr ];
+@LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES = [ De.a Zhe.a Ka.a El.a Ef.a Lje.a Kje.a Zhedescender.a Kadescender.a Kabashkir.a Zhebreve.a ];
+@LETTERS_MAJUSCULE_CYRILLIC_ALL = [ @LETTERS_MAJUSCULE_CYRILLIC_BASIC @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED @LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES ];
+
+@LETTERS_MINISCULE_CYRILLIC_BASIC = [ acyr be ve ghe de ie zhe ze icyr ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ieukran dze iukran je lje nje tshe dzhe yat fita izhitsa gheup ghestroke zhedescender zedescender kadescender kabashkir endescender esdescender ustraight ustraightstroke hadescender chedescender shha palochka aie schwacyr obarcyr ];
+@LETTERS_MINISCULE_CYRILLIC_ACCENTED = [ ishort iegrave io dje gje yi kje igravecyr ushort zhebreve abrevecyr iebreve imacroncyr odieresiscyr umacroncyr uacutedblcyr ];
+@LETTERS_MINISCULE_CYRILLIC_ALTERNATES = [ de.a zhe.a ka.a el.a ef.a yi.a lje.a kje.a zhedescender.a kadescender.a kabashkir.a zhebreve.a ];
+@LETTERS_MINISCULE_CYRILLIC_ALL = [ @LETTERS_MINISCULE_CYRILLIC_BASIC @LETTERS_MINISCULE_CYRILLIC_ACCENTED @LETTERS_MINISCULE_CYRILLIC_ALTERNATES ];
+
+@LETTERS_MAJUSCULE_ALL = [ @LETTERS_MAJUSCULE_LATIN_ALL @LETTERS_MAJUSCULE_GREEK_ALL @LETTERS_MAJUSCULE_CYRILLIC_ALL ];
+
+@MARKS_CMB_ABOVE = [ gravecmb variacmb acutecmb tonoscmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb commaturnedabovecmb aspercmb commaabovecmb leniscmb leftangleabovecmb horncmb cedillacmb ogonekcmb tildeoverlaycmb xabovecmb perispomenicmb koroniscmb dialytikatonoscmb dotaboverightcmb ];
+@MARKS_CMB_BELOW = [ lefttackbelowcmb righttackbelowcmb ringhalfleftbelowcmb uptackbelowcmb downtackbelowcmb plusbelowcmb minusbelowcmb dotbelowcmb dieresisbelowcmb ringbelowcmb commabelowcmb verticallinebelowcmb bridgebelowcmb caronbelowcmb brevebelowcmb breveinvertedbelowcmb tildebelowcmb macronbelowcmb ringhalfrightbelowcmb bridgeinvertedbelowcmb squarebelowcmb seagullbelowcmb iotasubscriptcmb ];
+@MARKS_CMB_ALL = [ @MARKS_CMB_ABOVE @MARKS_CMB_BELOW ];
+
+@MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb candrabinducmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb dotaboverightcmb circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresismacron dieresiscaron ringacute carondotaccent ];
+@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap candrabinducmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap verticallineabovecmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap dotaboverightcmb.cap circumflexgrave.cap circumflexacute.cap circumflextilde.cap circumflexmacron.cap circumflexbreve.cap circumflexhoi.cap circumflexcaron.cap macronacute.cap brevegrave.cap breveacute.cap brevetilde.cap brevehoi.cap dieresisgrave.cap dieresisacute.cap dieresismacron.cap dieresiscaron.cap ringacute.cap carondotaccent.cap ];
+
+@FIGURES_LINING_TABULAR = [ zero one two three four five six seven eight nine ];
+@FIGURES_LINING_PROPORTIONAL = [ zero.pnum one.pnum two.pnum three.pnum four.pnum five.pnum six.pnum seven.pnum eight.pnum nine.pnum ];
+@FIGURES_OLDSTYLE_PROPORTIONAL = [ zero.onum one.onum two.onum three.onum four.onum five.onum six.onum seven.onum eight.onum nine.onum ];
+@FIGURES_OLDSTYLE_TABULAR = [ zero.tnum one.tnum two.tnum three.tnum four.tnum five.tnum six.tnum seven.tnum eight.tnum nine.tnum ];
+@FIGURES_NUMERATOR = [ zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr ];
+@FIGURES_DENOMINATOR = [ zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom ];
+@FIGURES_SUPERIOR = [ zero.sups one.sups two.sups three.sups four.sups five.sups six.sups seven.sups eight.sups nine.sups ];
+@FIGURES_INFERIOR = [ zero.subs one.subs two.subs three.subs four.subs five.subs six.subs seven.subs eight.subs nine.subs ];
+@FIGURES_CAP = [ zero.cap one.cap two.cap three.cap four.cap five.cap six.cap seven.cap eight.cap nine.cap ];
+
+@PUNCTUATION_FOR_SMALLCAPS = [ ampersand exclam question exclamdown questiondown interrobang interrobangdown parenleft parenright bracketleft bracketright braceleft braceright hyphen endash emdash quoteleft quoteright quotedblleft quotedblright quotesingle quotedbl ];
+
+@PUNCTUATION_FOR_SMALL_FIGURE_STYLES = [ parenleft parenright period comma ];
+@PUNCTUATION_NUMERATOR = [ parenleft.numr parenright.numr period.numr comma.numr ];
+@PUNCTUATION_DENOMINATOR = [ parenleft.dnom parenright.dnom period.dnom comma.dnom ];
+@PUNCTUATION_SUPERIOR = [ parenleft.sups parenright.sups period.sups comma.sups ];
+@PUNCTUATION_INFERIOR = [ parenleft.subs parenright.subs period.subs comma.subs ];
+
+#--------------------------------------
+languagesystem DFLT dflt; # Default
+
+languagesystem latn dflt; # Latin default
+	languagesystem latn ATH; # Athapaskan/Athabaskan
+	languagesystem latn AZE; # Azeri
+	languagesystem latn CHP; # Dënësųłınë́ (Chipewyan)
+	languagesystem latn CRT; # Crimean Tatar
+	languagesystem latn NAV; # NavajoDiné Bizaad
+	languagesystem latn NSM; # Northern Sami
+	languagesystem latn SKS; # Skolt Sami
+	languagesystem latn SLA; # South(?) Slavey
+	languagesystem latn TRK; # Turkish
+	languagesystem latn IPPH; # Phonetic transcription, IPA conventions	
+	languagesystem latn APPH; # Phonetic transcription, Americanist conventions
+
+languagesystem grek dflt; # Greek default
+
+languagesystem cyrl dflt; # Cyrillic default
+	languagesystem cyrl BGR; # Bulgarian
+	languagesystem cyrl MKD; # Macedonian
+	languagesystem cyrl SRB; # Serbian
+
+#--------------------------------------
+
+lookup SUPERIOR_LETTERS_MINISCULE {
+	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_MINISCULE_LATIN_SUPERIOR;
+	sub [ egrave eacute eogonek schwa ] by [ egrave.sups eacute.sups eogonek.sups schwa.sups ];
+} SUPERIOR_LETTERS_MINISCULE;
+
+lookup SUPERIOR_LETTERS_MAJUSCULE {
+	sub @LETTERS_MAJUSCULE_LATIN_BASIC by @LETTERS_MAJUSCULE_LATIN_SUPERIOR;
+} SUPERIOR_LETTERS_MAJUSCULE;
+
+lookup SUPERIOR_SORTS {
+	sub [ colon hyphen endash emdash ] by [ colon.sups hyphen.sups endash.sups emdash.sups ];
+} SUPERIOR_SORTS;
+
+lookup SUPERIOR_NUMERALS_SORTS {
+	sub @FIGURES_LINING_TABULAR by @FIGURES_SUPERIOR;
+	sub @PUNCTUATION_FOR_SMALL_FIGURE_STYLES by @PUNCTUATION_SUPERIOR;
+	sub [ plus minus equal ] by [ plus.sups minus.sups equal.sups ];
+} SUPERIOR_NUMERALS_SORTS;
+
+lookup INFERIOR {
+	sub @FIGURES_LINING_TABULAR by @FIGURES_INFERIOR;
+	sub @PUNCTUATION_FOR_SMALL_FIGURE_STYLES by @PUNCTUATION_INFERIOR;
+	sub [ plus minus equal ] by [ plus.subs minus.subs equal.subs ];
+} INFERIOR;
+
+lookup OLDSTYLE {
+	sub @FIGURES_LINING_TABULAR by @FIGURES_OLDSTYLE_TABULAR;
+	sub @FIGURES_LINING_PROPORTIONAL by @FIGURES_OLDSTYLE_PROPORTIONAL;
+} OLDSTYLE;
+
+lookup PROPORTIONAL {
+	sub @FIGURES_LINING_TABULAR by @FIGURES_LINING_PROPORTIONAL;
+	sub @FIGURES_OLDSTYLE_TABULAR by @FIGURES_OLDSTYLE_PROPORTIONAL;
+} PROPORTIONAL;
+
+lookup MARKS_CMB_CASE {
+	sub @MARKS_CMB_LC by @MARKS_CMB_CASE;
+} MARKS_CMB_CASE;
+
+
+#--------------------------------------
+# feature aalt (this comment indicates feature order)
+include (../../aalt.fea); # imports aalt feature (which differ between upright and italic)
+
+#--------------------------------------
+lookup DECOMPOSITION {
+
+	#Latin
+	sub Agrave by A gravecmb.cap;
+	sub Aacute by A acutecmb.cap;
+	sub Acircumflex by A circumflexcmb.cap;
+	sub Atilde by A tildecmb.cap;
+	sub Adieresis by A dieresiscmb.cap;
+	sub Amacron by A macroncmb.cap;
+	sub Abreve by A brevecmb.cap;
+	sub Aring by A ringcmb.cap;
+	sub Aringacute by A ringcmb.cap acutecmb.cap;
+	sub Acaron by A caroncmb.cap;
+	sub Adotbelow by A dotbelowcmb;
+	sub Ahoi by A hoicmb.cap;
+	sub Acircumflexacute by A circumflexcmb.cap acutecmb.cap;
+	sub Acircumflexgrave by A circumflexcmb.cap gravecmb.cap;
+	sub Acircumflexhoi by A circumflexcmb.cap hoicmb.cap;
+	sub Acircumflextilde by A circumflexcmb.cap tildecmb.cap;
+	sub Acircumflexdotbelow by A circumflexcmb.cap dotbelowcmb;
+	sub Abreveacute by A brevecmb.cap acutecmb.cap;
+	sub Abrevegrave by A brevecmb.cap gravecmb.cap;
+	sub Abrevehoi by A brevecmb.cap hoicmb.cap;
+	sub Abrevetilde by A brevecmb.cap tildecmb.cap;
+	sub Abrevedotbelow by A brevecmb.cap dotbelowcmb;
+	sub Aogonekacute by Aogonek acutecmb.cap;
+	sub AEacute by AE acutecmb.cap;
+	sub AEmacron by AE macroncmb.cap;
+	sub Bdotaccent by B dotaccentcmb.cap;
+	sub Blinebelow by B macronbelowcmb;
+	sub Ccedilla by C cedillacmb.cap;
+	sub Cacute by C acutecmb.cap;
+	sub Ccircumflex by C circumflexcmb.cap;
+	sub Ccaron by C caroncmb.cap;
+	sub Cdotaccent by C dotaccentcmb.cap;
+	sub Dcaron by D caroncmb.cap;
+	sub Ddotaccent by D dotaccentcmb.cap;
+	sub Ddotbelow by D dotbelowcmb;
+	sub Dcedilla by D cedillacmb.cap;
+	sub Dlinebelow by D macronbelowcmb;
+	sub Egrave by E gravecmb.cap;
+	sub Eacute by E acutecmb.cap;
+	sub Ecircumflex by E circumflexcmb.cap;
+	sub Ecaron by E caroncmb.cap;
+	sub Edieresis by E dieresiscmb.cap;
+	sub Emacron by E macroncmb.cap;
+	sub Ebreve by E brevecmb.cap;
+	sub Edotaccent by E dotaccentcmb.cap;
+	sub Edotbelow by E dotbelowcmb;
+	sub Ehoi by E hoicmb.cap;
+	sub Etilde by E tildecmb.cap;
+	sub Ecircumflexacute by E circumflexcmb.cap acutecmb.cap;
+	sub Ecircumflexgrave by E circumflexcmb.cap gravecmb.cap;
+	sub Ecircumflexhoi by E circumflexcmb.cap hoicmb.cap;
+	sub Ecircumflextilde by E circumflexcmb.cap tildecmb.cap;
+	sub Ecircumflexdotbelow by E circumflexcmb.cap dotbelowcmb;
+	sub Eogonekacute by Eogonek acutecmb.cap;
+	sub Emacronacute by E macroncmb.cap acutecmb.cap;
+	sub Fdotaccent by F dotaccentcmb.cap;
+	sub Gacute by G acutecmb.cap;
+	sub Gcircumflex by G circumflexcmb.cap;
+	sub Gbreve by G brevecmb.cap;
+	sub Gdotaccent by G dotaccentcmb.cap;
+	sub Gcommaaccent by G commabelowcmb;
+	sub Gcaron by G caroncmb.cap;
+	sub Gmacron by G macroncmb.cap;
+	sub Gtilde by G tildecmb.cap;
+	sub Hcircumflex by H circumflexcmb.cap;
+	sub Hdotbelow by H dotbelowcmb;
+	sub Hdieresis by H dieresiscmb.cap;
+	sub Hcedilla by H cedillacmb.cap;
+	sub Hbrevebelow by H brevebelowcmb;
+	sub Hlinebelow by H macronbelowcmb;
+	sub Igrave by I gravecmb.cap;
+	sub Iacute by I acutecmb.cap;
+	sub Icircumflex by I circumflexcmb.cap;
+	sub Itilde by I tildecmb.cap;
+	sub Idieresis by I dieresiscmb.cap;
+	sub Imacron by I macroncmb.cap;
+	sub Ibreve by I brevecmb.cap;
+	sub Icaron by I caroncmb.cap;
+	sub Ihoi by I hoicmb.cap;
+	sub Idotbelow by I dotbelowcmb;
+	sub Iogonekacute by Iogonek acutecmb.cap;
+	sub Jcircumflex by J circumflexcmb.cap;
+	sub Kcommaaccent by K commabelowcmb;
+	sub Kdotbelow by K dotbelowcmb;
+	sub Klinebelow by K macronbelowcmb;
+	sub Lacute by L acutecmb.cap;
+	sub Lcaron by L caroncmb.cap;
+	sub Lcommaaccent by L commabelowcmb;
+	sub Ldotbelow by L dotbelowcmb;
+	sub Ldotbelowmacron by L dotbelowcmb macroncmb.cap;
+	sub Llinebelow by L macronbelowcmb;
+	sub Macute by M acutecmb.cap;
+	sub Mdotaccent by M dotaccentcmb.cap;
+	sub Mdotbelow by M dotbelowcmb;
+	sub Nacute by N acutecmb.cap;
+	sub Ngrave by N gravecmb.cap;
+	sub Ncaron by N caroncmb.cap;
+	sub Ntilde by N tildecmb.cap;
+	sub Ncommaaccent by N commabelowcmb;
+	sub Ndotaccent by N dotaccentcmb.cap;
+	sub Ndotbelow by N dotbelowcmb;
+	sub Nlinebelow by N macronbelowcmb;
+	sub Ograve by O gravecmb.cap;
+	sub Oacute by O acutecmb.cap;
+	sub Ocircumflex by O circumflexcmb.cap;
+	sub Otilde by O tildecmb.cap;
+	sub Odieresis by O dieresiscmb.cap;
+	sub Omacron by O macroncmb.cap;
+	sub Obreve by O brevecmb.cap;
+	sub Ohungarumlaut by O hungarumlautcmb.cap;
+	sub Ocaron by O caroncmb.cap;
+	sub Odotbelow by O dotbelowcmb;
+	sub Ohoi by O hoicmb.cap;
+	sub Ocircumflexacute by O circumflexcmb.cap acutecmb.cap;
+	sub Ocircumflexgrave by O circumflexcmb.cap gravecmb.cap;
+	sub Ocircumflexhoi by O circumflexcmb.cap hoicmb.cap;
+	sub Ocircumflextilde by O circumflexcmb.cap tildecmb.cap;
+	sub Ocircumflexdotbelow by O circumflexcmb.cap dotbelowcmb;
+	sub Omacronacute by O macroncmb.cap acutecmb.cap;
+	sub Oslashacute by Oslash acutecmb.cap;
+	sub Ohornacute by Ohorn acutecmb.cap;
+	sub Ohorngrave by Ohorn gravecmb.cap;
+	sub Ohornhoi by Ohorn hoicmb.cap;
+	sub Ohorntilde by Ohorn tildecmb.cap;
+	sub Ohorndotbelow by Ohorn dotbelowcmb;
+	sub Oogonekacute by Oogonek acutecmb.cap;
+	sub Pdotaccent by P dotaccentcmb.cap;
+	sub Racute by R acutecmb.cap;
+	sub Rcaron by R caroncmb.cap;
+	sub Rdotaccent by R dotaccentcmb.cap;
+	sub Rcommaaccent by R commabelowcmb;
+	sub Rdotbelow by R dotbelowcmb;
+	sub Rdotbelowmacron by R dotbelowcmb macroncmb.cap;
+	sub Rlinebelow by R macronbelowcmb;
+	sub Sacute by S acutecmb.cap;
+	sub Scircumflex by S circumflexcmb.cap;
+	sub Scaron by S caroncmb.cap;
+	sub Scarondot by S caroncmb.cap dotaccentcmb.cap;
+	sub Scedilla by S cedillacmb.cap;
+	sub Scommaaccent by S commabelowcmb;
+	sub Sdotaccent by S dotaccentcmb.cap;
+	sub Sdotbelow by S dotbelowcmb;
+	sub Tcaron by T caroncmb.cap;
+	sub Tdotaccent by T dotaccentcmb.cap;
+	sub Tcedilla by T cedillacmb.cap;
+	sub Tcommaaccent by T commabelowcmb;
+	sub Tdotbelow by T dotbelowcmb;
+	sub Tlinebelow by T macronbelowcmb;
+	sub Tdieresis by T dieresiscmb.cap;
+	sub Ugrave by U gravecmb.cap;
+	sub Uacute by U acutecmb.cap;
+	sub Ucircumflex by U circumflexcmb.cap;
+	sub Utilde by U tildecmb.cap;
+	sub Udieresis by U dieresiscmb.cap;
+	sub Umacron by U macroncmb.cap;
+	sub Ubreve by U brevecmb.cap;
+	sub Uring by U ringcmb.cap;
+	sub Uhungarumlaut by U hungarumlautcmb.cap;
+	sub Ucaron by U caroncmb.cap;
+	sub Udieresismacron by U dieresiscmb.cap macroncmb.cap;
+	sub Udieresisacute by U dieresiscmb.cap acutecmb.cap;
+	sub Udieresiscaron by U dieresiscmb.cap caroncmb.cap;
+	sub Udieresisgrave by U dieresiscmb.cap gravecmb.cap;
+	sub Udotbelow by U dotbelowcmb;
+	sub Uhoi by U hoicmb.cap;
+	sub Uhornacute by Uhorn acutecmb.cap;
+	sub Uhorngrave by Uhorn gravecmb.cap;
+	sub Uhornhoi by Uhorn hoicmb.cap;
+	sub Uhorntilde by Uhorn tildecmb.cap;
+	sub Uhorndotbelow by Uhorn dotbelowcmb;
+	sub Uogonekacute by Uogonek acutecmb.cap;
+	sub Vdotbelow by V dotbelowcmb;
+	sub Wgrave by W gravecmb.cap;
+	sub Wacute by W acutecmb.cap;
+	sub Wcircumflex by W circumflexcmb.cap;
+	sub Wdieresis by W dieresiscmb.cap;
+	sub Ygrave by Y gravecmb.cap;
+	sub Yacute by Y acutecmb.cap;
+	sub Ycircumflex by Y circumflexcmb.cap;
+	sub Ydieresis by Y dieresiscmb.cap;
+	sub Ydotaccent by Y dotaccentcmb.cap;
+	sub Ydotbelow by Y dotbelowcmb;
+	sub Yhoi by Y hoicmb.cap;
+	sub Ytilde by Y tildecmb.cap;
+	sub Zacute by Z acutecmb.cap;
+	sub Zcaron by Z caroncmb.cap;
+	sub Zdotaccent by Z dotaccentcmb.cap;
+	sub Zcircumflex by Z circumflexcmb.cap;
+	sub Zdotbelow by Z dotbelowcmb;
+	sub Zlinebelow by Z macronbelowcmb;
+
+	sub agrave by a gravecmb;
+	sub aacute by a acutecmb;
+	sub acircumflex by a circumflexcmb;
+	sub atilde by a tildecmb;
+	sub adieresis by a dieresiscmb;
+	sub amacron by a macroncmb;
+	sub abreve by a brevecmb;
+	sub aring by a ringcmb;
+	sub aringacute by a ringcmb acutecmb;
+	sub acaron by a caroncmb;
+	sub adotbelow by a dotbelowcmb;
+	sub ahoi by a hoicmb;
+	sub acircumflexacute by a circumflexcmb acutecmb;
+	sub acircumflexgrave by a circumflexcmb gravecmb;
+	sub acircumflexhoi by a circumflexcmb hoicmb;
+	sub acircumflextilde by a circumflexcmb tildecmb;
+	sub acircumflexdotbelow by a circumflexcmb dotbelowcmb;
+	sub abreveacute by a brevecmb acutecmb;
+	sub abrevegrave by a brevecmb gravecmb;
+	sub abrevehoi by a brevecmb hoicmb;
+	sub abrevetilde by a brevecmb tildecmb;
+	sub abrevedotbelow by a brevecmb dotbelowcmb;
+	sub aogonekacute by aogonek acutecmb;
+	sub aeacute by ae acutecmb;
+	sub aemacron by ae macroncmb;
+	sub bdotaccent by b dotaccentcmb.cap;
+	sub blinebelow by b macronbelowcmb;
+	sub ccedilla by c cedillacmb;
+	sub cacute by c acutecmb;
+	sub ccircumflex by c circumflexcmb;
+	sub ccaron by c caroncmb;
+	sub cdotaccent by c dotaccentcmb;
+	sub dcaron by d caroncmb.a;
+	sub ddotaccent by d dotaccentcmb.cap;
+	sub ddotbelow by d dotbelowcmb;
+	sub dcedilla by d cedillacmb;
+	sub dlinebelow by d macronbelowcmb;
+	sub egrave by e gravecmb;
+	sub eacute by e acutecmb;
+	sub ecircumflex by e circumflexcmb;
+	sub ecaron by e caroncmb;
+	sub edieresis by e dieresiscmb;
+	sub emacron by e macroncmb;
+	sub ebreve by e brevecmb;
+	sub edotaccent by e dotaccentcmb;
+	sub edotbelow by e dotbelowcmb;
+	sub ehoi by e hoicmb;
+	sub etilde by e tildecmb;
+	sub ecircumflexacute by e circumflexcmb acutecmb;
+	sub ecircumflexgrave by e circumflexcmb gravecmb;
+	sub ecircumflexhoi by e circumflexcmb hoicmb;
+	sub ecircumflextilde by e circumflexcmb tildecmb;
+	sub ecircumflexdotbelow by e circumflexcmb dotbelowcmb;
+	sub eogonekacute by eogonek acutecmb;
+	sub emacronacute by e macroncmb acutecmb;
+	sub fdotaccent by f dotaccentcmb;
+	sub gacute by g acutecmb;
+	sub gcircumflex by g circumflexcmb;
+	sub gbreve by g brevecmb;
+	sub gdotaccent by g dotaccentcmb;
+	sub gcommaaccent by g commabelowcmb.a;
+	sub gcaron by g caroncmb;
+	sub gmacron by g macroncmb;
+	sub gtilde by g tildecmb;
+	sub hcircumflex by h circumflexcmb.cap;
+	sub hdotbelow by h dotbelowcmb;
+	sub hdieresis by h dieresiscmb;
+	sub hcedilla by h cedillacmb;
+	sub hbrevebelow by h brevebelowcmb;
+	sub hlinebelow by h macronbelowcmb;
+	sub igrave by dotlessi gravecmb;
+	sub iacute by dotlessi acutecmb;
+	sub icircumflex by dotlessi circumflexcmb;
+	sub itilde by dotlessi tildecmb;
+	sub idieresis by dotlessi dieresiscmb;
+	sub imacron by dotlessi macroncmb;
+	sub ibreve by dotlessi brevecmb;
+	sub icaron by dotlessi caroncmb;
+	sub ihoi by dotlessi hoicmb;
+	sub idotbelow by i dotbelowcmb;
+	sub iogonekacute by iogonek.x acutecmb;
+	sub jcircumflex by dotlessj circumflexcmb;
+	sub kcommaaccent by k commabelowcmb;
+	sub kdotbelow by k dotbelowcmb;
+	sub klinebelow by k macronbelowcmb;
+	sub lacute by l acutecmb.cap;
+	sub lcaron by l caroncmb.a;
+	sub lcommaaccent by l commabelowcmb;
+	sub ldotbelow by l dotbelowcmb;
+	sub ldotbelowmacron by l dotbelowcmb macroncmb.cap;
+	sub llinebelow by l macronbelowcmb;
+	sub macute by m acutecmb;
+	sub mdotaccent by m dotaccentcmb;
+	sub mdotbelow by m dotbelowcmb;
+	sub nacute by n acutecmb;
+	sub ngrave by n gravecmb;
+	sub ncaron by n caroncmb;
+	sub ntilde by n tildecmb;
+	sub ncommaaccent by n commabelowcmb;
+	sub ndotaccent by n dotaccentcmb;
+	sub ndotbelow by n dotbelowcmb;
+	sub nlinebelow by n macronbelowcmb;
+	sub ograve by o gravecmb;
+	sub oacute by o acutecmb;
+	sub ocircumflex by o circumflexcmb;
+	sub otilde by o tildecmb;
+	sub odieresis by o dieresiscmb;
+	sub omacron by o macroncmb;
+	sub obreve by o brevecmb;
+	sub ohungarumlaut by o hungarumlautcmb;
+	sub ocaron by o caroncmb;
+	sub odotbelow by o dotbelowcmb;
+	sub ohoi by o hoicmb;
+	sub ocircumflexacute by o circumflexcmb acutecmb;
+	sub ocircumflexgrave by o circumflexcmb gravecmb;
+	sub ocircumflexhoi by o circumflexcmb hoicmb;
+	sub ocircumflextilde by o circumflexcmb tildecmb;
+	sub ocircumflexdotbelow by o circumflexcmb dotbelowcmb;
+	sub omacronacute by o macroncmb acutecmb;
+	sub oslashacute by oslash acutecmb;
+	sub ohornacute by ohorn acutecmb;
+	sub ohorngrave by ohorn gravecmb;
+	sub ohornhoi by ohorn hoicmb;
+	sub ohorntilde by ohorn tildecmb;
+	sub ohorndotbelow by ohorn dotbelowcmb;
+	sub oogonekacute by oogonek acutecmb;
+	sub pdotaccent by p dotaccentcmb;
+	sub racute by r acutecmb;
+	sub rcaron by r caroncmb;
+	sub rdotaccent by r dotaccentcmb;
+	sub rcommaaccent by r commabelowcmb;
+	sub rdotbelow by r dotbelowcmb;
+	sub rdotbelowmacron by r dotbelowcmb macroncmb;
+	sub rlinebelow by r macronbelowcmb;
+	sub sacute by s acutecmb;
+	sub scircumflex by s circumflexcmb;
+	sub scaron by s caroncmb;
+	sub scarondot by s caroncmb dotaccentcmb;
+	sub scedilla by s cedillacmb;
+	sub scommaaccent by s commabelowcmb;
+	sub sdotaccent by s dotaccentcmb;
+	sub sdotbelow by s dotbelowcmb;
+	sub tcaron by t caroncmb.a;
+	sub tdotaccent by t dotaccentcmb;
+	sub tcedilla by t cedillacmb;
+	sub tcommaaccent by t commabelowcmb;
+	sub tdotbelow by t dotbelowcmb;
+	sub tlinebelow by t macronbelowcmb;
+	sub tdieresis by t dieresiscmb;
+	sub ugrave by u gravecmb;
+	sub uacute by u acutecmb;
+	sub ucircumflex by u circumflexcmb;
+	sub utilde by u tildecmb;
+	sub udieresis by u dieresiscmb;
+	sub umacron by u macroncmb;
+	sub ubreve by u brevecmb;
+	sub uring by u ringcmb;
+	sub uhungarumlaut by u hungarumlautcmb;
+	sub ucaron by u caroncmb;
+	sub udieresismacron by u dieresiscmb macroncmb;
+	sub udieresisacute by u dieresiscmb acutecmb;
+	sub udieresiscaron by u dieresiscmb caroncmb;
+	sub udieresisgrave by u dieresiscmb gravecmb;
+	sub udotbelow by u dotbelowcmb;
+	sub uhoi by u hoicmb;
+	sub uhornacute by uhorn acutecmb;
+	sub uhorngrave by uhorn gravecmb;
+	sub uhornhoi by uhorn hoicmb;
+	sub uhorntilde by uhorn tildecmb;
+	sub uhorndotbelow by uhorn dotbelowcmb;
+	sub uogonekacute by uogonek acutecmb;
+	sub vdotbelow by v dotbelowcmb;
+	sub wgrave by w gravecmb;
+	sub wacute by w acutecmb;
+	sub wcircumflex by w circumflexcmb;
+	sub wdieresis by w dieresiscmb;
+	sub ygrave by y gravecmb;
+	sub yacute by y acutecmb;
+	sub ycircumflex by y circumflexcmb;
+	sub ydieresis by y dieresiscmb;
+	sub ydotaccent by y dotaccentcmb;
+	sub ydotbelow by y dotbelowcmb;
+	sub yhoi by y hoicmb;
+	sub ytilde by y tildecmb;
+	sub zacute by z acutecmb;
+	sub zcaron by z caroncmb;
+	sub zdotaccent by z dotaccentcmb;
+	sub zcircumflex by z circumflexcmb;
+	sub zdotbelow by z dotbelowcmb;
+	sub zlinebelow by z macronbelowcmb;
+
+#	Cyrillic
+	sub Io by Ie dieresiscmb.cap;
+	sub io by ie dieresiscmb;
+	sub Odieresiscyr by Ocyr dieresiscmb.cap;
+	sub odieresiscyr by ocyr dieresiscmb;
+	sub Yi by Iukran dieresiscmb.cap;
+	sub yi by dotlessi dieresiscmb;
+
+} DECOMPOSITION;
+
+feature ccmp { # Glyph Composition  Decomposition
+
+	lookup GLYPH_DECOMPOSITION_CONTEXTUAL { #decomposes accented forms followed by combining accent
+		sub [ @LETTERS_MINISCULE_LATIN_ACCENTED_ABOVE @LETTERS_MAJUSCULE_LATIN_ACCENTED_ABOVE ]' lookup DECOMPOSITION @MARKS_CMB_BELOW; # only partial solution, abovebelow
+		sub [ @LETTERS_MINISCULE_LATIN_ACCENTED_BELOW @LETTERS_MAJUSCULE_LATIN_ACCENTED_BELOW ]' lookup DECOMPOSITION @MARKS_CMB_ABOVE; # only partial solution, belowabove
+		sub [ Ecircumflex ecircumflex Ocircumflex ocircumflex ]' lookup DECOMPOSITION brevecmb; # Jarai language
+		sub [ Emacron emacron Omacron omacron ]' lookup DECOMPOSITION acutecmb; # Greek transliteration
+		sub [ Yi yi ]' lookup DECOMPOSITION acutecmb; # Cyrillic stressed notation
+	} GLYPH_DECOMPOSITION_CONTEXTUAL;
+
+	lookup GLYPH_COMPOSITION_CONTEXTUAL { #substitutes dotless forms when followed by combining diacritics
+		sub i' ogonekcmb' @MARKS_CMB_ABOVE by iogonek.x;
+		sub [ i j iogonek istroke jcrossedtail ]' @MARKS_CMB_BELOW @MARKS_CMB_ABOVE by [ dotlessi dotlessj iogonek.x istroke.x jcrossedtail.x ];
+		sub [ i j iogonek istroke jcrossedtail ]' @MARKS_CMB_ABOVE by [ dotlessi dotlessj iogonek.x istroke.x jcrossedtail.x ];
+	} GLYPH_COMPOSITION_CONTEXTUAL;
+	
+	@VOWELS_DIERESIS = [ Adieresis Edieresis Idieresis Odieresis Udieresis adieresis edieresis idieresis odieresis udieresis ];
+	@VOWELS_MACRON = [ Amacron Emacron Imacron Omacron Umacron amacron emacron imacron omacron umacron ];
+	@VOWELS_PLAIN = [ A E I O U a e i o u ];
+	
+	lookup MARKS_SWAP_1 {
+		sub @VOWELS_DIERESIS acutecmb' by dieresisacute;
+		sub @VOWELS_DIERESIS gravecmb' by dieresisgrave;
+		sub @VOWELS_MACRON acutecmb' by macronacute;
+	} MARKS_SWAP_1;
+
+	lookup MARKS_SWAP_2 {
+		sub @VOWELS_DIERESIS' dieresisacute by @VOWELS_PLAIN;
+		sub @VOWELS_DIERESIS' dieresisgrave by @VOWELS_PLAIN;
+		sub @VOWELS_MACRON' macronacute by @VOWELS_PLAIN;
+	} MARKS_SWAP_2;
+
+	lookup MARKS_COMPOSITION {
+		sub circumflexcmb gravecmb by circumflexgrave;
+		sub circumflexcmb acutecmb by circumflexacute;
+		sub circumflexcmb tildecmb by circumflextilde;
+		sub circumflexcmb macroncmb by circumflexmacron;
+		sub circumflexcmb brevecmb by circumflexbreve;
+		sub circumflexcmb hoicmb by circumflexhoi;
+		sub circumflexcmb caroncmb by circumflexcaron;
+		sub macroncmb acutecmb by macronacute;
+		sub brevecmb gravecmb by brevegrave;
+		sub brevecmb acutecmb by breveacute;
+		sub brevecmb tildecmb by brevetilde;
+		sub brevecmb hoicmb by brevehoi;
+		sub dieresiscmb gravecmb by dieresisgrave;
+		sub dieresiscmb acutecmb by dieresisacute;
+		sub dieresiscmb [ tildecmb perispomenicmb ] by dieresistilde;
+		sub dieresiscmb macroncmb by dieresismacron;
+		sub dieresiscmb caroncmb by dieresiscaron;
+		sub dieresiscmb tonoscmb by dialytikatonoscmb;
+		sub dieresiscmb variacmb by dialytikagravecmb;
+		sub ringcmb acutecmb by ringacute;
+		sub caroncmb dotaccentcmb by carondotaccent;
+		sub [ aspercmb commaturnedabovecmb ] [ gravecmb variacmb ] by aspergravecmb;
+		sub [ aspercmb commaturnedabovecmb ] [ acutecmb tonoscmb ] by asperacutecmb;
+		sub [ aspercmb commaturnedabovecmb ] [ tildecmb perispomenicmb ] by aspertildecmb;
+		sub [ leniscmb commaabovecmb ] [ gravecmb variacmb ] by lenisgravecmb;
+		sub [ leniscmb commaabovecmb ] [ acutecmb tonoscmb ] by lenisacutecmb;
+		sub [ leniscmb commaabovecmb ] [ tildecmb perispomenicmb ] by lenistildecmb;
+		
+	} MARKS_COMPOSITION;
+
+	lookup GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL {
+		sub A ogonekcmb acutecmb by Aogonekacute;
+		sub E ogonekcmb acutecmb by Eogonekacute;
+		sub I ogonekcmb acutecmb by Iogonekacute;
+		sub O ogonekcmb acutecmb by Oogonekacute;
+		sub U ogonekcmb acutecmb by Uogonekacute;
+		sub a ogonekcmb acutecmb by aogonekacute;
+		sub e ogonekcmb acutecmb by eogonekacute;
+		sub i ogonekcmb acutecmb by iogonekacute;
+		sub o ogonekcmb acutecmb by oogonekacute;
+		sub u ogonekcmb acutecmb by uogonekacute;
+		sub A acutecmb ogonekcmb by Aogonekacute;
+		sub E acutecmb ogonekcmb by Eogonekacute;
+		sub I acutecmb ogonekcmb by Iogonekacute;
+		sub O acutecmb ogonekcmb by Oogonekacute;
+		sub U acutecmb ogonekcmb by Uogonekacute;
+		sub a acutecmb ogonekcmb by aogonekacute;
+		sub e acutecmb ogonekcmb by eogonekacute;
+		sub i acutecmb ogonekcmb by iogonekacute;
+		sub o acutecmb ogonekcmb by oogonekacute;
+		sub u acutecmb ogonekcmb by uogonekacute;
+		sub Aogonek acutecmb by Aogonekacute;
+		sub Eogonek acutecmb by Eogonekacute;
+		sub Iogonek acutecmb by Iogonekacute;
+		sub Oogonek acutecmb by Oogonekacute;
+		sub Uogonek acutecmb by Uogonekacute;
+		sub aogonek acutecmb by aogonekacute;
+		sub eogonek acutecmb by eogonekacute;
+		sub iogonek acutecmb by iogonekacute;
+		sub oogonek acutecmb by oogonekacute;
+		sub uogonek acutecmb by uogonekacute;
+		sub Aacute ogonekcmb by Aogonekacute;
+		sub Eacute ogonekcmb by Eogonekacute;
+		sub Iacute ogonekcmb by Iogonekacute;
+		sub Oacute ogonekcmb by Oogonekacute;
+		sub Uacute ogonekcmb by Uogonekacute;
+		sub aacute ogonekcmb by aogonekacute;
+		sub eacute ogonekcmb by eogonekacute;
+		sub iacute ogonekcmb by iogonekacute;
+		sub oacute ogonekcmb by oogonekacute;
+		sub uacute ogonekcmb by uogonekacute;
+		sub d caroncmb by dcaron;
+		sub l caroncmb by lcaron;
+		sub t caroncmb by tcaron;
+		sub g tildecmb by gtilde;
+		sub G tildecmb by Gtilde;
+		sub a ogonekcmb by aogonek;
+		sub A ogonekcmb by Aogonek;
+		sub e ogonekcmb by eogonek;
+		sub E ogonekcmb	by Eogonek;
+		sub i ogonekcmb by iogonek;
+		sub dotlessi ogonekcmb by iogonek.x;
+		sub I ogonekcmb by Iogonek;
+		sub o ogonekcmb by oogonek;
+		sub O ogonekcmb by Oogonek;
+		sub u ogonekcmb by uogonek;
+		sub U ogonekcmb by Uogonek;
+		sub g cedillacmb by gcommaaccent; # The decomposition defined by Unicode is: 0067+0327
+		sub g.a cedillacmb by gcommaaccent.a;
+		sub l periodcentered l by lcat;
+		sub L periodcentered L by Lcat;
+		sub ij acutecmb by ijacute;
+		sub IJ acutecmb by IJacute;
+		sub schwa hookrhoticmod by schwahookrhotic;
+	} GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL;
+
+	lookup GLYPH_COMPOSITION_GREEK_POLYTONIC { #to add: Greek localized combining marks
+		sub Alpha leniscmb by Alphalenis;
+		sub Alpha lenisacutecmb by Alphalenisacute;
+		sub Alpha lenisgravecmb by Alphalenisgrave;
+		sub Alpha lenistildecmb by Alphalenistilde;
+		sub Alpha aspercmb by Alphaasper;
+		sub Alpha asperacutecmb by Alphaasperacute;
+		sub Alpha aspergravecmb by Alphaaspergrave;
+		sub Alpha aspertildecmb by Alphaaspertilde;
+		sub Alpha acutecmb by Alphaacute;
+		sub Alpha gravecmb by Alphagrave;
+		sub Alpha macroncmb by Alphamacron;
+		sub Alpha brevecmb by Alphabreve;
+		sub Alpha @IOTA_MODIFIERS_GREEK by Alphaiotasub;
+		sub Alpha @IOTA_MODIFIERS_GREEK leniscmb by Alphaiotasublenis;
+		sub Alpha @IOTA_MODIFIERS_GREEK lenisacutecmb by Alphaiotasublenisacute;
+		sub Alpha @IOTA_MODIFIERS_GREEK lenisgravecmb by Alphaiotasublenisgrave;
+		sub Alpha @IOTA_MODIFIERS_GREEK lenistildecmb by Alphaiotasublenistilde;
+		sub Alpha @IOTA_MODIFIERS_GREEK aspercmb by Alphaiotasubasper;
+		sub Alpha @IOTA_MODIFIERS_GREEK asperacutecmb by Alphaiotasubasperacute;
+		sub Alpha @IOTA_MODIFIERS_GREEK aspergravecmb by Alphaiotasubaspergrave;
+		sub Alpha @IOTA_MODIFIERS_GREEK aspertildecmb by Alphaiotasubaspertilde;
+		sub Epsilon leniscmb by Epsilonlenis;
+		sub Epsilon lenisacutecmb by Epsilonlenisacute;
+		sub Epsilon lenisgravecmb by Epsilonlenisgrave;
+		sub Epsilon aspercmb by Epsilonasper;
+		sub Epsilon asperacutecmb by Epsilonasperacute;
+		sub Epsilon aspergravecmb by Epsilonaspergrave;
+		sub Epsilon acutecmb by Epsilonacute;
+		sub Epsilon gravecmb by Epsilongrave;
+		sub Eta leniscmb by Etalenis;
+		sub Eta lenisacutecmb by Etalenisacute;
+		sub Eta lenisgravecmb by Etalenisgrave;
+		sub Eta lenistildecmb by Etalenistilde;
+		sub Eta aspercmb by Etaasper;
+		sub Eta asperacutecmb by Etaasperacute;
+		sub Eta aspergravecmb by Etaaspergrave;
+		sub Eta aspertildecmb by Etaaspertilde;
+		sub Eta acutecmb by Etaacute;
+		sub Eta gravecmb by Etagrave;
+		sub Eta @IOTA_MODIFIERS_GREEK by Etaiotasub;
+		sub Eta @IOTA_MODIFIERS_GREEK leniscmb by Etaiotasublenis;
+		sub Eta @IOTA_MODIFIERS_GREEK lenisacutecmb by Etaiotasublenisacute;
+		sub Eta @IOTA_MODIFIERS_GREEK lenisgravecmb by Etaiotasublenisgrave;
+		sub Eta @IOTA_MODIFIERS_GREEK lenistildecmb by Etaiotasublenistilde;
+		sub Eta @IOTA_MODIFIERS_GREEK aspercmb by Etaiotasubasper;
+		sub Eta @IOTA_MODIFIERS_GREEK asperacutecmb by Etaiotasubasperacute;
+		sub Eta @IOTA_MODIFIERS_GREEK aspergravecmb by Etaiotasubaspergrave;
+		sub Eta @IOTA_MODIFIERS_GREEK aspertildecmb by Etaiotasubaspertilde;
+		sub Iota leniscmb by Iotalenis;
+		sub Iota lenisacutecmb by Iotalenisacute;
+		sub Iota lenisgravecmb by Iotalenisgrave;
+		sub Iota lenistildecmb by Iotalenistilde;
+		sub Iota aspercmb by Iotaasper;
+		sub Iota asperacutecmb by Iotaasperacute;
+		sub Iota aspergravecmb by Iotaaspergrave;
+		sub Iota aspertilde by Iotaaspertilde;
+		sub Iota acutecmb by Iotaacute;
+		sub Iota gravecmb by Iotagrave;
+		sub Iota macroncmb by Iotamacron;
+		sub Iota brevecmb by Iotabreve;
+		sub Iota dieresiscmb by Iotadieresis;
+		sub Omicron leniscmb by Omicronlenis;
+		sub Omicron lenisacutecmb by Omicronlenisacute;
+		sub Omicron lenisgravecmb by Omicronlenisgrave;
+		sub Omicron aspercmb by Omicronasper;
+		sub Omicron asperacutecmb by Omicronasperacute;
+		sub Omicron aspergravecmb by Omicronaspergrave;
+		sub Omicron acutecmb by Omicronacute;
+		sub Omicron gravecmb by Omicrongrave;
+		sub Rho aspercmb by Rhoasper;
+		sub Upsilon aspercmb by Upsilonasper;
+		sub Upsilon asperacutecmb by Upsilonasperacute;
+		sub Upsilon aspergravecmb by Upsilonaspergrave;
+		sub Upsilon aspertildecmb by Upsilonaspertilde;
+		sub Upsilon acutecmb by Upsilonacute;
+		sub Upsilon gravecmb by Upsilongrave;
+		sub Upsilon macroncmb by Upsilonmacron;
+		sub Upsilon brevecmb by Upsilonbreve;
+		sub Upsilon dieresiscmb by Upsilondieresis;
+		sub Omega psili by Omegalenis;
+		sub Omega lenisacute by Omegalenisacute;
+		sub Omega lenisgravecmb by Omegalenisgrave;
+		sub Omega lenistildecmb by Omegalenistilde;
+		sub Omega aspercmb by Omegaasper;
+		sub Omega asperacutecmb by Omegaasperacute;
+		sub Omega aspergravecmb by Omegaaspergrave;
+		sub Omega aspertildecmb by Omegaaspertilde;
+		sub Omega acutecmb by Omegaacute;
+		sub Omega gravecmb by Omegagrave;
+		sub Omega @IOTA_MODIFIERS_GREEK by Omegaiotasub;
+		sub Omega @IOTA_MODIFIERS_GREEK leniscmb by Omegaiotasublenis;
+		sub Omega @IOTA_MODIFIERS_GREEK lenisacutecmb by Omegaiotasublenisacute;
+		sub Omega @IOTA_MODIFIERS_GREEK lenisgravecmb by Omegaiotasublenisgrave;
+		sub Omega @IOTA_MODIFIERS_GREEK lenistildecmb by Omegaiotasublenistilde;
+		sub Omega @IOTA_MODIFIERS_GREEK aspercmb by Omegaiotasubasper;
+		sub Omega @IOTA_MODIFIERS_GREEK asperacutecmb by Omegaiotasubasperacute;
+		sub Omega @IOTA_MODIFIERS_GREEK aspergravecmb by Omegaiotasubaspergrave;
+		sub Omega @IOTA_MODIFIERS_GREEK aspertildecmb by Omegaiotasubaspertilde;
+		sub Alphaiotasub leniscmb by Alphaiotasublenis;
+		sub Alphaiotasub lenisacutecmb by Alphaiotasublenisacute;
+		sub Alphaiotasub lenisgravecmb by Alphaiotasublenisgrave;
+		sub Alphaiotasub lenistildecmb by Alphaiotasublenistilde;
+		sub Alphaiotasub aspercmb by Alphaiotasubasper;
+		sub Alphaiotasub asperacutecmb by Alphaiotasubasperacute;
+		sub Alphaiotasub aspergravecmb by Alphaiotasubaspergrave;
+		sub Alphaiotasub aspertildecmb by Alphaiotasubaspertilde;
+		sub Etaiotasub leniscmb by Etaiotasublenis;
+		sub Etaiotasub lenisacutecmb by Etaiotasublenisacute;
+		sub Etaiotasub lenisgravecmb by Etaiotasublenisgrave;
+		sub Etaiotasub lenistildecmb by Etaiotasublenistilde;
+		sub Etaiotasub aspercmb by Etaiotasubasper;
+		sub Etaiotasub asperacutecmb by Etaiotasubasperacute;
+		sub Etaiotasub aspergravecmb by Etaiotasubaspergrave;
+		sub Etaiotasub aspertildecmb by Etaiotasubaspertilde;
+		sub Omegaiotasub leniscmb by Omegaiotasublenis;
+		sub Omegaiotasub lenisacutecmb by Omegaiotasublenisacute;
+		sub Omegaiotasub lenisgravecmb by Omegaiotasublenisgrave;
+		sub Omegaiotasub lenistildecmb by Omegaiotasublenistilde;
+		sub Omegaiotasub aspercmb by Omegaiotasubasper;
+		sub Omegaiotasub asperacutecmb by Omegaiotasubasperacute;
+		sub Omegaiotasub aspergravecmb by Omegaiotasubaspergrave;
+		sub Omegaiotasub aspertildecmb by Omegaiotasubaspertilde;
+		sub alpha leniscmb by alphalenis;
+		sub alpha lenisacutecmb by alphalenisacute;
+		sub alpha lenisgravecmb by alphalenisgrave;
+		sub alpha lenistildecmb by alphalenistilde;
+		sub alpha aspercmb by alphaasper;
+		sub alpha asperacutecmb by alphaasperacute;
+		sub alpha aspergravecmb by alphaaspergrave;
+		sub alpha aspertildecmb by alphaaspertilde;
+		sub alpha acutecmb by alphaacute;
+		sub alpha gravecmb by alphagrave;
+		sub alpha perispomenicmb by alphatilde;
+		sub alpha macroncmb by alphamacron;
+		sub alpha brevecmb by alphabreve;
+		sub alpha iotasubscriptcmb by alphaiotasub;
+		sub alpha iotasubscriptcmb leniscmb by alphaiotasublenis;
+		sub alpha iotasubscriptcmb lenisacutecmb by alphaiotasublenisacute;
+		sub alpha iotasubscriptcmb lenisgravecmb by alphaiotasublenisgrave;
+		sub alpha iotasubscriptcmb lenistildecmb by alphaiotasublenistilde;
+		sub alpha iotasubscriptcmb aspercmb by alphaiotasubasper;
+		sub alpha iotasubscriptcmb asperacutecmb by alphaiotasubasperacute;
+		sub alpha iotasubscriptcmb aspergravecmb by alphaiotasubaspergrave;
+		sub alpha iotasubscriptcmb aspertildecmb by alphaiotasubaspertilde;
+		sub alpha iotasubscriptcmb acutecmb by alphaiotasubacute;
+		sub alpha iotasubscriptcmb gravecmb by alphaiotasubgrave;
+		sub alpha iotasubscriptcmb perispomenicmb by alphaiotasubtilde;
+		sub epsilon leniscmb by epsilonlenis;
+		sub epsilon lenisacutecmb by epsilonlenisacute;
+		sub epsilon lenisgravecmb by epsilonlenisgrave;
+		sub epsilon aspercmb by epsilonasper;
+		sub epsilon asperacutecmb by epsilonasperacute;
+		sub epsilon aspergravecmb by epsilonaspergrave;
+		sub epsilon acutecmb by epsilonacute;
+		sub epsilon gravecmb by epsilongrave;
+		sub eta leniscmb by etalenis;
+		sub eta lenisacutecmb by etalenisacute;
+		sub eta lenisgravecmb by etalenisgrave;
+		sub eta lenistildecmb by etalenistilde;
+		sub eta aspercmb by etaasper;
+		sub eta asperacutecmb by etaasperacute;
+		sub eta aspergravecmb by etaaspergrave;
+		sub eta aspertildecmb by etaaspertilde;
+		sub eta acutecmb by etaacute;
+		sub eta gravecmb by etagrave;
+		sub eta perispomenicmb by etatilde;
+		sub eta iotasubscriptcmb by etaiotasub;
+		sub eta iotasubscriptcmb leniscmb by etaiotasublenis;
+		sub eta iotasubscriptcmb lenisacutecmb by etaiotasublenisacute;
+		sub eta iotasubscriptcmb lenisgravecmb by etaiotasublenisgrave;
+		sub eta iotasubscriptcmb lenistildecmb by etaiotasublenistilde;
+		sub eta iotasubscriptcmb aspercmb by etaiotasubasper;
+		sub eta iotasubscriptcmb asperacutecmb by etaiotasubasperacute;
+		sub eta iotasubscriptcmb aspergravecmb by etaiotasubaspergrave;
+		sub eta iotasubscriptcmb aspertildecmb by etaiotasubaspertilde;
+		sub eta iotasubscriptcmb acutecmb by etaiotasubacute;
+		sub eta iotasubscriptcmb gravecmb by etaiotasubgrave;
+		sub eta iotasubscriptcmb perispomenicmb by etaiotasubtilde;
+		sub iota leniscmb by iotalenis;
+		sub iota lenisacutecmb by iotalenisacute;
+		sub iota lenisgravecmb by iotalenisgrave;
+		sub iota lenistildecmb by iotalenistilde;
+		sub iota aspercmb by iotaasper;
+		sub iota asperacutecmb by iotaasperacute;
+		sub iota aspergravecmb by iotaaspergrave;
+		sub iota aspertildecmb by iotaaspertilde;
+		sub iota dieresisacute by iotadieresisacute;
+		sub iota dieresisgrave by iotadieresisgrave;
+		sub iota dieresistilde by iotadieresistilde;
+		sub iota acutecmb by iotaacute;
+		sub iota gravecmb by iotagrave;
+		sub iota perispomenicmb by iotatilde;
+		sub iota macroncmb by iotamacron;
+		sub iota brevecmb by iotabreve;
+		sub iota dieresiscmb by iotadieresis;
+		sub omicron leniscmb by omicronlenis;
+		sub omicron lenisacutecmb by omicronlenisacute;
+		sub omicron lenisgravecmb by omicronlenisgrave;
+		sub omicron aspercmb by omicronasper;
+		sub omicron asperacutecmb by omicronasperacute;
+		sub omicron aspergravecmb by omicronaspergrave;
+		sub omicron acutecmb by omicronacute;
+		sub omicron gravecmb by omicrongrave;
+		sub rho leniscmb by rholenis;
+		sub rho aspercmb by rhoasper;
+		sub upsilon leniscmb by upsilonlenis;
+		sub upsilon lenisacutecmb by upsilonlenisacute;
+		sub upsilon lenisgravecmb by upsilonlenisgrave;
+		sub upsilon lenistildecmb by upsilonlenistilde;
+		sub upsilon aspercmb by upsilonasper;
+		sub upsilon asperacutecmb by upsilonasperacute;
+		sub upsilon aspergravecmb by upsilonaspergrave;
+		sub upsilon aspertildecmb by upsilonaspertilde;
+		sub upsilon dieresisacute by upsilondieresisacute;
+		sub upsilon dieresisgrave by upsilondieresisgrave;
+		sub upsilon dieresistilde by upsilondieresistilde;
+		sub upsilon acutecmb by upsilonacute;
+		sub upsilon gravecmb by upsilongrave;
+		sub upsilon perispomenicmb by upsilontilde;
+		sub upsilon macroncmb by upsilonmacron;
+		sub upsilon brevecmb by upsilonbreve;
+		sub upsilon dieresiscmb by upsilondieresis;
+		sub omega leniscmb by omegalenis;
+		sub omega lenisacutecmb by omegalenisacute;
+		sub omega lenisgravecmb by omegalenisgrave;
+		sub omega lenistildecmb by omegalenistilde;
+		sub omega aspercmb by omegaasper;
+		sub omega asperacutecmb by omegaasperacute;
+		sub omega aspergravecmb by omegaaspergrave;
+		sub omega aspertildecmb by omegaaspertilde;
+		sub omega acutecmb by omegaacute;
+		sub omega gravecmb by omegagrave;
+		sub omega perispomenicmb by omegatilde;
+		sub omega iotasubscriptcmb by omegaiotasub;
+		sub omega iotasubscriptcmb leniscmb by omegaiotasublenis;
+		sub omega iotasubscriptcmb lenisacutecmb by omegaiotasublenisacute;
+		sub omega iotasubscriptcmb lenisgravecmb by omegaiotasublenisgrave;
+		sub omega iotasubscriptcmb lenistildecmb by omegaiotasublenistilde;
+		sub omega iotasubscriptcmb aspercmb by omegaiotasubasper;
+		sub omega iotasubscriptcmb asperacutecmb by omegaiotasubasperacute;
+		sub omega iotasubscriptcmb aspergravecmb by omegaiotasubaspergrave;
+		sub omega iotasubscriptcmb aspertildecmb by omegaiotasubaspertilde;
+		sub omega iotasubscriptcmb acutecmb by omegaiotasubacute;
+		sub omega iotasubscriptcmb gravecmb by omegaiotasubgrave;
+		sub omega iotasubscriptcmb perispomenicmb by omegaiotasubtilde;
+		sub alphaiotasub leniscmb by alphaiotasublenis;
+		sub alphaiotasub lenisacutecmb by alphaiotasublenisacute;
+		sub alphaiotasub lenisgravecmb by alphaiotasublenisgrave;
+		sub alphaiotasub lenistildecmb by alphaiotasublenistilde;
+		sub alphaiotasub aspercmb by alphaiotasubasper;
+		sub alphaiotasub asperacutecmb by alphaiotasubasperacute;
+		sub alphaiotasub aspergravecmb by alphaiotasubaspergrave;
+		sub alphaiotasub aspertildecmb by alphaiotasubaspertilde;
+		sub alphaiotasub acutecmb by alphaiotasubacute;
+		sub alphaiotasub gravecmb by alphaiotasubgrave;
+		sub alphaiotasub perispomenicmb by alphaiotasubtilde;
+		sub etaiotasub leniscmb by etaiotasublenis;
+		sub etaiotasub lenisacutecmb by etaiotasublenisacute;
+		sub etaiotasub lenisgravecmb by etaiotasublenisgrave;
+		sub etaiotasub lenistildecmb by etaiotasublenistilde;
+		sub etaiotasub aspercmb by etaiotasubasper;
+		sub etaiotasub asperacutecmb by etaiotasubasperacute;
+		sub etaiotasub aspergravecmb by etaiotasubaspergrave;
+		sub etaiotasub aspertildecmb by etaiotasubaspertilde;
+		sub etaiotasub acutecmb by etaiotasubacute;
+		sub etaiotasub gravecmb by etaiotasubgrave;
+		sub etaiotasub perispomenicmb by etaiotasubtilde;
+		sub omegaiotasub leniscmb by omegaiotasublenis;
+		sub omegaiotasub lenisacutecmb by omegaiotasublenisacute;
+		sub omegaiotasub lenisgravecmb by omegaiotasublenisgrave;
+		sub omegaiotasub lenistildecmb by omegaiotasublenistilde;
+		sub omegaiotasub aspercmb by omegaiotasubasper;
+		sub omegaiotasub asperacutecmb by omegaiotasubasperacute;
+		sub omegaiotasub aspergravecmb by omegaiotasubaspergrave;
+		sub omegaiotasub aspertildecmb by omegaiotasubaspertilde;
+		sub omegaiotasub acutecmb by omegaiotasubacute;
+		sub omegaiotasub gravecmb by omegaiotasubgrave;
+		sub omegaiotasub perispomenicmb by omegaiotasubtilde;
+	} GLYPH_COMPOSITION_GREEK_POLYTONIC;
+
+	lookup YI_UKRAINIAN { # substitutes alternate yi in context
+		sub yi' yi by yi.a;
+		sub Yi' Yi by Yi.a;
+		sub [ iukran yi.a ] yi' by yi.a;
+		sub Yi.a Yi' by Yi.a;
+	} YI_UKRAINIAN;
+
+	lookup MAJUCSULE_ACCENTS_CMB_CONTEXT { # substitutes combining marks for miniscules with forms for majuscules
+		sub [ @LETTERS_MAJUSCULE_ALL @LETTERS_MINISCULE_LATIN_ASCENDERS ] @MARKS_CMB_LC' lookup MARKS_CMB_CASE;
+		sub @MARKS_CMB_CASE @MARKS_CMB_LC' lookup MARKS_CMB_CASE;
+		sub [ @LETTERS_MINISCULE_LATIN_ASCENDERS t esh ] breveinverteddoublecmb' by breveinverteddoublecmb.a;
+		sub breveinverteddoublecmb' [ @LETTERS_MINISCULE_LATIN_ASCENDERS t esh ] by breveinverteddoublecmb.a;
+	} MAJUCSULE_ACCENTS_CMB_CONTEXT;
+
+} ccmp;
+
+#--------------------------------------
+feature cv01 { # Character Variant 1 — serifed I forms
+
+@I_UC_DEFAULT = [ I Igrave Iacute Icircumflex Itilde Idieresis Imacron Ibreve Idotaccent Icaron Ihoi Idotbelow Iogonek Iogonekacute ];
+@I_UC_ALTERNATE = [ I.a Igrave.a Iacute.a Icircumflex.a Itilde.a Idieresis.a Imacron.a Ibreve.a Idotaccent.a Icaron.a Ihoi.a Idotbelow.a Iogonek.a Iogonekacute.a ];
+# @I_LC_DEFAULT = [ i igrave iacute icircumflex itilde idieresis imacron ibreve idotaccent icaron ihoi idotbelow iogonek iogonekacute ]; # > enable for Source Code Pro
+# @I_LC_ALTERNATE = [ i.a igrave.a iacute.a icircumflex.a itilde.a idieresis.a imacron.a ibreve.a idotaccent.a icaron.a ihoi.a idotbelow.a iogonek.a iogonekacute.a ]; # > enable for Source Code Pro
+@IOTA_UC_DEFAULT = [ Iota Iotadieresis Iotamacron Iotabreve ];
+@IOTA_UC_ALTERNATE = [ I.a Idieresis.a Imacron.a Ibreve.a ];
+@IUKRAN_UC_DEFAULT = [ Iukran Yi ];
+@IUKRAN_UC_ALTERNATE = [ I.a Idieresis.a ];
+
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Serifed I (\25B2 i)"; # English US: "Serifed I (▲ i)"
+			name 3 1 0x0809 "Serifed I (\25B2 i)"; # English GB
+			name 1 0 0 "Serifed I (i)"; # Mac English
+			name 3 1 0x0408 "\0399 \03BC\03B5 \03C0\03B1\03C4\03BF\03CD\03C1\03B1 (\25B2 \03B9 )"; # Greek: "Ι με πατούρα (▲ ι)"
+			name 3 1 0x0419 "\0406 \0441 \0437\0430\0441\0435\0447\043A\0430\043C\0438 (\25B2 \0456)"; # Russian: "І с засечками (▲ і)"
+		};
+	};
+
+	lookup I_UC_ALTERNATES { # serifed I
+		sub @I_UC_DEFAULT by @I_UC_ALTERNATE;
+	} I_UC_ALTERNATES;
+
+	# lookup I_LC_ALTERNATES { # includes i & l alternates > enable for Source Code Pro
+	# 	sub @I_LC by @I_LC_ALTERNATES;
+	# 	sub @L_LC by @L_LC_ALTERNATES;
+	# } I_LC_ALTERNATES;
+
+	lookup IOTA_UC_ALTERNATES_1 { # serifed Iota (swaps to Latin alternates)
+		sub @IOTA_UC_DEFAULT by @IOTA_UC_ALTERNATE;
+	} IOTA_UC_ALTERNATES_1;
+
+	lookup IOTA_UC_ALTERNATES_2 { # serifed Iota decomposition (swaps to Latin alternate I + diacritics)
+		sub Iotatonos by tonos.cap I.a;
+		sub Iotalenis by lenis.cap I.a;
+		sub Iotaasper by asper.cap I.a;
+		sub Iotagrave by varia.cap I.a;
+		sub Iotaacute by tonos.cap I.a;
+		sub Iotalenisgrave by lenisgrave.cap I.a;
+		sub Iotaaspergrave by aspergrave.cap I.a;
+		sub Iotalenisacute by lenisacute.cap I.a;
+		sub Iotaasperacute by asperacute.cap I.a;
+		sub Iotalenistilde by lenistilde.cap I.a;
+		sub Iotaaspertilde by aspertilde.cap I.a;
+	} IOTA_UC_ALTERNATES_2;
+
+	lookup IUKRAN_UC_ALTERNATES { # serifed Ukrainian I (swaps to Latin alternates)
+		sub @IUKRAN_UC_DEFAULT by @IUKRAN_UC_ALTERNATE;
+	} IUKRAN_UC_ALTERNATES;
+
+} cv01;
+
+#--------------------------------------
+feature cv02 { # Character Variant 2 — single storey a forms, first alternate
+
+@A_LC_DEFAULT = [ a agrave aacute acircumflex atilde adieresis amacron abreve aring aringacute acaron adotbelow ahoi acircumflexacute acircumflexgrave acircumflexhoi acircumflextilde acircumflexdotbelow abreveacute abrevegrave abrevehoi abrevetilde abrevedotbelow aogonek aogonek.d aogonekacute a.sups ordfeminine acyr abrevecyr ];
+@A_LC_ALTERNATES = [ a.a agrave.a aacute.a acircumflex.a atilde.a adieresis.a amacron.a abreve.a aring.a aringacute.a acaron.a adotbelow.a ahoi.a acircumflexacute.a acircumflexgrave.a acircumflexhoi.a acircumflextilde.a acircumflexdotbelow.a abreveacute.a abrevegrave.a abrevehoi.a abrevetilde.a abrevedotbelow.a aogonek.a aogonek.e aogonekacute.a a.supa ordfeminine.a acyr.a abrevecyr.a ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Simple a"; # English US: "Simple a"
+			name 3 1 0x0809 "Simple a"; # English GB
+			name 1 0 0 "Simple a"; # Mac English
+			name 3 1 0x0408 "\0391\03C0\03BB\03CC \03BB\03B1\03C4\03B9\03BD\03B9\03BA\03CC a"; # Greek: "Απλό λατινικό a"
+			name 3 1 0x0419 "\041F\0440\043E\0441\0442\0430\044F \0430"; # Russian: "Простая а"
+		};
+	};
+
+	lookup A_LC_ALTERNATES { # single storey a
+		sub @A_LC_DEFAULT by @A_LC_ALTERNATES;
+	} A_LC_ALTERNATES;
+
+} cv02;
+
+#--------------------------------------
+feature cv03 { # Character Variant 3 — Latin single storey g forms
+
+@G_LC_DEFAULT = [ g gacute gcircumflex gbreve gdotaccent gcommaaccent gcaron gmacron gtilde g.sups ];
+@G_LC_ALTERNATES = [ g.a gacute.a gcircumflex.a gbreve.a gdotaccent.a gcommaaccent.a gcaron.a gmacron.a gtilde.a g.supa ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Simple g"; # English US: "Simple g"
+			name 3 1 0x0809 "Simple g"; # English GB
+			name 1 0 0 "Simple g"; # Mac English
+			name 3 1 0x0408 "\0391\03C0\03BB\03CC \03BB\03B1\03C4\03B9\03BD\03B9\03BA\03CC g"; # Greek: "Απλό λατινικό g"
+			name 3 1 0x0419 "\041F\0440\043E\0441\0442\0430\044F \043B\0430\0442\0438\043D\0441\043A\0430\044F g"; # Russian: "Простая латинская g"
+		};
+	};
+	
+	lookup G_LC_ALTERNATES { # single storey g
+		sub @G_LC_DEFAULT by @G_LC_ALTERNATES;
+	} G_LC_ALTERNATES;
+
+} cv03;
+
+#--------------------------------------
+feature cv04 { # Character Variant 4 — Latin/Cyrillic straight l forms
+
+@L_LC_DEFAULT = [ l lacute lcaron ldot lcat lslash lcommaaccent ldotbelow ldotbelowmacron llinebelow fl l.sups ];
+@L_LC_ALTERNATES = [ l.a lacute.a lcaron.a ldot.a lcat.a lslash.a lcommaaccent.a ldotbelow.a ldotbelowmacron.a llinebelow.a fl.a l.supa ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Simple l (\25BC L)"; # English US: "Simple l (▼ L)"
+			name 3 1 0x0809 "Simple l (\25BC L)"; # English GB
+			name 1 0 0 "Simple l (L)"; # Mac English
+			name 3 1 0x0408 "\0391\03C0\03BB\03CC \03BB\03B1\03C4\03B9\03BD\03B9\03BA\03CC l (\25BC L)"; # Greek: "Απλό λατινικό l (▼ L)"
+			name 3 1 0x0419 "\041F\0440\043E\0441\0442\0430\044F \04CF (\25BC \04C0)"; # Russian: "Простая ӏ (▼ Ӏ)"
+		};
+	};
+
+	lookup L_LC_ALTERNATES { # straight l
+		sub @L_LC_DEFAULT by @L_LC_ALTERNATES;
+	} L_LC_ALTERNATES;
+
+} cv04;
+
+#--------------------------------------
+feature cv05 { # Character Variant 5 — Latin/Cyrillic Serifed a, second alternate
+
+@A_LC_ALTERNATES_2 = [ a.b agrave.b aacute.b acircumflex.b atilde.b adieresis.b amacron.b abreve.b aring.b aringacute.b acaron.b adotbelow.b ahoi.b acircumflexacute.b acircumflexgrave.b acircumflexhoi.b acircumflextilde.b acircumflexdotbelow.b abreveacute.b abrevegrave.b abrevehoi.b abrevetilde.b abrevedotbelow.b aogonek.b aogonek.e aogonekacute.b a.sups ordfeminine.a acyr.b abrevecyr.b ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Serifed a"; # English US: "Serifed a"
+			name 3 1 0x0809 "Serifed a"; # English GB
+			name 1 0 0 "Serifed a"; # Mac English
+			name 3 1 0x0408 "\039B\03B1\03C4\03B9\03BD\03B9\03BA\03CC a \03BC\03B5 \03C0\03B1\03C4\03BF\03CD\03C1\03B1"; # Greek: "Λατινικό a με πατούρα"
+			name 3 1 0x0419 "\0430 \0441 \0437\0430\0441\0435\0447\043A\0430\043C"; # Russian: "а с засечкам"
+		};
+	};
+	
+	lookup A_LC_ALTERNATES_2 { # a with tail
+		sub @A_LC_DEFAULT by @A_LC_ALTERNATES_2;
+		sub @A_LC_ALTERNATES by @A_LC_ALTERNATES_2;
+		sub aturned by aturned.b;
+	} A_LC_ALTERNATES_2;
+
+} cv05;
+
+#--------------------------------------
+feature cv06 { # Character Variant 6 — Latin Centered ogoneks, Na-Dene preference
+
+@OGONEK_DEFAULTS = [ Aogonek Eogonek aogonek eogonek uogonek aogonek.a aogonek.b ];
+@OGONEK_ALTERNATES = [ Aogonek.d Eogonek.d aogonek.d eogonek.d uogonek.d aogonek.e aogonek.f ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Centered ogoneks [ \0104 \0118 \0105 \0119 \0173 ] (Na-Den\00E9)"; # English US: "Centered ogoneks [ Ą Ę ą ę ų ] (Na-Dené)"
+			name 3 1 0x0809 "Centered ogoneks [ \0104 \0118 \0105 \0119 \0173 ] (Na-Den\00E9)"; # English GB
+			name 1 0 0 "Centered ogoneks (Na-Dene)"; # Mac English
+			name 3 1 0x0408 "\039A\03B5\03BD\03C4\03C1\03B9\03BA\03AC \03BF\03B3\03BA\03BF\03BD\03B5\03BA [ \0104 \0118 \0105 \0119 \0173 ] (\039D\03B1-\039D\03C4\03B5\03BD\03AD)"; # Greek: "Κεντρικά ογκονεκ [ Ą Ę ą ę ų ] (Να-Ντενέ)"
+			name 3 1 0x0419 "\041E\0433\043E\043D\044D\043A\0438 \0446\0435\043D\0442\0440\0438\0440\043E\0432\0430\043D\043D\044B\0435 [ \0104 \0118 \0105 \0119 \0173 ] (\041D\0430-\0414\0435\043D\0435)"; # Russian: "Огонэки центрированные [ Ą Ę ą ę ų ] (На-Дене)"
+		};
+	};
+	
+	lookup OGONEK_ALTERNATES { # centered ogoneks
+		sub @OGONEK_DEFAULTS by @OGONEK_ALTERNATES;
+	} OGONEK_ALTERNATES;
+
+} cv06;
+
+#--------------------------------------
+feature cv07 { # Character Variant 7 — Latin N-shaped Eng, Sami preference
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "N-shaped Eng [ \014A ] (Sami)"; # English US: N-shaped Eng [ Ŋ ] (Sami)
+			name 3 1 0x0809 "N-shaped Eng [ \014A ] (Sami)"; # English GB
+			name 1 0 0 "N-shaped Eng (Sami)"; # Mac English
+			name 3 1 0x0408 "\0393\03C1\03AC\03BC\03BC\03B1 \0395\03BD\03B3\03BA \03C3\03B5 \03C3\03C7\03AE\03BC\03B1 \039D [ \014A ] (\03A3\03AC\03BC\03B7)"; # Greek: "Γράμμα Ενγκ σε σχήμα Ν [ Ŋ ] (Σάμη)"
+			name 3 1 0x0419 "\042D\043D\0433 N-\043E\0431\0440\0430\0437\043D\0430\044F [ \014A ] (\0421\0430\0430\043C\0441\043A\0430\044F)"; # Russian: "Энг N-образная [ Ŋ ] (Саамская)"
+		};
+	};
+	
+	lookup ENG_UC_ALTERNATE { # N-shaped Eng
+		sub Eng by Eng.a;
+	} ENG_UC_ALTERNATE;
+
+} cv07;
+
+#--------------------------------------
+feature cv08 { # Character Variant 8 — Greek alternates for phonetics
+
+@IPA_LC_GREEK = [ alpha beta gamma iota upsilon phi chi ]; # Minion 3 includes theta
+@IPA_LC_LATIN = [ alphalatin betalatin gammalatin iotalatin upsilonlatin philatin chilatin ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Greek alternates for phonetics [ \0251 \A7B5 \0263 \0269 \028A \0278 \AB53 ] (IPA)"; # English US: "Alternate Greek letters for phonetics [ ɑ ꞵ ɣ ɩ ʊ ɸ ꭓ ] (IPA)"
+			name 3 1 0x0809 "Greek alternates for phonetics [ \0251 \A7B5 \0263 \0269 \028A \0278 \AB53 ] (IPA)"; # English GB
+			name 1 0 0 "Greek alternates for phonetics  (IPA)"; # Mac English
+			name 3 1 0x0408 "\0395\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03AC \03C6\03C9\03BD\03B7\03C4\03B9\03BA\03AC \03B3\03C1\03AC\03BC\03BC\03B1\03C4\03B1 [ \0251 \A7B5 \0263 \0269 \028A \0278 \AB53 ] (\0394\03A6\0391)"; # Greek: "Εναλλακτικά φωνητικά γράμματα [ ɑ ꞵ ɣ ɩ ʊ ɸ ꭓ ] (ΔΦΑ)"
+			name 3 1 0x0419 "\0413\0440\0435\0447\0435\0441\043A\0438\0435 \0430\043B\044C\0442\0435\0440\043D\0430\0442\0438\0432\043D\044B\0435 \0431\0443\043A\0432\044B \0434\043B\044F \0444\043E\043D\0435\0442\0438\043A\0438 [ \0251 \A7B5 \0263 \0269 \028A \0278 \AB53 ] (\041C\0424\0410)"; # Russian: "Греческие альтернативные буквы для фонетики [ ɑ ꞵ ɣ ɩ ʊ ɸ ꭓ ] (МФА)"
+		};
+	};
+	
+	lookup GREEK_TO_IPA { # Latinized Greek letters replace Greek characters
+		sub @IPA_LC_GREEK by @IPA_LC_LATIN;
+	} GREEK_TO_IPA;
+
+} cv08;
+
+#--------------------------------------
+feature cv09 { # Character Variant 09 — Greek alternate beta
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Greek cursive beta [ \03B2 ]"; # English US
+			name 3 1 0x0809 "Greek cursive beta [ \03B2 ]"; # English GB
+			name 1 0 0 "Greek cursive beta"; # Mac English
+			name 3 1 0x0408 "\03A1\03AD\03C9\03BD \03B2"; # Greek: "Ρέων β"
+			name 3 1 0x0419 "\0413\0440\0435\0447\0435\0441\043A\0430\044F \0431\0435\0442\0430 \043A\0443\0440\0441\0438\0432\043D\0430\044F [ \03B2 ]"; # Russian: "Греческая бета курсивная [ β ]"
+		};
+	};
+	
+	lookup BETA_LC_ALTERNATE { # Greek alternate beta
+		sub beta by beta.a;
+	} BETA_LC_ALTERNATE;
+
+} cv09;
+
+#--------------------------------------
+feature cv10 { # Character Variant 10 — Greek alternate theta
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Greek alternate theta [ \03B8 ]"; # English US: "Greek alternate theta [ θ ]"
+			name 3 1 0x0809 "Greek alternate theta [ \03B8 ]"; # English GB
+			name 1 0 0 "Greek alternate theta"; # Mac English
+			name 3 1 0x0408 "\0395\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03CC \03B8"; # Greek: "Εναλλακτικό θ"
+			name 3 1 0x0419 "\0413\0440\0435\0447\0435\0441\043A\0430\044F \0442\0435\0442\0430 \0430\043B\044C\0442\0435\0440\043D\0430\0442\0438\0432\043D\0430\044F [ \03B8 ]"; # Russian: "Греческая тета альтернативная [ θ ]"
+		};
+	};
+	
+	lookup THETA_LC_ALTERNATE { # Greek alternate theta
+		sub theta by theta.a;
+	} THETA_LC_ALTERNATE;
+
+} cv10;
+
+#--------------------------------------
+feature cv11 { # Character Variant 11 — Greek alternate phi
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Greek alternate phi [ \03C6 ]"; # English US: "Greek alternate phi [ φ ]"
+			name 3 1 0x0809 "Greek alternate phi [ \03C6 ]"; # English GB
+			name 1 0 0 "Greek alternate phi"; # Mac English
+			name 3 1 0x0408 "\0395\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03CC \03C6"; # Greek: "Εναλλακτικό φ"
+			name 3 1 0x0419 "\0413\0440\0435\0447\0435\0441\043A\0430\044F \0444\0438\0442\0430 \0430\043B\044C\0442\0435\0440\043D\0430\0442\0438\0432\043D\0430\044F [ \03C6 ]"; # Russian: "Греческая фита альтернативная [ φ ]"
+		};
+	};
+	
+	lookup PHI_LC_ALTERNATE { # Greek alternate phi
+		sub phi by phi.a;
+	} PHI_LC_ALTERNATE;
+
+} cv11;
+
+#--------------------------------------
+feature cv12 { # Character Variant 12 — Cyrillic ascending zhe, ka, yu, Bulgarian prefernce
+
+@CYRILLIC_LC_STANDARD_FORMS = [ zhe ka yu ];
+@CYRILLIC_LC_ASCENDING_FORMS = [ zhe.b ka.b yu.b ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Cyrillic lowercase alternates with ascenders [ \0436 \043A \044E ] (Bulgarian)"; # English US: "Cyrillic lowercase alternates with ascenders [ ж к ю ] (Bulgarian)"
+			name 3 1 0x0809 "Cyrillic lowercase alternates with ascenders [ \0436 \043A \044E ] (Bulgarian)"; # English GB: 
+			name 1 0 0 "Cyrillic lowercase alternates with ascenders (Bulgarian)"; # Mac English
+			name 3 1 0x0408 "\039A\03C5\03C1\03B9\03BB\03BB\03B9\03BA\03CC \03BC\03B9\03BA\03C1\03CC \03B3\03C1\03AC\03BC\03BC\03B1 \03BC\03B5 \03BA\03AC\03B8\03B5\03C4\03B7 \03B5\03C0\03AD\03BA\03C4\03B1\03C3\03B7 [ \0436 \043A \044E ] (\0392\03BF\03C5\03BB\03B3\03B1\03C1\03B9\03BA\03AC)"; # Greek: Κυριλλικό μικρό γράμμα με κάθετη επέκταση [ ж к ю ] (Βουλγαρικά)
+			name 3 1 0x0419 "\0421\0442\0440\043E\0447\043D\044B\0435 \0430\043B\044C\0442\0435\0440\043D\0430\0442\0438\0432\043D\044B\0435 \0441 \0432\043E\0441\0445\043E\0434\044F\0449\0438\043C\0438 [ \0436 \043A \044E ] (\0411\043E\043B\0433\0430\0440\0441\043A\0438\0435)"; # Russian: "Строчные альтернативные с восходящими [ ж к ю ] (Болгарские)"
+		};
+	};
+
+	lookup CYRILLIC_LC_ASCENDING_ALTERNATES { # Cyrillic ascending lowercase froms, Bulgarian preference
+		sub @CYRILLIC_LC_STANDARD_FORMS by @CYRILLIC_LC_ASCENDING_FORMS;
+	} CYRILLIC_LC_ASCENDING_ALTERNATES;
+
+} cv12;
+
+#--------------------------------------
+feature cv13 { # Character Variant 13 — Cyrillic cursive be, Serbian prefernce
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Cyrillic cursive be [ \0431 ] (Serbian)"; # English US: "Cyrillic cursive be [ б ]"
+			name 3 1 0x0809 "Cyrillic cursive be [ \0431 ] (Serbian)"; # English GB
+			name 1 0 0 "Cyrillic cursive be (Serbian)"; # Mac English
+			name 3 1 0x0408 "\039A\03C5\03C1\03B9\03BB\03BB\03B9\03BA\03CC \03C1\03AD\03C9\03BD \03BC\03C0\03B5 [ \0431 ] (\03A3\03AD\03C1\03B2\03B9\03BA\03B1)"; # Greek: "Κυριλλικό ρέων μπε [ б ] (Σέρβικα)"
+			name 3 1 0x0419 "\041A\0443\0440\0441\0438\0432\043D\0430\044F \0431 (\0421\0435\0440\0431\0441\043A\0430\044F)"; # Russian: "Курсивная б (Сербская)"
+		};
+	};
+
+	lookup CYRILLIC_BE_LC_CURSIVE { # Cyrillic cursive be, Serbian preference
+		sub be by be.c;
+	} CYRILLIC_BE_LC_CURSIVE;
+
+} cv13;
+
+#--------------------------------------
+feature cv14 { # Character Variant 14 — Cyrillic cursive forms
+
+@CYRILLIC_LC_PRINTED_FORMS = [ ve ghe de ze icyr ishort pe te tse sha shcha gje igravecyr ];
+@CYRILLIC_LC_CURSIVE_FORMS = [ ve.c ghe.c de.c ze.c icyr.c ishort.c pe.c te.c tse.c sha.c shcha.c gje.c igravecyr.c ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Cyrillic cursive forms [ \0432 \0433 \0434 \0437 \0438 \0439 \043F \0442 \0446 \0448 \0449 \045D ]"; # English US: "Cyrillic cursive forms [ в г д з и й п т ц ш щ ѝ ]"
+			name 3 1 0x0809 "Cyrillic cursive forms [ \0432 \0433 \0434 \0437 \0438 \0439 \043F \0442 \0446 \0448 \0449 \045D ]"; # English GB
+			name 1 0 0 "Cyrillic cursive forms"; # Mac English
+			name 3 1 0x0408 "\039A\03C5\03C1\03B9\03BB\03BB\03B9\03BA\03AC \03C1\03AD\03C9\03BD \03B3\03C1\03AC\03BC\03BC\03B1\03C4\03B1 [ \0432 \0433 \0434 \0437 \0438 \0439 \043F \0442 \0446 \0448 \0449 \045D  ]"; # Greek: "Κυριλλικά ρέων γράμματα [ в г д з и й п т ц ш щ ѝ ]"
+			name 3 1 0x0419 "\041A\0443\0440\0441\0438\0432\043D\044B\0435 \0431\0443\043A\0432\044B [ \0432 \0433 \0434 \0437 \0438 \0439 \043F \0442 \0446 \0448 \0449 \045D ]"; # Russian: "Курсивные буквы [ в г д з и й п т ц ш щ ѝ ]"
+		};
+	};
+ 
+	lookup CYRILLIC_LC_CURSIVE_ALTERNATES { # straight strokes
+		sub @CYRILLIC_LC_PRINTED_FORMS by @CYRILLIC_LC_CURSIVE_FORMS;
+	} CYRILLIC_LC_CURSIVE_ALTERNATES;
+
+} cv14;
+
+#--------------------------------------
+feature cv15 { # Character Variant 15 — Cyrillic geometric De, El, Ef forms
+
+@CYRILLIC_TRAPEZOID_FORMS = [ De El Ef Lje de el ef lje ];
+@CYRILLIC_GEOMETRIC_FORMS = [ De.a El.a Ef.a Lje.a de.a el.a ef.a lje.a ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Cyrillic geometric forms [ \0414 \041B \0409 \0434 \043B \0459 ]"; # EngElish US: "Cyrillic geometric forms [ Д Л Љ д л љ ]"
+			name 3 1 0x0809 "Cyrillic geometric forms [ \0414 \041B \0409 \0434 \043B \0459 ]"; # English GB
+			name 1 0 0 "Cyrillic geometric forms"; # Mac English
+			name 3 1 0x0408 "\039A\03C5\03C1\03B9\03BB\03BB\03B9\03BA\03AC \03B3\03B5\03C9\03BC\03B5\03C4\03C1\03B9\03BA\03AC \03B3\03C1\03AC\03BC\03BC\03B1\03C4\03B1 [ \0414 \041B \0409 \0434 \043B \0459 ]"; # Greek: "Κυριλλικά γεωμετρικά γράμματα [ Д Л Љ д л љ ]"
+			name 3 1 0x0419 "\041A\0438\0440\0438\043B\043B\0438\0447\0435\0441\043A\0438\0435 \043A\0443\0440\0441\0438\0432\043D\044B\0435 \0431\0443\043A\0432\044B [ \0432 \0433 \0434 \0437 \0438 \0439 \043F \0442 \0446 \0448 \0449 \045D ]"; # Russian: "Геометрические буквы [ Д Л Љ д л љ ]"
+		};
+	};
+ 
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES { # geometric aperture
+		sub @CYRILLIC_TRAPEZOID_FORMS by @CYRILLIC_GEOMETRIC_FORMS;
+	} CYRILLIC_GEOMETRIC_ALTERNATES;
+
+} cv15;
+
+#--------------------------------------
+feature cv16 { # Character Variant 16 — simple Zhe, Ka & palochka forms
+
+@CYRILLIC_CURLED_FORMS = [ Zhe Ka Zhedescender Kje Kadescender Kabashkir Zhebreve zhe zhe.b ka ka.b kje zhedescender kadescender kabashkir zhebreve palochka ];
+@CYRILLIC_STRAIGHT_FORMS = [ Zhe.a Ka.a Zhedescender.a Kje.a Kadescender.a Kabashkir.a Zhebreve.a zhe.a zhe.d ka.a ka.d kje.a zhedescender.a kadescender.a kabashkir.a zhebreve.a l.a ];
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Cyrillic simple forms [ \0416 \041A \0436 \043A \04CF ]"; # English US: "Cyrillic simple forms [ Ж К ж к ӏ ]"
+			name 3 1 0x0809 "Cyrillic simple forms [ \0416 \041A \0436 \043A \04CF ]"; # English GB
+			name 1 0 0 "Cyrillic simple forms"; # Mac English
+			name 3 1 0x0408 "\039A\03C5\03C1\03B9\03BB\03BB\03B9\03BA\03AC \03B1\03C0\03BB\03AC \03B3\03C1\03AC\03BC\03BC\03B1\03C4\03B1 [ \0416 \041A \0436 \043A \04CF ]"; # Greek: "Κυριλλικά απλά γράμματα [ Ж К ж к ӏ ]"
+			name 3 1 0x0419 "\041F\0440\043E\0441\0442\044B\0435 \0431\0443\043A\0432\044B [ \0416 \041A \0436 \043A \04CF ]"; # Russian: "Простые буквы [ Ж К ж к ӏ ]"
+		};
+	};
+ 
+	lookup CYRILLIC_STRAIGHT_ALTERNATES { # straight strokes
+		sub @CYRILLIC_CURLED_FORMS by @CYRILLIC_STRAIGHT_FORMS;
+	} CYRILLIC_STRAIGHT_ALTERNATES;
+
+} cv16;
+
+#--------------------------------------
+feature cv17 { # Character Variant 17 — Capital figures
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Capital figures"; # English US
+			name 3 1 0x0809 "Capital figures"; # English GB
+			name 1 0 0 "Capital figures"; # Mac English
+			name 3 1 0x0408 "\039A\03B5\03C6\03B1\03BB\03B1\03AF\03BF\03B9 \03B1\03C1\03B9\03B8\03BC\03BF\03AF"; # Greek: "Κεφαλαίοι αριθμοί"
+			name 3 1 0x0419 "\0417\0430\0433\043B\0430\0432\043D\044B\0435 \0446\0438\0444\0440\044B"; # Russian: "Заглавные цифры"
+		};
+	};
+ 
+	lookup FIGURES_CASE {
+		sub @FIGURES_LINING_TABULAR by @FIGURES_CAP;
+	} FIGURES_CASE;
+
+} cv17;
+
+#--------------------------------------
+feature cv18 { # Character Variant 18 — dotted zero
+
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Dotted zero [ 0 ]"; # English US
+			name 3 1 0x0809 "Dotted zero [ 0 ]"; # English GB
+			name 1 0 0 "Dotted zero [ 0 ]"; # Mac English
+			name 3 1 0x0408 "\039C\03B7\03B4\03AD\03BD \03BC\03B5 \03BA\03B5\03BD\03C4\03C1\03B9\03BA\03AE \03C4\03B5\03BB\03B5\03AF\03B1 [ 0 ]"; # Greek: "Μηδέν με κεντρική τελεία [ 0 ]"
+			name 3 1 0x0419 "\041D\043E\043B\044C \0441 \043F\0443\043D\043A\0442\0438\0440\043E\043C [ 0 ]"; # Russian: "Ноль с пунктиром [ 0 ]"
+		};
+	};
+ 
+	lookup ZERO {
+		sub zero by zero.0;
+		sub zero.pnum by zero.0p;
+	} ZERO;
+
+} cv18;
+
+#--------------------------------------
+feature cv19 { # Character Variant 19 — slashed zero
+	cvParameters {
+		FeatUILabelNameID {
+			name 3 1 0x0409 "Slashed zero [ 0 ]"; # English US
+			name 3 1 0x0809 "Slashed zero [ 0 ]"; # English GB
+			name 1 0 0 "Slashed zero [ 0 ]"; # Mac English
+			name 3 1 0x0408 "\039C\03B7\03B4\03AD\03BD \03BC\03B5 \03BA\03AC\03B8\03B5\03C4\03BF [ 0 ]"; # Greek: "Μηδέν με κάθετο[ 0 ]"
+			name 3 1 0x0419 "\041F\0435\0440\0435\0447\0435\0440\043A\043D\0443\0442\044B\0439 \043D\043E\043B\044C [ 0 ]"; # Russian: "Перечеркнутый ноль [ 0 ]"
+		};
+	};
+	
+	lookup ZERO_SLASH {
+		sub [ zero zero.0 ] by zero.0s;
+		sub [ zero.pnum zero.0p ] by zero.0ps;
+	} ZERO_SLASH;
+
+
+} cv19;
+
+#--------------------------------------
+feature locl { # Localized Forms
+
+	script latn;
+		language dflt;
+			lookup GREEK_TO_IPA;
+
+		language ATH include_dflt;
+			lookup OGONEK_ALTERNATES;
+
+		language CHP include_dflt;
+			lookup OGONEK_ALTERNATES;
+
+		language NAV include_dflt;
+			lookup OGONEK_ALTERNATES;
+
+		language NSM include_dflt;
+			lookup ENG_UC_ALTERNATE;
+
+		language SLA include_dflt;
+			lookup OGONEK_ALTERNATES;
+
+		language SKS include_dflt;
+			lookup ENG_UC_ALTERNATE;
+
+		include (../../locl-IPPH-APPH.fea); # imports IPA lookups (which differ between upright and italic)
+
+	script grek;
+		sub [ acutecmb gravecmb commaturnedabovecmb commaabovecmb dieresisgrave ] by [ tonoscmb variacmb aspercmb leniscmb dialytikagravecmb ]; # combining marks
+
+	script cyrl;
+
+		language dflt;
+			lookup CYRILLIC_BREVE { # heavy terminals (Cyrillic preference)
+				sub [ brevecmb brevecmb.cap ] by [ brevecmb.cyr brevecmb.cyrcap ]; # combining marks
+			} CYRILLIC_BREVE;
+
+		language BGR include_dflt; # Bulgarian
+			lookup CYRILLIC_GEOMETRIC_ALTERNATES;
+			lookup CYRILLIC_LC_ASCENDING_ALTERNATES;
+			include (../../locl_BGR.fea); # imports Bulgarian specific lookups (which differ between upright and italic)
+
+		language SRB include_dflt; # Serbian
+			include (../../locl_SRB.fea); # imports Serbians specific lookups (which differ between upright and italic)
+
+		language MKD include_dflt; # Macedonian
+			include (../../locl_MKD.fea); # imports Macedonian specific lookups (which differ between upright and italic)
+
+} locl;
+
+#--------------------------------------
+feature numr { # Numerators
+	lookup NUMR {
+		sub @FIGURES_LINING_TABULAR by @FIGURES_NUMERATOR;
+		sub @PUNCTUATION_FOR_SMALL_FIGURE_STYLES by @PUNCTUATION_NUMERATOR;
+	} NUMR;
+} numr;
+
+#--------------------------------------
+feature dnom { # Denominators
+	sub @FIGURES_LINING_TABULAR by @FIGURES_DENOMINATOR;
+	sub @PUNCTUATION_FOR_SMALL_FIGURE_STYLES by @PUNCTUATION_DENOMINATOR;
+} dnom;
+
+#--------------------------------------
+feature frac { # Fractions
+	@SLASH = [ slash.frac fraction divisionslash ];
+
+	lookup NUMR;
+	sub slash by slash.frac;
+	sub @FIGURES_NUMERATOR space' by space.frac;
+
+	sub [ @SLASH @FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR ] [ @FIGURES_NUMERATOR @PUNCTUATION_NUMERATOR ]' by [ @FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR ];
+	sub @FIGURES_DENOMINATOR space.frac [ @FIGURES_NUMERATOR @PUNCTUATION_NUMERATOR ]' by [ @FIGURES_DENOMINATOR @PUNCTUATION_DENOMINATOR ];
+} frac;
+
+#--------------------------------------
+feature ordn {
+	lookup SUPERIOR_LETTERS_MINISCULE;
+} ordn;
+
+#--------------------------------------
+feature sups { # Superscript
+	lookup SUPERIOR_LETTERS_MINISCULE;
+	lookup SUPERIOR_LETTERS_MAJUSCULE;
+	lookup SUPERIOR_NUMERALS_SORTS;
+	lookup SUPERIOR_SORTS;
+} sups;
+
+#--------------------------------------
+feature subs { # Subscript
+	lookup INFERIOR ;
+} subs;
+
+#--------------------------------------
+feature sinf { # Scientific Inferiors
+	lookup INFERIOR ;
+} sinf;
+
+#--------------------------------------
+feature onum { # Oldstyle (Text) Figures
+	lookup OLDSTYLE ;
+} onum;
+
+#--------------------------------------
+feature pnum { # Proportional Figures
+	lookup PROPORTIONAL ;
+} pnum;
+
+#--------------------------------------
+feature case { # Case-Sensitive Forms
+
+	lookup CASING_ALTERNATES {
+		sub [ hlinebelow tdieresis ] by [ Hlinebelow Tdieresis ];
+	} CASING_ALTERNATES;
+
+	lookup MARKS_CASE {
+		sub @MARKS_CMB_LC by @MARKS_CMB_CASE;
+	} MARKS_CASE;
+
+	lookup FIGURES_CASE;
+
+	lookup PUNCTUATION_CASE {
+		sub at by at.cap;
+		sub anoteleia by anoteleia.cap;
+	} PUNCTUATION_CASE;
+
+} case;
+
+#--------------------------------------
+feature titl { # Titling Forms
+	lookup FIGURES_CASE;
+} titl;
+
+#--------------------------------------
+# INVESTIGATE!
+#feature ss20 { # Stylistic Set 20 (Accented Greek Small Capitals)
+#	featureNames {
+#		name "Accented Greek Small Capitals"; # Windows English
+#	};
+#
+##	sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_TONOS;
+
+#	lookup GREEK_SMALLCAPS_MONO {
+#		sub @LETTERS_MINISCULE_GREEK_BASIC by @LETTERS_SMALLCAP_GREEK_BASIC;
+#		sub @LETTERS_MINISCULE_GREEK_DIERESIS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
+#		sub @LETTERS_MINISCULE_GREEK_DIERESISTONOS by @LETTERS_SMALLCAP_GREEK_DIERESIS;
+#		sub @LETTERS_MINISCULE_GREEK_TONOS by @LETTERS_SMALLCAP_GREEK_NO_TONOS;
+#		sub sigma.end by Sigma.sc;
+#	} GREEK_SMALLCAPS_MONO;
+#
+#	lookup GREEK_SMALLCAPS_POLY {
+#		sub [ alphalenis alphaasper alphagrave alphaacute alphalenisgrave alphaaspergrave alphalenisacute alphaasperacute alphalenistilde alphaaspertilde alphabreve alphamacron alphatilde ] by Alpha.sc;
+#		sub [ epsilonlenis epsilonasper epsilongrave epsilonacute epsilonlenisgrave epsilonaspergrave epsilonlenisacute epsilonasperacute ] by Epsilon.sc;
+#		sub [ etalenis etaasper etagrave etaacute etalenisgrave etaaspergrave etalenisacute etaasperacute etalenistilde etaaspertilde etatilde ] by Eta.sc;
+#		sub [ iotalenis iotaasper iotagrave iotaacute iotalenisgrave iotaaspergrave iotalenisacute iotaasperacute iotalenistilde iotaaspertilde iotabreve iotamacron iotatilde ] by Iota.sc;
+#		sub [ omicronlenis omicronasper omicrongrave omicronacute omicronlenisgrave omicronaspergrave omicronlenisacute omicronasperacute ] by Omicron.sc;
+#		sub [ rholenis rhoasper ] by Rho.sc;
+#		sub [ upsilonlenis upsilonasper upsilongrave upsilonacute upsilonlenisgrave upsilonaspergrave upsilonlenisacute upsilonasperacute upsilonlenistilde upsilonaspertilde upsilontilde upsilonbreve upsilonmacron ] by Upsilon.sc;
+#		sub [ omegalenis omegaasper omegagrave omegaacute omegalenisgrave omegaaspergrave omegalenisacute omegaasperacute omegalenistilde omegaaspertilde omegatilde ] by Omega.sc;
+#		sub [ alphaiotasub alphaiotasublenis alphaiotasubasper alphaiotasubgrave alphaiotasubacute alphaiotasublenisgrave alphaiotasubaspergrave alphaiotasublenisacute alphaiotasubasperacute alphaiotasublenistilde alphaiotasubaspertilde alphaiotasubtilde ] by Alphaiotasub.sc;
+#		sub [ etaiotasub etaiotasublenis etaiotasubasper etaiotasubgrave etaiotasubacute etaiotasublenisgrave etaiotasubaspergrave etaiotasublenisacute etaiotasubasperacute etaiotasublenistilde etaiotasubaspertilde etaiotasubtilde ] by Etaiotasub.sc;
+#		sub [ omegaiotasub omegaiotasublenis omegaiotasubasper omegaiotasubgrave omegaiotasubacute omegaiotasublenisgrave omegaiotasubaspergrave omegaiotasublenisacute omegaiotasubasperacute omegaiotasublenistilde omegaiotasubaspertilde omegaiotasubtilde ] by Omegaiotasub.sc;
+#		sub [ iotadieresisgrave iotadieresisacute iotadieresistilde ] by Iotadieresis.sc;
+#		sub [ upsilondieresisgrave upsilondieresisacute upsilondieresistilde ] by Upsilondieresis.sc;
+#	} GREEK_SMALLCAPS_POLY;
+
+#} ss20;
+
+#--------------------------------------
+# feature c2sc (this comment indicates feature order)
+# feature smcp (this comment indicates feature order)
+include (../../c2sc_smcp.fea); # imports c2sc & smcp features (which are blank for italic fonts)
+
+#--------------------------------------
+feature ss01 { # Stylistic Set 1 — Latin serifed I
+	featureNames {
+		name 3 1 0x0409 "Serifed I (\25B2 i)"; # English US: "Serifed I (▲ i)"
+		name 3 1 0x0809 "Serifed I (\25B2 i)"; # English GB
+		name 1 0 0 "Serifed I (i)"; # Mac English
+		name 3 1 0x0408 "\0399 \03BC\03B5 \03C0\03B1\03C4\03BF\03CD\03C1\03B1 (\25B2 \03B9 )"; # Greek: "Ι με πατούρα (▲ ι)"
+		name 3 1 0x0419 "\0406 \0441 \0437\0430\0441\0435\0447\043A\0430\043C\0438 (\25B2 \0456)"; # Russian: "І с засечками (▲ і)"
+	};
+
+	lookup I_UC_ALTERNATES;
+	lookup IOTA_UC_ALTERNATES_1;
+	lookup IOTA_UC_ALTERNATES_2;
+	lookup IUKRAN_UC_ALTERNATES;
+} ss01;
+
+#--------------------------------------
+feature ss02 { # Stylistic Set 2 — Latin simplified lowercase forms for a, g, l; Greek alternates for beta, theta, phi; Cyrillic geometric forms for De/de, El/el & straight forms  for zhe, ka, palochka
+	featureNames {
+		name 3 1 0x0409 "Simple a g l"; # English US
+		name 3 1 0x0809 "Simple a g l"; # English GB
+		name 1 0 0 "Simple a g l"; # Mac English
+		name 3 1 0x0408 "\0395\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03AC \03B2 \03B8 \03C6"; # Greek: "Εναλλακτικά β θ φ" FIX
+		name 3 1 0x0419 "\041F\0440\043E\0441\0442\044B\0435, \0433\0435\043E\043C\0435\0442\0440\0438\0447\0435\0441\043A\0438\0435 \0431\0443\043A\0432\044B [ \0414 \0416 \041A \041B \0409 \0434 \0436 \043A \043B \0459 \04CF ]"; # Russian: "Простые, геометрические буквы [ Д Ж К Л Љ д ж к л љ ӏ ]"
+	};
+
+	lookup A_LC_ALTERNATES;
+	lookup G_LC_ALTERNATES;
+	lookup L_LC_ALTERNATES;
+	lookup BETA_LC_ALTERNATE;
+	lookup THETA_LC_ALTERNATE;
+	lookup PHI_LC_ALTERNATE;
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES;
+	lookup CYRILLIC_STRAIGHT_ALTERNATES;
+} ss02;
+
+#--------------------------------------
+feature ss03 { # Stylistic Set 3 — Latin single storey a (first alternate); Greek alternate beta, Cyrillic single sltorey a
+	featureNames {
+		name 3 1 0x0409 "Simple a"; # English US: "Simple a"
+		name 3 1 0x0809 "Simple a"; # English GB
+		name 1 0 0 "Simple a"; # Mac English
+		name 3 1 0x0408 "\03A1\03AD\03C9\03BD \03B2"; # Greek: "Ρέων β"
+		name 3 1 0x0419 "\041F\0440\043E\0441\0442\0430\044F \0430"; # Russian: "Простая а"
+		};
+
+	lookup A_LC_ALTERNATES; # includes Cyrillic characters
+	lookup BETA_LC_ALTERNATE;
+} ss03;
+
+#--------------------------------------
+feature ss04 { # Stylistic Set 4 — Latin single storey g; Greek alternate theta; Cyrillic geometric forms for De/de, El/el
+	featureNames {
+		name 3 1 0x0409 "Simple g"; # English US: "Simple g"
+		name 3 1 0x0809 "Simple g"; # English GB
+		name 1 0 0 "Simple g"; # Mac English
+		name 3 1 0x0408 "\0395\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03CC \03B8"; # Greek: "Εναλλακτικό θ"
+		name 3 1 0x0419 "\041A\0438\0440\0438\043B\043B\0438\0447\0435\0441\043A\0438\0435 \043A\0443\0440\0441\0438\0432\043D\044B\0435 \0431\0443\043A\0432\044B [ \0432 \0433 \0434 \0437 \0438 \0439 \043F \0442 \0446 \0448 \0449 \045D ]"; # Russian: "Геометрические буквы [ Д Л Љ д л љ ]"
+		};
+
+	lookup G_LC_ALTERNATES;
+	lookup THETA_LC_ALTERNATE;
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES;
+
+} ss04;
+
+#--------------------------------------
+feature ss05 { # Stylistic Set 5 — Latin straight l
+	featureNames {
+		name 3 1 0x0409 "Simple l (\25BC L)"; # English US: "Simple l (▼ L)"
+		name 3 1 0x0809 "Simple l (\25BC L)"; # English GB
+		name 1 0 0 "Simple l (L)"; # Mac English
+		name 3 1 0x0408 "\0395\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03CC \03C6"; # Greek: "Εναλλακτικό φ"
+		name 3 1 0x0419 "\041F\0440\043E\0441\0442\044B\0435 \0431\0443\043A\0432\044B [ \0416 \041A \0436 \043A \04CF ]"; # Russian: "Простые буквы [ Ж К ж к ӏ ]"
+		};
+
+	lookup L_LC_ALTERNATES;
+	lookup PHI_LC_ALTERNATE;
+	lookup CYRILLIC_STRAIGHT_ALTERNATES;
+} ss05;
+
+#--------------------------------------
+feature ss06 { # Stylistic Set 6 — serifed a, second alternate
+	featureNames {
+		name 3 1 0x0409 "Serifed a"; # English US: "Serifed a"
+		name 3 1 0x0809 "Serifed a"; # English GB
+		name 1 0 0 "Serifed a"; # Mac English
+			name 3 1 0x0408 "\039B\03B1\03C4\03B9\03BD\03B9\03BA\03CC a \03BC\03B5 \03C0\03B1\03C4\03BF\03CD\03C1\03B1"; # Greek: "Λατινικό a με πατούρα"
+		name 3 1 0x0419 "\0430 \0441 \0437\0430\0441\0435\0447\043A\0430\043C"; # Russian: "а с засечкам"
+		};
+
+	lookup A_LC_ALTERNATES_2; # includes Cyrillic characters
+} ss06;
+
+#--------------------------------------
+feature ss07 { # Stylistic Set 7 — Latin centered ogoneks, Na-Dene preference; Cyrillic script forms
+	featureNames {
+		name 3 1 0x0409 "Centered ogoneks [ \0104 \0118 \0105 \0119 \0173 ] (Na-Den\00E9)"; # English US: "Centered ogoneks [ Ą Ę ą ę ų ] (Na-Dené)"
+		name 3 1 0x0809 "Centered ogoneks [ \0104 \0118 \0105 \0119 \0173 ] (Na-Den\00E9)"; # English GB
+		name 1 0 0 "Centered ogoneks (Na-Dene)"; # Mac English
+		name 3 1 0x0408 "\039A\03B5\03BD\03C4\03C1\03B9\03BA\03AC \03BF\03B3\03BA\03BF\03BD\03B5\03BA [ \0104 \0118 \0105 \0119 \0173 ] (\039D\03B1-\039D\03C4\03B5\03BD\03AD)"; # Greek: "Κεντρικά ογκονεκ [ Ą Ę ą ę ų ] (Να-Ντενέ)"
+		name 3 1 0x0419 "\041A\0443\0440\0441\0438\0432\043D\044B\0435 \0431\0443\043A\0432\044B [ \0432 \0433 \0434 \0437 \0438 \0439 \043F \0442 \0446 \0448 \0449 \045D ]"; # Russian: "Курсивные буквы [ в г д з и й п т ц ш щ ѝ ]"
+		};
+
+	lookup OGONEK_ALTERNATES;
+	lookup CYRILLIC_LC_CURSIVE_ALTERNATES;
+
+} ss07;
+
+#--------------------------------------
+feature ss08 { # Stylistic Set 8 — Latin N-shaped Eng, Sami preference
+	featureNames {
+		name 3 1 0x0409 "N-shaped Eng [ \014A ] (Sami)"; # English US: N-shaped Eng [ Ŋ ] (Sami)
+		name 3 1 0x0809 "N-shaped Eng [ \014A ] (Sami)"; # English GB
+		name 1 0 0 "N-shaped Eng (Sami)"; # Mac English
+		name 3 1 0x0408 "\0393\03C1\03AC\03BC\03BC\03B1\0395\03BD\03B3\03BA \03C3\03B5 \03C3\03C7\03AE\03BC\03B1 \039D [ \014A ] (\03A3\03AC\03BC\03B7)"; # Greek: "Γράμμα Ενγκ σε σχήμα Ν [ Ŋ ] (Σάμη)"
+		name 3 1 0x0419 "\042D\043D\0433 N-\043E\0431\0440\0430\0437\043D\0430\044F [ \014A ] (\0421\0430\0430\043C\0441\043A\0430\044F)"; # Russian: "Энг N-образная [ Ŋ ] (Саамская)"
+		};
+
+	lookup ENG_UC_ALTERNATE;
+
+} ss08;
+
+#--------------------------------------
+feature ss09 { # Stylistic Set 9 — Titling Figures
+	featureNames {
+		name 3 1 0x0409 "Capital figures"; # English US
+		name 3 1 0x0809 "Capital figures"; # English GB
+		name 1 0 0 "Capital figures"; # Mac English
+		name 3 1 0x0408 "\039A\03B5\03C6\03B1\03BB\03B1\03AF\03BF\03B9 \03B1\03C1\03B9\03B8\03BC\03BF\03AF"; # Greek: "Κεφαλαίοι αριθμοί"
+		name 3 1 0x0419 "\0417\0430\0433\043B\0430\0432\043D\044B\0435 \0446\0438\0444\0440\044B"; # Russian: "Заглавные цифры"
+		};
+
+	lookup FIGURES_CASE;
+} ss09;
+
+#--------------------------------------
+feature ss10 { # Stylistic Set 10 (Dotted zero)
+	featureNames {
+		name 3 1 0x0409 "Dotted zero [ 0 ]"; # English US
+		name 3 1 0x0809 "Dotted zero [ 0 ]"; # English GB
+		name 1 0 0 "Dotted zero [ 0 ]"; # Mac English
+		name 3 1 0x0408 "\039C\03B7\03B4\03AD\03BD \03BC\03B5 \03BA\03B5\03BD\03C4\03C1\03B9\03BA\03AE \03C4\03B5\03BB\03B5\03AF\03B1 [ 0 ]"; # Greek: "Μηδέν με κεντρική τελεία [ 0 ]"
+		name 3 1 0x0419 "\041D\043E\043B\044C \0441 \043F\0443\043D\043A\0442\0438\0440\043E\043C [ 0 ]"; # Russian: "Ноль с пунктиром [ 0 ]"
+		};
+
+	lookup ZERO;
+} ss10;
+
+#--------------------------------------
+feature salt { # Stylistic Alternates
+	lookup I_UC_ALTERNATES;
+	lookup IOTA_UC_ALTERNATES_1;
+	lookup IOTA_UC_ALTERNATES_2;
+	lookup IUKRAN_UC_ALTERNATES;
+	lookup A_LC_ALTERNATES;
+	lookup A_LC_ALTERNATES_2;
+	lookup G_LC_ALTERNATES;
+	lookup L_LC_ALTERNATES;
+	lookup OGONEK_ALTERNATES;
+	lookup ENG_UC_ALTERNATE;
+	lookup GREEK_TO_IPA;
+	lookup BETA_LC_ALTERNATE;
+	lookup THETA_LC_ALTERNATE;
+	lookup PHI_LC_ALTERNATE;
+	lookup CYRILLIC_LC_ASCENDING_ALTERNATES;
+	lookup CYRILLIC_BE_LC_CURSIVE;
+	lookup CYRILLIC_LC_CURSIVE_ALTERNATES;
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES;
+	lookup CYRILLIC_STRAIGHT_ALTERNATES;
+	lookup FIGURES_CASE;
+	lookup ZERO;
+	lookup ZERO_SLASH;
+	sub yen by yuan;
+} salt;
+
+#--------------------------------------
+feature zero {
+	lookup ZERO_SLASH;
+} zero;
+
+#--------------------------------------
+feature liga { # Standard Ligatures
+	sub f f t by f_f_t;
+	sub f f by f_f;
+	sub f t by f_t;
+} liga;
+
+#--------------------------------------
+feature size {
+	parameters 10.0 0; # design size, subfamily
+} size;
