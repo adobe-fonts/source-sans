@@ -16,8 +16,7 @@
 @LETTERS_MINISCULE_LATIN_ADDL = [ aogonek ae bstroke dcroat dhook eogonek eturned ghook hbar istroke iogonek lslash lbelt ldot lcat oslash oslashacute ohorn oogonek oe tbar uhorn uogonek eth thorn schwa eng glottalstoplatin ij ijacute ];
 @LETTERS_MINISCULE_LATIN_ALTERNATES = [ aogonek.d eogonek.d ];
 @LETTERS_MINISCULE_LATIN_SUPERIOR = [ a.sups b.sups c.sups d.sups e.sups f.sups g.sups h.sups i.sups j.sups k.sups l.sups m.sups n.sups o.sups p.sups q.sups r.sups s.sups t.sups u.sups v.sups w.sups x.sups y.sups z.sups ];
-@LETTERS_MINISCULE_LATIN_ASCENDERS = [ b d f h k l ];
-@LETTERS_MINISCULE_LATIN_ASCENDERS_ALL = [ b d f h k l ];
+@LETTERS_MINISCULE_LATIN_ASCENDERS = [ b d f h k l t eth thorn bstroke dcroat hbar lslash longs tbar bhook dtail dhook hhook henghook lmiddletilde lbelt lretroflex lezh philatin rlonglegturned esh dotlessjstrokehook tretroflex yturned dzed dezh dzcurl ts tesh tccurl dzretroflex tshook glottalstop glottalstopreversed glottalstopstroke glottalstopstrokereversed clickalveolar clickretroflex clickbilabial l.a lslash.a ];
 
 @LETTERS_MAJUSCULE_GREEK_BASIC = [ Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega ];
 @LETTERS_MAJUSCULE_GREEK_TONOS = [ Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos ];
@@ -45,6 +44,7 @@
 @LETTERS_MINISCULE_CYRILLIC_ALL = [ @LETTERS_MINISCULE_CYRILLIC_BASIC @LETTERS_MINISCULE_CYRILLIC_ACCENTED @LETTERS_MINISCULE_CYRILLIC_ALTERNATES ];
 
 @LETTERS_MAJUSCULE_ALL = [ @LETTERS_MAJUSCULE_LATIN_ALL @LETTERS_MAJUSCULE_GREEK_ALL @LETTERS_MAJUSCULE_CYRILLIC_ALL ];
+@LETTERS_MAJUSCULE_ALL_MINISCULE_ASCENDERS = [ @LETTERS_MAJUSCULE_ALL @LETTERS_MINISCULE_LATIN_ASCENDERS theta ];
 
 @MARKS_CMB_ABOVE = [ gravecmb variacmb acutecmb tonoscmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb commaturnedabovecmb aspercmb commaabovecmb leniscmb leftangleabovecmb horncmb cedillacmb ogonekcmb tildeoverlaycmb xabovecmb perispomenicmb koroniscmb dialytikatonoscmb dotaboverightcmb ];
 @MARKS_CMB_BELOW = [ lefttackbelowcmb righttackbelowcmb ringhalfleftbelowcmb uptackbelowcmb downtackbelowcmb plusbelowcmb minusbelowcmb dotbelowcmb dieresisbelowcmb ringbelowcmb commabelowcmb verticallinebelowcmb bridgebelowcmb caronbelowcmb brevebelowcmb breveinvertedbelowcmb tildebelowcmb macronbelowcmb ringhalfrightbelowcmb bridgeinvertedbelowcmb squarebelowcmb seagullbelowcmb iotasubscriptcmb ];
@@ -956,13 +956,17 @@ feature ccmp { # Glyph Composition  Decomposition
 	} YI_UKRAINIAN;
 
 	lookup MAJUCSULE_ACCENTS_CMB_CONTEXT { # substitutes combining marks for miniscules with forms for majuscules
-		@MARKSDBL_CMB_LC = [macrondoublecmb breveinverteddoublecmb circumflexdoublecmb ];
-		@MARKSDBL_CMB_CASE = [macrondoublecmb.a breveinverteddoublecmb.a circumflexdoublecmb.a ];
 		sub [ @LETTERS_MAJUSCULE_ALL @LETTERS_MINISCULE_LATIN_ASCENDERS ] @MARKS_CMB_LC' lookup MARKS_CMB_CASE;
 		sub @MARKS_CMB_CASE @MARKS_CMB_LC' lookup MARKS_CMB_CASE;
-		sub [ @LETTERS_MINISCULE_LATIN_ASCENDERS t esh ] @MARKSDBL_CMB_LC' by @MARKSDBL_CMB_CASE;
-		sub @MARKSDBL_CMB_LC' [ @LETTERS_MINISCULE_LATIN_ASCENDERS t esh ] by @MARKSDBL_CMB_CASE;
 	} MAJUCSULE_ACCENTS_CMB_CONTEXT;
+
+	lookup ACCENTS_DOUBLE_ASCENDER_CMB_CONTEXT { # substitutes combining marks for miniscules with forms for majuscules
+		lookupflag IgnoreMarks;
+		@MARKSDBL_CMB_LC = [macrondoublecmb breveinverteddoublecmb circumflexdoublecmb ];
+		@MARKSDBL_CMB_CASE = [macrondoublecmb.a breveinverteddoublecmb.a circumflexdoublecmb.a ];
+		sub @LETTERS_MAJUSCULE_ALL_MINISCULE_ASCENDERS @MARKSDBL_CMB_LC' by @MARKSDBL_CMB_CASE;
+		sub @MARKSDBL_CMB_LC' @LETTERS_MAJUSCULE_ALL_MINISCULE_ASCENDERS by @MARKSDBL_CMB_CASE;
+	} ACCENTS_DOUBLE_ASCENDER_CMB_CONTEXT;
 
 } ccmp;
 
