@@ -13,9 +13,9 @@
 @LETTERS_SMALLCAP_GREEK_DIERESIS = [ Iotadieresis.sc Upsilondieresis.sc ];
 @LETTERS_SMALLCAP_GREEK_ALL = [ @LETTERS_SMALLCAP_GREEK_BASIC @LETTERS_SMALLCAP_GREEK_DIERESIS ]; #@LETTERS_SMALLCAP_GREEK_TONOS
 
-@LETTERS_SMALLCAP_CYRILLIC_BASIC = [ Acyr.sc Be.sc Ve.sc Ghe.sc De.sc Ie.sc Zhe.sc Ze.sc Icyr.sc Ka.sc El.sc Em.sc En.sc Ocyr.sc Pe.sc Er.sc Es.sc Te.sc Ucyr.sc Ef.sc Ha.sc Tse.sc Che.sc Sha.sc Shcha.sc Hard.sc Yeru.sc Soft.sc Ecyr.sc Yu.sc Ya.sc Ieukran.sc Dze.sc Iukran.sc Je.sc Lje.sc Nje.sc Tshe.sc Dzhe.sc Yat.sc Fita.sc Izhitsa.sc Gheup.sc Ghestroke.sc Zhedescender.sc Zedescender.sc Kadescender.sc Kabashkir.sc Endescender.sc Esdescender.sc Ustraight.sc Ustraightstroke.sc Hadescender.sc Chedescender.sc Shha.sc Palochka.sc Aie.sc Schwacyr.sc Obarcyr.sc ];
+@LETTERS_SMALLCAP_CYRILLIC_BASIC = [ Acyr.sc Be.sc Ve.sc Ghe.sc De.sc Ie.sc Zhe.sc Ze.sc Icyr.sc Ka.sc El.sc Em.sc En.sc Ocyr.sc Pe.sc Er.sc Es.sc Te.sc Ucyr.sc Ef.sc Ha.sc Tse.sc Che.sc Sha.sc Shcha.sc Hard.sc Yeru.sc Soft.sc Ecyr.sc Yu.sc Ya.sc Ieukran.sc Dze.sc Iukran.sc Je.sc Lje.sc Nje.sc Tshe.sc Dzhe.sc Yat.sc Fita.sc Izhitsa.sc Gheup.sc Ghestroke.sc Ghedescender.sc Zhedescender.sc Zedescender.sc Kadescender.sc Kabashkir.sc Kahook.sc Endescender.sc Enhook.sc Esdescender.sc Ustraight.sc Ustraightstroke.sc Hadescender.sc Chedescender.sc Shha.sc Palochka.sc Aie.sc Schwacyr.sc Obarcyr.sc ];
 @LETTERS_SMALLCAP_CYRILLIC_ACCENTED = [ Ishort.sc Iegrave.sc Io.sc Dje.sc Gje.sc Yi.sc Yi.as Kje.sc Igravecyr.sc Ushort.sc Zhebreve.sc Abrevecyr.sc Iebreve.sc Imacroncyr.sc Odieresiscyr.sc Umacroncyr.sc Uacutedblcyr.sc ];
-@LETTERS_SMALLCAP_CYRILLIC_ALTERNATES = [ De.as Zhe.as Ka.as El.as Ef.as Lje.as Kje.as Zhedescender.as Kadescender.as Kabashkir.as Zhebreve.as ];
+@LETTERS_SMALLCAP_CYRILLIC_ALTERNATES = [ De.as Zhe.as Ka.as El.as Ef.as Lje.as Kje.as Zhedescender.as Kadescender.as Kabashkir.as Kahook.as Zhebreve.as ];
 @LETTERS_SMALLCAP_CYRILLIC_ALL = [ @LETTERS_SMALLCAP_CYRILLIC_BASIC @LETTERS_SMALLCAP_CYRILLIC_ACCENTED @LETTERS_SMALLCAP_CYRILLIC_ALTERNATES ];
 
 @LETTERS_SMALLCAP_ALL = [ @LETTERS_SMALLCAP_LATIN_ALL @LETTERS_SMALLCAP_GREEK_ALL @LETTERS_SMALLCAP_CYRILLIC_ALL ];
@@ -51,6 +51,7 @@ feature c2sc { # UC-->SC
 	lookup NUMERALS_SMALLCAP {
 		sub @FIGURES_LINING_TABULAR by @FIGURES_SMALLCAP;
 		sub [ zero.0 zero.0s zero.pnum zero.0p zero.0ps zero.onum zero.cap ] by zero.sc;
+		sub [ commaturnedmod apostrophemod ] by [ commaturnedmod.sc apostrophemod.sc ];
 	} NUMERALS_SMALLCAP;
 
 	lookup SORTS_SMALLCAP { # belongs only in <c2sc> feature, not to be replicated in <smcp>

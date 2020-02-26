@@ -33,14 +33,14 @@
 
 @IOTA_MODIFIERS_GREEK = [ iotasubscriptcmb iotaadscript ];
 
-@LETTERS_MAJUSCULE_CYRILLIC_BASIC = [ Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup Ghestroke Zhedescender Zedescender Kadescender Kabashkir Endescender Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Aie Schwacyr Obarcyr ];
+@LETTERS_MAJUSCULE_CYRILLIC_BASIC = [ Acyr Be Ve Ghe De Ie Zhe Ze Icyr Ka El Em En Ocyr Pe Er Es Te Ucyr Ef Ha Tse Che Sha Shcha Hard Yeru Soft Ecyr Yu Ya Ieukran Dze Iukran Je Lje Nje Tshe Dzhe Yat Fita Izhitsa Gheup Ghestroke Ghedescender Zhedescender Zedescender Kadescender Kabashkir Kahook Endescender Enhook Esdescender Ustraight Ustraightstroke Hadescender Chedescender Shha Palochka Aie Schwacyr Obarcyr ];
 @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED = [ Ishort Iegrave Io Dje Gje Yi Yi.a Kje Igravecyr Ushort Zhebreve Abrevecyr Iebreve Imacroncyr Odieresiscyr Umacroncyr Uacutedblcyr ];
-@LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES = [ De.a Zhe.a Ka.a El.a Ef.a Lje.a Kje.a Zhedescender.a Kadescender.a Kabashkir.a Zhebreve.a ];
+@LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES = [ De.a Zhe.a Ka.a El.a Ef.a Lje.a Kje.a Zhedescender.a Kadescender.a Kabashkir.a Kahook.a Zhebreve.a ];
 @LETTERS_MAJUSCULE_CYRILLIC_ALL = [ @LETTERS_MAJUSCULE_CYRILLIC_BASIC @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED @LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES ];
 
-@LETTERS_MINISCULE_CYRILLIC_BASIC = [ acyr be ve ghe de ie zhe ze icyr ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ieukran dze iukran je lje nje tshe dzhe yat fita izhitsa gheup ghestroke zhedescender zedescender kadescender kabashkir endescender esdescender ustraight ustraightstroke hadescender chedescender shha palochka aie schwacyr obarcyr ];
+@LETTERS_MINISCULE_CYRILLIC_BASIC = [ acyr be ve ghe de ie zhe ze icyr ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ieukran dze iukran je lje nje tshe dzhe yat fita izhitsa gheup ghestroke ghedescender zhedescender zedescender kadescender kabashkir kahook endescender enhook esdescender ustraight ustraightstroke hadescender chedescender shha palochka aie schwacyr obarcyr ];
 @LETTERS_MINISCULE_CYRILLIC_ACCENTED = [ ishort iegrave io dje gje yi kje igravecyr ushort zhebreve abrevecyr iebreve imacroncyr odieresiscyr umacroncyr uacutedblcyr ];
-@LETTERS_MINISCULE_CYRILLIC_ALTERNATES = [ de.a zhe.a ka.a el.a ef.a yi.a lje.a kje.a zhedescender.a kadescender.a kabashkir.a zhebreve.a ];
+@LETTERS_MINISCULE_CYRILLIC_ALTERNATES = [ de.a zhe.a ka.a el.a ef.a yi.a lje.a kje.a zhedescender.a kadescender.a kabashkir.a kahook.a zhebreve.a ];
 @LETTERS_MINISCULE_CYRILLIC_ALL = [ @LETTERS_MINISCULE_CYRILLIC_BASIC @LETTERS_MINISCULE_CYRILLIC_ACCENTED @LETTERS_MINISCULE_CYRILLIC_ALTERNATES ];
 
 @LETTERS_MAJUSCULE_ALL = [ @LETTERS_MAJUSCULE_LATIN_ALL @LETTERS_MAJUSCULE_GREEK_ALL @LETTERS_MAJUSCULE_CYRILLIC_ALL ];
@@ -48,7 +48,8 @@
 
 @MARKS_CMB_ABOVE = [ gravecmb variacmb acutecmb tonoscmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb commaturnedabovecmb aspercmb commaabovecmb leniscmb leftangleabovecmb horncmb cedillacmb ogonekcmb tildeoverlaycmb xabovecmb perispomenicmb koroniscmb dialytikatonoscmb dotaboverightcmb ];
 @MARKS_CMB_BELOW = [ lefttackbelowcmb righttackbelowcmb ringhalfleftbelowcmb uptackbelowcmb downtackbelowcmb plusbelowcmb minusbelowcmb dotbelowcmb dieresisbelowcmb ringbelowcmb commabelowcmb verticallinebelowcmb bridgebelowcmb caronbelowcmb brevebelowcmb breveinvertedbelowcmb tildebelowcmb macronbelowcmb ringhalfrightbelowcmb bridgeinvertedbelowcmb squarebelowcmb seagullbelowcmb iotasubscriptcmb ];
-@MARKS_CMB_ALL = [ @MARKS_CMB_ABOVE @MARKS_CMB_BELOW ];
+@MARKS_LIG_ABOVE = [ circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresistilde dieresismacron dieresiscaron dialytikatonoscmb dialytikagravecmb ringacute carondotaccent aspergravecmb asperacutecmb aspertildecmb lenisgravecmb lenisacutecmb lenistildecmb ];
+@MARKS_CMB_ALL = [ @MARKS_CMB_ABOVE @MARKS_CMB_BELOW @MARKS_LIG_ABOVE ];
 
 @MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb candrabinducmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb dotaboverightcmb circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresismacron dieresiscaron ringacute carondotaccent ];
 @MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap candrabinducmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap verticallineabovecmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap dotaboverightcmb.cap circumflexgrave.cap circumflexacute.cap circumflextilde.cap circumflexmacron.cap circumflexbreve.cap circumflexhoi.cap circumflexcaron.cap macronacute.cap brevegrave.cap breveacute.cap brevetilde.cap brevehoi.cap dieresisgrave.cap dieresisacute.cap dieresismacron.cap dieresiscaron.cap ringacute.cap carondotaccent.cap ];
@@ -550,24 +551,26 @@ feature ccmp { # Glyph Composition  Decomposition
 
 	lookup GLYPH_COMPOSITION_CONTEXTUAL { #substitutes dotless forms when followed by combining diacritics
 		sub i' ogonekcmb' @MARKS_CMB_ABOVE by iogonek.x;
-		sub [ i j iogonek istroke jcrossedtail ]' @MARKS_CMB_BELOW @MARKS_CMB_ABOVE by [ dotlessi dotlessj iogonek.x istroke.x jcrossedtail.x ];
-		sub [ i j iogonek istroke jcrossedtail ]' @MARKS_CMB_ABOVE by [ dotlessi dotlessj iogonek.x istroke.x jcrossedtail.x ];
+		sub [ i j iogonek istroke jcrossedtail ]' @MARKS_CMB_BELOW [ @MARKS_CMB_ABOVE @MARKS_LIG_ABOVE ] by [ dotlessi dotlessj iogonek.x istroke.x jcrossedtail.x ];
+		sub [ i j iogonek istroke jcrossedtail ]' [ @MARKS_CMB_ABOVE @MARKS_LIG_ABOVE ] by [ dotlessi dotlessj iogonek.x istroke.x jcrossedtail.x ];
 	} GLYPH_COMPOSITION_CONTEXTUAL;
 	
 	@VOWELS_DIERESIS = [ Adieresis Edieresis Idieresis Odieresis Udieresis adieresis edieresis idieresis odieresis udieresis ];
 	@VOWELS_MACRON = [ Amacron Emacron Imacron Omacron Umacron amacron emacron imacron omacron umacron ];
-	@VOWELS_PLAIN = [ A E I O U a e i o u ];
+	@VOWELS_UNMARKED = [ A E I O U a e dotlessi o u ];
 	
 	lookup MARKS_SWAP_1 {
 		sub @VOWELS_DIERESIS acutecmb' by dieresisacute;
 		sub @VOWELS_DIERESIS gravecmb' by dieresisgrave;
+		sub @VOWELS_DIERESIS caroncmb' by dieresiscaron;
 		sub @VOWELS_MACRON acutecmb' by macronacute;
 	} MARKS_SWAP_1;
 
 	lookup MARKS_SWAP_2 {
-		sub @VOWELS_DIERESIS' dieresisacute by @VOWELS_PLAIN;
-		sub @VOWELS_DIERESIS' dieresisgrave by @VOWELS_PLAIN;
-		sub @VOWELS_MACRON' macronacute by @VOWELS_PLAIN;
+		sub @VOWELS_DIERESIS' dieresisacute by @VOWELS_UNMARKED;
+		sub @VOWELS_DIERESIS' dieresisgrave by @VOWELS_UNMARKED;
+		sub @VOWELS_DIERESIS' dieresiscaron by @VOWELS_UNMARKED;
+		sub @VOWELS_MACRON' macronacute by @VOWELS_UNMARKED;
 	} MARKS_SWAP_2;
 
 	lookup MARKS_COMPOSITION {

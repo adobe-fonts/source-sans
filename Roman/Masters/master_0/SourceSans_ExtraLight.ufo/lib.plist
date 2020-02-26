@@ -1071,11 +1071,14 @@
 					<string>Izhitsa</string>
 					<string>Gheup</string>
 					<string>Ghestroke</string>
+					<string>Ghedescender</string>
 					<string>Zhedescender</string>
 					<string>Zedescender</string>
 					<string>Kadescender</string>
 					<string>Kabashkir</string>
+					<string>Kahook</string>
 					<string>Endescender</string>
+					<string>Enhook</string>
 					<string>Esdescender</string>
 					<string>Ustraight</string>
 					<string>Ustraightstroke</string>
@@ -1146,11 +1149,14 @@
 					<string>izhitsa</string>
 					<string>gheup</string>
 					<string>ghestroke</string>
+					<string>ghedescender</string>
 					<string>zhedescender</string>
 					<string>zedescender</string>
 					<string>kadescender</string>
 					<string>kabashkir</string>
+					<string>kahook</string>
 					<string>endescender</string>
+					<string>enhook</string>
 					<string>esdescender</string>
 					<string>ustraight</string>
 					<string>ustraightstroke</string>
@@ -1179,6 +1185,7 @@
 					<string>Zhedescender.a</string>
 					<string>Kadescender.a</string>
 					<string>Kabashkir.a</string>
+					<string>Kahook.a</string>
 					<string>Zhebreve.a</string>
 					<string>acyr.a</string>
 					<string>abrevecyr.a</string>
@@ -1195,6 +1202,7 @@
 					<string>zhedescender.a</string>
 					<string>kadescender.a</string>
 					<string>kabashkir.a</string>
+					<string>kahook.a</string>
 					<string>zhebreve.a</string>
 					<string>be.c</string>
 					<string>ve.c</string>
@@ -1703,11 +1711,14 @@
 					<string>Izhitsa.sc</string>
 					<string>Gheup.sc</string>
 					<string>Ghestroke.sc</string>
+					<string>Ghedescender.sc</string>
 					<string>Zhedescender.sc</string>
 					<string>Zedescender.sc</string>
 					<string>Kadescender.sc</string>
 					<string>Kabashkir.sc</string>
+					<string>Kahook.sc</string>
 					<string>Endescender.sc</string>
+					<string>Enhook.sc</string>
 					<string>Esdescender.sc</string>
 					<string>Ustraight.sc</string>
 					<string>Ustraightstroke.sc</string>
@@ -1735,9 +1746,12 @@
 					<string>Kje.as</string>
 					<string>Zhedescender.as</string>
 					<string>Kadescender.as</string>
+					<string>Kahook.as</string>
 					<string>Kabashkir.as</string>
 					<string>Zhebreve.as</string>
 					<string>ampersand.sc</string>
+					<string>commaturnedmod.sc</string>
+					<string>apostrophemod.sc</string>
 					<string>zero.sc</string>
 					<string>one.sc</string>
 					<string>two.sc</string>
@@ -2042,23 +2056,10 @@
 					<string>sun</string>
 					<string>lozenge</string>
 					<string>house</string>
-					<string>primemod</string>
-					<string>ringhalfrightmod</string>
-					<string>ringhalfleftmod</string>
-					<string>glottalstopmod</string>
-					<string>glottalstopreversedmod</string>
-					<string>colontriangularmod</string>
-					<string>colontriangularhalfmod</string>
-					<string>hookrhoticmod</string>
 					<string>grave</string>
 					<string>acute</string>
 					<string>circumflex</string>
 					<string>caron</string>
-					<string>verticallinemod</string>
-					<string>macronmod</string>
-					<string>acutemod</string>
-					<string>gravemod</string>
-					<string>verticallinelowmod</string>
 					<string>tilde</string>
 					<string>dieresis</string>
 					<string>macron</string>
@@ -2068,6 +2069,22 @@
 					<string>dotaccent</string>
 					<string>cedilla</string>
 					<string>ogonek</string>
+					<string>primemod</string>
+					<string>commaturnedmod</string>
+					<string>apostrophemod</string>
+					<string>ringhalfrightmod</string>
+					<string>ringhalfleftmod</string>
+					<string>glottalstopmod</string>
+					<string>glottalstopreversedmod</string>
+					<string>colontriangularmod</string>
+					<string>colontriangularhalfmod</string>
+					<string>hookrhoticmod</string>
+					<string>verticallinemod</string>
+					<string>macronmod</string>
+					<string>acutemod</string>
+					<string>gravemod</string>
+					<string>verticallinelowmod</string>
+					<string>arrowdownmod</string>
 					<string>circledotted</string>
 					<string>gravecmb</string>
 					<string>gravecmb.cap</string>
@@ -2158,7 +2175,6 @@
 					<string>macrondoublecmb.a</string>
 					<string>breveinverteddoublecmb.a</string>
 					<string>circumflexdoublecmb.a</string>
-					<string>arrowdownmod</string>
 					<string>circumflexgrave</string>
 					<string>circumflexgrave.cap</string>
 					<string>circumflexacute</string>
@@ -4471,11 +4487,39 @@
 				<integer>0</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern1.LAT_ZCURL_LC_LEFT</key>
+			<array>
+				<integer>0</integer>
+				<real>0.5</real>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.PCT_EMDASH_SC_LEFT</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.PCT_QUOTEBASEHEAVY_LEFT</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.PCT_QUOTELEFTHEAVY_LEFT</key>
 			<array>
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.PCT_QUOTELEFT_SC_LEFT</key>
+			<array>
+				<real>0.5</real>
+				<integer>0</integer>
+				<integer>1</integer>
 				<real>0.25</real>
 			</array>
 			<key>public.kern1.PCT_QUOTERIGHTHEAVY_LEFT</key>
@@ -4485,6 +4529,34 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern1.PCT_QUOTERIGHT_SC_LEFT</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.PCT_QUOTE_SC_LEFT</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.5</real>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.PCT_EMDASH_SC_RIGHT</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.PCT_QUOTEBASEHEAVY_RIGHT</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.PCT_QUOTELEFTHEAVY_RIGHT</key>
 			<array>
 				<integer>1</integer>
@@ -4492,11 +4564,32 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern2.PCT_QUOTELEFT_SC_RIGHT</key>
+			<array>
+				<integer>1</integer>
+				<real>0.5</real>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.PCT_QUOTERIGHTHEAVY_RIGHT</key>
 			<array>
 				<integer>1</integer>
 				<integer>0</integer>
 				<real>0.5</real>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.PCT_QUOTERIGHT_SC_RIGHT</key>
+			<array>
+				<integer>1</integer>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.PCT_QUOTE_SC_RIGHT</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>0</integer>
 				<real>0.25</real>
 			</array>
 		</dict>
@@ -5566,11 +5659,14 @@
 			<string>Izhitsa</string>
 			<string>Gheup</string>
 			<string>Ghestroke</string>
+			<string>Ghedescender</string>
 			<string>Zhedescender</string>
 			<string>Zedescender</string>
 			<string>Kadescender</string>
 			<string>Kabashkir</string>
+			<string>Kahook</string>
 			<string>Endescender</string>
+			<string>Enhook</string>
 			<string>Esdescender</string>
 			<string>Ustraight</string>
 			<string>Ustraightstroke</string>
@@ -5641,11 +5737,14 @@
 			<string>izhitsa</string>
 			<string>gheup</string>
 			<string>ghestroke</string>
+			<string>ghedescender</string>
 			<string>zhedescender</string>
 			<string>zedescender</string>
 			<string>kadescender</string>
 			<string>kabashkir</string>
+			<string>kahook</string>
 			<string>endescender</string>
+			<string>enhook</string>
 			<string>esdescender</string>
 			<string>ustraight</string>
 			<string>ustraightstroke</string>
@@ -5674,6 +5773,7 @@
 			<string>Zhedescender.a</string>
 			<string>Kadescender.a</string>
 			<string>Kabashkir.a</string>
+			<string>Kahook.a</string>
 			<string>Zhebreve.a</string>
 			<string>acyr.a</string>
 			<string>abrevecyr.a</string>
@@ -5690,6 +5790,7 @@
 			<string>zhedescender.a</string>
 			<string>kadescender.a</string>
 			<string>kabashkir.a</string>
+			<string>kahook.a</string>
 			<string>zhebreve.a</string>
 			<string>be.c</string>
 			<string>ve.c</string>
@@ -6198,11 +6299,14 @@
 			<string>Izhitsa.sc</string>
 			<string>Gheup.sc</string>
 			<string>Ghestroke.sc</string>
+			<string>Ghedescender.sc</string>
 			<string>Zhedescender.sc</string>
 			<string>Zedescender.sc</string>
 			<string>Kadescender.sc</string>
 			<string>Kabashkir.sc</string>
+			<string>Kahook.sc</string>
 			<string>Endescender.sc</string>
+			<string>Enhook.sc</string>
 			<string>Esdescender.sc</string>
 			<string>Ustraight.sc</string>
 			<string>Ustraightstroke.sc</string>
@@ -6230,9 +6334,12 @@
 			<string>Kje.as</string>
 			<string>Zhedescender.as</string>
 			<string>Kadescender.as</string>
+			<string>Kahook.as</string>
 			<string>Kabashkir.as</string>
 			<string>Zhebreve.as</string>
 			<string>ampersand.sc</string>
+			<string>commaturnedmod.sc</string>
+			<string>apostrophemod.sc</string>
 			<string>zero.sc</string>
 			<string>one.sc</string>
 			<string>two.sc</string>
@@ -6537,23 +6644,10 @@
 			<string>sun</string>
 			<string>lozenge</string>
 			<string>house</string>
-			<string>primemod</string>
-			<string>ringhalfrightmod</string>
-			<string>ringhalfleftmod</string>
-			<string>glottalstopmod</string>
-			<string>glottalstopreversedmod</string>
-			<string>colontriangularmod</string>
-			<string>colontriangularhalfmod</string>
-			<string>hookrhoticmod</string>
 			<string>grave</string>
 			<string>acute</string>
 			<string>circumflex</string>
 			<string>caron</string>
-			<string>verticallinemod</string>
-			<string>macronmod</string>
-			<string>acutemod</string>
-			<string>gravemod</string>
-			<string>verticallinelowmod</string>
 			<string>tilde</string>
 			<string>dieresis</string>
 			<string>macron</string>
@@ -6563,6 +6657,22 @@
 			<string>dotaccent</string>
 			<string>cedilla</string>
 			<string>ogonek</string>
+			<string>primemod</string>
+			<string>commaturnedmod</string>
+			<string>apostrophemod</string>
+			<string>ringhalfrightmod</string>
+			<string>ringhalfleftmod</string>
+			<string>glottalstopmod</string>
+			<string>glottalstopreversedmod</string>
+			<string>colontriangularmod</string>
+			<string>colontriangularhalfmod</string>
+			<string>hookrhoticmod</string>
+			<string>verticallinemod</string>
+			<string>macronmod</string>
+			<string>acutemod</string>
+			<string>gravemod</string>
+			<string>verticallinelowmod</string>
+			<string>arrowdownmod</string>
 			<string>circledotted</string>
 			<string>gravecmb</string>
 			<string>gravecmb.cap</string>
@@ -6653,7 +6763,6 @@
 			<string>macrondoublecmb.a</string>
 			<string>breveinverteddoublecmb.a</string>
 			<string>circumflexdoublecmb.a</string>
-			<string>arrowdownmod</string>
 			<string>circumflexgrave</string>
 			<string>circumflexgrave.cap</string>
 			<string>circumflexacute</string>
