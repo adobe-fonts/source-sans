@@ -5,7 +5,7 @@
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="323" y="392" type="line"/>
-			<point x="364" y="469"/>
+			<point name="hintSet0001" x="364" y="469"/>
 			<point x="402" y="538"/>
 			<point x="441" y="619" type="curve"/>
 			<point x="445" y="619" type="line"/>
@@ -43,7 +43,7 @@
 		</contour>
 		<contour>
 			<point x="200" y="479" type="line"/>
-			<point x="280" y="662" type="line"/>
+			<point name="hintSet0022" x="280" y="662" type="line"/>
 			<point x="241" y="669" type="line"/>
 			<point x="174" y="486" type="line"/>
 		</contour>
@@ -82,7 +82,19 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
-							<string>hstem -12 34</string>
+							<string>hstem 21 -21</string>
+							<string>hstem 231 33</string>
+							<string>hstem 641 30</string>
+							<string>vstem 44 37</string>
+							<string>vstem 649 39</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 21 -21</string>
 							<string>hstem 231 33</string>
 							<string>hstem 619 40</string>
 							<string>vstem 44 37</string>
@@ -94,7 +106,7 @@
 						<string>hintSet0016</string>
 						<key>stems</key>
 						<array>
-							<string>hstem -12 34</string>
+							<string>hstem 21 -21</string>
 							<string>hstem 231 33</string>
 							<string>hstem 641 30</string>
 							<string>vstem 44 37</string>
@@ -106,9 +118,21 @@
 						<string>hintSet0020</string>
 						<key>stems</key>
 						<array>
-							<string>hstem -12 34</string>
+							<string>hstem 21 -21</string>
 							<string>hstem 231 33</string>
 							<string>hstem 619 40</string>
+							<string>vstem 44 37</string>
+							<string>vstem 649 39</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0022</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -12 34</string>
+							<string>hstem 231 33</string>
+							<string>hstem 662 7</string>
 							<string>vstem 44 37</string>
 							<string>vstem 649 39</string>
 						</array>

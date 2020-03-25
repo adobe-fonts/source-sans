@@ -24,16 +24,16 @@
 			<point x="31" y="27"/>
 			<point x="20" y="29"/>
 			<point x="8" y="33" type="curve"/>
-			<point x="-4" y="-2" type="line"/>
-			<point x="12" y="-10"/>
+			<point name="hintSet0010" x="-4" y="-2" type="line"/>
+			<point name="hintSet0011" x="12" y="-10"/>
 			<point x="26" y="-12"/>
 			<point x="44" y="-12" type="curve"/>
-			<point name="hintSet0012" x="101" y="-12"/>
+			<point x="101" y="-12"/>
 			<point x="148" y="31"/>
 			<point x="180" y="90" type="curve"/>
 			<point x="182" y="90" type="line"/>
 			<point x="182" y="-100" type="line"/>
-			<point x="182" y="-191"/>
+			<point name="hintSet0015" x="182" y="-191"/>
 			<point x="211" y="-230"/>
 		</contour>
 	</outline>
@@ -52,6 +52,7 @@
 						<array>
 							<string>hstem -230 36</string>
 							<string>hstem -12 39</string>
+							<string>hstem 480 -20</string>
 							<string>vstem 182 40</string>
 						</array>
 					</dict>
@@ -62,16 +63,40 @@
 						<array>
 							<string>hstem -230 36</string>
 							<string>hstem -12 39</string>
+							<string>hstem 480 -20</string>
 							<string>vstem 181 41</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0012</string>
+						<string>hintSet0010</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -197 -21</string>
+							<string>hstem 19 -21</string>
+							<string>hstem 480 -20</string>
+							<string>vstem 181 41</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0011</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -197 -21</string>
+							<string>hstem -12 39</string>
+							<string>hstem 480 -20</string>
+							<string>vstem 182 40</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0015</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -230 36</string>
 							<string>hstem -12 39</string>
+							<string>hstem 480 -20</string>
 							<string>vstem 182 40</string>
 						</array>
 					</dict>
