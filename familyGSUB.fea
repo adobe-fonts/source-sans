@@ -99,7 +99,7 @@ languagesystem cyrl dflt; # Cyrillic default
 
 lookup SUPERIOR_LETTERS_MINISCULE {
 	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_MINISCULE_LATIN_SUPERIOR;
-	sub [ egrave eacute eogonek schwa ] by [ egrave.sups eacute.sups eogonek.sups schwa.sups ];
+	sub [ egrave eacute eogonek schwa eogonek.d ] by [ egrave.sups eacute.sups eogonek.sups schwa.sups eogonek.supd ];
 } SUPERIOR_LETTERS_MINISCULE;
 
 lookup SUPERIOR_LETTERS_MAJUSCULE {
@@ -224,6 +224,7 @@ lookup DECOMPOSITION {
 	sub Ibreve by I brevecmb.cap;
 	sub Icaron by I caroncmb.cap;
 	sub Ihoi by I hoicmb.cap;
+	sub Idotaccent by I dotaccentcmb.cap;
 	sub Idotbelow by I dotbelowcmb;
 	sub Iogonekacute by Iogonek acutecmb.cap;
 	sub Jcircumflex by J circumflexcmb.cap;
@@ -1162,8 +1163,8 @@ feature cv07 { # Character Variant 7 — Latin N-shaped Eng, Sami preference
 #--------------------------------------
 feature cv08 { # Character Variant 8 — Greek alternates for phonetics
 
-@IPA_LC_GREEK = [ alpha beta gamma iota upsilon phi chi ]; # Minion 3 includes theta
-@IPA_LC_LATIN = [ alphalatin betalatin gammalatin iotalatin upsilonlatin philatin chilatin ];
+@IPA_LC_GREEK = [ alpha beta gamma iota lambda upsilon phi chi ]; # Minion 3 includes theta
+@IPA_LC_LATIN = [ alphalatin betalatin gammalatin iotalatin lambda.latin upsilonlatin philatin chilatin ];
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1665,7 +1666,7 @@ feature ss06 { # Stylistic Set 6 — serifed a, second alternate
 		name 3 1 0x0409 "Serifed a"; # English US: "Serifed a"
 		name 3 1 0x0809 "Serifed a"; # English GB
 		name 1 0 0 "Serifed a"; # Mac English
-			name 3 1 0x0408 "\039B\03B1\03C4\03B9\03BD\03B9\03BA\03CC a \03BC\03B5 \03C0\03B1\03C4\03BF\03CD\03C1\03B1"; # Greek: "Λατινικό a με πατούρα"
+		name 3 1 0x0408 "\039B\03B1\03C4\03B9\03BD\03B9\03BA\03CC a \03BC\03B5 \03C0\03B1\03C4\03BF\03CD\03C1\03B1"; # Greek: "Λατινικό a με πατούρα"
 		name 3 1 0x0419 "\0430 \0441 \0437\0430\0441\0435\0447\043A\0430\043C"; # Russian: "а с засечкам"
 		};
 
