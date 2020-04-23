@@ -2,7 +2,7 @@
 
 set -e
 
-family=SourceSansPro
+family=SourceSans3
 roman_weights=(Black Bold ExtraLight Light Regular Semibold)
 italic_weights=(BlackIt BoldIt ExtraLightIt LightIt It SemiboldIt)
 

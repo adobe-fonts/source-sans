@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set FAMILY=SourceSansPro
+set FAMILY=SourceSans3
 set ROMAN_WEIGHTS=Black Bold ExtraLight Light Regular Semibold
 set ITALIC_WEIGHTS=BlackIt BoldIt ExtraLightIt LightIt It SemiboldIt
 

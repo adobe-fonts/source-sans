@@ -22,7 +22,6 @@ begin FDDict LOWERCASE
 	FlexOK false
 end FDDict LOWERCASE
 
-
 begin FDDict UPPERCASE
 	BaselineYCoord 0
 	BaselineOvershoot -12
@@ -33,17 +32,15 @@ begin FDDict UPPERCASE
 	FlexOK false
 end FDDict UPPERCASE
 
-
 begin FDDict SMALLCAPS
 	BaselineYCoord 0
 	BaselineOvershoot -12
-	CapHeight 523
+	CapHeight 524
 	CapOvershoot 12
 	DominantV [116]
 	DominantH [94]
 	FlexOK false
 end FDDict SMALLCAPS
-
 
 begin FDDict FIGURES
 	BaselineYCoord 0
@@ -90,7 +87,6 @@ begin GlyphSet UPPERCASE
 		^(universal|existential)$
 end GlyphSet UPPERCASE
 
-
 begin GlyphSet LOWERCASE
 	#Latin
 		^(dotless|long)?[a-z](macron|breve|circumflex|dieresis|ring|caron|hoi|horn|dotbelow|ogonek|slash|middle|crossed|open|retroflex|fish|small|longleg|stroke)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|hoi|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|tail|ng|script|greenlandic|apostrophe|curl|belt|cat)?(turned|reversed|inverted)?(above|below|dotaccent|rhotic|closed|left)?((\.)[a-z])?$
@@ -116,11 +112,9 @@ begin GlyphSet LOWERCASE
 		^(dagger|daggerdbl)$
 end GlyphSet LOWERCASE
 
-
 begin GlyphSet SMALLCAPS
 		^.+\.(sc|as|ds)$
 end GlyphSet SMALLCAPS
-
 
 begin GlyphSet FIGURES
 		^(zero|one|two|three|four|five|six|seven|eight|nine)(\.)?(slash|0)?(pnum|p|ps|s)?$
