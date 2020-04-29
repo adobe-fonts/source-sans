@@ -19,7 +19,6 @@ lookup MARK_BASE_above {
 	@bGC_h_above = [ h hhook henghook ];
 	@bGC_l_above = [ l l.a ];
 	@bGC_m_above = [ m mhook ];
-	@bGC_n_above = [ n eng nhookleft nretroflex ];
 	@bGC_o_above = [ o oslash obar omicron ocyr obarcyr ];
 	@bGC_p_above = [ p alphalatinturned rho ];
 	@bGC_s_above = [ s shook ezh ];
@@ -30,6 +29,7 @@ lookup MARK_BASE_above {
 	@bGC_Schwa_above = [ Schwa Eng ];
 	@bGC_eturned_above = [ eturned schwa ];
 	@bGC_dotlessi_above = [ dotlessi dotlessj iotalatin lsmall iota ];
+	@bGC_eng_above = [ eng nhookleft nretroflex ];
 	@bGC_glottalstoplatin_above = [ glottalstoplatin eopenreversed ghe ];
 	@bGC_alphalatin_above = [ alphalatin hsmall a.b aogonek.b acyr.b ];
 	@bGC_dzed_above = [ dzed dezh dzcurl dzretroflex ];
@@ -69,7 +69,6 @@ lookup MARK_BASE_above {
 	pos base @bGC_h_above <anchor 381 726> mark @MC_above;
 	pos base @bGC_l_above <anchor 214 726> mark @MC_above;
 	pos base @bGC_m_above <anchor 471 509> mark @MC_above;
-	pos base @bGC_n_above <anchor 335 509> mark @MC_above;
 	pos base @bGC_o_above <anchor 320 509> mark @MC_above;
 	pos base @bGC_p_above <anchor 334 509> mark @MC_above;
 	pos base @bGC_s_above <anchor 257 509> mark @MC_above;
@@ -80,6 +79,7 @@ lookup MARK_BASE_above {
 	pos base @bGC_Schwa_above <anchor 419 678> mark @MC_above;
 	pos base @bGC_eturned_above <anchor 287 509> mark @MC_above;
 	pos base @bGC_dotlessi_above <anchor 171 509> mark @MC_above;
+	pos base @bGC_eng_above <anchor 335 509> mark @MC_above;
 	pos base @bGC_glottalstoplatin_above <anchor 264 509> mark @MC_above;
 	pos base @bGC_alphalatin_above <anchor 317 509> mark @MC_above;
 	pos base @bGC_dzed_above <anchor 490 726> mark @MC_above;
@@ -113,6 +113,7 @@ lookup MARK_BASE_above {
 	pos base i <anchor 211 694> mark @MC_above;
 	pos base j <anchor 210 694> mark @MC_above;
 	pos base k <anchor 361 726> mark @MC_above;
+	pos base n <anchor 327 509> mark @MC_above;
 	pos base q <anchor 322 509> mark @MC_above;
 	pos base r <anchor 256 509> mark @MC_above;
 	pos base w <anchor 396 509> mark @MC_above;
@@ -209,7 +210,7 @@ lookup MARK_BASE_above {
 lookup MARK_BASE_aboveright {
 	pos base O <anchor 594 678> mark @MC_aboveright;
 	pos base o <anchor 534 509> mark @MC_aboveright;
-	pos base circledotted <anchor 414 509> mark @MC_aboveright;
+	pos base circledotted <anchor 514 509> mark @MC_aboveright;
 } MARK_BASE_aboveright;
 
 
@@ -404,7 +405,7 @@ lookup MARK_BASE_horn {
 	pos base U <anchor 589 666> mark @MC_horn;
 	pos base o <anchor 401 486> mark @MC_horn;
 	pos base u <anchor 459 496> mark @MC_horn;
-	pos base circledotted <anchor 329 187> mark @MC_horn;
+	pos base circledotted <anchor 454 486> mark @MC_horn;
 } MARK_BASE_horn;
 
 
