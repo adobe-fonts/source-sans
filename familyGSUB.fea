@@ -39,8 +39,8 @@
 @LETTERS_MAJUSCULE_CYRILLIC_ALL = [ @LETTERS_MAJUSCULE_CYRILLIC_BASIC @LETTERS_MAJUSCULE_CYRILLIC_ACCENTED @LETTERS_MAJUSCULE_CYRILLIC_ALTERNATES ];
 
 @LETTERS_MINISCULE_CYRILLIC_BASIC = [ acyr be ve ghe de ie zhe ze icyr ka el em en ocyr pe er es te ucyr ef ha tse che sha shcha hard yeru soft ecyr yu ya ieukran dze iukran je lje nje tshe dzhe yat fita izhitsa gheup ghestroke ghedescender zhedescender zedescender kadescender kabashkir kahook endescender enhook esdescender ustraight ustraightstroke hadescender chedescender shha palochka aie schwacyr obarcyr ];
-@LETTERS_MINISCULE_CYRILLIC_ACCENTED = [ ishort iegrave io dje gje yi kje igravecyr ushort zhebreve abrevecyr iebreve imacroncyr odieresiscyr umacroncyr uacutedblcyr ];
-@LETTERS_MINISCULE_CYRILLIC_ALTERNATES = [ de.a zhe.a ka.a el.a ef.a yi.a lje.a kje.a zhedescender.a kadescender.a kabashkir.a kahook.a zhebreve.a ];
+@LETTERS_MINISCULE_CYRILLIC_ACCENTED = [ ishort iegrave io dje gje yi yi.a kje igravecyr ushort zhebreve abrevecyr iebreve imacroncyr odieresiscyr umacroncyr uacutedblcyr ];
+@LETTERS_MINISCULE_CYRILLIC_ALTERNATES = [ de.a zhe.a ka.a el.a ef.a lje.a kje.a zhedescender.a kadescender.a kabashkir.a kahook.a zhebreve.a ];
 @LETTERS_MINISCULE_CYRILLIC_ALL = [ @LETTERS_MINISCULE_CYRILLIC_BASIC @LETTERS_MINISCULE_CYRILLIC_ACCENTED @LETTERS_MINISCULE_CYRILLIC_ALTERNATES ];
 
 @LETTERS_MAJUSCULE_ALL = [ @LETTERS_MAJUSCULE_LATIN_ALL @LETTERS_MAJUSCULE_GREEK_ALL @LETTERS_MAJUSCULE_CYRILLIC_ALL ];
@@ -99,7 +99,7 @@ languagesystem cyrl dflt; # Cyrillic default
 
 lookup SUPERIOR_LETTERS_MINISCULE {
 	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_MINISCULE_LATIN_SUPERIOR;
-	sub [ egrave eacute eogonek schwa eogonek.d ] by [ egrave.sups eacute.sups eogonek.sups schwa.sups eogonek.supd ];
+	sub [ egrave eacute eogonek eogonek.d schwa ] by [ egrave.sups eacute.sups eogonek.sups eogonek.supd schwa.sups ];
 } SUPERIOR_LETTERS_MINISCULE;
 
 lookup SUPERIOR_LETTERS_MAJUSCULE {
