@@ -602,7 +602,6 @@ feature ccmp { # Glyph Composition  Decomposition
 		sub [ leniscmb commaabovecmb ] [ gravecmb variacmb ] by lenisgravecmb;
 		sub [ leniscmb commaabovecmb ] [ acutecmb tonoscmb ] by lenisacutecmb;
 		sub [ leniscmb commaabovecmb ] [ tildecmb perispomenicmb ] by lenistildecmb;
-		
 	} MARKS_COMPOSITION;
 
 	lookup GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL {
@@ -1496,22 +1495,22 @@ feature sups { # Superscript
 
 #--------------------------------------
 feature subs { # Subscript
-	lookup INFERIOR ;
+	lookup INFERIOR;
 } subs;
 
 #--------------------------------------
 feature sinf { # Scientific Inferiors
-	lookup INFERIOR ;
+	lookup INFERIOR;
 } sinf;
 
 #--------------------------------------
 feature onum { # Oldstyle (Text) Figures
-	lookup OLDSTYLE ;
+	lookup OLDSTYLE;
 } onum;
 
 #--------------------------------------
 feature pnum { # Proportional Figures
-	lookup PROPORTIONAL ;
+	lookup PROPORTIONAL;
 } pnum;
 
 #--------------------------------------
