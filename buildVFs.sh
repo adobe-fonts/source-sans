@@ -35,8 +35,8 @@ function build_var_font {
 	fontmake -m $1/$2.designspace -o variable --production-names --output-path $1/$2.ttf
 
 	# use DSIG, name, OS/2, hhea, post, and STAT tables from OTFs
-	sfntedit -x DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT $1/$2.otf
-	sfntedit -a DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT $1/$2.ttf
+	sfntedit -x DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT,fvar=$1/.tb_fvar $1/$2.otf
+	sfntedit -a DSIG=$1/.tb_DSIG,name=$1/.tb_name,OS/2=$1/.tb_os2,hhea=$1/.tb_hhea,post=$1/.tb_post,STAT=$1/.tb_STAT,fvar=$1/.tb_fvar $1/$2.ttf
 
 	# use cmap, GDEF, GPOS, and GSUB tables from TTFs
 	sfntedit -x cmap=$1/.tb_cmap,GDEF=$1/.tb_GDEF,GPOS=$1/.tb_GPOS,GSUB=$1/.tb_GSUB $1/$2.ttf
