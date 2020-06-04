@@ -1,0 +1,38 @@
+table STAT {
+
+   ElidedFallbackName { name "Italic"; };
+
+   DesignAxis wght 0 { name "Weight"; };
+
+   AxisValue {
+      location wght 200 200 - 250;
+      name "ExtraLight Italic";
+   };
+
+   AxisValue {
+      location wght 300 250 - 350;
+      name "Light Italic";
+   };
+
+   AxisValue {
+      location wght 400 350 - 450;
+      name "Italic";
+      flag ElidableAxisValueName;
+   };
+
+   AxisValue {
+      location wght 600 550 - 650;
+      name "Semibold Italic";
+   };
+
+   AxisValue {
+      location wght 700 650 - 750;
+      name "Bold Italic";
+   };
+
+   AxisValue {
+      location wght 900 800 - 900;
+      name "Black Italic";
+   };
+
+} STAT;
