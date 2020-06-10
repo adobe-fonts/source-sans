@@ -101,7 +101,7 @@ languagesystem cyrl dflt; # Cyrillic default
 
 lookup SUPERIOR_LETTERS_MINISCULE {
 	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_MINISCULE_LATIN_SUPERIOR;
-	sub [ egrave eacute eogonek eogonek.d schwa ] by [ egrave.sups eacute.sups eogonek.sups eogonek.supd schwa.sups ];
+	sub [ egrave eacute eogonek schwa ] by [ egrave.sups eacute.sups eogonek.sups schwa.sups ];
 } SUPERIOR_LETTERS_MINISCULE;
 
 lookup SUPERIOR_LETTERS_MAJUSCULE {
@@ -955,12 +955,15 @@ feature ccmp { # Glyph Composition  Decomposition
 		sub omegaiotasub perispomenicmb by omegaiotasubtilde;
 	} GLYPH_COMPOSITION_GREEK_POLYTONIC;
 
-	lookup YI_UKRAINIAN { # substitutes alternate yi in context
-		sub yi' yi by yi.a;
+	lookup YI_UKRAINIAN_1 { # substitutes first alternate yi in context
+		sub yi' [ iukran yi ] by yi.a;
 		sub Yi' Yi by Yi.a;
+	} YI_UKRAINIAN_1;
+
+	lookup YI_UKRAINIAN_2 { # substitutes second alternate yi in context
 		sub [ iukran yi.a ] yi' by yi.a;
 		sub Yi.a Yi' by Yi.a;
-	} YI_UKRAINIAN;
+	} YI_UKRAINIAN_2;
 
 	lookup MAJUCSULE_ACCENTS_CMB_CONTEXT { # substitutes combining marks for miniscules with forms for majuscules
 		sub [ @LETTERS_MAJUSCULE_ALL @LETTERS_MINISCULE_LATIN_ASCENDERS ] @MARKS_CMB_LC' lookup MARKS_CMB_CASE;
@@ -1140,6 +1143,7 @@ feature cv06 { # Character Variant 6 — Latin Centered ogoneks, Na-Dene prefere
 	
 	lookup OGONEK_ALTERNATES { # centered ogoneks
 		sub @OGONEK_DEFAULTS by @OGONEK_ALTERNATES;
+		sub eogonek.sups by eogonek.supd;
 	} OGONEK_ALTERNATES;
 
 } cv06;

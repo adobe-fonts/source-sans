@@ -50,10 +50,18 @@ feature c2sc { # UC-->SC
 
 	sub @LETTERS_MAJUSCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
 
+	lookup YI_SC_UKRAINIAN_1 { # substitutes first alternate yi in context
+		sub Yi.sc' Yi.sc by Yi.as;
+	} YI_SC_UKRAINIAN_1;
+
+	lookup YI_SC_UKRAINIAN_2 { # substitutes second alternate yi in context
+		sub Yi.as Yi.sc' by Yi.as;
+	} YI_SC_UKRAINIAN_2;
+
 	lookup NUMERALS_SMALLCAP {
 		sub @FIGURES_LINING_TABULAR by @FIGURES_SMALLCAP;
 		sub [ zero.0 zero.0s zero.pnum zero.0p zero.0ps zero.onum zero.cap ] by zero.sc;
-		sub [ commaturnedmod apostrophemod ] by [ commaturnedmod.sc apostrophemod.sc ];
+		sub [ commaturnedmod apostrophemod commareversedmod ] by [ commaturnedmod.sc apostrophemod.sc commareversedmod.sc ];
 	} NUMERALS_SMALLCAP;
 
 	lookup SORTS_SMALLCAP { # belongs only in <c2sc> feature, not to be replicated in <smcp>
@@ -118,6 +126,9 @@ feature smcp { # LC-->SC
 				sub [ be.c ve.c ghe.c de.c ze.c icyr.c ishort.c pe.c te.c tse.c sha.c shcha.c igravecyr.c ] by [ Be.sc Ve.sc Ghe.sc De.sc Ze.sc Icyr.sc Ishort.sc Pe.sc Te.sc Tse.sc Sha.sc Shcha.sc Igravecyr.sc ];
 				sub [ zhe.b ka.b yu.b zhe.d ka.d  ] by [ Zhe.sc Ka.sc Yu.sc Zhe.as Ka.as ];
 			} CYRILLIC_SMALLCAPS;
+
+			lookup YI_SC_UKRAINIAN_1;
+			lookup YI_SC_UKRAINIAN_2;
 
 		lookup NUMERALS_SMALLCAP;
 
