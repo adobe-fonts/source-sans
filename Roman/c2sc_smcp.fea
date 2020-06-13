@@ -50,13 +50,10 @@ feature c2sc { # UC-->SC
 
 	sub @LETTERS_MAJUSCULE_CYRILLIC_ALL by @LETTERS_SMALLCAP_CYRILLIC_ALL;
 
-	lookup YI_SC_UKRAINIAN_1 { # substitutes first alternate yi in context
+	lookup YI_SC_UKRAINIAN { # substitutes first alternate yi in context
 		sub Yi.sc' Yi.sc by Yi.as;
-	} YI_SC_UKRAINIAN_1;
-
-	lookup YI_SC_UKRAINIAN_2 { # substitutes second alternate yi in context
-		sub Yi.as Yi.sc' by Yi.as;
-	} YI_SC_UKRAINIAN_2;
+		sub [ Iukran.sc Yi.as ] Yi.sc' by Yi.as;
+	} YI_SC_UKRAINIAN;
 
 	lookup NUMERALS_SMALLCAP {
 		sub @FIGURES_LINING_TABULAR by @FIGURES_SMALLCAP;
@@ -127,8 +124,7 @@ feature smcp { # LC-->SC
 				sub [ zhe.b ka.b yu.b zhe.d ka.d  ] by [ Zhe.sc Ka.sc Yu.sc Zhe.as Ka.as ];
 			} CYRILLIC_SMALLCAPS;
 
-			lookup YI_SC_UKRAINIAN_1;
-			lookup YI_SC_UKRAINIAN_2;
+			lookup YI_SC_UKRAINIAN;
 
 		lookup NUMERALS_SMALLCAP;
 

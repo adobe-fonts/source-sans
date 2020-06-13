@@ -955,15 +955,12 @@ feature ccmp { # Glyph Composition  Decomposition
 		sub omegaiotasub perispomenicmb by omegaiotasubtilde;
 	} GLYPH_COMPOSITION_GREEK_POLYTONIC;
 
-	lookup YI_UKRAINIAN_1 { # substitutes first alternate yi in context
-		sub yi' [ iukran yi ] by yi.a;
+	lookup YI_UKRAINIAN { # substitutes alternate yi in context
+		sub yi' yi by yi.a;
 		sub Yi' Yi by Yi.a;
-	} YI_UKRAINIAN_1;
-
-	lookup YI_UKRAINIAN_2 { # substitutes second alternate yi in context
 		sub [ iukran yi.a ] yi' by yi.a;
-		sub Yi.a Yi' by Yi.a;
-	} YI_UKRAINIAN_2;
+		sub [ Iukran Yi.a ] Yi' by Yi.a;
+	} YI_UKRAINIAN;
 
 	lookup MAJUCSULE_ACCENTS_CMB_CONTEXT { # substitutes combining marks for miniscules with forms for majuscules
 		sub [ @LETTERS_MAJUSCULE_ALL @LETTERS_MINISCULE_LATIN_ASCENDERS ] @MARKS_CMB_LC' lookup MARKS_CMB_CASE;
