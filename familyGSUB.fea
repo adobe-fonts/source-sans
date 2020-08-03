@@ -53,8 +53,8 @@
 @MARKS_LIG_ABOVE = [ circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresistilde dieresismacron dieresiscaron dialytikatonoscmb dialytikagravecmb ringacute carondotaccent aspergravecmb asperacutecmb aspertildecmb lenisgravecmb lenisacutecmb lenistildecmb ];
 @MARKS_CMB_ALL = [ @MARKS_CMB_ABOVE @MARKS_CMB_BELOW @MARKS_LIG_ABOVE ];
 
-@MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb candrabinducmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb ringhalfrightabovecmb dotaboverightcmb circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresismacron dieresiscaron ringacute carondotaccent ];
-@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap candrabinducmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap verticallineabovecmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap ringhalfrightabovecmb.cap dotaboverightcmb.cap circumflexgrave.cap circumflexacute.cap circumflextilde.cap circumflexmacron.cap circumflexbreve.cap circumflexhoi.cap circumflexcaron.cap macronacute.cap brevegrave.cap breveacute.cap brevetilde.cap brevehoi.cap dieresisgrave.cap dieresisacute.cap dieresismacron.cap dieresiscaron.cap ringacute.cap carondotaccent.cap ];
+@MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb candrabinducmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb ringhalfrightabovecmb dotaboverightcmb circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresismacron dieresiscaron ringacute carondotaccent commaturnedabovecmb commaabovecmb ];
+@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap candrabinducmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap verticallineabovecmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap ringhalfrightabovecmb.cap dotaboverightcmb.cap circumflexgrave.cap circumflexacute.cap circumflextilde.cap circumflexmacron.cap circumflexbreve.cap circumflexhoi.cap circumflexcaron.cap macronacute.cap brevegrave.cap breveacute.cap brevetilde.cap brevehoi.cap dieresisgrave.cap dieresisacute.cap dieresismacron.cap dieresiscaron.cap ringacute.cap carondotaccent.cap commaturnedabovecmb.cap commaabovecmb.cap ];
 
 @FIGURES_LINING_TABULAR = [ zero one two three four five six seven eight nine ];
 @FIGURES_LINING_PROPORTIONAL = [ zero.pnum one.pnum two.pnum three.pnum four.pnum five.pnum six.pnum seven.pnum eight.pnum nine.pnum ];
@@ -1522,7 +1522,7 @@ feature pnum { # Proportional Figures
 feature case { # Case-Sensitive Forms
 
 	lookup CASING_ALTERNATES {
-		sub [ hlinebelow tdieresis ] by [ Hlinebelow Tdieresis ];
+		sub [ hlinebelow tdieresis colonmod ] by [ Hlinebelow Tdieresis colonmod.cap ];
 	} CASING_ALTERNATES;
 
 	lookup MARKS_CASE {
