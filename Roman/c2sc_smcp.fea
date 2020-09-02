@@ -55,11 +55,14 @@ feature c2sc { # UC-->SC
 		sub [ Iukran.sc Yi.as ] Yi.sc' by Yi.as;
 	} YI_SC_UKRAINIAN;
 
-	lookup NUMERALS_SMALLCAP {
+	lookup MODIFIER_SMALLCAPS {
+		sub [ commaturnedmod apostrophemod commareversedmod colonmod ] by [ commaturnedmod.sc apostrophemod.sc commareversedmod.sc colonmod.sc ];
+	} MODIFIER_SMALLCAPS;
+
+	lookup NUMERAL_SMALLCAPS {
 		sub @FIGURES_LINING_TABULAR by @FIGURES_SMALLCAP;
 		sub [ zero.0 zero.0s zero.pnum zero.0p zero.0ps zero.onum zero.cap ] by zero.sc;
-		sub [ commaturnedmod apostrophemod commareversedmod colonmod ] by [ commaturnedmod.sc apostrophemod.sc commareversedmod.sc colonmod.sc ];
-	} NUMERALS_SMALLCAP;
+	} NUMERAL_SMALLCAPS;
 
 	lookup SORTS_SMALLCAP { # belongs only in <c2sc> feature, not to be replicated in <smcp>
 		sub @PUNCTUATION_FOR_SMALLCAPS by @PUNCTUATION_SMALLCAPS;
@@ -125,13 +128,14 @@ feature smcp { # LC-->SC
 			} CYRILLIC_SMALLCAPS;
 
 			lookup YI_SC_UKRAINIAN;
-
-		lookup NUMERALS_SMALLCAP;
+			lookup MODIFIER_SMALLCAPS;
+			lookup NUMERAL_SMALLCAPS;
 
 	script latn;
 		language dflt;
 			lookup LATIN_SMALLCAPS;
-			lookup NUMERALS_SMALLCAP;
+			lookup MODIFIER_SMALLCAPS;
+			lookup NUMERAL_SMALLCAPS;
 			lookup MARKS_CMB_CASE;
 
 		language ATH include_dflt; # AthapaskanAthabaskan
@@ -144,32 +148,37 @@ feature smcp { # LC-->SC
 		language TRK exclude_dflt;
 			lookup I_TURKISH;
 			lookup LATIN_SMALLCAPS;
-			lookup NUMERALS_SMALLCAP;
+			lookup MODIFIER_SMALLCAPS;
+			lookup NUMERAL_SMALLCAPS;
 			lookup MARKS_CMB_CASE;
 
 		language AZE exclude_dflt;
 			lookup I_TURKISH;
 			lookup LATIN_SMALLCAPS;
-			lookup NUMERALS_SMALLCAP;
+			lookup MODIFIER_SMALLCAPS;
+			lookup NUMERAL_SMALLCAPS;
 			lookup MARKS_CMB_CASE;
 
 		language CRT exclude_dflt;
 			lookup I_TURKISH;
 			lookup LATIN_SMALLCAPS;
-			lookup NUMERALS_SMALLCAP;
+			lookup MODIFIER_SMALLCAPS;
+			lookup NUMERAL_SMALLCAPS;
 			lookup MARKS_CMB_CASE;
 
 	script grek;
 		language dflt;
 			lookup GREEK_SMALLCAPS_MONO;
 			lookup GREEK_SMALLCAPS_POLY;
-			lookup NUMERALS_SMALLCAP;
+			lookup MODIFIER_SMALLCAPS;
+			lookup NUMERAL_SMALLCAPS;
 			lookup MARKS_CMB_CASE;
 
 	script cyrl;
 		language dflt;
 			lookup CYRILLIC_SMALLCAPS;
-			lookup NUMERALS_SMALLCAP;
+			lookup MODIFIER_SMALLCAPS;
+			lookup NUMERAL_SMALLCAPS;
 			lookup MARKS_CMB_CASE;
 
 		language BGR include_dflt; # Bulgarian
