@@ -22,7 +22,6 @@ begin FDDict LOWERCASE
 	FlexOK false
 end FDDict LOWERCASE
 
-
 begin FDDict UPPERCASE
 	BaselineYCoord 0
 	BaselineOvershoot -12
@@ -32,18 +31,6 @@ begin FDDict UPPERCASE
 	DominantH [68]
 	FlexOK false
 end FDDict UPPERCASE
-
-
-begin FDDict SMALLCAPS
-	BaselineYCoord 0
-	BaselineOvershoot -12
-	CapHeight 518
-	CapOvershoot 12
-	DominantV [82]
-	DominantH [68]
-	FlexOK false
-end FDDict SMALLCAPS
-
 
 begin FDDict FIGURES
 	BaselineYCoord 0
@@ -69,38 +56,56 @@ end FDDict TEXT_FIGURES
 
 begin GlyphSet UPPERCASE
 	#Latin
-		^[A-Z][A-Z]?(macron|breve|circumflex|dieresis|hoi|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|hoi|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke)?(above|below|dotaccent)?$
-		^(Germandbls|Schwa|Eng)$
+		^[A-Z][A-Z]?(macron|breve|circumflex|dieresis|ring|caron|ogonek|hoi|horn|dotbelow|slash)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|hoi|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|belt|turned|cat)?(above|below|dotaccent)?((\.)[a-z])?$
+		^(Germandbls|Schwa|Eng|Glottalstop)((\.)[a-z])?$
+	#Greek
+		^(Alpha|Beta|Gamma|Delta|Epsilon|Zeta|Eta|Theta|Iota|Kappa|Lambda|Mu|Nu|Xi|Omicron|Pi|Rho|Sigma|Tau|Upsilon|Phi|Chi|Psi|Omega)(iotasub)?(tonos|grave|acute|dieresis|lenis|asper|breve|macron|.greek)?(grave|acute|tilde)?(.alt)?$
+	#Cyrillic
+		^(A|E|I|O|U|Schwa)(e|ie|o)?(grave|breve|macron|dieresis|bar|acutedbl)?(cyr|short|ukran|straight)(stroke)?((\.)[a-z])?$
+		^(B|V|Gh|D|Zh|Z|P|T|Ts|Ch|Dj|Gj|Dz|J|Lj|Nj|Tsh|Kj|Dzh|Ai)(e)(breve|up|stroke|descender)?((\.)[a-z])?$
+		^(K|H|Sh)(ch|h)?(a)(descender|bashkir|hook)?((\.)[a-z])?$
+		^(E)(l|m|n|r|s|f)(descender|hook)?((\.)[a-z])?$
+		^(I|Y|Ai)(a|e|i|o|u|eru|at)(grave|breve)?((\.)[a-z])?$
+		^(Hard|Soft|Fita|Izhitsa|Palochka)$
 	#Punctuation
-		^(exclam|question)$
-		^(trademark|registered|servicemark)$
-		^(ampersand|section|paragraph)$
+		^(exclam|question|interrobang)*(dbl)?$
+		^(trade|service|commerce|deposee)(mark)$
+		^(registered|marcaregistrada|ampersand|section|paragraph)$
 	#Math
 		^(Delta|Omega).math$
-		^.+\.cap$
+		^(zero|one|two|three|four|five|six|seven|eight|nine|at)\.cap$
+		^(universal|existential)$
 end GlyphSet UPPERCASE
-
 
 begin GlyphSet LOWERCASE
 	#Latin
-		^(dotless|germandbl|schw|en)?[a-z](macron|breve|circumflex|dieresis|hoi|horn|dotbelow)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|hoi|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|stroke|tail|ng|script|greenlandic|apostrophe)?(above|below|dotaccent)?(\.)?(alt|d|trk)?$
-		^[afo][eil](acute|macron)?$
-		^(f)_(f|t)$
+		^(dotless|long)?[a-z](macron|breve|circumflex|dieresis|ring|caron|hoi|horn|dotbelow|ogonek|slash|middle|crossed|open|retroflex|fish|small|longleg|stroke)?(grave|acute|circumflex|tilde|dieresis|ring|caron|slash|cedilla|hoi|horn|breve|macron|ogonek|croat|dotaccent|commaaccent|hungarumlaut|dot|bar|th|line|hook|tail|ng|script|greenlandic|apostrophe|curl|belt|cat)?(turned|reversed|inverted)?(above|below|dotaccent|rhotic|closed|left)?((\.)[a-z])?$
+		^[ao][ei](acute|macron)?(small)?((\.)[a-z])?$
+		^[f][il]((\.)[a-z])?$
+		^((f)_)*(f|i|l|t)((\.)[a-z])?$
+		^(h)?(germandbls|schwa|eng|ij|ramshorn|ain|zed|ts)(acute|hook)?(rhotic)?((\.)[a-z])?$
+		^(d|t|l)?(c|z|esh|ezh)(curl|retroflex|ed)?$
+		^(glottalstop|click)(latin|stroke|alveolar|retroflex|bilabial)?(reversed)?$
+		^(alpha|beta|chi|gamma|iota|upsilon|phi|omega)(latin)(turned|closed)?((\.)[a-z])?$
+	#Greek
+		^(alpha|beta|gamma|delta|epsilon|zeta|eta|theta|iota|kappa|lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|upsilon|phi|chi|psi|omega)(iotasub)?(.end|.greek|tonos|dieresis|lenis|asper|acute|grave|breve|macron|tilde)?(tonos|acute|grave|tilde)?((\.)[a-z])?$
+		^(stigma|koppa|sampi|digamma|kai)$
+	#Cyrillic
+		^(a|e|i|o|u|schwa)(e|ie|o)?(grave|breve|macron|dieresis|bar|acutedbl)?(cyr|short|ukran|straight)(stroke)?((\.)[a-z])?$
+		^(b|v|gh|d|zh|z|p|t|ts|ch|dj|gj|dz|j|lj|nj|tsh|kj|dzh|ai)(e)(breve|up|stroke|descender)?((\.)[a-z])?$
+		^(k|h|sh)(ch|h)?(a)(descender|bashkir|hook)?((\.)[a-z])?$
+		^(e)(l|m|n|r|s|f)(descender|hook)?((\.)[a-z])?$
+		^(i|y|ai)(a|e|i|o|u|eru|at)(grave|breve)?((\.)[a-z])?$
+		^(hard|soft|fita|izhitsa|palochka)$
 	#Punctuation
-		^(exclam|question)down$
+		^(exclam|question|interrobang)down$
 		^(dagger|daggerdbl)$
 end GlyphSet LOWERCASE
 
-
-begin GlyphSet SMALLCAPS
-		^.+\.sc$
-end GlyphSet SMALLCAPS
-
-
 begin GlyphSet FIGURES
 		^(zero|one|two|three|four|five|six|seven|eight|nine)(\.)?(slash|0)?(pnum|p|ps|s)?$
-		^(dollar|cent|sterling|yen|yuan|Euro|florin|colonmonetary|lira|naira|peseta|won|dong|peso|guarani|hryvnia|cedi|rupeeindian|numero|tugrik|tenge|ruble)(turkish)?$
-		^(percent|perthousand|numbersign)$
+		^(dollar|cent|sterling|yen|yuan|Euro|florin|colonmonetary|lira|naira|peseta|won|dong|peso|guarani|hryvnia|cedi|rupeeindian|numero|tugrik|tenge|ruble|franc)(turkish)?$
+		^(percent|perthousand|numbersign|careof)$
 		^(zero|one|two|three|four|five|seven)(half|third|quarter|fifth|sixth|seventh|eighth|ninth|tenth)(s)?$
 end GlyphSet FIGURES
 

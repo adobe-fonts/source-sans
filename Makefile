@@ -3,7 +3,7 @@
 # by Al Nikolov <root@toor.fi.eu.org>
 
 dnames = $(wildcard $(addsuffix /Instances/*,Roman Italic))
-fnames = $(addsuffix .otf,$(addprefix /SourceSansPro-,$(notdir $(dnames))))
+fnames = $(addsuffix .otf,$(addprefix /SourceSans3-,$(notdir $(dnames))))
 wholenames = $(join $(dnames),$(fnames))
 out_pat = -name \*.[ot]tf
 

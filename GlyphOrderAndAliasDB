@@ -62,6 +62,7 @@ Abreve	Abreve
 Aring	Aring
 Aringacute	Aringacute
 uni01CD	Acaron
+uni0226	Adot
 uni1EA0	Adotbelow
 uni1EA2	Ahoi
 uni1EA4	Acircumflexacute
@@ -243,6 +244,7 @@ uni1EEC	Uhornhoi
 uni1EEE	Uhorntilde
 uni1EF0	Uhorndotbelow
 Uogonek	Uogonek
+uni1E72	Udieresisbelow
 uni1E7E	Vdotbelow
 Wgrave	Wgrave
 Wacute	Wacute
@@ -268,6 +270,8 @@ uni018F	Schwa
 Eng	Eng
 IJ	IJ
 uni0241	Glottalstop
+uniA722	AlefEgypt
+uniA724	AinEgypt
 uni004C00B7004C	Lcat
 uni01320301	IJacute
 uni01040301	Aogonekacute
@@ -285,6 +289,7 @@ abreve	abreve
 aring	aring
 aringacute	aringacute
 uni01CE	acaron
+uni0227	adot
 uni1EA1	adotbelow
 uni1EA3	ahoi
 uni1EA5	acircumflexacute
@@ -466,6 +471,7 @@ uni1EEF	uhorntilde
 uni1EF1	uhorndotbelow
 uogonek	uogonek
 uogonek.d	uogonek.d
+uni1E73	udieresisbelow
 uni1E7F	vdotbelow
 wgrave	wgrave
 wacute	wacute
@@ -491,6 +497,8 @@ eng	eng
 uni0237	dotlessj
 ij	ij
 uni0242	glottalstoplatin
+uniA723	alefEgypt
+uniA725	ainEgypt
 uni006C00B7006C	lcat
 uni01330301	ijacute
 uni01050301	aogonekacute
@@ -499,16 +507,20 @@ uni012F0301	iogonekacute
 uni01EB0301	oogonekacute
 uni01730301	uogonekacute
 uni0250	aturned
+uni0251	alphalatin
 uni0252	alphalatinturned
 uni0253	bhook
+uni0299	bsmall
 uniA7B5	betalatin
 uni0255	ccurl
 uniAB53	chilatin
 uni0256	dtail
 uni0257	dhook
+uni02A3	dzed
+uni02A4	dezh
+uni02A5	dzcurl
+uniAB66	dzretroflex
 uni0258	ereversed
-uni0251	alphalatin
-uni0299	bsmall
 uni0259	schwa
 uni025A	schwahookrhotic
 uni025B	eopen
@@ -533,6 +545,8 @@ uni026C	lbelt
 uni026D	lretroflex
 uni026E	lezh
 uni029F	lsmall
+uni03BB.a	lambda.latin
+uni019B	lambdastroke
 uni026F	mturned
 uni0270	mlonglegturned
 uni0271	mhook
@@ -557,6 +571,10 @@ uni0283	esh
 uni0284	dotlessjstrokehook
 uni0287	tturned
 uni0288	tretroflex
+uni02A6	ts
+uni02A7	tesh
+uni02A8	tccurl
+uniAB67	tshook
 uni0289	ubar
 uni028A	upsilonlatin
 uni028B	vhook
@@ -568,9 +586,6 @@ uni0290	zretroflex
 uni0291	zcurl
 uni0292	ezh
 uni1D25	ain
-uni02A4	dezh
-uni02A6	ts
-uni02A7	tesh
 uni0294	glottalstop
 uni0295	glottalstopreversed
 uni02A1	glottalstopstroke
@@ -609,6 +624,7 @@ abreve.a	abreve.a
 aring.a	aring.a
 aringacute.a	aringacute.a
 uni01CE.a	acaron.a
+uni0227.a	adot.a
 uni1EA1.a	adotbelow.a
 uni1EA3.a	ahoi.a
 uni1EA5.a	acircumflexacute.a
@@ -635,6 +651,7 @@ abreve.b	abreve.b
 aring.b	aring.b
 aringacute.b	aringacute.b
 uni01CE.b	acaron.b
+uni0227.b	adot.b
 uni1EA1.b	adotbelow.b
 uni1EA3.b	ahoi.b
 uni1EA5.b	acircumflexacute.b
@@ -1055,11 +1072,14 @@ uni0472	Fita
 uni0474	Izhitsa
 uni0490	Gheup
 uni0492	Ghestroke
+uni04F6	Ghedescender
 uni0496	Zhedescender
 uni0498	Zedescender
 uni049A	Kadescender
 uni04A0	Kabashkir
+uni04C3	Kahook
 uni04A2	Endescender
+uni04C7	Enhook
 uni04AA	Esdescender
 uni04AE	Ustraight
 uni04B0	Ustraightstroke
@@ -1130,11 +1150,14 @@ uni0473	fita
 uni0475	izhitsa
 uni0491	gheup
 uni0493	ghestroke
+uni04F7	ghedescender
 uni0497	zhedescender
 uni0499	zedescender
 uni049B	kadescender
 uni04A1	kabashkir
+uni04C4	kahook
 uni04A3	endescender
+uni04C8	enhook
 uni04AB	esdescender
 uni04AF	ustraight
 uni04B1	ustraightstroke
@@ -1163,6 +1186,7 @@ uni040C.a	Kje.a
 uni0496.a	Zhedescender.a
 uni049A.a	Kadescender.a
 uni04A0.a	Kabashkir.a
+uni04C3.a	Kahook.a
 uni04C1.a	Zhebreve.a
 uni0430.a	acyr.a
 uni04D1.a	abrevecyr.a
@@ -1179,6 +1203,7 @@ uni045C.a	kje.a
 uni0497.a	zhedescender.a
 uni049B.a	kadescender.a
 uni04A1.a	kabashkir.a
+uni04C4.a	kahook.a
 uni04C2.a	zhebreve.a
 uni0431.a	be.c
 uni0432.a	ve.c
@@ -1266,13 +1291,19 @@ question	question
 questiondown	questiondown
 quotesingle	quotesingle
 quotedbl	quotedbl
-quoteleft	quoteleft	uni2018,uni02BB
-quoteright	quoteright	uni2019,uni02BC
+quoteleft	quoteleft	uni2018
+quoteright	quoteright	uni2019
 quotedblleft	quotedblleft
 quotedblright	quotedblright
 quotesinglbase	quotesinglbase
 quotedblbase	quotedblbase
 quotereversed	quotereversed
+uni275B	quoteleftheavy
+uni275C	quoterightheavy
+uni275D	quotedblleftheavy
+uni275E	quotedblrightheavy
+uni275F	quotesinglbaseheavy
+uni2760	quotedblbaseheavy
 guilsinglleft	guilsinglleft
 guilsinglright	guilsinglright
 guillemotleft	guillemotleft
@@ -1286,6 +1317,7 @@ figuredash	figuredash
 uni2015	horizontalbar
 periodcentered	periodcentered
 bullet	bullet
+uni2023	bullettriangle
 uni25E6	bulletwhite
 uni25AA	bulletsquare
 uni25AB	bulletsquarewhite
@@ -1346,6 +1378,10 @@ u1F16B	deposeemark
 u1F16C	marcaregistrada
 at	at
 at.c	at.cap
+exclamdown.c	exclamdown.cap
+questiondown.c	questiondown.cap
+uni2E18.c	interrobangdown.cap
+uniA789.c	colonmod.cap
 numbersign	numbersign
 A.s	A.sc
 B.s	B.sc
@@ -1383,6 +1419,7 @@ Abreve.s	Abreve.sc
 Aring.s	Aring.sc
 Aringacute.s	Aringacute.sc
 uni01CD.s	Acaron.sc
+uni0226.s	Adot.sc
 uni1EA0.s	Adotbelow.sc
 uni1EA2.s	Ahoi.sc
 uni1EA4.s	Acircumflexacute.sc
@@ -1565,6 +1602,7 @@ uni1EEC.s	Uhornhoi.sc
 uni1EEE.s	Uhorntilde.sc
 uni1EF0.s	Uhorndotbelow.sc
 Uogonek.s	Uogonek.sc
+uni1E72.s	Udieresisbelow.sc
 uni1E7E.s	Vdotbelow.sc
 Wgrave.s	Wgrave.sc
 Wacute.s	Wacute.sc
@@ -1589,8 +1627,10 @@ Thorn.s	Thorn.sc
 uni018F.s	Schwa.sc
 Eng.s	Eng.sc
 IJ.s	IJ.sc
-uni0241.sc	Glottalstop.sc
-Eng.as	Eng.as
+uni0241.s	Glottalstop.sc
+uniA722.s	AlefEgypt.sc
+uniA724.s	AinEgypt.sc
+Eng.z	Eng.as
 uni004C00B7004C.s	Lcat.sc
 uni01320301.s	IJacute.sc
 uni01040301.s	Aogonekacute.sc
@@ -1680,11 +1720,14 @@ uni0472.s	Fita.sc
 uni0474.s	Izhitsa.sc
 uni0490.s	Gheup.sc
 uni0492.s	Ghestroke.sc
+uni04F6.s	Ghedescender.sc
 uni0496.s	Zhedescender.sc
 uni0498.s	Zedescender.sc
 uni049A.s	Kadescender.sc
 uni04A0.s	Kabashkir.sc
+uni04C3.s	Kahook.sc
 uni04A2.s	Endescender.sc
+uni04C7.s	Enhook.sc
 uni04AA.s	Esdescender.sc
 uni04AE.s	Ustraight.sc
 uni04B0.s	Ustraightstroke.sc
@@ -1702,19 +1745,24 @@ uni04E6.s	Odieresiscyr.sc
 uni04E8.s	Obarcyr.sc
 uni04EE.s	Umacroncyr.sc
 uni04F2.s	Uacutedblcyr.sc
-uni0414.as	De.as
-uni0416.as	Zhe.as
-uni041A.as	Ka.as
-uni041B.as	El.as
-uni0424.as	Ef.as
-uni0407.as	Yi.as
-uni0409.as	Lje.as
-uni040C.as	Kje.as
-uni0496.as	Zhedescender.as
-uni049A.as	Kadescender.as
-uni04A0.as	Kabashkir.as
-uni04C1.as	Zhebreve.as
+uni0414.z	De.as
+uni0416.z	Zhe.as
+uni041A.z	Ka.as
+uni041B.z	El.as
+uni0424.z	Ef.as
+uni0407.z	Yi.as
+uni0409.z	Lje.as
+uni040C.z	Kje.as
+uni0496.z	Zhedescender.as
+uni049A.z	Kadescender.as
+uni04C3.z	Kahook.as
+uni04A0.z	Kabashkir.as
+uni04C1.z	Zhebreve.as
 ampersand.s	ampersand.sc
+uni02BB.s	commaturnedmod.sc
+uni02BC.s	apostrophemod.sc
+uni02BD.s	commareversedmod.sc
+uniA789.sc	colonmod.sc
 zero.s	zero.sc
 one.s	one.sc
 two.s	two.sc
@@ -1746,137 +1794,138 @@ bracketleft.s	bracketleft.sc
 bracketright.s	bracketright.sc
 braceleft.s	braceleft.sc
 braceright.s	braceright.sc
-zero.sups	zero.sups	uni2070
-one.sups	one.sups	uni00B9
-two.sups	two.sups	uni00B2
-three.sups	three.sups	uni00B3
-four.sups	four.sups	uni2074
-five.sups	five.sups	uni2075
-six.sups	six.sups	uni2076
-seven.sups	seven.sups	uni2077
-eight.sups	eight.sups	uni2078
-nine.sups	nine.sups	uni2079
-plus.sups	plus.sups	uni207A
-minus.sups	minus.sups	uni207B
-equal.sups	equal.sups	uni207C
-parenleft.sups	parenleft.sups	uni207D
-parenright.sups	parenright.sups	uni207E
-period.sups	period.sups
-comma.sups	comma.sups
-zero.subs	zero.subs	uni2080
-one.subs	one.subs	uni2081
-two.subs	two.subs	uni2082
-three.subs	three.subs	uni2083
-four.subs	four.subs	uni2084
-five.subs	five.subs	uni2085
-six.subs	six.subs	uni2086
-seven.subs	seven.subs	uni2087
-eight.subs	eight.subs	uni2088
-nine.subs	nine.subs	uni2089
-plus.subs	plus.subs	uni208A
-minus.subs	minus.subs	uni208B
-equal.subs	equal.subs	uni208C
-parenleft.subs	parenleft.subs	uni208D
-parenright.subs	parenright.subs	uni208E
-period.subs	period.subs
-comma.subs	comma.subs
-zero.dnom	zero.dnom
-one.dnom	one.dnom
-two.dnom	two.dnom
-three.dnom	three.dnom
-four.dnom	four.dnom
-five.dnom	five.dnom
-six.dnom	six.dnom
-seven.dnom	seven.dnom
-eight.dnom	eight.dnom
-nine.dnom	nine.dnom
-parenleft.dnom	parenleft.dnom
-parenright.dnom	parenright.dnom
-period.dnom	period.dnom
-comma.dnom	comma.dnom
-zero.numr	zero.numr
-one.numr	one.numr
-two.numr	two.numr
-three.numr	three.numr
-four.numr	four.numr
-five.numr	five.numr
-six.numr	six.numr
-seven.numr	seven.numr
-eight.numr	eight.numr
-nine.numr	nine.numr
-parenleft.numr	parenleft.numr
-parenright.numr	parenright.numr
-period.numr	period.numr
-comma.numr	comma.numr
+zero.u	zero.sups	uni2070
+one.u	one.sups	uni00B9
+two.u	two.sups	uni00B2
+three.u	three.sups	uni00B3
+four.u	four.sups	uni2074
+five.u	five.sups	uni2075
+six.u	six.sups	uni2076
+seven.u	seven.sups	uni2077
+eight.u	eight.sups	uni2078
+nine.u	nine.sups	uni2079
+plus.u	plus.sups	uni207A
+minus.u	minus.sups	uni207B
+equal.u	equal.sups	uni207C
+parenleft.u	parenleft.sups	uni207D
+parenright.u	parenright.sups	uni207E
+period.u	period.sups
+comma.u	comma.sups
+zero.b	zero.subs	uni2080
+one.b	one.subs	uni2081
+two.b	two.subs	uni2082
+three.b	three.subs	uni2083
+four.b	four.subs	uni2084
+five.b	five.subs	uni2085
+six.b	six.subs	uni2086
+seven.b	seven.subs	uni2087
+eight.b	eight.subs	uni2088
+nine.b	nine.subs	uni2089
+plus.b	plus.subs	uni208A
+minus.b	minus.subs	uni208B
+equal.b	equal.subs	uni208C
+parenleft.b	parenleft.subs	uni208D
+parenright.b	parenright.subs	uni208E
+period.b	period.subs
+comma.b	comma.subs
+zero.d	zero.dnom
+one.d	one.dnom
+two.d	two.dnom
+three.d	three.dnom
+four.d	four.dnom
+five.d	five.dnom
+six.d	six.dnom
+seven.d	seven.dnom
+eight.d	eight.dnom
+nine.d	nine.dnom
+parenleft.d	parenleft.dnom
+parenright.d	parenright.dnom
+period.d	period.dnom
+comma.d	comma.dnom
+zero.n	zero.numr
+one.n	one.numr
+two.n	two.numr
+three.n	three.numr
+four.n	four.numr
+five.n	five.numr
+six.n	six.numr
+seven.n	seven.numr
+eight.n	eight.numr
+nine.n	nine.numr
+parenleft.n	parenleft.numr
+parenright.n	parenright.numr
+period.n	period.numr
+comma.n	comma.numr
 ordfeminine	ordfeminine
 ordfeminine.a	ordfeminine.a
 ordmasculine	ordmasculine
-A.sups	A.sups
-B.sups	B.sups
-C.sups	C.sups
-D.sups	D.sups
-E.sups	E.sups
-F.sups	F.sups
-G.sups	G.sups
-H.sups	H.sups
-I.sups	I.sups
-J.sups	J.sups
-K.sups	K.sups
-L.sups	L.sups
-M.sups	M.sups
-N.sups	N.sups
-O.sups	O.sups
-P.sups	P.sups
-Q.sups	Q.sups
-R.sups	R.sups
-S.sups	S.sups
-T.sups	T.sups
-U.sups	U.sups
-V.sups	V.sups
-W.sups	W.sups
-X.sups	X.sups
-Y.sups	Y.sups
-Z.sups	Z.sups
-a.sups	a.sups	uni1D43
-b.sups	b.sups	uni1D47
-c.sups	c.sups	uni1D9C
-d.sups	d.sups	uni1D48
-e.sups	e.sups	uni1D49
-f.sups	f.sups	uni1DA0
-g.sups	g.sups	uni1D4D
-h.sups	h.sups	uni02B0
-i.sups	i.sups	uni2071
-j.sups	j.sups	uni02B2
-k.sups	k.sups	uni1D4F
-l.sups	l.sups	uni02E1
-m.sups	m.sups	uni1D50
-n.sups	n.sups	uni207F
-o.sups	o.sups	uni1D52
-p.sups	p.sups	uni1D56
-q.sups	q.sups
-r.sups	r.sups	uni02B3
-s.sups	s.sups	uni02E2
-t.sups	t.sups	uni1D57
-u.sups	u.sups	uni1D58
-v.sups	v.sups	uni1D5B
-w.sups	w.sups	uni02B7
-x.sups	x.sups	uni02E3
-y.sups	y.sups	uni02B8
-z.sups	z.sups	uni1DBB
-egrave.sups	egrave.sups
-eacute.sups	eacute.sups
-eogonek.sups	eogonek.sups
+A.u	A.sups
+B.u	B.sups
+C.u	C.sups
+D.u	D.sups
+E.u	E.sups
+F.u	F.sups
+G.u	G.sups
+H.u	H.sups
+I.u	I.sups
+J.u	J.sups
+K.u	K.sups
+L.u	L.sups
+M.u	M.sups
+N.u	N.sups
+O.u	O.sups
+P.u	P.sups
+Q.u	Q.sups
+R.u	R.sups
+S.u	S.sups
+T.u	T.sups
+U.u	U.sups
+V.u	V.sups
+W.u	W.sups
+X.u	X.sups
+Y.u	Y.sups
+Z.u	Z.sups
+a.u	a.sups	uni1D43
+b.u	b.sups	uni1D47
+c.u	c.sups	uni1D9C
+d.u	d.sups	uni1D48
+e.u	e.sups	uni1D49
+f.u	f.sups	uni1DA0
+g.u	g.sups	uni1D4D
+h.u	h.sups	uni02B0
+i.u	i.sups	uni2071
+j.u	j.sups	uni02B2
+k.u	k.sups	uni1D4F
+l.u	l.sups	uni02E1
+m.u	m.sups	uni1D50
+n.u	n.sups	uni207F
+o.u	o.sups	uni1D52
+p.u	p.sups	uni1D56
+q.u	q.sups
+r.u	r.sups	uni02B3
+s.u	s.sups	uni02E2
+t.u	t.sups	uni1D57
+u.u	u.sups	uni1D58
+v.u	v.sups	uni1D5B
+w.u	w.sups	uni02B7
+x.u	x.sups	uni02E3
+y.u	y.sups	uni02B8
+z.u	z.sups	uni1DBB
+egrave.u	egrave.sups
+eacute.u	eacute.sups
+eogonek.u	eogonek.sups
 uni1D4A	schwa.sups
 uni02B1	hhook.sups
 uni02E0	gammalatin.sups
 uni02E4	glottalstopreversed.sups
-a.supa	a.supa
-g.supa	g.supa
-l.supa	l.supa
-colon.sups	colon.sups
-hyphen.sups	hyphen.sups
-endash.sups	endash.sups
-emdash.sups	emdash.sups
+a.v	a.supa
+g.v	g.supa
+l.v	l.supa
+eogonek.v	eogonek.supd
+colon.u	colon.sups
+hyphen.u	hyphen.sups
+endash.u	endash.sups
+emdash.u	emdash.sups
 currency	currency
 dollar	dollar
 sterling	sterling
@@ -1957,6 +2006,7 @@ integralbt	integralbt
 radical	radical
 uni2200	universal
 uni2203	existential
+uni2236	ratio
 uni2237	proportion
 summation	summation
 product	product
@@ -1999,6 +2049,7 @@ uni25C9	fisheye
 uni2610	checkbox
 uni2611	checkedbox
 uni2713	check
+uni2714	checkheavy
 musicalnote	eighthnote
 musicalnotedbl	musicalnotedbl
 heart	heart
@@ -2019,23 +2070,10 @@ male	male
 sun	sun
 lozenge	lozenge
 house	house
-uni02B9	primemod
-uni02BE	ringhalfrightmod
-uni02BF	ringhalfleftmod
-uni02C0	glottalstopmod
-uni02C1	glottalstopreversedmod
-uni02D0	colontriangularmod
-uni02D1	colontriangularhalfmod
-uni02DE	hookrhoticmod
 grave	grave
 acute	acute
 circumflex	circumflex
 caron	caron
-uni02C8	verticallinemod
-uni02C9	macronmod
-uni02CA	acutemod
-uni02CB	gravemod
-uni02CC	verticallinelowmod
 tilde	tilde
 dieresis	dieresis
 macron	macron
@@ -2045,6 +2083,24 @@ hungarumlaut	hungarumlaut
 dotaccent	dotaccent
 cedilla	cedilla
 ogonek	ogonek
+uni02B9	primemod
+uni02BB	commaturnedmod
+uni02BC	apostrophemod
+uni02BD	commareversedmod
+uni02BE	ringhalfrightmod
+uni02BF	ringhalfleftmod
+uni02C0	glottalstopmod
+uni02C1	glottalstopreversedmod
+uni02D0	colontriangularmod
+uni02D1	colontriangularhalfmod
+uni02DE	hookrhoticmod
+uni02C8	verticallinemod
+uni02C9	macronmod
+uni02CA	acutemod
+uni02CB	gravemod
+uni02CC	verticallinelowmod
+uniA71C	arrowdownmod
+uniA789	colonmod
 uni25CC	circledotted
 uni0300	gravecmb
 uni0300.c	gravecmb.cap
@@ -2086,8 +2142,10 @@ uni0310.c	candrabinducmb.cap
 uni0311	breveinvertedcmb
 uni0311.c	breveinvertedcmb.cap
 uni0312	commaturnedabovecmb
+uni0312.c	commaturnedabovecmb.cap
 uni0312.g	aspercmb
 uni0313	commaabovecmb
+uni0313.c	commaabovecmb.cap
 uni0313.g	leniscmb
 uni0318	lefttackbelowcmb
 uni0319	righttackbelowcmb
@@ -2126,12 +2184,17 @@ uni0342.c	perispomenicmb.cap
 uni0343	koroniscmb
 uni0344	dialytikatonoscmb
 uni0345	iotasubscriptcmb
+uni0357	ringhalfrightabovecmb
+uni0357.c	ringhalfrightabovecmb.cap
 uni0358	dotaboverightcmb
 uni0358.c	dotaboverightcmb.cap
+uni035E	macrondoublecmb
 uni035F	macrondoublebelowcmb
 uni0361	breveinverteddoublecmb
+uni1DCD	circumflexdoublecmb
+uni035E.a	macrondoublecmb.a
 uni0361.a	breveinverteddoublecmb.a
-uniA71C	arrowdownmod
+uni1DCD.a	circumflexdoublecmb.a
 uni03020300	circumflexgrave
 uni03020300.c	circumflexgrave.cap
 uni03020301	circumflexacute
