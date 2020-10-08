@@ -50,11 +50,11 @@
 
 @MARKS_CMB_ABOVE = [ gravecmb variacmb acutecmb tonoscmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb commaturnedabovecmb aspercmb commaabovecmb leniscmb leftangleabovecmb horncmb cedillacmb ogonekcmb tildeoverlaycmb xabovecmb perispomenicmb koroniscmb dialytikatonoscmb ringhalfrightabovecmb dotaboverightcmb ];
 @MARKS_CMB_BELOW = [ lefttackbelowcmb righttackbelowcmb ringhalfleftbelowcmb uptackbelowcmb downtackbelowcmb plusbelowcmb minusbelowcmb dotbelowcmb dieresisbelowcmb ringbelowcmb commabelowcmb verticallinebelowcmb bridgebelowcmb caronbelowcmb brevebelowcmb breveinvertedbelowcmb tildebelowcmb macronbelowcmb ringhalfrightbelowcmb bridgeinvertedbelowcmb squarebelowcmb seagullbelowcmb iotasubscriptcmb ];
-@MARKS_LIG_ABOVE = [ circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresistilde dieresismacron dieresiscaron dialytikatonoscmb dialytikagravecmb ringacute carondotaccent aspergravecmb asperacutecmb aspertildecmb lenisgravecmb lenisacutecmb lenistildecmb ];
+@MARKS_LIG_ABOVE = [ circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresistilde dieresismacron dieresiscaron dialytikatonoscmb dialytikagravecmb ringacute carondotaccent caroncomma aspergravecmb asperacutecmb aspertildecmb lenisgravecmb lenisacutecmb lenistildecmb ];
 @MARKS_CMB_ALL = [ @MARKS_CMB_ABOVE @MARKS_CMB_BELOW @MARKS_LIG_ABOVE ];
 
-@MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb candrabinducmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb ringhalfrightabovecmb dotaboverightcmb circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresismacron dieresiscaron ringacute carondotaccent commaturnedabovecmb commaabovecmb ];
-@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap candrabinducmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap verticallineabovecmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap ringhalfrightabovecmb.cap dotaboverightcmb.cap circumflexgrave.cap circumflexacute.cap circumflextilde.cap circumflexmacron.cap circumflexbreve.cap circumflexhoi.cap circumflexcaron.cap macronacute.cap brevegrave.cap breveacute.cap brevetilde.cap brevehoi.cap dieresisgrave.cap dieresisacute.cap dieresismacron.cap dieresiscaron.cap ringacute.cap carondotaccent.cap commaturnedabovecmb.cap commaabovecmb.cap ];
+@MARKS_CMB_LC = [ gravecmb acutecmb circumflexcmb tildecmb macroncmb overlinecmb brevecmb brevecmb.cyr dotaccentcmb dieresiscmb hoicmb candrabinducmb ringcmb hungarumlautcmb caroncmb verticallineabovecmb dblgravecmb breveinvertedcmb cedillacmb ogonekcmb perispomenicmb ringhalfrightabovecmb dotaboverightcmb circumflexgrave circumflexacute circumflextilde circumflexmacron circumflexbreve circumflexhoi circumflexcaron macronacute brevegrave breveacute brevetilde brevehoi dieresisgrave dieresisacute dieresismacron dieresiscaron ringacute carondotaccent caroncomma commaturnedabovecmb commaabovecmb ];
+@MARKS_CMB_CASE = [ gravecmb.cap acutecmb.cap circumflexcmb.cap tildecmb.cap macroncmb.cap overlinecmb.cap brevecmb.cap brevecmb.cyrcap dotaccentcmb.cap dieresiscmb.cap hoicmb.cap candrabinducmb.cap ringcmb.cap hungarumlautcmb.cap caroncmb.cap verticallineabovecmb.cap dblgravecmb.cap breveinvertedcmb.cap cedillacmb.cap ogonekcmb.cap perispomenicmb.cap ringhalfrightabovecmb.cap dotaboverightcmb.cap circumflexgrave.cap circumflexacute.cap circumflextilde.cap circumflexmacron.cap circumflexbreve.cap circumflexhoi.cap circumflexcaron.cap macronacute.cap brevegrave.cap breveacute.cap brevetilde.cap brevehoi.cap dieresisgrave.cap dieresisacute.cap dieresismacron.cap dieresiscaron.cap ringacute.cap carondotaccent.cap caroncomma.cap commaturnedabovecmb.cap commaabovecmb.cap ];
 
 @FIGURES_LINING_TABULAR = [ zero one two three four five six seven eight nine ];
 @FIGURES_LINING_PROPORTIONAL = [ zero.pnum one.pnum two.pnum three.pnum four.pnum five.pnum six.pnum seven.pnum eight.pnum nine.pnum ];
@@ -563,12 +563,15 @@ feature ccmp { # Glyph Composition  Decomposition
 	@VOWELS_DIERESIS = [ Adieresis Edieresis Idieresis Odieresis Udieresis adieresis edieresis idieresis odieresis udieresis ];
 	@VOWELS_MACRON = [ Amacron Emacron Imacron Omacron Umacron amacron emacron imacron omacron umacron ];
 	@VOWELS_UNMARKED = [ A E I O U a e dotlessi o u ];
+	@CONSONANTS_CARON = [Ccaron Scaron ccaron scaron];
+	@CONSONANTS_UNMARKED = [C S c s];
 	
 	lookup MARKS_SWAP_1 {
 		sub @VOWELS_DIERESIS acutecmb' by dieresisacute;
 		sub @VOWELS_DIERESIS gravecmb' by dieresisgrave;
 		sub @VOWELS_DIERESIS caroncmb' by dieresiscaron;
 		sub @VOWELS_MACRON acutecmb' by macronacute;
+		sub @CONSONANTS_CARON commaabovecmb' by caroncomma;
 	} MARKS_SWAP_1;
 
 	lookup MARKS_SWAP_2 {
@@ -576,6 +579,7 @@ feature ccmp { # Glyph Composition  Decomposition
 		sub @VOWELS_DIERESIS' dieresisgrave by @VOWELS_UNMARKED;
 		sub @VOWELS_DIERESIS' dieresiscaron by @VOWELS_UNMARKED;
 		sub @VOWELS_MACRON' macronacute by @VOWELS_UNMARKED;
+		sub @CONSONANTS_CARON' caroncomma by @CONSONANTS_UNMARKED;
 	} MARKS_SWAP_2;
 
 	lookup MARKS_COMPOSITION {
@@ -600,6 +604,7 @@ feature ccmp { # Glyph Composition  Decomposition
 		sub dieresiscmb variacmb by dialytikagravecmb;
 		sub ringcmb acutecmb by ringacute;
 		sub caroncmb dotaccentcmb by carondotaccent;
+		sub caroncmb commaabovecmb by caroncomma;
 		sub [ aspercmb commaturnedabovecmb ] [ gravecmb variacmb ] by aspergravecmb;
 		sub [ aspercmb commaturnedabovecmb ] [ acutecmb tonoscmb ] by asperacutecmb;
 		sub [ aspercmb commaturnedabovecmb ] [ tildecmb perispomenicmb ] by aspertildecmb;
@@ -1773,6 +1778,22 @@ feature liga { # Standard Ligatures
 	sub f f by f_f;
 	sub f t by f_t;
 } liga;
+
+#--------------------------------------
+@BREVE_INV = [breveinverteddoublecmb breveinverteddoublecmb.a];
+
+feature dlig { # Discretionary Ligatures
+	lookupflag 0;
+	sub d @BREVE_INV z by dzed;
+	sub d @BREVE_INV ezh by dezh;
+	sub d @BREVE_INV zcurl by dzcurl;
+	sub d @BREVE_INV zretroflex by dzretroflex;
+	sub l @BREVE_INV ezh by lezh;
+	sub t @BREVE_INV s by ts;
+	sub t @BREVE_INV esh by tesh;
+	sub t @BREVE_INV ccurl by tccurl;
+	sub t @BREVE_INV shook by tshook;
+} dlig;
 
 #--------------------------------------
 feature size {
