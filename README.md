@@ -1,6 +1,6 @@
 # Source Sans 3
 
-[Source Sans Pro](http://adobe-fonts.github.io/source-sans-pro/)
+[Source Sans](http://adobe-fonts.github.io/source-sans-pro/)
 is a set of OpenType fonts that have been designed to work well
 in user interface (UI) environments.
 
