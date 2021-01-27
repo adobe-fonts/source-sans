@@ -31,6 +31,8 @@
 			<string>caronbelowcmb</string>
 			<string>caroncmb.cap</string>
 			<string>caroncmb</string>
+			<string>caroncomma.cap</string>
+			<string>caroncomma</string>
 			<string>carondotaccent.cap</string>
 			<string>carondotaccent</string>
 			<string>cedillacmb.cap</string>
@@ -71,8 +73,8 @@
 			<string>dieresismacron.cap</string>
 			<string>dieresismacron</string>
 			<string>dieresistilde</string>
-			<string>dotaboverightcmb</string>
 			<string>dotaboverightcmb.cap</string>
+			<string>dotaboverightcmb</string>
 			<string>dotaccentcmb.cap</string>
 			<string>dotaccentcmb</string>
 			<string>dotbelowcmb</string>
@@ -98,6 +100,8 @@
 			<string>macronbelowcmb</string>
 			<string>macroncmb.cap</string>
 			<string>macroncmb</string>
+			<string>macrongrave.cap</string>
+			<string>macrongrave</string>
 			<string>minusbelowcmb</string>
 			<string>ogonekcmb.cap</string>
 			<string>ogonekcmb</string>
@@ -112,9 +116,9 @@
 			<string>ringbelowcmb</string>
 			<string>ringcmb.cap</string>
 			<string>ringcmb</string>
+			<string>ringhalfleftbelowcmb</string>
 			<string>ringhalfrightabovecmb.cap</string>
 			<string>ringhalfrightabovecmb</string>
-			<string>ringhalfleftbelowcmb</string>
 			<string>ringhalfrightbelowcmb</string>
 			<string>seagullbelowcmb</string>
 			<string>squarebelowcmb</string>
@@ -125,14 +129,10 @@
 			<string>tonoscmb</string>
 			<string>uptackbelowcmb</string>
 			<string>variacmb</string>
-			<string>verticallineabovecmb</string>
 			<string>verticallineabovecmb.cap</string>
+			<string>verticallineabovecmb</string>
 			<string>verticallinebelowcmb</string>
 			<string>xabovecmb</string>
-			<string>caroncomma</string>
-			<string>caroncomma.cap</string>
-			<string>macrongrave</string>
-			<string>macrongrave.cap</string>
 		</array>
 		<key>public.kern1.CYR_ACYR_LC_LEFT</key>
 		<array>
@@ -471,6 +471,7 @@
 			<string>abrevecyr.a</string>
 			<string>acyr.a</string>
 			<string>enhook</string>
+			<string>sha.c</string>
 		</array>
 		<key>public.kern1.CYR_STRAIGHT_SC_LEFT</key>
 		<array>
@@ -1487,6 +1488,8 @@
 			<string>Hdieresis.sc</string>
 			<string>Eng.as</string>
 			<string>Eturned.sc</string>
+			<string>Hcaron.sc</string>
+			<string>Hdot.sc</string>
 		</array>
 		<key>public.kern1.LAT_H_UC_LEFT</key>
 		<array>
@@ -1512,6 +1515,8 @@
 			<string>Hcedilla</string>
 			<string>Hdieresis</string>
 			<string>Eturned</string>
+			<string>Hcaron</string>
+			<string>Hdot</string>
 		</array>
 		<key>public.kern1.LAT_ISTROKE_LC_LEFT</key>
 		<array>
@@ -1520,6 +1525,23 @@
 			<string>istroke.x</string>
 			<string>dotlessjstroke</string>
 			<string>dotlessjstrokehook</string>
+		</array>
+		<key>public.kern1.LAT_I_ALT_SC_LEFT</key>
+		<array>
+			<string>I.as</string>
+			<string>Iacute.as</string>
+			<string>Ibreve.as</string>
+			<string>Icaron.as</string>
+			<string>Icircumflex.as</string>
+			<string>Idieresis.as</string>
+			<string>Idotaccent.as</string>
+			<string>Idotbelow.as</string>
+			<string>Igrave.as</string>
+			<string>Ihoi.as</string>
+			<string>Imacron.as</string>
+			<string>Iogonek.as</string>
+			<string>Iogonekacute.as</string>
+			<string>Itilde.as</string>
 		</array>
 		<key>public.kern1.LAT_I_ALT_UC_LEFT</key>
 		<array>
@@ -1763,6 +1785,8 @@
 			<string>nhookleft</string>
 			<string>hdieresis</string>
 			<string>hcedilla</string>
+			<string>hcaron</string>
+			<string>hdot</string>
 		</array>
 		<key>public.kern1.LAT_OHORN_LC_LEFT</key>
 		<array>
@@ -1928,8 +1952,8 @@
 		</array>
 		<key>public.kern1.LAT_RAMSHORN_LC_LEFT</key>
 		<array>
-			<string>rsmallinverted</string>
 			<string>ramshorn</string>
+			<string>rsmallinverted</string>
 		</array>
 		<key>public.kern1.LAT_RETROFLEX_LEFT</key>
 		<array>
@@ -1988,6 +2012,7 @@
 			<string>i.sups</string>
 			<string>u.sups</string>
 			<string>a.supa</string>
+			<string>nsmall.sups</string>
 		</array>
 		<key>public.kern1.LAT_SUPS_J_LC_LEFT</key>
 		<array>
@@ -2013,6 +2038,7 @@
 			<string>p.sups</string>
 			<string>eogonek.sups</string>
 			<string>schwa.sups</string>
+			<string>eogonek.supd</string>
 		</array>
 		<key>public.kern1.LAT_SUPS_R_LC_LEFT</key>
 		<array>
@@ -3764,6 +3790,8 @@
 			<string>Lcat.sc</string>
 			<string>IJacute.sc</string>
 			<string>Iogonekacute.sc</string>
+			<string>Hcaron.sc</string>
+			<string>Hdot.sc</string>
 		</array>
 		<key>public.kern2.LAT_H_UC_RIGHT</key>
 		<array>
@@ -3845,6 +3873,8 @@
 			<string>Hcedilla</string>
 			<string>Hdieresis</string>
 			<string>Lcat</string>
+			<string>Hcaron</string>
+			<string>Hdot</string>
 		</array>
 		<key>public.kern2.LAT_ISMALL_LC_RIGHT</key>
 		<array>
@@ -3858,6 +3888,23 @@
 			<string>istroke</string>
 			<string>lbelt</string>
 			<string>lmiddletilde</string>
+		</array>
+		<key>public.kern2.LAT_I_ALT_SC_RIGHT</key>
+		<array>
+			<string>I.as</string>
+			<string>Iacute.as</string>
+			<string>Ibreve.as</string>
+			<string>Icaron.as</string>
+			<string>Icircumflex.as</string>
+			<string>Idieresis.as</string>
+			<string>Idotaccent.as</string>
+			<string>Idotbelow.as</string>
+			<string>Igrave.as</string>
+			<string>Ihoi.as</string>
+			<string>Imacron.as</string>
+			<string>Iogonek.as</string>
+			<string>Iogonekacute.as</string>
+			<string>Itilde.as</string>
 		</array>
 		<key>public.kern2.LAT_I_ALT_UC_RIGHT</key>
 		<array>
@@ -4010,6 +4057,8 @@
 			<string>hcedilla</string>
 			<string>lcat.a</string>
 			<string>lcat</string>
+			<string>hcaron</string>
+			<string>hdot</string>
 		</array>
 		<key>public.kern2.LAT_NAPOSTROPHE_LC_RIGHT</key>
 		<array>
@@ -4324,6 +4373,7 @@
 			<string>u.sups</string>
 			<string>b.sups</string>
 			<string>hhook.sups</string>
+			<string>nsmall.sups</string>
 		</array>
 		<key>public.kern2.LAT_SUPS_N_UC_RIGHT</key>
 		<array>
@@ -4355,6 +4405,7 @@
 			<string>g.supa</string>
 			<string>a.sups</string>
 			<string>eogonek.sups</string>
+			<string>eogonek.supd</string>
 		</array>
 		<key>public.kern2.LAT_SUPS_O_UC_RIGHT</key>
 		<array>

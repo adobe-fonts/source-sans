@@ -990,7 +990,7 @@ feature ccmp { # Glyph Composition  Decomposition
 # feature cv01 sits below feature scmp to enable i > I.as (and similar)
 
 @I_UC_DEFAULT = [ I Igrave Iacute Icircumflex Itilde Idieresis Imacron Ibreve Idotaccent Icaron Ihoi Idotbelow Iogonek Istroke Iogonekacute ];
-@I_UC_ALTERNATE = [ I.a Igrave.a Iacute.a Icircumflex.a Itilde.a Idieresis.a Imacron.a Ibreve.a Idotaccent.a Icaron.a Ihoi.a Idotbelow.a Istroke.a Iogonek.a Istroke.a Iogonekacute.a ];
+@I_UC_ALTERNATE = [ I.a Igrave.a Iacute.a Icircumflex.a Itilde.a Idieresis.a Imacron.a Ibreve.a Idotaccent.a Icaron.a Ihoi.a Idotbelow.a Iogonek.a Istroke.a Iogonekacute.a ];
 # @I_LC_DEFAULT = [ i igrave iacute icircumflex itilde idieresis imacron ibreve idotaccent icaron ihoi idotbelow iogonek iogonekacute ]; # > enable for Source Code Pro
 # @I_LC_ALTERNATE = [ i.a igrave.a iacute.a icircumflex.a itilde.a idieresis.a imacron.a ibreve.a idotaccent.a icaron.a ihoi.a idotbelow.a iogonek.a istroke.a iogonekacute.a ]; # > enable for Source Code Pro
 @IOTA_UC_DEFAULT = [ Iota Iotadieresis Iotamacron Iotabreve ];
@@ -1550,8 +1550,8 @@ include (../../c2sc_smcp.fea); # imports c2sc & smcp features (which are blank f
 
 feature cv01 { # Character Variant 1 — serifed I forms
 
-	@I_SC_DEFAULT = [ I.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Icaron.sc Iogonek.sc Ihoi.sc Idotbelow.sc Istroke.sc Iogonekacute.sc ];
-	@I_SC_ALTERNATE = [ I.as Igrave.as Iacute.as Icircumflex.as Itilde.as Idieresis.as Imacron.as Ibreve.as Idotaccent.as Icaron.as Iogonek.as Ihoi.as Idotbelow.as Istroke.as Iogonekacute.as ];
+#	@I_SC_DEFAULT = [ I.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Icaron.sc Iogonek.sc Ihoi.sc Idotbelow.sc Istroke.sc Iogonekacute.sc ];
+#	@I_SC_ALTERNATE = [ I.as Igrave.as Iacute.as Icircumflex.as Itilde.as Idieresis.as Imacron.as Ibreve.as Idotaccent.as Icaron.as Iogonek.as Ihoi.as Idotbelow.as Istroke.as Iogonekacute.as ];
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1563,9 +1563,9 @@ feature cv01 { # Character Variant 1 — serifed I forms
 		};
 	};
 
-	lookup I_UC_ALTERNATES { # serifed I
-		sub @I_UC_DEFAULT by @I_UC_ALTERNATE;
-	} I_UC_ALTERNATES;
+#	lookup I_UC_ALTERNATES { # serifed I
+#		sub @I_UC_DEFAULT by @I_UC_ALTERNATE;
+#	} I_UC_ALTERNATES;
 
 	# lookup I_LC_ALTERNATES { # includes i & l alternates > enable for Source Code Pro
 	# 	sub @I_LC by @I_LC_ALTERNATES;
