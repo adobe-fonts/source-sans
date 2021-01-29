@@ -1,4 +1,4 @@
-# inlcuded by SourceSans3/familyGSUB.fea
+# inlcuded by /SourceSans3/familyGSUB.fea
 
 feature aalt { # Access All Alternates
 	feature cv01;
@@ -47,3 +47,9 @@ feature aalt { # Access All Alternates
 	feature salt;
 	feature zero;
 } aalt;
+
+# locl IPPH/APPH ----------------------
+
+lookup A_IPA { # ITALIC ONLY substitutes single-storey a with double-storey variants
+	sub a by a; # dummy substitution replaces "a" with itself, perhaps use a less-common glyph?
+} A_IPA;

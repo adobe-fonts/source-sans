@@ -45,3 +45,9 @@ feature aalt { # Access All Alternates
 	feature salt;
 	feature zero;
 } aalt;
+
+# locl IPPH/APPH ----------------------
+
+lookup A_IPA { # ITALIC ONLY substitutes single-storey a with double-storey variants
+	sub [ a a.sups ] by [ a.a a.supa ]; # Minion 3 includes ae
+} A_IPA;

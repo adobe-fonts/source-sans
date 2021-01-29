@@ -141,7 +141,8 @@ lookup MARKS_CMB_CASE {
 
 #--------------------------------------
 # feature aalt (this comment indicates feature order)
-include (../../aalt.fea); # imports aalt feature (which differ between upright and italic)
+
+include (../../aalt.fea); # imports aalt feature & IPPH/APPH lookups which differ between upright and italic
 
 #--------------------------------------
 lookup DECOMPOSITION {
@@ -1132,12 +1133,12 @@ feature cv07 { # Character Variant 7 — Latin N-shaped Eng, Sami preference
 #--------------------------------------
 feature cv08 { # Character Variant 8 — Greek alternates for phonetics
 
-@IPA_LC_GREEK = [ alpha beta gamma iota lambda upsilon phi chi ]; # Minion 3 includes theta
-@IPA_LC_LATIN = [ alphalatin betalatin gammalatin iotalatin lambda.latin upsilonlatin philatin chilatin ];
+@IPA_LC_GREEK = [ alpha beta gamma delta iota lambda upsilon phi chi ]; # Minion 3 includes theta
+@IPA_LC_LATIN = [ alphalatin betalatin gammalatin deltalatin iotalatin lambda.latin upsilonlatin philatin chilatin ];
 
 	cvParameters {
 		FeatUILabelNameID {
-			name 3 1 0x0409 "Greek alternates for phonetics [ \0251 \A7B5 \0263 \0269 \028A \0278 \AB53 ] (IPA)"; # English US: "Alternate Greek letters for phonetics [ ɑ ꞵ ɣ ɩ ʊ ɸ ꭓ ] (IPA)"
+			name 3 1 0x0409 "Greek alternates for phonetics [ \0251 \A7B5 \0263 \0269 \028A \0278 \AB53 ] (IPA)"; # English US: "Alternate Greek letters for phonetics [ ɑ ꞵ ɣ ẟ ɩ ʊ ɸ ꭓ ] (IPA)"
 			name 3 1 0x0809 "Greek alternates for phonetics [ \0251 \A7B5 \0263 \0269 \028A \0278 \AB53 ] (IPA)"; # English GB
 			name 1 0 0 "Greek alternates for phonetics  (IPA)"; # Mac English
 			name 3 1 0x0408 "\0395\03BD\03B1\03BB\03BB\03B1\03BA\03C4\03B9\03BA\03AC \03C6\03C9\03BD\03B7\03C4\03B9\03BA\03AC \03B3\03C1\03AC\03BC\03BC\03B1\03C4\03B1 [ \0251 \A7B5 \0263 \0269 \028A \0278 \AB53 ] (\0394\03A6\0391)"; # Greek: "Εναλλακτικά φωνητικά γράμματα [ ɑ ꞵ ɣ ɩ ʊ ɸ ꭓ ] (ΔΦΑ)"
@@ -1399,7 +1400,11 @@ feature locl { # Localized Forms
 		language SKS include_dflt;
 			lookup ENG_UC_ALTERNATE;
 
-		include (../../locl-IPPH-APPH.fea); # imports IPA lookups (which differ between upright and italic)
+		language IPPH include_dflt;
+			lookup A_IPA; # ITALIC ONLY substitutes single-storey a with double-storey variants
+
+		language APPH include_dflt;
+			lookup A_IPA;
 
 	script grek;
 		sub [ acutecmb gravecmb commaturnedabovecmb commaabovecmb dieresisgrave ] by [ tonoscmb variacmb aspercmb leniscmb dialytikagravecmb ]; # combining marks
@@ -1411,16 +1416,7 @@ feature locl { # Localized Forms
 				sub [ brevecmb brevecmb.cap ] by [ brevecmb.cyr brevecmb.cyrcap ]; # combining marks
 			} CYRILLIC_BREVE;
 
-		language BGR include_dflt; # Bulgarian
-			lookup CYRILLIC_GEOMETRIC_ALTERNATES;
-			lookup CYRILLIC_LC_ASCENDING_ALTERNATES;
-			include (../../locl_BGR.fea); # imports Bulgarian specific lookups (which differ between upright and italic)
-
-		language SRB include_dflt; # Serbian
-			include (../../locl_SRB.fea); # imports Serbians specific lookups (which differ between upright and italic)
-
-		language MKD include_dflt; # Macedonian
-			include (../../locl_MKD.fea); # imports Macedonian specific lookups (which differ between upright and italic)
+	include (../../locl_cyrl.fea); # imports Bulgarian, Serbian & Macedonian specific lookups which differ between upright and italic
 
 } locl;
 
@@ -1548,10 +1544,8 @@ feature titl { # Titling Forms
 # feature smcp (this comment indicates feature order)
 include (../../c2sc_smcp.fea); # imports c2sc & smcp features (which are blank for italic fonts)
 
+#--------------------------------------
 feature cv01 { # Character Variant 1 — serifed I forms
-
-#	@I_SC_DEFAULT = [ I.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Icaron.sc Iogonek.sc Ihoi.sc Idotbelow.sc Istroke.sc Iogonekacute.sc ];
-#	@I_SC_ALTERNATE = [ I.as Igrave.as Iacute.as Icircumflex.as Itilde.as Idieresis.as Imacron.as Ibreve.as Idotaccent.as Icaron.as Iogonek.as Ihoi.as Idotbelow.as Istroke.as Iogonekacute.as ];
 
 	cvParameters {
 		FeatUILabelNameID {
@@ -1563,9 +1557,9 @@ feature cv01 { # Character Variant 1 — serifed I forms
 		};
 	};
 
-#	lookup I_UC_ALTERNATES { # serifed I
-#		sub @I_UC_DEFAULT by @I_UC_ALTERNATE;
-#	} I_UC_ALTERNATES;
+	lookup I_UC_ALTERNATES { # serifed I
+		sub @I_UC_DEFAULT by @I_UC_ALTERNATE;
+	} I_UC_ALTERNATES;
 
 	# lookup I_LC_ALTERNATES { # includes i & l alternates > enable for Source Code Pro
 	# 	sub @I_LC by @I_LC_ALTERNATES;
@@ -1594,9 +1588,7 @@ feature cv01 { # Character Variant 1 — serifed I forms
 		sub @IUKRAN_UC_DEFAULT by @IUKRAN_UC_ALTERNATE;
 	} IUKRAN_UC_ALTERNATES;
 
-	lookup I_SC_ALTERNATES { # serifed I small capitals
-		sub @I_SC_DEFAULT by @I_SC_ALTERNATE;
-	} I_SC_ALTERNATES;
+	lookup I_SC_ALTERNATES; # serifed I small capitals
 
 } cv01;
 
@@ -1611,6 +1603,7 @@ feature ss01 { # Stylistic Set 1 — Latin serifed I
 	};
 
 	lookup I_UC_ALTERNATES;
+	lookup I_SC_ALTERNATES; # serifed I small capitals
 	lookup IOTA_UC_ALTERNATES_1;
 	lookup IOTA_UC_ALTERNATES_2;
 	lookup IUKRAN_UC_ALTERNATES;

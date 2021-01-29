@@ -186,3 +186,10 @@ feature smcp { # LC-->SC
 		language SRB include_dflt; # Serbian
 
 } smcp;
+
+@I_SC_DEFAULT = [ I.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Icaron.sc Iogonek.sc Ihoi.sc Idotbelow.sc Istroke.sc Iogonekacute.sc ];
+@I_SC_ALTERNATE = [ I.as Igrave.as Iacute.as Icircumflex.as Itilde.as Idieresis.as Imacron.as Ibreve.as Idotaccent.as Icaron.as Iogonek.as Ihoi.as Idotbelow.as Istroke.as Iogonekacute.as ];
+
+lookup I_SC_ALTERNATES { # serifed I small capitals
+	sub @I_SC_DEFAULT by @I_SC_ALTERNATE;
+} I_SC_ALTERNATES;
