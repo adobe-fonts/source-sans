@@ -26,6 +26,7 @@
 
 @PUNCTUATION_SMALLCAPS = [ ampersand.sc exclam.sc question.sc exclamdown.sc questiondown.sc interrobang.sc interrobangdown.sc parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc hyphen.sc endash.sc emdash.sc quoteleft.sc quoteright.sc quotedblleft.sc quotedblright.sc quotesingle.sc quotedbl.sc ];
 
+#--------------------------------------
 feature c2sc { # UC-->SC
 
 	sub @LETTERS_MAJUSCULE_LATIN_BASIC by @LETTERS_SMALLCAP_LATIN_BASIC;
@@ -187,6 +188,7 @@ feature smcp { # LC-->SC
 
 } smcp;
 
+#--------------------------------------
 @I_SC_DEFAULT = [ I.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Icaron.sc Iogonek.sc Ihoi.sc Idotbelow.sc Istroke.sc Iogonekacute.sc ];
 @I_SC_ALTERNATE = [ I.as Igrave.as Iacute.as Icircumflex.as Itilde.as Idieresis.as Imacron.as Ibreve.as Idotaccent.as Icaron.as Iogonek.as Ihoi.as Idotbelow.as Istroke.as Iogonekacute.as ];
 

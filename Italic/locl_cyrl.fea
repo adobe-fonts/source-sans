@@ -1,0 +1,24 @@
+# inlcuded by /SourceSans3/familyGSUB.fea
+
+@CYRILLIC_BGR_DEFAULT = [ve de ze];
+@CYRILLIC_BGR_CURSIVE = [ve.c de.c ze.c];
+
+language BGR include_dflt; # Bulgarian
+	lookup CYRILLIC_GEOMETRIC_ALTERNATES;
+	lookup CYRILLIC_LC_ASCENDING_ALTERNATES;
+	lookup BGR_CURSIVE {
+		sub @CYRILLIC_BGR_DEFAULT by @CYRILLIC_BGR_CURSIVE;
+	} BGR_CURSIVE;
+
+@CYRILLIC_SRB_DEFAULT = [ghe de pe te gje];
+@CYRILLIC_SRB_CURSIVE = [ghe.c de.c pe.c te.c gje.c];
+
+language SRB include_dflt; # Serbian
+	lookup CYRILLIC_BE_LC_CURSIVE;
+	lookup SRB_CURSIVE {
+		sub @CYRILLIC_SRB_DEFAULT by @CYRILLIC_SRB_CURSIVE;
+	} SRB_CURSIVE;
+
+language MKD include_dflt; # Macedonian
+	lookup CYRILLIC_BE_LC_CURSIVE;
+	lookup SRB_CURSIVE;
