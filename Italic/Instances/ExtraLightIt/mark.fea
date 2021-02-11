@@ -4,7 +4,7 @@ lookup MARK_BASE_above {
 	@bGC_A_above = [ A T Aogonek Aogonek.d Tbar Acyr Ya ];
 	@bGC_B_above = [ B D E F P Ghook Ghe Ie Ka Ka.a ];
 	@bGC_C_above = [ C U Uogonek Uhorn Schwa Icyr Ieukran Schwacyr ];
-	@bGC_G_above = [ G O Q Oogonek Oslash Ocyr Fita Obarcyr ];
+	@bGC_G_above = [ G O Q Oogonek Oslash Theta Ocyr Fita Obarcyr ];
 	@bGC_I_above = [ I Iogonek Iukran ];
 	@bGC_L_above = [ L i ];
 	@bGC_N_above = [ N Eng Eng.a ];
@@ -14,7 +14,7 @@ lookup MARK_BASE_above {
 	@bGC_a_above = [ a g u aogonek aogonek.d uogonek uogonek.d uhorn aturned alphalatin chilatin gscript hturned hsmall ubar vhook a.b aogonek.b aogonek.f aturned.b eta acyr icyr acyr.b icyr.c ];
 	@bGC_b_above = [ b thorn bhook ];
 	@bGC_c_above = [ c e eogonek eogonek.d bsmall kturned nsmall rsmallinverted upsilonlatin upsilonstroke ie ];
-	@bGC_d_above = [ d k dtail dhook ];
+	@bGC_d_above = [ d k dtail dhook theta.a ];
 	@bGC_f_above = [ f longs esh dotlessjstrokehook glottalstop florin ];
 	@bGC_h_above = [ h hhook henghook tesh ];
 	@bGC_l_above = [ l lretroflex lslash.a ];
@@ -22,7 +22,7 @@ lookup MARK_BASE_above {
 	@bGC_n_above = [ n o oslash ohorn eng eopenreversedclosed gsmall nhookleft nretroflex obar alpha omicron koppa ocyr obarcyr ];
 	@bGC_p_above = [ p rho ];
 	@bGC_q_above = [ q oogonek ];
-	@bGC_s_above = [ s v y gammalatin rturned rhookturned shook vturned ezh ucyr che izhitsa ustraight ustraightstroke ];
+	@bGC_s_above = [ s v x y gammalatin rturned rhookturned shook vturned ezh ucyr che izhitsa ustraight ustraightstroke ];
 	@bGC_t_above = [ t tbar ];
 	@bGC_z_above = [ z glottalstoplatin schwahookrhotic eopenreversed zretroflex zcurl ghe ];
 	@bGC_AE_above = [ AE Aie ];
@@ -46,6 +46,7 @@ lookup MARK_BASE_above {
 	@bGC_ts_above = [ ts tshook ];
 	@bGC_wturned_above = [ wturned zhe zhe.a ];
 	@bGC_clickretroflex_above = [ clickretroflex l.a ];
+	@bGC_clickbilabial_above = [ clickbilabial theta ];
 	@bGC_apicaldental_above = [ apicaldental apicalretroflex ];
 	@bGC_I.a_above = [ I.a Iogonek.a Istroke.a ];
 	@bGC_Zhe_above = [ Zhe Zhe.a ];
@@ -94,6 +95,7 @@ lookup MARK_BASE_above {
 	pos base @bGC_ts_above <anchor 330 632> mark @MC_above;
 	pos base @bGC_wturned_above <anchor 390 502> mark @MC_above;
 	pos base @bGC_clickretroflex_above <anchor 200 732> mark @MC_above;
+	pos base @bGC_clickbilabial_above <anchor 330 732> mark @MC_above;
 	pos base @bGC_apicaldental_above <anchor 140 502> mark @MC_above;
 	pos base @bGC_I.a_above <anchor 230 682> mark @MC_above;
 	pos base @bGC_Zhe_above <anchor 470 682> mark @MC_above;
@@ -106,7 +108,6 @@ lookup MARK_BASE_above {
 	pos base j <anchor 198 682> mark @MC_above;
 	pos base r <anchor 236 502> mark @MC_above;
 	pos base w <anchor 370 502> mark @MC_above;
-	pos base x <anchor 252 52> mark @MC_above;
 	pos base Amacron <anchor 350 782> mark @MC_above;
 	pos base Dhook <anchor 454 682> mark @MC_above;
 	pos base Emacron <anchor 370 782> mark @MC_above;
@@ -132,7 +133,6 @@ lookup MARK_BASE_above {
 	pos base glottalstopstroke <anchor 290 732> mark @MC_above;
 	pos base glottalstopstrokereversed <anchor 310 732> mark @MC_above;
 	pos base clickalveolar <anchor 246 732> mark @MC_above;
-	pos base clickbilabial <anchor 330 732> mark @MC_above;
 	pos base Imacron.a <anchor 250 782> mark @MC_above;
 	pos base g.a <anchor 276 502> mark @MC_above;
 	pos base iogonek.x <anchor 166 502> mark @MC_above;
@@ -194,9 +194,9 @@ lookup MARK_BASE_below {
 	@bGC_M_below = [ M ts tccurl wturned ];
 	@bGC_P_below = [ P f i igrave iacute icircumflex imacron ibreve icaron dotlessi longs iotalatin rturned rlonglegturned l.a eta ];
 	@bGC_T_below = [ T o Tbar ograve oacute ocircumflex omacron obreve ocaron oslash ereversed obar rsmallinverted ain clickbilabial ];
-	@bGC_V_below = [ V s v Glottalstop eopen eopenreversed ];
+	@bGC_V_below = [ V s v z Glottalstop eopen eopenreversed ];
 	@bGC_X_below = [ X Eturned schwahookrhotic lsmall lambda.latin lambdastroke vturned yturned glottalstopstrokereversed ];
-	@bGC_Y_below = [ Y t tbar ];
+	@bGC_Y_below = [ Y t x tbar ];
 	@bGC_c_below = [ c dtail dhook vhook a.a agrave.a aacute.a acircumflex.a amacron.a abreve.a acaron.a alpha w.sups ];
 	@bGC_g_below = [ g ghook gscript hturned tesh ];
 	@bGC_l_below = [ l lslash.a ];
@@ -251,9 +251,7 @@ lookup MARK_BASE_below {
 	pos base k <anchor 208 -22> mark @MC_below;
 	pos base p <anchor 20 -222> mark @MC_below;
 	pos base q <anchor 330 -222> mark @MC_below;
-	pos base x <anchor 152 -22> mark @MC_below;
 	pos base y <anchor 88 -242> mark @MC_below;
-	pos base z <anchor 164 -22> mark @MC_below;
 	pos base Dhook <anchor 333 -22> mark @MC_below;
 	pos base ae <anchor 340 -22> mark @MC_below;
 	pos base istroke <anchor 68 -22> mark @MC_below;
