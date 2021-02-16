@@ -1,12 +1,12 @@
 # Source Sans Pro
 
-[Source Sans Pro](http://adobe-fonts.github.io/source-sans-pro/)
+[Source Sans Pro](http://adobe-fonts.github.io/source-sans/)
 is a set of OpenType fonts that have been designed to work well
 in user interface (UI) environments.
 
 ## Getting involved
 
-[Open an issue](https://github.com/adobe-fonts/source-sans-pro/issues) or send a suggestion to Source Sans' designer [Paul D. Hunt](mailto:opensourcefonts@adobe.com?subject=[GitHub]%20Source%20Sans%20Pro), for consideration.
+[Open an issue](https://github.com/adobe-fonts/source-sans/issues) or send a suggestion to Source Sans' designer [Paul D. Hunt](mailto:opensourcefonts@adobe.com?subject=[GitHub]%20Source%20Sans%20Pro), for consideration.
 
 ## Releases
 
