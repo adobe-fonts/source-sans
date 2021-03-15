@@ -682,6 +682,12 @@ feature ccmp { # Glyph Composition  Decomposition
 		sub ij acutecmb by ijacute;
 		sub IJ acutecmb by IJacute;
 		sub schwa hookrhoticmod by schwahookrhotic;
+		sub a [slashshortcmb slashlongcmb] by astroke;
+		sub c [slashshortcmb slashlongcmb] by cstroke;
+		sub t [slashshortcmb slashlongcmb] by tstroke;
+		sub A [slashshortcmb slashlongcmb] by Astroke;
+		sub C [slashshortcmb slashlongcmb] by Cstroke;
+		sub T [slashshortcmb slashlongcmb] by Tstroke;
 	} GLYPH_COMPOSITION_LATIN_NONCONTEXTUAL;
 
 	lookup GLYPH_COMPOSITION_GREEK_POLYTONIC { #to add: Greek localized combining marks
