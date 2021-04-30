@@ -5,25 +5,26 @@
 	<outline>
 		<contour>
 			<point name="hintSet0000" x="232" y="564" type="curve"/>
-			<point x="244" y="630" type="line"/>
+			<point name="hintSet0001" x="244" y="630" type="line"/>
 			<point x="225" y="636"/>
 			<point x="214" y="646"/>
 			<point x="214" y="668" type="curve"/>
 			<point x="214" y="690"/>
 			<point x="232" y="708"/>
 			<point x="282" y="712" type="curve"/>
-			<point x="274" y="806" type="line"/>
+			<point name="hintSet0004" x="274" y="806" type="line"/>
 			<point x="154" y="802"/>
 			<point x="92" y="758"/>
 			<point x="92" y="686" type="curve"/>
-			<point x="92" y="606"/>
+			<point name="hintSet0006" x="92" y="606"/>
 			<point x="170" y="572"/>
 		</contour>
 		<contour>
-			<point x="402" y="556" type="line"/>
-			<point x="474" y="776" type="line"/>
-			<point x="338" y="802" type="line"/>
-			<point x="308" y="574" type="line"/>
+			<point x="310" y="572" type="line"/>
+			<point x="400" y="572" type="line"/>
+			<point x="480" y="776" type="line"/>
+			<point x="470" y="794" type="line"/>
+			<point x="330" y="794" type="line"/>
 		</contour>
 	</outline>
 	<lib>
@@ -37,13 +38,40 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
+							<string>hstem 572 222</string>
+							<string>vstem 92 122</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 712 82</string>
+							<string>vstem 92 122</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0004</string>
+						<key>stems</key>
+						<array>
 							<string>hstem 712 94</string>
+							<string>vstem 92 122</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 572 222</string>
 							<string>vstem 92 122</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>w560c232564l244630225636214646c214668214690232708c282712l27480615480292758c9268692606170572l402556l474776l338802l308574</string>
+				<string>w560c232564l244630225636214646c214668214690232708c282712l27480615480292758c9268692606170572l310572l400572l480776l470794l330794</string>
 			</dict>
 		</dict>
 	</lib>

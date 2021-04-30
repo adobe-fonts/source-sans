@@ -3,14 +3,14 @@
 	<unicode hex="032C"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="-128" y="-240" type="line"/>
-			<point x="48" y="-240" type="line"/>
-			<point x="176" y="-116" type="line"/>
-			<point x="122" y="-52" type="line"/>
-			<point x="-28" y="-140" type="line"/>
-			<point x="-32" y="-140" type="line"/>
-			<point x="-142" y="-52" type="line"/>
-			<point x="-212" y="-112" type="line"/>
+			<point name="hintSet0000" x="-120" y="-250" type="line"/>
+			<point x="40" y="-250" type="line"/>
+			<point x="200" y="-50" type="line"/>
+			<point x="70" y="-50" type="line"/>
+			<point name="hintSet0004" x="-24" y="-138" type="line"/>
+			<point x="-28" y="-138" type="line"/>
+			<point name="hintSet0006" x="-80" y="-50" type="line"/>
+			<point x="-200" y="-50" type="line"/>
 		</contour>
 	</outline>
 	<anchor name="_belowLC" x="0" y="-22"/>
@@ -25,13 +25,31 @@
 						<string>hintSet0000</string>
 						<key>stems</key>
 						<array>
-							<string>hstem -240 100</string>
-							<string>vstem -212 388</string>
+							<string>hstem -250 200</string>
+							<string>vstem -200 400</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0004</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -250 112</string>
+							<string>vstem -200 400</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintSet0006</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -250 200</string>
+							<string>vstem -200 400</string>
 						</array>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>w0l-128-240l48-240l176-116l122-52l-28-140l-32-140l-142-52l-212-112</string>
+				<string>w0l-120-250l40-250l200-50l70-50l-24-138l-28-138l-80-50l-200-50</string>
 			</dict>
 		</dict>
 	</lib>
