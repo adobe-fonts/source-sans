@@ -1871,25 +1871,11 @@ feature zero {
 @BREVE_INV = [breveinverteddoublecmb breveinverteddoublecmb.a];
 
 feature liga { # Standard Ligatures
-	lookup F_LIGAUTRES { # standard ligatures
+	lookup F_LIGATURES { # standard ligatures
 		sub f f t by f_f_t;
 		sub f f by f_f;
 		sub f t by f_t;
-	} F_LIGAUTRES;
-
-	lookup IPA_LIGAUTRES { # replaces glyphs joined with tie by corresponding ligatures
-		lookupflag 0;
-		sub d @BREVE_INV z by dzed;
-		sub d @BREVE_INV ezh by dezh;
-		sub d @BREVE_INV zcurl by dzcurl;
-		sub d @BREVE_INV zretroflex by dzretroflex;
-		sub l @BREVE_INV ezh by lezh;
-		sub t @BREVE_INV s by ts;
-		sub t @BREVE_INV esh by tesh;
-		sub t @BREVE_INV ccurl by tccurl;
-		sub t @BREVE_INV shook by tshook;
-	} IPA_LIGAUTRES;
-
+	} F_LIGATURES;
 } liga;
 
 feature hlig { # Historical Ligatures
