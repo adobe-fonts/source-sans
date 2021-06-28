@@ -1,8 +1,24 @@
+version 3.042 created 2021/06/08
+	Redesigns a majority of diacritics.
+	Assigns codepoint U+A7AE to I.a. (GitHub issue #211)
+	Adds support for polytonic Greek tagging so that acute/tonos and grave are harmonized. (GitHub issue #214)
+	Adds IPA characters requested by user. (GitHub issue #215)
+		LATIN SMALL LETTER REVERSED OPEN E WITH HOOK (U+025D)
+		LATIN LETTER SMALL CAPITAL G WITH HOOK (U+029B)
+		LATIN SMALL LETTER M WITH MIDDLE TILDE (U+1D6F)
+		LATIN SMALL LETTER N WITH MIDDLE TILDE (U+1D70)
+		LATIN SMALL LETTER V WITH RIGHT HOOK (U+2C71)
+		LATIN LETTER DENTAL CLICK (U+01C0)
+		LATIN LETTER LATERAL CLICK (U+01C1)
+		MODIFIER LETTER SMALL TURNED R (U+02B4)
+		COMBINING DOUBLE BREVE BELOW (U+035C)
+
+
 version 3.032 created 2021/02/11
 	Adds support for macron over macron. (GitHub issue #159)
 	Corrects placement for combining dot above right with other diacritics. (GitHub issue #178)
 	Adds small capital variants for majuscule I with slab serifs. (GitHub issue #190)
-	Adds four non-standard IPA characters. (GitHub issue #195)
+	Adds four characters for phonetic transcription. (GitHub issue #195)
 		LATIN SMALL CAPITAL LETTER I WITH STROKE (U+1D7B) 
 		LATIN SMALL LETTER UPSILON WITH STROKE (U+1D7F)
 		LATIN SMALL LETTER REVERSED R WITH FISHHOOK (U+027F) 
@@ -11,7 +27,7 @@ version 3.032 created 2021/02/11
 	Fixes right sidebearing on LATIN SMALL LETTER OPEN E (U+025B). (GitHub issue #199)
 	Adds MODIFIER LETTER SMALL CAPITAL N (U+1DB0). (GitHub issue #202)
 	Adds Unicode values to superscript majuscules. (GitHub issue #202)
-	Adds new characters related to copyright.
+	Adds new characters related to copyright: (GitHub issue #206)
 		CIRCLED ZERO WITH SLASH (U+1F10D)
 		CIRCLED ANTICLOCKWISE ARROW (U+1F10E)
 		CIRCLED DOLLAR SIGN WITH OVERLAID BACKSLASH (U+1F10F)
@@ -19,10 +35,10 @@ version 3.032 created 2021/02/11
 		CIRCLED CC (U+1F16D)
 		CIRCLED C WITH OVERLAID BACKSLASH (U+1F16E)
 		CIRCLED HUMAN FIGURE (U+1F16F)
-	Adds support for Iñupiaq orthographies by adding GPOS anchors to:
+	Adds support for Iñupiaq orthographies by adding GPOS anchors to: (GitHub issue #207)
 		LATIN CAPITAL LETTER L WITH STROKE (U+0141) 
 		LATIN SMALL LETTER L WITH STROKE (U+0142)
-	Adds the following characters to support Lakota orthographies:
+	Adds the following characters to support Lakota orthographies: (GitHub issue #208)
 		LATIN CAPITAL LETTER H WITH CARON (U+021E)
 		LATIN SMALL LETTER H WITH CARON (U+021F)
 		LATIN CAPITAL LETTER H WITH DOT ABOVE (U+1E22)
