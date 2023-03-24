@@ -72,7 +72,7 @@ $ ./buildVFs.sh
 
 ### Building with `make`
 
-If you want to build directly from masters instead of the instances stored in
+If you want to build directly from poles instead of the instances stored in
 the repository, or to avoid building all files repetitively, run:
 
 ```sh
@@ -80,14 +80,14 @@ $ make
 ```
 
 and it will get everything up to date. To generate only the font.ufo instances
-from the masters, run:
+from the poles, run:
 
 ```sh
 $ make instances
 ```
 
 _Note: because font.ufo instances are stored in the repository, you may have to
-delete them first from your working tree before building from masters; see
+delete them first from your working tree before building from poles; see
 below._
 
 To clean up `makeotf`'s defaults and other log files, run:
