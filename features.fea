@@ -1,13 +1,59 @@
-include (../../../familyTables.fea);
+table head {
+	FontRevision 3.048;
+} head;
+
+table hhea {
+	# NOTE: The OS/2.winAscent and OS/2.winDescent values are set by MakeOTF and vary depending on the font's bounding box
+	Ascender 1000;		# Must match OS/2.winAscent for cross-platform consistency
+	Descender -326;		# Must match OS/2.winDescent for cross-platform consistency
+	LineGap 0;			# Must be zero for cross-platform consistency
+} hhea;
 
 table OS/2 {
+	# NOTE: For cross-platform consistency, OS/2.TypoAscender and |OS/2.TypoDescender| must add up to the font's UPM value
+
 	include (../os2.fea);
-	include (../../../familyOS2.fea);
+
+	TypoAscender 1000;	# Must be the same on all fonts for cross-platform consistency
+	TypoDescender -326;	# Must be the same on all fonts for cross-platform consistency
+	TypoLineGap 0;		# Must be zero for cross-platform consistency
+	winAscent 1000;		# Must be the same on all fonts for cross-weight consistency
+	winDescent 326;		# Must be the same on all fonts for cross-weight consistency
+
+	CapHeight 660;
+	WidthClass 5;		# Medium (normal)
+	Vendor "ADBO";
+	FSType 0;
+
+	UnicodeRange 0  # Basic Latin
+				 1  # Latin-1 Supplement
+				 2  # Latin Extended-A
+				 3  # Latin Extended-B
+				 4  # IPA Extensions
+				 5  # Spacing Modifier Letters
+				 6  # Combining Diacritical Marks
+				 7  # Greek
+				 9  # Cyrillic
+				 29 # Latin Extended Additional
+				 31 # General Punctuation
+				 32 # Superscripts and Subscripts
+				 30 # Greek Extended
+				 33 # Currency Symbols
+				 45; # Geometric Shapes
 } OS/2;
 
 table name {
 	include (../../../../familynameIDs.fea);
 } name;
+
+table BASE {
+	HorizAxis.BaseTagList ideo romn;
+	HorizAxis.BaseScriptList
+	latn romn -170 0,
+	grek romn -170 0,
+	cyrl romn -170 0,
+	DFLT romn -170 0;
+} BASE;
 
 include (../../../familyGSUB.fea);
 include (../../../familyGPOS.fea);
