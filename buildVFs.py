@@ -76,7 +76,7 @@ def build_vf(args, slope):
         # --mkot to set makeotf options:
         # gs to omit glyphs not in the GOADB
         # osv 4 to write os/2 table v4
-        ['buildpoleotfs', '--mkot', '-gs,-osv,4', '-d', designspace_file],
+        ['buildmasterotfs', '--mkot', '-gs,-osv,4', '-d', designspace_file],
         stdout=STDOUT,
         stderr=STDERR
     )
@@ -125,7 +125,7 @@ def build_vf(args, slope):
     subprocess.call([
         'fontmake', '-m', designspace_file, '-o', 'variable',
         '--production-names', '--output-path', output_ttf,
-        '--feature-writer', 'None'],
+        '--feature-writer', 'None', '--no-check-compatibility'],
         stdout=STDOUT,
         stderr=STDERR
     )
