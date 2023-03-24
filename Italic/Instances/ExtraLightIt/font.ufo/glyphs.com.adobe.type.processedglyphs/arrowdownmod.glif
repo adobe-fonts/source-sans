@@ -1,38 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="arrowdownmod" format="2">
-	<unicode hex="A71C"/>
-	<advance width="202"/>
-	<outline>
-		<contour>
-			<point name="hintSet0000" x="140" y="482" type="line"/>
-			<point x="146" y="482" type="line"/>
-			<point x="226" y="598" type="line"/>
-			<point x="178" y="598" type="line"/>
-			<point x="208" y="722" type="line"/>
-			<point x="178" y="722" type="line"/>
-			<point x="154" y="598" type="line"/>
-			<point x="110" y="598" type="line"/>
-		</contour>
-	</outline>
-	<lib>
-		<dict>
-			<key>com.adobe.type.autohint.v2</key>
-			<dict>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0000</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 482 116</string>
-							<string>vstem 110 116</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>w202l140482l146482l226598l178598l208722l178722l154598l110598</string>
-			</dict>
-		</dict>
-	</lib>
+  <advance width="202"/>
+  <unicode hex="A71C"/>
+  <outline>
+    <contour>
+      <point x="140" y="482" type="line" name="hintRef0000"/>
+      <point x="146" y="482" type="line"/>
+      <point x="226" y="598" type="line"/>
+      <point x="178" y="598" type="line"/>
+      <point x="208" y="722" type="line" name="hintRef0001"/>
+      <point x="178" y="722" type="line"/>
+      <point x="154" y="598" type="line" name="hintRef0002"/>
+      <point x="110" y="598" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 482 116</string>
+              <string>vstem 110 116</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 482 240</string>
+              <string>vstem 110 116</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0002</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 482 116</string>
+              <string>vstem 110 116</string>
+            </array>
+          </dict>
+        </array>
+        <key>id</key>
+        <string>w202l140482l146482l226598l178598l208722l178722l154598l110598</string>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

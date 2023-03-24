@@ -1,48 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ldot.a" format="2">
-	<advance width="278"/>
-	<outline>
-		<contour>
-			<point name="hintSet0000" x="40" y="0" type="line"/>
-			<point x="82" y="0" type="line"/>
-			<point x="225" y="719" type="line"/>
-			<point x="184" y="719" type="line"/>
-		</contour>
-		<contour>
-			<point x="258" y="285" type="curve"/>
-			<point x="285" y="285"/>
-			<point x="305" y="310"/>
-			<point x="305" y="336" type="curve"/>
-			<point x="305" y="357"/>
-			<point x="295" y="373"/>
-			<point x="274" y="373" type="curve"/>
-			<point x="248" y="373"/>
-			<point x="225" y="346"/>
-			<point x="225" y="320" type="curve"/>
-			<point x="225" y="301"/>
-			<point x="237" y="285"/>
-		</contour>
-	</outline>
-	<lib>
-		<dict>
-			<key>com.adobe.type.autohint.v2</key>
-			<dict>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0000</string>
-						<key>stems</key>
-						<array>
-							<string>hstem 21 -21</string>
-							<string>hstem 719 -20</string>
-							<string>vstem 225 80</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>w278l400l820l225719l184719c258285285285305310c305336305357295373c274373248373225346c225320225301237285</string>
-			</dict>
-		</dict>
-	</lib>
+  <advance width="278"/>
+  <outline>
+    <contour>
+      <point x="40" y="0" type="line" name="hintRef0000"/>
+      <point x="82" y="0" type="line"/>
+      <point x="225" y="719" type="line"/>
+      <point x="184" y="719" type="line"/>
+    </contour>
+    <contour>
+      <point x="258" y="285" type="curve"/>
+      <point x="285" y="285"/>
+      <point x="305" y="310"/>
+      <point x="305" y="336" type="curve"/>
+      <point x="305" y="357" name="hintRef0001"/>
+      <point x="295" y="373"/>
+      <point x="274" y="373" type="curve"/>
+      <point x="248" y="373"/>
+      <point x="225" y="346"/>
+      <point x="225" y="320" type="curve"/>
+      <point x="225" y="301"/>
+      <point x="237" y="285"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 285 88</string>
+              <string>hstem 719 -20</string>
+              <string>vstem 40 265</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem 21 -21</string>
+              <string>hstem 285 88</string>
+              <string>hstem 719 -20</string>
+              <string>vstem 225 80</string>
+            </array>
+          </dict>
+        </array>
+        <key>id</key>
+        <string>w278l400l820l225719l184719c258285285285305310c305336305357295373c274373248373225346c225320225301237285</string>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

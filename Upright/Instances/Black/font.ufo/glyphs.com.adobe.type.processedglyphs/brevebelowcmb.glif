@@ -1,44 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="brevebelowcmb" format="2">
-	<unicode hex="032E"/>
-	<outline>
-		<contour>
-			<point name="hintSet0000" x="0" y="-238" type="curve"/>
-			<point x="118" y="-238"/>
-			<point x="172" y="-172"/>
-			<point x="174" y="-78" type="curve"/>
-			<point x="78" y="-62" type="line"/>
-			<point x="72" y="-102"/>
-			<point x="48" y="-132"/>
-			<point x="0" y="-132" type="curve"/>
-			<point x="-48" y="-132"/>
-			<point x="-72" y="-102"/>
-			<point x="-78" y="-62" type="curve"/>
-			<point x="-174" y="-78" type="line"/>
-			<point x="-172" y="-172"/>
-			<point x="-117" y="-238"/>
-		</contour>
-	</outline>
-	<anchor name="_belowLC" x="0" y="-22"/>
-	<lib>
-		<dict>
-			<key>com.adobe.type.autohint.v2</key>
-			<dict>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0000</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -238 106</string>
-							<string>vstem 78 96</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>w0c0-238118-238172-172c174-78l78-6272-10248-132c0-132-48-132-72-102c-78-62l-174-78-172-172-117-238</string>
-			</dict>
-		</dict>
-	</lib>
+  <unicode hex="032E"/>
+  <anchor x="0" y="-22" name="_belowLC"/>
+  <outline>
+    <contour>
+      <point x="0" y="-238" type="curve" name="hintRef0000"/>
+      <point x="118" y="-238"/>
+      <point x="172" y="-172"/>
+      <point x="174" y="-78" type="curve"/>
+      <point x="78" y="-62" type="line" name="hintRef0001"/>
+      <point x="72" y="-102"/>
+      <point x="48" y="-132"/>
+      <point x="0" y="-132" type="curve"/>
+      <point x="-48" y="-132"/>
+      <point x="-72" y="-102"/>
+      <point x="-78" y="-62" type="curve"/>
+      <point x="-174" y="-78" type="line" name="hintRef0002"/>
+      <point x="-172" y="-172"/>
+      <point x="-117" y="-238"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -238 106</string>
+              <string>vstem -174 348</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -238 106</string>
+              <string>vstem 78 96</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0002</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -238 106</string>
+              <string>vstem -174 348</string>
+            </array>
+          </dict>
+        </array>
+        <key>id</key>
+        <string>w0c0-238118-238172-172c174-78l78-6272-10248-132c0-132-48-132-72-102c-78-62l-174-78-172-172-117-238</string>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

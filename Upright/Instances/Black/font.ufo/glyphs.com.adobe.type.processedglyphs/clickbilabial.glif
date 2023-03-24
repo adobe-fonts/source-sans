@@ -1,88 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="clickbilabial" format="2">
-	<unicode hex="0298"/>
-	<advance width="568"/>
-	<outline>
-		<contour>
-			<point name="hintSet0000" x="284" y="-12" type="curve"/>
-			<point x="424" y="-12"/>
-			<point x="524" y="110"/>
-			<point x="524" y="350" type="curve"/>
-			<point x="524" y="595"/>
-			<point x="424" y="708"/>
-			<point x="284" y="708" type="curve"/>
-			<point x="144" y="708"/>
-			<point x="44" y="596"/>
-			<point x="44" y="350" type="curve"/>
-			<point x="44" y="110"/>
-			<point x="144" y="-12"/>
-		</contour>
-		<contour>
-			<point x="284" y="126" type="curve"/>
-			<point x="244" y="126"/>
-			<point x="200" y="174"/>
-			<point x="200" y="350" type="curve"/>
-			<point x="200" y="524"/>
-			<point x="244" y="570"/>
-			<point x="284" y="570" type="curve"/>
-			<point x="324" y="570"/>
-			<point x="368" y="524"/>
-			<point x="368" y="350" type="curve"/>
-			<point x="368" y="174"/>
-			<point x="324" y="126"/>
-		</contour>
-		<contour>
-			<point name="hintSet0010" x="284" y="282" type="curve"/>
-			<point x="322" y="282"/>
-			<point x="354" y="313"/>
-			<point x="354" y="351" type="curve"/>
-			<point x="354" y="389"/>
-			<point x="322" y="420"/>
-			<point x="284" y="420" type="curve"/>
-			<point x="246" y="420"/>
-			<point x="214" y="389"/>
-			<point x="214" y="351" type="curve"/>
-			<point x="214" y="313"/>
-			<point x="246" y="282"/>
-		</contour>
-	</outline>
-	<anchor name="aboveUC" x="284" y="722"/>
-	<anchor name="belowLC" x="284" y="-22"/>
-	<lib>
-		<dict>
-			<key>com.adobe.type.autohint.v2</key>
-			<dict>
-				<key>hintSetList</key>
-				<array>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0000</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -12 138</string>
-							<string>hstem 282 138</string>
-							<string>hstem 570 138</string>
-							<string>vstem 44 156</string>
-							<string>vstem 368 156</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0010</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -12 138</string>
-							<string>hstem 282 138</string>
-							<string>hstem 570 138</string>
-							<string>vstem 44 156</string>
-							<string>vstem 214 140</string>
-							<string>vstem 368 156</string>
-						</array>
-					</dict>
-				</array>
-				<key>id</key>
-				<string>aee07d2c139ddabce8927cc57fd484797547058f22307970ba29e96c3a0d3bf343fb65ff046ee0cf219020cfddb59e43b0e90916fd1e4354ca15635af8bfec9b</string>
-			</dict>
-		</dict>
-	</lib>
+  <advance width="568"/>
+  <unicode hex="0298"/>
+  <anchor x="284" y="722" name="aboveUC"/>
+  <anchor x="284" y="-22" name="belowLC"/>
+  <outline>
+    <contour>
+      <point x="284" y="-12" type="curve" name="hintRef0000"/>
+      <point x="424" y="-12"/>
+      <point x="524" y="110"/>
+      <point x="524" y="350" type="curve"/>
+      <point x="524" y="595"/>
+      <point x="424" y="708"/>
+      <point x="284" y="708" type="curve"/>
+      <point x="144" y="708"/>
+      <point x="44" y="596"/>
+      <point x="44" y="350" type="curve"/>
+      <point x="44" y="110"/>
+      <point x="144" y="-12"/>
+    </contour>
+    <contour>
+      <point x="284" y="126" type="curve"/>
+      <point x="244" y="126"/>
+      <point x="200" y="174"/>
+      <point x="200" y="350" type="curve"/>
+      <point x="200" y="524"/>
+      <point x="244" y="570"/>
+      <point x="284" y="570" type="curve"/>
+      <point x="324" y="570"/>
+      <point x="368" y="524"/>
+      <point x="368" y="350" type="curve"/>
+      <point x="368" y="174"/>
+      <point x="324" y="126"/>
+    </contour>
+    <contour>
+      <point x="284" y="282" type="curve"/>
+      <point x="322" y="282" name="hintRef0001"/>
+      <point x="354" y="313"/>
+      <point x="354" y="351" type="curve"/>
+      <point x="354" y="389"/>
+      <point x="322" y="420"/>
+      <point x="284" y="420" type="curve"/>
+      <point x="246" y="420"/>
+      <point x="214" y="389"/>
+      <point x="214" y="351" type="curve"/>
+      <point x="214" y="313"/>
+      <point x="246" y="282"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 138</string>
+              <string>hstem 282 138</string>
+              <string>hstem 570 138</string>
+              <string>vstem 44 156</string>
+              <string>vstem 368 156</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintRef0001</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -12 138</string>
+              <string>hstem 282 138</string>
+              <string>hstem 570 138</string>
+              <string>vstem 214 140</string>
+            </array>
+          </dict>
+        </array>
+        <key>id</key>
+        <string>aee07d2c139ddabce8927cc57fd484797547058f22307970ba29e96c3a0d3bf343fb65ff046ee0cf219020cfddb59e43b0e90916fd1e4354ca15635af8bfec9b</string>
+      </dict>
+    </dict>
+  </lib>
 </glyph>
