@@ -2,7 +2,7 @@
 # -*- indent-tabs-mode: t; -*-
 # by Al Nikolov <root@toor.fi.eu.org>
 
-dnames = $(wildcard $(addsuffix /Instances/*,Roman Italic))
+dnames = $(wildcard $(addsuffix /Instances/*,Upright Italic))
 fnames = $(addsuffix .otf,$(addprefix /SourceSans3-,$(notdir $(dnames))))
 wholenames = $(join $(dnames),$(fnames))
 out_pat = -name \*.[ot]tf

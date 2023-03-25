@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-Build script for Variable Fonts
+Build script for Variable Fonts (VF)
 '''
 
 from pathlib import Path
@@ -121,7 +121,7 @@ def build_vf(args, slope):
             stderr=STDERR
         )
 
-    # build variable TTF with fontmake.
+    # build VF TTF with fontmake.
     subprocess.call([
         'fontmake', '-m', designspace_file, '-o', 'variable',
         '--production-names', '--output-path', output_ttf,
@@ -153,9 +153,9 @@ def build_vf(args, slope):
 
     # move font files to target directory
     if output_otf.exists():
-        shutil.move(output_otf, var_dir)
+        shutil.move(output_otf, vf_dir)
     if output_ttf.exists():
-        shutil.move(output_ttf, var_dir)
+        shutil.move(output_ttf, vf_dir)
 
     # delete build artifacts
     if not args.debug:
@@ -167,17 +167,17 @@ if __name__ == '__main__':
     slopes = ['Upright', 'Italic']
 
     if args.hinted:
-        output_dir_name = 'VAR_hinted'
+        output_dir_name = 'VF_hinted'
     else:
-        output_dir_name = 'VAR'
+        output_dir_name = 'VF'
 
-    var_dir = ROOT_DIR.joinpath('target', output_dir_name)
+    vf_dir = ROOT_DIR.joinpath('target', output_dir_name)
 
     # clean existing target directory
-    if var_dir.exists():
-        subprocess.call(['rm', '-rf', var_dir])
+    if vf_dir.exists():
+        subprocess.call(['rm', '-rf', vf_dir])
     # build target directory
-    var_dir.mkdir(parents=True)
+    vf_dir.mkdir(parents=True)
 
     for slope in slopes:
         build_vf(args, slope)
