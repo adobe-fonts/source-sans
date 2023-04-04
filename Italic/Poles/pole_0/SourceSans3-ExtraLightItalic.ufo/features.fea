@@ -1,0 +1,24 @@
+include (../../../featuresVF.fea);
+
+table OS/2 {
+	include (../../Instances/ExtraLightIt/os2.fea);
+	include (../../../familyOS2.fea);
+} OS/2;
+
+
+# GPOS -----------------------------------
+include (../../Instances/ExtraLightIt/markclasses.fea);
+
+feature mark {
+	include (../../Instances/ExtraLightIt/mark.fea);
+} mark;
+
+
+feature mkmk {
+	include (../../Instances/ExtraLightIt/mkmk.fea);
+} mkmk;
+
+
+feature kern {
+	include (../../Instances/ExtraLightIt/kern.fea);
+} kern;

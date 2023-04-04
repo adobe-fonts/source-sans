@@ -2,22 +2,22 @@
 <glyph name="ogonekcmb.cap" format="2">
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="-36" y="-225" type="curve"/>
+			<point name="hintRef0000" x="-36" y="-225" type="curve"/>
 			<point x="6" y="-225"/>
 			<point x="51" y="-212"/>
 			<point x="82" y="-190" type="curve"/>
 			<point x="55" y="-118" type="line"/>
-			<point x="45" y="-124"/>
+			<point name="hintRef0001" x="45" y="-124"/>
 			<point x="34" y="-127"/>
 			<point x="22" y="-127" type="curve"/>
-			<point x="3" y="-127"/>
+			<point name="hintRef0002" x="3" y="-127"/>
 			<point x="-14" y="-115"/>
 			<point x="-14" y="-94" type="curve"/>
-			<point name="hintSet0005" x="-14" y="-65"/>
+			<point x="-14" y="-65"/>
 			<point x="10" y="-27"/>
 			<point x="59" y="2" type="curve"/>
 			<point x="-29" y="2" type="line"/>
-			<point name="hintSet0007" x="-82" y="-29"/>
+			<point name="hintRef0003" x="-82" y="-29"/>
 			<point x="-138" y="-86"/>
 			<point x="-138" y="-142" type="curve"/>
 			<point x="-138" y="-195"/>
@@ -33,7 +33,25 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -169 -21</string>
+							<string>vstem -138 220</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -225 98</string>
+							<string>vstem -138 220</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0002</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -225 98</string>
@@ -42,20 +60,11 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0005</string>
-						<key>stems</key>
-						<array>
-							<string>hstem -225 227</string>
-							<string>vstem -138 124</string>
-						</array>
-					</dict>
-					<dict>
-						<key>pointTag</key>
-						<string>hintSet0007</string>
+						<string>hintRef0003</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -225 98</string>
-							<string>vstem -138 124</string>
+							<string>vstem -138 220</string>
 						</array>
 					</dict>
 				</array>

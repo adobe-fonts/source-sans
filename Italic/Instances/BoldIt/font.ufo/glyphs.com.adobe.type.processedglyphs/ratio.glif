@@ -4,11 +4,11 @@
 	<advance width="291"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="186" y="404" type="curve"/>
+			<point name="hintRef0000" x="186" y="404" type="curve"/>
 			<point x="245" y="404"/>
 			<point x="284" y="454"/>
 			<point x="284" y="504" type="curve"/>
-			<point x="284" y="547"/>
+			<point name="hintRef0001" x="284" y="547"/>
 			<point x="256" y="579"/>
 			<point x="214" y="579" type="curve"/>
 			<point x="155" y="579"/>
@@ -18,14 +18,14 @@
 			<point x="144" y="404"/>
 		</contour>
 		<contour>
-			<point name="hintSet0005" x="122" y="72" type="curve"/>
-			<point x="181" y="72"/>
+			<point x="122" y="72" type="curve"/>
+			<point name="hintRef0002" x="181" y="72"/>
 			<point x="220" y="122"/>
 			<point x="220" y="172" type="curve"/>
 			<point x="220" y="215"/>
 			<point x="192" y="247"/>
 			<point x="150" y="247" type="curve"/>
-			<point x="91" y="247"/>
+			<point name="hintRef0003" x="91" y="247"/>
 			<point x="52" y="195"/>
 			<point x="52" y="146" type="curve"/>
 			<point x="52" y="102"/>
@@ -40,7 +40,17 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 72 175</string>
+							<string>hstem 404 175</string>
+							<string>vstem 52 232</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0001</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 72 175</string>
@@ -50,12 +60,22 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0005</string>
+						<string>hintRef0002</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 72 175</string>
 							<string>hstem 404 175</string>
 							<string>vstem 52 168</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 72 175</string>
+							<string>hstem 404 175</string>
+							<string>vstem 52 232</string>
 						</array>
 					</dict>
 				</array>

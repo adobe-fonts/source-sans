@@ -2,14 +2,14 @@
 <glyph name="dieresismacron" format="2">
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="4" y="566" type="curve"/>
+			<point name="hintRef0000" x="4" y="566" type="curve"/>
 			<point x="52" y="566"/>
 			<point x="88" y="606"/>
 			<point x="88" y="648" type="curve"/>
 			<point x="88" y="686"/>
 			<point x="60" y="708"/>
 			<point x="26" y="708" type="curve"/>
-			<point x="-22" y="708"/>
+			<point name="hintRef0001" x="-22" y="708"/>
 			<point x="-58" y="668"/>
 			<point x="-58" y="628" type="curve"/>
 			<point x="-58" y="588"/>
@@ -17,7 +17,7 @@
 		</contour>
 		<contour>
 			<point x="224" y="566" type="curve"/>
-			<point x="272" y="566"/>
+			<point name="hintRef0002" x="272" y="566"/>
 			<point x="308" y="606"/>
 			<point x="308" y="648" type="curve"/>
 			<point x="308" y="686"/>
@@ -32,7 +32,7 @@
 		<contour>
 			<point x="6" y="764" type="line"/>
 			<point x="300" y="764" type="line"/>
-			<point x="316" y="838" type="line"/>
+			<point name="hintRef0003" x="316" y="838" type="line"/>
 			<point x="22" y="838" type="line"/>
 		</contour>
 	</outline>
@@ -45,13 +45,41 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 566 142</string>
 							<string>hstem 764 74</string>
 							<string>vstem -58 146</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 566 142</string>
+							<string>hstem 764 74</string>
+							<string>vstem -58 374</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0002</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 566 142</string>
+							<string>hstem 764 74</string>
 							<string>vstem 162 146</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 764 74</string>
+							<string>vstem -58 374</string>
 						</array>
 					</dict>
 				</array>

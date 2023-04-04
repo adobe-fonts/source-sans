@@ -4,7 +4,7 @@
 	<advance width="542"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="278" y="589" type="curve"/>
+			<point name="hintRef0000" x="278" y="589" type="curve"/>
 			<point x="306" y="589"/>
 			<point x="329" y="614"/>
 			<point x="329" y="642" type="curve"/>
@@ -32,7 +32,7 @@
 			<point x="480" y="589"/>
 		</contour>
 		<contour>
-			<point x="387" y="564" type="line"/>
+			<point name="hintRef0001" x="387" y="564" type="line"/>
 			<point x="422" y="564" type="line"/>
 			<point x="411" y="756" type="line"/>
 			<point x="351" y="756" type="line"/>
@@ -47,10 +47,20 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 589 92</string>
+							<string>vstem 239 90</string>
+							<string>vstem 463 90</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 564 192</string>
 							<string>vstem 239 90</string>
 							<string>vstem 463 90</string>
 						</array>

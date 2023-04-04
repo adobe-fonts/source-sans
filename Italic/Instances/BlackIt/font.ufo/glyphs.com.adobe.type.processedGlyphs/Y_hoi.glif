@@ -4,7 +4,7 @@
 	<advance width="528"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="137" y="0" type="line"/>
+			<point name="hintRef0000" x="137" y="0" type="line"/>
 			<point x="296" y="0" type="line"/>
 			<point x="342" y="228" type="line"/>
 			<point x="618" y="650" type="line"/>
@@ -22,15 +22,15 @@
 			<point x="182" y="228" type="line"/>
 		</contour>
 		<contour>
-			<point x="302" y="694" type="line"/>
-			<point name="hintSet0013" x="408" y="700"/>
+			<point name="hintRef0001" x="302" y="694" type="line"/>
+			<point x="408" y="700"/>
 			<point x="472" y="748"/>
 			<point x="472" y="820" type="curve"/>
 			<point x="472" y="863"/>
 			<point x="428" y="908"/>
 			<point x="302" y="908" type="curve"/>
 			<point x="276" y="818" type="line"/>
-			<point x="326" y="818"/>
+			<point name="hintRef0002" x="326" y="818"/>
 			<point x="344" y="804"/>
 			<point x="344" y="790" type="curve"/>
 			<point x="344" y="772"/>
@@ -46,22 +46,36 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 21 -21</string>
 							<string>hstem 650 -20</string>
+							<string>hstem 694 66</string>
 							<string>hstem 818 90</string>
 							<string>vstem 79 539</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0013</string>
+						<string>hintRef0001</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 21 -21</string>
 							<string>hstem 650 -20</string>
+							<string>hstem 694 66</string>
+							<string>hstem 818 90</string>
+							<string>vstem 300 172</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0002</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 21 -21</string>
+							<string>hstem 650 -20</string>
+							<string>hstem 694 66</string>
 							<string>hstem 818 90</string>
 							<string>vstem 344 128</string>
 						</array>

@@ -2,14 +2,14 @@
 <glyph name="dieresisgrave" format="2">
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="4" y="566" type="curve"/>
+			<point name="hintRef0000" x="4" y="566" type="curve"/>
 			<point x="52" y="566"/>
 			<point x="88" y="606"/>
 			<point x="88" y="648" type="curve"/>
 			<point x="88" y="686"/>
 			<point x="60" y="708"/>
 			<point x="26" y="708" type="curve"/>
-			<point x="-22" y="708"/>
+			<point name="hintRef0001" x="-22" y="708"/>
 			<point x="-58" y="668"/>
 			<point x="-58" y="628" type="curve"/>
 			<point x="-58" y="588"/>
@@ -20,7 +20,7 @@
 			<point x="272" y="566"/>
 			<point x="308" y="606"/>
 			<point x="308" y="648" type="curve"/>
-			<point x="308" y="686"/>
+			<point name="hintRef0002" x="308" y="686"/>
 			<point x="280" y="708"/>
 			<point x="246" y="708" type="curve"/>
 			<point x="198" y="708"/>
@@ -34,7 +34,7 @@
 			<point x="210" y="740" type="line"/>
 			<point x="160" y="880" type="line"/>
 			<point x="20" y="880" type="line"/>
-			<point name="hintSet0014" x="10" y="862" type="line"/>
+			<point name="hintRef0003" x="10" y="862" type="line"/>
 		</contour>
 	</outline>
 	<anchor name="_aboveLC" x="100" y="522"/>
@@ -46,23 +46,42 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 566 142</string>
 							<string>hstem 740 140</string>
 							<string>vstem -58 146</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 566 142</string>
+							<string>hstem 740 140</string>
+							<string>vstem -58 366</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0002</string>
+						<key>stems</key>
+						<array>
+							<string>hstem 566 142</string>
+							<string>hstem 740 140</string>
 							<string>vstem 162 146</string>
 						</array>
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0014</string>
+						<string>hintRef0003</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 566 142</string>
 							<string>hstem 862 18</string>
-							<string>vstem -58 146</string>
+							<string>vstem -58 366</string>
 						</array>
 					</dict>
 				</array>

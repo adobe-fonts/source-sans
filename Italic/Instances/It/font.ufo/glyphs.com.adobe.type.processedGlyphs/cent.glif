@@ -4,9 +4,9 @@
 	<advance width="480"/>
 	<outline>
 		<contour>
-			<point name="hintSet0000" x="203" y="-14" type="line"/>
-			<point x="253" y="-14" type="line"/>
-			<point name="hintSet0002" x="274" y="91" type="line"/>
+			<point name="hintRef0000" x="203" y="-14" type="line"/>
+			<point name="hintRef0001" x="253" y="-14" type="line"/>
+			<point name="hintRef0002" x="274" y="91" type="line"/>
 			<point x="335" y="95"/>
 			<point x="380" y="119"/>
 			<point x="422" y="146" type="curve"/>
@@ -22,8 +22,8 @@
 			<point x="452" y="532"/>
 			<point x="417" y="560"/>
 			<point x="368" y="567" type="curve"/>
-			<point x="388" y="670" type="line"/>
-			<point x="339" y="670" type="line"/>
+			<point name="hintRef0003" x="388" y="670" type="line"/>
+			<point name="hintRef0004" x="339" y="670" type="line"/>
 			<point x="319" y="568" type="line"/>
 			<point x="202" y="557"/>
 			<point x="78" y="453"/>
@@ -50,7 +50,7 @@
 				<array>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0000</string>
+						<string>hintRef0000</string>
 						<key>stems</key>
 						<array>
 							<string>hstem -14 169</string>
@@ -59,10 +59,37 @@
 					</dict>
 					<dict>
 						<key>pointTag</key>
-						<string>hintSet0002</string>
+						<string>hintRef0001</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -14 684</string>
+							<string>vstem 78 76</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0002</string>
 						<key>stems</key>
 						<array>
 							<string>hstem 91 64</string>
+							<string>hstem 504 166</string>
+							<string>vstem 78 76</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0003</string>
+						<key>stems</key>
+						<array>
+							<string>hstem -14 684</string>
+							<string>vstem 78 76</string>
+						</array>
+					</dict>
+					<dict>
+						<key>pointTag</key>
+						<string>hintRef0004</string>
+						<key>stems</key>
+						<array>
 							<string>hstem 504 166</string>
 							<string>vstem 78 76</string>
 						</array>
