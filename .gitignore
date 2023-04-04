@@ -5,8 +5,12 @@ target
 Source*.otf
 Source*.ttf
 
-# ignore processed glyphs & hashmap in masters:
-*/*/*/master.ufo/glyphs.com.adobe.type.processedGlyphs
-*/*/*/master.ufo/data/com.adobe.type.processedHashMap
-*/*/*/master.ufo/layercontents.plist
-*~
+# ignore background, processed glyphs & hashmap in masters.
+# Unfortunately, it is not possible to entirely ignore layers, because
+# tracebacks are thrown when the layer folders are missing.
+*/Masters/*/master_*/*.ufo/glyphs.com.adobe.type.processedGlyphs/*.glif
+*/Masters/*/master_*/*.ufo/glyphs.com.adobe.type.processedGlyphs/contents.plist
+*/Masters/*/master_*/*.ufo/glyphs.background/*.glif
+*/Masters/*/master_*/*.ufo/glyphs.background/contents.plist
+*/Masters/*/master_*/*.ufo/data/com.adobe.type.processedHashMap
+
