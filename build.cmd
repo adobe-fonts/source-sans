@@ -2,8 +2,8 @@
 setlocal
 
 set FAMILY=SourceSans3
-set UPRIGHT_WEIGHTS=Black Bold ExtraLight Light Regular Semibold
-set ITALIC_WEIGHTS=BlackIt BoldIt ExtraLightIt LightIt It SemiboldIt
+set UPRIGHT_WEIGHTS=Black Bold ExtraLight Light Medium Regular Semibold
+set ITALIC_WEIGHTS=BlackIt BoldIt ExtraLightIt LightIt MediumIt It SemiboldIt
 
 :: find makeotf
 for /f %%a in ('where makeotf') do set MAKEOTF_PATH=%%a
