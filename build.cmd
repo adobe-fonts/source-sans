@@ -2,8 +2,8 @@
 setlocal
 
 set FAMILY=SourceSans3
-set ROMAN_WEIGHTS=Black Bold ExtraLight Light Regular Semibold
-set ITALIC_WEIGHTS=BlackIt BoldIt ExtraLightIt LightIt It SemiboldIt
+set UPRIGHT_WEIGHTS=Black Bold ExtraLight Light Medium Regular Semibold
+set ITALIC_WEIGHTS=BlackIt BoldIt ExtraLightIt LightIt MediumIt It SemiboldIt
 
 :: find makeotf
 for /f %%a in ('where makeotf') do set MAKEOTF_PATH=%%a
@@ -19,13 +19,13 @@ if exist "%TARGET_PATH%" rmdir /s /q "%TARGET_PATH%"
 mkdir "%TARGET_OTF_PATH%"
 mkdir "%TARGET_TTF_PATH%"
 
-set x=%ROMAN_WEIGHTS%
-:loop_roman
+set x=%UPRIGHT_WEIGHTS%
+:loop_upright
 for /f "tokens=1*" %%a in ("%x%") do (
-    call :build_font Roman %%a
+    call :build_font Upright %%a
     set x=%%b
 )
-if defined x goto :loop_roman
+if defined x goto :loop_upright
 
 set x=%ITALIC_WEIGHTS%
 :loop_italic
@@ -39,7 +39,7 @@ endlocal
 goto :eof
 
 :: Build Font
-:: %1 - Roman/Italic
+:: %1 - Upright/Italic
 :: %2 - Weight
 :build_font
 call makeotf -f "%~dp0\%1\Instances\%2\font.ufo" -r -o "%TARGET_OTF_PATH%\%FAMILY%-%2.otf"

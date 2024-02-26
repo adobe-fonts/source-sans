@@ -29,7 +29,7 @@ are generated with the `otf2ttf` and `ttfcomponentizer` tools.
 Commands to build the Regular style OTF font:
 
 ```sh
-$ cd Roman/Instances/Regular/
+$ cd Upright/Instances/Regular/
 $ makeotf -r -gs -omitMacNames
 ```
 
@@ -72,7 +72,7 @@ $ ./buildVFs.sh
 
 ### Building with `make`
 
-If you want to build directly from masters instead of the instances stored in
+If you want to build directly from UFO sources instead of the instances stored in
 the repository, or to avoid building all files repetitively, run:
 
 ```sh
@@ -80,14 +80,14 @@ $ make
 ```
 
 and it will get everything up to date. To generate only the font.ufo instances
-from the masters, run:
+from the UFO sources, run:
 
 ```sh
 $ make instances
 ```
 
 _Note: because font.ufo instances are stored in the repository, you may have to
-delete them first from your working tree before building from masters; see
+delete them first from your working tree before building from UFO sources; see
 below._
 
 To clean up `makeotf`'s defaults and other log files, run:

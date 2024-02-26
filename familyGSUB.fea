@@ -78,6 +78,30 @@
 @PUNCTUATION_INFERIOR = [ parenleft.subs parenright.subs period.subs comma.subs ];
 
 #--------------------------------------
+languagesystem DFLT dflt; # Default
+
+languagesystem latn dflt; # Latin default
+	languagesystem latn ATH; # Athapaskan/Athabaskan
+	languagesystem latn AZE; # Azeri
+	languagesystem latn CHP; # Dënësųłınë́ (Chipewyan)
+	languagesystem latn CRT; # Crimean Tatar
+	languagesystem latn NAV; # NavajoDiné Bizaad
+	languagesystem latn NSM; # Northern Sami
+	languagesystem latn SKS; # Skolt Sami
+	languagesystem latn SLA; # South(?) Slavey
+	languagesystem latn TRK; # Turkish
+	languagesystem latn IPPH; # Phonetic transcription, IPA conventions	
+	languagesystem latn APPH; # Phonetic transcription, Americanist conventions
+
+languagesystem grek dflt; # Greek default
+	languagesystem grek PGR; # Polytonic Greek
+
+languagesystem cyrl dflt; # Cyrillic default
+	languagesystem cyrl BGR; # Bulgarian
+	languagesystem cyrl MKD; # Macedonian
+	languagesystem cyrl SRB; # Serbian
+
+#--------------------------------------
 
 lookup SUPERIOR_LETTERS_MINISCULE {
 	sub @LETTERS_MINISCULE_LATIN_BASIC by @LETTERS_MINISCULE_LATIN_SUPERIOR;
