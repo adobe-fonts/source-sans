@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <designspace format="3">
 	<axes>
-		<axis default="0.0" maximum="1000.0" minimum="0.0" name="weight" tag="wght"/>
+		<axis default="200.0" maximum="900.0" minimum="200.0" name="weight" tag="wght">
+			<map input="200" output="0"/>	<!-- ExtraLight -->
+			<map input="300" output="100"/>	<!-- Light -->
+			<map input="400" output="368"/>	<!-- Regular -->
+			<map input="500" output="486"/>	<!-- Medium -->
+			<map input="600" output="600"/>	<!-- Semibold -->
+			<map input="700" output="824"/>	<!-- Bold -->
+			<map input="900" output="1000"/>	<!-- Black -->
+		</axis>
 	</axes>
 	<sources>
-		<source filename="pole_0/SourceSans_ExtraLight-Italic.ufo" name="master_0">
+		<source familyname="Source Sans 3 VF" filename="Poles/pole_0/SourceSans3-ExtraLightItalic.ufo" name="pole_0">
 			<lib copy="1"/>
 			<groups copy="1"/>
 			<info copy="1"/>
@@ -12,7 +20,7 @@
 				<dimension name="weight" xvalue="0"/>
 			</location>
 		</source>
-		<source filename="pole_1/SourceSans_Semibold-Italic.ufo" name="master_1">
+		<source filename="Poles/pole_1/SourceSans3-Italic.ufo" name="pole_1">
 			<glyph mute="1" name=".notdef"/>
 			<glyph mute="1" name="A"/>
 			<glyph mute="1" name="C"/>
@@ -53,49 +61,56 @@
 				<dimension name="weight" xvalue="600"/>
 			</location>
 		</source>
-		<source filename="pole_2/SourceSans_Black-Italic.ufo" name="master_2">
+		<source filename="Poles/pole_2/SourceSans3-BlackItalic.ufo" name="pole_2">
 			<location>
 				<dimension name="weight" xvalue="1000"/>
 			</location>
 		</source>
 	</sources>
 	<instances>
-		<instance familyname="Source Sans 3" filename="../Instances/ExtraLightIt/font.ufo" postscriptfontname="SourceSans3-ExtraLightIt" stylename="ExtraLight Italic">
+		<instance postscriptfontname="SourceSans3VF-ExtraLightItalic" stylename="ExtraLight Italic">
 			<location>
 				<dimension name="weight" xvalue="0"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" filename="../Instances/LightIt/font.ufo" postscriptfontname="SourceSans3-LightIt" stylename="Light Italic">
+		<instance postscriptfontname="SourceSans3VF-LightItalic" stylename="Light Italic">
 			<location>
 				<dimension name="weight" xvalue="100"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" filename="../Instances/It/font.ufo" postscriptfontname="SourceSans3-It" stylename="Italic">
+		<instance postscriptfontname="SourceSans3VF-Italic" stylename="Italic">
 			<location>
 				<dimension name="weight" xvalue="368"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" filename="../Instances/SemiboldIt/font.ufo" postscriptfontname="SourceSans3-SemiboldIt" stylename="Semibold Italic">
+		<instance postscriptfontname="SourceSans3VF-MediumItalic" stylename="Medium Italic">
+			<location>
+				<dimension name="weight" xvalue="486"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance postscriptfontname="SourceSans3VF-SemiboldItalic" stylename="Semibold Italic">
 			<location>
 				<dimension name="weight" xvalue="600"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" filename="../Instances/BoldIt/font.ufo" postscriptfontname="SourceSans3-BoldIt" stylename="Bold Italic">
+		<instance postscriptfontname="SourceSans3VF-BoldItalic" stylename="Bold Italic">
 			<location>
 				<dimension name="weight" xvalue="824"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" filename="../Instances/BlackIt/font.ufo" postscriptfontname="SourceSans3-BlackIt" stylename="Black Italic">
+		<instance postscriptfontname="SourceSans3VF-BlackItalic" stylename="Black Italic">
 			<location>
 				<dimension name="weight" xvalue="1000"/>
 			</location>
@@ -103,4 +118,30 @@
 			<info/>
 		</instance>
 	</instances>
+	<lib>
+		<dict>
+			<key>public.skipExportGlyphs</key>
+			<array>
+				<string>aet</string>
+				<string>et</string>
+				<string>florin.a</string>
+				<string>Ginsular.x</string>
+				<string>Ginsularturned.x</string>
+				<string>oxia.cap</string>
+				<string>rinsular.x</string>
+				<string>Rinsular.x</string>
+				<string>Rinsular.xs</string>
+				<string>Sigmoid.sc</string>
+				<string>Ssigmoid</string>
+				<string>uni004Duni0300</string>
+				<string>uni004Duni0304</string>
+				<string>uni006Duni0300</string>
+				<string>uni006Duni0304</string>
+				<string>uni00CAuni0304</string>
+				<string>uni00CAuni030C</string>
+				<string>uni00EAuni0304</string>
+				<string>uni00EAuni030C</string>
+			</array>
+		</dict>
+	</lib>
 </designspace>

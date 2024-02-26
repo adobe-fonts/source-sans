@@ -2,16 +2,17 @@
 <designspace format="3">
 	<axes>
 		<axis default="200.0" maximum="900.0" minimum="200.0" name="weight" tag="wght">
-			<map input="200" output="0"/>		<!-- ExtraLight -->
-			<map input="300" output="100"/>		<!-- Light -->
-			<map input="400" output="368"/>		<!-- Regular -->
-			<map input="600" output="600"/>		<!-- Semibold -->
-			<map input="700" output="824"/>		<!-- Bold -->
+			<map input="200" output="0"/>	<!-- ExtraLight -->
+			<map input="300" output="100"/>	<!-- Light -->
+			<map input="400" output="368"/>	<!-- Regular -->
+			<map input="500" output="486"/>	<!-- Medium -->
+			<map input="600" output="600"/>	<!-- Semibold -->
+			<map input="700" output="824"/>	<!-- Bold -->
 			<map input="900" output="1000"/>	<!-- Black -->
 		</axis>
 	</axes>
 	<sources>
-		<source filename="pole_0/SourceSans_ExtraLight.ufo" name="master_0">
+		<source familyname="Source Sans 3 VF" filename="Poles/pole_0/SourceSans3-ExtraLight.ufo" name="pole_0">
 			<lib copy="1"/>
 			<groups copy="1"/>
 			<info copy="1"/>
@@ -19,7 +20,7 @@
 				<dimension name="weight" xvalue="0"/>
 			</location>
 		</source>
-		<source filename="pole_1/SourceSans_Semibold.ufo" name="master_1">
+		<source filename="Poles/pole_1/SourceSans3-Upright.ufo" name="pole_1">
 			<glyph mute="1" name=".notdef"/>
 			<glyph mute="1" name="A"/>
 			<glyph mute="1" name="C"/>
@@ -66,49 +67,56 @@
 				<dimension name="weight" xvalue="600"/>
 			</location>
 		</source>
-		<source filename="pole_2/SourceSans_Black.ufo" name="master_2">
+		<source filename="Poles/pole_2/SourceSans3-Black.ufo" name="pole_2">
 			<location>
 				<dimension name="weight" xvalue="1000"/>
 			</location>
 		</source>
 	</sources>
 	<instances>
-		<instance familyname="Source Sans 3" postscriptfontname="SourceSans3Roman-ExtraLight" stylename="ExtraLight">
+		<instance postscriptfontname="SourceSans3VF-ExtraLight" stylename="ExtraLight">
 			<location>
 				<dimension name="weight" xvalue="0"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" postscriptfontname="SourceSans3Roman-Light" stylename="Light">
+		<instance postscriptfontname="SourceSans3VF-Light" stylename="Light">
 			<location>
 				<dimension name="weight" xvalue="100"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" postscriptfontname="SourceSans3Roman-Regular" stylename="Regular">
+		<instance postscriptfontname="SourceSans3VF-Regular" stylename="Regular">
 			<location>
 				<dimension name="weight" xvalue="368"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" postscriptfontname="SourceSans3Roman-Semibold" stylename="Semibold">
+		<instance postscriptfontname="SourceSans3VF-Medium" stylename="Medium">
+			<location>
+				<dimension name="weight" xvalue="486"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance postscriptfontname="SourceSans3VF-Semibold" stylename="Semibold">
 			<location>
 				<dimension name="weight" xvalue="600"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" postscriptfontname="SourceSans3Roman-Bold" stylename="Bold">
+		<instance postscriptfontname="SourceSans3VF-Bold" stylename="Bold">
 			<location>
 				<dimension name="weight" xvalue="824"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Source Sans 3" postscriptfontname="SourceSans3Roman-Black" stylename="Black">
+		<instance postscriptfontname="SourceSans3VF-Black" stylename="Black">
 			<location>
 				<dimension name="weight" xvalue="1000"/>
 			</location>
@@ -116,4 +124,30 @@
 			<info/>
 		</instance>
 	</instances>
+	<lib>
+		<dict>
+			<key>public.skipExportGlyphs</key>
+			<array>
+				<string>aet</string>
+				<string>et</string>
+				<string>florin.a</string>
+				<string>Ginsular.x</string>
+				<string>Ginsularturned.x</string>
+				<string>oxia.cap</string>
+				<string>rinsular.x</string>
+				<string>Rinsular.x</string>
+				<string>Rinsular.xs</string>
+				<string>Sigmoid.sc</string>
+				<string>Ssigmoid</string>
+				<string>uni004Duni0300</string>
+				<string>uni004Duni0304</string>
+				<string>uni006Duni0300</string>
+				<string>uni006Duni0304</string>
+				<string>uni00CAuni0304</string>
+				<string>uni00CAuni030C</string>
+				<string>uni00EAuni0304</string>
+				<string>uni00EAuni030C</string>
+			</array>
+		</dict>
+	</lib>
 </designspace>
