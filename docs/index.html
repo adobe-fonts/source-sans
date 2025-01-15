@@ -7,149 +7,195 @@
     <title>Source Sans 3</title>
     <link rel="stylesheet" href="source-sans-3.css">
     <style>
+      :root {
+        /* Colors */
+        --color-light-bg: #FFF;
+        --color-dark-bg: #222;
+        --color-light-text: #000;
+        --color-dark-text: #FFF;
+        --color-hover-light: #EEE;
+        --color-hover-dark: #333;
+        --color-ribbon-light: rgb(34, 34, 34);
+        --color-ribbon-dark: rgb(221, 221, 221);
+        --color-ribbon-text-light: #FFF;
+        --color-ribbon-text-dark: #000;
 
-        body {
-            font-family: 'Source Sans 3 VF', 'Source Sans 3', sans;
-            overflow-x: hidden;
-            font-feature-settings: "kern" 1,"liga" 1;
-            font-size: 100%;
-        }
-        article {
-            margin: 0 auto;
-            max-width: 900px;
-            padding: 1em;
-        }
+        /* Font Sizes */
+        --font-size-body: 100%;
+        --font-size-h1: 56px;
+        --font-size-h1-small: 36px;
+        --font-size-h1-large: 72px;
+        --font-size-h2: 24px;
+        --font-size-h2-small: 18px;
+        --font-size-h2-large: 32px;
+        --font-size-div: 40px;
+        --font-size-div-small: 18px;
+        --font-size-div-large: 50px;
+        --font-size-ribbon: 13px;
+
+        /* Spacing */
+        --spacing-article-padding: 1em;
+        --spacing-div-padding: 0.5em 0.75em;
+        --spacing-paragraph-bottom: 0.5em;
+
+        /* Ribbon */
+        --ribbon-width: 12.1em;
+        --ribbon-height: 12.1em;
+        --ribbon-transform: rotate(45deg);
+      }
+
+      body {
+        font-family: 'Source Sans 3 VF', 'Source Sans 3', sans-serif;
+        overflow-x: hidden;
+        font-feature-settings: "kern" 1, "liga" 1;
+        font-size: var(--font-size-body);
+      }
+
+      article {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: var(--spacing-article-padding);
+      }
+
+      h1 {
+        font-size: var(--font-size-h1);
+        margin: 0;
+      }
+
+      h2 {
+        color: #AAA;
+        margin-top: 0.75em;
+        margin-bottom: 0;
+        font-size: var(--font-size-h2);
+      }
+
+      div {
+        font-size: var(--font-size-div);
+        padding: var(--spacing-div-padding);
+        margin: 0;
+        outline: 0px solid transparent;
+        autocorrect: "off";
+        overflow: hidden;
+        hyphens: off;
+      }
+
+      p {
+        margin: 0;
+        padding-bottom: var(--spacing-paragraph-bottom);
+      }
+
+      div:hover {
+        background-color: var(--color-hover-light);
+      }
+
+      .ribbon {
+        width: var(--ribbon-width);
+        height: var(--ribbon-height);
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        pointer-events: none;
+        font-size: var(--font-size-ribbon);
+        text-decoration: none;
+        text-indent: -999999px;
+      }
+
+      .ribbon:before,
+      .ribbon:after {
+        position: absolute;
+        display: block;
+        width: 15.38em;
+        height: 1.54em;
+        top: 3.23em;
+        right: -3.23em;
+        box-sizing: content-box;
+        transform: var(--ribbon-transform);
+      }
+
+      .ribbon:before {
+        content: "";
+        padding: 0.38em 0;
+        background-color: var(--color-ribbon-light);
+        pointer-events: auto;
+      }
+
+      .ribbon:after {
+        content: attr(data-ribbon);
+        color: var(--color-ribbon-text-light);
+        font: 700 var(--font-size-ribbon) 'Source Sans 3 VF', 'Source Sans 3';
+        line-height: 1.54em;
+        text-align: center;
+        text-indent: 0;
+        padding: 0.15em 0;
+        margin: 0.15em 0;
+      }
+
+      @media (max-width: 720px) {
         h1 {
-            font-size: 56px;
-            margin: 0;
+          font-size: var(--font-size-h1-small);
         }
+
         h2 {
-            color: #AAA ;
-            margin-top: 0.75em;
-            margin-bottom: 0;
+          font-size: var(--font-size-h2-small);
         }
+
         div {
-            font-size: 40px;
-            padding: 0.5em 0.75em;
-            margin: 0;
-            outline: 0px solid transparent;
-            autocorrect: "off";
-            overflow: hidden;
-            hyphens: off;
+          font-size: var(--font-size-div-small);
+          padding: 0;
         }
-        p {
-            margin: 0;
-            padding-bottom: .5em;
-        }
-        div:hover
-        {
-            background-color: #EEE;
-        }
-        .ribbon {
-            width: 12.1em;
-            height: 12.1em;
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            right: 0;
-            z-index: 9999;
-            pointer-events: none;
-            font-size: 13px;
-            text-decoration: none;
-            text-indent: -999999px;
-        }
-        .ribbon:before, .ribbon:after {
-            position: absolute;
-            display: block;
-            width: 15.38em;
-            height: 1.54em;
+      }
 
-            top: 3.23em;
-            right: -3.23em;
-
-            -webkit-box-sizing: content-box;
-            -moz-box-sizing: content-box;
-            box-sizing: content-box;
-
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+      @media (min-width: 1200px) {
+        h1 {
+          font-size: var(--font-size-h1-large);
         }
+
+        h2 {
+          font-size: var(--font-size-h2-large);
+        }
+
+        div {
+          font-size: var(--font-size-div-large);
+        }
+
+        article {
+          max-width: 1100px;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: var(--color-dark-bg);
+          color: var(--color-dark-text);
+        }
+
+        div:hover {
+          background-color: var(--color-hover-dark);
+        }
+
         .ribbon:before {
-            content: "";
-            padding: .38em 0;
-            background-color: rgb(34, 34, 34);
-            pointer-events: auto;
+          background-color: var(--color-ribbon-dark);
         }
+
         .ribbon:after {
-            content: attr(data-ribbon);
-
-            color: #fff;
-            font: 700 13px 'Source Sans 3 VF', 'Source Sans 3';
-            line-height: 1.54em;
-            text-decoration: none;
-            text-align: center;
-            text-indent: 0;
-
-            padding: .15em 0;
-            margin: .15em 0;
+          color: var(--color-ribbon-text-dark);
         }
-        @media (max-width: 720px) {
-            h1 {
-                font-size: 36px;
-            }
-            h2 {
-                font-size: 18px;
-            }
-            div {
-                padding: 0;
-                font-size: 18px;
-            }
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: var(--color-light-bg);
+          color: var(--color-light-text);
         }
 
-        @media (min-width: 1200px) {
-            h1 {
-                font-size: 72px;
-            }
-            h2 {
-                font-size: 32px;
-            }
-            div {
-                font-size: 50px;
-            }
-            article {
-                max-width: 1100px;
-            }
+        div:hover {
+          background-color: var(--color-hover-light);
         }
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #222;
-                color: #FFF;
-            }
-            div:hover
-            {
-                background-color: #333;
-            }
-            .ribbon:before {
-                background-color: rgb(221, 221, 221);;
-            }
-            .ribbon:after {
-                color: #000;
-        }
-        @media (prefers-color-scheme: light) {
-            body {
-                background-color: #FFF;
-                color: #000;
-            }
-            div:hover
-            {
-                background-color: #EEE;
-            }
-        }
+      }
     </style>
-    </head>
+  </head>
     <body>
     <article spellcheck="false">
         <h1>Source Sans 3</h1>
